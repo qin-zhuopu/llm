@@ -1,0 +1,21 @@
+{
+  "id": "FEAT-001",
+  "type": "chore",
+  "description": "Set up environment: install Python dependencies and verify baseline state",
+  "status": "in_progress",
+  "steps": [
+    "Run: pip install pyyaml jsonschema requests beautifulsoup4 markdownify",
+    "Run: python3 scripts/validate.py to see current baseline (expect 22 pass, 54 fail)",
+    "Verify extract_yaml.py works with a single test file by running: ANTHROPIC_BASE_URL=https://open.bigmodel.cn/api/anthropic ANTHROPIC_AUTH_TOKEN=ac96a781bad141808246da37f274d99a.1w0Oib3gCblk4rC3 ANTHROPIC_MODEL=glm-4.5-air python3 scripts/extract_yaml.py domains/finance/ant-bailing.md"
+  ],
+  "acceptance_criteria": [
+    "pip install succeeds",
+    "validate.py runs and shows current state",
+    "extract_yaml.py successfully regenerates at least one YAML file from a good MD file"
+  ],
+  "verification": [
+    "python3 scripts/validate.py (confirm it runs without crashing)"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

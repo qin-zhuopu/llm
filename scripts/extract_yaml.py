@@ -58,10 +58,8 @@ ${optional_fields_doc}
 1. `description`: 至少 50 个字符，用中文描述模型的核心定位和差异化，包含具体数据（参数量、训练数据规模、性能指标等）
 2. `capabilities`: 至少 4 项，每项 5 字符以上，具体描述模型能做什么
 3. `tags`: 3-6 个标签，用于搜索分类
-4. `language`: 推断模型支持的语言，用 ISO 639-1 代码（如 zh, en, ja）
-5. `license`: 闭源商用通常填 `proprietary`；学术开源看具体协议
-6. `pipeline_tag`: 根据模型主要用途选择最合适的任务类型
-7. `references`: 包含官网和论文链接（如果有）
+4. `references`: 包含官网和论文链接（如果有）
+5. 严格只输出 Schema 中定义的字段，不要输出任何额外字段（如 language、license、pipeline_tag 等）
 
 ## 输入 Markdown
 
@@ -69,10 +67,34 @@ ${optional_fields_doc}
 ${md_content}
 ```
 
+## 输出格式示例
+
+以下是一个正确格式的输出片段，注意 references 必须是对象数组（每项包含 title 和 url），字符串中含冒号(:)必须用引号包裹：
+
+```
+name: 模型名
+company: 公司名
+domain: ${domain}
+status: released
+description: "详细描述，至少50字符..."
+capabilities:
+  - 能力1
+  - 能力2
+  - 能力3
+  - 能力4
+references:
+  - title: "论文标题: 含冒号必须引号包裹"
+    url: "https://example.com/link"
+```
+
 ## 输出要求
 
 只输出纯 YAML 内容，不要包含 ```yaml``` 代码块标记，不要输出任何解释文字。
-确保 YAML 语法正确（字符串含特殊字符时用引号包裹）。
+确保 YAML 语法正确：
+- 所有包含冒号(:)、引号、特殊字符的字符串必须用双引号包裹
+- URL 必须用双引号包裹
+- description 必须用双引号包裹
+严格只输出 Schema 中定义的字段，不要输出 language、license、pipeline_tag 等未定义字段。
 """)
 
 
@@ -106,6 +128,18 @@ def build_field_doc(schema, field_names):
             line += f"\n  最少条目: {prop['minItems']}"
         if "pattern" in prop:
             line += f"\n  格式: {prop['pattern']}"
+
+        # 描述数组项结构（对象类型的items）
+        if field_type == "array" and "items" in prop:
+            items = prop["items"]
+            if items.get("type") == "object" and "properties" in items:
+                item_props = items["properties"]
+                required_item_fields = items.get("required", [])
+                line += f"\n  数组项结构 (对象，必填字段: {required_item_fields}):"
+                for pname, pdef in item_props.items():
+                    pdesc = pdef.get("description", "")
+                    ptype = pdef.get("type", "")
+                    line += f"\n    - `{pname}` ({ptype}): {pdesc}"
 
         lines.append(line)
     return "\n".join(lines)
@@ -186,13 +220,40 @@ def parse_yaml_output(text):
         text = text[:-3]
     text = text.strip()
 
-    return yaml.safe_load(text)
+    try:
+        return yaml.safe_load(text)
+    except yaml.YAMLError:
+        # 尝试修复常见问题：未引号包裹含冒号的字符串
+        import re
+        fixed_lines = []
+        for line in text.split('\n'):
+            # 修复 "- title: Some Title: With Colon" 类型的问题
+            match = re.match(r'^(\s*-?\s*\w+:\s+)(.+)$', line)
+            if match:
+                prefix, value = match.groups()
+                # 如果值包含冒号且未被引号包裹
+                if ':' in value and not (value.startswith('"') or value.startswith("'")):
+                    value = f'"{value}"'
+                    line = prefix + value
+            fixed_lines.append(line)
+        fixed_text = '\n'.join(fixed_lines)
+        return yaml.safe_load(fixed_text)
 
 
 def validate_output(data, schema):
     """验证输出是否符合 schema。"""
     if not HAS_JSONSCHEMA:
         return True, "jsonschema 未安装，跳过验证"
+
+    # 预处理：修复常见类型问题
+    if isinstance(data, dict):
+        # release_date 应为字符串
+        if "release_date" in data and not isinstance(data["release_date"], str):
+            data["release_date"] = str(data["release_date"])
+        # parameters 应为字符串
+        if "parameters" in data and not isinstance(data["parameters"], str):
+            data["parameters"] = str(data["parameters"])
+
     try:
         validate(instance=data, schema=schema)
         return True, "通过"

@@ -2,19 +2,38 @@ name: 蚂蚁百灵
 company: 蚂蚁集团
 domain: finance
 status: released
-release_date: "2023"
-website: https://www.antgroup.com
-description: "聚焦保险核保、理赔、金融合规场景的金融大模型。"
+name_en: Ling
+description: 蚂蚁百灵（Ling）是蚂蚁集团打造的大语言模型系列，是蚂蚁集团AI战略的核心技术底座。该模型系列包含万亿参数旗舰模型Ling-1T、124B混合推理MoE模型Ling-3.0-flash以及7.9B轻量级模型Ling-3.0-Tiny。其中Ling-3.0-flash采用MoE架构，总参数1240亿，激活参数51亿，兼顾推理能力与效率。百灵大模型在金融服务、多模态感知及智能体构建领域表现强大，服务于支付宝、蚂蚁财富等核心业务。
 capabilities:
-  - 保险核保
-  - 理赔处理
-  - 金融合规
-access: internal-only
-region:
-  - china
-tags:
-  - 保险
-  - 合规
+- 复杂金融咨询理解与合规回答
+- 金融风险评估与辅助决策
+- 信用评估与反欺诈模式识别
+- 金融合同与财报文档理解
+- 投资资讯解读与理财顾问辅助
+- 保险理赔材料智能审核
 references:
-  - title: 蚂蚁集团官网
-    url: "https://www.antgroup.com"
+- title: 蚂蚁集团官方网站
+  url: https://www.antgroup.com
+website: https://www.antgroup.com
+parameters: 124B (Flash), 7.9B (Tiny), 1T (Flagship)
+architecture: Mixture of Experts (MoE)
+tags:
+- 金融大模型
+- 智能体
+- 风险控制
+- 文档理解
+- MoE架构
+- 金融科技
+access: api
+region:
+- china
+- global
+benchmarks:
+- name: SkySense (CVPR 2024)
+  score: Accepted
+  metric: Paper Acceptance
+  description: 20亿参数遥感基础模型，被CVPR 2024接收
+- name: General Industry Benchmarks
+  score: High
+  metric: Rating
+  description: 在多项评测中表现优异，跑分超越同级别开源模型

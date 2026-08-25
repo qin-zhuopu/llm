@@ -1,0 +1,7 @@
+{
+  "task_id": "task-improve-model-data-quality",
+  "task_description": "Improve data quality of all model YAML files by regenerating from MD content using LLM extraction, and deleting garbage files that cannot be improved",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
+  "blocked_reason": null
+}
