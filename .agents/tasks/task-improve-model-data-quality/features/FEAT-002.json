@@ -2,7 +2,7 @@
   "id": "FEAT-002",
   "type": "chore",
   "description": "Delete garbage model files (both .md and .yaml) where the MD content is just scraped navigation/login fragments with no real information, AND research cannot recover useful information. These 11 files have <500 chars of useless content (navigation links, login redirects, irrelevant page fragments).",
-  "status": "pending",
+  "status": "in_progress",
   "steps": [
     "Delete these garbage file pairs (both .yaml and .md) where the MD is just navigation fragments from failed web scrapes:",
     "  - domains/government/baidu-ernie-gov.yaml + .md (236 chars, just a link to Baidu cloud console)",
