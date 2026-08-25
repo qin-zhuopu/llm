@@ -1,0 +1,21 @@
+name: CoCounsel
+company: Thomson Reuters
+domain: legal
+status: released
+release_date: "2023"
+website: https://casetext.com
+description: "Thomson Reuters收购CaseText后推出的法律AI助手，100万+用户，集成Westlaw和Practical Law权威内容。"
+capabilities:
+  - 法律研究
+  - 合同分析
+  - 文书起草
+  - 集成Westlaw权威数据
+access: saas
+region:
+  - global
+tags:
+  - Westlaw
+  - 法律研究
+references:
+  - title: CoCounsel官网
+    url: "https://casetext.com"

@@ -1,0 +1,20 @@
+name: Ericsson AI
+company: 爱立信
+domain: telecom
+status: internal
+release_date: "2024"
+website: https://www.ericsson.com
+description: "网络运维自动化和故障定位AI系统。"
+capabilities:
+  - 网络运维自动化
+  - 故障定位
+  - 网络性能优化
+access: internal-only
+region:
+  - global
+tags:
+  - 网络运维
+  - 故障定位
+references:
+  - title: Ericsson
+    url: "https://www.ericsson.com"

@@ -1,0 +1,21 @@
+name: 通义星尘(电商版)
+name_en: Tongyi Stardust
+company: 阿里巴巴
+domain: retail-ecommerce
+status: released
+release_date: "2023"
+website: https://www.aliyun.com
+description: "面向商家运营、商品描述和营销文案生成的电商专用模型。"
+capabilities:
+  - 商家运营辅助
+  - 商品描述生成
+  - 营销文案创作
+access: api
+region:
+  - china
+tags:
+  - 电商运营
+  - 文案
+references:
+  - title: 阿里云
+    url: "https://www.aliyun.com"

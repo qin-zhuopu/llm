@@ -1,0 +1,19 @@
+name: 丰农AI
+company: 丰农控股
+domain: agriculture
+status: released
+release_date: "2023"
+website: https://www.fengnong.com
+description: "种植方案推荐和产量预测系统。"
+capabilities:
+  - 种植方案推荐
+  - 产量预测
+access: saas
+region:
+  - china
+tags:
+  - 种植
+  - 预测
+references:
+  - title: 丰农控股
+    url: "https://www.fengnong.com"

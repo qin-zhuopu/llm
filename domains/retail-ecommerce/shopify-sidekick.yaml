@@ -1,0 +1,21 @@
+name: Shopify Sidekick
+company: Shopify
+domain: retail-ecommerce
+status: released
+release_date: "2023"
+website: https://www.shopify.com/magic
+description: "商家运营AI助手，直接访问店铺数据，可执行管理操作，无需额外配置。"
+capabilities:
+  - 店铺数据查询
+  - 订单管理
+  - 运营建议
+  - 多语言支持
+access: saas
+region:
+  - global
+tags:
+  - 商家助手
+  - SaaS
+references:
+  - title: Shopify Magic
+    url: "https://www.shopify.com/magic"

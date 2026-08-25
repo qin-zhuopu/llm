@@ -1,0 +1,19 @@
+name: 风乌
+name_en: FengWu
+company: 上海人工智能实验室
+domain: climate-environment
+status: released
+release_date: "2023"
+website: https://www.shlab.org.cn
+description: "高精度全球中期天气预报AI模型。"
+capabilities:
+  - 全球中期天气预报
+  - 高分辨率预测
+access: api
+region:
+  - china
+tags:
+  - 天气预报
+references:
+  - title: 上海人工智能实验室
+    url: "https://www.shlab.org.cn"

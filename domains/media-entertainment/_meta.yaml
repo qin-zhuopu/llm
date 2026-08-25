@@ -1,0 +1,5 @@
+name: 媒体娱乐
+name_en: "Media & Entertainment"
+tier: 3
+description: "内容生产、剧本创作、游戏NPC、新闻摘要"
+market_notes: "内容生成是LLM最大的应用场景之一。"

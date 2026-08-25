@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vertical Industry LLM Model",
+  "description": "Schema for vertical industry closed-source LLM entries",
+  "type": "object",
+  "required": ["name", "company", "domain", "status", "description", "capabilities", "references"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "模型名称",
+      "minLength": 1
+    },
+    "name_en": {
+      "type": "string",
+      "description": "模型英文名称（如果主名称是中文）"
+    },
+    "company": {
+      "type": "string",
+      "description": "开发公司",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "description": "所属垂直领域",
+      "enum": [
+        "finance",
+        "healthcare",
+        "legal",
+        "retail-ecommerce",
+        "education",
+        "automotive",
+        "pharma-biotech",
+        "manufacturing",
+        "telecom",
+        "energy",
+        "government",
+        "construction-realestate",
+        "media-entertainment",
+        "logistics-supplychain",
+        "agriculture",
+        "materials-science",
+        "climate-environment",
+        "aerospace-defense",
+        "human-resources",
+        "accounting-audit"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "模型状态",
+      "enum": ["released", "internal", "research", "deprecated"]
+    },
+    "release_date": {
+      "type": "string",
+      "description": "发布日期 (YYYY 或 YYYY-MM 或 YYYY-MM-DD)",
+      "pattern": "^\\d{4}(-\\d{2})?(-\\d{2})?$"
+    },
+    "website": {
+      "type": "string",
+      "description": "官方网站URL",
+      "format": "uri"
+    },
+    "description": {
+      "type": "string",
+      "description": "模型简介",
+      "minLength": 10
+    },
+    "capabilities": {
+      "type": "array",
+      "description": "核心能力列表",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "description": "标签",
+      "items": {
+        "type": "string"
+      }
+    },
+    "parameters": {
+      "type": "string",
+      "description": "参数量（如 50B, 175B, 未公开）"
+    },
+    "access": {
+      "type": "string",
+      "description": "使用方式",
+      "enum": ["api", "saas", "private-deployment", "internal-only", "unknown"]
+    },
+    "region": {
+      "type": "array",
+      "description": "主要服务地区",
+      "items": {
+        "type": "string",
+        "enum": ["global", "china", "us", "europe", "japan", "korea", "southeast-asia", "middle-east"]
+      }
+    },
+    "references": {
+      "type": "array",
+      "description": "参考链接",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      },
+      "minItems": 1
+    }
+  }
+}

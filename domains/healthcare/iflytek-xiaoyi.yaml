@@ -1,0 +1,20 @@
+name: 讯飞晓医
+company: 科大讯飞
+domain: healthcare
+status: released
+release_date: "2023"
+website: https://www.iflytek.com
+description: "基于星火认知大模型的医疗专用版本，面向医疗问答和辅助诊断。"
+capabilities:
+  - 医疗问答
+  - 辅助诊断
+  - 医学知识库
+access: api
+region:
+  - china
+tags:
+  - 星火大模型
+  - 医疗
+references:
+  - title: 科大讯飞官网
+    url: "https://www.iflytek.com"

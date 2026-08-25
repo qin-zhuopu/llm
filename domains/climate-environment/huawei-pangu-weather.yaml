@@ -1,0 +1,20 @@
+name: 华为盘古-气象
+name_en: Huawei Pangu-Weather
+company: 华为
+domain: climate-environment
+status: released
+release_date: "2023"
+website: https://www.huaweicloud.com/product/pangu.html
+description: "中期天气预报AI模型，精度超过传统数值方法。"
+capabilities:
+  - 中期天气预报
+  - 极端天气预测
+parameters: unknown
+access: api
+region:
+  - global
+tags:
+  - 天气预报
+references:
+  - title: 华为云盘古大模型
+    url: "https://www.huaweicloud.com/product/pangu.html"

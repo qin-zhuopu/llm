@@ -1,0 +1,20 @@
+name: 北森AI
+company: 北森
+domain: human-resources
+status: released
+release_date: "2023"
+website: https://www.beisen.com
+description: "中国HR SaaS平台集成AI，简历解析和面试评估。"
+capabilities:
+  - 简历解析
+  - 面试评估
+  - 人岗匹配
+access: saas
+region:
+  - china
+tags:
+  - HR SaaS
+  - 招聘
+references:
+  - title: 北森
+    url: "https://www.beisen.com"

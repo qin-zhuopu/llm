@@ -1,0 +1,20 @@
+name: 腾讯混元(工业版)
+name_en: Tencent Hunyuan Industrial
+company: 腾讯
+domain: manufacturing
+status: released
+release_date: "2023"
+website: https://cloud.tencent.com
+description: "面向智能制造和供应链优化的工业应用。"
+capabilities:
+  - 智能制造辅助
+  - 供应链优化
+access: api
+region:
+  - china
+tags:
+  - 制造
+  - 供应链
+references:
+  - title: 腾讯云
+    url: "https://cloud.tencent.com"

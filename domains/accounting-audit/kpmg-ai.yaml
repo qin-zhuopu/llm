@@ -1,0 +1,19 @@
+name: KPMG AI
+company: KPMG
+domain: accounting-audit
+status: released
+release_date: "2023"
+website: https://kpmg.com/us/en/ai.html
+description: "与Microsoft合作的审计和税务AI助手。"
+capabilities:
+  - 审计辅助
+  - 税务分析
+access: internal-only
+region:
+  - global
+tags:
+  - 四大
+  - 审计
+references:
+  - title: KPMG AI
+    url: "https://kpmg.com/us/en/ai.html"

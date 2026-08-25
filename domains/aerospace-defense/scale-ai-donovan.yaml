@@ -1,0 +1,20 @@
+name: Scale AI Donovan
+company: Scale AI
+domain: aerospace-defense
+status: released
+release_date: "2023"
+website: https://scale.com/donovan
+description: "国防情报分析和决策支持LLM平台。"
+capabilities:
+  - 国防情报分析
+  - 决策支持
+  - 数据标注
+access: private-deployment
+region:
+  - us
+tags:
+  - 情报分析
+  - 国防
+references:
+  - title: Scale AI Donovan
+    url: "https://scale.com/donovan"

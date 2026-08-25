@@ -1,0 +1,19 @@
+name: Goldman Sachs GS AI
+company: 高盛
+domain: finance
+status: internal
+release_date: "2023"
+website: https://www.goldmansachs.com
+description: "内部开发者工具和交易策略辅助AI系统。"
+capabilities:
+  - 开发者工具辅助
+  - 交易策略分析
+access: internal-only
+region:
+  - global
+tags:
+  - 交易
+  - 内部工具
+references:
+  - title: Goldman Sachs
+    url: "https://www.goldmansachs.com"

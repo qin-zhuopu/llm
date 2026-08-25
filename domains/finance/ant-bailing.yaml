@@ -1,0 +1,20 @@
+name: 蚂蚁百灵
+company: 蚂蚁集团
+domain: finance
+status: released
+release_date: "2023"
+website: https://www.antgroup.com
+description: "聚焦保险核保、理赔、金融合规场景的金融大模型。"
+capabilities:
+  - 保险核保
+  - 理赔处理
+  - 金融合规
+access: internal-only
+region:
+  - china
+tags:
+  - 保险
+  - 合规
+references:
+  - title: 蚂蚁集团官网
+    url: "https://www.antgroup.com"

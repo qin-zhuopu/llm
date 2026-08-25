@@ -1,0 +1,20 @@
+name: 中国电信星河大模型
+name_en: China Telecom Xinghe
+company: 中国电信
+domain: telecom
+status: released
+release_date: "2023"
+website: https://www.chinatelecom.com.cn
+description: "面向政企服务和网络智能运营的大模型。"
+capabilities:
+  - 政企服务
+  - 网络智能运营
+access: internal-only
+region:
+  - china
+tags:
+  - 电信
+  - 政企
+references:
+  - title: 中国电信
+    url: "https://www.chinatelecom.com.cn"

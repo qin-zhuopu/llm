@@ -1,0 +1,20 @@
+name: LinkedIn Hiring AI
+company: LinkedIn (Microsoft)
+domain: human-resources
+status: released
+release_date: "2023"
+website: https://www.linkedin.com
+description: "简历筛选、候选人匹配和招聘文案生成。"
+capabilities:
+  - 简历筛选
+  - 候选人匹配
+  - 招聘文案生成
+access: saas
+region:
+  - global
+tags:
+  - 招聘
+  - 匹配
+references:
+  - title: LinkedIn
+    url: "https://www.linkedin.com"

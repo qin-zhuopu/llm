@@ -1,0 +1,19 @@
+name: GraphCast
+company: Google DeepMind
+domain: climate-environment
+status: released
+release_date: "2023-11"
+website: https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/
+description: "10天天气预报AI模型，精度超过欧洲中期天气预报中心(ECMWF)。"
+capabilities:
+  - 10天全球天气预报
+  - 极端天气事件预测
+access: api
+region:
+  - global
+tags:
+  - 天气预报
+  - 图神经网络
+references:
+  - title: DeepMind GraphCast Blog
+    url: "https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/"

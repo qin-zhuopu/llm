@@ -1,0 +1,5 @@
+name: 能源
+name_en: Energy
+tier: 3
+description: "电力调度、油气勘探、碳排管理、新能源预测"
+market_notes: "能源行业的LLM应用主要集中在运维智能化和资源调度优化。"

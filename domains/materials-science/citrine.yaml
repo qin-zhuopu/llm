@@ -1,0 +1,20 @@
+name: Citrine Platform
+company: Citrine Informatics
+domain: materials-science
+status: released
+release_date: "2022"
+website: https://www.citrine.io
+description: "材料性能预测和配方优化AI平台。"
+capabilities:
+  - 材料性能预测
+  - 配方优化
+  - 实验设计
+access: saas
+region:
+  - global
+tags:
+  - 配方
+  - 优化
+references:
+  - title: Citrine Informatics
+    url: "https://www.citrine.io"

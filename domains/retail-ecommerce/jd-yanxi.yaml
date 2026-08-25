@@ -1,0 +1,21 @@
+name: 京东言犀
+name_en: JD Yanxi
+company: 京东
+domain: retail-ecommerce
+status: released
+release_date: "2023"
+website: https://ai.jd.com
+description: "京东AI大模型，面向电商客服、商品文案生成和供应链调度。"
+capabilities:
+  - 电商智能客服
+  - 商品文案生成
+  - 供应链调度
+access: private-deployment
+region:
+  - china
+tags:
+  - 电商
+  - 客服
+references:
+  - title: 京东AI
+    url: "https://ai.jd.com"

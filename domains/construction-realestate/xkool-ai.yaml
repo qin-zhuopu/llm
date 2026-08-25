@@ -1,0 +1,18 @@
+name: 小库科技 XKool AI
+company: 小库科技
+domain: construction-realestate
+status: released
+release_date: "2023"
+website: https://www.xkool.ai
+description: "建筑设计方案生成和合规审查AI。"
+capabilities:
+  - 建筑方案生成
+  - 合规审查
+access: saas
+region:
+  - china
+tags:
+  - 建筑设计
+references:
+  - title: 小库科技
+    url: "https://www.xkool.ai"

@@ -1,0 +1,21 @@
+name: 华为盘古-矿山
+name_en: Huawei Pangu Mine
+company: 华为
+domain: manufacturing
+status: released
+release_date: "2023"
+website: https://www.huaweicloud.com/product/pangu.html
+description: "华为盘古大模型的矿山行业版本，面向矿山安全监控和生产优化。"
+capabilities:
+  - 矿山安全监控
+  - 生产调度优化
+  - 设备预测维护
+access: private-deployment
+region:
+  - china
+tags:
+  - 矿山
+  - 安全
+references:
+  - title: 华为云盘古大模型
+    url: "https://www.huaweicloud.com/product/pangu.html"

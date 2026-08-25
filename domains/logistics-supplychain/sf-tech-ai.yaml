@@ -1,0 +1,19 @@
+name: 顺丰科技AI
+company: 顺丰
+domain: logistics-supplychain
+status: released
+release_date: "2023"
+website: https://www.sf-tech.com.cn
+description: "快递调度优化和需求预测系统。"
+capabilities:
+  - 快递调度优化
+  - 需求预测
+access: internal-only
+region:
+  - china
+tags:
+  - 快递
+  - 调度
+references:
+  - title: 顺丰科技
+    url: "https://www.sf-tech.com.cn"

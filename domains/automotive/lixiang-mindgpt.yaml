@@ -1,0 +1,20 @@
+name: 理想Mind GPT
+company: 理想汽车
+domain: automotive
+status: released
+release_date: "2023"
+website: https://www.lixiang.com
+description: "座舱多模态交互和驾驶场景理解大模型。"
+capabilities:
+  - 座舱多模态交互
+  - 驾驶场景理解
+  - 语音助手
+access: internal-only
+region:
+  - china
+tags:
+  - 座舱
+  - 多模态
+references:
+  - title: 理想汽车
+    url: "https://www.lixiang.com"

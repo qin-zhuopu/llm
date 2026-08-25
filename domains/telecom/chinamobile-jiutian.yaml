@@ -1,0 +1,21 @@
+name: 中国移动九天大模型
+name_en: China Mobile Jiutian
+company: 中国移动
+domain: telecom
+status: released
+release_date: "2023"
+website: https://www.chinamobile.com
+description: "面向网络运维、智能客服和网络优化的电信大模型。"
+capabilities:
+  - 网络运维自动化
+  - 智能客服
+  - 网络优化
+access: internal-only
+region:
+  - china
+tags:
+  - 电信
+  - 网络运维
+references:
+  - title: 中国移动
+    url: "https://www.chinamobile.com"

@@ -1,0 +1,20 @@
+name: Duolingo Max
+company: Duolingo
+domain: education
+status: released
+release_date: "2023"
+website: https://www.duolingo.com
+description: "语言学习场景的AI对话练习和错误解释功能。"
+capabilities:
+  - AI对话练习
+  - 错误解释
+  - 角色扮演场景
+access: saas
+region:
+  - global
+tags:
+  - 语言学习
+  - 对话
+references:
+  - title: Duolingo
+    url: "https://www.duolingo.com"

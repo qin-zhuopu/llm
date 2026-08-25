@@ -1,0 +1,20 @@
+name: 学而思MathGPT
+company: 好未来
+domain: education
+status: released
+release_date: "2023"
+website: https://www.100tal.com
+description: "数学教育专用大模型，聚焦题目讲解和解题辅导。"
+capabilities:
+  - 数学题目讲解
+  - 解题辅导
+  - 自适应学习
+access: saas
+region:
+  - china
+tags:
+  - 数学
+  - K12
+references:
+  - title: 好未来官网
+    url: "https://www.100tal.com"

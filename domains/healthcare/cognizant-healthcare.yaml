@@ -1,0 +1,19 @@
+name: Cognizant Healthcare LLM
+company: Cognizant
+domain: healthcare
+status: released
+release_date: "2024-06"
+website: https://www.cognizant.com
+description: "基于Google Cloud Vertex AI和Gemini模型的医疗行政流程解决方案。"
+capabilities:
+  - 医疗行政流程自动化
+  - 用户体验增强
+access: saas
+region:
+  - global
+tags:
+  - Google Cloud
+  - 行政流程
+references:
+  - title: Cognizant官网
+    url: "https://www.cognizant.com"

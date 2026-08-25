@@ -1,0 +1,5 @@
+name: 人力资源
+name_en: "Human Resources"
+tier: 4
+description: "简历筛选、人岗匹配、培训内容生成"
+market_notes: "HR领域更多是通用模型在HR场景的微调应用，独立垂直大模型较少。"

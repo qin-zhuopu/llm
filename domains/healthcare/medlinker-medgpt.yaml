@@ -1,0 +1,20 @@
+name: 医联MedGPT
+company: 医联
+domain: healthcare
+status: released
+release_date: "2023"
+website: https://www.medlinker.com
+description: "多科室全流程诊疗大模型，已获NMPA注册，可用于临床辅助决策。"
+capabilities:
+  - 多科室诊疗
+  - 全流程辅助
+  - NMPA认证
+access: saas
+region:
+  - china
+tags:
+  - 诊疗
+  - NMPA
+references:
+  - title: 医联官网
+    url: "https://www.medlinker.com"

@@ -1,0 +1,19 @@
+name: Deloitte AI
+company: Deloitte
+domain: accounting-audit
+status: released
+release_date: "2023"
+website: https://www.deloitte.com
+description: "审计流程自动化和财务分析AI系统。"
+capabilities:
+  - 审计自动化
+  - 财务分析
+access: internal-only
+region:
+  - global
+tags:
+  - 四大
+  - 审计
+references:
+  - title: Deloitte
+    url: "https://www.deloitte.com"

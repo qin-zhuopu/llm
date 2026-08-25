@@ -1,0 +1,5 @@
+name: 金融
+name_en: Finance
+tier: 1
+description: "银行、证券、保险、投研、风控、合规"
+market_notes: "金融是LLM市场中增长最快的垂直行业之一。据Precedence Research报告，金融领域预计将快速扩展。NVIDIA 2026金融服务AI报告调查了800+金融专业人士。"

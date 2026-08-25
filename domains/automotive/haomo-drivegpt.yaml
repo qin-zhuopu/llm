@@ -1,0 +1,20 @@
+name: DriveGPT 雪湖·海若
+name_en: DriveGPT
+company: 毫末智行
+domain: automotive
+status: released
+release_date: "2023"
+website: https://www.haomo.ai
+description: "自动驾驶认知决策大模型，用于驾驶场景理解和决策。"
+capabilities:
+  - 自动驾驶决策
+  - 驾驶场景理解
+access: internal-only
+region:
+  - china
+tags:
+  - 自动驾驶
+  - 决策
+references:
+  - title: 毫末智行
+    url: "https://www.haomo.ai"

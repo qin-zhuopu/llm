@@ -1,0 +1,18 @@
+name: Iktos Makya
+company: Iktos
+domain: pharma-biotech
+status: released
+release_date: "2022"
+website: https://www.iktos.ai
+description: "AI驱动的从头药物设计(de novo design)平台。"
+capabilities:
+  - 从头分子设计
+  - 多目标优化
+access: saas
+region:
+  - europe
+tags:
+  - de novo design
+references:
+  - title: Iktos
+    url: "https://www.iktos.ai"

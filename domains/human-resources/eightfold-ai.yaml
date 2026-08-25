@@ -1,0 +1,20 @@
+name: Eightfold AI
+company: Eightfold
+domain: human-resources
+status: released
+release_date: "2022"
+website: https://eightfold.ai
+description: "人才智能平台，技能匹配和职业路径预测。"
+capabilities:
+  - 人才技能匹配
+  - 职业路径预测
+  - 内部流动推荐
+access: saas
+region:
+  - global
+tags:
+  - 人才智能
+  - 技能匹配
+references:
+  - title: Eightfold AI
+    url: "https://eightfold.ai"

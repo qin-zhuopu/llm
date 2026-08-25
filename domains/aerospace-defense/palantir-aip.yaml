@@ -1,0 +1,20 @@
+name: Palantir AIP
+company: Palantir
+domain: aerospace-defense
+status: released
+release_date: "2023"
+website: https://www.palantir.com/platforms/aip/
+description: "集成LLM的军事和情报分析AI平台，支持决策支持和态势感知。"
+capabilities:
+  - 情报分析
+  - 决策支持
+  - 态势感知
+access: private-deployment
+region:
+  - us
+tags:
+  - 情报
+  - 国防
+references:
+  - title: Palantir AIP
+    url: "https://www.palantir.com/platforms/aip/"

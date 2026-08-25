@@ -1,0 +1,20 @@
+name: 通义法睿
+company: 阿里达摩院
+domain: legal
+status: released
+release_date: "2023"
+website: https://damo.alibaba.com
+description: "中文法律大模型，面向司法和合规场景。"
+capabilities:
+  - 司法辅助
+  - 合规检查
+  - 法律问答
+access: api
+region:
+  - china
+tags:
+  - 司法
+  - 合规
+references:
+  - title: 达摩院官网
+    url: "https://damo.alibaba.com"

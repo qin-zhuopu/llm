@@ -1,0 +1,21 @@
+name: 网易有道子曰
+name_en: Youdao Ziyue
+company: 网易有道
+domain: education
+status: released
+release_date: "2023"
+website: https://www.youdao.com
+description: "教育场景大模型，覆盖翻译、作文批改和口语练习。"
+capabilities:
+  - 翻译
+  - 作文批改
+  - 口语练习
+access: saas
+region:
+  - china
+tags:
+  - 语言学习
+  - 翻译
+references:
+  - title: 网易有道
+    url: "https://www.youdao.com"

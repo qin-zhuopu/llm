@@ -1,0 +1,20 @@
+name: Jasper
+company: Jasper AI
+domain: media-entertainment
+status: released
+release_date: "2022"
+website: https://www.jasper.ai
+description: "企业级AI内容创作平台，专注营销文案生成。"
+capabilities:
+  - 营销文案生成
+  - 品牌调性适配
+  - 多渠道内容创作
+access: saas
+region:
+  - global
+tags:
+  - 内容创作
+  - 营销
+references:
+  - title: Jasper AI
+    url: "https://www.jasper.ai"

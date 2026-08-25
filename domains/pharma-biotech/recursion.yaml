@@ -1,0 +1,20 @@
+name: Recursion OS
+company: Recursion
+domain: pharma-biotech
+status: released
+release_date: "2021"
+website: https://www.recursion.com
+description: "AI原生药物发现平台，拥有50+ PB专有数据集，每周运行200万实验。已展示相比传统制药平均水平的显著速度和成本优势。"
+capabilities:
+  - 高通量细胞实验
+  - AI药物发现
+  - 生物数据分析
+access: internal-only
+region:
+  - global
+tags:
+  - 高通量
+  - AI原生
+references:
+  - title: Recursion
+    url: "https://www.recursion.com"

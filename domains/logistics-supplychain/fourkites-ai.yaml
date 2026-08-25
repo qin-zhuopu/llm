@@ -1,0 +1,19 @@
+name: FourKites AI
+company: FourKites
+domain: logistics-supplychain
+status: released
+release_date: "2023"
+website: https://www.fourkites.com
+description: "供应链可视化和预测分析平台。"
+capabilities:
+  - 供应链可视化
+  - 运输预测
+access: saas
+region:
+  - global
+tags:
+  - 供应链
+  - 可视化
+references:
+  - title: FourKites
+    url: "https://www.fourkites.com"

@@ -1,0 +1,20 @@
+name: 左手医生GPT
+company: 左手医生
+domain: healthcare
+status: released
+release_date: "2023"
+website: https://www.zuoshouyisheng.com
+description: "中文AI问诊、分诊和健康管理平台。"
+capabilities:
+  - AI问诊
+  - 智能分诊
+  - 健康管理
+access: saas
+region:
+  - china
+tags:
+  - 问诊
+  - 分诊
+references:
+  - title: 左手医生官网
+    url: "https://www.zuoshouyisheng.com"

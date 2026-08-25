@@ -1,0 +1,20 @@
+name: 华佗GPT
+name_en: HuatuoGPT
+company: 多方研究团队
+domain: healthcare
+status: released
+release_date: "2023"
+website: https://github.com/FreedomIntelligence/HuatuoGPT
+description: "中文医疗对话大模型，专注辅助问诊场景。"
+capabilities:
+  - 中文医疗对话
+  - 辅助问诊
+access: api
+region:
+  - china
+tags:
+  - 中文医疗
+  - 问诊
+references:
+  - title: HuatuoGPT GitHub
+    url: "https://github.com/FreedomIntelligence/HuatuoGPT"

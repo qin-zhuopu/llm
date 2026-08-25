@@ -1,0 +1,19 @@
+name: Shield AI Hivemind
+company: Shield AI
+domain: aerospace-defense
+status: released
+release_date: "2023"
+website: https://www.shield.ai
+description: "自主无人系统决策AI，用于无人机群协同。"
+capabilities:
+  - 无人系统自主决策
+  - 无人机群协同
+access: private-deployment
+region:
+  - us
+tags:
+  - 无人机
+  - 自主决策
+references:
+  - title: Shield AI
+    url: "https://www.shield.ai"

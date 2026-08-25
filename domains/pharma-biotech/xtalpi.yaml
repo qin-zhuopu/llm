@@ -1,0 +1,22 @@
+name: XtalPi Science
+company: 晶泰科技
+domain: pharma-biotech
+status: released
+release_date: "2023"
+website: https://www.xtalpi.com/en
+description: "200+垂直领域AI模型驱动分子发现，结合Agentic AI和实验室自动化机器人，实现干湿实验闭环迭代。"
+capabilities:
+  - AI分子设计
+  - 晶体结构预测
+  - 实验室自动化
+  - 干湿实验闭环
+access: saas
+region:
+  - global
+  - china
+tags:
+  - 分子发现
+  - 自动化
+references:
+  - title: XtalPi官网
+    url: "https://www.xtalpi.com/en"

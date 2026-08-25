@@ -1,0 +1,20 @@
+name: Hippocratic AI
+company: Hippocratic
+domain: healthcare
+status: released
+release_date: "2023"
+website: https://www.hippocratic.ai
+description: "专注于护理、患者教育等非诊断医疗场景的LLM。"
+capabilities:
+  - 患者教育
+  - 护理辅助
+  - 非诊断场景沟通
+access: saas
+region:
+  - us
+tags:
+  - 护理
+  - 患者沟通
+references:
+  - title: Hippocratic AI官网
+    url: "https://www.hippocratic.ai"

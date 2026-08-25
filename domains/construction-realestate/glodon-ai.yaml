@@ -1,0 +1,20 @@
+name: 广联达建筑AI
+company: 广联达
+domain: construction-realestate
+status: released
+release_date: "2023"
+website: https://www.glodon.com
+description: "建筑造价、BIM协同和工程知识问答系统。"
+capabilities:
+  - 造价估算
+  - BIM协同
+  - 工程知识问答
+access: saas
+region:
+  - china
+tags:
+  - BIM
+  - 造价
+references:
+  - title: 广联达
+    url: "https://www.glodon.com"

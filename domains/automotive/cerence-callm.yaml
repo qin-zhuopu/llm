@@ -1,0 +1,21 @@
+name: Cerence CaLLM
+company: Cerence AI
+domain: automotive
+status: released
+release_date: "2025-01"
+website: https://www.cerence.com
+description: "汽车语音AI大模型家族，与NVIDIA合作优化性能和降低成本。包括云端CaLLM和嵌入式CaLLM Edge。"
+capabilities:
+  - 车载语音交互
+  - 多语言支持
+  - 嵌入式推理
+access: private-deployment
+region:
+  - global
+tags:
+  - 车载
+  - 语音
+  - NVIDIA
+references:
+  - title: Cerence AI
+    url: "https://www.cerence.com"

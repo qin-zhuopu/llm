@@ -1,0 +1,19 @@
+name: Baker Hughes AI
+company: Baker Hughes
+domain: energy
+status: released
+release_date: "2023"
+website: https://www.bakerhughes.com
+description: "与C3.ai合作的油气勘探优化和设备预测性维护系统。"
+capabilities:
+  - 油气勘探优化
+  - 设备预测性维护
+access: saas
+region:
+  - global
+tags:
+  - 油气
+  - 预测维护
+references:
+  - title: Baker Hughes
+    url: "https://www.bakerhughes.com"

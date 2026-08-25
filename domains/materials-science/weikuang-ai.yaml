@@ -1,0 +1,19 @@
+name: 微矿智云
+company: 中科院合作方
+domain: materials-science
+status: research
+release_date: "2023"
+website: https://www.cas.cn
+description: "矿物材料性能预测和筛选AI系统。"
+capabilities:
+  - 矿物材料性能预测
+  - 材料筛选
+access: unknown
+region:
+  - china
+tags:
+  - 矿物
+  - 材料筛选
+references:
+  - title: 中国科学院
+    url: "https://www.cas.cn"

@@ -1,0 +1,19 @@
+name: Autodesk AI
+company: Autodesk
+domain: construction-realestate
+status: released
+release_date: "2024"
+website: https://www.autodesk.com
+description: "建筑设计辅助AI，集成于Revit等设计工具。"
+capabilities:
+  - 设计辅助
+  - Revit集成
+access: saas
+region:
+  - global
+tags:
+  - CAD
+  - 设计
+references:
+  - title: Autodesk
+    url: "https://www.autodesk.com"

@@ -1,0 +1,20 @@
+name: Wayve LINGO
+company: Wayve
+domain: automotive
+status: research
+release_date: "2023"
+website: https://www.wayve.ai
+description: "自动驾驶场景理解和决策的多模态大语言模型。"
+capabilities:
+  - 驾驶场景自然语言理解
+  - 多模态感知
+  - 决策解释
+access: internal-only
+region:
+  - europe
+tags:
+  - 自动驾驶
+  - 多模态
+references:
+  - title: Wayve
+    url: "https://www.wayve.ai"

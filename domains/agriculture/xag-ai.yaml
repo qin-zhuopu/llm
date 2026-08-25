@@ -1,0 +1,20 @@
+name: 极飞科技AI
+name_en: XAG AI
+company: 极飞科技
+domain: agriculture
+status: released
+release_date: "2023"
+website: https://www.xa.com
+description: "农业病虫害诊断和精准施药方案AI。"
+capabilities:
+  - 病虫害诊断
+  - 精准施药方案
+access: saas
+region:
+  - china
+tags:
+  - 农业
+  - 病虫害
+references:
+  - title: 极飞科技
+    url: "https://www.xa.com"

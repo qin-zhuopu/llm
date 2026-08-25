@@ -1,0 +1,19 @@
+name: ChatLaw
+company: 北京大学
+domain: legal
+status: released
+release_date: "2023"
+website: https://chatlaw.cloud
+description: "北大开发的中文法律咨询大模型，部分闭源商用版本。"
+capabilities:
+  - 法律咨询
+  - 案例分析
+access: api
+region:
+  - china
+tags:
+  - 法律咨询
+  - 学术
+references:
+  - title: ChatLaw
+    url: "https://chatlaw.cloud"

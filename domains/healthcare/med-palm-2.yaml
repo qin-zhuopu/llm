@@ -1,0 +1,21 @@
+name: Med-PaLM 2
+company: Google DeepMind
+domain: healthcare
+status: research
+release_date: "2023-05"
+website: https://health.google
+description: "医学问答达到专家级水平，在MedQA数据集上达到86.5%准确率，医生在9个临床效用维度中8个更偏好Med-PaLM 2的回答。"
+capabilities:
+  - 医学问答（USMLE级别）
+  - 临床辅助决策
+  - 消费者健康问题回答
+parameters: unknown
+access: api
+region:
+  - global
+tags:
+  - 医学问答
+  - 临床决策
+references:
+  - title: Med-PaLM 2论文
+    url: "https://arxiv.org/abs/2305.09617"

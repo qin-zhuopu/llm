@@ -1,0 +1,22 @@
+name: Chemistry42 / Medicine42
+company: Insilico Medicine
+domain: pharma-biotech
+status: released
+release_date: "2022"
+website: https://www.insilico.com
+description: "药物分子生成和靶点发现平台，多个AI发现的药物已进入临床阶段(Phase I-III)。2024年被评为全球最具创新力的生物技术公司。"
+capabilities:
+  - 药物分子生成
+  - 靶点发现
+  - 疾病建模
+  - 临床试验预测
+parameters: unknown
+access: saas
+region:
+  - global
+tags:
+  - 药物发现
+  - 分子生成
+references:
+  - title: Insilico Medicine
+    url: "https://www.insilico.com"

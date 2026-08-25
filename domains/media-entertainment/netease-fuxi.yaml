@@ -1,0 +1,21 @@
+name: 网易伏羲
+name_en: NetEase Fuxi
+company: 网易
+domain: media-entertainment
+status: released
+release_date: "2023"
+website: https://fuxi.163.com
+description: "游戏AI系统，NPC对话生成和游戏内容生成。"
+capabilities:
+  - NPC对话生成
+  - 游戏内容生成
+  - 智能NPC行为
+access: internal-only
+region:
+  - china
+tags:
+  - 游戏AI
+  - NPC
+references:
+  - title: 网易伏羲
+    url: "https://fuxi.163.com"

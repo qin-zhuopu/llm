@@ -1,0 +1,20 @@
+name: Khanmigo
+company: Khan Academy
+domain: education
+status: released
+release_date: "2023"
+website: https://www.khanacademy.org/khan-labs
+description: "与OpenAI合作开发的自适应辅导AI，采用苏格拉底式教学法。"
+capabilities:
+  - 自适应辅导
+  - 苏格拉底式教学
+  - 多学科支持
+access: saas
+region:
+  - global
+tags:
+  - 自适应学习
+  - 辅导
+references:
+  - title: Khan Academy Labs
+    url: "https://www.khanacademy.org/khan-labs"

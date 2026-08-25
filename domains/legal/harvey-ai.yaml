@@ -1,0 +1,21 @@
+name: Harvey AI
+company: Harvey
+domain: legal
+status: released
+release_date: "2022"
+website: https://www.harvey.ai
+description: "红杉资本投资的法律AI平台，为顶级律所定制LLM。2400+法律组织使用，75+ AmLaw 100律所，覆盖70+国家。"
+capabilities:
+  - 合同审查
+  - 法律研究
+  - 诉讼支持
+  - 法律文书起草
+access: saas
+region:
+  - global
+tags:
+  - 律所
+  - 合同
+references:
+  - title: Harvey AI官网
+    url: "https://www.harvey.ai"

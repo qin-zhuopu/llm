@@ -1,0 +1,5 @@
+name: 汽车出行
+name_en: Automotive
+tier: 2
+description: "自动驾驶决策、座舱交互、交通规划"
+market_notes: "多模态大语言模型在自动驾驶中展现巨大潜力。Cerence于2025年宣布与NVIDIA扩大合作增强CaLLM能力。"

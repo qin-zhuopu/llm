@@ -1,0 +1,21 @@
+name: 菜鸟物流AI
+name_en: Cainiao AI
+company: 菜鸟
+domain: logistics-supplychain
+status: released
+release_date: "2023"
+website: https://www.cainiao.com
+description: "物流路线优化、仓储管理和包裹分拣AI。"
+capabilities:
+  - 路线优化
+  - 仓储管理
+  - 包裹分拣
+access: internal-only
+region:
+  - china
+tags:
+  - 物流
+  - 路线优化
+references:
+  - title: 菜鸟
+    url: "https://www.cainiao.com"

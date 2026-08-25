@@ -1,0 +1,20 @@
+name: Amazon Rufus
+company: Amazon
+domain: retail-ecommerce
+status: released
+release_date: "2024"
+website: https://www.amazon.com
+description: "电商购物AI助手，帮助消费者搜索商品和做出购买决策。"
+capabilities:
+  - 商品搜索辅助
+  - 购买决策支持
+  - 商品比较
+access: saas
+region:
+  - global
+tags:
+  - 购物助手
+  - 消费者
+references:
+  - title: Amazon
+    url: "https://www.amazon.com"

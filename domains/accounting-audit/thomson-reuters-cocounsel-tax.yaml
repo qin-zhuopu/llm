@@ -1,0 +1,20 @@
+name: CoCounsel (Tax & Audit)
+company: Thomson Reuters
+domain: accounting-audit
+status: released
+release_date: "2023"
+website: https://casetext.com
+description: "CoCounsel同时覆盖法律、税务和审计场景，集成Checkpoint税务数据库。"
+capabilities:
+  - 税务研究
+  - 审计辅助
+  - 合规检查
+access: saas
+region:
+  - global
+tags:
+  - 税务
+  - 审计
+references:
+  - title: CoCounsel
+    url: "https://casetext.com"

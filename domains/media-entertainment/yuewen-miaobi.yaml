@@ -1,0 +1,21 @@
+name: 阅文妙笔
+name_en: Yuewen Miaobi
+company: 阅文集团
+domain: media-entertainment
+status: released
+release_date: "2023"
+website: https://www.yuewen.com
+description: "网络文学辅助创作和剧情生成AI。"
+capabilities:
+  - 网文辅助创作
+  - 剧情生成
+  - 角色对话
+access: saas
+region:
+  - china
+tags:
+  - 网文
+  - 创作
+references:
+  - title: 阅文集团
+    url: "https://www.yuewen.com"
