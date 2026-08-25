@@ -1,0 +1,88 @@
+# 示例：BloombergGPT 完整填写（展示新 schema 所有字段的理想状态）
+
+name: BloombergGPT
+company: Bloomberg
+domain: finance
+status: released
+release_date: "2023-03"
+website: https://www.bloomberg.com
+description: "Bloomberg 开发的 500 亿参数金融领域专用大语言模型。使用 363B token 金融数据（财报、新闻、SEC 文件）+ 345B token 通用数据训练，在金融 NLP 任务上显著优于同规模通用模型（平均高 8-10 个百分点），同时保持较好的通用语言能力。"
+
+parameters: "50.6B"
+architecture: "decoder-only transformer (BLOOM variant)"
+base_model: "BLOOM architecture"
+
+training:
+  stages:
+    - name: pre-training
+      description: "混合金融+通用数据联合预训练"
+      data_tokens: "708B (363B financial + 345B general)"
+      hardware: "512x A100 40G"
+      duration: "53 days"
+  total_tokens: "708B"
+  total_cost: "$2.7M-$10M"
+  context_length: "2048"
+
+tech_stack:
+  framework: "Megatron-LM + DeepSpeed ZeRO"
+  techniques:
+    - ALiBi positional encoding
+    - Tokenizer with financial vocabulary
+    - Mixed-domain training schedule
+
+datasets:
+  - name: FinPile
+    description: "Bloomberg 内部金融数据集（新闻、SEC 文件、财报、研报、社交媒体金融讨论）"
+    size: "363B tokens"
+    type: pre-training
+  - name: "通用语料（The Pile 等）"
+    description: "公开的通用预训练数据"
+    size: "345B tokens"
+    type: pre-training
+
+benchmarks:
+  - name: FPB (Financial PhraseBank)
+    score: 75.1
+    metric: F1
+    split: test
+    comparison: "vs GPT-NeoX: 54.2"
+  - name: FiQA Sentiment
+    score: 81.2
+    metric: F1
+    split: test
+  - name: ConvFinQA
+    score: 43.4
+    metric: accuracy
+    split: test
+    comparison: "vs GPT-NeoX: 28.6"
+  - name: MMLU
+    score: 64.4
+    metric: accuracy
+    split: 5-shot
+
+api:
+  available: false
+
+capabilities:
+  - 金融命名实体识别(NER)
+  - 金融情感分析
+  - 金融问答(ConvFinQA)
+  - 新闻分类与摘要
+  - 金融文本生成
+  - 数字推理(financial numeracy)
+
+tags:
+  - 金融NLP
+  - 情感分析
+  - 领域预训练
+  - 50B参数
+
+access: internal-only
+region:
+  - global
+
+references:
+  - title: "BloombergGPT: A Large Language Model for Finance (arXiv)"
+    url: "https://arxiv.org/abs/2303.17564"
+  - title: "Bloomberg 官方公告"
+    url: "https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/"

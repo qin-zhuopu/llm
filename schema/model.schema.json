@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Vertical Industry LLM Model",
-  "description": "Schema for vertical industry closed-source LLM entries, aligned with HuggingFace model card metadata where applicable",
+  "description": "垂直业务领域大语言模型结构化数据，侧重训练过程、技术栈、数据集、评测和 API 接入",
   "type": "object",
   "required": ["name", "company", "domain", "status", "description", "capabilities", "references"],
   "additionalProperties": false,
@@ -63,32 +63,222 @@
     },
     "description": {
       "type": "string",
-      "description": "模型简介",
-      "minLength": 10
+      "description": "模型简介（应包含核心定位、参数量、差异化特点）",
+      "minLength": 30
+    },
+    "parameters": {
+      "type": "string",
+      "description": "参数量（如 50B, 175B, 7B x MoE, 未公开）"
+    },
+    "architecture": {
+      "type": "string",
+      "description": "模型架构（如 decoder-only transformer, encoder-decoder, MoE, diffusion）"
+    },
+    "base_model": {
+      "description": "基座模型，微调/继续训练的起点",
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "单个基座模型（如 LLaMA-2-70B, GPT-4, BLOOM）"
+        },
+        {
+          "type": "array",
+          "description": "多个基座模型（merge 场景）",
+          "items": { "type": "string" }
+        }
+      ]
+    },
+    "training": {
+      "type": "object",
+      "description": "训练过程详情",
+      "properties": {
+        "stages": {
+          "type": "array",
+          "description": "训练阶段列表（按时序排列）",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "阶段名称",
+                "enum": [
+                  "pre-training",
+                  "continual-pre-training",
+                  "sft",
+                  "rlhf",
+                  "dpo",
+                  "rlaif",
+                  "distillation",
+                  "quantization",
+                  "fine-tuning",
+                  "post-training",
+                  "other"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "description": "该阶段的具体说明"
+              },
+              "data_tokens": {
+                "type": "string",
+                "description": "该阶段使用的 token 数量（如 363B, 1.5T）"
+              },
+              "hardware": {
+                "type": "string",
+                "description": "训练硬件（如 512x A100 80G, 2048x H100）"
+              },
+              "duration": {
+                "type": "string",
+                "description": "训练时长（如 53 days, 2 months）"
+              }
+            }
+          }
+        },
+        "total_tokens": {
+          "type": "string",
+          "description": "总训练 token 数"
+        },
+        "total_cost": {
+          "type": "string",
+          "description": "训练总成本估计（如 $2.7M-$10M）"
+        },
+        "context_length": {
+          "type": "string",
+          "description": "上下文窗口长度（如 4K, 32K, 128K）"
+        }
+      }
+    },
+    "tech_stack": {
+      "type": "object",
+      "description": "技术栈",
+      "properties": {
+        "framework": {
+          "type": "string",
+          "description": "训练框架（如 Megatron-LM, DeepSpeed, JAX/Flax, PyTorch FSDP）"
+        },
+        "inference": {
+          "type": "string",
+          "description": "推理框架（如 vLLM, TensorRT-LLM, TGI, triton）"
+        },
+        "techniques": {
+          "type": "array",
+          "description": "关键技术（如 Flash Attention, RoPE, GQA, MoE, speculative decoding）",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "datasets": {
+      "type": "array",
+      "description": "训练数据集列表",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "数据集名称"
+          },
+          "description": {
+            "type": "string",
+            "description": "数据集说明"
+          },
+          "size": {
+            "type": "string",
+            "description": "数据量（如 363B tokens, 10M samples, 2TB）"
+          },
+          "type": {
+            "type": "string",
+            "description": "数据集用途",
+            "enum": ["pre-training", "sft", "rlhf", "evaluation", "other"]
+          }
+        }
+      }
+    },
+    "benchmarks": {
+      "type": "array",
+      "description": "评测结果（测试集 + 打分）",
+      "items": {
+        "type": "object",
+        "required": ["name", "score"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "测试集/评测基准名称（如 MedQA, FinBench, MMLU, HumanEval）"
+          },
+          "score": {
+            "description": "得分",
+            "oneOf": [
+              { "type": "number" },
+              { "type": "string" }
+            ]
+          },
+          "metric": {
+            "type": "string",
+            "description": "评测指标（如 accuracy, F1, BLEU, pass@1）"
+          },
+          "split": {
+            "type": "string",
+            "description": "数据分割（如 test, dev, 5-shot）"
+          },
+          "comparison": {
+            "type": "string",
+            "description": "与基线对比（如 vs GPT-4: 86.5% vs 87.0%）"
+          }
+        }
+      }
+    },
+    "api": {
+      "type": "object",
+      "description": "API 接入信息",
+      "properties": {
+        "available": {
+          "type": "boolean",
+          "description": "是否提供 API"
+        },
+        "documentation": {
+          "type": "string",
+          "description": "API 文档链接",
+          "format": "uri"
+        },
+        "endpoint": {
+          "type": "string",
+          "description": "API 端点地址（如 https://api.example.com/v1/chat）"
+        },
+        "protocol": {
+          "type": "string",
+          "description": "API 协议类型",
+          "enum": ["openai-compatible", "rest", "grpc", "graphql", "websocket", "proprietary", "other"]
+        },
+        "pricing": {
+          "type": "string",
+          "description": "定价信息（如 $0.01/1K tokens, 按月订阅, 联系销售）"
+        },
+        "rate_limit": {
+          "type": "string",
+          "description": "速率限制（如 60 RPM, 100K TPM）"
+        },
+        "auth_method": {
+          "type": "string",
+          "description": "认证方式（如 API Key, OAuth2, 企业认证）"
+        }
+      }
     },
     "capabilities": {
       "type": "array",
       "description": "核心能力列表",
-      "items": {
-        "type": "string"
-      },
+      "items": { "type": "string" },
       "minItems": 1
     },
     "tags": {
       "type": "array",
-      "description": "标签（同 HuggingFace tags 字段，自由标签用于搜索和分类）",
-      "items": {
-        "type": "string"
-      }
-    },
-    "parameters": {
-      "type": "string",
-      "description": "参数量（如 50B, 175B, 未公开）"
+      "description": "标签（用于搜索和分类）",
+      "items": { "type": "string" }
     },
     "access": {
       "type": "string",
       "description": "使用方式",
-      "enum": ["api", "saas", "private-deployment", "internal-only", "unknown"]
+      "enum": ["api", "saas", "private-deployment", "open-weights", "internal-only", "unknown"]
     },
     "region": {
       "type": "array",
@@ -98,222 +288,9 @@
         "enum": ["global", "china", "us", "europe", "japan", "korea", "southeast-asia", "middle-east"]
       }
     },
-    "language": {
-      "type": "array",
-      "description": "模型支持的语言，使用 ISO 639-1 代码（同 HuggingFace language 字段）",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z]{2,3}(-[A-Za-z]{2,4})?$"
-      }
-    },
-    "license": {
-      "type": "string",
-      "description": "许可证标识符（同 HuggingFace license 字段），闭源模型通常为 proprietary 或 other",
-      "enum": [
-        "proprietary",
-        "other",
-        "unknown",
-        "apache-2.0",
-        "mit",
-        "gpl-3.0",
-        "cc-by-4.0",
-        "cc-by-nc-4.0",
-        "cc-by-sa-4.0",
-        "cc-by-nc-sa-4.0",
-        "cc-by-nc-nd-4.0",
-        "llama2",
-        "llama3",
-        "llama3.1",
-        "llama3.2",
-        "llama3.3",
-        "llama4",
-        "openrail",
-        "bigscience-openrail-m",
-        "bigcode-openrail-m",
-        "deepfloyd-if-license",
-        "gemma"
-      ]
-    },
-    "license_name": {
-      "type": "string",
-      "description": "自定义许可证名称（当 license 为 other 时使用，同 HuggingFace license_name 字段）"
-    },
-    "license_link": {
-      "type": "string",
-      "description": "许可证链接（当 license 为 other 时使用，同 HuggingFace license_link 字段）",
-      "format": "uri"
-    },
-    "pipeline_tag": {
-      "type": "string",
-      "description": "模型任务类型（同 HuggingFace pipeline_tag 字段，表示模型主要用途）",
-      "enum": [
-        "text-generation",
-        "text-classification",
-        "token-classification",
-        "question-answering",
-        "summarization",
-        "translation",
-        "fill-mask",
-        "feature-extraction",
-        "sentence-similarity",
-        "text-ranking",
-        "image-classification",
-        "image-segmentation",
-        "object-detection",
-        "image-to-text",
-        "image-text-to-text",
-        "text-to-image",
-        "text-to-speech",
-        "automatic-speech-recognition",
-        "audio-classification",
-        "audio-to-audio",
-        "audio-text-to-text",
-        "text-to-video",
-        "image-to-video",
-        "video-text-to-text",
-        "document-question-answering",
-        "visual-question-answering",
-        "zero-shot-classification",
-        "reinforcement-learning",
-        "any-to-any",
-        "other"
-      ]
-    },
-    "base_model": {
-      "description": "基座模型（同 HuggingFace base_model 字段），可以是单个模型标识符或列表",
-      "oneOf": [
-        {
-          "type": "string",
-          "description": "单个基座模型标识符（如 meta-llama/Llama-2-70b 或通用描述如 GPT-4）"
-        },
-        {
-          "type": "array",
-          "description": "多个基座模型（用于 merge 场景）",
-          "items": {
-            "type": "string"
-          }
-        }
-      ]
-    },
-    "datasets": {
-      "type": "array",
-      "description": "训练数据集（同 HuggingFace datasets 字段），可以是 HF dataset id 或自由描述",
-      "items": {
-        "type": "string"
-      }
-    },
-    "model_index": {
-      "type": "array",
-      "description": "结构化评测结果（对齐 HuggingFace model-index 字段）",
-      "items": {
-        "type": "object",
-        "required": ["task", "metrics"],
-        "properties": {
-          "task": {
-            "type": "object",
-            "required": ["type"],
-            "properties": {
-              "type": {
-                "type": "string",
-                "description": "任务类型（如 text-generation, question-answering）"
-              },
-              "name": {
-                "type": "string",
-                "description": "任务名称"
-              }
-            }
-          },
-          "dataset": {
-            "type": "object",
-            "properties": {
-              "type": {
-                "type": "string",
-                "description": "数据集标识符"
-              },
-              "name": {
-                "type": "string",
-                "description": "数据集名称"
-              },
-              "split": {
-                "type": "string",
-                "description": "数据集分割（如 test, validation）"
-              }
-            }
-          },
-          "metrics": {
-            "type": "array",
-            "description": "评测指标列表",
-            "items": {
-              "type": "object",
-              "required": ["type", "value"],
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "description": "指标类型（如 accuracy, f1, bleu）"
-                },
-                "value": {
-                  "description": "指标数值",
-                  "oneOf": [
-                    { "type": "number" },
-                    { "type": "string" }
-                  ]
-                },
-                "name": {
-                  "type": "string",
-                  "description": "指标名称"
-                }
-              }
-            },
-            "minItems": 1
-          },
-          "source": {
-            "type": "object",
-            "description": "评测结果来源",
-            "properties": {
-              "name": {
-                "type": "string",
-                "description": "来源名称"
-              },
-              "url": {
-                "type": "string",
-                "description": "来源链接",
-                "format": "uri"
-              }
-            }
-          }
-        }
-      }
-    },
-    "co2_eq_emissions": {
-      "type": "object",
-      "description": "碳排放信息（同 HuggingFace co2_eq_emissions 字段）",
-      "properties": {
-        "emissions": {
-          "type": "number",
-          "description": "碳排放量（克 CO2）"
-        },
-        "source": {
-          "type": "string",
-          "description": "数据来源"
-        },
-        "training_type": {
-          "type": "string",
-          "description": "训练类型",
-          "enum": ["pre-training", "fine-tuning"]
-        },
-        "geographical_location": {
-          "type": "string",
-          "description": "训练地点"
-        },
-        "hardware_used": {
-          "type": "string",
-          "description": "使用的硬件"
-        }
-      }
-    },
     "references": {
       "type": "array",
-      "description": "参考链接",
+      "description": "参考链接（论文、官网、技术博客等）",
       "items": {
         "type": "object",
         "required": ["title", "url"],
