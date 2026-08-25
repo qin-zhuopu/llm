@@ -8,41 +8,41 @@
 
 | # | 领域 | 说明 |
 |---|------|------|
-| 1 | [金融](domains/finance.md) | 银行、证券、保险、投研、风控、合规 |
-| 2 | [医疗健康](domains/healthcare.md) | 临床辅助、医学影像、药物发现、健康管理 |
-| 3 | [法律](domains/legal.md) | 合同审查、法律研究、诉讼支持、合规 |
+| 1 | [金融](domains/finance/) | 银行、证券、保险、投研、风控、合规 |
+| 2 | [医疗健康](domains/healthcare/) | 临床辅助、医学影像、药物发现、健康管理 |
+| 3 | [法律](domains/legal/) | 合同审查、法律研究、诉讼支持、合规 |
 
 ### Tier 2 — 快速增长、多家厂商布局
 
 | # | 领域 | 说明 |
 |---|------|------|
-| 4 | [电商零售](domains/retail-ecommerce.md) | 客服、选品、商品文案、供应链、推荐 |
-| 5 | [教育](domains/education.md) | K12辅导、自适应学习、语言教学、学术辅助 |
-| 6 | [汽车出行](domains/automotive.md) | 自动驾驶决策、座舱交互、交通规划 |
-| 7 | [药物研发](domains/pharma-biotech.md) | 靶点发现、分子生成、临床试验优化 |
-| 8 | [工业制造](domains/manufacturing.md) | 工业自动化、预测性维护、质量检测、PLC编程 |
+| 4 | [电商零售](domains/retail-ecommerce/) | 客服、选品、商品文案、供应链、推荐 |
+| 5 | [教育](domains/education/) | K12辅导、自适应学习、语言教学、学术辅助 |
+| 6 | [汽车出行](domains/automotive/) | 自动驾驶决策、座舱交互、交通规划 |
+| 7 | [药物研发](domains/pharma-biotech/) | 靶点发现、分子生成、临床试验优化 |
+| 8 | [工业制造](domains/manufacturing/) | 工业自动化、预测性维护、质量检测、PLC编程 |
 
 ### Tier 3 — 有明确场景、已有产品落地
 
 | # | 领域 | 说明 |
 |---|------|------|
-| 9 | [电信](domains/telecom.md) | 网络运维、故障预测、客服、资源调度 |
-| 10 | [能源](domains/energy.md) | 电力调度、油气勘探、碳排管理、新能源预测 |
-| 11 | [政务](domains/government.md) | 政务问答、公文写作、舆情分析、城市大脑 |
-| 12 | [建筑地产](domains/construction-realestate.md) | 建筑设计、BIM协同、造价估算、合规审查 |
-| 13 | [媒体娱乐](domains/media-entertainment.md) | 内容生产、剧本创作、游戏NPC、新闻摘要 |
-| 14 | [物流供应链](domains/logistics-supplychain.md) | 路线优化、仓储管理、需求预测、调度 |
+| 9 | [电信](domains/telecom/) | 网络运维、故障预测、客服、资源调度 |
+| 10 | [能源](domains/energy/) | 电力调度、油气勘探、碳排管理、新能源预测 |
+| 11 | [政务](domains/government/) | 政务问答、公文写作、舆情分析、城市大脑 |
+| 12 | [建筑地产](domains/construction-realestate/) | 建筑设计、BIM协同、造价估算、合规审查 |
+| 13 | [媒体娱乐](domains/media-entertainment/) | 内容生产、剧本创作、游戏NPC、新闻摘要 |
+| 14 | [物流供应链](domains/logistics-supplychain/) | 路线优化、仓储管理、需求预测、调度 |
 
 ### Tier 4 — 新兴/利基、探索阶段
 
 | # | 领域 | 说明 |
 |---|------|------|
-| 15 | [农业](domains/agriculture.md) | 病虫害诊断、种植方案、产量预测、农机调度 |
-| 16 | [材料科学](domains/materials-science.md) | 新材料发现、材料性能预测、配方优化 |
-| 17 | [气象环保](domains/climate-environment.md) | 天气预报、气候建模、环境监测、灾害预警 |
-| 18 | [航空航天与国防](domains/aerospace-defense.md) | 航路规划、卫星遥感、情报分析、装备维护 |
-| 19 | [人力资源](domains/human-resources.md) | 简历筛选、人岗匹配、培训内容生成 |
-| 20 | [会计审计](domains/accounting-audit.md) | 财务审计、税务合规、报表分析 |
+| 15 | [农业](domains/agriculture/) | 病虫害诊断、种植方案、产量预测、农机调度 |
+| 16 | [材料科学](domains/materials-science/) | 新材料发现、材料性能预测、配方优化 |
+| 17 | [气象环保](domains/climate-environment/) | 天气预报、气候建模、环境监测、灾害预警 |
+| 18 | [航空航天与国防](domains/aerospace-defense/) | 航路规划、卫星遥感、情报分析、装备维护 |
+| 19 | [人力资源](domains/human-resources/) | 简历筛选、人岗匹配、培训内容生成 |
+| 20 | [会计审计](domains/accounting-audit/) | 财务审计、税务合规、报表分析 |
 
 ## Tier 分级依据
 
