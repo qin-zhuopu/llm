@@ -1,27 +1,82 @@
-name: Makya
-name_en: Makya
+name: Makya 2.0
+name_en: Makya 2.0
 company: Iktos
 domain: pharma-biotech
 status: released
-release_date: '2022'
-website: https://www.iktos.ai
-description: Makya 是 Iktos 开发的生成式 AI SaaS 平台，专注于药物发现领域的从头药物设计。它采用独特的化学驱动方法，能够设计出多样化、新颖且具有类医药特性的分子。该平台侧重于合成可及性，支持多参数优化并纳入
-  3D 约束，确保分子设计的成功率和可合成性，是 Iktos 自动化实验室 DMTA 循环的起点。
+release_date: "2026"
+website: https://www.iktos.ai/solution/makya
+description: Iktos公司开发的生成式AI药物设计平台Makya 2.0，专注于从头药物设计（de novo drug design），通过生成式AI驱动的分子创新设计，结合Spaya逆合成路径规划和自主机器人实验室，形成完整的DMTA（设计-合成-测试-分析）闭环，将药物发现阶段缩短至2年以内。已与超过60家领先制药、生物科技和学术机构合作。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模化合物与反应数据库进行预训练，学习分子结构、药物化学规律和合成路径知识
+  - name: fine-tuning
+    description: 针对多参数优化（MPO）目标进行微调，包括合成可及性、3D约束、成药性等特定药物设计目标
+  - name: rlhf
+    description: 结合药物化学家反馈进行强化学习优化，确保生成的分子满足实际药物设计需求
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Generative AI for de novo drug design
+  - Multi-Parametric Optimization (MPO)
+  - Retrosynthesis AI (Spaya)
+  - 3D molecular constraints
+  - Machine Learning scoring models
+  - Autonomous DMTA cycle
+  - High-throughput robotic synthesis
+datasets:
+- name: 化合物与反应数据库
+  description: 大规模分子结构、化学反应和合成路径数据，用于训练生成式AI和逆合成模型
+  type: pre-training
+- name: 药物活性数据
+  description: 涵盖PIM1、PKMYT1、PolQ、PD-L1等靶点的化合物活性数据，用于多参数优化
+  type: sft
+- name: 多维生物学影像数据
+  description: 细胞内筛选平台生成的蛋白质-蛋白质相互作用、RNA-蛋白质相互作用等多维生物学数据
+  type: other
+benchmarks:
+- name: 药物发现周期
+  score: "<2年"
+  metric: time_to_discovery
+  comparison: "vs 传统药物发现: 通常需要4-6年，Iktos平台缩短至2年以内"
+- name: 合作项目数量
+  score: "60+"
+  metric: partnerships
+  comparison: "与超过60家领先制药、生物科技和学术机构建立合作"
+- name: 管线进展
+  score: "3个靶点进入先导化合物优化或临床前阶段"
+  metric: pipeline_progress
+  comparison: "MTHFD2（炎症免疫）、Amylin Receptor（肥胖代谢）、SKP2-CKS1（肿瘤免疫）"
+api:
+  available: true
+  protocol: rest
+  documentation: https://www.iktos.ai/solution/makya
+  pricing: SaaS订阅制
+  auth_method: 企业认证
 capabilities:
-- 从头药物设计
-- 多参数分子优化
-- 合成可及性分析
-- 基于 3D 约束的设计
-tags:
-- generative-ai
-- drug-design
-- de-novo-design
-- saas
-- chemistry
+- 生成式AI从头药物分子设计，保证合成可及性
+- 多参数优化（MPO）同时优化多个药物性质目标
+- 3D分子约束建模指导分子生成
+- AI逆合成路径规划（Spaya平台）
+- 全自动化机器人合成、纯化和分析
+- 多维细胞内生物学筛选（蛋白质-蛋白质相互作用等）
+- 完整DMTA闭环加速药物发现
+- 支持API集成至Agentic工作流和计算化学管线
 access:
 - saas
+- api
+tags:
+- generative-chemistry
+- drug-discovery
+- de-novo-design
+- retrosynthesis
+- autonomous-lab
+- DMTA
+- multi-parametric-optimization
 references:
-- title: Makya Product Page
-  url: https://www.iktos.ai/solution/makya
 - title: Iktos Official Website
   url: https://www.iktos.ai
+- title: Makya 2.0 Product Page
+  url: https://www.iktos.ai/solution/makya

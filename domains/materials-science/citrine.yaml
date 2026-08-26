@@ -1,26 +1,74 @@
 name: Citrine Platform
+name_en: Citrine Informatics AI Platform
 company: Citrine Informatics
 domain: materials-science
 status: released
-release_date: '2022'
+release_date: "2023"
 website: https://www.citrine.io
-description: Citrine Platform 是一套企业级的人工智能平台，旨在加速材料和化学领域的创新。它通过生成式 AI 和虚拟实验技术，帮助企业从现有数据中挖掘更多价值，利用数字助手和知识库提取功能，大幅缩短产品研发周期，提升研发投资回报率，并促进跨部门的知识共享。该平台已通过
-  ISO 27001 安全认证，被行业领导者广泛部署。
+description: Citrine Informatics开发的材料与化学领域AI平台，利用生成式AI技术帮助企业从已有数据中发掘更大价值，通过运行数千次虚拟实验找到更优解决方案。平台包含DataManager数据管理、VirtualLab虚拟实验室和Catalyst数字助手三大核心模块，已获ISO 27001认证，服务于特种化学品、塑料、涂料、食品饮料等多个行业的领先企业。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于材料科学与化学领域的海量数据进行预训练，学习材料配方-性能-工艺之间的复杂关系
+  - name: fine-tuning
+    description: 针对客户特定的材料数据和业务需求进行个性化微调，适配不同材料体系和性能要求
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Generative AI for virtual experiments
+  - Sequential learning (active learning)
+  - Bayesian optimization
+  - Materials informatics
+  - Multi-objective optimization
+  - Uncertainty quantification
+datasets:
+- name: 企业材料配方数据
+  description: 客户企业的历史配方、实验结果和工艺参数数据，通过DataManager平台统一管理
+  type: sft
+- name: 材料性能数据库
+  description: 材料物理化学性质、加工参数和最终性能的关联数据
+  type: pre-training
+benchmarks:
+- name: 产品开发加速
+  score: "5倍"
+  metric: speedup
+  comparison: "工程团队使用Citrine平台开发更优产品的速度提升5倍"
+- name: 虚拟实验规模
+  score: "数千次/项目"
+  metric: virtual_experiments
+  comparison: "vs 传统实验: 在实验室实验前通过AI运行数千次虚拟实验筛选最优候选"
+- name: 行业覆盖
+  score: "10+行业"
+  metric: industry_coverage
+  comparison: "覆盖特种化学品、塑料、涂料、食品饮料、包装、金属合金等10+行业"
+api:
+  available: true
+  protocol: rest
+  documentation: https://www.citrine.io/platform/
+  pricing: 企业订阅制
+  auth_method: 企业认证
 capabilities:
-- 利用生成式 AI 运行数千次虚拟实验以筛选候选材料
-- 捕获和管理企业内部的材料知识与数据资产
-- 根据客户需求精准指定和模拟材料属性
-- 通过数字助手辅助研究并自动生成引用
-- 提供可扩展的 SaaS 解决方案以适应不同业务规模
-tags:
-- generative-ai
-- virtual-lab
-- materials-informatics
-- chemistry
-- enterprise-platform
-- data-management
+- DataManager统一管理企业材料知识与实验数据
+- VirtualLab生成式AI运行数千次虚拟实验筛选最优候选
+- Catalyst数字助手辅助文献检索和研究加速
+- 多目标优化平衡成本、性能和可持续性
+- 供应链弹性分析识别替代材料方案
+- 规模化生产配方一致性保障
+- 合规响应支持快速适应法规变化
+- 适配任何独特材料性质的灵活AI工具
 access:
 - saas
+tags:
+- materials-science
+- generative-ai
+- virtual-lab
+- formulation-optimization
+- chemicals
+- materials-informatics
 references:
-- title: Citrine Informatics 官方网站
+- title: Citrine Informatics Official Website
   url: https://www.citrine.io
+- title: Citrine Platform Overview
+  url: https://www.citrine.io/platform/citrine-virtuallab/

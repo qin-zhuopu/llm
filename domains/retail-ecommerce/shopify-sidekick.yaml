@@ -1,31 +1,79 @@
 name: Shopify Sidekick
+name_en: Shopify Sidekick
 company: Shopify
 domain: retail-ecommerce
 status: released
-description: Sidekick 是一款专为 Shopify 商家打造的 AI 商务专家助手，无缝集成至 Shopify 管理后台。它能够深度访问商家的业务数据（包括库存、订单、支付表现及
-  ShopifyQL 数据），并通过自然语言处理完成从店铺设计、产品文案撰写、图片编辑到营销策略制定的全链路任务。作为懂业务、可执行的 AI 工具，它区别于通用大模型，能够直接在后台执行操作、填写表单并提供多语言支持，旨在降低运营门槛并提升电商销售效率。
+release_date: 2023-07
+website: https://www.shopify.com/magic
+description: Shopify推出的AI电商助手Sidekick，集成于Shopify管理后台，作为商家的一站式AI专家团队，涵盖店铺设计、产品图片编辑、文案撰写、技术支持和营销推广等核心功能。Sidekick直接访问商家的Shopify数据，理解电商业务工作流，能够在后台执行实际操作，部分客户实现填充周期缩短33%。随所有Shopify计划免费提供。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于Shopify电商平台的海量商家数据、产品信息、运营最佳实践等进行领域微调
+  - name: rlhf
+    description: 结合商家使用反馈和电商运营专家评估进行强化学习优化，持续提升商业建议质量
+  - name: post-training
+    description: 持续更新训练以支持新功能，如创建客户和公司、支付与网站性能数据查询、ShopifyQL写入等
+tech_stack:
+  framework: PyTorch
+  inference: OpenAI API + Shopify自有推理基础设施
+  techniques:
+  - RAG (检索增强生成)
+  - Function calling
+  - ShopifyQL query generation
+  - Multi-turn conversation
+  - Real-time store data access
+  - Tool use (admin actions)
+datasets:
+- name: Shopify商家运营数据
+  description: 数百万商家的店铺配置、产品信息、销售数据和运营模式
+  type: sft
+- name: 电商最佳实践知识库
+  description: Shopify平台的帮助文档、商业指南、SEO策略和营销模板
+  type: sft
+benchmarks:
+- name: 商家采用率
+  score: "数百万商家"
+  metric: user_count
+  comparison: "集成于全球数百万Shopify商家的管理后台"
+- name: 多语言支持
+  score: 多语言
+  metric: language_coverage
+  comparison: "支持商家以任何语言提问，适配店铺语言设置"
+- name: 功能更新频率
+  score: "月度更新"
+  metric: update_frequency
+  comparison: "2025-2026年持续新增客户创建、支付数据查询、全屏模式等功能"
+api:
+  available: true
+  protocol: proprietary
+  pricing: 随Shopify计划免费提供，功能按计划等级差异化
+  auth_method: Shopify账户认证
 capabilities:
-- 智能店铺设计与主题定制
-- SEO 产品文案撰写与营销内容生成
-- 商品照片自动编辑与工作室级升级
-- 库存管理与智能补货预警
-- 价格策略分析与销售优化
-- ShopifyQL 数据查询与业绩分析
-- 客户创建与表单自动填写
-- 多语言实时客服与技术支持
-references:
-- title: Shopify Sidekick Official Landing Page
-  url: https://www.shopify.com/sidekick
-- title: Shopify Magic Features Overview
-  url: https://www.shopify.com/magic
-website: https://www.shopify.com/sidekick
-release_date: '2025'
+- AI驱动的店铺设计与主题定制
+- 产品照片AI编辑和背景生成
+- SEO优化的产品描述和营销文案生成
+- 基于ShopifyQL的业务数据查询和分析
+- 智能定价策略分析与优化建议
+- 社交媒体内容和邮件营销自动生成
+- 库存监控与低库存预警
+- 产品集合智能组织与管理
+- 配送配置审计与优化
+- 折扣和促销活动设置辅助
 access:
 - saas
 tags:
-- 电商助手
-- saas集成
-- ai运营
-- shopify生态
-- 数据分析
-- 多模态
+- ecommerce
+- shopify
+- ai-assistant
+- store-management
+- content-generation
+- business-analytics
+references:
+- title: Shopify Sidekick Official Page
+  url: https://www.shopify.com/magic
+- title: Shopify Sidekick Updates Blog
+  url: https://www.shopify.com/blog

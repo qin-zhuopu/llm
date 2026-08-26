@@ -1,25 +1,68 @@
 name: Goldman Sachs GS AI
+name_en: Goldman Sachs GS AI
 company: Goldman Sachs
 domain: finance
 status: released
-release_date: '2023'
+release_date: "2024"
 website: https://www.goldmansachs.com
-description: 高盛（Goldman Sachs）的金融人工智能解决方案，利用世界级的人才资本和专业知识解决客户最复杂的挑战。该模型深度融合了全球银行与市场、资产与财富管理领域的垂直数据，能够提供宏观经济分析、信用市场策略及投资组合管理等核心服务，具备处理复杂金融逻辑和生成深度市场洞察的能力。
+description: 高盛内部开发的企业级AI系统，服务于全球银行与市场、资产与财富管理、平台解决方案等核心业务线。该系统融合AI与生成式AI能力，支撑投资研究、全球市场分析、交易策略、风险管理和客户服务等关键金融场景，为高盛46000余名员工提供智能决策辅助。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于海量金融市场数据、经济研究报告、交易记录等进行预训练
+  - name: fine-tuning
+    description: 针对投资银行、FICC与股票交易、资产管理、私人银行等具体金融业务场景进行微调
+  - name: rlhf
+    description: 结合高盛金融分析师和交易员的专业反馈进行强化学习优化
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - RAG (检索增强生成)
+  - 金融知识图谱
+  - 实时市场数据集成
+  - 多模态分析
+datasets:
+- name: Goldman Sachs Research Reports
+  description: 高盛全球投资研究部门产出的宏观经济、行业与个股研究报告
+  type: pre-training
+- name: 金融市场交易数据
+  description: 全球股票、固定收益、货币和大宗商品等市场的历史交易数据
+  type: pre-training
+- name: 客户交互数据
+  description: 与全球客户的业务交互记录，用于优化客户服务与推荐
+  type: sft
+benchmarks:
+- name: 客户满意度评分
+  score: "95%+"
+  metric: top_rating_percentage
+  comparison: "95%+客户在'最佳人才'和'专业能力'方面给予最高评分"
+- name: 研究报告覆盖
+  score: 全球覆盖
+  metric: coverage
+  comparison: "覆盖宏观经济、市场、AI、替代投资、IPO与M&A等多个主题"
+api:
+  available: false
 capabilities:
-- 宏观经济分析与市场洞察
-- 信用市场策略与风险评估
-- 投资银行与交易辅助决策
-- 资产与财富管理咨询
-tags:
-- finance
-- investment-banking
-- asset-management
-- market-analysis
-- institutional-knowledge
+- 全球宏观经济与市场分析研究
+- 投资银行业务的AI辅助决策
+- FICC和股票交易策略智能支持
+- 资产与财富管理的个性化投资建议
+- 交易银行业务的风险评估与合规监控
+- 基于Marquee平台的量化交易与市场数据服务
+- AI驱动的信贷市场分析与债务定价
 access:
 - internal-only
+tags:
+- investment-banking
+- trading
+- wealth-management
+- market-research
+- risk-management
+- fintech
 references:
 - title: Goldman Sachs Official Website
   url: https://www.goldmansachs.com
-- title: Marquee Platform
-  url: https://marquee.gs.com/welcome/
+- title: Goldman Sachs AI Insights
+  url: https://www.goldmansachs.com/insights/artificial-intelligence

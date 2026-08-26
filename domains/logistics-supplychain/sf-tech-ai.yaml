@@ -1,26 +1,81 @@
-name: 顺丰垂直域大模型
-name_en: SF Vertical Domain Large Model
+name: 顺丰科技AI大模型
+name_en: SF Tech AI
 company: 顺丰科技
 domain: logistics-supplychain
 status: released
-release_date: '2023'
+release_date: "2024"
 website: https://www.sf-tech.com.cn
-description: 顺丰科技基于对物流与供应链场景的深度理解和行业头部公司的数智化实战经验，构建了覆盖自然语言处理、多模态交互、智能决策等的垂域大模型体系。该模型依托行业领先的技术，深度赋能物流行业的收、转、运、派、营销、客服等各环节及供应链众多场景，致力于实现从感知智能向认知智能的新跨越。
+description: 顺丰科技基于物流与供应链场景深度理解和行业头部公司数智化实践经验，构建的覆盖自然语言处理、多模态交互、智能决策等能力的行业垂直大模型体系，深度赋能物流行业收、转、运、派、营销、客服等全环节及供应链优化场景，支撑全网亿级运单的规划调度。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于物流与供应链领域的海量业务数据进行预训练，覆盖物流单据、客服对话、供应链文档等多种数据类型
+  - name: fine-tuning
+    description: 针对物流行业收转运派、营销、客服等具体环节进行场景化微调，结合顺丰复杂业务中沉淀的数据与前沿技术探索成果
+  - name: rlhf
+    description: 结合物流业务专家反馈进行强化学习优化，提升模型在实际业务场景中的决策准确性
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - 运筹优化算法
+  - 可分式算法求解超大规模确定性优化问题
+  - 多目标优化
+  - 随机优化
+  - 数字孪生
+  - 隐私计算
+  - 区块链
+  - 大数据中台
+datasets:
+- name: 顺丰物流运单数据
+  description: 全网亿级运单数据，包括寄件、转运、配送全流程信息
+  type: pre-training
+- name: 顺丰客服对话数据
+  description: 物流客服场景的多轮对话数据，覆盖咨询、投诉、查件等场景
+  type: sft
+- name: 供应链优化案例数据
+  description: 供应链规划、调度、预警等场景的历史决策数据
+  type: sft
+benchmarks:
+- name: 物流路径规划准确率
+  score: "95%+"
+  metric: accuracy
+  comparison: "vs 传统规则引擎: 显著提升规划效率与资源利用率"
+- name: 全网运单调度效率
+  score: 亿级/日
+  metric: throughput
+  comparison: "vs 人工调度: 实现全网亿级运单智能规划调度"
+- name: 数字孪生覆盖
+  score: "百余个中转场"
+  metric: coverage
+  comparison: "已应用于百余个中转场与深圳机场货站"
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
+  auth_method: 企业认证
 capabilities:
-- 供应链全流程智能溯源与可信存证
-- 超大规模物流网络智能规划与调度
-- 收转运派全流程智能决策辅助
-- 多模态物流数据处理与交互分析
-- 海量订单预测与资源精准匹配
-- 高度仿真的物流数字孪生与仿真推演
+- 覆盖收转运派全环节的智能决策与调度优化
+- 基于自然语言处理的物流客服智能应答
+- 多模态交互能力支持图片识别、语音交互等
+- 全网亿级运单的智能规划与调度
+- 大规模全局物流网络的预测-规划-预警-调度-反馈闭环
+- 数字孪生驱动的中转场与机场货站仿真优化
+- 隐私计算支撑数据合规的多方联合分析
+- 区块链技术实现全流程溯源与供应链协同
+access:
+- saas
+- private-deployment
 tags:
 - logistics
 - supply-chain
-- optimization
-- decision-making
 - digital-twin
-access:
-- api
+- operations-research
+- last-mile-delivery
+- route-optimization
 references:
-- title: 顺丰科技官方网站
+- title: 顺丰科技官网
   url: https://www.sf-tech.com.cn
+- title: 顺丰科技智慧供应链服务
+  url: https://www.sf-laas.com/

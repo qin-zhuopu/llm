@@ -1,25 +1,85 @@
 name: Recursion OS
+name_en: Recursion OS
 company: Recursion
 domain: pharma-biotech
 status: released
-release_date: '2021'
+release_date: "2024"
 website: https://www.recursion.com
-description: Recursion OS 是一个端到端的 AI 驱动药物发现与开发平台，旨在通过解码生物学从根本上改善生活。该平台利用物理自动化和机器学习模型的闭环系统，每周可运行高达
-  200 万次实验，构建了超过 50 PB 的专有数据集。与传统制药公司平均水平相比，它在从靶点识别到 IND-enabling 研究的速度、效率和成本降低方面表现出显著提升。
+description: Recursion公司开发的AI原生药物发现与开发平台Recursion OS，通过自动化实验室每周运行多达200万次实验构建50+PB专有数据集，结合计算机视觉从细胞图像中训练AI理解疾病生物学，实现从靶点发现到临床前候选药物的端到端AI驱动药物发现，显著降低传统药物发现90%的失败率。管线覆盖肿瘤和罕见病领域，多个项目进入临床阶段。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于50+PB自有专利数据集进行预训练，数据来源于每周200万次自动化细胞实验产生的高通量影像和分子数据
+  - name: continual-pre-training
+    description: 持续从干湿实验闭环中获取新数据进行增量训练，实验室自动化与机器学习模型形成连续学习系统
+  - name: fine-tuning
+    description: 针对特定治疗领域（肿瘤、罕见病）和药物发现阶段（靶点发现、命中物识别、先导物优化）进行专业微调
+tech_stack:
+  framework: PyTorch
+  inference: NVIDIA GPU cluster
+  techniques:
+  - Computer vision on cell images
+  - Lab-in-the-loop continuous learning
+  - Generative de novo chemistry
+  - High-throughput automated experimentation
+  - Phenotypic screening
+  - Multi-omics data integration
+  - Translational clinical tools
+datasets:
+- name: Recursion专有细胞影像数据集
+  description: 每周200万次自动化实验产生的高通量细胞影像数据，累计50+PB
+  size: 50+ PB
+  type: pre-training
+- name: 分子-表型关联数据
+  description: 化合物处理后的细胞表型变化数据，用于训练AI理解生物学空间
+  type: pre-training
+- name: 临床转化数据
+  description: 从临床前到临床阶段的转化研究数据
+  type: sft
+benchmarks:
+- name: 药物发现效率提升
+  score: "显著提升"
+  metric: efficiency_improvement
+  comparison: "vs 传统药物发现: 从命中物识别到IND申报阶段在速度、效率和成本方面均有显著改善"
+- name: 管线进展
+  score: "7+个项目"
+  metric: pipeline_count
+  comparison: "覆盖肿瘤和罕见病，多个项目处于临床1/2期和关键性3期试验阶段"
+- name: 数据生成规模
+  score: "200万次/周"
+  metric: weekly_experiments
+  comparison: "vs 传统药物发现实验室: 实现工业级规模的自动化实验吞吐"
+- name: 战略合作伙伴
+  score: Genentech等
+  metric: partnerships
+  comparison: "与Genentech等行业领导者建立战略合作，解锁神经科学等新靶点"
+api:
+  available: false
 capabilities:
-- '高通量自动化实验: 每周运行 200 万次实验以生成大规模生物数据集'
-- '生物图像分析: 利用细胞图像训练人工智能理解驱动疾病的未知生物空间'
-- '生成式药物设计: 连接生物学与从头化学设计，系统性降低药物发现风险'
-- '临床转化工具: 整合临床数据以加速潜在药物从实验室到临床的转化'
-tags:
-- 高通量
-- ai原生
+- AI驱动的疾病靶点发现与验证
+- 从细胞影像中识别疾病相关的生物学机制
+- 生成式AI驱动的全新分子设计
+- 每周200万次实验的高通量自动化筛选
+- 50+PB专有数据集支撑的精准预测
+- 端到端药物发现与开发平台
+- 从靶点到临床候选药物的全流程AI辅助
+- 合作伙伴协同加速新靶点药物发现
 access:
 - internal-only
+- private-deployment
+tags:
+- drug-discovery
+- phenotypic-screening
+- computer-vision
+- high-throughput
+- lab-in-the-loop
+- ai-native
+- oncology
+- rare-disease
 references:
-- title: Recursion 官方网站
+- title: Recursion Official Website
   url: https://www.recursion.com
-- title: 探索技术平台
+- title: Recursion Technology Platform
   url: https://www.recursion.com/platform
-- title: Recursion 与 Genentech 合作解锁首个神经科学靶点
-  url: https://www.recursion.com/news/unlocking-the-first-neuroscience-target-for-the-recursion-and-genentech-collaboration

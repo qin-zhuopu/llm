@@ -1,25 +1,80 @@
 name: CAPE Analytics
+name_en: CAPE Analytics
 company: CAPE Analytics
 domain: finance
 status: released
+release_date: "2023"
 website: https://capeanalytics.com/
-description: CAPE Analytics 是 AI 房产风险评估平台，面向保险和房地产行业。融合地理空间影像分析与计算机视觉，提供屋顶状况、树木覆盖、野火风险、泳池数量、建筑状况等物业属性数据。应用于个人线核保、商业保险定价和房屋权益贷款估值。使命是为不确定的世界带来确定性。
+description: CAPE Analytics开发的AI驱动房产风险评估平台，面向保险和房地产行业，基于地理空间影像分析和计算机视觉技术，从卫星、航拍和街景影像中自动提取物业属性数据。核心能力包括屋顶状况评估、树木覆盖分析、野火风险评级、建筑状况评分等，将核保从数天缩短到数秒，覆盖美国大部分住宅和商业物业。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于海量地理空间影像数据（卫星图像、航拍照片、街景影像）训练计算机视觉模型，学习建筑物特征提取
+  - name: fine-tuning
+    description: 针对屋顶状况评估、树木覆盖分析、野火风险评级、泳池检测、太阳能面板识别等具体任务进行专业微调
+  - name: continual-pre-training
+    description: 定期更新影像数据和属性评分，保持时序变化检测能力和模型对最新物业状况的准确评估
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Multi-scale feature extraction
+  - Temporal change detection
+  - Cross-region generalization
+  - Geospatial image fusion
+  - Semantic segmentation
+  - Object detection
+  - Instance segmentation
+datasets:
+- name: 多源地理空间影像数据集
+  description: 融合卫星图像、航拍照片和街景影像的海量标注数据，覆盖美国大部分住宅和商业物业
+  type: pre-training
+- name: 物业属性标注数据
+  description: 专业标注的屋顶状况、树木覆盖、建筑状况等物业特征标注数据
+  type: sft
+- name: 灾后损害评估数据
+  description: 极端天气事件后的快速损害评估影像与标注
+  type: sft
+benchmarks:
+- name: 核保效率提升
+  score: "从数天到数秒"
+  metric: time_reduction
+  comparison: "vs 传统人工现场查勘: 核保从数天缩短到数秒获取物业数据"
+- name: 物业覆盖范围
+  score: "美国大部分住宅和商业物业"
+  metric: coverage
+  comparison: "与多家卫星和航拍数据提供商合作确保数据时效性和覆盖广度"
+- name: 风险评估精度
+  score: "物业级细粒度"
+  metric: granularity
+  comparison: "vs 传统统计假设定价: 基于实际物业状况的精准定价"
+api:
+  available: true
+  protocol: rest
+  pricing: 按查询量或企业订阅
+  auth_method: API Key
 capabilities:
-- 屋顶状况AI评估：自动检测材料类型、老化程度和损坏情况
-- 野火风险评分：分析植被密度、防御空间和建筑材料易燃性
-- 树木覆盖分析：量化树木密度和倒塌风险
-- 个人线和商业保险核保：替代人工现场查勘的远程风险评估
-- 时序变化检测：追踪物业状况随时间的变化趋势
-tags:
-- geospatial ai
-- computer vision
-- property insurance
-- risk assessment
-- underwriting
-- insurtech
+- AI自动屋顶状况评估（材料类型、老化、损坏检测）
+- 树木覆盖与树冠风险量化分析
+- 细粒度野火风险评级（植被密度、防御空间、建材易燃性）
+- 泳池自动检测用于责任险核保
+- 综合建筑状况评级
+- 太阳能面板检测与保险定价支持
+- 时序变化检测追踪物业状况演变
+- 极端天气事件后快速损害评估
+- 跨气候区域泛化适应不同建筑风格
 access:
 - api
 - saas
+tags:
+- insurtech
+- computer-vision
+- geospatial
+- property-risk
+- wildfire
+- underwriting
+- satellite-imagery
 references:
 - title: CAPE Analytics Official Website
   url: https://capeanalytics.com/

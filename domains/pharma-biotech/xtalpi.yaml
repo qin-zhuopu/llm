@@ -1,31 +1,84 @@
 name: XtalPi Science
-company: 晶泰科技 (XtalPi)
+name_en: XtalPi Science
+company: 晶泰科技
 domain: pharma-biotech
 status: released
-release_date: '2023'
+release_date: "2024"
 website: https://www.xtalpi.com/en
-description: XtalPi Science 是一个由 200 多个垂直领域 AI 模型驱动的智能代理平台，专注于利用物理 AI 和机器人技术加速分子研发。它通过多智能体系统连接人类科学家与实验室机器人，实现从干湿实验自主迭代到药物发现的全流程自动化，致力于解决药物发现中最具挑战性的问题。
+description: 晶泰科技开发的AI驱动科学发现平台XtalPi Science，通过多智能体（Multi-Agent）架构编排科学AI和物理AI，连接人类科学家与200+垂直领域AI模型以及24/7运行的自主实验室机器人，实现干湿实验的自主闭环迭代，加速分子研发过程的民主化。平台包含Genius Agents智能枢纽、领域AI模型和Physical AI实体实验室机器人三层架构。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于晶泰科技自有的化合物数据和反应数据训练200+垂直领域AI模型，覆盖分子发现的智能实验设计、预测和分析
+  - name: fine-tuning
+    description: 针对XFEP自由能计算、XMolGen生成化学、SureRoute逆合成、XtalGazer晶型预测等具体任务进行专业微调
+  - name: post-training
+    description: Genius Agents后训练，使其能够理解科学意图并编排领域AI模型与物理AI实验室机器人，驱动自主干湿实验迭代
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Multi-Agent orchestration
+  - Agentic AI (Genius Agents)
+  - Physical AI (Embodied Lab Robots)
+  - Free Energy Perturbation (XFEP)
+  - Generative Chemistry (XMolGen)
+  - Retrosynthesis (SureRoute)
+  - Crystal Structure Prediction (XtalGazer CSP)
+  - Dry-wet experimental loop
+  - 24/7 autonomous lab execution
+datasets:
+- name: XtalPi化合物数据库
+  description: 晶泰科技自有的大规模化合物结构、反应和晶型数据，训练200+垂直领域AI模型
+  type: pre-training
+- name: 自主实验室反馈数据
+  description: Physical AI实验室机器人24/7运行产生的实验数据，持续反哺模型训练
+  type: sft
+benchmarks:
+- name: 垂直领域AI模型数量
+  score: "200+"
+  metric: model_count
+  comparison: "覆盖分子发现全流程的智能实验设计、预测和分析"
+- name: SureRoute逆合成准确性
+  score: Hallucination-free
+  metric: hallucination_rate
+  comparison: "vs 传统逆合成工具: 实现无幻觉的自改进逆合成平台"
+- name: 药物发现效率
+  score: "28天发现新颖高活性命中化合物"
+  metric: time_to_hit
+  comparison: "GPX4靶点28天内发现非共价高活性命中物"
+api:
+  available: true
+  protocol: rest
+  documentation: https://www.xtalpi.com/en/technology
+  pricing: 联系销售
+  auth_method: API Key
 capabilities:
-- 科学意图解释与多智能体编排
-- 200+ 垂直领域 AI 模型驱动的智能实验设计
-- 基于专有化合物和反应数据的分子预测
-- 干湿闭环实验自主迭代与数据捕获
-- 高精度自由能计算与逆向合成分析
-tags:
-- agentic-ai
-- physical-ai
-- drug-discovery
-- lab-automation
-- multi-agent
-- generative-chemistry
+- Multi-Agent架构编排科学AI与物理AI实现自主药物发现
+- 200+垂直领域AI模型覆盖分子发现全流程
+- Genius Agents理解科学意图并自主编排干湿实验
+- XFEP高精度自由能计算工具指导先导化合物优化
+- XMolGen生成化学工具探索新化学空间
+- SureRoute无幻觉逆合成路径规划
+- Physical AI实体实验室机器人24/7自主执行实验
+- XtalGazer晶型筛选与预测
+- 专利数据提取工具（XInsight）
 access:
 - saas
+- api
+- private-deployment
+tags:
+- ai4science
+- drug-discovery
+- multi-agent
+- autonomous-lab
+- physical-ai
+- crystal-prediction
+- free-energy-perturbation
+- generative-chemistry
 references:
 - title: XtalPi Official Website
   url: https://www.xtalpi.com/en
-- title: 'SureRoute: Toward a Hallucination-Free Self-Improving Platform for Retrosynthesis'
-  url: https://en.xtalpi.com/sureroute-toward-a-hallucination-free/
-- title: Unlock Faster, Smarter Polymorph Screening with XtalGazer™ CSP
-  url: https://en.xtalpi.com/unlock-faster-smarter-polymorph-screening-with-xtalgazer-csp/
-- title: Unlock Faster, More Accurate Drug Discovery with XFEP
-  url: https://en.xtalpi.com/unlock-faster-more-accurate-drug-discovery-with-xfep/
+- title: XtalPi Technology Platform
+  url: https://www.xtalpi.com/en/technology

@@ -1,25 +1,77 @@
 name: Harvey AI
+name_en: Harvey AI
 company: Harvey
 domain: legal
 status: released
-release_date: '2022'
+release_date: "2023"
 website: https://www.harvey.ai
-description: 专为法律行业打造的生成式人工智能平台，基于前沿LLM技术，支持律所和企业法务团队处理高难度法律事务。通过智能代理编排复杂法律工作流程，集成合同智能分析、法律研究及文档洞察功能。已获得SOC2
-  II、ISO 27001等企业级安全认证，服务全球70多个国家的2400多家法律组织，拥有20万以上专业用户，是法律领域应用最成功的AI技术之一。
+description: Harvey是面向顶尖律所和企业法务团队的前沿法律AI平台，已获2400+法律组织信任用于处理高风险法律工作。平台提供Harvey II新一代智能体引擎、Agents工作编排、Spaces协作空间、Vault文档管理、Contract Intelligence合同智能和Command Center使用分析等产品矩阵，支持律师团队在统一平台上安全高效地完成复杂法律任务。平均每月为用户节省25+小时。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于海量法律文档、案例法、法规和合同数据进行专业微调，深度理解法律术语、推理模式和文件格式
+  - name: rlhf
+    description: 结合律师和法律专业人员的反馈进行强化学习优化，确保法律分析的准确性和专业性
+  - name: post-training
+    description: Harvey II代升级训练，使智能体能够处理更复杂的法律工作并精准匹配用户偏好风格
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Agentic AI with task routing
+  - RAG (检索增强生成)
+  - Ethical walls and governance
+  - Contract intelligence pipeline
+  - ShopifyQL-like legal query language
+  - SOC2 II / ISO 27001 / ISO 42001 compliance
+datasets:
+- name: 法律文档数据集
+  description: 涵盖案例法、法规、法律意见、合同模板等专业法律文档
+  type: sft
+- name: 律师工作反馈数据
+  description: 来自2400+法律组织、200000+法律专业人员的使用反馈
+  type: rlhf
+benchmarks:
+- name: 用户采用规模
+  score: "2400+"
+  metric: organizations
+  comparison: "覆盖75+ AmLaw 100律所，在70+国家使用"
+- name: 月均节省时间
+  score: "25+"
+  metric: hours_saved_monthly
+  comparison: "平均每位用户每月节省25+小时"
+- name: 专业用户数
+  score: "200000+"
+  metric: active_users
+  comparison: "超过20万法律专业人员在日常工作中使用Harvey"
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅制
+  auth_method: SAML SSO
 capabilities:
-- 智能代理编排：自动将复杂法律任务路由至最合适的代理进行处理
-- 合同智能分析：加速日常审查流程，优化谈判策略并提供全组合洞察
-- 法律研究平台：利用前沿模型探索法律方法，支持复杂法律问题的精准导航
-- 协同工作空间：提供符合法律治理和伦理墙要求的共享工作环境
-- 文档洞察管理：在安全存储库中组织数千份文档，通过单一查询提取关键信息
-tags:
-- legal-ai
-- contract-analysis
-- legal-research
-- enterprise-security
-- agents
+- Harvey II新一代智能体处理复杂法律任务并匹配用户风格
+- Agents自动化编排将任务路由至最合适的AI代理
+- Spaces安全协作空间支持律所、客户和联合律师团队
+- Vault文档库支持千级文档的单次查询洞察提取
+- Contract Intelligence加速合同审查、强化谈判并发现组合洞察
+- Command Center全面追踪AI使用情况并对标同类机构
+- 企业级安全控制（SOC2 II、ISO 27001、ISO 42001、GDPR、CCPA）
+- 支持审计日志、IP白名单和数据生命周期管理
 access:
 - saas
+- private-deployment
+tags:
+- legal-ai
+- law-firm
+- contract-intelligence
+- agentic
+- compliance
+- enterprise-security
 references:
 - title: Harvey AI Official Website
   url: https://www.harvey.ai
+- title: Harvey AI Platform Overview
+  url: https://www.harvey.ai/en-US/platform/agents

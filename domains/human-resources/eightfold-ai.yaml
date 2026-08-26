@@ -1,31 +1,82 @@
 name: Eightfold AI
+name_en: Eightfold AI Talent Intelligence
 company: Eightfold
 domain: human-resources
 status: released
-release_date: '2022'
+release_date: "2024"
 website: https://eightfold.ai
-description: 基于16亿职业轨迹和160万技能数据构建的AI原生人才智能平台，2026年HR Tech大奖Agentic AI解决方案获奖者。提供AI面试官、候选人Agent等产品，支持高峰招聘场景下最快1.3天完成岗位填充，部分客户招聘周期缩短33%。通过ISO/IEC
-  42001认证和FedRAMP Moderate授权。
-capabilities:
-- AI面试官自动面试与候选人评估
-- 基于16亿职业轨迹的人才技能匹配
-- 高峰量招聘场景快速筛选(500+申请者)
-- 职业路径预测与内部人才流动推荐
-- TalentForge自定义HR应用构建平台
-- 第三方偏见审计的负责任AI
+description: Eightfold AI开发的AI原生人才智能平台，基于16亿职业轨迹和160万技能的专有数据训练，为企业提供覆盖招聘、员工发展和劳动力规划的全方位AI智能决策系统。2026年获得HR Tech突破大奖的Agentic AI人力资源解决方案年度奖，通过AI Interviewer和Candidate Agent等Talent Agents实现高效人才管理，部分客户将岗位填充时间缩短33%。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于16亿职业轨迹和160万技能标签的专有大规模数据集进行预训练，学习人才匹配、技能推断和职业发展模式
+  - name: fine-tuning
+    description: 针对招聘、高量级岗位筛选、面试评估和劳动力规划等具体HR场景进行微调
+  - name: rlhf
+    description: 结合招聘人员和HR专家反馈进行强化学习优化，确保推荐的公平性和准确性
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Deep learning talent matching
+  - Skill inference from career trajectories
+  - Agentic AI (Talent Agents)
+  - AI Interviewer (automated candidate evaluation)
+  - Bias detection and mitigation
+  - ISO/IEC 42001 AI governance
+  - FedRAMP Moderate authorization
+datasets:
+- name: Eightfold专有职业轨迹数据
+  description: 16亿职业轨迹数据，涵盖全球人才市场的技能、角色和职业发展路径
+  size: 1.6B profiles
+  type: pre-training
+- name: 技能分类体系
+  description: 160万技能标签的层次化技能分类体系
+  size: 1.6M skills
+  type: pre-training
+benchmarks:
+- name: 岗位填充时间缩短
+  score: "33%"
+  metric: time_to_fill_reduction
+  comparison: "部分客户将岗位填充时间缩短33%"
+- name: 高量级岗位填充速度
+  score: "1.3天"
+  metric: days_to_fill
+  comparison: "部分客户在高量级时薪岗位实现最快1.3天填充"
+- name: 数据覆盖
+  score: "16亿"
+  metric: profile_coverage
+  comparison: "vs 竞品: 16亿职业轨迹和160万技能的专有数据是其他解决方案无法匹配的"
 api:
   available: true
-  protocol: proprietary
+  protocol: rest
+  documentation: https://eightfold.ai/products/
+  pricing: 企业订阅制
+  auth_method: SAML SSO
+capabilities:
+- AI Talent Agents自主执行招聘全流程任务
+- AI Interviewer全天候自动面试评估候选人
+- Candidate Agent引导候选人完成申请流程
+- 基于16亿职业轨迹的深度人才匹配
+- 高量级时薪岗位的快速批量筛选与填充
+- TalentForge平台支持HR团队自建定制应用
+- ISO/IEC 42001认证的负责任AI治理
+- FedRAMP Moderate认证的联邦级数据安全
+- 独立第三方偏差审计确保公平性
 access:
 - saas
+- private-deployment
 tags:
-- 人才智能
-- ai招聘
-- agentic ai
-- 技能匹配
-- hr科技
+- talent-intelligence
+- agentic-ai
+- ai-interviewer
+- recruitment
+- workforce-planning
+- responsible-ai
+- fedramp
 references:
-- title: Eightfold AI官网
+- title: Eightfold AI Official Website
   url: https://eightfold.ai
-- title: Eightfold AI获评2026年Agentic AI HR解决方案年度奖
-  url: https://eightfold.ai/company/press/press-releases/eightfold-ai-named-agentic-ai-hr-solution-of-the-year-in-2026-hr-tech-breakthrough-awards-program/
+- title: Eightfold AI Talent Agents
+  url: https://eightfold.ai/products/talent-agents/

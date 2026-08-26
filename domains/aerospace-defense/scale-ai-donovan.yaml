@@ -1,27 +1,90 @@
 name: Scale AI Donovan
+name_en: Scale AI Donovan
 company: Scale AI
 domain: aerospace-defense
 status: released
-release_date: '2023'
+release_date: "2024"
 website: https://scale.com/donovan
-description: Donovan 是一个专门为关键任务设计的人工智能代理平台，旨在通过 'Agent Arsenal' 和 'Agent Factory'
-  为作战人员提供从概念到战斗的快速部署能力。该平台采用 Agentic RAG 架构，具备本地化、云和 API 数据摄取能力，支持构建知识库（如 GDELT 事件数据、国防部政策文件）并集成外部工具。Donovan
-  强调安全性、可追溯性和模型无关性（支持 Llama 3.3 70B Instruct 等多种模型），可在分类和隔离网络（如 GovCloud）上运行，以实现情报分析、威胁监控和行动报告的自动化。
+description: Scale AI开发的军事和国防领域AI Agent部署平台Donovan，支持在保密和断网环境中快速定制、评估和部署任务级AI智能体。基于无代码Agent Factory，集成多种前沿模型（如Defense Llama、Gemma、Llama 3.3等），为作战人员提供从概念到战场的快速AI能力部署，获得DISA IL4和FedRAMP High认证。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model:
+- Llama 3.3 70B Instruct
+- Scale Gemma 7B Instruct
+- Llama 3.1 70B Instruct
+- Defense Llama
+training:
+  stages:
+  - name: fine-tuning
+    description: Scale AI核心能力之一是模型微调，针对用户具体用例定制模型，或利用预训练的Defense Llama等国防专用模型
+  - name: post-training
+    description: 通过Agent Factory的无代码界面配置Agent指令、知识库和工具连接，实现任务级定制而无需重新训练
+tech_stack:
+  framework: Kubernetes containerized platform
+  techniques:
+  - No-code Agent Factory
+  - Agentic RAG
+  - Model comparison and evaluation
+  - Data flywheel (持续改进)
+  - Guardrails and Red-teaming
+  - Multi-model support (模型无关)
+  - Traceability and reasoning chains
+  - GDELT data connectors
+datasets:
+- name: GDELT全球事件数据
+  description: 全球实时事件监测数据，用于情报分析和威胁监控
+  type: other
+- name: DoD政策文档库
+  description: 美国国防部政策文档知识库
+  type: other
+- name: 战区行动数据库
+  description: 军事战区作战行动数据库
+  type: other
+benchmarks:
+- name: 模型事实准确性
+  score: 0.91
+  metric: factual_accuracy
+  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.91 vs 0.81"
+- name: 幻觉率
+  score: 0.14
+  metric: hallucination_rate
+  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.14 vs 0.24（越低越好）"
+- name: 上下文召回率
+  score: 0.79
+  metric: context_recall
+  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.79 vs 0.71"
+- name: P95延迟
+  score: "2.1s"
+  metric: latency_p95
+  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 2.1s vs 1.4s（精度与延迟权衡）"
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售（政府与国防合同定价）
+  auth_method: 企业认证
 capabilities:
-- Agentic RAG 与知识库构建：支持通过本地上传、API 及连接器（如 GDELT）摄取数据，构建包含事件数据、政策文档等的高质量知识库。
-- 任务定制化代理开发：通过无代码界面，利用 SGP 集成快速定制和部署具备特定角色（如军事情报分析师）的 AI 代理。
-- 多模态情报分析与检索：进行全球事件多工具分析、非结构化文本位置提取、炮兵能力分析及详尽的行动报告生成。
-- 模型评估与比对：内置测试框架，支持对不同模型（如 Llama 3.1 70B vs Scale Gemma 7B）进行真实性、幻觉率和上下文召回等指标的严格评测。
-- 分级网络安全部署：获得 DISA IL4 和 FedRAMP High 授权，支持在分类网络、隔离网络及 Kubernetes 容器化平台上的云原生部署。
-tags:
-- military-ai
-- agent-platform
-- rag
-- intelligence-analysis
-- govcloud
-- llm-ops
+- 无代码Agent Factory快速构建和定制任务级AI智能体
+- 多模型对比评估确定最佳任务适配模型
+- Agent Arsenal提供预优化的任务关键型AI智能体库
+- 支持保密网络和断网（air-gapped）环境部署
+- Agentic RAG实现多源数据的智能检索与分析
+- 数据飞轮持续改进模型性能
+- 完整推理链路的可追溯性
+- Guardrails与红队测试确保AI安全
+- DISA IL4和FedRAMP High安全认证
 access:
+- saas
 - private-deployment
+tags:
+- defense
+- military-ai
+- agentic
+- classified-networks
+- fedramp
+- intelligence-analysis
+- model-evaluation
 references:
-- title: Scale AI Donovan Official Website
+- title: Scale AI Donovan Platform
   url: https://scale.com/donovan
+- title: Scale AI Defense Solutions
+  url: https://scale.com/government

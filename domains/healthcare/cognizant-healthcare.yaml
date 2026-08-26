@@ -1,26 +1,69 @@
-name: Cognizant Healthcare LLM
+name: Cognizant Healthcare AI
+name_en: Cognizant Healthcare AI
 company: Cognizant
 domain: healthcare
 status: released
-release_date: 2024-06
+release_date: "2024"
 website: https://www.cognizant.com
-description: Cognizant 推出的医疗领域大语言模型，旨在通过 AI 技术弥合从技术到影响力的差距。该模型作为企业级 AI 构建方案的一部分，专注于帮助医疗机构实现技术现代化、流程重塑及体验转型。它致力于通过连接物理
-  AI 系统与代理式 AI，构建单一机构级思维，帮助企业消除 AI 执行差距，释放生产力并提升运营效率，从而在快速变化的医疗环境中保持领先。
+description: Cognizant作为企业级AI Builder，为医疗健康行业提供端到端的AI解决方案，帮助医疗机构现代化技术栈、重塑业务流程和转型用户体验。结合物理AI系统与Agentic AI创建统一的机构智能平台，支持医疗组织弥合AI执行差距，实现从概念到业务价值的落地。Frontier Engineers项目助力释放4.5万亿美元的AI机会。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于医疗行业特定数据进行微调，包括临床文档、医疗流程、合规规则等，使AI系统深度理解医疗业务场景
+  - name: post-training
+    description: 部署后持续学习优化，结合客户特定数据和反馈不断提升模型在具体医疗场景中的表现
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - Agentic AI
+  - Physical AI systems
+  - Enterprise AI Builder platform
+  - Cloud transformation
+  - RAG (检索增强生成)
+  - Context engineering
+datasets:
+- name: 医疗行业流程数据
+  description: 医疗机构的业务流程、临床工作流和运营数据
+  type: sft
+- name: 合规与监管知识库
+  description: 医疗行业法规、合规要求和质量标准文档
+  type: sft
+benchmarks:
+- name: AI执行差距缩小
+  score: "20亿美元业务提升"
+  metric: business_impact
+  comparison: "vs 未采用AI的企业: 拥有成熟技术基础设施和聚焦AI投资的企业获得显著竞争优势"
+- name: AI部署成功率
+  score: "领先1/3企业"
+  metric: deployment_success
+  comparison: "vs 行业平均: 2/3领导者尚未展示可衡量的AI生产力收益，1/4已暂停或放弃部署"
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售（企业定制定价）
+  auth_method: 企业认证
 capabilities:
-- 医疗技术基础设施现代化
-- 智能流程重塑与优化
-- 患者体验数字化变革
-- 连接物理系统与代理式 AI
-- 提升企业生产力与运营效率
-tags:
-- google cloud
-- 行政流程
+- 物理AI系统与Agentic AI的统一机构智能平台
+- 医疗技术栈现代化与云迁移
+- AI驱动的临床流程优化与行政负担减轻
+- 企业级AI应用开发与部署
+- 医疗数据治理与合规AI保障
+- Frontier Engineers驱动的新一代AI运营能力
+- 可追溯的AI决策链路与治理框架
 access:
 - saas
+- private-deployment
+tags:
+- healthcare-ai
+- agentic-ai
+- enterprise-ai
+- digital-transformation
+- physical-ai
+- process-automation
 references:
 - title: Cognizant Official Website
   url: https://www.cognizant.com
-- title: Enterprise Physical AI Autonomy
-  url: https://www.cognizant.com/us/en/services/enterprise-physical-ai-autonomy
-- title: Closing the AI execution gap insights
-  url: https://www.cognizant.com/us/en/insights/insights-blog/closing-the-enterprise-ai-gap
+- title: Cognizant Enterprise AI Builder
+  url: https://www.cognizant.com/us/en/enterprise-ai-builder

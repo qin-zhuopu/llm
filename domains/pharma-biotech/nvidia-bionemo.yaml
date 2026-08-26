@@ -1,23 +1,86 @@
 name: BioNeMo
+name_en: NVIDIA BioNeMo
 company: NVIDIA
 domain: pharma-biotech
 status: released
-release_date: '2023'
+release_date: 2023-03
 website: https://www.nvidia.com/en-us/clara/bionemo/
-description: NVIDIA BioNeMo 是一个专为生物制药领域设计的生成式 AI 平台和服务套件。它为药物发现、基因组学、蛋白质工程等生命科学应用提供了加速计算和预训练模型，帮助企业加速新药研发和生物数据分析。
+description: NVIDIA开发的生物分子AI平台BioNeMo，基于NVIDIA Clara框架构建，为药物发现和基因组学领域提供预训练的大规模生物分子语言模型。平台包含多个针对蛋白质结构预测、分子生成、虚拟筛选等任务的专业模型，支持研究人员通过云服务或本地部署加速药物发现工作流。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模蛋白质序列、分子SMILES、基因组数据等生物分子数据上进行预训练，学习生物分子结构与功能的通用表示
+  - name: fine-tuning
+    description: 针对蛋白质结构预测、分子性质预测、虚拟筛选、分子生成等下游任务进行专业微调
+  - name: continual-pre-training
+    description: 持续整合新的生物分子数据进行增量训练，保持模型对最新生物学知识的覆盖
+tech_stack:
+  framework: Megatron-LM + NeMo Framework
+  inference: TensorRT-LLM / NVIDIA Triton
+  techniques:
+  - Transformer for protein sequences
+  - Molecular language model (SMILES/SELFIES)
+  - 3D structure prediction
+  - Diffusion models for molecular generation
+  - Multi-GPU distributed training
+  - Mixed precision training (FP16/BF16)
+datasets:
+- name: UniProt蛋白质序列数据库
+  description: 全球最大的蛋白质序列与功能注释数据库
+  type: pre-training
+- name: PDB蛋白质结构数据库
+  description: 实验解析的蛋白质三维结构数据
+  type: pre-training
+- name: 分子SMILES数据
+  description: 大规模化合物SMILES表示数据，用于训练分子语言模型
+  type: pre-training
+- name: 基因组序列数据
+  description: 大规模基因组和转录组序列数据
+  type: pre-training
+benchmarks:
+- name: 蛋白质结构预测精度
+  score: "接近AlphaFold2水平"
+  metric: TM-score
+  comparison: "vs AlphaFold2: 在蛋白质结构预测任务上接近最先进水平"
+- name: 分子生成多样性
+  score: "高"
+  metric: diversity
+  comparison: "vs 传统分子生成方法: 生成分子具有更高的化学多样性和成药性"
+- name: 训练加速比
+  score: "显著加速"
+  metric: speedup
+  comparison: "vs 单GPU训练: 利用多GPU分布式训练实现数十倍加速"
+api:
+  available: true
+  endpoint: https://api.ngc.nvidia.com
+  protocol: rest
+  documentation: https://docs.nvidia.com/bionemo/
+  pricing: NVIDIA AI Enterprise订阅 + NGC免费层
+  auth_method: API Key
 capabilities:
-- 药物分子生成与优化
-- 蛋白质结构预测与设计
-- 基因组学数据分析
-- 生物分子相互作用预测
-tags:
-- generative ai
-- drug discovery
-- life sciences
-- protein design
-- genomics
+- 蛋白质序列到结构的AI预测
+- 基于生物分子语言模型的分子生成与优化
+- 虚拟高通量筛选加速药物先导化合物发现
+- 蛋白质-配体相互作用预测
+- 基因组序列分析与变异功能预测
+- 多GPU分布式训练框架支持自定义模型训练
+- 云端与本地灵活部署
 access:
+- api
 - saas
+- private-deployment
+tags:
+- drug-discovery
+- protein-structure
+- molecular-generation
+- genomics
+- nvidia-clara
+- megatron
+- bioinformatics
 references:
-- title: BioNeMo 官方主页
+- title: NVIDIA BioNeMo Platform
   url: https://www.nvidia.com/en-us/clara/bionemo/
+- title: NVIDIA BioNeMo Documentation
+  url: https://docs.nvidia.com/bionemo/

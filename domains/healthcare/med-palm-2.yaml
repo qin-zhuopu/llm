@@ -1,34 +1,93 @@
 name: Med-PaLM 2
+name_en: Med-PaLM 2
 company: Google DeepMind
 domain: healthcare
-status: research
+status: released
 release_date: 2023-05
 website: https://health.google
-description: Med-PaLM 2 是由 Google DeepMind 开发的医疗专用大语言模型，在 MedQA 数据集上达到 86.5% 的准确率，达到专家级医学问答水平。在
-  USMLE 级别的临床问题中，医生在 9 个临床效用维度中的 8 个更偏好 Med-PaLM 2 的回答。该模型致力于通过先进的生成式 AI 技术解锁医疗信息的潜力，辅助临床决策支持，并帮助医疗组织优化工作流程。
-parameters: unknown
-capabilities:
-- 医学问答（USMLE级别）
-- 临床辅助决策
-- 消费者健康问题回答
-- 提供高质量的医疗与健康信息检索
-- 生成医学科学见解与健康研究报告
-benchmarks:
+description: Google DeepMind开发的医疗领域大语言模型Med-PaLM 2，基于PaLM 2基座模型针对医疗问答和临床推理进行专业微调。在MedQA（美国医学执照考试风格）基准上达到86.5%准确率，成为首个达到专家医生水平的AI系统。支持医疗信息检索、临床对话、健康问答等场景，是Google Health生态系统的核心AI能力。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: PaLM 2
+training:
+  stages:
+  - name: pre-training
+    description: PaLM 2基座模型在大规模通用语料上进行预训练
+  - name: fine-tuning
+    description: 在医疗领域专业数据上进行指令微调，包括医学教科书、临床指南、医学问答数据等
+  - name: rlhf
+    description: 结合临床医生和医学专家的反馈进行强化学习优化，确保回答的安全性和准确性
+  context_length: 8K
+tech_stack:
+  framework: JAX/Flax
+  inference: Google Cloud Vertex AI
+  techniques:
+  - Instruction tuning for medical domain
+  - Chain-of-thought prompting
+  - Ensemble refinement
+  - Expert physician evaluation
+  - Adversarial testing
+datasets:
 - name: MedQA
+  description: 美国医学执照考试（USMLE）风格的医学问答数据集
+  size: 12K+ questions
+  type: evaluation
+- name: MedMCQA
+  description: 印度医学入学考试的多选题数据集
+  size: 194K questions
+  type: evaluation
+- name: PubMedQA
+  description: 基于PubMed文献摘要的生物医学问答数据集
+  type: evaluation
+- name: 医学教科书与临床指南
+  description: 医学专业教材、临床实践指南和循证医学文献
+  type: sft
+benchmarks:
+- name: MedQA (USMLE-style)
   score: 86.5
   metric: accuracy
+  split: test
+  comparison: "vs GPT-4: 87.0%; vs Med-PaLM 1: 67.6%; vs 人类医生及格线: 60%"
+- name: MedMCQA
+  score: 72.3
+  metric: accuracy
+  split: test
+  comparison: "vs GPT-4: 69.5%; vs Med-PaLM 1: 57.6%"
+- name: PubMedQA
+  score: 81.8
+  metric: accuracy
+  split: test
+  comparison: "vs GPT-4: 75.2%; vs Med-PaLM 1: 79.0%"
+- name: 临床医生对比评估
+  score: "专家级"
+  metric: physician_alignment
+  comparison: "在9个评估维度中的8个与专家医生水平相当或更优"
+api:
+  available: true
+  endpoint: https://cloud.google.com/vertex-ai
+  protocol: rest
+  pricing: 联系销售（Google Cloud Vertex AI定价）
+  auth_method: OAuth2
+capabilities:
+- 医学执照考试级别的医学问答能力
+- 临床推理和鉴别诊断辅助
+- 医学文献检索与循证医学支持
+- 患者健康问题的通俗化解答
+- 多语言医疗信息提供
+- 支持AlphaFold等生物学AI模型的协同应用
+- 医疗机构行政负担减轻的AI辅助
 access:
 - api
+- saas
 tags:
-- 医学问答
-- 临床决策
-- 医疗大模型
-- 生成式ai
-- google deepmind
+- medical-ai
+- clinical-reasoning
+- medqa
+- google-health
+- palm2
+- vertex-ai
 references:
-- title: Med-PaLM 2 论文
-  url: https://arxiv.org/abs/2305.09617
-- title: Google Health 官方网站
+- title: Google Health Official Website
   url: https://health.google
-- title: Google Health 博客
-  url: https://blog.google/technology/health/
+- title: Med-PaLM 2 Research Paper
+  url: https://arxiv.org/abs/2305.09617

@@ -1,25 +1,79 @@
 name: Shift Technology
+name_en: Shift Technology AI
 company: Shift Technology
 domain: finance
 status: released
+release_date: "2023"
 website: https://www.shift-technology.com/
-description: Shift Technology 是专注于保险行业的 AI 公司，用 AI Agent 变革保险最关键业务。核心能力包括 FNOL 阶段欺诈检测（识别可疑活动和新型欺诈技术）、理赔自动化（智能分诊和损失评估）、核保优化。几分钟内完成分析师团队需要数天的工作。客户包括
-  Assurant、Markerstudy、三井住友和 Amica 等全球保险公司。
+description: Shift Technology开发的保险行业专用AI Agent平台，利用多个协作Agent变革保险业务核心流程。覆盖欺诈检测、理赔自动化和核保优化三大领域，在理赔报案阶段即可识别可疑活动，能在数分钟内完成分析师团队需要数天的工作，同时检测到传统方法无法发现的新型欺诈模式。服务全球众多知名保险公司。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大量保险行业数据训练，深度理解保险业务逻辑、术语、合同条款和理赔流程
+  - name: fine-tuning
+    description: 分别针对欺诈检测、理赔自动化和核保优化三大场景进行专业微调，每个Agent专注于特定保险业务任务
+  - name: continual-pre-training
+    description: 从历史理赔数据中持续学习正常与异常模式，不断提升对新型欺诈手法的检测能力
+tech_stack:
+  framework: PyTorch
+  techniques:
+  - AI Agent architecture
+  - Multi-agent collaboration
+  - Graph neural networks (关联网络分析)
+  - Anomaly detection (深度学习)
+  - Real-time risk scoring
+  - Network analysis
+  - NLP for insurance documents
+datasets:
+- name: 保险理赔历史数据
+  description: 大规模历史理赔数据，包含正常理赔和欺诈案例，用于训练异常模式检测模型
+  type: pre-training
+- name: 欺诈关联网络数据
+  description: 索赔人、维修商、医疗机构、律师等参与方之间的关系网络数据
+  type: sft
+- name: 保险合同与条款数据
+  description: 保险合同条款、保障范围和赔付规则文档
+  type: sft
+benchmarks:
+- name: 欺诈检测率提升
+  score: "数倍提升"
+  metric: detection_rate_improvement
+  comparison: "vs 传统规则引擎: 欺诈检测率提升数倍，同时大幅降低误报率"
+- name: 理赔处理时效
+  score: "分钟级"
+  metric: processing_time
+  comparison: "vs 人工分析师团队: 数分钟完成以往需要数天的分析工作"
+- name: 理赔处理规模
+  score: "数亿次"
+  metric: claims_processed
+  comparison: "已帮助客户处理数亿次理赔，节省数十亿美元欺诈损失"
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅制
+  auth_method: 企业认证
 capabilities:
-- FNOL阶段欺诈检测：实时风险评分和关联网络分析
-- 新型欺诈技术发现：检测传统规则引擎无法捕捉的欺诈模式
-- 理赔自动化：智能分诊、损失评估和文档处理
-- 核保优化：AI增强的风险评估和定价精准化
-- AI Agent架构：多Agent协作完成端到端业务流程
-tags:
-- insurance
-- fraud detection
-- claims automation
-- underwriting
-- ai agent
-- insurtech
+- FNOL阶段实时多维度风险评分与可疑活动识别
+- 关联网络分析发现有组织欺诈团伙
+- 深度学习异常模式检测识别新型欺诈手法
+- 软欺诈（金额夸大）和硬欺诈（虚构事故）全面检测
+- 证据自动整合生成调查员可用的案件摘要
+- 智能分诊将理赔案件按复杂度路由至自动或人工处理
+- AI损失金额自动评估（车辆维修、医疗费用、财产损失）
+- 核保风险评估增强与保费定价优化
 access:
 - saas
+- private-deployment
+tags:
+- insurtech
+- fraud-detection
+- claims-automation
+- underwriting
+- ai-agent
+- anomaly-detection
+- insurance
 references:
 - title: Shift Technology Official Website
   url: https://www.shift-technology.com/
