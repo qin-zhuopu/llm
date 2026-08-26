@@ -77,8 +77,6 @@ tags:
   - 领域预训练
   - 50B参数
 
-confidence: high
-
 access:
   - internal-only
 region:
