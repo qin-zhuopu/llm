@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""统一数据质量检查：对每个模型计算综合质量分。
+"""统一数据质量检查：对每个模型按三个维度打分。
 
-评分维度（满分 100）：
-  - 基础完整性 (30分): 必填字段质量
-  - 技术深度 (40分): 可选字段填写情况
-  - 来源可靠性 (30分): md 文件质量
+维度：
+  - 业务 (B): 商业信息——公司、产品定位、客户、使用方式、官网
+  - 技术 (T): 技术细节——参数量、架构、训练过程、数据集、benchmark
+  - 来源 (S): 信息来源——md 文件质量、具体数据、论文/官方链接
+
+每个维度满分 100，总分为三维度平均。
 
 用法:
     python scripts/check.py                 # 全部检查
     python scripts/check.py --domain finance
-    python scripts/check.py --top 10        # 最好的10个
-    python scripts/check.py --bottom 10     # 最差的10个
+    python scripts/check.py --top 10
+    python scripts/check.py --bottom 10
     python scripts/check.py --details domains/finance/bloomberggpt.yaml
 """
 
@@ -25,158 +27,239 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def score_yaml(data, yaml_path):
-    """对单个 YAML 文件打分，返回 (total_score, breakdown)。"""
-    breakdown = {}
+def score_business(data):
+    """业务维度评分 (满分 100)。
+    
+    评估：公司信息、产品定位、客户/市场、使用方式、官网/参考链接
+    """
+    score = 0
+    details = {}
 
-    # === 基础完整性 (30分) ===
-    base_score = 0
-
-    # description 质量 (0-10)
+    # description 质量——是否清晰传达产品定位 (0-25)
     desc = data.get("description", "")
     desc_len = len(desc)
-    if desc_len >= 80:
-        base_score += 10
-    elif desc_len >= 50:
-        base_score += 7
+    if desc_len >= 100:
+        score += 25
+    elif desc_len >= 60:
+        score += 18
     elif desc_len >= 30:
-        base_score += 4
+        score += 10
     else:
-        base_score += 1
-    breakdown["description"] = f"{desc_len} chars"
+        score += 3
+    details["description"] = f"{desc_len} chars"
 
-    # capabilities 数量和质量 (0-10)
+    # capabilities 是否具体说明能做什么 (0-25)
     caps = data.get("capabilities", [])
     cap_count = len(caps)
     avg_cap_len = sum(len(c) for c in caps) / max(cap_count, 1)
     if cap_count >= 5 and avg_cap_len >= 8:
-        base_score += 10
-    elif cap_count >= 4:
-        base_score += 7
+        score += 25
+    elif cap_count >= 4 and avg_cap_len >= 6:
+        score += 18
     elif cap_count >= 3:
-        base_score += 4
+        score += 10
     else:
-        base_score += 1
-    breakdown["capabilities"] = f"{cap_count} items, avg {avg_cap_len:.0f} chars"
+        score += 3
+    details["capabilities"] = f"{cap_count} items"
 
-    # references 质量 (0-10)
+    # access 方式是否明确 (0-15)
+    access = data.get("access", [])
+    if access and len(access) >= 1:
+        score += 15
+    details["access"] = str(access) if access else "missing"
+
+    # website 是否有 (0-15)
+    website = data.get("website", "")
+    if website and "/" in website:
+        score += 15
+    details["website"] = "Y" if website else "N"
+
+    # references 是否有多个来源 (0-20)
     refs = data.get("references", [])
-    ref_count = len(refs)
-    has_paper = any("arxiv" in r.get("url", "").lower() or "paper" in r.get("title", "").lower() for r in refs)
-    has_official = any(data.get("website", "") and data["website"] in r.get("url", "") for r in refs)
-    if ref_count >= 2 and has_paper:
-        base_score += 10
-    elif ref_count >= 2:
-        base_score += 7
-    elif ref_count >= 1:
-        base_score += 4
-    else:
-        base_score += 0
-    breakdown["references"] = f"{ref_count} links, paper={'Y' if has_paper else 'N'}"
+    if len(refs) >= 3:
+        score += 20
+    elif len(refs) >= 2:
+        score += 14
+    elif len(refs) >= 1:
+        score += 7
+    details["references"] = f"{len(refs)} links"
 
-    # === 技术深度 (40分) ===
-    tech_score = 0
+    return score, details
 
-    # parameters (0-5)
+
+def score_technical(data):
+    """技术维度评分 (满分 100)。
+    
+    评估：参数量、架构、基座模型、训练过程、技术栈、数据集、评测
+    """
+    score = 0
+    details = {}
+
+    # parameters (0-15)
     if data.get("parameters"):
-        tech_score += 5
-    # architecture (0-5)
+        score += 15
+    details["parameters"] = data.get("parameters", "-")
+
+    # architecture (0-10)
     if data.get("architecture"):
-        tech_score += 5
-    # base_model (0-5)
+        score += 10
+    details["architecture"] = data.get("architecture", "-")
+
+    # base_model (0-10)
     if data.get("base_model"):
-        tech_score += 5
-    # training (0-8)
+        score += 10
+    details["base_model"] = "Y" if data.get("base_model") else "-"
+
+    # training (0-25)
     training = data.get("training")
     if training:
         stages = training.get("stages", [])
-        if stages and len(stages) >= 2:
-            tech_score += 8
-        elif stages:
-            tech_score += 5
-        else:
-            tech_score += 2
-    # tech_stack (0-5)
-    if data.get("tech_stack"):
-        ts = data["tech_stack"]
-        if ts.get("framework") and ts.get("techniques"):
-            tech_score += 5
-        else:
-            tech_score += 2
-    # datasets (0-7)
+        t_score = 5  # 有 training 对象就 5 分
+        if stages:
+            t_score += min(len(stages) * 5, 10)  # 每阶段 5 分，最多加 10
+        if training.get("total_tokens"):
+            t_score += 5
+        if training.get("context_length"):
+            t_score += 5
+        score += min(t_score, 25)
+    details["training"] = f"{len(training.get('stages', []))} stages" if training else "-"
+
+    # tech_stack (0-10)
+    ts = data.get("tech_stack")
+    if ts:
+        t_score = 0
+        if ts.get("framework"):
+            t_score += 4
+        if ts.get("techniques"):
+            t_score += min(len(ts["techniques"]) * 2, 6)
+        score += min(t_score, 10)
+    details["tech_stack"] = "Y" if ts else "-"
+
+    # datasets (0-15)
     datasets = data.get("datasets", [])
-    if datasets and len(datasets) >= 2:
-        tech_score += 7
-    elif datasets:
-        tech_score += 4
-    # benchmarks (0-5)
+    if datasets:
+        d_score = min(len(datasets) * 5, 10)
+        # 有 size 信息加分
+        if any(d.get("size") for d in datasets):
+            d_score += 5
+        score += min(d_score, 15)
+    details["datasets"] = f"{len(datasets)} sets" if datasets else "-"
+
+    # benchmarks (0-15)
     benchmarks = data.get("benchmarks", [])
-    if benchmarks and len(benchmarks) >= 2:
-        tech_score += 5
-    elif benchmarks:
-        tech_score += 3
+    if benchmarks:
+        b_score = min(len(benchmarks) * 3, 10)
+        # 有 comparison 加分
+        if any(b.get("comparison") for b in benchmarks):
+            b_score += 5
+        score += min(b_score, 15)
+    details["benchmarks"] = f"{len(benchmarks)} scores" if benchmarks else "-"
 
-    filled_optional = sum(1 for k in ["parameters", "architecture", "base_model", "training", "tech_stack", "datasets", "benchmarks", "api"]
-                         if data.get(k))
-    breakdown["tech_fields"] = f"{filled_optional}/8 filled"
+    return score, details
 
-    # === 来源可靠性 (30分) ===
-    source_score = 0
+
+def score_source(data, yaml_path):
+    """来源维度评分 (满分 100)。
+    
+    评估：md 文件是否存在/内容长度/具体数据/论文引用/官方来源
+    """
+    score = 0
+    details = {}
+
     md_path = yaml_path.with_suffix(".md")
+    if not md_path.exists():
+        details["md"] = "MISSING"
+        return 0, details
 
-    if md_path.exists():
-        md_content = md_path.read_text(encoding="utf-8")
-        # 去 header
-        if "---\n" in md_content:
-            body = md_content[md_content.find("---\n") + 4:].strip()
-        else:
-            body = md_content.strip()
-
-        body_bytes = len(body.encode("utf-8"))
-
-        # 内容长度 (0-10)
-        if body_bytes >= 3000:
-            source_score += 10
-        elif body_bytes >= 1500:
-            source_score += 7
-        elif body_bytes >= 500:
-            source_score += 4
-        else:
-            source_score += 1
-
-        # 具体数据 (0-10)
-        numbers = re.findall(r'\d+[BMT]\b|\d+%|\d+\+|\$[\d,.]+|\d+万|\d+亿|\d+倍|\d+x', body)
-        if len(numbers) >= 5:
-            source_score += 10
-        elif len(numbers) >= 2:
-            source_score += 6
-        elif len(numbers) >= 1:
-            source_score += 3
-
-        # 来源可信度 (0-10)
-        source_match = re.search(r'来源:\s*\[([^\]]+)\]', md_content)
-        has_arxiv = bool(re.search(r'arxiv|论文|paper', body, re.IGNORECASE))
-        has_product_url = bool(re.search(r'docs|api|product|platform|blog', body, re.IGNORECASE))
-
-        if has_arxiv:
-            source_score += 10
-        elif has_product_url:
-            source_score += 7
-        elif source_match:
-            source_score += 4
-
-        breakdown["md"] = f"{body_bytes}B, {len(numbers)} numbers"
+    md_content = md_path.read_text(encoding="utf-8")
+    # 去 header
+    if "---\n" in md_content:
+        body = md_content[md_content.find("---\n") + 4:].strip()
     else:
-        breakdown["md"] = "MISSING"
+        body = md_content.strip()
 
-    total = base_score + tech_score + source_score
-    breakdown["_scores"] = f"base={base_score}/30 tech={tech_score}/40 source={source_score}/30"
+    body_bytes = len(body.encode("utf-8"))
 
-    return total, breakdown
+    # 内容长度 (0-30)
+    if body_bytes >= 5000:
+        score += 30
+    elif body_bytes >= 3000:
+        score += 22
+    elif body_bytes >= 1500:
+        score += 15
+    elif body_bytes >= 500:
+        score += 8
+    else:
+        score += 2
+    details["content"] = f"{body_bytes}B"
+
+    # 具体数据——数字、百分比、金额 (0-25)
+    numbers = re.findall(
+        r'\d+[BMT]\b|\d+%|\d+\+|\$[\d,.]+[MBK]?|\d+万|\d+亿|\d+倍|\d+x|\d{1,3}(?:,\d{3})+',
+        body
+    )
+    if len(numbers) >= 8:
+        score += 25
+    elif len(numbers) >= 4:
+        score += 18
+    elif len(numbers) >= 2:
+        score += 10
+    elif len(numbers) >= 1:
+        score += 5
+    details["data_points"] = f"{len(numbers)}"
+
+    # 论文/学术来源 (0-25)
+    has_arxiv = bool(re.search(r'arxiv|arXiv|论文|paper|Nature|Science|ICML|NeurIPS|AAAI', body))
+    if has_arxiv:
+        score += 25
+    details["paper"] = "Y" if has_arxiv else "N"
+
+    # 官方/一手来源 vs 二手 (0-20)
+    source_match = re.search(r'来源:\s*\[([^\]]+)\]', md_content)
+    if source_match:
+        source_url = source_match.group(1)
+        # 新闻/聚合网站 = 二手
+        news_sites = ["techcrunch", "reuters", "36kr", "bloomberg.com/news", "wired", "theverge"]
+        is_news = any(s in source_url.lower() for s in news_sites)
+        if not is_news:
+            score += 20
+            details["source"] = "official"
+        else:
+            score += 10
+            details["source"] = "news"
+    else:
+        details["source"] = "unknown"
+
+    return score, details
+
+
+def check_model(yaml_path):
+    """对单个模型做三维度评分。"""
+    data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
+    if not data:
+        return None
+
+    b_score, b_details = score_business(data)
+    t_score, t_details = score_technical(data)
+    s_score, s_details = score_source(data, yaml_path)
+
+    total = round((b_score + t_score + s_score) / 3)
+
+    return {
+        "name": data.get("name", "?"),
+        "domain": yaml_path.parent.name,
+        "business": b_score,
+        "technical": t_score,
+        "source": s_score,
+        "total": total,
+        "b_details": b_details,
+        "t_details": t_details,
+        "s_details": s_details,
+    }
 
 
 def main():
-    parser = argparse.ArgumentParser(description="统一数据质量检查")
+    parser = argparse.ArgumentParser(description="三维度数据质量检查")
     parser.add_argument("--domain", type=str, help="只检查某个领域")
     parser.add_argument("--top", type=int, help="显示最好的 N 个")
     parser.add_argument("--bottom", type=int, help="显示最差的 N 个")
@@ -195,54 +278,60 @@ def main():
         if not target.exists():
             print(f"文件不存在: {args.details}")
             sys.exit(1)
-        data = yaml.safe_load(target.read_text(encoding="utf-8"))
-        score, breakdown = score_yaml(data, target)
+        result = check_model(target)
+        if not result:
+            print("YAML 为空")
+            sys.exit(1)
         print(f"\n{'='*60}")
-        print(f"  {data.get('name', '?')} — {score}/100")
+        print(f"  {result['name']} — B:{result['business']} T:{result['technical']} S:{result['source']} (avg {result['total']})")
         print(f"{'='*60}")
-        for k, v in breakdown.items():
-            print(f"  {k}: {v}")
+        print(f"\n  业务 ({result['business']}/100):")
+        for k, v in result["b_details"].items():
+            print(f"    {k}: {v}")
+        print(f"\n  技术 ({result['technical']}/100):")
+        for k, v in result["t_details"].items():
+            print(f"    {k}: {v}")
+        print(f"\n  来源 ({result['source']}/100):")
+        for k, v in result["s_details"].items():
+            print(f"    {k}: {v}")
         sys.exit(0)
 
     # 全量评分
     results = []
     for f in model_files:
-        data = yaml.safe_load(f.read_text(encoding="utf-8"))
-        if not data:
-            continue
-        score, breakdown = score_yaml(data, f)
-        results.append((str(f.relative_to(ROOT)), data.get("name", "?"), score, breakdown))
+        result = check_model(f)
+        if result:
+            results.append(result)
 
-    results.sort(key=lambda x: -x[2])
+    results.sort(key=lambda x: -x["total"])
 
     # 统计
-    scores = [r[2] for r in results]
-    avg = sum(scores) / len(scores) if scores else 0
-    high = sum(1 for s in scores if s >= 60)
-    medium = sum(1 for s in scores if 30 <= s < 60)
-    low = sum(1 for s in scores if s < 30)
+    totals = [r["total"] for r in results]
+    avg = sum(totals) / len(totals) if totals else 0
+    b_avg = sum(r["business"] for r in results) / len(results)
+    t_avg = sum(r["technical"] for r in results) / len(results)
+    s_avg = sum(r["source"] for r in results) / len(results)
 
-    print("=" * 70)
-    print(f"  数据质量综合评分 — {len(results)} 个模型")
-    print(f"  平均分: {avg:.1f}/100 | 高(≥60): {high} | 中(30-59): {medium} | 低(<30): {low}")
-    print("=" * 70)
+    print("=" * 75)
+    print(f"  数据质量三维度评分 — {len(results)} 个模型")
+    print(f"  综合平均: {avg:.0f} | 业务均: {b_avg:.0f}/100 | 技术均: {t_avg:.0f}/100 | 来源均: {s_avg:.0f}/100")
+    print("=" * 75)
 
     # 显示列表
     if args.top:
         display = results[:args.top]
-        print(f"\n🟢 TOP {args.top}:")
+        label = f"TOP {args.top}"
     elif args.bottom:
         display = results[-args.bottom:]
-        print(f"\n🔴 BOTTOM {args.bottom}:")
+        label = f"BOTTOM {args.bottom}"
     else:
         display = results
-        print()
+        label = "ALL"
 
-    for path, name, score, breakdown in display:
-        bar_len = score // 5
-        bar = "█" * bar_len + "░" * (20 - bar_len)
-        scores_detail = breakdown.get("_scores", "")
-        print(f"  {bar} {score:>3}/100  {name:<30} [{scores_detail}]")
+    print(f"\n  {'模型':<28} {'B':>3} {'T':>3} {'S':>3} {'avg':>4}  {'领域'}")
+    print(f"  {'-'*28} {'---':>3} {'---':>3} {'---':>3} {'----':>4}  {'-'*15}")
+    for r in display:
+        print(f"  {r['name']:<28} {r['business']:>3} {r['technical']:>3} {r['source']:>3} {r['total']:>4}  {r['domain']}")
 
 
 if __name__ == "__main__":

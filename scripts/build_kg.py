@@ -74,11 +74,6 @@ def build_graph():
             G.add_node(acc, type="access_type")
             G.add_edge(model_name, acc, relation="accessible_via")
 
-        # 模型 → 区域
-        for region in data.get("region", []):
-            G.add_node(region, type="region")
-            G.add_edge(model_name, region, relation="available_in")
-
     # === 从 platforms/*.yaml 建图 ===
     platforms_dir = ROOT / "platforms"
     if platforms_dir.exists():
