@@ -1,22 +1,64 @@
 name: DoorDash Menu Error Correction Model
-company: DoorDash
+name_en: DoorDash Menu Error Correction Model
+company: DoorDash & Applied Compute
 domain: retail-ecommerce
 status: released
-description: DoorDash 针对商家入驻流程开发的菜单纠错模型。该模型通过强化学习训练，利用自动评分系统模拟人类专家的验证标准，将菜单生成的低质量菜单份额降低了约
-  30%。模型专注于将图片、PDF 和文本菜单转换为结构化数据，并处理复杂的长尾菜单格式，显著提高了平台菜单的准确性和一致性。
+release_date: 2026-02
+website: https://about.doordash.com/
+description: DoorDash 与 Applied Compute 合作开发的菜单纠错模型，通过强化学习训练优化商家入驻流程中的菜单质量。模型使用高度校准的自动评分系统作为奖励函数，该评分系统对齐人类专家的验证标准并具有高度自一致性。在 A/B 测试中，低质量菜单份额相对基线降低约 30%。模型已部署至美国全部菜单流量，处理图片、PDF 和文本菜单到结构化数据的转换，特别擅长解决长尾复杂菜单格式问题。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: 未公开
+training:
+  stages:
+  - name: rlhf
+    description: 使用自动评分系统作为奖励函数进行强化学习训练。评分系统根据 DoorDash 菜单样式指南评判不同类型的错误，将多维错误信号转化为单一奖励信号，形成驱动可靠改进的反馈循环。训练过程中模型逐步学会更细致的菜单层级结构推理（如区分 Taco Dinner 含配菜和 Tacos 不含配菜）。
+tech_stack:
+  framework: AC2 (Applied Compute Agent Cloud)
+  techniques:
+  - Reinforcement Learning with automated grader reward
+  - Grader calibration and alignment verification
+  - Experiment tracking
+  - Automated failure detection
+  - Chain-of-thought reasoning for menu hierarchy
+  - Production-ready library integration
+datasets:
+- name: DoorDash production menus
+  description: 商家入驻过程中的真实菜单数据（图片、PDF、文本格式），覆盖多样化的餐厅菜单风格
+  type: rlhf
+- name: DoorDash QA labels
+  description: 人类专家质量保证标注数据，用于校准自动评分系统并建立 grader alignment ground truth
+  type: other
+benchmarks:
+- name: A/B Test - Low Quality Menu Reduction
+  score: "~30%"
+  metric: relative_reduction
+  comparison: "vs baseline system: low-quality menu share reduced by ~30%"
+- name: Human Grader Validation
+  score: "confirmed gains"
+  metric: human_evaluation
+  comparison: "Human reviewers confirmed gains over baseline in production A/B test"
 capabilities:
-- 自动从非结构化源（图片、PDF）生成结构化菜单
-- 利用强化学习优化纠错逻辑并减少错误率
-- 解析和处理复杂的长尾菜单格式与层级
-- 符合 DoorDash 高质量标准的生产级推理
+- 从非结构化源（图片、PDF、文本）自动生成结构化菜单
+- 复杂菜单层级关系推理与正确分类
+- 符合 DoorDash 高质量标准的菜单纠错
+- 处理长尾复杂菜单格式和边缘案例
+- 满足生产环境延迟、成本和可靠性约束
+- 支持持续性能监控和反馈飞轮机制
+access:
+- private-deployment
+tags:
+- menu-generation
+- reinforcement-learning
+- automated-grading
+- merchant-onboarding
+- food-delivery
+- production-deployed
+- a-b-testing
 references:
 - title: Automating Merchant Onboarding at DoorDash
   url: https://appliedcompute.com/case-studies/doordash
 - title: DoorDash Official Website
   url: https://about.doordash.com/
-tags:
-- menu-generation
-- reinforcement-learning
-- ocr
-- data-structuring
-- merchant-onboarding
+- title: Applied Compute AC2 Platform
+  url: https://www.appliedcompute.com/#platform
