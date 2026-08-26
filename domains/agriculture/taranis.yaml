@@ -1,0 +1,31 @@
+name: Taranis
+company: Taranis
+domain: agriculture
+status: released
+website: https://www.taranis.com/
+description: "Taranis 是全球领先的 AI 作物智能平台，通过叶片级精准农业技术提供田间洞察。无人机采集亚毫米级图像，深度学习模型（500M+ 数据点训练）分析病虫害、杂草和营养缺乏。Ag Assistant 是农业行业首个生成式 AI 农艺引擎，Yield Impact 将叶片级洞察转化为产量预测。与 Syngenta 作物保护合作，提供全季节覆盖服务。"
+
+capabilities:
+  - 亚毫米级图像采集与AI分析：无人机叶片级病虫害/杂草/营养检测
+  - Ag Assistant 生成式AI农艺引擎：农业行业首个生成式AI咨询系统
+  - Yield Impact 产量预测：将叶片级洞察转化为经济效益量化
+  - 全季节覆盖：季前规划、季中监测、季后分析完整闭环
+  - 500M+数据点深度学习模型：持续学习提升识别精度
+
+tags:
+  - Precision Agriculture
+  - Crop Intelligence
+  - Computer Vision
+  - Generative AI
+  - Drone Imaging
+  - Pest Detection
+
+access:
+  - saas
+
+region:
+  - global
+
+references:
+  - title: "Taranis Official Website"
+    url: "https://www.taranis.com/"

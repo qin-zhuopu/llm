@@ -1,0 +1,32 @@
+name: Tractable
+company: Tractable
+domain: finance
+status: released
+website: https://www.tractable.ai/
+description: "Tractable 是 AI 计算机视觉驱动的保险理赔损害检测和评估平台。像素级精准车辆/房产损害评估，多维度置信度评分（考虑可见性、图像质量、损害严重程度），每天处理数千理赔案件。AI 定损、AI 审核和 AI 分诊产品矩阵。支持全球市场部署，提供开放 API 集成，通过持续学习不断提升评估精度。"
+
+capabilities:
+  - 像素级车辆损害评估：自动识别受损部件、损害类型和程度
+  - 多维度置信度评分：综合可见性/图像质量/损害程度的可信度评估
+  - 可回收零件识别：智能推荐使用翻新件降低维修成本
+  - AI定损/审核/分诊产品矩阵：覆盖理赔全流程自动化
+  - 持续学习改进：每日数千案件反馈驱动模型迭代提升
+
+tags:
+  - Computer Vision
+  - Insurance Claims
+  - Damage Assessment
+  - Auto Insurance
+  - Property Insurance
+  - InsurTech
+
+access:
+  - api
+  - saas
+
+region:
+  - global
+
+references:
+  - title: "Tractable Official Website"
+    url: "https://www.tractable.ai/"

@@ -1,0 +1,31 @@
+name: Gridmatic
+company: Gridmatic
+domain: energy
+status: released
+website: https://www.gridmatic.com/
+description: "Gridmatic 是一家 AI 驱动的电力公司，用研究级机器学习优化能源供应、存储和使用。覆盖美国七大电力市场的全自动化能源交易系统，电网级电池储能优化（CAISO 2024-2025 排名第一电池），可再生能源 PPA 采购。深度学习预测能源价格，在 ERCOT 市场创造历史最高盈利，Best-in-class 预测能力超越人类交易员。"
+
+capabilities:
+  - 全自动化能源交易：覆盖美国7大电力市场的24/7自动竞价系统
+  - 电网级电池储能优化：CAISO 2024-2025排名第一的电池管理
+  - 深度学习能源价格预测：超越人类交易员的Best-in-class预测精度
+  - 可再生能源PPA采购：AI辅助的购电协议定价和风险评估
+  - 实时电网响应：毫秒级市场变化响应和套利机会捕获
+
+tags:
+  - Energy Trading
+  - Battery Storage
+  - Deep Learning
+  - Price Forecasting
+  - Renewable Energy
+  - Grid Optimization
+
+access:
+  - saas
+
+region:
+  - us
+
+references:
+  - title: "Gridmatic Official Website"
+    url: "https://www.gridmatic.com/"
