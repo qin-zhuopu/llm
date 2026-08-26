@@ -1,0 +1,23 @@
+name: Harvey Review Table Model
+company: Harvey (in partnership with Applied Compute)
+domain: legal
+status: released
+description: Harvey与Applied Compute合作开发的专用法律大模型，专为Review Table产品的文档分析任务设计。该模型在保持高准确率（Answer
+  Score指标衡量回答正确性和引用质量）和低延迟的同时，显著降低了推理成本。它针对大规模法律文档审查工作流进行了微调，能够处理数万个文件的批量分析，通过合成数据集训练，优化了语义检索和表格提取能力。
+capabilities:
+- 大规模法律文档审查与尽职调查分析
+- 高精度表格信息提取与结构化输出
+- 多种法律文件类型理解（合同、诉讼、邮件等）
+- 引用生成与证据定位支持
+- 标准化数值与日期解析处理
+references:
+- title: Training Frontier Review Table Agents with Harvey
+  url: https://appliedcompute.com/case-studies/harvey-review-table
+tags:
+- legal-review
+- document-analysis
+- table-extraction
+- semantic-retrieval
+- cost-optimization
+access:
+- api
