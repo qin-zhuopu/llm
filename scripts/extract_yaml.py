@@ -151,7 +151,11 @@ def build_field_doc(schema, field_names):
 
 
 def build_prompt(schema, md_content, domain):
-    """构建完整的提取 prompt。"""
+    """构建完整的提取 prompt。
+
+    注意：禁止任何形式的截断。当前最大 md 文件约 24K chars (~8K tokens)，
+    模型上下文窗口 128K-500K tokens，完全不需要截断。
+    """
     required = schema.get("required", [])
     all_props = list(schema.get("properties", {}).keys())
     optional = [f for f in all_props if f not in required]
@@ -163,15 +167,17 @@ def build_prompt(schema, md_content, domain):
         required_fields_doc=required_doc,
         optional_fields_doc=optional_doc,
         domain=domain,
-        md_content=md_content[:8000],  # 截断防超长
+        md_content=md_content,  # 完整内容，禁止截断
     )
 
 
-def call_llm(prompt, api_base=None, api_key=None, model=None):
+def call_llm(prompt, api_base=None, api_key=None, model=None, md_file_size=0):
     """调用 LLM API 获取结构化输出。
 
     支持 Anthropic 兼容 API (通过环境变量配置):
       ANTHROPIC_BASE_URL, ANTHROPIC_AUTH_TOKEN, ANTHROPIC_MODEL
+
+    日志输出：模型名、输入 token 数（chars/3 估算）、md 文件大小、输出 token 数
     """
     import requests
 
@@ -183,6 +189,12 @@ def call_llm(prompt, api_base=None, api_key=None, model=None):
         print("❌ 未配置 API Key。请设置环境变量 ANTHROPIC_AUTH_TOKEN")
         sys.exit(1)
 
+    # 日志：输入信息
+    input_tokens_est = len(prompt) // 3
+    print(f"    📊 模型: {model}")
+    print(f"    📊 MD 文件大小: {md_file_size} chars")
+    print(f"    📊 Prompt 大小: {len(prompt)} chars (~{input_tokens_est} tokens 估算)")
+
     headers = {
         "Content-Type": "application/json",
         "x-api-key": api_key,
@@ -191,7 +203,7 @@ def call_llm(prompt, api_base=None, api_key=None, model=None):
 
     payload = {
         "model": model,
-        "max_tokens": 4096,
+        "max_tokens": 8192,
         "messages": [
             {"role": "user", "content": prompt}
         ],
@@ -205,6 +217,12 @@ def call_llm(prompt, api_base=None, api_key=None, model=None):
     )
     resp.raise_for_status()
     data = resp.json()
+
+    # 日志：输出信息
+    usage = data.get("usage", {})
+    output_tokens = usage.get("output_tokens", 0)
+    input_tokens_actual = usage.get("input_tokens", 0)
+    print(f"    📊 实际输入 tokens: {input_tokens_actual}, 输出 tokens: {output_tokens}")
 
     # 提取文本
     content = data.get("content", [])
@@ -294,7 +312,7 @@ def process_md(md_path, schema, root, dry_run=False):
 
     # 调用 LLM
     try:
-        raw_output = call_llm(prompt)
+        raw_output = call_llm(prompt, md_file_size=len(md_content))
     except Exception as e:
         return "error", f"{relative}: API 调用失败: {e}"
 

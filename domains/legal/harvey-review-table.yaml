@@ -1,23 +1,42 @@
 name: Harvey Review Table Model
-company: Harvey (in partnership with Applied Compute)
+company: Harvey & Applied Compute
 domain: legal
 status: released
-description: Harvey与Applied Compute合作开发的专用法律大模型，专为Review Table产品的文档分析任务设计。该模型在保持高准确率（Answer
-  Score指标衡量回答正确性和引用质量）和低延迟的同时，显著降低了推理成本。它针对大规模法律文档审查工作流进行了微调，能够处理数万个文件的批量分析，通过合成数据集训练，优化了语义检索和表格提取能力。
+description: 由 Harvey 与 Applied Compute 合作训练的专业法律大模型，专为 Harvey Review Table 产品的大规模文档分析工作负载优化。该模型基于开源模型（如
+  GLM 或 Qwen 架构）进行后训练，通过合成法律数据（包括合同、诉讼文档等）和强化学习对齐，在答案准确性和引用质量上超越了通用前沿模型。在评测中，该模型相比基线
+  GLM 5.2 在引用质量上提升了 22.4%，答案质量达到 0.903 分（优于 GPT-5.6-Sol 的 0.857），同时相比 Claude Sonnet
+  5 降低了 54.8% 的平均单元成本。
 capabilities:
-- 大规模法律文档审查与尽职调查分析
-- 高精度表格信息提取与结构化输出
-- 多种法律文件类型理解（合同、诉讼、邮件等）
-- 引用生成与证据定位支持
-- 标准化数值与日期解析处理
+- 大规模法律文档审查与分析
+- 复杂表格信息提取与结构化输出
+- 高精度法律引证生成与来源定位
+- 法律问题语义检索与推理
 references:
 - title: Training Frontier Review Table Agents with Harvey
   url: https://appliedcompute.com/case-studies/harvey-review-table
-tags:
-- legal-review
-- document-analysis
-- table-extraction
-- semantic-retrieval
-- cost-optimization
+- title: Harvey Official Website
+  url: https://www.harvey.ai
+benchmarks:
+- name: Review Table Answer Score
+  score: 0.903
+  metric: answer_score
+  comparison: 'vs GPT-5.6-Sol: 0.903 vs 0.857'
+- name: Review Table Citation Score
+  score: 0.841
+  metric: citation_precision
+  comparison: 'vs GLM 5.2: +22.4% improvement'
+- name: Review Table Citation Recall
+  score: 0.9193
+  metric: citation_recall
+architecture: Single-turn Transformer with Semantic Retrieval / Agentic
+base_model: Open Source (GLM 5.2 / Qwen3.6-35B-A3B)
 access:
 - api
+- private-deployment
+tags:
+- legal-ai
+- document-analysis
+- information-extraction
+- retrieval-augmented
+- agentic
+- cost-optimization

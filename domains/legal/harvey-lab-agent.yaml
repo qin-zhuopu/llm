@@ -1,41 +1,33 @@
-name: GLM-5.1 (Post-trained for Legal)
-company: Applied Compute x Harvey
+name: AC GLM-5.1 (Legal Agent)
+company: Applied Compute & Harvey
 domain: legal
 status: released
-description: 基于 GLM-5.1 基座进行全参数后训练的尖端法律智能体模型。通过 Applied Compute Agent Cloud 平台优化，采用完整参数的强化学习。在
-  Harvey 的 Legal Agent Benchmark (LAB) 评测中，该模型通过率从 0.853 提升至 0.913，性能超越 GPT-5.5 xhigh
-  和 Opus 4.8 Max，具备处理长上下文文档的能力（支持 20 万 tokens）及持续注意力机制。
+description: 基于 GLM-5.1 基座通过全参数强化学习后训练的前沿法律智能体。该模型在 Harvey 的法律智能体基准 (LAB) 中表现出色，Rubric
+  通过率从 0.853 提升至 0.913，性能超越了 GPT-5.5 xhigh 和 Opus 4.8 Max。模型在工具使用、归因依据以及精确性方面经过深度优化，具备处理超过
+  20 万 Token 上下文的能力。
 capabilities:
-- 处理复杂的法律推理任务，涵盖 24 个法律领域
-- 满足多步骤指令的严格执行，确保每项标准均被满足
-- 驾驭极长上下文文档（超过 200,000 tokens）并进行信息提取
-- 利用工具（如文件读取、搜索）完成自动化法律工作流
-- 在包含 75,000 条二元标准的严格评分体系中保持高通过率
+- 处理复杂的法律文档审查与分析任务
+- 精准调用工具并进行多步骤推理
+- 严格遵守法律格式与条款要求生成文书
+- 在大量源文档中进行精确信息提取与归因
 references:
 - title: Training a State-of-the-Art Legal Agent with Harvey
   url: https://appliedcompute.com/case-studies/harvey
 - title: Harvey's Legal Agent Benchmark (LAB)
   url: https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark
-- title: Applied Compute Agent Cloud Platform
-  url: https://www.appliedcompute.com/#platform
-base_model: GLM-5.1
 benchmarks:
 - name: Harvey Legal Agent Benchmark (LAB) - Rubric Pass Rate
   score: 0.913
-  metric: rubric pass rate
-  split: held-out test split
-  comparison: outperforms Opus 4.8 Max and GPT-5.5 xhigh
-- name: Harvey Legal Agent Benchmark (LAB) - All Pass Eval Score
-  score: 0.853
-  metric: all pass eval score
-  split: baseline (before training)
-  comparison: base model performance
+  metric: pass_rate
+  comparison: vs GPT-5.1 Base (0.853), GPT-5.5 xhigh, Opus 4.8 Max
+- name: Harvey Legal Agent Benchmark (LAB) - All Pass Eval
+  score: 0.126
+  metric: pass_rate
+  comparison: vs GPT-5.1 Base (0.059), approaching Opus 4.8 Max
 tags:
-- legal-ai
-- agent
+- legal-agent
 - reinforcement-learning
-- benchmark-lab
-- long-context
-access:
-- private-deployment
-- api
+- tool-use
+- harvey-benchmark
+base_model: GLM-5.1
+website: https://appliedcompute.com

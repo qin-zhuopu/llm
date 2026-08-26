@@ -2,22 +2,21 @@ name: DoorDash Menu Error Correction Model
 company: DoorDash
 domain: retail-ecommerce
 status: released
-description: 专为DoorDash商家入驻流程设计的菜单错误修正大模型。该模型利用强化学习（RL）技术，基于自动评分系统对菜单生成的结构化输出进行优化，能够处理包括照片、PDF和文本在内的多种菜单格式。模型成功将低质量菜单的占比降低了约30%，显著提升了菜单准确性和订单履约效率。
+description: DoorDash 针对商家入驻流程开发的菜单纠错模型。该模型通过强化学习训练，利用自动评分系统模拟人类专家的验证标准，将菜单生成的低质量菜单份额降低了约
+  30%。模型专注于将图片、PDF 和文本菜单转换为结构化数据，并处理复杂的长尾菜单格式，显著提高了平台菜单的准确性和一致性。
 capabilities:
-- 自动解析非结构化菜单数据（图片、PDF、文本）
-- 生成符合DoorDash标准的结构化菜单列表
-- 识别并修正复杂的菜单层级和描述错误
-- 在高延迟和成本约束下保持高推理性能
+- 自动从非结构化源（图片、PDF）生成结构化菜单
+- 利用强化学习优化纠错逻辑并减少错误率
+- 解析和处理复杂的长尾菜单格式与层级
+- 符合 DoorDash 高质量标准的生产级推理
 references:
 - title: Automating Merchant Onboarding at DoorDash
   url: https://appliedcompute.com/case-studies/doordash
-- title: DoorDash Corporate Site
+- title: DoorDash Official Website
   url: https://about.doordash.com/
 tags:
-- menu-processing
+- menu-generation
 - reinforcement-learning
-- document-parsing
-- quality-assurance
-- error-correction
-access:
-- internal-only
+- ocr
+- data-structuring
+- merchant-onboarding
