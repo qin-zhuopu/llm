@@ -1,0 +1,208 @@
+================================================================================
+HuggingFace Inference Providers - 全量模型列表 (131 个)
+================================================================================
+
+### CohereLabs (13 models)
+  CohereLabs/c4ai-command-r-08-2024                  text            ?                                  [cohere]
+  CohereLabs/aya-expanse-32b                         text            ?                                  [cohere]
+  CohereLabs/aya-vision-32b                          text+image      ?                                  [cohere]
+  CohereLabs/c4ai-command-r7b-12-2024                text            ?                                  [cohere]
+  CohereLabs/command-a-vision-07-2025                text+image      ?                                  [cohere]
+  CohereLabs/c4ai-command-r7b-arabic-02-2025         text            ?                                  [cohere]
+  CohereLabs/c4ai-command-a-03-2025                  text            ?                                  [cohere]
+  CohereLabs/command-a-reasoning-08-2025             text            ?                                  [cohere]
+  CohereLabs/command-a-translate-08-2025             text            ?                                  [cohere]
+  CohereLabs/tiny-aya-global                         text            ?                                  [cohere]
+  CohereLabs/tiny-aya-water                          text            ?                                  [cohere]
+  CohereLabs/tiny-aya-earth                          text            ?                                  [cohere]
+  CohereLabs/tiny-aya-fire                           text            ?                                  [cohere]
+
+### MiniMaxAI (6 models)
+  MiniMaxAI/MiniMax-M3                               text+image      976K     $0.28/$1.10 per M         [novita|together|fireworks-ai]
+  MiniMaxAI/MiniMax-M2.5                             text            200K     $0.30/$1.20 per M         [novita|featherless-ai]
+  MiniMaxAI/MiniMax-M2.7                             text            200K     $0.25/$1.00 per M         [novita|fireworks-ai|featherless-ai]
+  MiniMaxAI/MiniMax-M2                               text            200K     $0.30/$1.20 per M         [novita|featherless-ai]
+  MiniMaxAI/MiniMax-M1-80k                           text            976K     $0.55/$2.20 per M         [novita]
+  MiniMaxAI/MiniMax-M2.1                             text            200K     $0.30/$1.20 per M         [novita|featherless-ai]
+
+### NousResearch (1 models)
+  NousResearch/Hermes-3-Llama-3.1-70B                text            128K     $0.70/$0.70 per M         [featherless-ai|deepinfra]
+
+### Qwen (30 models)
+  Qwen/Qwen3.8-27B                                   text+image      256K     $0.40/$3.00 per M         [featherless-ai|deepinfra]
+  Qwen/Qwen3.8-2.4T-A95B                             text            986K     $2.50/$6.25 per M         [together|fireworks-ai]
+  Qwen/Qwen3.6-35B-A3B                               text+image      256K     $0.10/$0.95 per M         [featherless-ai|scaleway|deepinfra]
+  Qwen/Qwen3.5-9B                                    text+image      256K     $0.10/$0.15 per M         [together|featherless-ai|ovhcloud]
+  Qwen/Qwen3-8B                                      text            40K      $0.07/$0.18 per M         [nscale|featherless-ai]
+  Qwen/Qwen3-Coder-Next                              text            256K     $0.20/$1.50 per M         [novita|featherless-ai]
+  Qwen/Qwen3-4B-Instruct-2507                        text            256K     $0.01/$0.03 per M         [nscale|featherless-ai]
+  Qwen/Qwen3-Coder-30B-A3B-Instruct                  text            ?        $0.23/$0.91 per M         [featherless-ai|scaleway]
+  Qwen/Qwen3.6-27B                                   text+image      256K     $0.32/$3.19 per M         [featherless-ai|ovhcloud|deepinfra]
+  Qwen/Qwen3.5-27B                                   text+image      256K     $0.26/$2.40 per M         [novita|deepinfra]
+  Qwen/Qwen2.5-Coder-7B-Instruct                     text            128K     $0.01/$0.03 per M         [nscale|featherless-ai]
+  Qwen/Qwen3-32B                                     text            40K      $0.08/$0.25 per M         [nscale|featherless-ai|deepinfra]
+  Qwen/Qwen2.5-Coder-32B-Instruct                    text            128K     $0.06/$0.20 per M         [nscale|featherless-ai]
+  Qwen/Qwen3.5-35B-A3B                               text+image      256K     $0.14/$1.00 per M         [novita|deepinfra]
+  Qwen/Qwen3-Next-80B-A3B-Instruct                   text            256K     $0.09/$1.10 per M         [novita|featherless-ai|deepinfra]
+  Qwen/Qwen3-30B-A3B                                 text            40K      $0.12/$0.50 per M         [deepinfra]
+  Qwen/Qwen2.5-72B-Instruct                          text            32K      $0.36/$0.40 per M         [novita|featherless-ai|deepinfra]
+  Qwen/Qwen3.5-397B-A17B                             text+image      256K     $0.60/$3.60 per M         [novita|featherless-ai|scaleway]
+  Qwen/Qwen3-Coder-480B-A35B-Instruct                text            256K     $0.38/$1.55 per M         [novita|featherless-ai]
+  Qwen/Qwen2.5-VL-72B-Instruct                       text+image      32K      $1.01/$1.01 per M         [featherless-ai|ovhcloud]
+  Qwen/Qwen3-14B                                     text            40K      $0.07/$0.20 per M         [nscale|featherless-ai|deepinfra]
+  Qwen/Qwen3-VL-235B-A22B-Thinking                   text+image      128K     $0.98/$3.95 per M         [novita|featherless-ai]
+  Qwen/Qwen3-4B-Thinking-2507                        text            256K     $0.01/$0.03 per M         [nscale|featherless-ai]
+  Qwen/Qwen3-VL-30B-A3B-Instruct                     text+image      256K     $0.15/$0.60 per M         [novita|featherless-ai|deepinfra]
+  Qwen/Qwen3.5-122B-A10B                             text+image      256K     $0.29/$2.40 per M         [novita|deepinfra]
+  Qwen/Qwen3-VL-235B-A22B-Instruct                   text+image      256K     $0.20/$0.88 per M         [novita|deepinfra]
+  Qwen/Qwen3-235B-A22B-Instruct-2507                 text            256K     $0.09/$0.55 per M         [novita|nscale|scaleway]
+  Qwen/Qwen2.5-Coder-3B-Instruct                     text            32K      $0.01/$0.03 per M         [nscale|featherless-ai]
+  Qwen/Qwen3-235B-A22B                               text            40K      $0.20/$0.60 per M         [novita|nscale|featherless-ai]
+  Qwen/Qwen3-235B-A22B-Thinking-2507                 text            256K     $0.23/$2.30 per M         [novita|featherless-ai|deepinfra]
+
+### Sao10K (2 models)
+  Sao10K/L3-8B-Stheno-v3.2                           text            8K       $0.05/$0.05 per M         [novita|featherless-ai]
+  Sao10K/L3-8B-Lunaris-v1                            text            8K       $0.05/$0.05 per M         [novita|featherless-ai]
+
+### XiaomiMiMo (2 models)
+  XiaomiMiMo/MiMo-V2.5                               text            1024K    $0.17/$0.34 per M         [novita|featherless-ai|deepinfra]
+  XiaomiMiMo/MiMo-V2.5-Pro                           text            1024K    $0.52/$1.04 per M         [novita|deepinfra]
+
+### aisingapore (2 models)
+  aisingapore/Gemma-SEA-LION-v4-27B-IT               text            ?        $0.20/$0.40 per M         [featherless-ai|publicai]
+  aisingapore/Qwen-SEA-LION-v4-32B-IT                text            ?        $0.25/$0.50 per M         [featherless-ai|publicai]
+
+### alpindale (1 models)
+  alpindale/WizardLM-2-8x22B                         text            63K      $0.62/$0.62 per M         [novita]
+
+### baidu (1 models)
+  baidu/ERNIE-4.5-VL-424B-A47B-Base-PT               text+image      120K     $0.42/$1.25 per M         [novita]
+
+### deepseek-ai (16 models)
+  deepseek-ai/DeepSeek-V4-Flash-0731                 text            1024K    $0.08/$0.18 per M         [novita|together|fireworks-ai]
+  deepseek-ai/DeepSeek-V4-Pro-0813                   text            1024K    $1.30/$2.60 per M         [novita|together|fireworks-ai]
+  deepseek-ai/DeepSeek-V4-Pro                        text            1024K    $1.30/$2.60 per M         [novita|together|fireworks-ai]
+  deepseek-ai/DeepSeek-V4-Flash                      text            1024K    $0.09/$0.18 per M         [novita|deepinfra]
+  deepseek-ai/DeepSeek-R1                            text            62K      $0.70/$2.50 per M         [novita]
+  deepseek-ai/DeepSeek-R1-Distill-Qwen-7B            text            128K     $0.15/$0.15 per M         [nscale]
+  deepseek-ai/DeepSeek-R1-Distill-Qwen-14B           text            128K     $0.20/$0.20 per M         [nscale|featherless-ai]
+  deepseek-ai/DeepSeek-V3                            text            160K     $0.32/$0.89 per M         [novita|deepinfra]
+  deepseek-ai/DeepSeek-V3-0324                       text            160K     $0.24/$0.90 per M         [novita|featherless-ai|deepinfra]
+  deepseek-ai/DeepSeek-V3.2                          text            160K     $0.26/$0.38 per M         [novita|featherless-ai|deepinfra]
+  deepseek-ai/DeepSeek-R1-0528                       text            160K     $0.50/$2.15 per M         [novita|featherless-ai|deepinfra]
+  deepseek-ai/DeepSeek-V3.2-Exp                      text            160K     $0.27/$0.41 per M         [novita]
+  deepseek-ai/DeepSeek-R1-Distill-Llama-8B           text            128K     $0.05/$0.05 per M         [nscale|featherless-ai]
+  deepseek-ai/DeepSeek-V3.1                          text            160K     $0.25/$0.95 per M         [novita|featherless-ai|deepinfra]
+  deepseek-ai/DeepSeek-V3.1-Terminus                 text            160K     $0.27/$0.95 per M         [novita|featherless-ai|deepinfra]
+  deepseek-ai/DeepSeek-R1-Distill-Llama-70B          text            8K       $0.80/$0.80 per M         [novita|featherless-ai]
+
+### google (5 models)
+  google/gemma-4-31B-it                              text+image      256K     $0.13/$0.38 per M         [novita|cerebras|together]
+  google/gemma-4-26B-A4B-it                          text+image      256K     $0.07/$0.34 per M         [novita|featherless-ai|scaleway]
+  google/gemma-3-4b-it                               text+image      128K     $0.05/$0.10 per M         [featherless-ai|deepinfra]
+  google/gemma-3-27b-it                              text+image      128K     $0.08/$0.16 per M         [featherless-ai|deepinfra]
+  google/gemma-3-12b-it                              text+image      128K     $0.05/$0.15 per M         [featherless-ai|deepinfra]
+
+### inclusionAI (1 models)
+  inclusionAI/Ling-3.0-flash                         text            256K     $0.06/$0.18 per M         [novita|deepinfra]
+
+### meta-llama (5 models)
+  meta-llama/Llama-3.1-8B-Instruct                   text            128K     $0.02/$0.05 per M         [novita|nscale|featherless-ai]
+  meta-llama/Llama-3.3-70B-Instruct                  text            128K     $0.14/$0.40 per M         [novita|together|featherless-ai]
+  meta-llama/Llama-4-Scout-17B-16E-Instruct          text+image      869K     $0.09/$0.29 per M         [novita|nscale|deepinfra]
+  meta-llama/Llama-Guard-4-12B                       text+image      160K     $0.18/$0.18 per M         [deepinfra]
+  meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8  text+image      1024K    $0.27/$0.85 per M         [novita]
+
+### meta-models (1 models)
+  meta-models/Muse-Glimmer-30B                       text+image      128K     $0.30/$1.20 per M         [together|fireworks-ai|deepinfra]
+
+### microsoft (1 models)
+  microsoft/phi-4                                    text            16K      $0.07/$0.14 per M         [featherless-ai|deepinfra]
+
+### moonshotai (6 models)
+  moonshotai/Kimi-K3                                 text+image      1024K    $3.00/$15.00 per M        [together|fireworks-ai|featherless-ai]
+  moonshotai/Kimi-K2.7-Code                          text+image      256K     $0.68/$3.40 per M         [novita|together|fireworks-ai]
+  moonshotai/Kimi-K2.6                               text+image      256K     $0.75/$3.40 per M         [novita|fireworks-ai|featherless-ai]
+  moonshotai/Kimi-K2-Instruct                        text            128K     $0.57/$2.30 per M         [novita]
+  moonshotai/Kimi-K2.5                               text+image      256K     $0.45/$2.25 per M         [novita|deepinfra]
+  moonshotai/Kimi-K2-Instruct-0905                   text            256K     $0.60/$2.50 per M         [novita]
+
+### nvidia (3 models)
+  nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16  text            256K                               [fireworks-ai]
+  nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4     text            500K     $0.60/$2.40 per M         [together|fireworks-ai]
+  nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16      text            256K     $1.00/$5.00 per M         [deepinfra]
+
+### openai (3 models)
+  openai/gpt-oss-20b                                 text            128K     $0.03/$0.14 per M         [groq|novita|nscale]
+  openai/gpt-oss-120b                                text            128K     $0.04/$0.17 per M         [groq|novita|cerebras]
+  openai/gpt-oss-safeguard-20b                       text            128K                               [groq]
+
+### pearl-ai (1 models)
+  pearl-ai/Gemma-4-31B-it-pearl                      text+image      256K     $0.28/$0.86 per M         [together]
+
+### prism-ml (2 models)
+  prism-ml/Ternary-Bonsai-27B-gguf                   text            256K     $0.00/$0.00 per M         [together]
+  prism-ml/Ternary-Bonsai-27B-AWQ-4bit               text+image      256K     $0.00/$0.00 per M         [together]
+
+### speakleash (1 models)
+  speakleash/Bielik-11B-v3.0-Instruct                text            ?        $0.40/$0.40 per M         [publicai]
+
+### stepfun-ai (2 models)
+  stepfun-ai/Step-3.7-Flash                          text+image      256K     $0.20/$1.15 per M         [featherless-ai|deepinfra]
+  stepfun-ai/Step-3.5-Flash                          text            256K     $0.10/$0.30 per M         [featherless-ai|deepinfra]
+
+### swiss-ai (4 models)
+  swiss-ai/Apertus-8B-Instruct-2509                  text            ?        $0.82/$2.92 per M         [publicai]
+  swiss-ai/Apertus-v1.5-8B                           text+image      ?        $0.82/$2.92 per M         [publicai]
+  swiss-ai/Apertus-70B-Instruct-2509                 text            ?        $0.82/$2.92 per M         [publicai]
+  swiss-ai/Apertus-v1.5-70B                          text+image      ?        $0.82/$2.92 per M         [publicai]
+
+### tencent (1 models)
+  tencent/Hy3                                        text            256K     $0.14/$0.58 per M         [deepinfra]
+
+### thinkingmachines (2 models)
+  thinkingmachines/Inkling-Small                     text+image      1024K    $0.45/$1.20 per M         [together|baseten|deepinfra]
+  thinkingmachines/Inkling                           text+image      1024K    $0.95/$4.05 per M         [together|fireworks-ai|baseten]
+
+### zai-org (19 models)
+  zai-org/GLM-5.2                                    text            1024K    $0.75/$2.40 per M         [novita|together|fireworks-ai]
+  zai-org/GLM-5.2-FP8                                text            ?                                  [zai-org]
+  zai-org/GLM-4.5-Air                                text            128K     $0.13/$0.85 per M         [novita|zai-org]
+  zai-org/GLM-5.1                                    text            198K     $1.05/$3.50 per M         [featherless-ai|zai-org|deepinfra]
+  zai-org/GLM-4.6V-Flash                             text+image      128K     $0.30/$0.90 per M         [novita|zai-org]
+  zai-org/GLM-4.6                                    text            200K     $0.50/$2.00 per M         [novita|featherless-ai|zai-org]
+  zai-org/GLM-4.5                                    text            ?                                  [zai-org]
+  zai-org/GLM-4.5V-FP8                               text+image      ?                                  [zai-org]
+  zai-org/GLM-4.5V                                   text+image      64K      $0.60/$1.80 per M         [novita|zai-org]
+  zai-org/GLM-4.6V                                   text+image      ?                                  [zai-org]
+  zai-org/AutoGLM-Phone-9B-Multilingual              text+image      64K      $0.04/$0.14 per M         [novita]
+  zai-org/GLM-4.6V-FP8                               text+image      ?                                  [zai-org]
+  zai-org/GLM-4.6-FP8                                text            ?                                  [zai-org]
+  zai-org/GLM-4.7-FP8                                text            ?                                  [zai-org]
+  zai-org/GLM-4.7                                    text            200K     $0.40/$1.75 per M         [novita|featherless-ai|zai-org]
+  zai-org/GLM-4.7-Flash                              text            198K     $0.06/$0.40 per M         [featherless-ai|zai-org|deepinfra]
+  zai-org/GLM-5                                      text            198K     $0.60/$2.08 per M         [novita|featherless-ai|zai-org]
+  zai-org/GLM-5.1-FP8                                text            ?                                  [zai-org]
+  zai-org/GLM-4-32B-0414                             text            31K      $0.55/$1.66 per M         [novita|featherless-ai]
+
+================================================================================
+垂直领域关键词搜索:
+================================================================================
+
+  code: 7 models
+    - Qwen/Qwen3-Coder-Next
+    - Qwen/Qwen3-Coder-30B-A3B-Instruct
+    - moonshotai/Kimi-K2.7-Code
+    - Qwen/Qwen2.5-Coder-7B-Instruct
+    - Qwen/Qwen2.5-Coder-32B-Instruct
+    - Qwen/Qwen3-Coder-480B-A35B-Instruct
+    - Qwen/Qwen2.5-Coder-3B-Instruct
+
+  vision: 7 models
+    - Qwen/Qwen2.5-VL-72B-Instruct
+    - Qwen/Qwen3-VL-235B-A22B-Thinking
+    - Qwen/Qwen3-VL-30B-A3B-Instruct
+    - Qwen/Qwen3-VL-235B-A22B-Instruct
+    - baidu/ERNIE-4.5-VL-424B-A47B-Base-PT
+    - CohereLabs/aya-vision-32b
+    - CohereLabs/command-a-vision-07-2025
