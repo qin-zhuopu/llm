@@ -17,7 +17,8 @@ tags:
 - 地质勘探
 - 分子模拟
 - 供应链优化
-access: internal-only
+access:
+- internal-only
 region:
 - china
 references:

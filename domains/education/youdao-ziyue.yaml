@@ -20,7 +20,8 @@ tags:
 - open-source
 - translation
 - writing-assistant
-access: open-weights
+access:
+- open-weights
 region:
 - china
 references:

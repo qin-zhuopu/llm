@@ -3,19 +3,20 @@ name_en: XuanYuan
 company: 度小满
 domain: finance
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://ai.duxiaoman.com
-description: "中文金融领域大模型，面向风控、智能客服和投研场景，专注于中国金融市场。"
+description: 中文金融领域大模型，面向风控、智能客服和投研场景，专注于中国金融市场。
 capabilities:
-  - 金融风控
-  - 智能客服
-  - 投研分析
-access: api
+- 金融风控
+- 智能客服
+- 投研分析
+access:
+- api
 region:
-  - china
+- china
 tags:
-  - 中文金融
-  - 风控
+- 中文金融
+- 风控
 references:
-  - title: 度小满AI开放平台
-    url: "https://ai.duxiaoman.com"
+- title: 度小满AI开放平台
+  url: https://ai.duxiaoman.com

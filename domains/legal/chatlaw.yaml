@@ -13,7 +13,8 @@ capabilities:
 tags:
 - 法律咨询
 - 学术
-access: api
+access:
+- api
 region:
 - china
 references:

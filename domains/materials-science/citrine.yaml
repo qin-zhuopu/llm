@@ -4,7 +4,8 @@ domain: materials-science
 status: released
 release_date: '2022'
 website: https://www.citrine.io
-description: Citrine Platform 是一套企业级的人工智能平台，旨在加速材料和化学领域的创新。它通过生成式 AI 和虚拟实验技术，帮助企业从现有数据中挖掘更多价值，利用数字助手和知识库提取功能，大幅缩短产品研发周期，提升研发投资回报率，并促进跨部门的知识共享。该平台已通过 ISO 27001 安全认证，被行业领导者广泛部署。
+description: Citrine Platform 是一套企业级的人工智能平台，旨在加速材料和化学领域的创新。它通过生成式 AI 和虚拟实验技术，帮助企业从现有数据中挖掘更多价值，利用数字助手和知识库提取功能，大幅缩短产品研发周期，提升研发投资回报率，并促进跨部门的知识共享。该平台已通过
+  ISO 27001 安全认证，被行业领导者广泛部署。
 capabilities:
 - 利用生成式 AI 运行数千次虚拟实验以筛选候选材料
 - 捕获和管理企业内部的材料知识与数据资产
@@ -18,7 +19,8 @@ tags:
 - chemistry
 - enterprise-platform
 - data-management
-access: saas
+access:
+- saas
 region:
 - global
 references:

@@ -22,6 +22,7 @@ tags:
 - generative-model
 - autoregressive
 - behavior-planning
-access: internal-only
+access:
+- internal-only
 region:
 - china

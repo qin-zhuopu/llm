@@ -16,7 +16,8 @@ tags:
 - 合规风控
 - 智能投顾
 - 私有化部署
-access: private-deployment
+access:
+- private-deployment
 region:
 - china
 references:

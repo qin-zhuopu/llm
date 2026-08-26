@@ -16,7 +16,8 @@ tags:
 - 智能分诊
 - 健康咨询
 - NLP
-access: saas
+access:
+- saas
 region:
 - china
 references:

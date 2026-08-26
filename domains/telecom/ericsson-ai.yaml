@@ -19,7 +19,8 @@ tags:
 - 网络切片
 - 自主网络
 - 能效优化
-access: private-deployment
+access:
+- private-deployment
 region:
 - global
 references:

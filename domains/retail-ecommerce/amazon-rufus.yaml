@@ -13,7 +13,8 @@ capabilities:
 tags:
 - 购物助手
 - 消费者
-access: saas
+access:
+- saas
 region:
 - global
 references:

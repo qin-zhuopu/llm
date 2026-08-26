@@ -3,60 +3,63 @@ name_en: HuatuoGPT
 company: 香港中文大学(深圳)
 domain: healthcare
 status: released
-release_date: "2023-05"
-website: "https://www.huatuogpt.cn/"
-description: "中文医疗对话大语言模型，基于Baichuan-7B和Ziya-LLaMA-13B微调，使用22.6万条混合SFT数据(ChatGPT蒸馏+真实医患对话)训练。EMNLP 2023论文，在cMedQA2等中文医疗问答基准上优于T5基线，兼具医生专业性和患者友好特点。"
-parameters: "7B / 13B"
-architecture: "decoder-only transformer"
+release_date: 2023-05
+website: https://www.huatuogpt.cn/
+description: 中文医疗对话大语言模型，基于Baichuan-7B和Ziya-LLaMA-13B微调，使用22.6万条混合SFT数据(ChatGPT蒸馏+真实医患对话)训练。EMNLP
+  2023论文，在cMedQA2等中文医疗问答基准上优于T5基线，兼具医生专业性和患者友好特点。
+parameters: 7B / 13B
+architecture: decoder-only transformer
 base_model:
-  - Baichuan-7B
-  - Ziya-LLaMA-13B-Pretrain-v1
+- Baichuan-7B
+- Ziya-LLaMA-13B-Pretrain-v1
 training:
   stages:
-    - name: sft
-      description: "使用22.6万条混合数据(ChatGPT蒸馏指令61.4K + 真实医生对话69.8K + ChatGPT多轮对话68.9K + 真实多轮问诊26K)进行监督微调"
-  context_length: "2K"
+  - name: sft
+    description: 使用22.6万条混合数据(ChatGPT蒸馏指令61.4K + 真实医生对话69.8K + ChatGPT多轮对话68.9K +
+      真实多轮问诊26K)进行监督微调
+  context_length: 2K
 tech_stack:
   framework: DeepSpeed
   techniques:
-    - Gradient Checkpointing
-    - Mixed SFT Data Strategy
+  - Gradient Checkpointing
+  - Mixed SFT Data Strategy
 datasets:
-  - name: HuatuoGPT-sft-data-v1
-    description: "混合医疗SFT数据，包含ChatGPT蒸馏指令、真实医生对话等四类数据"
-    size: "226K samples"
-    type: sft
-  - name: cMedQA2
-    description: "中文医学问答评测数据集"
-    type: evaluation
-  - name: WebMedQA
-    description: "网络医学问答评测数据集"
-    type: evaluation
+- name: HuatuoGPT-sft-data-v1
+  description: 混合医疗SFT数据，包含ChatGPT蒸馏指令、真实医生对话等四类数据
+  size: 226K samples
+  type: sft
+- name: cMedQA2
+  description: 中文医学问答评测数据集
+  type: evaluation
+- name: WebMedQA
+  description: 网络医学问答评测数据集
+  type: evaluation
 benchmarks:
-  - name: cMedQA2
-    score: "27.39"
-    metric: BLEU-1
-  - name: WebMedQA
-    score: "24.85"
-    metric: BLEU-1
+- name: cMedQA2
+  score: '27.39'
+  metric: BLEU-1
+- name: WebMedQA
+  score: '24.85'
+  metric: BLEU-1
 capabilities:
-  - 中文医疗多轮对话问诊
-  - 医学问题解答与建议
-  - 患者症状分析与初步判断
-  - 用药建议和治疗方案说明
-access: open-weights
+- 中文医疗多轮对话问诊
+- 医学问题解答与建议
+- 患者症状分析与初步判断
+- 用药建议和治疗方案说明
+access:
+- open-weights
 region:
-  - china
+- china
 tags:
-  - 中文医疗
-  - 医疗对话
-  - SFT微调
-  - 开源模型
-  - EMNLP 2023
+- 中文医疗
+- 医疗对话
+- SFT微调
+- 开源模型
+- EMNLP 2023
 references:
-  - title: "HuatuoGPT: Towards Taming Language Models To Be a Doctor"
-    url: "https://arxiv.org/abs/2305.15075"
-  - title: HuatuoGPT GitHub
-    url: "https://github.com/FreedomIntelligence/HuatuoGPT"
-  - title: HuatuoGPT在线演示
-    url: "https://www.huatuogpt.cn/"
+- title: 'HuatuoGPT: Towards Taming Language Models To Be a Doctor'
+  url: https://arxiv.org/abs/2305.15075
+- title: HuatuoGPT GitHub
+  url: https://github.com/FreedomIntelligence/HuatuoGPT
+- title: HuatuoGPT在线演示
+  url: https://www.huatuogpt.cn/

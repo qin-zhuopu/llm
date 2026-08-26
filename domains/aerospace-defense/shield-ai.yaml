@@ -13,13 +13,15 @@ capabilities:
 tags:
 - 无人机
 - 自主决策
-access: private-deployment
+access:
+- private-deployment
 region:
 - us
 references:
 - title: Shield AI Official Website
   url: https://www.shield.ai
-- title: Inside the AI-enabled pilot that flew Air Force Secretary Kendall through a dogfight
+- title: Inside the AI-enabled pilot that flew Air Force Secretary Kendall through
+    a dogfight
   url: https://shield.ai/inside-the-ai-enabled-pilot-that-flew-air-force-secretary-kendall-through-a-dogfight/
 - title: Shield AI's Hivemind flies MQ-20 Avenger autonomously at Orange Flag
   url: https://shield.ai/shield-ais-hivemind-flies-mq-20-avenger-autonomously-at-orange-flag/

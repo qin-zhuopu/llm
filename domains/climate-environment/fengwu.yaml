@@ -13,7 +13,8 @@ capabilities:
 - 快速推演与生成
 tags:
 - 天气预报
-access: api
+access:
+- api
 region:
 - china
 references:

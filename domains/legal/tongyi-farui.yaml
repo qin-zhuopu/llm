@@ -20,7 +20,8 @@ tags:
 - contract-review
 - case-analysis
 - smart-assistant
-access: api
+access:
+- api
 region:
 - china
 references:

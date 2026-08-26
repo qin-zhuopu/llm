@@ -4,7 +4,8 @@ domain: legal
 status: released
 release_date: '2022'
 website: https://www.harvey.ai
-description: 专为法律行业打造的生成式人工智能平台，基于前沿LLM技术，支持律所和企业法务团队处理高难度法律事务。通过智能代理编排复杂法律工作流程，集成合同智能分析、法律研究及文档洞察功能。已获得SOC2 II、ISO 27001等企业级安全认证，服务全球70多个国家的2400多家法律组织，拥有20万以上专业用户，是法律领域应用最成功的AI技术之一。
+description: 专为法律行业打造的生成式人工智能平台，基于前沿LLM技术，支持律所和企业法务团队处理高难度法律事务。通过智能代理编排复杂法律工作流程，集成合同智能分析、法律研究及文档洞察功能。已获得SOC2
+  II、ISO 27001等企业级安全认证，服务全球70多个国家的2400多家法律组织，拥有20万以上专业用户，是法律领域应用最成功的AI技术之一。
 capabilities:
 - 智能代理编排：自动将复杂法律任务路由至最合适的代理进行处理
 - 合同智能分析：加速日常审查流程，优化谈判策略并提供全组合洞察
@@ -17,7 +18,8 @@ tags:
 - legal-research
 - enterprise-security
 - agents
-access: saas
+access:
+- saas
 region:
 - global
 references:

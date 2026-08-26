@@ -4,8 +4,10 @@ domain: accounting-audit
 status: released
 release_date: '2023'
 website: https://kpmg.com/us/en/ai.html
-description: KPMG AI 是毕马威推出的企业级生成式人工智能解决方案套件，旨在重塑企业工作流并释放业务潜能。该套件与 OpenAI 结成战略联盟（Elite Partner），整合了云数据平台与先进 AI 技术，专注于通过自动化和智能化手段提高运营效率、增强决策能力并确保合规安全。核心产品包括面向审计的 KPMG Clara（利用 AI 聚焦风险领域，提高审计质量与效率）以及面向税务的
-  KPMG Digital Gateway（部署负责任且公平的 GenAI 程序），同时涵盖 KPMG Blaze 等技术现代化加速工具。KPMG 强调通过‘可信赖 AI’方法，结合人类监督与风险管控，为客户提供从战略规划到技术实施的全方位 AI 转型支持。
+description: KPMG AI 是毕马威推出的企业级生成式人工智能解决方案套件，旨在重塑企业工作流并释放业务潜能。该套件与 OpenAI 结成战略联盟（Elite
+  Partner），整合了云数据平台与先进 AI 技术，专注于通过自动化和智能化手段提高运营效率、增强决策能力并确保合规安全。核心产品包括面向审计的 KPMG Clara（利用
+  AI 聚焦风险领域，提高审计质量与效率）以及面向税务的 KPMG Digital Gateway（部署负责任且公平的 GenAI 程序），同时涵盖 KPMG Blaze
+  等技术现代化加速工具。KPMG 强调通过‘可信赖 AI’方法，结合人类监督与风险管控，为客户提供从战略规划到技术实施的全方位 AI 转型支持。
 capabilities:
 - 提供端到端的 GenAI 战略规划与执行方案
 - 利用 KPMG Clara 实现智能化审计与风险聚焦
@@ -15,7 +17,8 @@ capabilities:
 tags:
 - 四大
 - 审计
-access: internal-only
+access:
+- internal-only
 region:
 - global
 references:

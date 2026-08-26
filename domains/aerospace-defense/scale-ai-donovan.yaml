@@ -4,8 +4,9 @@ domain: aerospace-defense
 status: released
 release_date: '2023'
 website: https://scale.com/donovan
-description: Donovan 是一个专门为关键任务设计的人工智能代理平台，旨在通过 'Agent Arsenal' 和 'Agent Factory' 为作战人员提供从概念到战斗的快速部署能力。该平台采用 Agentic RAG 架构，具备本地化、云和 API 数据摄取能力，支持构建知识库（如 GDELT 事件数据、国防部政策文件）并集成外部工具。Donovan 强调安全性、可追溯性和模型无关性（支持
-  Llama 3.3 70B Instruct 等多种模型），可在分类和隔离网络（如 GovCloud）上运行，以实现情报分析、威胁监控和行动报告的自动化。
+description: Donovan 是一个专门为关键任务设计的人工智能代理平台，旨在通过 'Agent Arsenal' 和 'Agent Factory'
+  为作战人员提供从概念到战斗的快速部署能力。该平台采用 Agentic RAG 架构，具备本地化、云和 API 数据摄取能力，支持构建知识库（如 GDELT 事件数据、国防部政策文件）并集成外部工具。Donovan
+  强调安全性、可追溯性和模型无关性（支持 Llama 3.3 70B Instruct 等多种模型），可在分类和隔离网络（如 GovCloud）上运行，以实现情报分析、威胁监控和行动报告的自动化。
 capabilities:
 - Agentic RAG 与知识库构建：支持通过本地上传、API 及连接器（如 GDELT）摄取数据，构建包含事件数据、政策文档等的高质量知识库。
 - 任务定制化代理开发：通过无代码界面，利用 SGP 集成快速定制和部署具备特定角色（如军事情报分析师）的 AI 代理。
@@ -19,7 +20,8 @@ tags:
 - intelligence-analysis
 - govcloud
 - llm-ops
-access: private-deployment
+access:
+- private-deployment
 region:
 - us
 references:

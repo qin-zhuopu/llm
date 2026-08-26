@@ -19,7 +19,8 @@ tags:
 - optimization
 - decision-making
 - digital-twin
-access: api
+access:
+- api
 region:
 - china
 references:

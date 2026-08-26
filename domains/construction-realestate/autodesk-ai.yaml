@@ -4,7 +4,8 @@ domain: construction-realestate
 status: released
 release_date: '2024'
 website: https://www.autodesk.com
-description: Autodesk AI 是一套嵌入在 Autodesk 设计、工程和施工软件产品中的人工智能和机器学习功能套件。它结合了基于算法的生成式设计（Generative Design）和基于神经网络的生成式 AI（Generative AI），旨在增强 AutoCAD、Revit 和 Fusion 等生态系统工具。该模型通过智能辅助和工作流自动化，服务于全球数百万建筑、工程、施工（AEC）及制造领域的专业人士，显著提升工作效率并优化项目成果。
+description: Autodesk AI 是一套嵌入在 Autodesk 设计、工程和施工软件产品中的人工智能和机器学习功能套件。它结合了基于算法的生成式设计（Generative
+  Design）和基于神经网络的生成式 AI（Generative AI），旨在增强 AutoCAD、Revit 和 Fusion 等生态系统工具。该模型通过智能辅助和工作流自动化，服务于全球数百万建筑、工程、施工（AEC）及制造领域的专业人士，显著提升工作效率并优化项目成果。
 capabilities:
 - '生成式设计 (Generative Design): 基于目标和约束快速生成设计替代方案'
 - '自然语言交互 (Autodesk Assistant): 使用自然语言查询模型、生成文档并执行建模操作'
@@ -18,7 +19,8 @@ tags:
 - aec
 - cad
 - autonomous-workflow
-access: saas
+access:
+- saas
 region:
 - global
 references:

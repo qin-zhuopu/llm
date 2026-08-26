@@ -20,7 +20,8 @@ tags:
 - ai-agents
 - document-processing
 - optimization
-access: internal-only
+access:
+- internal-only
 region:
 - global
 references:

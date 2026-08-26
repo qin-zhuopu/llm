@@ -16,7 +16,8 @@ tags:
 - AI家教
 - 个性化学习
 - 智能硬件
-access: private-deployment
+access:
+- private-deployment
 region:
 - china
 references:

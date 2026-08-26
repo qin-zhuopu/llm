@@ -19,7 +19,8 @@ tags:
 - 5G-optimization
 - fault-diagnosis
 - enterprise-ai
-access: api
+access:
+- api
 region:
 - china
 references:

@@ -18,7 +18,8 @@ tags:
 - 语音识别
 - 安全优先
 - 非诊断任务
-access: api
+access:
+- api
 region:
 - us
 references:

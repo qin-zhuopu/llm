@@ -17,7 +17,8 @@ tags:
 - 故障诊断
 - 巡检
 - 大数据
-access: internal-only
+access:
+- internal-only
 region:
 - china
 references:

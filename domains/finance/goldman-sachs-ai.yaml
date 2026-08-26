@@ -16,7 +16,8 @@ tags:
 - asset-management
 - market-analysis
 - institutional-knowledge
-access: internal-only
+access:
+- internal-only
 region:
 - global
 references:

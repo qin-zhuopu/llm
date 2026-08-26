@@ -16,7 +16,8 @@ capabilities:
 tags:
 - 电商
 - 客服
-access: private-deployment
+access:
+- private-deployment
 region:
 - china
 references:

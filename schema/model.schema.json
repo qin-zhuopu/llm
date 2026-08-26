@@ -276,9 +276,12 @@
       "items": { "type": "string" }
     },
     "access": {
-      "type": "string",
-      "description": "使用方式",
-      "enum": ["api", "saas", "private-deployment", "open-weights", "internal-only", "unknown"]
+      "type": "array",
+      "description": "使用方式（可多选，如一个模型同时开放权重并提供 API）",
+      "items": {
+        "type": "string",
+        "enum": ["api", "saas", "private-deployment", "open-weights", "internal-only", "unknown"]
+      }
     },
     "region": {
       "type": "array",

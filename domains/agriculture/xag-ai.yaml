@@ -18,7 +18,8 @@ tags:
 - iot
 - robotics
 - precision-agriculture
-access: saas
+access:
+- saas
 region:
 - china
 references:

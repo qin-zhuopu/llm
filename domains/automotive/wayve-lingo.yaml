@@ -2,43 +2,44 @@ name: Wayve LINGO-2
 company: Wayve
 domain: automotive
 status: research
-release_date: "2024-04"
-website: "https://wayve.ai/thinking/lingo-2-driving-with-language/"
-description: "Wayve开发的闭环视觉-语言-动作模型(VLAM)，是首个在公共道路上测试的自然语言驱动自动驾驶模型。LINGO-2将视觉感知、自回归语言模型和动作控制集成为统一架构，能在驾驶同时实时用自然语言解释决策过程，实现透明可解释的自动驾驶。"
-parameters: "未公开"
-architecture: "Vision-Language-Action Model (VLAM)"
+release_date: 2024-04
+website: https://wayve.ai/thinking/lingo-2-driving-with-language/
+description: Wayve开发的闭环视觉-语言-动作模型(VLAM)，是首个在公共道路上测试的自然语言驱动自动驾驶模型。LINGO-2将视觉感知、自回归语言模型和动作控制集成为统一架构，能在驾驶同时实时用自然语言解释决策过程，实现透明可解释的自动驾驶。
+parameters: 未公开
+architecture: Vision-Language-Action Model (VLAM)
 capabilities:
-  - 闭环自动驾驶控制（转向、加速、制动）
-  - 实时自然语言驾驶决策解释
-  - 驾驶场景视觉感知与理解
-  - 自然语言指令定制驾驶风格
-  - 道路几何与交通参与者识别
+- 闭环自动驾驶控制（转向、加速、制动）
+- 实时自然语言驾驶决策解释
+- 驾驶场景视觉感知与理解
+- 自然语言指令定制驾驶风格
+- 道路几何与交通参与者识别
 training:
   stages:
-    - name: pre-training
-      description: "视觉模型处理摄像头输入感知驾驶环境"
-    - name: fine-tuning
-      description: "将语言与驾驶动作闭环集成训练"
+  - name: pre-training
+    description: 视觉模型处理摄像头输入感知驾驶环境
+  - name: fine-tuning
+    description: 将语言与驾驶动作闭环集成训练
 tech_stack:
   techniques:
-    - Vision-Language-Action Integration
-    - Auto-regressive Language Model
-    - Closed-loop Driving
+  - Vision-Language-Action Integration
+  - Auto-regressive Language Model
+  - Closed-loop Driving
 datasets:
-  - name: LingoQA
-    description: "Wayve发布的自动驾驶场景描述与问答基准数据集"
-    type: evaluation
-access: internal-only
+- name: LingoQA
+  description: Wayve发布的自动驾驶场景描述与问答基准数据集
+  type: evaluation
+access:
+- internal-only
 region:
-  - europe
+- europe
 tags:
-  - 自动驾驶
-  - 多模态
-  - 视觉语言模型
-  - 可解释AI
-  - 闭环控制
+- 自动驾驶
+- 多模态
+- 视觉语言模型
+- 可解释AI
+- 闭环控制
 references:
-  - title: "LINGO-2: Driving with Language"
-    url: "https://wayve.ai/thinking/lingo-2-driving-with-language/"
-  - title: Wayve官网
-    url: "https://www.wayve.ai"
+- title: 'LINGO-2: Driving with Language'
+  url: https://wayve.ai/thinking/lingo-2-driving-with-language/
+- title: Wayve官网
+  url: https://www.wayve.ai

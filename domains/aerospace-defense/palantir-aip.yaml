@@ -4,7 +4,9 @@ domain: aerospace-defense
 status: released
 release_date: '2023'
 website: https://www.palantir.com/platforms/aip/
-description: Palantir AIP 是一个企业级生成式人工智能平台，旨在为关键的商业和政府环境提供实时、AI 驱动的决策支持。该平台通过连接多种大语言模型（遵循 k-LLM 范式）与 Palantir 本体（Ontology）语义层，使开发者能够构建 LLM 支持的工作流、智能体和应用。其核心差异化在于利用企业的结构化数据上下文，确保 AI 输出的准确性和相关性，并提供企业级的安全治理。
+description: Palantir AIP 是一个企业级生成式人工智能平台，旨在为关键的商业和政府环境提供实时、AI 驱动的决策支持。该平台通过连接多种大语言模型（遵循
+  k-LLM 范式）与 Palantir 本体（Ontology）语义层，使开发者能够构建 LLM 支持的工作流、智能体和应用。其核心差异化在于利用企业的结构化数据上下文，确保
+  AI 输出的准确性和相关性，并提供企业级的安全治理。
 capabilities:
 - 通过本体语义层集成企业数据上下文
 - 构建和部署对话式 AI 智能体（Chatbot Studio）
@@ -14,7 +16,8 @@ capabilities:
 tags:
 - 情报
 - 国防
-access: saas
+access:
+- saas
 region:
 - us
 references:

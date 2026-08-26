@@ -22,7 +22,8 @@ tags:
 - 生产优化
 - 边云协同
 - 知识图谱
-access: saas
+access:
+- saas
 region:
 - china
 references:
