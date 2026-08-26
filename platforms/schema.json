@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Platform",
+  "description": "AI推理与训练平台结构化数据，侧重于推理API、可用模型、训练能力、定价",
+  "type": "object",
+  "required": ["name", "company", "description", "inference_api", "references"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "平台名称",
+      "minLength": 1
+    },
+    "name_en": {
+      "type": "string",
+      "description": "平台英文名称（如果主名称是中文）"
+    },
+    "company": {
+      "type": "string",
+      "description": "运营公司",
+      "minLength": 1
+    },
+    "founded": {
+      "type": "string",
+      "description": "公司/平台成立时间 (YYYY 或 YYYY-MM)",
+      "pattern": "^\\d{4}(-\\d{2})?$"
+    },
+    "website": {
+      "type": "string",
+      "description": "平台官方网站URL",
+      "format": "uri"
+    },
+    "status": {
+      "type": "string",
+      "description": "平台状态",
+      "enum": ["ga", "beta", "preview", "deprecated"]
+    },
+    "description": {
+      "type": "string",
+      "description": "平台简介（应包含核心定位、差异化特点）",
+      "minLength": 30
+    },
+    "funding": {
+      "type": "object",
+      "description": "融资信息",
+      "properties": {
+        "total_raised": {
+          "type": "string",
+          "description": "总融资金额（如 $2B）"
+        },
+        "latest_round": {
+          "type": "string",
+          "description": "最新一轮融资（如 seed, Series A, Series B）"
+        },
+        "valuation": {
+          "type": "string",
+          "description": "估值（如 $12B）"
+        },
+        "lead_investors": {
+          "type": "array",
+          "description": "领投机构",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "team": {
+      "type": "object",
+      "description": "团队信息",
+      "properties": {
+        "size": {
+          "type": "string",
+          "description": "团队规模（如 ~212人）"
+        },
+        "key_people": {
+          "type": "array",
+          "description": "核心团队成员",
+          "items": {
+            "type": "object",
+            "required": ["name", "role"],
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "background": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "inference_api": {
+      "type": "object",
+      "description": "推理API信息（必填）",
+      "required": ["available", "models"],
+      "properties": {
+        "available": {
+          "type": "boolean",
+          "description": "是否提供推理API"
+        },
+        "status": {
+          "type": "string",
+          "description": "推理API状态",
+          "enum": ["ga", "beta", "preview", "deprecated"]
+        },
+        "protocol": {
+          "type": "string",
+          "description": "API协议类型",
+          "enum": ["openai-compatible", "rest", "grpc", "graphql", "websocket", "proprietary", "other"]
+        },
+        "documentation": {
+          "type": "string",
+          "description": "API文档链接",
+          "format": "uri"
+        },
+        "endpoint": {
+          "type": "string",
+          "description": "API端点基础地址"
+        },
+        "auth_method": {
+          "type": "string",
+          "description": "认证方式（如 API Key, OAuth2）"
+        },
+        "models": {
+          "type": "array",
+          "description": "可用推理模型列表",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "模型名称"
+              },
+              "model_id": {
+                "type": "string",
+                "description": "API调用时使用的模型ID"
+              },
+              "parameters": {
+                "type": "string",
+                "description": "参数量（如 975B MoE, 276B MoE）"
+              },
+              "context_length": {
+                "type": "string",
+                "description": "上下文窗口长度（如 64K, 128K, 256K）"
+              },
+              "modalities": {
+                "type": "array",
+                "description": "支持的模态",
+                "items": {
+                  "type": "string",
+                  "enum": ["text", "vision", "audio", "video", "code", "embedding"]
+                }
+              },
+              "pricing": {
+                "type": "object",
+                "description": "推理定价",
+                "properties": {
+                  "input_per_million": {
+                    "type": "string",
+                    "description": "输入价格（每百万token，如 $0.30）"
+                  },
+                  "output_per_million": {
+                    "type": "string",
+                    "description": "输出价格（每百万token，如 $1.20）"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "description": "定价单位说明（如 per million tokens）",
+                    "default": "per million tokens"
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "training_api": {
+      "type": "object",
+      "description": "训练/微调API信息",
+      "properties": {
+        "available": {
+          "type": "boolean",
+          "description": "是否提供训练API"
+        },
+        "status": {
+          "type": "string",
+          "description": "训练API状态",
+          "enum": ["ga", "beta", "preview", "deprecated"]
+        },
+        "methods": {
+          "type": "array",
+          "description": "支持的训练方法",
+          "items": {
+            "type": "string",
+            "enum": ["sft", "lora", "qlora", "full-finetune", "rl", "dpo", "distillation", "rlhf", "rlaif", "other"]
+          }
+        },
+        "models": {
+          "type": "array",
+          "description": "可微调的模型列表",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "模型名称"
+              },
+              "model_id": {
+                "type": "string",
+                "description": "API调用时使用的模型ID"
+              },
+              "parameters": {
+                "type": "string",
+                "description": "参数量"
+              },
+              "architecture": {
+                "type": "string",
+                "description": "架构类型（如 Dense, MoE）"
+              },
+              "context_length": {
+                "type": "string",
+                "description": "上下文窗口长度"
+              },
+              "pricing": {
+                "type": "object",
+                "description": "训练定价",
+                "properties": {
+                  "train_per_million": {
+                    "type": "string",
+                    "description": "训练价格（每百万token，如 $0.396）"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "description": "定价单位说明",
+                    "default": "per million tokens"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "description": "训练平台特性",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "deployment_options": {
+      "type": "array",
+      "description": "部署方式",
+      "items": {
+        "type": "string",
+        "enum": ["serverless", "dedicated", "on-premise", "vpc", "hybrid"]
+      }
+    },
+    "region": {
+      "type": "array",
+      "description": "服务区域",
+      "items": {
+        "type": "string",
+        "enum": ["global", "china", "us", "europe", "japan", "korea", "southeast-asia", "middle-east"]
+      }
+    },
+    "tags": {
+      "type": "array",
+      "description": "标签（用于搜索和分类）",
+      "items": { "type": "string" }
+    },
+    "references": {
+      "type": "array",
+      "description": "参考链接（官网、文档、博客等）",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      },
+      "minItems": 1
+    }
+  }
+}

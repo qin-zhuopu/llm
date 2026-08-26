@@ -1,0 +1,4 @@
+name: AI平台
+name_en: AI Platforms
+description: "AI推理与训练平台，提供模型API、微调服务、部署基础设施"
+scope: "收录提供推理API和/或训练API的AI平台，侧重于平台能力、可用模型、定价信息"

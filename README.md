@@ -44,6 +44,18 @@
 | 19 | [人力资源](domains/human-resources/) | 简历筛选、人岗匹配、培训内容生成 |
 | 20 | [会计审计](domains/accounting-audit/) | 财务审计、税务合规、报表分析 |
 
+## AI 平台
+
+除垂直领域模型外，本仓库还收录提供推理API和训练API的AI平台：
+
+| # | 平台 | 公司 | 推理API | 训练API | 说明 |
+|---|------|------|---------|---------|------|
+| 1 | [Tinker](platforms/tinker.yaml) | Thinking Machines Lab | Beta (Inkling系列) | GA (28+模型LoRA) | 前OpenAI CTO Mira Murati创立，$2B融资 |
+
+平台数据结构参见 [`platforms/schema.json`](platforms/schema.json)，推理API为必填字段。
+
+---
+
 ## Tier 分级依据
 
 - 已公开的专用闭源模型数量
@@ -83,4 +95,11 @@ python scripts/validate.py
 1. 在对应领域文件夹下创建 `{模型名}.yaml`
 2. 按照 `schema/model.schema.json` 的格式填写字段
 3. 运行 `python scripts/validate.py` 确认无格式错误
+4. 提交 PR
+
+### 添加新平台
+
+1. 在 `platforms/` 文件夹下创建 `{平台名}.yaml` 和 `{平台名}.md`
+2. 按照 `platforms/schema.json` 的格式填写字段（推理API为必填）
+3. 运行 `python scripts/validate_platforms.py` 确认无格式错误
 4. 提交 PR
