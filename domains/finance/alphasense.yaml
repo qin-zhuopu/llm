@@ -1,0 +1,90 @@
+name: AlphaSense AI Platform
+name_en: AlphaSense AI Platform
+company: AlphaSense
+domain: finance
+status: released
+release_date: "2024"
+website: https://www.alpha-sense.com
+description: 全球领先的AI驱动金融与企业研究平台，拥有5亿+高级商业文档和7000+企业客户。2026年ARR超6亿美元，估值75亿美元。平台集成Generative Search多智能体系统、Deep Research自主研究代理和Workflow Agents，提供句子级引用和无幻觉输出，覆盖投资银行、对冲基金、私募股权、咨询等核心金融场景。数据源涵盖Tegus专家访谈、券商研报、公司文件和私有金融数据。
+parameters: 未公开
+architecture: Multi-agent system (多智能体架构)
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模金融和商业文档语料库预训练，涵盖5亿+文档，学习金融术语、行业知识和文档结构化表征
+  - name: fine-tuning
+    description: 在金融搜索、问答、摘要生成等下游任务上微调，优化Smart Synonyms语义搜索和句子级引用能力
+  - name: rlhf
+    description: 基于金融专业人士反馈进行强化学习，优化Generative Search输出质量、引用准确性和无幻觉约束
+  context_length: 128K
+tech_stack:
+  framework: 多模型编排架构(使用业界最先进AI模型)
+  inference: 云端多智能体推理系统
+  techniques:
+  - Multi-agent research system
+  - Retrieval-Augmented Generation (RAG)
+  - Sentence-level citation and attribution
+  - Smart Synonyms (semantic search)
+  - Zero-hallucination design
+  - Autonomous research agents
+  - Native Office integration (PowerPoint/Excel add-ins)
+datasets:
+- name: AlphaSense Premium Document Library
+  description: 包含Tegus专家访谈记录、券商研究报告、公司财务文件、公开和私有金融数据的综合文档库
+  size: 500M+ documents
+  type: pre-training
+- name: Enterprise Internal Knowledge
+  description: 客户连接的内部备忘录、会议记录、演示文稿等企业私有知识库
+  type: other
+- name: Financial Data (Structured)
+  description: 结构化金融数据，包括行业可比数据、并购交易、融资轮次、估值指标等
+  type: other
+benchmarks:
+- name: Citation Accuracy
+  score: "句子级精确引用"
+  metric: citation_precision
+  comparison: "vs 通用AI搜索: 提供可审计的句子级引用，消除幻觉"
+- name: Research Efficiency
+  score: "数周压缩至数分钟"
+  metric: time_savings
+  comparison: "vs 传统分析师工作流: Deep Research将数周分析压缩到几分钟"
+- name: Document Coverage
+  score: "500M+"
+  metric: document_count
+  comparison: "vs 竞品: 拥有业界最大的高级金融和商业文档库"
+api:
+  available: true
+  documentation: https://www.alpha-sense.com/platform/
+  protocol: proprietary
+  pricing: 企业订阅制(联系销售)
+  auth_method: 企业认证
+capabilities:
+- Generative Search多智能体系统，跨定性洞察和结构化数据进行推理
+- Deep Research自主AI代理，生成投资级别综合研究报告
+- 5亿+高级文档实时语义搜索，支持Smart Synonyms
+- 句子级引用与归因，确保输出可审计且无幻觉
+- Workflow Agents自动化研究推送，支持自定义调度
+- 原生PowerPoint/Excel插件，直接生成工作产出文档
+- 企业内部知识库集成，统一内外部信息搜索
+- Channel Check Intelligence竞争情报监控
+access:
+- saas
+- api
+tags:
+- financial-research
+- market-intelligence
+- generative-search
+- multi-agent
+- enterprise-ai
+- rag
+- no-hallucination
+- deep-research
+references:
+- title: AlphaSense Official Website
+  url: https://www.alpha-sense.com
+- title: AlphaSense Platform Overview
+  url: https://www.alpha-sense.com/platform/
+- title: AlphaSense About - Company History
+  url: https://www.alpha-sense.com/about/
+- title: AlphaSense Solutions
+  url: https://www.alpha-sense.com/solutions/

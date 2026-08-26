@@ -1,0 +1,98 @@
+name: IsoDDE (Isomorphic Drug Design Engine)
+name_en: IsoDDE - Isomorphic Drug Design Engine
+company: Isomorphic Labs (Google DeepMind)
+domain: pharma-biotech
+status: released
+release_date: 2026-02
+website: https://www.isomorphiclabs.com
+description: Google DeepMind旗下Isomorphic Labs开发的科学基础模型，构建于诺贝尔奖获奖AlphaFold系统之上。IsoDDE可预测蛋白-配体结构、结合亲和力及抗体-抗原结构，被Nature评价为"AlphaFold 4级别"突破。公司已与礼来、诺华达成近30亿美元合作，2026年完成21亿美元B轮融资，并与强生开展多靶点合作。覆盖小分子、抗体等多种药物模态，以数字速度加速药物发现。
+parameters: 未公开
+architecture: diffusion + transformer (科学基础模型)
+base_model: AlphaFold 3
+training:
+  stages:
+  - name: pre-training
+    description: 基于AlphaFold 3架构，在大规模蛋白质结构数据库(PDB)、分子构象数据和生物分子相互作用数据上进行预训练，学习蛋白质和小分子的三维结构表征
+  - name: sft
+    description: 在蛋白-配体复合物结构、结合亲和力数据、抗体-抗原结构数据上进行多任务微调，扩展模型从结构预测到亲和力预测和分子生成的能力
+  - name: post-training
+    description: 利用实验验证的药物设计数据进行后训练优化，提升模型在实际药物设计场景中的预测精度和生成质量
+  context_length: N/A
+tech_stack:
+  framework: JAX/Flax (DeepMind标准框架)
+  inference: TPU集群推理
+  techniques:
+  - Diffusion model for structure prediction
+  - SE(3) equivariant neural networks
+  - Cross-attention for protein-ligand interactions
+  - Multi-task learning (structure + affinity + generation)
+  - AlphaFold architecture extensions
+  - Generative molecular design
+datasets:
+- name: Protein Data Bank (PDB)
+  description: 全球蛋白质三维结构数据库，包含实验解析的蛋白质、核酸和配体复合物结构
+  size: 200K+ structures
+  type: pre-training
+- name: BindingDB
+  description: 蛋白-配体结合亲和力数据库，包含实验测定的IC50/Ki/Kd数据
+  size: 2.8M+ binding data points
+  type: sft
+- name: ChEMBL
+  description: 生物活性化合物数据库，包含药物分子的ADMET性质和生物活性数据
+  size: 2.4M+ compounds
+  type: sft
+benchmarks:
+- name: Protein-Ligand Structure Prediction (PoseBusters)
+  score: "显著优于AlphaFold 3"
+  metric: success_rate
+  split: test
+  comparison: "vs AlphaFold 3: Nature评价为'AlphaFold 4级别'提升"
+- name: Binding Affinity Prediction (PDBbind)
+  score: "SOTA"
+  metric: Pearson_correlation
+  split: test
+  comparison: "vs 传统方法: 大幅提升亲和力预测精度"
+- name: Antibody-Antigen Structure Prediction
+  score: "SOTA"
+  metric: DockQ
+  split: test
+  comparison: "vs AlphaFold 3: 新增能力维度，支持抗体药物设计"
+- name: Molecular Generation Quality
+  score: "高合成可行性"
+  metric: validity_and_synthesizability
+  split: test
+  comparison: "vs 传统CADD方法: 生成分子的药物相似性和合成可行性显著提升"
+api:
+  available: false
+  pricing: 通过合作协议接入(礼来、诺华、强生等战略合作)
+capabilities:
+- 蛋白-配体复合物三维结构预测，精度超越AlphaFold 3
+- 定量结合亲和力预测(IC50/Ki/Kd)，指导先导化合物优化
+- 抗体-抗原结构与相互作用预测，支持抗体药物设计
+- 生成式分子设计，自动生成满足多约束的候选药物分子
+- 多药物模态覆盖(小分子、抗体、多肽等)
+- ADMET性质综合预测，早期筛除高风险候选物
+- 端到端药物设计流程自动化，数字速度加速发现周期
+access:
+- private-deployment
+- internal-only
+tags:
+- drug-discovery
+- alphafold
+- protein-structure
+- binding-affinity
+- molecular-generation
+- deepmind
+- scientific-foundation-model
+- antibody-design
+references:
+- title: Isomorphic Labs Official Website
+  url: https://www.isomorphiclabs.com
+- title: "Isomorphic Labs Drug Design Engine: A New Frontier Beyond AlphaFold"
+  url: https://www.isomorphiclabs.com/news
+- title: Isomorphic Labs Series B ($2.1B) Announcement
+  url: https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round
+- title: Isomorphic Labs - Johnson & Johnson Research Collaboration
+  url: https://www.isomorphiclabs.com/news
+- title: AlphaFold 3 - Nature Paper (Foundation)
+  url: https://www.nature.com/articles/s41586-024-07487-w

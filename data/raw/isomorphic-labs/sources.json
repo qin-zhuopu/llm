@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://www.isomorphiclabs.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "news-page.md",
+      "url": "https://www.isomorphiclabs.com/news",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "series-b-announcement.md",
+      "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round",
+      "fetched_at": "2026-08-26",
+      "type": "blog"
+    }
+  ]
+}

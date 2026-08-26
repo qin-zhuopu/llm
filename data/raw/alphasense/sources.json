@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://www.alpha-sense.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "platform-page.md",
+      "url": "https://www.alpha-sense.com/platform/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "about-page.md",
+      "url": "https://www.alpha-sense.com/about/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}
