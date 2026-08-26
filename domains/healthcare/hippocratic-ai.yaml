@@ -1,20 +1,23 @@
 name: Hippocratic AI
-company: Hippocratic
+company: Hippocratic AI
 domain: healthcare
 status: released
-release_date: "2023"
-website: https://www.hippocratic.ai
-description: "专注于护理、患者教育等非诊断医疗场景的LLM。"
+description: Hippocratic AI 是一款安全性优先的医疗大语言模型，基于 Polaris 星座架构构建，参数规模未公开但通过强化人类反馈（RLHF）及专业医疗数据训练优化。该模型专注于非诊断性临床任务，具备处理患者对话、共情交互及医疗术语理解的能力，旨在缓解全球医疗人力资源短缺问题。
 capabilities:
-  - 患者教育
-  - 护理辅助
-  - 非诊断场景沟通
-access: saas
-region:
-  - us
-tags:
-  - 护理
-  - 患者沟通
+- 患者导航与就医流程指导
+- 个性化用药提醒与药物咨询
+- 出院后健康状况随访
+- 慢性病日常管理与指导
+- 术前准备流程说明
+- 临床医患对话语音识别
 references:
-  - title: Hippocratic AI官网
-    url: "https://www.hippocratic.ai"
+- title: Hippocratic AI 官方网站
+  url: https://www.hippocratic.ai
+website: https://www.hippocratic.ai
+access: api
+tags:
+- 医疗大模型
+- 患者管理
+- 语音识别
+- 安全优先
+- 非诊断任务

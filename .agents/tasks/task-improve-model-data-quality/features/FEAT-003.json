@@ -2,7 +2,7 @@
   "id": "FEAT-003",
   "type": "feat",
   "description": "Regenerate YAML files from good MD content using extract_yaml.py. Process all 43 failing YAML files that have sufficient MD content (>500 chars). This uses the LLM API to extract structured data from the markdown descriptions.",
-  "status": "pending",
+  "status": "in_progress",
   "steps": [
     "Set environment variables: export ANTHROPIC_BASE_URL=https://open.bigmodel.cn/api/anthropic && export ANTHROPIC_AUTH_TOKEN=ac96a781bad141808246da37f274d99a.1w0Oib3gCblk4rC3 && export ANTHROPIC_MODEL=glm-4.5-air",
     "Process all failing YAML files that have good MD content (>500 chars) using extract_yaml.py. Process them in batches by domain to avoid overwhelming the API. The following 43 files need regeneration:",

@@ -1,21 +1,24 @@
 name: 网易有道子曰
-name_en: Youdao Ziyue
 company: 网易有道
 domain: education
 status: released
-release_date: "2023"
-website: https://www.youdao.com
-description: "教育场景大模型，覆盖翻译、作文批改和口语练习。"
+description: 网易有道推出的教育领域大语言模型，专注于语言学习、作文辅导、口语练习和作业辅助等教育场景。开源的子曰-o1推理模型拥有14B参数，支持消费级显卡部署，采用思维链技术强化逻辑推理能力。
 capabilities:
-  - 翻译
-  - 作文批改
-  - 口语练习
-access: saas
-region:
-  - china
-tags:
-  - 语言学习
-  - 翻译
+- 智能翻译与词汇释义
+- 中英文作文全流程辅导
+- AI口语对话与发音评估
+- 学科作业解析与思路引导
+- 复杂逻辑推理与解题
 references:
-  - title: 网易有道
-    url: "https://www.youdao.com"
+- title: 网易有道官网
+  url: https://www.youdao.com
+name_en: Zi Yue
+parameters: 14B (o1推理模型)
+architecture: decoder-only transformer
+access: open-weights
+tags:
+- education
+- reasoning
+- open-source
+- translation
+- writing-assistant

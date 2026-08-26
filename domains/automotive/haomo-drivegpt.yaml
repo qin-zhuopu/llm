@@ -1,20 +1,27 @@
 name: DriveGPT 雪湖·海若
-name_en: DriveGPT
 company: 毫末智行
 domain: automotive
 status: released
-release_date: "2023"
+name_en: DriveGPT
+release_date: '2023'
 website: https://www.haomo.ai
-description: "自动驾驶认知决策大模型，用于驾驶场景理解和决策。"
+description: DriveGPT（雪湖·海若）是毫末智行发布的自动驾驶生成式大模型，采用自回归Transformer架构，将驾驶行为建模为序列化决策过程。该模型借鉴大语言模型技术，提出“Drive
+  Language”驾驶语言概念，通过海量真实道路数据训练，具备可扩展性设计（Scaling Law），为城市及高速导航辅助驾驶（NOH）提供核心AI引擎支撑。
+architecture: decoder-only transformer (autoregressive)
 capabilities:
-  - 自动驾驶决策
-  - 驾驶场景理解
+- 行为规划与预测：预测交通参与者状态，规划自车轨迹
+- 场景理解：通过多模态输入理解复杂交通场景元素和关系
+- 决策推理：对驾驶决策进行逻辑推理并解释特定选择
+- 多智能体交互建模：建模多车交互关系并预测交通流演化
+references:
+- title: 毫末智行官方网站
+  url: https://www.haomo.ai
+tags:
+- autonomous-driving
+- decision-making
+- generative-model
+- autoregressive
+- behavior-planning
 access: internal-only
 region:
-  - china
-tags:
-  - 自动驾驶
-  - 决策
-references:
-  - title: 毫末智行
-    url: "https://www.haomo.ai"
+- china

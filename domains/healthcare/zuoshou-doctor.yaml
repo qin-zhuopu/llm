@@ -1,20 +1,21 @@
 name: 左手医生GPT
-company: 左手医生
+company: 左手医生（北京左手医生智能科技有限公司）
 domain: healthcare
 status: released
-release_date: "2023"
-website: https://www.zuoshouyisheng.com
-description: "中文AI问诊、分诊和健康管理平台。"
+description: 左手医生GPT是基于大语言模型技术构建的医疗AI助手，专注于为基层医疗机构和普通用户提供智能化的医疗健康服务。该模型利用医学NLP引擎和覆盖数千种疾病、数万种药品的知识图谱，通过海量医患对话数据持续优化，致力于通过AI技术降低优质医疗资源的获取门槛，已服务数百万用户。
 capabilities:
-  - AI问诊
-  - 智能分诊
-  - 健康管理
-access: saas
-region:
-  - china
-tags:
-  - 问诊
-  - 分诊
+- 智能预问诊：理解患者口语化描述并转化为结构化医学信息
+- 智能分诊导诊：基于多症状联合分析推荐就诊科室和医生
+- 临床辅助决策：为基层医生提供诊断和用药方案建议
+- 医学知识问答：整合医学文献与指南提供专业健康咨询
+website: https://www.zuoshouyisheng.com
 references:
-  - title: 左手医生官网
-    url: "https://www.zuoshouyisheng.com"
+- title: 左手医生官方网站
+  url: https://www.zuoshouyisheng.com
+tags:
+- 医疗大模型
+- 临床决策支持
+- 智能分诊
+- 健康咨询
+- NLP
+access: saas

@@ -2,19 +2,23 @@ name: Duolingo Max
 company: Duolingo
 domain: education
 status: released
-release_date: "2023"
-website: https://www.duolingo.com
-description: "语言学习场景的AI对话练习和错误解释功能。"
+description: Duolingo Max 是多邻国推出的高级订阅服务，深度集成了 OpenAI 的 GPT-4 模型。该产品定位于语言学习场景中的深度交互与个性化辅导，核心差异化在于通过
+  GPT-4 提供语法规则解释（Explain My Answer）和实景角色扮演对话练习。它支持 40 多种语言和 100 多门课程，显著弥补了传统自学中缺少即时反馈和真实对话练习的短板。
 capabilities:
-  - AI对话练习
-  - 错误解释
-  - 角色扮演场景
-access: saas
-region:
-  - global
+- 详细语法解释：提供针对特定错误的语法规则拆解与上下文说明
+- 场景化角色扮演：模拟咖啡馆点餐、酒店预订等真实对话场景进行练习
+- 个性化学习反馈：根据用户的错误上下文生成定制化的改进建议
+- 即时交互练习：用户可针对困惑点进行追问，获得类私教般的深度解答
+release_date: '2023'
+website: https://www.duolingo.com
+base_model: GPT-4
 tags:
-  - 语言学习
-  - 对话
+- language-learning
+- ed-tech
+- ai-tutor
+- roleplay
+- personalized-learning
+access: saas
 references:
-  - title: Duolingo
-    url: "https://www.duolingo.com"
+- title: Duolingo Official Website
+  url: https://www.duolingo.com

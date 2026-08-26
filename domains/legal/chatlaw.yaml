@@ -2,18 +2,12 @@ name: ChatLaw
 company: 北京大学
 domain: legal
 status: released
-release_date: "2023"
-website: https://chatlaw.cloud
-description: "北大开发的中文法律咨询大模型，部分闭源商用版本。"
+description: 由北京大学深圳研究生院开发的开源中文法律大语言模型。采用混合专家模型（MoE）架构，整合多智能体系统与向量数据库/关键词检索的知识增强机制，有效解决通用大模型在法律场景中的幻觉问题。基于LLaMA/Ziya等开源模型进行领域微调，具备深厚的中文法律语境理解能力，构建了高质量法律数据集并建立了法律大模型评测基准。
 capabilities:
-  - 法律咨询
-  - 案例分析
-access: api
-region:
-  - china
-tags:
-  - 法律咨询
-  - 学术
+- 提供智能法律咨询服务，涵盖民事纠纷、劳动争议等专业分析
+- 基于海量裁判文书进行案例分析，预测判决结果
+- 快速检索中国法律法规、司法解释，精准匹配法律条文
+- 辅助生成起诉状、合同模板等各类法律文书，确保格式规范
 references:
-  - title: ChatLaw
-    url: "https://chatlaw.cloud"
+- title: ChatLaw 官网
+  url: https://chatlaw.cloud

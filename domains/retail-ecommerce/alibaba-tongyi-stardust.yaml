@@ -1,21 +1,14 @@
 name: 通义星尘(电商版)
-name_en: Tongyi Stardust
 company: 阿里巴巴
 domain: retail-ecommerce
 status: released
-release_date: "2023"
-website: https://www.aliyun.com
-description: "面向商家运营、商品描述和营销文案生成的电商专用模型。"
+description: 通义星尘(电商版)是阿里巴巴基于通义大模型体系推出的面向电商行业的AI内容生成和智能服务平台。模型以角色扮演和个性化AI为特色，深度应用于电商运营的各个环节，具备多模态理解和生成能力，专精于处理商品描述生成、智能客服、个性化推荐及评论分析等任务，旨在帮助商家降低内容生产成本、提升运营效率和用户体验。
 capabilities:
-  - 商家运营辅助
-  - 商品描述生成
-  - 营销文案创作
-access: api
-region:
-  - china
-tags:
-  - 电商运营
-  - 文案
+- AI商品文案生成
+- 智能客服对话
+- 个性化推荐分析
+- 用户评论洞察
+- 营销内容创作
 references:
-  - title: 阿里云
-    url: "https://www.aliyun.com"
+- title: 阿里云官方网站
+  url: https://www.aliyun.com

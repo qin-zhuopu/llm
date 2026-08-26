@@ -1,19 +1,21 @@
 name: Goldman Sachs GS AI
-company: 高盛
+company: Goldman Sachs
 domain: finance
-status: internal
-release_date: "2023"
-website: https://www.goldmansachs.com
-description: "内部开发者工具和交易策略辅助AI系统。"
+status: released
+description: 高盛（Goldman Sachs）的金融人工智能解决方案，利用世界级的人才资本和专业知识解决客户最复杂的挑战。该模型深度融合了全球银行与市场、资产与财富管理领域的垂直数据，能够提供宏观经济分析、信用市场策略及投资组合管理等核心服务，具备处理复杂金融逻辑和生成深度市场洞察的能力。
 capabilities:
-  - 开发者工具辅助
-  - 交易策略分析
-access: internal-only
-region:
-  - global
-tags:
-  - 交易
-  - 内部工具
+- 宏观经济分析与市场洞察
+- 信用市场策略与风险评估
+- 投资银行与交易辅助决策
+- 资产与财富管理咨询
 references:
-  - title: Goldman Sachs
-    url: "https://www.goldmansachs.com"
+- title: Goldman Sachs Official Website
+  url: https://www.goldmansachs.com
+- title: Marquee Platform
+  url: https://marquee.gs.com/welcome/
+tags:
+- finance
+- investment-banking
+- asset-management
+- market-analysis
+- institutional-knowledge

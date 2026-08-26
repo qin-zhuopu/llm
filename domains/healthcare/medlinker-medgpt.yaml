@@ -2,19 +2,25 @@ name: 医联MedGPT
 company: 医联
 domain: healthcare
 status: released
-release_date: "2023"
-website: https://www.medlinker.com
-description: "多科室全流程诊疗大模型，已获NMPA注册，可用于临床辅助决策。"
+description: 医联MedGPT是医联平台研发的医疗领域垂类大模型，致力于通过复刻权威专家的诊疗思路辅助医生决策。该模型依托800万余例问诊病例库、50000余份疾病指南/共识以及1200余条临床路径进行训练，覆盖临床医学26个二级学科、109个亚专科及30000余种疾病。其核心差异化在于坚持循证医学与真人医生严格复核的闭环机制，能够为常见病和部分专科病提供高效、合理的诊断建议及检查用药方案。
 capabilities:
-  - 多科室诊疗
-  - 全流程辅助
-  - NMPA认证
+- 多科室智能分诊与问诊
+- 疾病辅助诊断与决策支持
+- 循证医学指南与共识检索
+- 合理用药检查与处方审核
+- 临床路径规范化建议
+- 真人医生审核与质控
+references:
+- title: 医联官方网站
+  url: https://www.medlinker.com
+- title: 未来医生APP下载页面
+  url: https://applink.medlinker.com/medgpt/
 access: saas
 region:
-  - china
+- china
 tags:
-  - 诊疗
-  - NMPA
-references:
-  - title: 医联官网
-    url: "https://www.medlinker.com"
+- 医疗问诊
+- 辅助诊疗
+- 循证医学
+- 智慧医疗
+- 大语言模型

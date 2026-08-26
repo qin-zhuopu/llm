@@ -2,38 +2,25 @@ name: 蚂蚁百灵
 company: 蚂蚁集团
 domain: finance
 status: released
-name_en: Ling
-description: 蚂蚁百灵（Ling）是蚂蚁集团打造的大语言模型系列，是蚂蚁集团AI战略的核心技术底座。该模型系列包含万亿参数旗舰模型Ling-1T、124B混合推理MoE模型Ling-3.0-flash以及7.9B轻量级模型Ling-3.0-Tiny。其中Ling-3.0-flash采用MoE架构，总参数1240亿，激活参数51亿，兼顾推理能力与效率。百灵大模型在金融服务、多模态感知及智能体构建领域表现强大，服务于支付宝、蚂蚁财富等核心业务。
+description: 蚂蚁百灵是蚂蚁集团旗下AI研究机构inclusionAI打造的大语言模型系列，作为集团AI战略的核心技术底座，服务于支付宝、蚂蚁财富、蚂蚁保险等多个业务场景。该模型系列拥有万亿参数规模的旗舰版本Ling-1T，主打生产级混合推理MoE架构的Ling-3.0-flash（124B总参数/5.1B激活参数），以及轻量级的Ling-3.0-Tiny（7.9B参数）。模型在金融服务、智能体构建、多模态感知及代码编写等维度展现了强大能力，兼顾了推理能力与推理效率。
 capabilities:
-- 复杂金融咨询理解与合规回答
-- 金融风险评估与辅助决策
-- 信用评估与反欺诈模式识别
-- 金融合同与财报文档理解
-- 投资资讯解读与理财顾问辅助
-- 保险理赔材料智能审核
+- 金融智能客服与复杂咨询问答
+- 金融风险评估与反欺诈检测
+- 金融文档智能解析与信息抽取
+- 智能投顾辅助与市场资讯解读
+- 保险理赔材料智能审核与建议生成
+- 多模态遥感图像理解
+parameters: 124B (Ling-3.0-flash), 7.9B (Ling-3.0-Tiny), 1T (Ling-1T)
+architecture: Mixture of Experts (MoE)
 references:
 - title: 蚂蚁集团官方网站
   url: https://www.antgroup.com
-website: https://www.antgroup.com
-parameters: 124B (Flash), 7.9B (Tiny), 1T (Flagship)
-architecture: Mixture of Experts (MoE)
+- title: 'SkySense: A General and Flexible Remote Sensing Foundation Model (CVPR 2024)'
+  url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_SkySense_A_General_and_Flexible_Remote_Sensing_Foundation_Model_CVPR_2024_paper.html
 tags:
 - 金融大模型
-- 智能体
-- 风险控制
-- 文档理解
 - MoE架构
-- 金融科技
+- 智能体
+- 多模态
+- 风险管理
 access: api
-region:
-- china
-- global
-benchmarks:
-- name: SkySense (CVPR 2024)
-  score: Accepted
-  metric: Paper Acceptance
-  description: 20亿参数遥感基础模型，被CVPR 2024接收
-- name: General Industry Benchmarks
-  score: High
-  metric: Rating
-  description: 在多项评测中表现优异，跑分超越同级别开源模型

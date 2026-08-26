@@ -1,19 +1,23 @@
 name: 微矿智云
 company: 中科院合作方
 domain: materials-science
-status: research
-release_date: "2023"
-website: https://www.cas.cn
-description: "矿物材料性能预测和筛选AI系统。"
+status: internal
+description: 由中国科学院合作团队研发的垂直领域模型，专注于材料科学领域的智慧矿山与新材料发现。该模型具备处理海量地质数据与分子结构信息的能力，旨在通过人工智能技术加速矿物勘探流程，提升材料研发效率，并优化供应链管理。
 capabilities:
-  - 矿物材料性能预测
-  - 材料筛选
-access: unknown
-region:
-  - china
-tags:
-  - 矿物
-  - 材料筛选
+- 地质数据分析与三维建模
+- 矿物资源自动勘探与预测
+- 新材料性能预测与筛选
+- 矿山供应链智能优化
+- 分子结构生成与逆向设计
 references:
-  - title: 中国科学院
-    url: "https://www.cas.cn"
+- title: 中科院主页
+  url: https://www.cas.cn
+tags:
+- 材料科学
+- 智慧矿山
+- 地质勘探
+- 分子模拟
+- 供应链优化
+access: internal-only
+region:
+- china

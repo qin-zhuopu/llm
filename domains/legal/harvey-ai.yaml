@@ -2,20 +2,24 @@ name: Harvey AI
 company: Harvey
 domain: legal
 status: released
-release_date: "2022"
-website: https://www.harvey.ai
-description: "红杉资本投资的法律AI平台，为顶级律所定制LLM。2400+法律组织使用，75+ AmLaw 100律所，覆盖70+国家。"
+description: 专为法律行业打造的生成式人工智能平台，基于前沿LLM技术，支持律所和企业法务团队处理高难度法律事务。通过智能代理编排复杂法律工作流程，集成合同智能分析、法律研究及文档洞察功能。已获得SOC2
+  II、ISO 27001等企业级安全认证，服务全球70多个国家的2400多家法律组织，拥有20万以上专业用户，是法律领域应用最成功的AI技术之一。
 capabilities:
-  - 合同审查
-  - 法律研究
-  - 诉讼支持
-  - 法律文书起草
+- 智能代理编排：自动将复杂法律任务路由至最合适的代理进行处理
+- 合同智能分析：加速日常审查流程，优化谈判策略并提供全组合洞察
+- 法律研究平台：利用前沿模型探索法律方法，支持复杂法律问题的精准导航
+- 协同工作空间：提供符合法律治理和伦理墙要求的共享工作环境
+- 文档洞察管理：在安全存储库中组织数千份文档，通过单一查询提取关键信息
+references:
+- title: Harvey AI Official Website
+  url: https://www.harvey.ai
+tags:
+- legal-ai
+- contract-analysis
+- legal-research
+- enterprise-security
+- agents
+website: https://www.harvey.ai
 access: saas
 region:
-  - global
-tags:
-  - 律所
-  - 合同
-references:
-  - title: Harvey AI官网
-    url: "https://www.harvey.ai"
+- global

@@ -1,19 +1,13 @@
 name: 风乌
-name_en: FengWu
 company: 上海人工智能实验室
 domain: climate-environment
 status: released
-release_date: "2023"
-website: https://www.shlab.org.cn
-description: "高精度全球中期天气预报AI模型。"
+description: 风乌是上海人工智能实验室发布的全球中期气象预报大模型，基于人工智能技术构建。该模型在预报核心精度方面超越了传统数值预报系统，具备高时间分辨率的输出能力。其核心差异化特点在于推理效率大幅提升，仅需30秒即可生成未来10天的全球天气预报，有效解决了传统数值模式计算资源消耗大、耗时长的问题。
 capabilities:
-  - 全球中期天气预报
-  - 高分辨率预测
-access: api
-region:
-  - china
-tags:
-  - 天气预报
+- 全球中期天气预报
+- 高时空分辨率气象预测
+- 极端天气事件识别
+- 快速推演与生成
 references:
-  - title: 上海人工智能实验室
-    url: "https://www.shlab.org.cn"
+- title: 上海人工智能实验室官网
+  url: https://www.shlab.org.cn

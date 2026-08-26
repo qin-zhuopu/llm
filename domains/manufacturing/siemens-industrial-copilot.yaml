@@ -1,21 +1,25 @@
-name: Siemens Industrial Copilot / Eigen Engineering Agent
-company: 西门子
+name: Eigen Engineering Agent
+company: Siemens
 domain: manufacturing
 status: released
-release_date: "2024"
-website: https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html
-description: "工业自动化工程AI，为60万+TIA Portal用户提供端到端工程任务执行。与NVIDIA合作构建物理世界的工业AI操作系统。"
+description: Eigen Engineering Agent 是西门子推出的专为工业自动化工程设计的专用生成式 AI 解决方案。该模型能够自主完成从计划、编码、配置到验证的端到端工程任务，目前服务于超过
+  60 万名 TIA Portal 用户。它不仅提供建议，还能实际执行操作，旨在将 AI 深度集成于物理世界的工业操作系统中，显著提升工程效率。
 capabilities:
-  - PLC代码生成
-  - 工程文档处理
-  - 端到端工程任务执行
-access: saas
-region:
-  - global
-tags:
-  - 工业自动化
-  - PLC
-  - NVIDIA
+- 自主规划工程任务
+- 自动化代码生成
+- 设备配置管理
+- 自动化逻辑验证
+- 端到端工作流执行
 references:
-  - title: Siemens Industrial Copilot
-    url: "https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html"
+- title: Siemens Industrial Copilot Official Website
+  url: https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html
+- title: Eigen Engineering Agent Product Page
+  url: https://www.siemens.com/en-us/products/tia-portal/eigen-engineering-agent/
+website: https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html
+tags:
+- industrial-automation
+- engineering-agent
+- code-generation
+- tia-portal
+- generative-ai
+access: saas

@@ -2,19 +2,15 @@ name: LinkedIn Hiring AI
 company: LinkedIn (Microsoft)
 domain: human-resources
 status: released
-release_date: "2023"
-website: https://www.linkedin.com
-description: "简历筛选、候选人匹配和招聘文案生成。"
+description: LinkedIn Hiring AI 是 LinkedIn 推出的综合性职场招聘与人力资源智能助手模型，旨在通过 AI 技术重塑招聘流程与职场社交体验。该模型基于大规模职场社交图谱数据与岗位描述数据训练，深度整合了
+  LinkedIn 的 10 亿+ 会员数据及海量职位信息。其核心差异化特点在于能够自动进行人岗匹配、简历解析、候选人推荐以及职业路径规划，具备强大的行业垂直知识图谱。作为
+  LinkedIn 职场生态的核心智能引擎，它不仅服务于招聘者的候选人筛选，还为求职者提供实时的职位推荐与技能提升建议。
 capabilities:
-  - 简历筛选
-  - 候选人匹配
-  - 招聘文案生成
-access: saas
-region:
-  - global
-tags:
-  - 招聘
-  - 匹配
+- 智能人岗匹配与候选人推荐
+- 自动解析简历并提取核心技能
+- 提供个性化职业发展路径规划
+- 基于实时数据的职位搜索与筛选
+- 辅助招聘人员撰写职位描述 JD
 references:
-  - title: LinkedIn
-    url: "https://www.linkedin.com"
+- title: LinkedIn 官方网站
+  url: https://www.linkedin.com

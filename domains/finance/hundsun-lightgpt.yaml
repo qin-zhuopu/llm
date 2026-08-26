@@ -2,19 +2,18 @@ name: 恒生LightGPT
 company: 恒生电子
 domain: finance
 status: released
-release_date: "2023"
-website: https://www.hundsun.com
-description: "面向证券、基金、银行业务场景的金融大模型，深耕中国金融IT市场。"
+description: 恒生LightGPT是恒生电子推出的金融行业大语言模型，专注于证券、基金、资产管理等金融细分领域。该模型通过金融知识注入、实时数据检索增强及私有化部署设计，为金融机构提供智能研报生成、金融数据分析、合规检查及客户服务自动化能力，是金融IT向AI智能化升级的重要技术支撑。
 capabilities:
-  - 证券业务辅助
-  - 基金投研
-  - 银行业务处理
-access: private-deployment
-region:
-  - china
-tags:
-  - 证券
-  - 基金
+- 智能研报生成与框架搭建
+- 金融财报数据解读与分析
+- 业务合规性自动审查
+- 智能投顾与客户服务
 references:
-  - title: 恒生电子官网
-    url: "https://www.hundsun.com"
+- title: 恒生电子官方网站
+  url: https://www.hundsun.com
+tags:
+- 金融大模型
+- 研报生成
+- 合规风控
+- 智能投顾
+- 私有化部署
