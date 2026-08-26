@@ -1,0 +1,71 @@
+name: insitro (Virtual Human / TherML)
+name_en: insitro
+company: insitro
+domain: pharma-biotech
+status: released
+website: https://www.insitro.com
+description: 由Daphne Koller（Coursera联合创始人、斯坦福ML教授）创立的因果AI药物研发公司，结合20+PB自动化细胞实验数据和群体规模遗传学数据构建Physical AI系统，揭示人类疾病的真正因果驱动因素。核心平台Virtual Human是以基因为锚点的因果AI引擎，在候选药物优化前精确识别因果疾病靶点；TherML是模态无关的治疗药物设计引擎，涵盖小分子、寡核苷酸和复杂生物制剂，将药物发现从随机筛选转变为预测性自适应工程。
+parameters: 未公开
+architecture: Causal AI + multimodal foundation model (因果AI + 多模态基础模型)
+base_model: 自研因果AI引擎
+training:
+  stages:
+  - name: pre-training
+    description: 基于全球最大的人类临床与细胞整合多模态语料库（20+PB细胞实验数据+群体规模遗传学）预训练，学习跨临床和细胞两个尺度的疾病机制表征
+  - name: fine-tuning
+    description: 在特定疾病靶点识别和治疗药物设计任务上微调，Virtual Human专注因果靶点发现，TherML专注多模态药物分子设计
+tech_stack:
+  framework: 自研因果AI平台
+  inference: 高通量细胞实验与计算结合的闭环系统
+  techniques:
+  - Causal AI (因果推断)
+  - Multimodal learning (临床+细胞数据)
+  - Genetically-anchored target discovery
+  - Modality-agnostic therapeutics design
+  - High-throughput automated cellular experiments
+  - Population-scale genetics integration
+datasets:
+- name: Integrated Multimodal Human Corpus
+  description: 全球最大的人类临床与细胞数据整合多模态语料库，Virtual Human的训练基础
+  size: 20+ PB (cellular experiments)
+  type: pre-training
+- name: Population-scale Genetics
+  description: 群体规模遗传学数据，用于因果疾病靶点的基因锚定
+  type: pre-training
+benchmarks:
+- name: Causal Target Identification
+  score: 因果靶点精确识别
+  metric: causal_target_accuracy
+  comparison: "vs 传统随机筛选: 在候选优化前识别因果疾病靶点，而非相关性靶点"
+- name: Modality Matching (TherML)
+  score: 模态无关药物设计
+  metric: design_efficiency
+  comparison: "vs 随机筛选(stochastic screening): 转变为预测性自适应工程，推进更好的分子更快"
+api:
+  available: false
+  pricing: 药企合作预付款+里程碑+版税+自有管线
+capabilities:
+- 因果AI识别疾病的真正因果驱动因素（而非相关性）
+- Virtual Human基因锚定的因果疾病靶点发现
+- TherML模态无关的治疗药物设计（小分子/寡核苷酸/生物制剂）
+- 整合临床与细胞多模态数据进行跨尺度机制分析
+- 高通量自动化细胞实验与计算模型闭环
+- 为每个靶点和适应症匹配最优治疗模态
+access:
+- private-deployment
+- internal-only
+tags:
+- drug-discovery
+- causal-ai
+- multimodal
+- genetics
+- therapeutics-design
+- scientific-foundation-model
+- target-discovery
+references:
+- title: insitro Official Website
+  url: https://www.insitro.com
+- title: insitro Virtual Human Platform
+  url: https://www.insitro.com
+- title: insitro Publications & Press
+  url: https://www.insitro.com

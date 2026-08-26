@@ -1,0 +1,79 @@
+name: Inworld AI
+name_en: Inworld AI
+company: Inworld AI
+domain: media-entertainment
+status: released
+website: https://inworld.ai
+description: 面向消费级应用的实时AI平台，为大规模语音优先的伴侣类应用提供支持，实现持续、个性化、情感投入的AI交互。核心产品包括Realtime TTS（首字延迟<100ms）、Realtime API（可控speech-to-speech）、Realtime Router（智能路由220+模型，零加价）和Realtime STT（内置语音画像，低至$0.10/小时）。采用激进定价补贴AI成本（TTS $12.50 vs ElevenLabs $100/1M字符），Status应用19天达100万用户，属于"实时体验型"垂类AI，壁垒在推理经济学和体验工程。
+parameters: 未公开
+architecture: Realtime multimodal voice AI + model router (实时多模态语音AI + 模型路由)
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模语音数据预训练TTS/STT模型，学习自然语音合成、语音识别和语音画像（情绪/年龄/口音/音高/风格）
+  - name: fine-tuning
+    description: 针对实时低延迟场景优化，实现<100ms首字延迟的语音合成和上下文感知的智能轮次检测
+tech_stack:
+  framework: 实时语音AI平台（自研TTS/STT + 模型路由）
+  inference: WebSocket/WebRTC全双工低延迟流式推理
+  techniques:
+  - Realtime TTS (<100ms TTFB)
+  - Speech-to-speech (full duplex)
+  - Intelligent turn detection (语义/声学VAD)
+  - Voice profiling (5 realtime signals)
+  - Model-agnostic routing (220+ models)
+  - Word-level timestamps & diarization
+  - Zero-markup inference router
+datasets:
+- name: Large-scale Voice Data
+  description: 大规模语音数据，用于训练实时TTS/STT模型和语音画像能力
+  type: pre-training
+- name: Router Traffic Analytics
+  description: 220+模型的路由流量数据，用于智能模型选择和A/B测试优化
+  type: other
+benchmarks:
+- name: Realtime TTS Latency
+  score: "<100ms TTFB (25ms Flash)"
+  metric: time_to_first_byte
+  comparison: "vs 竞品: 语音Agent在用户察觉延迟前响应"
+- name: Cost Efficiency (TTS)
+  score: "$12.50 / 1M chars"
+  metric: cost
+  comparison: "vs ElevenLabs $100: 成本降低约8倍"
+- name: Cost Efficiency (STT)
+  score: "$0.10 / hour"
+  metric: cost
+  comparison: "vs Deepgram $0.46: 成本降低约4.6倍"
+- name: User Adoption
+  score: "1M users in 19 days"
+  metric: user_growth
+  comparison: "Status应用19天达100万用户，验证消费级规模化"
+api:
+  available: true
+  documentation: https://inworld.ai
+  protocol: websocket
+  pricing: 分层订阅（Growth/Enterprise plan，按用量）
+  auth_method: API Key
+capabilities:
+- 实时语音合成（TTS），首字延迟<100ms，自然拟人
+- 可控的speech-to-speech语音对语音交互
+- 实时语音识别（STT）+ 内置语音画像（情绪/年龄/口音）
+- 智能模型路由，跨220+模型零加价选择最优模型
+- 情感投入的语音伴侣和角色交互（游戏NPC/消费应用）
+- 全双工低延迟流式音频，智能轮次检测
+access:
+- api
+- saas
+tags:
+- realtime-ai
+- voice-ai
+- text-to-speech
+- speech-to-text
+- gaming-npc
+- model-router
+- conversational-ai
+references:
+- title: Inworld AI Official Website
+  url: https://inworld.ai
+- title: Inworld Realtime API Documentation
+  url: https://inworld.ai

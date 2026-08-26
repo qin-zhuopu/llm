@@ -1,0 +1,73 @@
+name: Constructor
+name_en: Constructor
+company: Constructor
+domain: retail-ecommerce
+status: released
+website: https://constructor.com
+description: 专为零售/电商行业打造的AI驱动搜索与商品发现平台。核心差异化在于行业专用的"glassbox AI"（透明可解释，非黑盒），能自动化商品目录和品类的merchandising并解释决策原因，支持人在回路介入。基于用户行为数据优化搜索和推荐直接提升转化，客户案例包括Petco（电商转化率提升13%，实施不到一年收回成本）和The Very Group（可组合的下一代电商体验）。
+parameters: 未公开
+architecture: AI search & recommendation system (可解释AI搜索推荐系统)
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模电商商品目录、用户搜索和行为数据预训练，学习商品语义、类目结构和购物意图表征
+  - name: fine-tuning
+    description: 针对特定零售商的商品目录和行为数据微调，优化搜索相关性、商品化排序和转化率
+tech_stack:
+  framework: 可解释AI搜索推荐引擎
+  inference: 电商实时搜索/推荐云服务
+  techniques:
+  - Glassbox (explainable) AI
+  - Behavioral data optimization
+  - Semantic product search
+  - AI merchandising
+  - Human-in-the-loop intervention
+  - Conversion rate optimization
+datasets:
+- name: Ecommerce Catalog & Behavior Data
+  description: 零售商商品目录、用户搜索查询、点击和购买行为数据，用于训练搜索相关性和商品化模型
+  type: pre-training
+- name: Conversion Signal Data
+  description: 转化信号数据（点击率、加购率、购买率），作为搜索推荐优化的反馈信号
+  type: other
+benchmarks:
+- name: Petco Conversion Lift
+  score: "+13%"
+  metric: conversion_rate_lift
+  comparison: "vs 原有电商搜索: Petco电商转化率提升13%"
+- name: ROI Payback
+  score: "<1年收回成本"
+  metric: payback_period
+  comparison: "vs 竞品: 实施后不到一年收回成本（含切换成本）"
+- name: AI Transparency
+  score: glassbox可解释
+  metric: explainability
+  comparison: "vs 黑盒AI: 商品化决策透明可解释，支持人工介入"
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（按电商规模，联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- AI电商搜索，理解购物意图和商品语义
+- 自动化商品目录和品类的merchandising（商品化排序）
+- 透明可解释的AI决策（glassbox），支持人工介入调整
+- 基于用户行为数据的转化率优化
+- 个性化商品推荐和发现
+- 与电商平台实时集成
+access:
+- saas
+- api
+tags:
+- ecommerce
+- ai-search
+- product-discovery
+- recommendation
+- conversion-optimization
+- explainable-ai
+- retail
+references:
+- title: Constructor Official Website
+  url: https://constructor.com
+- title: "Constructor: Petco Customer Story"
+  url: https://constructor.com

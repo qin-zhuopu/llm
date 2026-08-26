@@ -1,0 +1,62 @@
+name: Khanmigo
+name_en: Khanmigo
+company: Khan Academy
+domain: education
+status: released
+release_date: "2023"
+website: https://www.khanmigo.ai
+description: 非营利教育机构Khan Academy推出的AI驱动个人导师和教学助手，基于GPT-4构建。核心差异化在于不直接给答案，而是以苏格拉底式教学法引导学习者自己找到答案，并整合了Khan Academy覆盖数学、人文、编程、社会研究的世界级内容库。Common Sense Media评估学习类AI工具时给予4星，超过ChatGPT和Bard。覆盖小学到大学各学段，商业化受非营利属性和支付能力约束。
+parameters: 未公开
+architecture: GPT-4 based tutoring system (基于GPT-4的辅导系统)
+base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 在GPT-4基础上针对教育辅导场景进行提示工程和微调，实现苏格拉底式引导教学（不直接给答案）而非直接回答
+  - name: rlhf
+    description: 基于教育安全和学习效果的对齐优化，确保输出on-topic、符合伦理、以学习和安全为最高优先级
+tech_stack:
+  framework: 基于OpenAI GPT-4
+  inference: 云端推理
+  techniques:
+  - Socratic method tutoring (苏格拉底式教学)
+  - Retrieval over Khan Academy content library
+  - Safety guardrails for minors
+  - Curriculum-aligned reasoning
+datasets:
+- name: Khan Academy Content Library
+  description: Khan Academy世界级内容库，覆盖数学、人文、编程、社会研究等学科，作为检索和辅导的知识基础
+  type: other
+benchmarks:
+- name: Common Sense Media Rating
+  score: "4 stars"
+  metric: education_ai_rating
+  comparison: "vs ChatGPT/Bard: 学习类AI工具评级4星，超过其他通用AI工具"
+- name: Pedagogical Approach
+  score: 苏格拉底式引导
+  metric: teaching_effectiveness
+  comparison: "vs ChatGPT直接给答案: 引导学习者自己找到答案，提升学习效果"
+api:
+  available: false
+  pricing: 月付/年付订阅（Khan Academy内容库保持免费）
+  auth_method: 账户认证
+capabilities:
+- 苏格拉底式AI辅导，引导学生自主找到答案而非直接给答案
+- 整合Khan Academy内容库，覆盖数学/科学/编程/历史/人文
+- 支持小学到大学各学段的个性化学习
+- 教师教学助手功能（备课、评估辅助）
+- 面向未成年人的安全护栏和伦理设计
+access:
+- saas
+tags:
+- education
+- ai-tutor
+- socratic-method
+- k12
+- personalized-learning
+- gpt-4
+references:
+- title: Khanmigo Official Website
+  url: https://www.khanmigo.ai
+- title: Khan Academy
+  url: https://www.khanacademy.org

@@ -1,0 +1,69 @@
+name: Typeface Arc
+name_en: Typeface Arc
+company: Typeface
+domain: media-entertainment
+status: released
+release_date: "2023"
+website: https://www.typeface.ai
+description: 面向企业的营销AI平台，核心产品Typeface Arc是"营销编排引擎"，通过Agentic工作流加速营销ROI。包含Arc Graph（将内容锚定到品牌指南和受众上下文）、Arc Agents（跨阶段和渠道处理复杂营销任务）、Arc Spaces（统一管理规划/创建/审查/批准/发布）和Arc Forge（将工作流转化为定制Agent）。采用品牌安全模型和专用模型，配备护栏、合规、加密和严格访问控制，与Cognizant等系统集成商战略合作。
+parameters: 未公开
+architecture: Multi-agent marketing orchestration (多智能体营销编排)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业品牌数据和营销内容上微调，使模型对齐品牌指南、版式和受众上下文，生成品牌安全的营销内容
+  - name: rlhf
+    description: 基于品牌安全和营销效果的对齐优化，内置护栏确保输出可靠、可问责
+tech_stack:
+  framework: Arc编排引擎 + 品牌专用模型
+  inference: 企业云部署（专用模型、加密、访问控制）
+  techniques:
+  - Multi-agent orchestration (Arc Agents)
+  - Brand grounding (Arc Graph)
+  - Retrieval over brand guidelines
+  - Custom agent building (Arc Forge)
+  - MCP / API integration
+  - Brand-safe generation with guardrails
+datasets:
+- name: Enterprise Brand Data
+  description: 企业品牌指南、批准版式、受众上下文数据，用于内容锚定和品牌安全生成
+  type: sft
+- name: Marketing Content Corpus
+  description: 跨渠道营销内容语料，用于训练营销Agent的内容生成和工作流执行能力
+  type: pre-training
+benchmarks:
+- name: Brand Alignment
+  score: 品牌安全生成
+  metric: brand_compliance
+  comparison: "vs 通用生成模型: 内置品牌护栏和安全控制，确保输出对齐企业品牌指南"
+- name: Marketing Workflow Automation
+  score: 端到端营销编排
+  metric: workflow_coverage
+  comparison: "vs 单点生成工具: 覆盖规划-创建-审查-批准-发布全流程"
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- Agentic营销工作流编排，覆盖规划到发布全流程
+- 品牌内容自动锚定（品牌指南、版式、受众上下文）
+- 跨渠道营销Agent处理复杂营销任务
+- 将工作流转化为定制Agent（Arc Forge）
+- 通过MCP/API/集成扩展营销流程
+- 品牌安全模型与内置护栏，保护企业数据
+access:
+- saas
+- api
+tags:
+- marketing-ai
+- content-generation
+- multi-agent
+- brand-safety
+- enterprise-ai
+- workflow-orchestration
+references:
+- title: Typeface Official Website
+  url: https://www.typeface.ai
+- title: Typeface Arc Marketing Orchestration Engine
+  url: https://www.typeface.ai
