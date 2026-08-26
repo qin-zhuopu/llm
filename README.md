@@ -103,3 +103,30 @@ python scripts/validate.py
 2. 按照 `platforms/schema.json` 的格式填写字段（推理API为必填）
 3. 运行 `python scripts/validate_platforms.py` 确认无格式错误
 4. 提交 PR
+
+### 知识图谱 (Knowledge Graph)
+
+本项目集成了 [LightRAG](https://github.com/HKUDS/LightRAG)，可从所有 markdown 研究文件中构建知识图谱，支持基于图谱的智能问答。
+
+**构建知识图谱：**
+
+```bash
+python scripts/build_kg.py
+```
+
+该脚本会读取 `domains/`、`platforms/`、`docs/` 下的所有 `.md` 文件，提取实体和关系，构建知识图谱并存储在 `kg_data/` 目录下。
+
+**查询知识图谱：**
+
+```bash
+python scripts/query_kg.py "哪些公司在做药物研发AI？"
+python scripts/query_kg.py --mode global "各领域AI模型分布情况"
+python scripts/query_kg.py --mode local "介绍一下BloombergGPT"
+```
+
+支持的查询模式：
+- `naive` - 简单文本匹配
+- `local` - 局部子图搜索
+- `global` - 全局知识图谱搜索
+- `hybrid` - 混合局部和全局搜索（默认）
+- `mix` - 混合朴素搜索和图谱搜索
