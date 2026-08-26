@@ -1,0 +1,51 @@
+---
+title: "Moats Need Models"
+date: JUNE 10, 2026
+authors: "SAHAR SOLIMANO"
+source: "https://appliedcompute.com/company/moats-need-models"
+---
+
+For most of the last two years, the model was treated as a commodity input. You picked a frontier API, wrapped it in a clever harness, and built your product in the layer above. The model was a dependency you rented, and the product was everything you put around it. For many use cases, that was the right call.  
+  
+But after a year spent training, serving, and improving custom models for leading enterprises at Applied Compute, we’ve seen that the model, the interface, and the application layer are no longer separate pieces of the stack. The harness shapes the tasks the model sees. Verifiers define what good looks like. The application generates the data the model learns from. Each component changes the model, and the model changes each one back.  
+  
+That creates a new strategic problem. If you want to be at the frontier, you need the model, the interface, the workflow, the data, and the evaluation loop working together. But if pieces of this loop depend on a single outside model vendor, you are building on rented capability that can be restricted, repriced, or reclaimed on the supplier’s terms. [Fable’s⌝](https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf) recent release is a not-so-subtle reminder of these considerations.  
+  
+Defensibility no longer comes from the model alone, or from the wrapper around it. It comes from owning the feedback loop between them: a custom model, post-trained on your data, tuned to your workflow, evaluated by your standards, and improved through real use  
+  
+The winners in AI will be the companies whose product and custom model compound together until they become inseparable. Model-harness co-design is the moat, and it only exists if you own your intelligence.
+## The need for model customization
+The frustration we hear most often goes something like this: a team adopts a strong general model, builds an impressive demo in a week, and then stalls on the last mile. The model is brilliant in the abstract and unreliable on the specifics. It doesn't know how their business actually operates, what their users do, or where their hardest workflows break. There's a competitive version of the same problem, too. A general model is, by definition, available to everyone, with the same weights behind the same API. When the intelligence is identical and rentable by anyone, it stops being a source of differentiation on its own.  
+  
+Underneath the frustration is a more structural limit. Off-the-shelf models only give you fixed tradeoffs between cost, latency, and performance. Bigger models improve quality but cost more and run slower. Smaller models are faster and cheaper but usually sacrifice quality. Prompting and retrieval help you choose among the available options, but they cannot create a better one. Training on your own data can. It lets you define your own point on the frontier, flexibly shifting the tradeoff toward the cost, speed, and quality your work actually requires. That is specialization around the assets competitors do not have, including your data, your tools, and your definition of good.  
+  
+This comes up most sharply with the AI-native companies we talk to, because for them, a real share of their margin lives in the model. As usage grows, inference becomes a dominant cost, and reaching for a larger frontier model on every call steadily erodes gross margin. At the same time, labs are moving into the application layer, which means some teams increasingly compete with the supplier they depend on.  
+  
+That dynamic makes teams increasingly guarded about the data they share. In nearly every conversation, companies tell us they are not comfortable handing their most proprietary data, or the production traces that reveal how their product actually works, to a frontier lab. These considerations are amplified as some recent releases do not offer [zero data retention⌝](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention).
+## What a custom model gets you
+Across the engagements we’ve seen, the payoff tends to fall into four categories.
+  1. **Frontier quality at production economics**. When [Cognition⌝](https://www.appliedcompute.com/case-studies/cognition) built real-time bug detection into Windsurf, the only off-the-shelf model that cleared their quality bar was too slow and expensive to run on every keystroke. No available point on the curve fit the constraint. A specialized model delivered frontier-level detection roughly 10x faster than the frontier alternative. The lesson is that specialization lets you keep the capability, but shed latency and cost.
+  2. **Quality that exceeds the generalists** , when your data is the edge. By training against their own experts' definition of a correct menu, [DoorDash⌝](https://www.appliedcompute.com/case-studies/doordash) reduced critical menu errors by 30% relative to baseline. [Mercor⌝](https://www.appliedcompute.com/case-studies/mercor) found that a modest set of expert-labeled tasks was enough to train a small model to state-of-the-art quality on a narrow task at a fraction of the cost.
+  3. **New product surfaces**. Lowering the cost and latency of near-frontier intelligence makes whole categories of work newly viable. Tasks that are uneconomical to run with a frontier API on every document, customer, or trace become practical once a specialized model does the same job for a fraction of the price.
+  4. **A compounding investment you own**. Every accept, retry, edit, and override your users generate is feedback on how the product actually performs. Fed back into training, that signal becomes the input for the next version of the model. The system is no longer frozen at its release date and starts improving with use. And because the model is yours, you decide what trains, what deploys, and where it runs. Competitors cannot replicate this by signing the same vendor contract.
+
+## If custom is worth it, why doesn't everyone train?
+It's the question we get in almost every conversation. The honest answer is that training well is hard, and the hard parts are not the ones people expect. There are three levers in any AI system: the harness, the context, and the model's weights. Most teams work the first two, because they're accessible and don't require ownership. Moving the third, actually training the model, is where the durable advantage tends to be, and it's also where two real barriers show up.  
+  
+**The science**  
+  
+The first barrier is infrastructure. Training a model in the way we’ve described is a systems problem. You need a training engine that scales from small to frontier-size models, sandboxed environments to run your tools, a grading pipeline, a scheduler that keeps thousands of rollouts moving, observability to catch when a model is quietly gaming its reward, and serving that can put the result into production. Long-horizon, tool-using agents make this harder. Rollouts finish at different times, and a naive setup leaves expensive GPUs idle. Getting real utilization generally requires fully asynchronous training, where sampling, grading, and learning run in parallel. That is months of platform work before the first useful result.  
+  
+**The art**  
+  
+The second barrier is evals, and it's the one almost everyone underestimates. A model is only ever as good as the signal you train it against, and turning a fuzzy sense of "good" into a calibrated, self-consistent reward is difficult. In practice, the data a customer hands us on day one is [rarely in a shape a model can learn from⌝](https://x.com/michaelzchen5/status/2037216797657805251), and it's usually only after we build evals jointly with their subject-matter experts that both sides see how far off it was. A grader that is slightly miscalibrated teaches the model the wrong thing efficiently, and you often won't notice until it has learned to take the shortcut. The evals, more than the volume of data, turn out to be the real specification. Getting them right takes experience and iteration.  
+  
+These two challenges are a large part of why Applied Compute exists, and why we work as a forward-deployed partner. We run the infrastructure underneath, so a customer's team can focus on three things: the environment, the grader, and the goal. We embed with their engineers and build the evals and rewards alongside their experts, where the hard judgment actually lives, and we carry the training, serving, and systems load. The customer brings a deep knowledge of their domain and a clear sense of what excellence looks like within it. The model, the data, and the IP stay theirs.
+## The future of enterprise AI
+Custom model ownership is no longer hypothetical. Law firms, asset managers, and AI-native companies are already committing serious budgets to custom models. And as open-weight models improve, starting from a strong base model and post-training it for a specific workflow has become a practical strategy.  
+  
+That does not mean general models are going away, or that every company should train a model for everything. Most AI systems will still rely heavily on [harnesses, context, tools, and retrieval⌝](https://www.appliedcompute.com/research/remember-refine-retrieve), which we also help our customers with when post-training isn't the most efficient path.  
+  
+But for the handful of workflows that define your product, your margins, and your moat, it's worth asking whether the most important component should be something every competitor can rent too.  
+  
+For those workflows, training your own model is the most direct way to turn the work you already do into an asset you own. It can occupy a point on the cost-latency-performance curve that no off-the-shelf model offers, it can outperform generalists on the problems that define your business, it improves as your team uses it, and it isn't something a competitor can buy off the shelf. Renting a generalist gives you the same intelligence everyone else has. Training your own, and shaping the harness around it, is how you build something that is genuinely and durably yours.Stop renting your intelligence. Own it.
