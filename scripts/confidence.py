@@ -41,28 +41,39 @@ def compute_confidence(md_path, yaml_path):
 
     md_content = md_path.read_text(encoding="utf-8")
 
-    # 去掉 header
-    if "---\n" in md_content:
-        body = md_content.split("---\n", 1)[-1].strip()
+    # 去掉 header（只以第一个 ---\n 为分隔）
+    first_sep = md_content.find("---\n")
+    if first_sep >= 0:
+        body = md_content[first_sep + 4:].strip()
     else:
         body = md_content.strip()
 
     # 1. 内容长度 (max 20 分)
-    length = len(body)
-    if length >= 3000:
+    # 使用字节长度，因为中文字符信息密度高于 ASCII
+    length = len(body.encode("utf-8"))
+    if length >= 2500:
         score += 20
-        reasons.append(f"内容丰富 ({length} 字符)")
-    elif length >= 1000:
+        reasons.append(f"内容丰富 ({length} 字节)")
+    elif length >= 800:
         score += 12
-        reasons.append(f"内容适中 ({length} 字符)")
-    elif length >= 500:
+        reasons.append(f"内容适中 ({length} 字节)")
+    elif length >= 300:
         score += 6
-        reasons.append(f"内容偏短 ({length} 字符)")
+        reasons.append(f"内容偏短 ({length} 字节)")
     else:
-        reasons.append(f"内容过短 ({length} 字符)")
+        reasons.append(f"内容过短 ({length} 字节)")
 
     # 2. 具体数字（参数量、token数、百分比等）(max 20 分)
-    numbers = re.findall(r'\d+[BMT]\b|\d+\.\d+%|\$[\d,.]+[MBK]?|\d{1,3}(?:,\d{3})+', body)
+    number_patterns = [
+        r'\d+[BMT]\+?',              # 7B, 20M+, 130T
+        r'\d+\.?\d*%',               # 27%, 3.14%, 55%
+        r'\$[\d,.]+[MBK]?\+?',       # $1.5M, $300K+
+        r'\d{1,3}(?:,\d{3})+\+?',   # 9,400, 85,000+
+        r'\d+[万亿千百]+\+?',         # 2000万, 300亿
+        r'\d+[KMB]?\+',             # 300+, 85K+, 20M+
+        r'\d+(?:\.\d+)?倍',          # 1.5倍, 30倍
+    ]
+    numbers = re.findall('|'.join(number_patterns), body)
     if len(numbers) >= 5:
         score += 20
         reasons.append(f"含大量具体数据 ({len(numbers)} 处)")
@@ -100,13 +111,20 @@ def compute_confidence(md_path, yaml_path):
     source_match = re.search(r'来源:\s*\[([^\]]+)\]', md_content)
     if source_match:
         source_url = source_match.group(1)
-        # 一手来源（官方域名）
-        if any(k in source_url for k in ['.ai', 'official', 'blog', 'press', 'arxiv']):
-            score += 15
-            reasons.append("来源为官方/学术")
-        else:
+        # 新闻/聚合网站列表（非官方来源）
+        news_sites = [
+            'techcrunch', 'reuters', '36kr', 'venturebeat', 'theverge',
+            'wired', 'zdnet', 'cnet', 'engadget', 'thenextweb',
+            'technode', 'pandaily', 'jiqizhixin', 'leiphone',
+            'bloomberg.com/news', 'cnbc', 'fortune', 'forbes',
+        ]
+        if any(k in source_url.lower() for k in news_sites):
             score += 8
             reasons.append("来源为第三方")
+        else:
+            # 非新闻网站视为官方来源（公司官网、.ai、.io、.health 等）
+            score += 15
+            reasons.append("来源为官方/学术")
     else:
         reasons.append("未标注来源")
 
