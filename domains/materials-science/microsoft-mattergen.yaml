@@ -1,0 +1,49 @@
+name: MatterGen
+company: Microsoft
+domain: materials-science
+status: released
+release_date: '2024'
+website: https://www.microsoft.com/en-us/research/blog/mattergen-a-generative-model-for-inorganic-materials-design/
+description: MatterGen 是微软研究院与 Azure Quantum 团队合作开发的生成式 AI 模型，专注于无机材料设计。该模型采用扩散模型（Diffusion
+  Models）架构，能够根据指定的目标性质（如带隙、磁密度等）定向生成新型材料结构，相比传统随机筛选方法实现了数个数量级的加速。发表于 Nature（2024），并已通过实验验证，其发现的锂电池电解质材料可减少
+  70% 的锂用量。
+architecture: diffusion
+capabilities:
+- 根据目标物理性质（带隙、磁密度等）定向生成无机材料晶体结构
+- 利用扩散模型从随机噪声迭代去噪生成稳定材料结构
+- 将数年级别的材料筛选计算缩短至 80 小时
+- 结合密度泛函理论（DFT）训练数据实现三个数量级以上的模拟加速
+- 支持锂电池电解质等关键材料的快速发现与实验验证
+training:
+  stages:
+  - name: pre-training
+    description: 使用密度泛函理论（DFT）模拟生成的合成训练数据进行预训练，训练深度学习模拟器（emulator），比原始DFT模拟快三个数量级以上
+tech_stack:
+  techniques:
+  - diffusion models
+  - geometric deep learning
+  - rotational invariance/equivariance
+  - density functional theory emulation
+datasets:
+- name: DFT Synthetic Training Data
+  description: 通过密度泛函理论模拟生成的合成训练数据，用于训练材料性质预测模型
+  type: pre-training
+- name: Candidate Materials Dataset
+  description: 超过 3200 万个计算机生成的候选材料用于筛选
+  type: other
+tags:
+- generative-ai
+- diffusion-model
+- materials-discovery
+- inorganic-materials
+- battery-electrolyte
+- azure-quantum
+access:
+- saas
+region:
+- global
+references:
+- title: "MatterGen: A Generative Model for Inorganic Materials Design - Microsoft Research Blog"
+  url: https://www.microsoft.com/en-us/research/blog/mattergen-a-generative-model-for-inorganic-materials-design/
+- title: MatterGen Nature Publication (2024)
+  url: https://www.nature.com/articles/s41586-025-08628-5
