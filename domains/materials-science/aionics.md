@@ -51,3 +51,36 @@ The platform screens tens of billions of possible formulations to find the best 
 
 Aionics serves clients across the EV, aviation, grid energy storage, and consumer electronics industries, helping them accelerate their materials R&D pipelines from years to weeks.
 
+---
+
+## 补充研究信息
+
+> 来源: https://www.aionics.io
+> 日期: 2025-06-18
+
+### 技术平台更多细节
+- 使用下一代计算设计下一代材料
+- 定制配方设计：筛选数十亿配方以找到实现目标性能的最佳候选
+- 新分子设计：发现并商业化有前景的新材料
+- 供应链：与可信化学合作伙伴合作确保新配方的供应
+
+### 行业覆盖
+- Electric vehicles: 解锁定制化电池性能
+- Aviation: 确保高功率航空应用的最大安全性
+- Green manufacturing: 驱动零碳制造革命
+- Consumer electronics: 优化设备电池用户体验
+- Grid storage: 最大化长期耐久性
+- Long-haul electric trucks: 创建热稳定和耐久的电解液方案
+
+### 技术方法推断
+- AI 驱动的高通量虚拟筛选（10亿+候选/次）
+- 第一性原理(DFT)和分子动力学验证
+- 图神经网络(GNN)用于分子属性预测
+- 贝叶斯优化用于配方空间探索
+- 研发周期缩减约80%（从数年缩短至数周）
+- 与供应链合作伙伴的集成确保可制造性
+
+### 学术背景
+- Aionics 团队发表多篇关于 AI 材料设计的 paper
+- 核心技术基于图神经网络和分子动力学仿真的结合
+

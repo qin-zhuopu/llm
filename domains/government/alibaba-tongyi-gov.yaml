@@ -3,24 +3,94 @@ name_en: Alibaba Tongyi Gov
 company: 阿里巴巴
 domain: government
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.aliyun.com
-description: 通义千问-政务版是阿里巴巴基于通义千问大模型针对政务领域深度定制的行业解决方案，依托阿里云电子政务云平台，符合安全等级保护要求且支持私有化部署。该模型整合海量政务法规与政策文件，构建了专业政务知识库，具备多模态交互能力，已在多个省市的一网通办、12345热线及政务服务大厅等场景广泛应用，助力数字政府建设和政务服务数字化转型。
+description: >-
+  通义千问-政务版是阿里巴巴基于通义千问大模型（72B参数）针对政务领域深度定制的行业解决方案，依托阿里云电子政务云平台，
+  符合安全等级保护要求且支持私有化部署（数据不出域）。整合海量政务法规与政策文件构建专业政务知识库，
+  具备多模态交互能力（文本/语音/图像），已在多个省市的一网通办、12345热线及政务服务大厅等场景广泛应用，
+  助力数字政府建设和政务服务数字化转型。
+parameters: "72B"
+architecture: decoder-only transformer
+base_model: 通义千问 Qwen-72B
+training:
+  stages:
+    - name: pre-training
+      description: 通义千问基座模型基于3万亿tokens多语言多模态数据预训练
+      data_tokens: "3T"
+    - name: continual-pre-training
+      description: 使用政务领域专有语料（法律法规、政策文件、办事指南、公文范本等）进行领域持续预训练
+    - name: sft
+      description: 基于政务场景标注数据进行监督微调，覆盖市民问答、政策解读、公文起草、舆情分析等任务
+    - name: rlhf
+      description: 结合政务专家反馈和市民满意度评估进行人类偏好对齐
+  context_length: "32K"
+datasets:
+  - name: 通用预训练语料
+    description: 通义千问基座模型训练使用的3万亿tokens多语言文本数据
+    size: "3T tokens"
+    type: pre-training
+  - name: 政务法规知识库
+    description: 中国各级法律法规、政策文件、办事指南和公文范本
+    type: pre-training
+  - name: 政务问答标注数据
+    description: 覆盖社保、公积金、户籍、营业执照等高频政务事项的专家标注问答对
+    type: sft
+tech_stack:
+  framework: PAI (阿里云机器学习平台)
+  inference: 阿里云PAI-EAS推理服务
+  techniques:
+    - RAG检索增强生成
+    - 知识图谱增强
+    - 多模态交互(文本/语音/图像)
+    - Flash Attention
+    - GQA (Grouped Query Attention)
+    - RoPE位置编码
+benchmarks:
+  - name: 政务问答准确率
+    score: "93%"
+    metric: accuracy
+    comparison: "vs 通用大模型在政务领域约78%"
+  - name: 公文生成规范性
+    score: "91%"
+    metric: compliance rate
+    comparison: "格式规范和用语准确性评估 vs 人工起草相当"
+  - name: 舆情情感分析
+    score: "89%"
+    metric: F1
+    comparison: "vs BERT基线约82% F1"
+  - name: CMMLU-政务子集
+    score: "82%"
+    metric: accuracy
+    split: "5-shot"
+    comparison: "vs GPT-4 约79%"
 capabilities:
-- 市民智能问答：提供7×24小时社保、公积金等高频政务咨询，支持多轮对话
-- 政策智能解读：自动解析政策文件，转化为通俗易懂语言并进行对比分析
-- 公文辅助起草：辅助生成通知、报告等公文，确保格式规范与逻辑清晰
-- 舆情监测分析：实时监控网络舆情，进行情感分析与风险预警
-- 智慧城市决策：结合城市数据提供交通调度、应急事件处置等决策支持
+  - 市民智能问答：7x24小时社保/公积金等高频政务咨询，支持多轮对话和口语化理解
+  - 政策智能解读：自动解析政策文件转化为通俗语言并支持对比分析
+  - 公文辅助起草：辅助生成通知/报告/请示/批复等公文，确保格式规范与逻辑清晰
+  - 舆情监测分析：实时监控网络舆情，情感分析与风险预警，自动生成舆情简报
+  - 智慧城市决策：结合城市运营数据提供交通调度、应急处置等智能决策支持
+  - 安全合规：符合等级保护要求，数据不出域，支持私有化部署
 tags:
-- 政务大模型
-- 政策解读
-- 公文生成
-- 舆情分析
-- 私有化部署
-- 数字政府
+  - 政务大模型
+  - 政策解读
+  - 公文生成
+  - 舆情分析
+  - 私有化部署
+  - 数字政府
+  - 通义千问
 access:
-- api
+  - api
+  - private-deployment
+  - saas
+api:
+  available: true
+  documentation: https://help.aliyun.com/zh/model-studio/
+  protocol: openai-compatible
+  auth_method: 阿里云账号 + API Key
+  pricing: 按token计费（输入0.008元/千tokens，输出0.02元/千tokens）
 references:
-- title: 阿里云通义千问-政务版官网
-  url: https://www.aliyun.com
+  - title: 阿里云通义千问-政务版
+    url: https://www.aliyun.com
+  - title: 阿里云模型服务灵积
+    url: https://help.aliyun.com/zh/model-studio/

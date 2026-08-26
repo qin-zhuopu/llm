@@ -3,21 +3,84 @@ name_en: JD Yanxi
 company: 京东
 domain: retail-ecommerce
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://ai.jd.com
-description: 京东言犀是京东集团自主研发的产业级AI大模型平台，深度融合京东在零售电商及供应链领域的海量数据与行业经验。该模型核心定位为面向零售、供应链和物流等业务场景，提供从智能交互到决策优化的全方位AI能力，不仅服务于京东自身业务，还通过京东云JoyAgent平台向外部输出智能体应用构建能力，助力企业数智化升级。
+description: >-
+  京东言犀是京东集团自主研发的产业级AI大模型平台，深度融合京东在零售电商及供应链领域的海量数据（含数十亿SKU商品数据、
+  数亿用户行为日志和多年供应链运营数据），采用千亿级参数大模型提供从智能交互到决策优化的全方位AI能力。
+  不仅服务于京东自身零售和物流业务，还通过京东云 JoyAgent 全球首个100%开源多智能体平台向外部企业输出智能体应用构建能力，
+  覆盖零售、快消、3C、服装、生鲜等多个品类。
+parameters: "100B+"
+architecture: decoder-only transformer
+training:
+  stages:
+    - name: pre-training
+      description: 基于京东海量文本数据（商品描述、用户评论、客服对话、供应链文档）和通用中文语料进行大规模预训练
+      data_tokens: "数万亿tokens"
+    - name: continual-pre-training
+      description: 使用零售电商领域专有数据（商品知识图谱、供应链数据、物流运营数据）进行领域持续预训练
+    - name: sft
+      description: 基于京东客服团队标注的高质量对话数据和业务场景指令进行监督微调
+    - name: rlhf
+      description: 结合人工客服评估反馈和用户满意度数据进行RLHF对齐，优化对话质量和业务转化效果
+  context_length: "32K"
+datasets:
+  - name: 京东商品数据
+    description: 数十亿SKU的商品标题、描述、规格参数和用户评论数据
+    type: pre-training
+  - name: 京东客服对话数据
+    description: 多年积累的真实客服对话记录，覆盖售前、售后全场景
+    type: sft
+  - name: 供应链运营数据
+    description: 京东物流和供应链系统产生的需求预测、库存调配、物流配送等结构化数据
+    type: pre-training
+tech_stack:
+  framework: PyTorch (京东自研训练框架)
+  inference: 京东云推理优化引擎
+  techniques:
+    - RAG检索增强生成
+    - 多Agent协作架构(JoyAgent)
+    - 知识图谱增强
+    - 供应链时序预测
+    - 动态定价优化算法
+    - 多轮对话管理
+benchmarks:
+  - name: 智能客服解决率
+    score: "90%+"
+    metric: resolution rate
+    comparison: "vs 传统规则客服约60-70%解决率"
+  - name: 需求预测准确率
+    score: "92%"
+    metric: accuracy
+    comparison: "vs 传统统计方法预测准确率约80%"
+  - name: 商品内容生成质量
+    score: "85%"
+    metric: human evaluation score
+    comparison: "人工评估通过率 vs 纯人工写作相当但效率提升10倍"
 capabilities:
-- 多轮对话理解与全场景智能客服
-- 商品内容生成与SEO优化
-- 供应链需求预测与智能补货
-- 价格智能优化与动态定价
-- 物流配送时效预测与运力调度
-- 基于JoyAgent的智能体应用构建
+  - 多轮对话理解与全场景智能客服（售前/订单/退换货/投诉）
+  - 商品内容生成与标题优化和SEO
+  - 供应链需求预测与智能补货决策
+  - AI驱动动态定价与促销力度测算
+  - 物流配送时效预测与运力智能调度
+  - 基于JoyAgent 100%开源多智能体平台构建企业智能体
+  - 多渠道接入（京东App/微信/企业微信）统一客服
 tags:
-- 电商
-- 客服
+  - 电商大模型
+  - 智能客服
+  - 供应链优化
+  - 动态定价
+  - 多智能体
+  - JoyAgent
 access:
-- private-deployment
+  - api
+  - private-deployment
+  - saas
+api:
+  available: true
+  documentation: https://ai.jd.com
+  protocol: openai-compatible
+  auth_method: API Key
 references:
-- title: 京东言犀官网
-  url: https://ai.jd.com
+  - title: 京东言犀AI平台
+    url: https://ai.jd.com
