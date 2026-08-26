@@ -1,18 +1,78 @@
 name: GraphCast
+name_en: GraphCast
 company: Google DeepMind
 domain: climate-environment
 status: released
-release_date: 2023-11
+release_date: "2023-11"
 website: https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/
-description: 10天天气预报AI模型，精度超过欧洲中期天气预报中心(ECMWF)。
+description: GraphCast 是 Google DeepMind 开发的基于图神经网络的全球中期天气预报 AI 模型，发表于 Science 期刊。在0.25度经纬度分辨率（赤道28km x 28km）下覆盖超过100万网格点，可在单台 Google TPU v4 上一分钟内完成10天天气预测。在1380个测试变量和预报时段中，90%以上优于 ECMWF HRES 金标准系统；在对流层（地表6-20公里）区域，99.7%指标超越 HRES。模型已开源并被 ECMWF 实验性部署。
+parameters: 未公开
+architecture: Graph Neural Network (GNN)
+training:
+  stages:
+  - name: pre-training
+    description: 基于ECMWF ERA5再分析数据集（40年全球历史天气观测数据）训练，学习地球天气系统因果演化规律。输入为6小时前和当前天气状态，预测未来6小时天气，以6小时为步长滚动预报最长10天。
+  context_length: "10-day forecast horizon"
+tech_stack:
+  framework: JAX/Flax
+  inference: Google TPU v4 (single machine, <1 minute for 10-day forecast)
+  techniques:
+  - Graph Neural Networks (GNN)
+  - Message Passing Neural Network
+  - Multi-scale graph architecture
+  - Autoregressive rollout (6-hour steps)
+  - Active learning with DFT validation
+datasets:
+- name: ECMWF ERA5 Reanalysis
+  description: 欧洲中期天气预报中心（ECMWF）40年全球天气再分析数据，整合卫星图像、雷达和地面站观测数据
+  size: 40 years of global weather data
+  type: pre-training
+benchmarks:
+- name: Overall Accuracy vs HRES
+  score: "90%+"
+  metric: win_rate
+  split: test
+  comparison: "vs ECMWF HRES: 在1380个测试变量和预报时间中90%以上更准确"
+- name: Troposphere Accuracy vs HRES
+  score: "99.7%"
+  metric: win_rate
+  split: test
+  comparison: "vs ECMWF HRES: 在对流层（6-20km高度）99.7%指标优于HRES"
+- name: Inference Speed
+  score: "<1 minute"
+  metric: latency
+  comparison: "vs HRES: 传统方法需要数百台超算运行数小时，GraphCast单台TPU不到1分钟"
+- name: Cyclone Track Prediction
+  score: "更高准确率"
+  metric: accuracy
+  comparison: "vs HRES: 在更长预报时间内保持更高气旋路径预测准确率，提前9天预测Hurricane Lee登陆"
+- name: Atmospheric River Prediction
+  score: "更低误差"
+  metric: error_rate
+  comparison: "vs HRES: 在10天预报全程，大气河预测误差显著低于HRES"
 capabilities:
-- 10天全球天气预报
-- 极端天气事件预测
+- 0.25度分辨率全球10天中期天气预报（100万+网格点）
+- 预测5个地表变量（温度、风速风向、平均海平面气压）和6个大气变量（37个高度层）
+- 气旋路径追踪和提前预警（比传统方法早3天锁定登陆点）
+- 大气河识别和洪水风险预测
+- 极端温度事件预警（热浪预测）
+- 开源模型代码供全球研究者使用
 access:
-- api
+- open-weights
 tags:
-- 天气预报
-- 图神经网络
+- weather-forecasting
+- graph-neural-network
+- climate
+- open-source
+- ecmwf
+- extreme-weather
+- scientific-ai
 references:
-- title: DeepMind GraphCast Blog
+- title: "GraphCast: AI model for faster and more accurate global weather forecasting"
   url: https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/
+- title: "Paper in Science: Learning skillful medium-range global weather forecasting"
+  url: https://www.science.org/doi/10.1126/science.adi2336
+- title: GraphCast GitHub Repository
+  url: https://github.com/google-deepmind/graphcast
+- title: GraphCast live on ECMWF
+  url: https://charts.ecmwf.int/products/graphcast_medium-mslp-wind850

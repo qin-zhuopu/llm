@@ -1,31 +1,78 @@
-name: CoCounsel
+name: CoCounsel (Tax & Audit)
+name_en: CoCounsel Tax & Audit AI
 company: Thomson Reuters
 domain: accounting-audit
 status: released
-release_date: '2023'
-website: https://www.thomsonreuters.com/coco
-description: CoCounsel 是一款基于 Thomson Reuters 175 年权威知识库构建的受信 AI 助手。它专为客户设计的‘受托级 AI’（Fiduciary-Grade
-  AI），旨在支持高风险的会计、税务和审计工作。该模型通过集成权威内容库和专家验证流程，提供可辩护的答案和可验证的推理结果。它强调企业级的数据隐私与安全，不利用用户数据训练模型，并能无缝集成至
-  Westlaw、Checkpoint 和 Microsoft 365 等专业工作流工具中，显著提升专业人士在合规性审查、数据分析和文档起草方面的效率与准确性。
+release_date: "2024"
+website: https://tax.thomsonreuters.com/en/products/cocounsel-tax
+description: CoCounsel Tax & Audit 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准为税务、审计和会计专业人员打造的 AI 助手。系统整合 Checkpoint 税务权威内容数据库和 Thomson Reuters 175年专业知识，基于 OpenAI GPT 和 Google Gemini 大语言模型，为高风险专业工作提供可防御、可验证的答案。所有输出均展示权威来源和推理过程，确保在监管审查中经得起检验。已超过100万用户信任使用。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model:
+- GPT-4
+- Gemini
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于Thomson Reuters Checkpoint税务数据库和会计准则内容进行领域微调，确保税务和审计场景输出的权威性和准确性
+  - name: rlhf
+    description: 由税务和审计领域主题专家实时验证和评估AI输出，通过人类反馈持续提升专业准确度
+tech_stack:
+  framework: OpenAI GPT + Google Gemini (multi-model)
+  inference: Azure OpenAI Service (zero-retention API calls, US-hosted)
+  techniques:
+  - Fiduciary-Grade AI standard
+  - Retrieval-Augmented Generation with Checkpoint
+  - Source citation and reasoning transparency
+  - Enterprise encryption (TLS 1.2, AES-256)
+  - Zero-retention API calls
+  - Prompting guardrails restricting to verified content
+  - Region-based hosting (US, UK, Australia, Canada)
+datasets:
+- name: Thomson Reuters Checkpoint
+  description: 权威税务研究数据库，包含税法法规、案例、指南和专家分析
+  type: sft
+- name: Audit Standards Knowledge Base
+  description: 审计准则、合规要求和最佳实践内容库
+  type: sft
+- name: Accounting Standards Content
+  description: 会计准则（GAAP、IFRS）及实务指南
+  type: sft
+benchmarks:
+- name: User Trust Base
+  score: "1000000+"
+  metric: active_users
+  comparison: "CoCounsel全产品线已超过100万用户信任使用"
+- name: Professional Efficiency Gain
+  score: "90%日常工作可替代"
+  metric: coverage
+  comparison: "CFO反馈: 90%日常工作CoCounsel是完美解决方案（OMNIUX CFO）"
 capabilities:
-- 加速审计、税务与会计工作流程
-- 基于权威内容的合规性分析与审查
-- 提供可验证的引用来源与推理依据
-- 处理海量数据以支持尽职调查
-- 集成至专业工具（如 Microsoft 365）
-tags:
-- audit
-- accounting
-- tax
-- compliance
-- fiduciary-grade
-- enterprise-security
+- 基于 Checkpoint 权威内容的税务研究和法规查询
+- 审计工作底稿辅助和风险识别
+- 税务合规检查和申报辅助
+- 会计准则解读和实务指导
+- 可验证的专业答案生成（展示来源和推理过程）
+- 与现有税务和审计工具的无缝集成
+- 企业级数据隐私保护，客户数据不用于模型训练
+api:
+  available: true
+  protocol: proprietary
+  auth_method: 企业认证
 access:
 - saas
+tags:
+- tax-ai
+- audit-ai
+- accounting
+- fiduciary-grade-ai
+- checkpoint
+- compliance
+- enterprise-security
 references:
-- title: CoCounsel Official Website
-  url: https://www.thomsonreuters.com/coco
-- title: CoCounsel for Audit and Accounting
+- title: CoCounsel for Tax Professionals
+  url: https://tax.thomsonreuters.com/en/products/cocounsel-tax
+- title: CoCounsel for Audit Professionals
   url: https://tax.thomsonreuters.com/en/products/cocounsel-audit
-- title: Thomson Reuters Professional Grade AI Report
-  url: https://www.thomsonreuters.com/content/dam/ewp-m/documents/thomsonreuters/en/pdf/reports/leading-the-future-of-professional-grade-ai.pdf
+- title: Thomson Reuters Fiduciary-Grade AI
+  url: https://www.thomsonreuters.com/en/artificial-intelligence.html

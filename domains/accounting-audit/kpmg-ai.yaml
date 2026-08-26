@@ -1,30 +1,77 @@
-name: KPMG AI
+name: KPMG Clara & AI Solutions
+name_en: KPMG Clara & AI Solutions
 company: KPMG
 domain: accounting-audit
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://kpmg.com/us/en/ai.html
-description: KPMG AI 是毕马威推出的企业级生成式人工智能解决方案套件，旨在重塑企业工作流并释放业务潜能。该套件与 OpenAI 结成战略联盟（Elite
-  Partner），整合了云数据平台与先进 AI 技术，专注于通过自动化和智能化手段提高运营效率、增强决策能力并确保合规安全。核心产品包括面向审计的 KPMG Clara（利用
-  AI 聚焦风险领域，提高审计质量与效率）以及面向税务的 KPMG Digital Gateway（部署负责任且公平的 GenAI 程序），同时涵盖 KPMG Blaze
-  等技术现代化加速工具。KPMG 强调通过‘可信赖 AI’方法，结合人类监督与风险管控，为客户提供从战略规划到技术实施的全方位 AI 转型支持。
+description: KPMG 基于生成式 AI 技术构建的企业级审计与会计智能解决方案套件，核心产品包括 KPMG Clara 智能审计平台、KPMG Ignite AI 平台和 KPMG Blaze 技术现代化工具。通过与 OpenAI 战略联盟（Elite Partner）整合大语言模型能力，为审计、税务、咨询等专业领域提供 AI 驱动的决策支持、风险识别和效率提升，已获得 HFS Research、IDC MarketScape 等多个行业权威机构认可为 AI 服务市场领导者。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于 KPMG 175年专业知识积累和审计方法论进行领域微调，整合 Trusted AI 原则确保输出可信赖和可解释
+  - name: rlhf
+    description: 由审计和税务专业人员进行人工反馈强化学习，确保 AI 输出符合专业标准和监管要求
+tech_stack:
+  framework: OpenAI GPT + KPMG Ignite Platform
+  inference: Azure OpenAI Service
+  techniques:
+  - Retrieval-Augmented Generation (RAG)
+  - Trusted AI guardrails
+  - Domain-specific prompt engineering
+  - Enterprise data integration
+  - Human-in-the-loop validation
+  - Agentic AI orchestration
+datasets:
+- name: KPMG Audit Methodology Knowledge Base
+  description: KPMG 审计方法论、专业标准、行业指南和最佳实践知识库
+  type: sft
+- name: Regulatory Compliance Dataset
+  description: 全球会计准则、税法法规和合规要求数据
+  type: sft
+benchmarks:
+- name: HFS Research - Generative Enterprise Services 2025
+  score: Market Leader
+  metric: industry_ranking
+  comparison: "被评为生成式企业服务市场领导者，以人本和风险适当方法领先"
+- name: IDC MarketScape - AI Services 2025
+  score: Leader
+  metric: industry_ranking
+  comparison: "IDC MarketScape 全球人工智能服务厂商评估认证"
+- name: HFS Horizons - Agentic Services 2026
+  score: Leader
+  metric: industry_ranking
+  comparison: "智能体服务领域获得认可"
+- name: Forrester Wave - Automation Fabric Services Q4 2024
+  score: Leader
+  metric: industry_ranking
+  comparison: "自动化架构服务领域领先位置"
 capabilities:
-- 提供端到端的 GenAI 战略规划与执行方案
-- 利用 KPMG Clara 实现智能化审计与风险聚焦
-- 通过 KPMG Digital Gateway 助力税务职能现代化与合规
-- 利用 KPMG Blaze 自动化开发生命周期并降低技术现代化成本
-- 建立企业级 AI 治理框架以确保安全、合规与道德风险缓解
-tags:
-- 四大
-- 审计
+- AI 驱动的智能审计，聚焦风险所在提升审计质量
+- 自动化全软件开发生命周期，半时半费交付新能力（KPMG Blaze）
+- 人力与数字劳动力的 AI 驱动分析与协调（KPMG Mystro）
+- 采购合同 AI 性能监控，将供应商合同转化为战略优势
+- AI 驱动的财务运营平台，服务于 CFO 决策支持
+- 企业级 AI 策略规划、信任治理和规模化部署
+- Agentic AI 编排能力，支持构建/购买/借用决策
 access:
-- internal-only
+- saas
+- private-deployment
+tags:
+- audit
+- accounting
+- enterprise-ai
+- trusted-ai
+- openai-partnership
+- agentic-ai
+- kpmg-clara
 references:
-- title: KPMG AI 官方主页
+- title: KPMG AI Solutions
   url: https://kpmg.com/us/en/ai.html
-- title: KPMG and OpenAI form Strategic Alliance
+- title: KPMG and OpenAI Strategic Alliance
   url: https://kpmg.com/us/en/media/news/kpmg-openai-strategic-alliance.html
-- title: KPMG AI Strategy Services
-  url: https://kpmg.com/us/en/capabilities-services/ai/strategy.html
-- title: KPMG Clara Intelligent Audit
-  url: https://kpmg.com/us/en/capabilities-services/audit-services/kpmg-clara.html
+- title: KPMG Ignite AI Platform
+  url: https://kpmg.com/us/en/capabilities-services/advisory-services/data-analytics-ai/artificial-intelligence-ignite.html

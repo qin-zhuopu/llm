@@ -1,33 +1,90 @@
 name: Cerence CaLLM
+name_en: Cerence CaLLM
 company: Cerence AI
 domain: automotive
 status: released
-release_date: 2025-01
+release_date: "2024"
 website: https://www.cerence.com
-description: Cerence AI 推出的先进车载大语言模型系列，旨在为汽车及移动出行领域提供生成式对话 AI 能力。通过深度集成汽车信号与多模态交互，该模型支持自然、流畅的上下文对话，能够无缝控制车辆功能（如导航、多媒体、车控），并具备动态语音增强、多座分区识别及零信任安全架构。目前技术已应用于超过
-  5.25 亿辆汽车，服务全球 80 余家主机厂及一级供应商。
+description: Cerence CaLLM 是 Cerence AI 开发的先进车载大语言模型系列，专为汽车和移动出行领域设计。核心产品 xUI 已与吉利等主机厂合作部署，支持上下文感知的多轮自然对话、Say What You See屏幕元素语音操控和多座位分区识别。技术已搭载于5.25亿+辆汽车中，服务80+主机厂和Tier-1客户，拥有625项专利和25年以上创新积累。配套 Dealer Assist Agent (DAA) 为经销商提供24/7 AI客户服务和预约管理。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模语言数据和汽车领域知识进行预训练，构建车载场景语言理解基础
+  - name: fine-tuning
+    description: 针对车载交互场景（导航、媒体、车控、服务预约）进行专项微调，优化多轮对话和意图理解
+  - name: other
+    description: 使用车载声学环境数据训练语音增强模型，包括引擎噪声、路面振动、风声雨声和多乘客交谈等复杂噪声条件
 tech_stack:
-  nlp: Large Language Models (LLM)
-  architecture: Generative AI for Automotive
+  framework: Cerence proprietary platform
+  inference: Edge deployment (on-vehicle) + Cloud hybrid
+  techniques:
+  - CaLLM (Car Large Language Model)
+  - xUI contextual dialogue engine
+  - Say What You See (Voice-to-Element Matching)
+  - Dynamic speech enhancement (multi-seat)
+  - Emergency Vehicle Detection (EVD) Audio AI
+  - Zero Trust security architecture
+  - Multi-modal interaction (voice + touch + visual)
+  - Microsoft partnership (Mobile Work Agent)
+datasets:
+- name: Automotive Voice Interaction Data
+  description: 车载语音交互数据，覆盖多种驾驶环境和噪声条件
+  type: sft
+- name: Emergency Siren Database
+  description: 全球近50个国家1500+种紧急车辆警笛音频数据
+  size: 1500+ siren types, ~50 countries
+  type: sft
+- name: OEM Integration Data
+  description: 80+主机厂车辆信号、VIN信息和品牌定制数据
+  type: sft
+benchmarks:
+- name: Vehicles Shipped
+  score: "525M+"
+  metric: deployment_scale
+  comparison: "5.25亿+辆汽车搭载 Cerence AI 技术，全球车载AI部署规模最大"
+- name: OEM Customers
+  score: "80+"
+  metric: customer_count
+  comparison: "服务全球80+主机厂和Tier-1供应商"
+- name: Emergency Vehicle Detection Range (Interior)
+  score: "300m+"
+  metric: detection_distance
+  comparison: "车内麦克风可从300米外检测到紧急车辆警笛"
+- name: Emergency Vehicle Detection Range (Exterior)
+  score: "800m+"
+  metric: detection_distance
+  comparison: "配合外部麦克风检测距离超过800米"
+- name: Revenue Growth
+  score: "12% YoY"
+  metric: revenue_growth
+  comparison: "Q3 2026营收同比增长12%，联网服务收入同比增长20%"
 capabilities:
-- 自然多模态交互：支持语音、触摸及视觉（Say What You See）的融合交互，实现意图识别与屏幕元素的语音操控。
-- 上下文感知对话：具备跨轮次记忆能力，支持无唤醒词打断、多意图连续对话，提供拟人化的智能助手体验。
-- 车载信号深度集成：能够读取并操作车辆实时数据（如 VIN、燃油电量、车窗状态），完成复杂的车控与服务预约逻辑。
-- 高鲁棒性语音处理：在嘈杂驾驶环境（引擎声、风噪、多乘客交谈）中实现精准的语音增强与声源定位。
-- 企业级安全防护：采用零信任架构，防御对抗性攻击与武器化 AI，确保车载助手的系统安全与数据隐私。
+- 上下文感知的多轮自然对话（无唤醒词打断、跨轮次记忆）
+- Say What You See 屏幕元素语音操控，实时读取UI界面转为语音快捷方式
+- 多座位分区语音识别，支持多乘客同时交互
+- 紧急车辆检测（EVD），从300-800米外识别警笛并预警
+- 车载信号深度集成（VIN、燃油/电量、车窗状态等实时数据读取和操控）
+- 高噪声驾驶环境下的动态语音增强
+- Dealer Assist Agent (DAA) 24/7经销商客户服务
+- 零信任安全架构防御对抗性攻击
+access:
+- private-deployment
+- api
 tags:
 - automotive-ai
 - in-car-assistant
-- generative-ai
+- callm
 - voice-control
 - conversational-ai
 - multi-modal
-access:
-- api
+- zero-trust
+- emergency-vehicle-detection
 references:
 - title: Cerence AI 官网
   url: https://www.cerence.com
-- title: Cerence xUI™ 与 Geely 合作案例展示
-  url: https://lnkd.in/e44YWYBs
-- title: Dealer Assist Agent (DAA) 功能介绍
-  url: https://lnkd.in/d25ZXggy
+- title: Cerence xUI 与吉利合作
+  url: https://www.cerence.com/about/about-us
+- title: Cerence CaLLM 技术介绍
+  url: https://www.cerence.com

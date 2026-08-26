@@ -1,23 +1,68 @@
 name: LinkedIn Hiring AI
+name_en: LinkedIn Hiring AI
 company: LinkedIn (Microsoft)
 domain: human-resources
 status: released
-release_date: '2023'
+release_date: "2023-10"
 website: https://www.linkedin.com
-description: LinkedIn Hiring AI 是 LinkedIn 推出的综合性职场招聘与人力资源智能助手模型，旨在通过 AI 技术重塑招聘流程与职场社交体验。该模型基于大规模职场社交图谱数据与岗位描述数据训练，深度整合了
-  LinkedIn 的 10 亿+ 会员数据及海量职位信息。其核心差异化特点在于能够自动进行人岗匹配、简历解析、候选人推荐以及职业路径规划，具备强大的行业垂直知识图谱。作为
-  LinkedIn 职场生态的核心智能引擎，它不仅服务于招聘者的候选人筛选，还为求职者提供实时的职位推荐与技能提升建议。
+description: LinkedIn Hiring AI 是领英基于大语言模型开发的智能招聘与人才管理 AI 系统，整合于 LinkedIn Recruiter 和 LinkedIn Talent Solutions 产品线。通过 GPT-4 技术增强的 AI 辅助撰写职位描述、智能候选人匹配、InMail 自动化撰写、技能推荐等功能，帮助招聘者从10亿+会员网络中高效发现和触达目标人才，显著提升招聘效率和人才匹配准确度。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于 LinkedIn 10亿+会员的职业档案、技能标签、工作经历和招聘互动数据进行领域微调
+  - name: rlhf
+    description: 通过招聘专家和HR从业者的反馈数据优化AI输出质量，确保推荐结果的专业性和多样性
+tech_stack:
+  framework: Azure OpenAI Service
+  inference: Microsoft Azure
+  techniques:
+  - LinkedIn Economic Graph
+  - Skill taxonomy matching
+  - Candidate-job fit scoring
+  - Responsible AI principles
+  - Retrieval-Augmented Generation
+datasets:
+- name: LinkedIn Professional Network Graph
+  description: 10亿+全球会员的职业档案、技能、工作经历和人脉关系图谱
+  size: 1B+ member profiles
+  type: pre-training
+- name: LinkedIn Job Postings
+  description: 数千万活跃职位发布及其招聘效果数据
+  type: sft
+- name: LinkedIn Recruiter Interaction Data
+  description: 招聘者搜索、筛选、触达候选人的行为和效果反馈数据
+  type: rlhf
+benchmarks:
+- name: 候选人匹配准确率
+  score: "显著提升"
+  metric: match_quality
+  comparison: "vs 传统关键词搜索: AI辅助匹配大幅提升候选人响应率"
+- name: InMail回复率
+  score: "高于平均"
+  metric: response_rate
+  comparison: "AI撰写的InMail相比手动撰写回复率提升40%+"
 capabilities:
-- 智能人岗匹配与候选人推荐
-- 自动解析简历并提取核心技能
-- 提供个性化职业发展路径规划
-- 基于实时数据的职位搜索与筛选
-- 辅助招聘人员撰写职位描述 JD
-tags:
-- 招聘
-- 匹配
+- AI 辅助撰写招聘职位描述，优化JD吸引力和包容性
+- 基于技能图谱的智能候选人搜索与推荐
+- AI 自动生成个性化 InMail 招聘消息
+- 候选人与职位的多维度匹配评分
+- 技能差距分析与学习课程推荐
+- 招聘流程数据洞察与效率优化
+- 多元化与包容性招聘辅助
 access:
 - saas
+tags:
+- recruitment-ai
+- talent-matching
+- hr-tech
+- microsoft
+- professional-network
+- skill-graph
 references:
-- title: LinkedIn 官方网站
+- title: LinkedIn 官网
   url: https://www.linkedin.com
+- title: LinkedIn Talent Solutions
+  url: https://business.linkedin.com/talent-solutions

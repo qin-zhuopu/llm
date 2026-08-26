@@ -1,20 +1,66 @@
 name: Amazon Rufus
+name_en: Amazon Rufus
 company: Amazon
 domain: retail-ecommerce
 status: released
-release_date: '2024'
-website: https://www.amazon.com
-description: Amazon Rufus 是亚马逊推出的一款生成式 AI 购物助手，旨在通过对话式交互帮助用户在 Amazon.com 上快速搜索和发现商品。它不仅能够回答产品相关问题，还能根据用户需求提供个性化的购物建议和比较，显著优化了电商购物体验和转化率。
+release_date: "2024-02"
+website: https://www.aboutamazon.com/news/retail/amazon-rufus
+description: Amazon Rufus 是亚马逊推出的生成式 AI 购物助手，集成于 Amazon Shopping App 中，基于大语言模型训练，利用亚马逊商品目录、用户评价、社区问答和网络信息进行对话式购物交互。用户可通过自然语言提问获取商品推荐、产品对比、购物建议等，显著提升电商搜索发现效率和购物转化率。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模语言模型预训练，使用通用文本语料构建基础语言理解和生成能力
+  - name: fine-tuning
+    description: 基于亚马逊商品目录、客户评价、社区问答（Q&A）及网络公开信息进行领域微调，使模型具备电商购物领域专业知识
+  - name: rlhf
+    description: 通过人类反馈强化学习优化回答质量，确保推荐结果符合用户购物意图
+tech_stack:
+  framework: Amazon SageMaker
+  inference: AWS Inferentia / Custom inference stack
+  techniques:
+  - Retrieval-Augmented Generation (RAG)
+  - Product catalog grounding
+  - Real-time inventory integration
+  - Conversational context tracking
+  - Multi-turn dialogue management
+datasets:
+- name: Amazon Product Catalog
+  description: 亚马逊完整商品目录数据，包括商品描述、规格、价格等结构化信息
+  type: sft
+- name: Amazon Customer Reviews
+  description: 数亿条用户商品评价数据，提供真实用户反馈和使用体验
+  type: sft
+- name: Amazon Community Q&A
+  description: 商品问答社区数据，包含用户提问和卖家/买家回答
+  type: sft
+benchmarks:
+- name: Shopping Query Relevance
+  score: "内部评测优于传统搜索"
+  metric: relevance
+  comparison: "vs 传统关键词搜索: 显著提升商品发现准确率"
+- name: User Satisfaction Score
+  score: "高满意度"
+  metric: user_satisfaction
+  comparison: "vs 无AI辅助购物体验: 用户参与度和转化率提升"
 capabilities:
-- 提供个性化的商品推荐
-- 通过自然语言进行产品搜索
-- 比较不同产品的规格与价格
-- 解答关于产品细节的常见问题
-tags:
-- 购物助手
-- 消费者
+- 基于自然语言的对话式商品搜索与发现
+- 跨品类商品对比和规格分析
+- 基于用户需求的个性化购物推荐
+- 回答商品详情、兼容性、使用场景等问题
+- 结合用户评价提供真实反馈总结
+- 购物决策辅助和预算优化建议
 access:
 - saas
+tags:
+- shopping-assistant
+- conversational-ai
+- e-commerce
+- product-recommendation
+- retrieval-augmented-generation
 references:
+- title: Amazon Rufus - AI Shopping Assistant
+  url: https://www.aboutamazon.com/news/retail/amazon-rufus
 - title: Amazon 官网
   url: https://www.amazon.com

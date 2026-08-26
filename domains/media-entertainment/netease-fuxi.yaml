@@ -1,31 +1,77 @@
 name: 网易伏羲
-name_en: NetEase Fuxi
+name_en: NetEase Fuxi AI Lab
 company: 网易
 domain: media-entertainment
 status: released
-release_date: '2023'
+release_date: "2017"
 website: https://fuxi.163.com
-description: 网易伏羲是网易集团旗下专业从事AI研究和应用的顶尖机构，致力于成为全球领先的人工智能解决方案提供商。该平台不仅提供人机协作与万物有灵的智能化服务，还通过自研的工业大模型、面向智能体编程（AOP）理论及高性能分布式引擎（ACE），将AI与人工无缝融合。其核心技术在工程机械智能化（如无人装载机、挖掘机器人）、数字孪生、游戏美术生产及数据标注等领域应用广泛，覆盖视觉、语音、文本及视频等多模态能力。
+description: 网易伏羲是网易集团旗下专业AI研究与应用机构，基于自研工业大模型和面向智能体编程（AOP）理论体系，构建了覆盖游戏AI、工程机械智能化、数字孪生、AIGC美术和数据标注等多领域的AI产品矩阵。核心产品包括网易灵动（工程机器人）、绘梦天工（美术服务平台）、网易有灵众包（数据采标平台）和有灵智能体平台，日调用量亿级，拥有多项顶会论文和技术专利。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模通用语料和工业场景数据进行预训练，构建基础语言理解和决策能力
+  - name: continual-pre-training
+    description: 使用工程机械、游戏和多模态场景专有数据进行持续预训练
+  - name: rlhf
+    description: 通过RLHF(Reinforcement Learning from Human Feedback)策略训练，人工标注员实时参与模型训练调优
 tech_stack:
-  foundation: 自研工业大模型
-  architecture: 面向智能体编程 (AOP)
-  platform: ACE高性能分布式引擎
+  framework: 自研AI平台
+  techniques:
+  - AOP (Agent-Oriented Programming) 面向智能体编程
+  - ACE 高性能分布式引擎
+  - Digital Twin 数字孪生
+  - Multi-Agent Collaboration 群体智能协作
+  - Active Learning 主动学习
+  - RLHF 人工反馈强化学习
+  - 4D面部扫描技术
+datasets:
+- name: 工程机械作业数据
+  description: 装载机、挖掘机等工程机械在矿山、港口等场景的作业数据，已入选杭州国家语料库高质量数据集
+  type: pre-training
+- name: 网易有灵众包标注数据
+  description: 涵盖视觉、语音、文本、视频等多任务场景的标注数据，支持AI模型训练
+  type: sft
+- name: 游戏AI交互数据
+  description: 来自逆水寒、倩女幽魂、永劫无间等30+知名游戏的AI交互和行为数据
+  type: rlhf
+benchmarks:
+- name: 日调用量
+  score: "亿+"
+  metric: daily_calls
+  comparison: "企业级AI应用日调用量达亿级规模"
+- name: 顶会论文
+  score: "多篇"
+  metric: publications
+  comparison: "包含多篇GDC和顶会论文，获全球机器之心、ACM、IEEE等权威荣誉"
+- name: 技术专利
+  score: "多项"
+  metric: patents
+  comparison: "拥有多项行业定制标准和技术专利"
 capabilities:
-- 面向智能体编程（AOP）与任务执行
-- 工程机械远程遥控与自主作业
-- 数字孪生模拟与可视化生态部署
-- 多模态数据采集与智能质检
-- 游戏美术资产在线预览与审核
-- 群体智能协作与价值回报分解
-tags:
-- 人机协作
-- 工程机械智能化
-- 数字孪生
-- 工业大模型
-- 智能体平台
-- 数据众包
+- 工程机械智能化（无人装载机、无人挖掘机）自主路径规划与作业
+- 游戏AI智能体（NPC对话、行为决策、智能陪玩）
+- 绘梦天工专业美术服务平台（3D建模、动画制作）
+- 数据采集和标注全流程自动化（主动学习+人机协作）
+- AOP面向智能体编程的任务编排与多智能体协作
+- 数字孪生模拟、监测和预测优化
+- 港口清舱机器人等工业场景自动化
 access:
 - saas
+- private-deployment
+tags:
+- game-ai
+- industrial-ai
+- engineering-robotics
+- agent-oriented-programming
+- digital-twin
+- aigc
+- netease
 references:
-- title: 网易伏羲官方网站
+- title: 网易伏羲官网
   url: https://fuxi.163.com
+- title: 网易灵动工程机器人
+  url: https://lingdong.fuxi.163.com
+- title: 网易有灵智能体平台
+  url: https://fuxi.163.com/youling-agent-platform

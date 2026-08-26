@@ -1,27 +1,75 @@
 name: 医联MedGPT
-company: 医联
+name_en: Medlinker MedGPT
+company: 医联（北京医联智数科技有限公司）
 domain: healthcare
 status: released
-release_date: '2023'
+release_date: "2023-05"
 website: https://www.medlinker.com
-description: 医联MedGPT是医联平台研发的医疗领域垂类大模型，致力于通过复刻权威专家的诊疗思路辅助医生决策。该模型依托800万余例问诊病例库、50000余份疾病指南/共识以及1200余条临床路径进行训练，覆盖临床医学26个二级学科、109个亚专科及30000余种疾病。其核心差异化在于坚持循证医学与真人医生严格复核的闭环机制，能够为常见病和部分专科病提供高效、合理的诊断建议及检查用药方案。
+description: 医联MedGPT是医联集团开发的医疗领域大语言模型，通过"未来医生"App为患者提供AI辅助的在线问诊服务。系统覆盖临床医学26个二级学科方向、109个亚专科（覆盖率95%以上）、30000余种疾病，依托50000余份疾病指南/共识、800万余例问诊病例库和1200余条临床路径，实现真人医生与AI协同的循证医疗服务模式。所有诊疗建议均经临床医生严格复核确认。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模医学文献和通用语料进行预训练
+  - name: continual-pre-training
+    description: 使用50000余份疾病指南/共识、医学教材和临床研究论文进行持续预训练
+  - name: sft
+    description: 基于800万余例真实问诊病例库和1200余条临床路径进行监督微调，由三甲医院专家标注
+  - name: rlhf
+    description: 由来自北京协和医院、华西医院等顶级三甲医院的主任医师团队进行人类反馈强化学习
+tech_stack:
+  techniques:
+  - Clinical pathway integration
+  - Evidence-based medicine reasoning
+  - Multi-specialty knowledge routing
+  - Drug interaction checking (650+ audit algorithms)
+  - Human-in-the-loop verification
+datasets:
+- name: 医学指南与共识库
+  description: 超过50000份疾病指南、共识和循证医学文献
+  size: 100000+ evidence units
+  type: pre-training
+- name: 问诊病例库
+  description: 800万余例真实在线问诊病例数据
+  size: 800万+ cases
+  type: sft
+- name: 临床路径数据
+  description: 1200余条标准临床路径，覆盖常见病诊疗全流程
+  size: 1200+ pathways
+  type: sft
+benchmarks:
+- name: 亚专科覆盖率
+  score: "95%"
+  metric: coverage
+  comparison: "覆盖26个二级学科、109个亚专科，超越大多数在线问诊平台"
+- name: 疾病覆盖范围
+  score: "30000+"
+  metric: disease_coverage
+  comparison: "覆盖ICD 2000+病种，包括常见病和部分专科疾病"
+- name: 合理用药审计
+  score: "650+"
+  metric: audit_algorithms
+  comparison: "650余个审计算法单元确保处方合理性，超过传统药师人工审核效率"
 capabilities:
-- 多科室智能分诊与问诊
-- 疾病辅助诊断与决策支持
-- 循证医学指南与共识检索
-- 合理用药检查与处方审核
-- 临床路径规范化建议
-- 真人医生审核与质控
-tags:
-- 医疗问诊
-- 辅助诊疗
-- 循证医学
-- 智慧医疗
-- 大语言模型
+- 26个临床二级学科的AI辅助问诊与分诊
+- 基于循证医学的诊疗建议生成
+- 30000余种疾病的智能识别与鉴别诊断
+- 650余个算法驱动的合理用药检查
+- 真人医生复核确认的安全保障机制
+- 多科室协同诊疗建议
+- 检查机构推荐和处方药物配送（部分地区30分钟送达）
 access:
 - saas
+tags:
+- medical-ai
+- online-consultation
+- evidence-based-medicine
+- clinical-decision-support
+- drug-safety
+- doctor-ai-collaboration
 references:
-- title: 医联官方网站
+- title: 医联官网 - 未来医生
   url: https://www.medlinker.com
-- title: 未来医生APP下载页面
+- title: 未来医生App下载
   url: https://applink.medlinker.com/medgpt/

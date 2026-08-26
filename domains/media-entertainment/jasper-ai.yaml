@@ -1,32 +1,73 @@
-name: Jasper
+name: Jasper AI
+name_en: Jasper AI
 company: Jasper AI
 domain: media-entertainment
 status: released
-description: Jasper 是一个专为现代营销团队构建的 AI 智能体工作平台和内容执行引擎。该平台包含 100 多个专用 AI 智能体，通过端到端的内容工作流将营销计划转化为实际产出。其核心差异化在于
-  Jasper IQ 上下文中心，确保所有输出符合品牌语调，并支持包括 SEO、广告、社交媒体和电子邮件在内的全渠道营销自动化，帮助企业实现 60% 的 SEO
-  任务自动化，显著缩短内容上市时间。
-capabilities:
-- 全渠道内容生成与自动化
-- 品牌 IQ 层语调一致性控制
-- AI 搜索优化 (GEO Agent)
-- 端到端营销工作流编排
-- 企业级安全与合规
-- 多语言内容本地化
-references:
-- title: Jasper 官方网站
-  url: https://www.jasper.ai
-- title: Jasper 客户成功案例 - Adidas
-  url: https://www.jasper.ai/webinars/revolutionizing-retail-how-adidas-utilizes-ai-for-success
-- title: Jasper 客户成功案例 - Cushman & Wakefield
-  url: https://www.jasper.ai/case-studies/cushman-wakefield
+release_date: "2023"
 website: https://www.jasper.ai
-release_date: '2023'
+description: Jasper 是面向企业营销团队的 AI 智能体工作平台，提供100多个专业营销AI Agent和内容管道（Content Pipeline），支持从策略到执行的端到端营销工作流自动化。核心特色为 Jasper IQ 品牌智能层，能将品牌声音、风格指南、受众画像嵌入每一个AI输出，确保跨团队品牌一致性。已被 Adidas 等世界级企业采用，实现内容产出3倍提升。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model:
+- GPT-4
+- Claude
+- Gemini
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于企业品牌数据和营销最佳实践进行微调，构建营销领域专业能力。LLM-agnostic架构支持多模型协同。
+tech_stack:
+  framework: LLM-agnostic multi-model architecture
+  inference: 多云部署 (OpenAI API, Anthropic API, Google AI)
+  techniques:
+  - Multi-agent orchestration (100+ specialized agents)
+  - Content Pipelines (end-to-end workflow)
+  - Brand voice embedding (Jasper IQ)
+  - Retrieval-Augmented Generation
+  - Multi-modal generation (text + image)
+  - GEO (Generative Engine Optimization)
+datasets:
+- name: Jasper Knowledge Base
+  description: 企业客户上传的品牌指南、风格手册、产品知识和受众画像数据
+  type: sft
+benchmarks:
+- name: Content Production Speed
+  score: "3x"
+  metric: throughput_multiplier
+  comparison: "vs 无AI辅助: 内容产出量提升3倍"
+- name: SEO Automation Rate (Adidas)
+  score: "60%"
+  metric: automation_rate
+  comparison: "Adidas 60% SEO工作实现自动化"
+- name: Product Description Speed
+  score: "7500 in 24h"
+  metric: throughput
+  comparison: "24小时内生成7500条产品描述，vs 人工需数周"
+- name: Time Saved (Cushman & Wakefield)
+  score: "10000+"
+  metric: hours_saved_annually
+  comparison: "每年节省10000+小时"
+capabilities:
+- 100+专业营销AI Agent执行SEO/GEO/邮件/社媒等具体任务
+- Content Pipelines 将策划自动转化为上线内容的端到端工作流
+- Jasper IQ 品牌智能层确保所有输出保持品牌一致性
+- 多模态内容生成（文本+图像）及Image Pipeline批量产图
+- 多语言本地化和全球化营销内容生产
+- AI Studio 自定义Agent构建和Grid可视化自动化
+- GEO Agent 优化品牌在AI搜索中的可见性
 access:
 - saas
 tags:
-- marketing-automation
-- generative-ai
+- marketing-ai
+- content-generation
 - brand-voice
-- content-pipelines
-- seo-optimization
 - multi-agent
+- content-pipeline
+- seo-geo
+references:
+- title: Jasper AI 官网
+  url: https://www.jasper.ai
+- title: Jasper AI Agents
+  url: https://www.jasper.ai/agents
+- title: Jasper IQ - Brand Intelligence
+  url: https://www.jasper.ai/jasper-iq

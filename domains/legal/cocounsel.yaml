@@ -1,20 +1,80 @@
-name: CoCounsel
+name: CoCounsel (Legal)
+name_en: CoCounsel Legal AI
 company: Thomson Reuters
 domain: legal
 status: released
-release_date: '2023'
+release_date: "2023-03"
 website: https://casetext.com
-description: Thomson Reuters收购CaseText后推出的法律AI助手，100万+用户，集成Westlaw和Practical Law权威内容。
+description: CoCounsel 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准打造的法律专业 AI 助手，已被100万+用户信任使用。系统深度整合 Westlaw、Practical Law 等175年权威法律内容库，结合 OpenAI GPT 和 Google Gemini 大语言模型，为法律专业人员提供可辩护、可验证的研究和分析结果。所有输出均展示来源和推理过程，确保经得起审查。企业级隐私和安全保护确保敏感法律工作的数据安全。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model:
+- GPT-4
+- Gemini
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于Thomson Reuters 175年积累的权威法律内容（Westlaw、Practical Law）进行领域微调，确保输出基于可验证的法律权威来源
+  - name: rlhf
+    description: 由法律领域主题专家（Subject-matter Experts）实时验证AI输出质量，进行反馈强化学习
+tech_stack:
+  framework: OpenAI GPT + Google Gemini (multi-model)
+  inference: Azure OpenAI Service (zero-retention API calls)
+  techniques:
+  - Fiduciary-Grade AI (authoritative grounding)
+  - Retrieval-Augmented Generation with Westlaw/Practical Law
+  - Source citation and reasoning transparency
+  - Enterprise-grade encryption (TLS 1.2, AES-256)
+  - Zero-retention API calls to LLM providers
+  - Prompting guardrails (restricted content sources)
+datasets:
+- name: Westlaw Legal Database
+  description: Thomson Reuters 权威法律数据库，包含判例法、成文法、法规和法律评论
+  type: sft
+- name: Practical Law Knowledge Base
+  description: 实用法律指南、模板、清单和专家分析内容
+  type: sft
+- name: Thomson Reuters Legal Content
+  description: 175年积累的经过验证的法律专业内容
+  type: pre-training
+benchmarks:
+- name: User Adoption
+  score: "1000000+"
+  metric: active_users
+  comparison: "超过100万用户信任使用，法律AI领域用户规模最大"
+- name: Time Savings (Cole, Scott & Kissane)
+  score: "75-80%"
+  metric: time_reduction
+  comparison: "原需8-9小时的工作现在仅需1.5-2小时"
+- name: Attorney Time Saved (Bassford Remele)
+  score: "6-8 hours/day"
+  metric: hours_saved_daily
+  comparison: "每天节省6-8小时律师时间"
 capabilities:
-- 法律研究
-- 合同分析
-- 文书起草
-- 集成Westlaw权威数据
+- 基于 Westlaw 权威内容的法律研究和案例检索
+- 合同审查和条款分析
+- 法律文件起草和编辑辅助
+- 法律问题的可验证答案生成（展示来源和推理链）
+- 与 Microsoft 365 和文档管理系统的无缝集成
+- 大规模法律数据管理和客户需求响应
+- 企业级隐私保护，客户数据不用于模型训练
+api:
+  available: true
+  protocol: proprietary
+  auth_method: 企业认证
 access:
 - saas
 tags:
+- legal-research
+- fiduciary-grade-ai
 - westlaw
-- 法律研究
+- contract-analysis
+- document-review
+- enterprise-security
 references:
-- title: CoCounsel官网
+- title: CoCounsel - Fiduciary-Grade AI for Legal
   url: https://casetext.com
+- title: Thomson Reuters AI
+  url: https://www.thomsonreuters.com/en/artificial-intelligence.html
+- title: CoCounsel Customer Stories
+  url: https://www.thomsonreuters.com/en/customer-stories

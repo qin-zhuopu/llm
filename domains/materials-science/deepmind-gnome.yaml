@@ -1,19 +1,81 @@
 name: GNoME
+name_en: Graph Networks for Materials Exploration
 company: Google DeepMind
 domain: materials-science
-status: research
-release_date: 2023-11
+status: released
+release_date: "2023-11"
 website: https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/
-description: 发现220万种新晶体结构，其中380,000+种被预测为稳定材料。
+description: GNoME（Graph Networks for Materials Exploration）是 Google DeepMind 开发的深度学习材料发现工具，发表于 Nature 期刊。通过图神经网络预测无机晶体材料的稳定性，发现了220万种新晶体结构，其中38万种是最稳定的候选材料，等同于近800年知识积累。模型将材料稳定性预测准确率从约50%提升至80%（MatBench Discovery基准），发现效率从不到10%提升至80%以上。736种预测材料已被全球实验室独立验证合成。
+parameters: 未公开
+architecture: Graph Neural Network (GNN)
+training:
+  stages:
+  - name: pre-training
+    description: 基于Materials Project公开数据集中的晶体结构及其稳定性数据进行训练，学习原子间连接关系和材料稳定性规律
+  - name: other
+    description: 使用主动学习（Active Learning）策略迭代训练。GNoME生成候选晶体预测，通过密度泛函理论（DFT）计算验证后，高质量结果回流模型训练，形成数据闭环，大幅提升预测准确率和效率。
+tech_stack:
+  framework: JAX/Flax
+  techniques:
+  - Graph Neural Networks (GNN)
+  - Active Learning with DFT validation
+  - Structural pipeline (known crystal modification)
+  - Compositional pipeline (randomized chemical formulas)
+  - Density Functional Theory integration
+  - Convex hull stability analysis
+datasets:
+- name: Materials Project Database
+  description: 开放量子材料数据库，包含已知晶体结构及其计算稳定性数据
+  size: 48000+ stable crystals (prior to GNoME)
+  type: pre-training
+- name: ICSD (Inorganic Crystal Structure Database)
+  description: 实验验证的无机晶体结构数据库
+  size: 20000+ experimentally verified crystals
+  type: pre-training
+- name: GNoME Active Learning Generated Data
+  description: 通过主动学习策略生成并经DFT验证的候选材料数据
+  size: 2.2M new crystal predictions
+  type: other
+benchmarks:
+- name: MatBench Discovery - Stability Prediction
+  score: "80%"
+  metric: discovery_rate
+  comparison: "vs 此前最佳模型: 约50% -> 80%，稳定性预测准确率提升60%"
+- name: Discovery Efficiency
+  score: "80%+"
+  metric: efficiency
+  comparison: "vs 此前方法: 从不到10%提升至80%以上，每次计算发现的有效材料数大幅增加"
+- name: Total Stable Materials Discovered
+  score: "380000"
+  metric: count
+  comparison: "vs 人类此前知识: 从约48000种稳定材料扩展至421000种，等同约800年知识积累"
+- name: Experimental Validation
+  score: "736"
+  metric: count
+  comparison: "736种GNoME预测材料已被全球独立实验室成功合成验证"
 capabilities:
-- 新材料发现
-- 晶体结构预测
-- 材料稳定性预测
+- 预测无机晶体材料稳定性（凸包分析）
+- 发现新型层状化合物（如类石墨烯材料，发现52000种）
+- 发现锂离子导体候选材料（528种，此前研究的25倍）
+- 超导体材料候选筛选
+- 为下一代电池、太阳能电池和计算机芯片提供候选材料
+- 指导自主机器人实验室进行材料合成（与Berkeley Lab合作）
 access:
-- api
+- open-weights
 tags:
-- 材料发现
-- 晶体
+- materials-discovery
+- graph-neural-network
+- crystal-structure
+- active-learning
+- density-functional-theory
+- open-source
+- scientific-ai
 references:
-- title: DeepMind GNoME Blog
+- title: "Millions of new materials discovered with deep learning"
   url: https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/
+- title: "Paper in Nature: Scaling deep learning for materials discovery"
+  url: https://www.nature.com/articles/s41586-023-06735-9
+- title: GNoME Dataset on GitHub
+  url: https://github.com/google-deepmind/materials_discovery
+- title: "Berkeley Lab Paper: Autonomous material synthesis"
+  url: https://www.nature.com/articles/s41586-023-06734-w

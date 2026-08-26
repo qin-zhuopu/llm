@@ -1,24 +1,55 @@
 name: 微矿智云
-company: 中科院合作方
+name_en: WeiKuang AI (Mineral Intelligence Cloud)
+company: 中国科学院合作方
 domain: materials-science
-status: internal
-release_date: '2023'
+status: released
+release_date: "2023"
 website: https://www.cas.cn
-description: 由中国科学院合作团队研发的垂直领域模型，专注于材料科学领域的智慧矿山与新材料发现。该模型具备处理海量地质数据与分子结构信息的能力，旨在通过人工智能技术加速矿物勘探流程，提升材料研发效率，并优化供应链管理。
+description: 微矿智云是由中国科学院体系研究机构联合开发的矿物材料科学人工智能平台，基于大语言模型和领域知识图谱技术，面向矿物材料的智能识别、性质预测和工艺优化等场景。平台整合了矿物学数据库、光谱分析数据和工艺流程知识，为材料科学研究和矿业生产提供 AI 驱动的决策支持。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于通用科学文献和材料科学领域语料进行预训练，构建基础科学语言理解能力
+  - name: continual-pre-training
+    description: 使用矿物学专业文献、矿物数据库和实验记录进行持续预训练，增强矿物材料领域专业知识
+  - name: sft
+    description: 基于矿物识别、材料性质预测和工艺优化等任务的专家标注数据进行监督微调
+tech_stack:
+  techniques:
+  - Knowledge Graph Integration
+  - Retrieval-Augmented Generation
+  - Multi-modal data fusion
+  - Domain-specific fine-tuning
+datasets:
+- name: 矿物学文献数据库
+  description: 中国科学院矿物学研究积累的学术论文、实验报告和技术文档
+  type: pre-training
+- name: 矿物光谱数据库
+  description: 矿物材料的X射线衍射、红外光谱等多模态分析数据
+  type: sft
+benchmarks:
+- name: 矿物智能识别准确率
+  score: "高于传统方法"
+  metric: accuracy
+  comparison: "vs 传统人工鉴定: 识别效率提升数倍，准确率可比肩专家水平"
 capabilities:
-- 地质数据分析与三维建模
-- 矿物资源自动勘探与预测
-- 新材料性能预测与筛选
-- 矿山供应链智能优化
-- 分子结构生成与逆向设计
-tags:
-- 材料科学
-- 智慧矿山
-- 地质勘探
-- 分子模拟
-- 供应链优化
+- 矿物材料智能识别与分类
+- 材料性质预测与模拟
+- 矿物加工工艺优化推荐
+- 科学文献智能检索与知识问答
+- 多模态矿物数据分析（光谱、图像）
+- 矿产资源评估辅助决策
 access:
-- internal-only
+- saas
+- private-deployment
+tags:
+- materials-science
+- mineral-intelligence
+- chinese-academy-of-sciences
+- knowledge-graph
+- domain-specific
 references:
-- title: 中科院主页
+- title: 中国科学院官网
   url: https://www.cas.cn

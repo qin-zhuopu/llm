@@ -1,29 +1,75 @@
 name: FourKites AI
+name_en: FourKites AI Agents
 company: FourKites
 domain: logistics-supplychain
 status: released
-description: FourKites AI 是一款供应链领域的智能代理平台，通过 'Network（网络）'、'Intelligence（智能）' 和 'Execution（执行）'
-  三位一体的架构实现自主运营。平台整合了 3.6M+ 设施数据、116.2M 真实货运轨迹以及全球海关、天气、地缘政治等多维情报，构建了实时的供应链数字孪生。其核心差异化在于六款
-  AI 代理（如 Sophie、Tracy），每月执行 250 万次自主行动，自动处理承运商跟进、预约调度、文档合规、纠纷解决等任务，旨在替代人工操作，而非仅提供可视化仪表盘。
-capabilities:
-- 自主执行供应链任务：包括承运商联系、预约重排、客户通知、文档处理及纠纷自动提交。
-- 实时供应链数字孪生：基于 3.2M+ 日追踪事件和 3.6M 设施数据构建实时运营模型。
-- 智能工作流开发：通过 Sophie 代理，使用自然语言描述即可在数天内构建生产级供应链工作流。
-- 多维度商业情报：利用超过 10 年的全球网络数据，提供容量预测、延误预警及交付窗口监控。
-- 全文档处理与合规：自动采集提单 (BOL)、处理海关文件并链接至订单系统，实现零接触处理。
-references:
-- title: FourKites 官方网站
-  url: https://www.fourkites.com
+release_date: "2024"
 website: https://www.fourkites.com
-architecture: Multi-Agent System (MAS) with Digital Twins and Knowledge Graph
-release_date: '2024'
+description: FourKites AI 是全球领先的 AI 驱动供应链自主执行平台，开创了 Outcome-as-a-Service 模式。平台拥有6个在产的AI Agent（Tracy/Cassie/Alan/Sam/Polly/Sophie），每月执行250万+自主操作，覆盖承运商管理、客户运营、设施运营、供应商管理、合规文档和工作流开发等场景。底层依托11年积累的供应链网络数据（50万+承运商、360万设施、270万车道、1600+品牌、234个国家），通过八维度智能图谱和数字孪生实现真正的自主供应链运营。
 parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于11年积累的全球供应链运营数据构建基础理解能力，涵盖物流追踪、海关、天气、地缘政治等多维度信号
+  - name: fine-tuning
+    description: 基于1.162亿真实运输记录和八维度智能图谱进行任务特定微调，使AI Agent具备供应链场景决策能力
+tech_stack:
+  framework: FourKites Loft Platform
+  techniques:
+  - Multi-Agent System (6 specialized agents)
+  - Supply Chain Knowledge Graph (8 dimensions)
+  - Digital Twin (real-time operation model)
+  - ML-powered ETA prediction
+  - Natural Language workflow creation (Sophie agent)
+  - Federated data architecture
+datasets:
+- name: FourKites Global Supply Chain Network
+  description: 11年全球供应链网络数据，包含承运商、设施、车道和运输记录
+  size: 116.2M real loads, 500K+ carriers, 3.6M facilities
+  type: pre-training
+- name: Multi-source Intelligence Signals
+  description: 整合海关、制裁、天气、海事、地缘政治和商品信号的全球情报数据
+  type: pre-training
+benchmarks:
+- name: Monthly Agent Actions
+  score: "2500000+"
+  metric: actions_per_month
+  comparison: "每月250万+自主操作，替代人工重复性供应链工作"
+- name: Operator Hours Saved
+  score: "11730"
+  metric: hours_saved
+  comparison: "以$50/hr计算，等值$16.9M劳动力价值"
+- name: Detention Cost Reduction (First Solar)
+  score: "98.6%"
+  metric: cost_reduction
+  comparison: "First Solar: 消除几乎所有年度滞留费用，成本降低98.6%"
+- name: Response Time Improvement (Church & Dwight)
+  score: "从90分钟降至数秒"
+  metric: latency_reduction
+  comparison: "Tracy AI将响应时间从90分钟缩短至几秒钟"
+capabilities:
+- "Tracy Agent: 货运全程监控、延迟预检测、自动联系承运商和更新利益相关者"
+- "Cassie Agent: 客户查询即时响应、主动延迟通知、自动收集争议文档"
+- "Alan Agent: 基于实时ETA的自动排程/改期/确认、码头利用率优化"
+- "Sam Agent: 多格式运输文档自动读取处理、自动创建货运单并关联订单"
+- "Polly Agent: 交付证明收集、海关文档验证、AP系统路由和PO生命周期管理"
+- "Sophie Agent: 用自然语言描述供应链流程即可创建生产级工作流"
+- 数字孪生实时建模全供应链运营状态
 access:
 - saas
 tags:
-- multi-agent
 - supply-chain
-- digital-twins
-- predictive-analytics
-- workflow-automation
-- logistics-optimization
+- autonomous-operations
+- multi-agent
+- outcome-as-a-service
+- digital-twin
+- logistics-visibility
+- carrier-management
+references:
+- title: FourKites 官网
+  url: https://www.fourkites.com
+- title: FourKites Digital Workforce
+  url: https://www.fourkites.com/digital-workforce
+- title: FourKites Platform
+  url: https://www.fourkites.com/platform
