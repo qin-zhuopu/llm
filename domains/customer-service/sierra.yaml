@@ -1,0 +1,76 @@
+name: Sierra
+name_en: Sierra
+company: Sierra
+domain: customer-service
+status: released
+release_date: "2024"
+website: https://sierra.ai
+description: 领先的企业级对话式AI平台，由Bret Taylor（前Salesforce联合CEO、OpenAI董事长）创立，专注客服Agent。采用多模型constellation、Supervisor和企业系统工具，通过Ghostwriter从SOP/对话记录/音频构建生产就绪的多语言多渠道Agent。核心产品Horizon支持长程规划、客户上下文记忆、结果优化和主动互动。2026年融资9.5亿美元、估值超150亿美元、覆盖40%+ Fortune 50。护城河是行动权/结算权——将客服Agent直接连接企业系统并按成功结果计费。
+parameters: 未公开
+architecture: Multi-model constellation + Supervisor (多模型星座 + 监督器)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业客服场景数据（SOP、对话记录、音频）上适配，构建理解特定业务流程的多渠道客服Agent
+  - name: rlhf
+    description: 基于成功结果和客户满意度进行对齐优化，配合Supervisor监督机制确保输出遵守护栏
+tech_stack:
+  framework: 多模型constellation编排
+  inference: 企业云部署（连接企业系统）
+  techniques:
+  - Multi-model constellation
+  - Supervisor (监督器架构)
+  - Long-horizon planning (Horizon)
+  - Customer context memory
+  - Enterprise system tool calling
+  - Outcome optimization
+  - Multichannel agent (Ghostwriter)
+datasets:
+- name: Enterprise Customer Service Data
+  description: 企业SOP、对话记录、白板照片、音频录音等，用于构建生产就绪的客服Agent
+  type: sft
+- name: Conversation Outcome Data
+  description: 对话结果和成功信号数据，用于结果优化和按结果计费的归因
+  type: other
+benchmarks:
+- name: Enterprise Coverage
+  score: "40%+ Fortune 50"
+  metric: enterprise_adoption
+  comparison: "覆盖超过40%的Fortune 50企业（公司口径）"
+- name: Outcome-based Performance
+  score: 按成功结果计费
+  metric: outcome_resolution
+  comparison: "vs 传统客服自动化: 按解决问题/留存/转化等真实结果收费"
+- name: Agent Build Speed
+  score: Ghostwriter快速构建
+  metric: deployment_speed
+  comparison: "vs 手工配置: 从SOP/录音自动构建生产就绪的多语言多渠道Agent"
+api:
+  available: true
+  protocol: proprietary
+  pricing: 按成功结果计费 + 企业平台
+  auth_method: 企业认证
+capabilities:
+- 构建生产就绪的多语言、多渠道客服Agent（Ghostwriter）
+- 将客服Agent直接连接企业系统并执行业务动作
+- 长程规划（Horizon），将复杂结果分解为多步骤
+- 客户上下文记忆，连接对话、系统和触点
+- Agent性能分析、监控和多变量实验优化
+- 全动作可观测性（工具调用、知识查找、延迟）
+- 按成功结果计费，主动跨渠道触发next best action
+access:
+- saas
+- api
+tags:
+- customer-service
+- conversational-ai
+- multi-agent
+- outcome-based
+- enterprise-ai
+- agent-platform
+- system-of-action
+references:
+- title: Sierra Official Website
+  url: https://sierra.ai
+- title: "Sierra: Better Customer Experiences. Built on Sierra"
+  url: https://sierra.ai/blog/better-customer-experiences-built-on-sierra

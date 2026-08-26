@@ -1,0 +1,78 @@
+name: Cursor (Tab / Fusion)
+name_en: Cursor
+company: Cursor (Anysphere)
+domain: software-development
+status: released
+website: https://cursor.com
+description: 面向软件开发的AI编程Agent和AI-native IDE，采用"自研专用模型+多前沿模型+IDE工作流"的混合架构。自研Tab/Fusion稀疏模型在数十亿token的编辑预测任务上训练，负责低延迟高交互的补全与跳转；复杂Agent任务调用OpenAI/Anthropic/Gemini等通用模型，由Auto根据可靠性自动切换。2025年ARR超5亿美元、估值99亿美元、超过一半Fortune 500使用，NVIDIA的40,000名工程师使用。护城河来自自研高频专用模型+IDE工作流+代码库上下文+开发者行为数据+多模型路由。
+parameters: 未公开（Tab为稀疏模型）
+architecture: Sparse specialized model (Tab) + multi-model routing (稀疏专用模型 + 多模型路由)
+base_model: 自研Tab/Fusion + OpenAI/Anthropic/Gemini
+training:
+  stages:
+  - name: pre-training
+    description: 自研Tab/Fusion稀疏模型在数十亿token的代码编辑预测任务上训练，学习开发者的编辑轨迹和代码上下文
+  - name: fine-tuning
+    description: 针对低延迟高交互场景优化，Tab模型专注补全与跳转预测，实现快速强交互的编程辅助
+tech_stack:
+  framework: 自研稀疏模型训练 + 多模型编排
+  inference: 低延迟推理（Tab模型）+ 前沿模型路由
+  techniques:
+  - Sparse model (Tab) for edit prediction
+  - Multi-model routing (Auto)
+  - Codebase context retrieval
+  - Autonomous parallel agents
+  - IDE-native workflow integration
+  - Developer behavior data feedback
+datasets:
+- name: Code Edit Trajectories
+  description: 数十亿token的代码编辑轨迹数据，用于训练Tab模型的编辑预测能力
+  size: billions of tokens
+  type: pre-training
+- name: Codebase Context & Developer Behavior
+  description: 代码库上下文和开发者行为数据（编辑、接受、拒绝），作为产品数据闭环反馈
+  type: other
+benchmarks:
+- name: Enterprise Adoption
+  score: ">50% Fortune 500"
+  metric: adoption_rate
+  comparison: "超过一半Fortune 500使用，NVIDIA 40,000名工程师使用"
+- name: ARR
+  score: ">$500M (2025)"
+  metric: annual_recurring_revenue
+  comparison: "估值99亿美元"
+- name: Tab Model Latency
+  score: 低延迟补全
+  metric: completion_latency
+  comparison: "vs 通用模型: 自研稀疏Tab模型专为低延迟高交互补全优化"
+api:
+  available: true
+  documentation: https://cursor.com/docs
+  protocol: proprietary
+  pricing: 个人/团队席位 + 模型使用量
+  auth_method: 账户认证
+capabilities:
+- 自研Tab/Fusion模型的低延迟代码补全与跳转预测
+- 自主并行Agent端到端构建、测试、演示功能
+- 多前沿模型路由，按任务选择最优模型
+- 代码库上下文感知的智能编辑
+- 终端、Slack、GitHub PR 全流程集成
+- 常驻Agent按计划/触发器自动维护和修复代码
+access:
+- saas
+- api
+tags:
+- software-development
+- coding-agent
+- ide
+- specialized-model
+- multi-model-routing
+- developer-tools
+- hybrid-architecture
+references:
+- title: Cursor Official Website
+  url: https://cursor.com
+- title: "Cursor: Series C and Scale"
+  url: https://cursor.com/blog/series-c
+- title: "Cursor: A New Tab Model"
+  url: https://cursor.com/blog/tab-update
