@@ -6,5 +6,5 @@ __pycache__/
 # Sub-agent task tracking
 .agents/
 
-# LightRAG knowledge graph data (generated)
-kg_data/
+# Knowledge graph (generated)
+kg_data.graphml
