@@ -1,20 +1,27 @@
 name: 北森AI
-company: 北森
+company: 北森云计算
 domain: human-resources
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.beisen.com
-description: "中国HR SaaS平台集成AI，简历解析和面试评估。"
+description: 由北森云计算推出的面向人力资源管理领域的AI智能平台，采用AI原生架构。平台融合自然语言处理和机器学习技术，为中大型企业提供从招聘到离职的全生命周期智能化服务。核心功能覆盖简历智能筛选、人才测评、敬业度分析、绩效预测及组织洞察，通过数据闭环持续优化模型，助力企业实现科学的人才管理与战略决策。
 capabilities:
-  - 简历解析
-  - 面试评估
-  - 人岗匹配
+- AI智能简历筛选与解析
+- 多维度人才测评与画像
+- 员工敬业度监测与预警
+- 绩效预测与智能管理
+- 组织健康度数据分析
+- 全流程HR智能辅助
+tags:
+- HR-SaaS
+- 招聘筛选
+- 人才管理
+- 绩效预测
+- 员工敬业度
+- 组织分析
 access: saas
 region:
-  - china
-tags:
-  - HR SaaS
-  - 招聘
+- china
 references:
-  - title: 北森
-    url: "https://www.beisen.com"
+- title: 北森官方网站
+  url: https://www.beisen.com

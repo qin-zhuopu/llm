@@ -1,18 +1,27 @@
-name: Iktos Makya
+name: Makya
+name_en: Makya
 company: Iktos
 domain: pharma-biotech
 status: released
-release_date: "2022"
+release_date: '2022'
 website: https://www.iktos.ai
-description: "AI驱动的从头药物设计(de novo design)平台。"
+description: Makya 是 Iktos 开发的生成式 AI SaaS 平台，专注于药物发现领域的从头药物设计。它采用独特的化学驱动方法，能够设计出多样化、新颖且具有类医药特性的分子。该平台侧重于合成可及性，支持多参数优化并纳入 3D 约束，确保分子设计的成功率和可合成性，是 Iktos 自动化实验室 DMTA 循环的起点。
 capabilities:
-  - 从头分子设计
-  - 多目标优化
+- 从头药物设计
+- 多参数分子优化
+- 合成可及性分析
+- 基于 3D 约束的设计
+tags:
+- generative-ai
+- drug-design
+- de-novo-design
+- saas
+- chemistry
 access: saas
 region:
-  - europe
-tags:
-  - de novo design
+- global
 references:
-  - title: Iktos
-    url: "https://www.iktos.ai"
+- title: Makya Product Page
+  url: https://www.iktos.ai/solution/makya
+- title: Iktos Official Website
+  url: https://www.iktos.ai

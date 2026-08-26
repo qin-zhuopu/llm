@@ -2,19 +2,27 @@ name: 学而思MathGPT
 company: 好未来
 domain: education
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.100tal.com
-description: "数学教育专用大模型，聚焦题目讲解和解题辅导。"
+description: 学而思MathGPT是好未来集团自主研发的领域大模型，专注于教育与数学领域。该模型深度融合了学而思22年的教育沉淀与数据积累，旨在通过AI技术提供个性化学习路径、AI诊断及智能教学内容生成，显著提升学习效率与教学效果。
 capabilities:
-  - 数学题目讲解
-  - 解题辅导
-  - 自适应学习
-access: saas
-region:
-  - china
+- 提供个性化学习路径规划与推荐
+- 具备AI学习诊断与学情分析能力
+- 支持智能教学内容生成与互动课堂
+- 针对数学垂直领域的高精度解题与辅导
 tags:
-  - 数学
-  - K12
+- 教育大模型
+- 数学大模型
+- AI家教
+- 个性化学习
+- 智能硬件
+access: private-deployment
+region:
+- china
 references:
-  - title: 好未来官网
-    url: "https://www.100tal.com"
+- title: 学而思MathGPT官方网站
+  url: https://www.100tal.com
+- title: 学而思发布全新培优AI家教及旗舰学习机T6系列
+  url: /zh-cn/news/detail/3039
+- title: 华为平板与学而思达成独家战略合作
+  url: /zh-cn/news/detail/3034

@@ -1,20 +1,31 @@
-name: CoCounsel (Tax & Audit)
+name: CoCounsel
 company: Thomson Reuters
 domain: accounting-audit
 status: released
-release_date: "2023"
-website: https://casetext.com
-description: "CoCounsel同时覆盖法律、税务和审计场景，集成Checkpoint税务数据库。"
+release_date: '2023'
+website: https://www.thomsonreuters.com/coco
+description: CoCounsel 是一款基于 Thomson Reuters 175 年权威知识库构建的受信 AI 助手。它专为客户设计的‘受托级 AI’（Fiduciary-Grade AI），旨在支持高风险的会计、税务和审计工作。该模型通过集成权威内容库和专家验证流程，提供可辩护的答案和可验证的推理结果。它强调企业级的数据隐私与安全，不利用用户数据训练模型，并能无缝集成至 Westlaw、Checkpoint
+  和 Microsoft 365 等专业工作流工具中，显著提升专业人士在合规性审查、数据分析和文档起草方面的效率与准确性。
 capabilities:
-  - 税务研究
-  - 审计辅助
-  - 合规检查
+- 加速审计、税务与会计工作流程
+- 基于权威内容的合规性分析与审查
+- 提供可验证的引用来源与推理依据
+- 处理海量数据以支持尽职调查
+- 集成至专业工具（如 Microsoft 365）
+tags:
+- audit
+- accounting
+- tax
+- compliance
+- fiduciary-grade
+- enterprise-security
 access: saas
 region:
-  - global
-tags:
-  - 税务
-  - 审计
+- global
 references:
-  - title: CoCounsel
-    url: "https://casetext.com"
+- title: CoCounsel Official Website
+  url: https://www.thomsonreuters.com/coco
+- title: CoCounsel for Audit and Accounting
+  url: https://tax.thomsonreuters.com/en/products/cocounsel-audit
+- title: Thomson Reuters Professional Grade AI Report
+  url: https://www.thomsonreuters.com/content/dam/ewp-m/documents/thomsonreuters/en/pdf/reports/leading-the-future-of-professional-grade-ai.pdf

@@ -2,19 +2,32 @@ name: Jasper
 company: Jasper AI
 domain: media-entertainment
 status: released
-release_date: "2022"
-website: https://www.jasper.ai
-description: "企业级AI内容创作平台，专注营销文案生成。"
+description: Jasper 是一个专为现代营销团队构建的 AI 智能体工作平台和内容执行引擎。该平台包含 100 多个专用 AI 智能体，通过端到端的内容工作流将营销计划转化为实际产出。其核心差异化在于
+  Jasper IQ 上下文中心，确保所有输出符合品牌语调，并支持包括 SEO、广告、社交媒体和电子邮件在内的全渠道营销自动化，帮助企业实现 60% 的 SEO
+  任务自动化，显著缩短内容上市时间。
 capabilities:
-  - 营销文案生成
-  - 品牌调性适配
-  - 多渠道内容创作
-access: saas
-region:
-  - global
-tags:
-  - 内容创作
-  - 营销
+- 全渠道内容生成与自动化
+- 品牌 IQ 层语调一致性控制
+- AI 搜索优化 (GEO Agent)
+- 端到端营销工作流编排
+- 企业级安全与合规
+- 多语言内容本地化
 references:
-  - title: Jasper AI
-    url: "https://www.jasper.ai"
+- title: Jasper 官方网站
+  url: https://www.jasper.ai
+- title: Jasper 客户成功案例 - Adidas
+  url: https://www.jasper.ai/webinars/revolutionizing-retail-how-adidas-utilizes-ai-for-success
+- title: Jasper 客户成功案例 - Cushman & Wakefield
+  url: https://www.jasper.ai/case-studies/cushman-wakefield
+website: https://www.jasper.ai
+release_date: '2023'
+access: saas
+tags:
+- marketing-automation
+- generative-ai
+- brand-voice
+- content-pipelines
+- seo-optimization
+- multi-agent
+region:
+- global

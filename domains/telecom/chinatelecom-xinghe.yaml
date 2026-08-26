@@ -1,20 +1,27 @@
-name: 中国电信星河大模型
+name: 星河大模型
 name_en: China Telecom Xinghe
 company: 中国电信
 domain: telecom
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.chinatelecom.com.cn
-description: "面向政企服务和网络智能运营的大模型。"
+description: 中国电信自主研发的行业大模型平台，定位为电信行业智能化转型的核心引擎。依托中国电信遍布全国的云网基础设施和算力资源，采用模块化架构设计，支持基础大模型与行业微调模型的灵活组合。覆盖网络运营、客户服务、安全保障、云计算和数字政府等多个领域，旨在推动企业从传统流量经营向Token经营的战略转型。
 capabilities:
-  - 政企服务
-  - 网络智能运营
+- 网络智能运营与自治网络管理
+- 全渠道客户服务自动化与意图识别
+- 网络安全监控与异常流量防护
+- 云资源智能调度与成本优化
+- 数字政务服务与城市治理支持
+tags:
+- 电信运营商
+- 行业大模型
+- 网络运维
+- 智能客服
+- 数字政府
+- 云网融合
 access: internal-only
 region:
-  - china
-tags:
-  - 电信
-  - 政企
+- china
 references:
-  - title: 中国电信
-    url: "https://www.chinatelecom.com.cn"
+- title: 中国电信官方网站
+  url: https://www.chinatelecom.com.cn

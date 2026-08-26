@@ -1,20 +1,27 @@
-name: 阿里通义千问-政务
+name: 通义千问-政务
 name_en: Alibaba Tongyi Gov
 company: 阿里巴巴
 domain: government
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.aliyun.com
-description: "城市大脑和政务决策支持AI系统。"
+description: 通义千问-政务版是阿里巴巴基于通义千问大模型针对政务领域深度定制的行业解决方案，依托阿里云电子政务云平台，符合安全等级保护要求且支持私有化部署。该模型整合海量政务法规与政策文件，构建了专业政务知识库，具备多模态交互能力，已在多个省市的一网通办、12345热线及政务服务大厅等场景广泛应用，助力数字政府建设和政务服务数字化转型。
 capabilities:
-  - 城市大脑
-  - 政务决策支持
+- 市民智能问答：提供7×24小时社保、公积金等高频政务咨询，支持多轮对话
+- 政策智能解读：自动解析政策文件，转化为通俗易懂语言并进行对比分析
+- 公文辅助起草：辅助生成通知、报告等公文，确保格式规范与逻辑清晰
+- 舆情监测分析：实时监控网络舆情，进行情感分析与风险预警
+- 智慧城市决策：结合城市数据提供交通调度、应急事件处置等决策支持
+tags:
+- 政务大模型
+- 政策解读
+- 公文生成
+- 舆情分析
+- 私有化部署
+- 数字政府
 access: api
 region:
-  - china
-tags:
-  - 城市大脑
-  - 决策支持
+- china
 references:
-  - title: 阿里云
-    url: "https://www.aliyun.com"
+- title: 阿里云通义千问-政务版官网
+  url: https://www.aliyun.com

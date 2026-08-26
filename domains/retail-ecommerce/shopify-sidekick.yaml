@@ -2,20 +2,31 @@ name: Shopify Sidekick
 company: Shopify
 domain: retail-ecommerce
 status: released
-release_date: "2023"
-website: https://www.shopify.com/magic
-description: "商家运营AI助手，直接访问店铺数据，可执行管理操作，无需额外配置。"
+description: Sidekick 是一款专为 Shopify 商家打造的 AI 商务专家助手，无缝集成至 Shopify 管理后台。它能够深度访问商家的业务数据（包括库存、订单、支付表现及
+  ShopifyQL 数据），并通过自然语言处理完成从店铺设计、产品文案撰写、图片编辑到营销策略制定的全链路任务。作为懂业务、可执行的 AI 工具，它区别于通用大模型，能够直接在后台执行操作、填写表单并提供多语言支持，旨在降低运营门槛并提升电商销售效率。
 capabilities:
-  - 店铺数据查询
-  - 订单管理
-  - 运营建议
-  - 多语言支持
+- 智能店铺设计与主题定制
+- SEO 产品文案撰写与营销内容生成
+- 商品照片自动编辑与工作室级升级
+- 库存管理与智能补货预警
+- 价格策略分析与销售优化
+- ShopifyQL 数据查询与业绩分析
+- 客户创建与表单自动填写
+- 多语言实时客服与技术支持
+references:
+- title: Shopify Sidekick Official Landing Page
+  url: https://www.shopify.com/sidekick
+- title: Shopify Magic Features Overview
+  url: https://www.shopify.com/magic
+website: https://www.shopify.com/sidekick
+release_date: '2025'
 access: saas
 region:
-  - global
+- global
 tags:
-  - 商家助手
-  - SaaS
-references:
-  - title: Shopify Magic
-    url: "https://www.shopify.com/magic"
+- 电商助手
+- SaaS集成
+- AI运营
+- Shopify生态
+- 数据分析
+- 多模态

@@ -2,20 +2,32 @@ name: Cerence CaLLM
 company: Cerence AI
 domain: automotive
 status: released
-release_date: "2025-01"
+release_date: 2025-01
 website: https://www.cerence.com
-description: "汽车语音AI大模型家族，与NVIDIA合作优化性能和降低成本。包括云端CaLLM和嵌入式CaLLM Edge。"
+description: Cerence AI 推出的先进车载大语言模型系列，旨在为汽车及移动出行领域提供生成式对话 AI 能力。通过深度集成汽车信号与多模态交互，该模型支持自然、流畅的上下文对话，能够无缝控制车辆功能（如导航、多媒体、车控），并具备动态语音增强、多座分区识别及零信任安全架构。目前技术已应用于超过 5.25 亿辆汽车，服务全球 80 余家主机厂及一级供应商。
+tech_stack:
+  nlp: Large Language Models (LLM)
+  architecture: Generative AI for Automotive
 capabilities:
-  - 车载语音交互
-  - 多语言支持
-  - 嵌入式推理
-access: private-deployment
-region:
-  - global
+- 自然多模态交互：支持语音、触摸及视觉（Say What You See）的融合交互，实现意图识别与屏幕元素的语音操控。
+- 上下文感知对话：具备跨轮次记忆能力，支持无唤醒词打断、多意图连续对话，提供拟人化的智能助手体验。
+- 车载信号深度集成：能够读取并操作车辆实时数据（如 VIN、燃油电量、车窗状态），完成复杂的车控与服务预约逻辑。
+- 高鲁棒性语音处理：在嘈杂驾驶环境（引擎声、风噪、多乘客交谈）中实现精准的语音增强与声源定位。
+- 企业级安全防护：采用零信任架构，防御对抗性攻击与武器化 AI，确保车载助手的系统安全与数据隐私。
 tags:
-  - 车载
-  - 语音
-  - NVIDIA
+- automotive-ai
+- in-car-assistant
+- generative-ai
+- voice-control
+- conversational-ai
+- multi-modal
+access: api
+region:
+- global
 references:
-  - title: Cerence AI
-    url: "https://www.cerence.com"
+- title: Cerence AI 官网
+  url: https://www.cerence.com
+- title: Cerence xUI™ 与 Geely 合作案例展示
+  url: https://lnkd.in/e44YWYBs
+- title: Dealer Assist Agent (DAA) 功能介绍
+  url: https://lnkd.in/d25ZXggy

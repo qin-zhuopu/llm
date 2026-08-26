@@ -1,21 +1,23 @@
 name: Morgan Stanley AI Assistant
-company: 摩根士丹利
+company: 摩根士丹利 (Morgan Stanley)
 domain: finance
 status: released
-release_date: "2023-09"
+release_date: 2023-09
 website: https://www.morganstanley.com
-description: "基于GPT-4定制的AI助手，面向16000+财务顾问提供投研支持和知识管理。"
+description: 摩根士丹利内部部署的智能助手，专注于整合公司庞大的研报库与投资策略知识库，旨在辅助财富管理与投资研究。核心能力包括快速检索历史数据、生成市场洞察摘要以及辅助分析师进行信息汇总。
 capabilities:
-  - 投资研究辅助
-  - 内部知识搜索
-  - 财务顾问支持
-parameters: unknown
+- 投资研报检索与知识问答
+- 市场趋势分析与策略辅助
+- 财富管理客户支持与洞察
+- 金融资讯聚合与摘要生成
+tags:
+- financial-ai
+- wealth-management
+- investment-research
+- enterprise-search
 access: internal-only
 region:
-  - global
-tags:
-  - 投研
-  - 财富管理
+- global
 references:
-  - title: Morgan Stanley官网
-    url: "https://www.morganstanley.com"
+- title: Morgan Stanley Official Website
+  url: https://www.morganstanley.com

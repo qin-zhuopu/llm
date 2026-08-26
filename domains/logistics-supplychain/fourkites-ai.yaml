@@ -2,18 +2,29 @@ name: FourKites AI
 company: FourKites
 domain: logistics-supplychain
 status: released
-release_date: "2023"
-website: https://www.fourkites.com
-description: "供应链可视化和预测分析平台。"
+description: FourKites AI 是一款供应链领域的智能代理平台，通过 'Network（网络）'、'Intelligence（智能）' 和 'Execution（执行）'
+  三位一体的架构实现自主运营。平台整合了 3.6M+ 设施数据、116.2M 真实货运轨迹以及全球海关、天气、地缘政治等多维情报，构建了实时的供应链数字孪生。其核心差异化在于六款
+  AI 代理（如 Sophie、Tracy），每月执行 250 万次自主行动，自动处理承运商跟进、预约调度、文档合规、纠纷解决等任务，旨在替代人工操作，而非仅提供可视化仪表盘。
 capabilities:
-  - 供应链可视化
-  - 运输预测
+- 自主执行供应链任务：包括承运商联系、预约重排、客户通知、文档处理及纠纷自动提交。
+- 实时供应链数字孪生：基于 3.2M+ 日追踪事件和 3.6M 设施数据构建实时运营模型。
+- 智能工作流开发：通过 Sophie 代理，使用自然语言描述即可在数天内构建生产级供应链工作流。
+- 多维度商业情报：利用超过 10 年的全球网络数据，提供容量预测、延误预警及交付窗口监控。
+- 全文档处理与合规：自动采集提单 (BOL)、处理海关文件并链接至订单系统，实现零接触处理。
+references:
+- title: FourKites 官方网站
+  url: https://www.fourkites.com
+website: https://www.fourkites.com
+architecture: Multi-Agent System (MAS) with Digital Twins and Knowledge Graph
+release_date: '2024'
+parameters: 未公开
 access: saas
 region:
-  - global
+- global
 tags:
-  - 供应链
-  - 可视化
-references:
-  - title: FourKites
-    url: "https://www.fourkites.com"
+- multi-agent
+- supply-chain
+- digital-twins
+- predictive-analytics
+- workflow-automation
+- logistics-optimization

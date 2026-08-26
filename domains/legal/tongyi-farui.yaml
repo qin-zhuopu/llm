@@ -2,19 +2,27 @@ name: 通义法睿
 company: 阿里达摩院
 domain: legal
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://damo.alibaba.com
-description: "中文法律大模型，面向司法和合规场景。"
+description: 通义法睿是由阿里巴巴达摩院推出的法律领域AI大模型产品，依托通义大模型的强大基础能力，结合法律专业知识进行深度优化。该模型定位为法律行业的AI助手，旨在利用自然语言处理技术和法律知识图谱，降低法律服务的门槛，提升法律工作的效率，为中国法律从业者和普通用户提供全方位的智能法律服务。
+architecture: transformer
+base_model: 通义千问
 capabilities:
-  - 司法辅助
-  - 合规检查
-  - 法律问答
+- 智能法律咨询（民商事、刑事、行政等领域）
+- 合同智能审查与起草（风险识别与条款优化）
+- 案例智能检索与裁判逻辑分析
+- 诉讼风险量化评估与策略建议
+- 法律文书智能生成（起诉状、法律意见书等）
+tags:
+- legal-ai
+- nlp
+- knowledge-graph
+- contract-review
+- case-analysis
+- smart-assistant
 access: api
 region:
-  - china
-tags:
-  - 司法
-  - 合规
+- china
 references:
-  - title: 达摩院官网
-    url: "https://damo.alibaba.com"
+- title: 通义法睿官网
+  url: https://damo.alibaba.com

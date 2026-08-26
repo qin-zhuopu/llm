@@ -2,17 +2,24 @@ name: 小库科技 XKool AI
 company: 小库科技
 domain: construction-realestate
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.xkool.ai
-description: "建筑设计方案生成和合规审查AI。"
+description: 小库科技推出的面向建筑与房地产行业的一站式 AIGC 创新平台，融合了设计、云端协作与智能管理功能。该平台旨在通过人工智能技术为设计、施工及管理环节提供数字化与智能化赋能，拥有 10M+ 生成任务和 200K+ 注册用户，构建了集文本与图像内容生成、模型市场及行业工具箱于一体的 AI 生态。
 capabilities:
-  - 建筑方案生成
-  - 合规审查
+- 基于文本或图像的 AI 辅助设计与内容生成
+- 云端 AI 驱动的建筑信息模型 (BIM) 协同设计
+- 房地产全流程数字化解决方案
+- 装配式建筑与预制构件智能生成方案
+- 学术研究平台支持 (ARP Researcher)
+tags:
+- AIGC
+- 建筑设计
+- BIM
+- 云端协作
+- 房地产数字化
 access: saas
 region:
-  - china
-tags:
-  - 建筑设计
+- china
 references:
-  - title: 小库科技
-    url: "https://www.xkool.ai"
+- title: 官方网站
+  url: https://www.xkool.ai

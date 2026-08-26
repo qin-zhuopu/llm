@@ -1,21 +1,26 @@
 name: 菜鸟物流AI
 name_en: Cainiao AI
-company: 菜鸟
+company: 菜鸟网络
 domain: logistics-supplychain
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.cainiao.com
-description: "物流路线优化、仓储管理和包裹分拣AI。"
+description: 菜鸟物流AI是由菜鸟网络打造的物流科技智能平台，依托阿里巴巴技术生态，将人工智能与大数据深度应用于物流全链路。系统具备毫秒级路径优化计算能力，日均处理数亿级物流数据，并能在双11等超高峰值期间稳定运行，致力于构建全球化的智能物流骨干网。
 capabilities:
-  - 路线优化
-  - 仓储管理
-  - 包裹分拣
+- 基于VRP算法的实时智能路由规划
+- 涵盖视觉识别与AGV调度的智能仓储自动化
+- 包括智能派单与时效预测的末端配送优化
+- 预测未来物流需求量的机器学习分析
+- 跨境路线优化与通关预测管理
+tags:
+- logistics
+- vrp
+- supply-chain
+- automation
+- cainiao
 access: internal-only
 region:
-  - china
-tags:
-  - 物流
-  - 路线优化
+- china
 references:
-  - title: 菜鸟
-    url: "https://www.cainiao.com"
+- title: 菜鸟官方网站
+  url: https://www.cainiao.com

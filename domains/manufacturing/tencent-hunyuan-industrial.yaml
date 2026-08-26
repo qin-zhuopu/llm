@@ -3,18 +3,28 @@ name_en: Tencent Hunyuan Industrial
 company: 腾讯
 domain: manufacturing
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://cloud.tencent.com
-description: "面向智能制造和供应链优化的工业应用。"
+description: 腾讯混元(工业版)是腾讯基于自研万亿参数规模混元大模型，面向工业制造领域深度定制的解决方案。该模型具备强大的中文理解、逻辑推理及任务执行能力，针对制造业特殊需求进行了专业化适配，支持边云协同部署，并满足工业数据安全与隐私保护要求，日均调用量超十亿次。
+parameters: 万亿参数规模
+architecture: 混合架构 (MoE)
+base_model: Tencent Hunyuan
 capabilities:
-  - 智能制造辅助
-  - 供应链优化
-access: api
-region:
-  - china
+- 设备故障诊断与实时状态监测
+- 基于计算机视觉的产品质量检测
+- 生产排程智能优化与动态调整
+- 工艺参数分析与流程优化
+- 工业知识图谱构建与智能问答
 tags:
-  - 制造
-  - 供应链
+- 工业大模型
+- 故障诊断
+- 质量检测
+- 生产优化
+- 边云协同
+- 知识图谱
+access: saas
+region:
+- china
 references:
-  - title: 腾讯云
-    url: "https://cloud.tencent.com"
+- title: 腾讯云官网
+  url: https://cloud.tencent.com

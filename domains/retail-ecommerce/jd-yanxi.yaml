@@ -3,19 +3,22 @@ name_en: JD Yanxi
 company: 京东
 domain: retail-ecommerce
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://ai.jd.com
-description: "京东AI大模型，面向电商客服、商品文案生成和供应链调度。"
+description: 京东言犀是京东集团自主研发的产业级AI大模型平台，深度融合京东在零售电商及供应链领域的海量数据与行业经验。该模型核心定位为面向零售、供应链和物流等业务场景，提供从智能交互到决策优化的全方位AI能力，不仅服务于京东自身业务，还通过京东云JoyAgent平台向外部输出智能体应用构建能力，助力企业数智化升级。
 capabilities:
-  - 电商智能客服
-  - 商品文案生成
-  - 供应链调度
+- 多轮对话理解与全场景智能客服
+- 商品内容生成与SEO优化
+- 供应链需求预测与智能补货
+- 价格智能优化与动态定价
+- 物流配送时效预测与运力调度
+- 基于JoyAgent的智能体应用构建
+tags:
+- 电商
+- 客服
 access: private-deployment
 region:
-  - china
-tags:
-  - 电商
-  - 客服
+- china
 references:
-  - title: 京东AI
-    url: "https://ai.jd.com"
+- title: 京东言犀官网
+  url: https://ai.jd.com

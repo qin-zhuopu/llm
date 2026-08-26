@@ -2,20 +2,27 @@ name: JPMorgan AI Research
 company: 摩根大通
 domain: finance
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.jpmorgan.com/technology/artificial-intelligence
-description: "金融领域Foundation Models研究，涵盖AI Agent、金融规划、文档处理与投资分析。"
+description: 摩根大通金融AI研究体系：涵盖AI智能体混合推理、金融策略规划与知识管理、流程优化决策、金融垂直领域基础模型、合成数据/时序/行为分析、多模态文档处理分析，以及AI可信透明安全七大核心方向。
 capabilities:
-  - AI Agent与混合推理
-  - 金融规划与知识管理
-  - 多模态文档处理
-  - 合成数据与时序分析
+- 多智能体多步骤任务自动化
+- 金融策略规划与场景模拟
+- 流程效率优化与成本控制
+- 金融垂直领域基础模型开发
+- 合成数据生成与时序行为分析
+- 多模态文档自动化处理
+- AI决策的可信度与透明化保障
+tags:
+- finance
+- foundation-models
+- synthetic-data
+- ai-agents
+- document-processing
+- optimization
 access: internal-only
 region:
-  - global
-tags:
-  - Foundation Models
-  - 文档处理
+- global
 references:
-  - title: JPMorgan AI Research
-    url: "https://www.jpmorgan.com/technology/artificial-intelligence"
+- title: JPMorgan AI Research Official Website
+  url: https://www.jpmorgan.com/technology/artificial-intelligence
