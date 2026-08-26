@@ -1,0 +1,85 @@
+name: Shield AI Hivemind
+name_en: Hivemind
+company: Shield AI
+domain: aerospace-defense
+status: released
+release_date: "2018"
+website: https://shield.ai/hivemind
+description: >-
+  Shield AI Hivemind是全球领先的AI自主飞行系统，被誉为"世界最好的AI飞行员"。
+  自2018年执行首次全自主作战任务以来，已成为美国和盟军信任的AI飞行员。
+  可在GPS/GNSS拒止和通信降级环境中自主操控多种飞行平台(MQ-20 Avenger、X-62 VISTA、V-BAT、Firejet等)，
+  采用深度强化学习和计算机视觉技术，符合自主性政府参考架构(A-GRA)接口标准。
+  获以色列Yamam评价"在战斗中拯救了许多生命"。
+parameters: 未公开
+architecture: deep reinforcement learning + computer vision
+training:
+  stages:
+    - name: pre-training
+      description: 基于大量飞行仿真数据(Aechelon合成现实平台)预训练自主飞行决策模型
+    - name: fine-tuning
+      description: 在各型号飞行平台(Avenger/VISTA/V-BAT/Firejet)上进行适配微调
+    - name: other
+      description: 深度强化学习训练战术决策和多机协同策略，通过自博弈(self-play)提升对抗能力
+  context_length: "N/A (实时决策系统)"
+datasets:
+  - name: Aechelon仿真飞行数据
+    description: Shield AI自有Aechelon合成现实与仿真平台生成的大规模飞行训练数据
+    type: pre-training
+  - name: 实飞测试数据
+    description: MQ-20 Avenger、X-62 VISTA等平台真实飞行测试数据
+    type: other
+  - name: 对抗机动数据
+    description: 与人类飞行员空战对抗的战术机动数据(X-62 VISTA项目)
+    type: other
+tech_stack:
+  techniques:
+    - Deep reinforcement learning
+    - Computer vision (GPS-denied navigation)
+    - Self-play adversarial training
+    - Multi-agent coordination (Teaming Drones)
+    - A-GRA compliant interfaces
+    - Sim-to-real transfer (Aechelon platform)
+    - Edge inference on embedded hardware
+benchmarks:
+  - name: 首次全自主作战任务
+    score: "2018年成功"
+    metric: milestone
+    comparison: "业界首个经实战验证的AI自主飞行系统"
+  - name: 大型无人机自主飞行
+    score: "MQ-20 Avenger成功"
+    metric: platform validation
+    comparison: "成功驾驶大型军用无人战斗机"
+  - name: 对人类飞行员战术对抗
+    score: "X-62 VISTA成功"
+    metric: combat evaluation
+    comparison: "AI vs 人类飞行员战术机动对抗测试"
+  - name: GPS拒止环境作战
+    score: "乌克兰实战验证"
+    metric: operational validation
+    comparison: "深入GPS/GNSS拒止环境执行实际作战任务"
+capabilities:
+  - 无GPS/GNSS环境自主导航与飞行决策
+  - 通信拒止环境独立作战能力
+  - 多飞行平台通用适配(Avenger/VISTA/V-BAT/Firejet)
+  - 多机协同作战(Teaming Drones群体智能)
+  - 战术机动执行与对抗决策
+  - 符合A-GRA接口标准的模块化架构
+  - 从仿真到实飞的迁移学习
+tags:
+  - autonomous-flight
+  - defense
+  - reinforcement-learning
+  - GPS-denied
+  - multi-agent
+  - combat-ai
+  - drone-swarm
+access:
+  - private-deployment
+references:
+  - title: Shield AI Hivemind官方页面
+    url: https://shield.ai/hivemind
+  - title: Shield AI官网
+    url: https://shield.ai
+  - title: X-62 VISTA自主飞行测试报告
+    url: https://shield.ai/news

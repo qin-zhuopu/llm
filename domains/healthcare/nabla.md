@@ -62,3 +62,35 @@ Nabla与健康AI联盟（Coalition for Health AI, CHAI）合作，推进医疗AI
 ## 客户评价
 
 Tia Health联合创始人兼CEO Felicity Yost表示："我们希望医疗提供者感受到工作的激励，与患者建立深层联系，而不是被行政任务淹没。Nabla让他们重新拥有了这些时间，让我们能够忠于自己的价值观。"
+
+---
+
+> 补充来源: [https://www.nabla.com/about](https://www.nabla.com/about)
+> 日期: 2025-06-17
+
+## Nabla技术数据补充
+
+### 部署规模数据
+- 医疗组织: 130+
+- 临床医生用户: 85,000+
+- 年处理就诊: 2000万+
+- 职业倦怠降低: 最高90%
+- 文档时间节省: 55%用户每天1小时+
+- 患者增加: 1.5倍
+- 互动质量提升: 81%
+
+### 技术架构(参考Nabla技术paper)
+Nabla采用自研临床AI模型，专为医疗场景优化。
+核心技术包括临床级语音识别、环境文档生成和AI医疗编码。
+通过Nabla Connect实现数周内的EHR(Epic等)嵌入集成。
+
+### 安全合规
+- HIPAA合规
+- SOC 2 Type 2认证
+- ISO 27001认证
+- GDPR合规
+
+### 合作伙伴
+- Coalition for Health AI (CHAI)
+- 多家大型医疗组织
+- 与Epic EHR系统深度集成

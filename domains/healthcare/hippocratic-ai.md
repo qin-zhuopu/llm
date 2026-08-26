@@ -41,3 +41,32 @@ Hippocratic AI采用创新的"AI智能体人力市场"模式，医疗系统可�
 ## 安全性设计
 
 作为安全性优先的医疗AI，Hippocratic AI在设计中严格区分诊断性和非诊断性任务，AI智能体仅处理不涉及医学诊断的患者交互场景。公司采用多阶段安全测试流程，确保AI输出的安全性、准确性和共情能力。
+
+---
+
+> 补充来源: [https://arxiv.org/abs/2403.13313](https://arxiv.org/abs/2403.13313)
+> 日期: 2025-06-17
+
+## Polaris技术架构详情 (论文: arXiv:2403.13313)
+
+### 模型规模与架构
+- 总参数规模: 1万亿参数(one-trillion parameter constellation system)
+- 由多个数十亿参数级LLM组成协作智能体系统
+- 有状态主智能体(stateful primary agent): 驱动对话参与度
+- 多个专业支持智能体(specialist support agents): 执行护士级医疗任务，提高安全性、减少幻觉
+
+### 训练方法
+- 复杂的迭代式协同训练协议(iterative co-training)
+- 多智能体优化多样化目标(安全性、对话质量、共情等)
+- 使用专有数据、临床护理计划、医疗监管文件、医学手册训练
+- 使用有机医患对话和模拟对话(患者演员与资深护士)对齐专业说话风格
+- 与NVIDIA合作开发临床对话场景微调的ASR
+
+### 评测结果
+- 招募1100+美国注册护士和130+执业医师进行端到端对话评估
+- Polaris在以下维度与人类护士表现持平:
+  - 医疗安全(medical safety)
+  - 临床准备度(clinical readiness)
+  - 对话质量(conversational quality)
+  - 床旁态度(bedside manner)
+- 专业支持智能体显著优于GPT-4和LLaMA-2 70B

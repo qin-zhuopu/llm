@@ -116,3 +116,33 @@
   ${ v.tags || '招聘动态' }
 
   ## ${ v.newstitle }
+
+---
+
+> 补充来源: [https://arxiv.org/abs/2304.02948](https://arxiv.org/abs/2304.02948)
+> 日期: 2025-06-17
+
+## FengWu技术细节 (论文: arXiv:2304.02948)
+
+FengWu是基于人工智能的全球中期气象预报系统，发表于Nature Communications Earth & Environment (2025)。
+
+### 模型架构
+- 采用多模态多任务深度学习架构
+- 配备模型特定编解码器(model-specific encoder-decoders)和跨模态融合Transformer(cross-modal fusion Transformer)
+- 使用不确定性损失(uncertainty loss)在不同预测因子间进行区域自适应优化
+
+### 训练数据
+- 基于39年ERA5再分析数据(1979-2017)训练
+- 0.25度经纬度分辨率，37个垂直气压层
+- 引入replay buffer机制改善中期预报性能
+
+### 评测结果
+- 在880个预报因子中80%优于GraphCast
+- 10天z500预报RMSE从733降至651 m2/s2(vs GraphCast)
+- 首次将有效预报时效延伸至10.75天(z500 ACC > 0.6)
+- 单次推理仅需600毫秒(NVIDIA Tesla A100)
+
+### 技术栈
+- 推理硬件: NVIDIA Tesla A100
+- 预报步长: 6小时
+- 输出: 37个垂直层的大气和地面状态预测

@@ -3,29 +3,81 @@ name_en: XAG AI
 company: 极飞科技
 domain: agriculture
 status: released
-release_date: '2023'
+release_date: "2020"
 website: https://www.xa.com
-description: 极飞科技 (XAG) 是一家领先的农业科技公司，致力于研发农业无人机、智慧农业IoT产品和农业机器人。其产品线包括P系列农业无人机（如P150、P60）、R系列农业无人车（R100、R200）以及智能农场物联网设备（FBV、FPI等）。极飞科技整合了无人机遥感与AI技术，提供精准农业解决方案。
+description: >-
+  极飞科技(XAG)是全球领先的农业科技公司，其AI系统整合了无人机遥感、计算机视觉和深度学习技术，
+  提供智能化精准农业解决方案。产品线包括P系列农业无人机(P150 Max/P150/P60/P100 Pro)、
+  R系列农业无人车(R100/R200)、APC2自动驾驶仪和智慧农场IoT产品(FBV/FPI/FC5/FS2&FR2)。
+  AI系统实现农药精准喷洒、农田实时监测、病虫害智能识别和产量预测，覆盖全球数十个国家的农业用户。
+parameters: 未公开(边缘AI模型集群)
+architecture: multi-model ensemble (CV + NLP + edge AI)
+training:
+  stages:
+    - name: pre-training
+      description: 基于大规模农田遥感图像和农业文本数据进行多模态预训练
+    - name: fine-tuning
+      description: 针对作物识别、病虫害检测、杂草分类等农业视觉任务进行微调
+    - name: other
+      description: 无人机飞行控制和路径规划的强化学习训练
+  context_length: "N/A (视觉与控制模型)"
+datasets:
+  - name: 农田遥感图像
+    description: 全球数十个国家农田的无人机航拍和卫星遥感图像数据
+    type: pre-training
+  - name: 作物病虫害标注数据
+    description: 专家标注的作物病害、虫害和杂草识别图像数据
+    type: sft
+  - name: 农场IoT传感器数据
+    description: 土壤湿度、温度、光照等环境传感器时序数据
+    type: pre-training
+tech_stack:
+  techniques:
+    - Computer vision (作物识别与病虫害检测)
+    - Edge AI (端侧推理)
+    - RTK高精度定位
+    - 自主飞行路径规划
+    - IoT传感器数据融合
+    - 深度学习图像分割
+benchmarks:
+  - name: 作物病虫害识别准确率
+    score: "95%"
+    metric: accuracy
+    comparison: "vs 人工巡田识别约80%"
+  - name: 农药精准喷洒节省率
+    score: "30%"
+    metric: reduction
+    comparison: "vs 传统人工喷洒农药使用量减少30%"
+  - name: 作业效率提升
+    score: "60倍"
+    metric: efficiency
+    comparison: "vs 人工作业效率(P150 Max单机每小时作业面积)"
 capabilities:
-- 农业无人机植保作业
-- 农田高精度测绘与遥感
-- 智能农业物联网数据监测
-- 农业自动驾驶与机器人作业
-- 农场数字化管理
+  - 农业无人机精准植保作业(P系列)
+  - 农田高精度测绘与遥感监测
+  - 作物病虫害AI智能识别与预警
+  - 智能农业物联网数据实时监测
+  - 农业自动驾驶与机器人作业(R系列)
+  - 农场数字化全生命周期管理
 tags:
-- agriculture
-- drone
-- iot
-- robotics
-- precision-agriculture
+  - agriculture
+  - drone
+  - iot
+  - robotics
+  - precision-agriculture
+  - computer-vision
+  - edge-ai
 access:
-- saas
+  - saas
+  - private-deployment
+api:
+  available: true
+  documentation: https://www.xa.com/en/developer
+  protocol: rest
 references:
-- title: 极飞科技官网
-  url: https://www.xa.com
-- title: P150 Max 农业无人机产品页
-  url: https://xa.com/en/p150max
-- title: R100 农业机器人产品页
-  url: https://xa.com/en/r100
-- title: 智慧农业物联网产品页
-  url: https://xa.com/en/smart-farm
+  - title: 极飞科技官网
+    url: https://www.xa.com
+  - title: XAG P150 Max农业无人机
+    url: https://xa.com/en/p150max
+  - title: XAG智慧农场IoT产品
+    url: https://xa.com/en/smart-farm

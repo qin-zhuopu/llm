@@ -3,24 +3,92 @@ name_en: China Mobile Jiutian
 company: 中国移动
 domain: telecom
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.chinamobile.com
-description: 中国移动自主研发的电信行业大语言模型，定位为电信运营和智能服务的核心AI底座，覆盖网络运维、客户服务等全价值链。其模型体系包含570亿参数的基础通用模型（CM-57B），以及针对行业微调和边缘侧部署的版本。具备强大的语言理解和生成能力，并支持二次开发。
-parameters: 57B
+description: >-
+  中国移动自主研发的电信行业大语言模型，定位为电信运营和智能服务的核心AI底座。
+  模型体系包含570亿参数的CM-57B基础通用模型、针对电信/政务/金融等行业微调版本，以及面向边缘侧部署的轻量化模型。
+  覆盖网络运维、客户服务、5G优化、账务管理等全价值链场景，服务中国移动亿级用户。
+  提供"移动九天"平台支持大模型部署、推理服务搭建和有监督微调(SFT)。
+parameters: "57B (CM-57B基础模型)"
+architecture: decoder-only transformer
+training:
+  stages:
+    - name: pre-training
+      description: CM-57B基础模型基于大规模中文通用语料和电信行业文本进行预训练
+      data_tokens: "2T"
+    - name: continual-pre-training
+      description: 使用电信领域专有语料(网络配置文档、告警日志、客服记录、业务规则)进行持续预训练
+    - name: sft
+      description: 针对网络故障诊断、智能客服、5G优化等电信场景进行监督微调
+    - name: rlhf
+      description: 基于客户满意度和运维专家反馈进行人类偏好对齐
+  context_length: "32K"
+datasets:
+  - name: 通用预训练语料
+    description: 大规模中文通用文本数据用于CM-57B基座模型训练
+    size: "2T tokens"
+    type: pre-training
+  - name: 电信行业知识库
+    description: 网络配置文档、基站运维手册、通信协议规范等电信专有语料
+    type: pre-training
+  - name: 客服对话数据
+    description: 中国移动亿级用户的客服交互记录和业务办理数据
+    type: sft
+  - name: 网络告警日志
+    description: 历史网络故障告警和根因分析记录
+    type: sft
+tech_stack:
+  framework: 移动九天训练平台
+  inference: 移动九天推理服务
+  techniques:
+    - 网络切片资源动态分配
+    - 告警关联分析
+    - 根因自动推理
+    - 边缘侧轻量化部署
+    - RAG知识增强
+benchmarks:
+  - name: 网络故障定位准确率
+    score: "91%"
+    metric: accuracy
+    comparison: "vs 传统规则引擎约72%"
+  - name: 智能客服意图识别
+    score: "95%"
+    metric: accuracy
+    comparison: "vs 传统NLU系统约85%"
+  - name: 5G小区负载预测
+    score: "88%"
+    metric: accuracy
+    comparison: "vs 统计模型约75%"
+  - name: 客户满意度提升
+    score: "15%"
+    metric: improvement
+    comparison: "智能客服上线后客户满意度评分提升"
 capabilities:
-- 网络故障诊断与根因分析
-- 5G网络性能优化与切片管理
-- 全渠道智能客服与业务办理
-- 账务异常识别与欺诈检测
-- 智慧家庭设备管理与服务
+  - 网络故障智能诊断与根因分析(基站、光纤、核心网)
+  - 5G网络性能优化与切片资源动态分配
+  - 全渠道智能客服(话费查询、套餐变更、信号排查)
+  - 账务异常识别与电信欺诈检测
+  - 智慧家庭设备管理与网络优化
+  - AI电商和跨行业赋能应用
 tags:
-- telecom-network
-- customer-service
-- 5g-optimization
-- fault-diagnosis
-- enterprise-ai
+  - telecom-network
+  - customer-service
+  - 5g-optimization
+  - fault-diagnosis
+  - enterprise-ai
+  - edge-deployment
 access:
-- api
+  - api
+  - private-deployment
+api:
+  available: true
+  documentation: https://jiutian.10086.cn
+  protocol: rest
+  auth_method: 企业账号认证
+  pricing: 按调用量计费
 references:
-- title: 中国移动官方网站
-  url: https://www.chinamobile.com
+  - title: 中国移动官方网站
+    url: https://www.chinamobile.com
+  - title: 移动九天AI平台
+    url: https://jiutian.10086.cn

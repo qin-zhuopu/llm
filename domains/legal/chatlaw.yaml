@@ -1,20 +1,99 @@
 name: ChatLaw
+name_en: ChatLaw
 company: 北京大学
 domain: legal
 status: released
-release_date: '2023'
+release_date: "2023-06"
 website: https://chatlaw.cloud
-description: 由北京大学深圳研究生院开发的开源中文法律大语言模型。采用混合专家模型（MoE）架构，整合多智能体系统与向量数据库/关键词检索的知识增强机制，有效解决通用大模型在法律场景中的幻觉问题。基于LLaMA/Ziya等开源模型进行领域微调，具备深厚的中文法律语境理解能力，构建了高质量法律数据集并建立了法律大模型评测基准。
+description: >-
+  ChatLaw是由北京大学深圳研究生院(PKU-YuanGroup)开发的开源中文法律大语言模型。最新版ChatLaw2-MoE采用InternLM架构的4x7B混合专家(MoE)设计，
+  结合角色对齐MoE(RA-MoE)架构和多智能体协作系统模拟律所标准作业流程(SOP)。
+  在LawBench基准上比GPT-4准确率高7.73%，在法律职业资格考试中领先11分。
+  同时提供13B和33B版本，以及基于93000份裁判文书训练的Text2Vec相似度匹配模型。
+parameters: 4x7B MoE (ChatLaw2), 13B, 33B
+architecture: Role-Aligned Mixture-of-Experts (RA-MoE)
+base_model:
+  - InternLM (ChatLaw2-MoE)
+  - Ziya-LLaMA-13B-v1 (ChatLaw-13B)
+  - Anima-33B (ChatLaw-33B)
+training:
+  stages:
+    - name: pre-training
+      description: 基于InternLM/Ziya-LLaMA/Anima等开源基座模型的通用预训练
+    - name: continual-pre-training
+      description: 使用高质量中国法律语料(法律法规、司法解释、裁判文书)进行领域持续预训练
+    - name: sft
+      description: 通过知识图谱和人工筛选构建的高质量法律数据集进行监督微调，训练RA-MoE中各专家角色
+    - name: fine-tuning
+      description: Text2Vec模型基于93000份裁判文书进行文本相似度微调
+  context_length: "8K"
+datasets:
+  - name: 中国法律法规语料
+    description: 中国现行法律法规、司法解释、行政法规等专业法律文本
+    type: pre-training
+  - name: 裁判文书数据集
+    description: 93000份法院裁判文书，用于案例检索和Text2Vec训练
+    size: "93000份裁判文书"
+    type: sft
+  - name: 法律任务标注数据
+    description: 覆盖案件分类、舆情分析、法律咨询等多种任务的标注数据集
+    type: sft
+  - name: 法律职业资格考试题
+    description: 5年历年法律职业资格统一考试真题
+    type: evaluation
+tech_stack:
+  framework: PyTorch
+  techniques:
+    - Role-Aligned MoE (RA-MoE)
+    - Multi-agent collaboration (SOP workflow)
+    - Knowledge graph integration
+    - Vector database retrieval
+    - Keyword-based retrieval
+    - Self-attention knowledge refinement
+benchmarks:
+  - name: LawBench
+    score: "7.73%优于GPT-4"
+    metric: accuracy improvement
+    comparison: "vs GPT-4准确率高7.73%"
+  - name: 法律职业资格统一考试
+    score: "领先11分"
+    metric: exam score
+    split: "5年历年真题"
+    comparison: "vs GPT-4分数高11分"
+  - name: 法律咨询质量(多维度)
+    score: "最高分"
+    metric: expert evaluation
+    comparison: "在完整性、逻辑性、正确性、语言质量、指导性、权威性6维度均最高"
+  - name: 真实案例胜率
+    score: "最高胜率"
+    metric: win rate
+    comparison: "vs 其他法律AI模型的真实案例对比"
 capabilities:
-- 提供智能法律咨询服务，涵盖民事纠纷、劳动争议等专业分析
-- 基于海量裁判文书进行案例分析，预测判决结果
-- 快速检索中国法律法规、司法解释，精准匹配法律条文
-- 辅助生成起诉状、合同模板等各类法律文书，确保格式规范
+  - 智能法律咨询(民事纠纷、劳动争议、合同纠纷、交通事故等)
+  - 基于93000份裁判文书的案例智能分析和判决预测
+  - 中国法律法规精准检索和条文匹配
+  - 法律文书智能生成(起诉状、答辩状、合同模板)
+  - 多智能体协作的律所SOP模拟(助理、研究员、资深律师角色)
+  - 法律职业资格考试辅导
 tags:
-- 法律咨询
-- 学术
+  - 法律咨询
+  - MoE
+  - 多智能体
+  - 开源
+  - 学术
+  - knowledge-graph
+  - InternLM
 access:
-- api
+  - open-weights
+  - api
+api:
+  available: true
+  documentation: https://chatlaw.cloud
+  protocol: rest
 references:
-- title: ChatLaw 官网
-  url: https://chatlaw.cloud
+  - title: "Chatlaw: A Multi-Agent Collaborative Legal Assistant with Knowledge Graph Enhanced MoE LLM"
+    url: https://arxiv.org/abs/2306.16092
+  - title: ChatLaw GitHub开源仓库
+    url: https://github.com/PKU-YuanGroup/ChatLaw
+  - title: ChatLaw 在线演示
+    url: https://chatlaw.cloud

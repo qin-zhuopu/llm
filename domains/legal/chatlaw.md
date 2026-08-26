@@ -43,3 +43,32 @@ ChatLaw项目不仅推出了实用的法律AI工具，还在以下方面做出�
 - 构建了高质量的中文法律领域微调数据集
 - 提出了针对法律领域模型幻觉的优化方法
 - 建立了法律大模型的评测体系和基准
+
+---
+
+> 补充来源: [https://github.com/PKU-YuanGroup/ChatLaw](https://github.com/PKU-YuanGroup/ChatLaw)
+> 补充来源: [https://arxiv.org/abs/2306.16092](https://arxiv.org/abs/2306.16092)
+> 日期: 2025-06-17
+
+## ChatLaw2-MoE技术细节 (论文: arXiv:2306.16092)
+
+### 模型版本
+- **ChatLaw2-MoE** (最新): 基于InternLM架构，4x7B混合专家(MoE)设计
+- **ChatLaw-13B**: 基于Ziya-LLaMA-13B-v1
+- **ChatLaw-33B**: 基于Anima-33B
+- **ChatLaw-Text2Vec**: 基于93000份裁判文书训练的文本相似度模型
+
+### 核心架构 - Role-Aligned MoE (RA-MoE)
+- 模拟律所标准作业流程(SOP)的多智能体系统
+- 不同角色: 法律助理(inquiry)、研究员(analysis)、资深律师(drafting)
+- RA-MoE将计算路由到对应的专用专家，确保每步由最合格参数处理
+
+### 评测结果
+- LawBench基准: 比GPT-4准确率高7.73%
+- 法律职业资格统一考试: 比GPT-4高11分
+- 5年历年真题持续表现优异
+- 真实案例咨询: 在完整性、逻辑性、正确性、语言质量、指导性、权威性6维度均最高
+- 高胜率对比其他法律AI模型
+
+### 论文信息
+- 已被期刊接收(Fundamental Research, DOI: 10.1016/j.fmre.2026.03.026)
