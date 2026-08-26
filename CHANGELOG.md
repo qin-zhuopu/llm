@@ -1,0 +1,81 @@
+# 变更日志
+
+## 2026-08-25
+
+### Schema v2 重大变更
+
+#### `access` 字段从单选改为多选数组
+
+**变更内容：** `access` 字段类型从 `string` 改为 `array`
+
+**原因：** 一个模型可以同时有多种获取方式（如 DeepSeek 既开放权重又提供 API）
+
+**影响范围：**
+
+| 文件 | 影响 |
+|------|------|
+| `schema/model.schema.json` | `access` 类型从 `string` → `array`，items 保持原 enum |
+| `schema/example.yaml` | `access: internal-only` → `access: [internal-only]` |
+| `domains/**/*.yaml` (65 个) | 全部已自动迁移为单元素数组 |
+| `scripts/extract_yaml.py` | **无需修改** — prompt 从 schema 动态生成，自动适配新类型 |
+| `scripts/validate.py` | **无需修改** — 基于 jsonschema 验证，跟随 schema 变化 |
+| `scripts/quality_check.py` | **无需修改** — 未对 access 做类型检查 |
+| `scripts/restore_metadata.py` | **注意** — 恢复 access 字段时需确保写入数组格式 |
+
+**迁移示例：**
+
+```yaml
+# 之前
+access: api
+
+# 之后
+access:
+  - api
+
+# 多选示例
+access:
+  - open-weights
+  - api
+```
+
+**枚举值（不变）：** `api`, `saas`, `private-deployment`, `open-weights`, `internal-only`, `unknown`
+
+---
+
+#### 删除 HuggingFace 形式字段，新增训练/技术/评测字段
+
+**删除：** `language`, `license`, `license_name`, `license_link`, `pipeline_tag`, `co2_eq_emissions`, `model_index`
+
+**新增：**
+
+| 字段 | 说明 |
+|------|------|
+| `architecture` | 模型架构 |
+| `training.stages[]` | 训练阶段（pre-training/sft/rlhf/dpo 等） |
+| `training.total_tokens` | 总训练量 |
+| `training.total_cost` | 训练成本 |
+| `training.context_length` | 上下文窗口 |
+| `tech_stack.framework` | 训练框架 |
+| `tech_stack.inference` | 推理引擎 |
+| `tech_stack.techniques[]` | 关键技术 |
+| `datasets[]` | 训练数据集 |
+| `benchmarks[]` | 评测结果 |
+| `api` | API 接入信息 |
+
+**影响范围：** 新增字段全部 optional，不影响现有 YAML 文件。
+
+---
+
+#### `description` 最小长度从 10 提高到 30
+
+**影响：** 新增模型的 description 必须 ≥ 30 字符。已有文件已在数据质量修复中全部满足。
+
+---
+
+### 新增 platforms/ 目录
+
+新增 AI 平台收录体系，与 `domains/` 并列。
+
+- `platforms/schema.json` — 平台 schema（`inference_api` 为必填）
+- `platforms/tinker.yaml` — 首个录入的平台（Thinking Machines Lab）
+- `scripts/validate_platforms.py` — 平台文件验证脚本
