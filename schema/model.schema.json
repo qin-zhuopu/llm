@@ -291,6 +291,11 @@
         "enum": ["global", "china", "us", "europe", "japan", "korea", "southeast-asia", "middle-east"]
       }
     },
+    "confidence": {
+      "type": "string",
+      "description": "数据置信度（由 LLM 根据 md 来源内容自动判断）",
+      "enum": ["high", "medium", "low"]
+    },
     "references": {
       "type": "array",
       "description": "参考链接（论文、官网、技术博客等）",

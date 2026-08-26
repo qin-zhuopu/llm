@@ -60,6 +60,10 @@ ${optional_fields_doc}
 3. `tags`: 3-6 个标签，用于搜索分类
 4. `references`: 包含官网和论文链接（如果有）
 5. 严格只输出 Schema 中定义的字段，不要输出任何额外字段（如 language、license、pipeline_tag 等）
+6. `confidence`: 根据 Markdown 来源内容的可靠性综合判断，必须填写，规则如下：
+   - `high`: md 内容来自官方产品页/论文/API 文档，有具体数据（参数量、benchmark 分数、训练细节、定价），信息可交叉验证
+   - `medium`: md 内容来自新闻报道/第三方评测/公司官网但细节模糊，缺少可验证的技术指标
+   - `low`: md 内容零散/过时/来源不明/无法确认模型是否仍在运营，或内容主要是营销文案无实质技术信息
 
 ## 输入 Markdown
 
