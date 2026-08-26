@@ -1,0 +1,75 @@
+name: Rogo (Felix)
+name_en: Rogo
+company: Rogo
+domain: finance
+status: released
+release_date: "2024"
+website: https://rogo.ai
+description: 面向全球领先金融机构的金融专用AI Agent平台，由前银行家和投资人团队创立，平台和模型专为投资银行、并购、投研等高复杂度金融工作流构建。已有50,000+银行家和投资人使用、日查询量150,000+、服务350+机构，2026年完成1.6亿美元D轮融资。采用模型无关的多Agent架构，配备Big Finance Benchmark私有评测，能生成可审计的Excel模型、投资备忘录和幻灯片，客户包括Truist Securities、Nomura、Baird等顶级投行。
+parameters: 未公开
+architecture: Model-agnostic multi-agent system (模型无关多智能体架构)
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于金融专用数据（交易、投研、市场数据）对底层模型进行金融领域适配，理解投行、并购、投资工作流的专业语义
+  - name: post-training
+    description: 针对金融工作流的端到端任务（建模、备忘录、尽调、幻灯片生成）进行后训练优化，对齐机构级输出标准
+tech_stack:
+  framework: 模型无关多Agent编排架构
+  inference: 企业定制部署（支持私有化/VPC）
+  techniques:
+  - Model-agnostic architecture (多前沿模型路由)
+  - Multi-agent workflow execution
+  - Big Finance Benchmark (私有金融评测)
+  - Enterprise system integration (SharePoint/CRM)
+  - Native Excel/PowerPoint output generation
+  - Retrieval over financial data (filings/research/market data)
+datasets:
+- name: Financial Workflow Data
+  description: 交易、投资、投研等金融工作流数据，用于训练Agent理解并执行端到端金融任务
+  type: sft
+- name: Big Finance Benchmark
+  description: Rogo自建的金融专业评测基准，用于评估和选择最适合金融任务的底层模型
+  type: evaluation
+- name: Enterprise & Financial Data Universe
+  description: 客户内部系统（SharePoint/CRM）+ 市场数据、公司filings、研究报告、专有数据源
+  type: other
+benchmarks:
+- name: Big Finance Benchmark
+  score: 内部金融专业评测
+  metric: financial_task_accuracy
+  comparison: "vs 通用AI聊天机器人: 专为金融工作流构建，避免通用模型在专业场景的失效"
+- name: Institutional Output Quality
+  score: 机构级可审计输出
+  metric: output_quality
+  comparison: "vs 通用助手: 生成可审计Excel模型、投资备忘录、尽调材料和幻灯片"
+api:
+  available: false
+  pricing: 大型金融机构年度合同（定制部署，联系销售）
+  auth_method: 企业认证
+capabilities:
+- 端到端执行金融工作流（交易、投资分析），而非仅回答问题
+- 生成可审计的Excel财务模型和估值分析
+- 自动撰写投资备忘录、尽职调查材料和幻灯片
+- 深度集成企业系统（SharePoint、CRM）和金融数据平台
+- 跨市场数据、公司filings、研究报告的综合检索与推理
+- 模型无关架构，按任务路由最适合的前沿模型
+- Big Finance Benchmark 驱动的模型选择与质量保证
+access:
+- private-deployment
+- saas
+tags:
+- financial-ai
+- investment-banking
+- multi-agent
+- model-agnostic
+- enterprise-ai
+- workflow-automation
+- deal-analysis
+references:
+- title: Rogo Official Website
+  url: https://rogo.ai
+- title: "Rogo: Our $160M Series D and the Road Ahead"
+  url: https://rogo.ai/news/series-d
+- title: Rogo Platform (Felix)
+  url: https://rogo.ai

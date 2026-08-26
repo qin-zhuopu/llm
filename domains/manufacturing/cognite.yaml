@@ -1,0 +1,83 @@
+name: Cognite Atlas AI
+name_en: Cognite Atlas AI
+company: Cognite
+domain: manufacturing
+status: released
+release_date: "2024"
+website: https://www.cognite.com
+description: 工业AI与数据平台，将时序数据、工程文档、事件、3D与设备数据上下文化为工业知识图谱，再由Atlas AI Agent访问和推理。采用模型无关架构(any LLM/any cloud/any data)，配合Cognite Flows行动层执行工业工作流。客户案例实现465% ROI、维护时间减少30-80%、生产力提升10X。2025年收入超1.7亿美元，Atlas AI客户数同比增长近700%，70%+新签订单包含Atlas AI，被IDC MarketScape评为工业DataOps平台领导者。
+parameters: 未公开
+architecture: Industrial Knowledge Graph + Model-agnostic Agent (工业知识图谱 + 模型无关Agent)
+training:
+  stages:
+  - name: fine-tuning
+    description: 将通用底层模型适配到工业领域，理解设备、工艺、维修、工程文档等工业语义，并对齐工业知识图谱结构
+  - name: post-training
+    description: 针对工业工作流（设备健康、故障诊断、工艺优化、维护管理）进行任务优化，提升在真实工业场景中的推理和行动准确性
+tech_stack:
+  framework: 模型无关多LLM编排 (any LLM)
+  inference: 多云部署 (any cloud)
+  techniques:
+  - Industrial Knowledge Graph (工业知识图谱)
+  - Data contextualization (时序/工程文档/事件/3D/设备数据)
+  - Retrieval-Augmented Generation (RAG)
+  - Low-code agent building
+  - System write-back (系统写回)
+  - Model-agnostic orchestration
+datasets:
+- name: Industrial OT/IT Data
+  description: 时序数据、报警、维修记录、设备手册、3D模型、工程文档等工业运营数据，上下文化为知识图谱
+  type: pre-training
+- name: Engineering Rules & Field Context
+  description: 工程规则、现场语义模型和设备运行反馈，用于工业Agent的推理和决策
+  type: sft
+benchmarks:
+- name: Customer ROI
+  score: "465% ROI"
+  metric: return_on_investment
+  comparison: "客户案例实现465% ROI和$29.4M总收益"
+- name: Maintenance Time Reduction
+  score: "30-80%"
+  metric: time_reduction
+  comparison: "vs 传统工业运维: 维护执行时间减少30-80%"
+- name: Productivity Gain
+  score: "10X"
+  metric: productivity_multiplier
+  comparison: "vs 数字化转型前: 生产力提升10倍，部署7周见成效"
+- name: Deployment Speed
+  score: "4个月扩展到9个工厂"
+  metric: deployment_scalability
+  comparison: "vs 传统工业软件部署: 大幅缩短从部署到规模化的周期"
+api:
+  available: true
+  documentation: https://docs.cognite.com
+  protocol: rest
+  pricing: 工业平台订阅 + 实施/企业部署（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 将时序、工程文档、事件、3D与设备数据上下文化为工业知识图谱
+- Atlas AI Agent 基于知识图谱进行工业推理和问答
+- 设备健康监测、故障诊断与预测性维护
+- 工艺优化、质量检测与生产调度
+- Cognite Flows 行动层执行端到端工业工作流并写回系统
+- 模型无关架构，支持任意LLM、任意云、任意用例
+- 低代码Agent构建，快速连接现成应用或开发新服务
+access:
+- saas
+- api
+- private-deployment
+tags:
+- industrial-ai
+- knowledge-graph
+- predictive-maintenance
+- model-agnostic
+- dataops
+- system-of-action
+- process-optimization
+references:
+- title: Cognite Official Website
+  url: https://www.cognite.com
+- title: "Cognite's Moonshot and AI Drive Record-Breaking Year"
+  url: https://www.cognite.com/en/company/newsroom/cognite-s-moonshot-and-ai-drive-record-breaking-year
+- title: Cognite Atlas AI Product Page
+  url: https://www.cognite.com/en/product

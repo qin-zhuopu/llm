@@ -1,0 +1,78 @@
+name: XBOW
+name_en: XBOW
+company: XBOW
+domain: aerospace-defense
+status: released
+release_date: "2025"
+website: https://xbow.com
+description: 自主进攻性安全（网络安全）AI系统，用AI驱动渗透测试并对漏洞进行真实可利用性验证。由模型推理、攻击工具、协调器和独立验证器组成，像真实攻击者一样串联漏洞形成攻击链并独立证明可利用性。曾自主发现9.8分critical级Microsoft漏洞并登顶HackerOne排行榜，150+安全团队使用。2026年完成1.2亿美元C轮融资，估值超10亿美元，按需渗透测试起价4000美元。每个发现都附带可复现exploit，形成客观可验证的反馈闭环，近零误报。
+parameters: 未公开
+architecture: Multi-agent system (协调器 + 短生命周期攻击Agent + 工具 + 独立验证器)
+training:
+  stages:
+  - name: post-training
+    description: 基于真实漏洞利用数据和攻击链对模型进行后训练，使其学会像攻击者一样探索应用、串联漏洞、构造可工作的exploit
+  - name: rlaif
+    description: 利用独立验证器提供的客观反馈（漏洞是否真正可利用）进行强化学习，抑制"看起来合理"的幻觉，只强化被验证的攻击路径
+tech_stack:
+  framework: 自主Agent协调架构
+  inference: 企业部署（支持数据隔离/驻留/合规）
+  techniques:
+  - Autonomous penetration testing agents
+  - Vulnerability chaining (攻击链串联)
+  - Independent exploit validation (独立可利用性验证)
+  - Orchestrator + short-lived attack agents
+  - Reproducible exploit generation
+  - Full decision/tactic audit logging
+datasets:
+- name: Real Vulnerability & Exploit Data
+  description: 真实漏洞发现、攻击链和exploit数据，用于训练模型的进攻性安全推理能力
+  type: sft
+- name: HackerOne / Public Bug Bounty Traces
+  description: 公开漏洞赏金平台的攻击轨迹和验证结果，作为客观反馈信号
+  type: evaluation
+benchmarks:
+- name: Microsoft Critical Vulnerability Discovery
+  score: "9.8 (CVSS critical)"
+  metric: vulnerability_severity
+  comparison: "完全自主发现一个9.8分critical级Microsoft漏洞，无其他AI做到过"
+- name: HackerOne Leaderboard
+  score: "第1名"
+  metric: leaderboard_rank
+  comparison: "vs 全球顶级人类安全研究员: 曾登顶HackerOne排行榜"
+- name: False Positive Rate
+  score: "近零误报"
+  metric: false_positive_rate
+  comparison: "vs 传统扫描器/SAST/DAST: 每个发现都有可复现exploit证明，近零误报"
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业连续测试合同 + 按需渗透测试（起价$4,000，5个工作日交付）
+  auth_method: 企业认证
+capabilities:
+- 自主渗透测试，像真实攻击者一样探索应用和API
+- 将多个漏洞串联成可工作的攻击链
+- 独立证明漏洞可利用性（exploit validation），而非仅发现
+- 生成可复现的exploit和完整攻击路径案件档案
+- 近零误报，提供董事会/审计级别报告
+- 持续测试随应用变化的攻击面，无需增加人力
+- 提供面向开发者的修复建议和全量决策审计日志
+access:
+- api
+- saas
+- private-deployment
+tags:
+- cybersecurity
+- penetration-testing
+- offensive-security
+- autonomous-agent
+- exploit-validation
+- vulnerability-chaining
+- red-team
+references:
+- title: XBOW Official Website
+  url: https://xbow.com
+- title: "XBOW Raises $120M to Scale Its Autonomous Hacker"
+  url: https://xbow.com/news/xbow-raises-120m-to-scale
+- title: "XBOW: Pentest On-Demand for Security at Machine Speed"
+  url: https://xbow.com/news/announcing-xbow-pentest-on-demand-for-security-at-machine-speed
