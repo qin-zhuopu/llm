@@ -1,0 +1,38 @@
+name: Chemify
+company: Chemify
+domain: materials-science
+status: released
+website: https://www.chemify.io/
+description: "Chemify 由 Glasgow 大学 Lee Cronin 教授创立，开创可编程化学(Chemputation)概念，将化学、机器人、计算和机器学习融合，使用 Chemify 编程语言数字化分子创造过程。拥有 Chemifarm 自动化实验工厂，实现从发现到制造的无缝衔接。"
+
+capabilities:
+  - Chemputation 可编程化学范式
+  - Chemify 编程语言编码化学合成流程
+  - Chemifarm 自动化实验工厂执行化学程序
+  - 机器学习辅助反应规划与新分子设计
+  - 从毫克到千克级的无缝放大
+
+tech_stack:
+  techniques:
+    - domain-specific programming language
+    - robotic chemistry automation
+    - machine learning
+    - reaction optimization
+
+tags:
+  - chemputation
+  - programmable-chemistry
+  - digital-chemistry
+  - robotic-synthesis
+  - molecule-discovery
+
+access:
+  - saas
+  - private-deployment
+
+region:
+  - global
+
+references:
+  - title: Chemify 官方网站
+    url: https://www.chemify.io/
