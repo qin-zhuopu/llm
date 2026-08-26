@@ -31,17 +31,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: ERCOT Market Performance
-  score: "历史最高盈利"
+  score: 历史最高盈利
   metric: profit
-  comparison: "vs 人类交易员: 在极端市场条件下创造历史最高盈利记录"
+  comparison: 'vs 人类交易员: 在极端市场条件下创造历史最高盈利记录'
+  source: self-reported
 - name: CAISO Battery Ranking
-  score: "#1"
+  score: '#1'
   metric: rank
-  comparison: "vs 所有CAISO电池: 2024-2025年度排名第一"
+  comparison: 'vs 所有CAISO电池: 2024-2025年度排名第一'
+  source: leaderboard
 - name: Price Prediction Accuracy
-  score: "超越人类"
+  score: 超越人类
   metric: accuracy
-  comparison: "vs 人类交易员和传统统计模型: 在多个市场中预测精度领先"
+  comparison: 'vs 人类交易员和传统统计模型: 在多个市场中预测精度领先'
+  source: self-reported
 capabilities:
 - 七大美国电力市场全自动化24/7能源交易
 - 深度学习模型精准预测电力价格波动

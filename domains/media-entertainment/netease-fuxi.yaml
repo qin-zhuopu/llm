@@ -3,7 +3,7 @@ name_en: NetEase Fuxi AI Lab
 company: 网易
 domain: media-entertainment
 status: released
-release_date: "2017"
+release_date: '2017'
 website: https://fuxi.163.com
 description: 网易伏羲是网易集团旗下专业AI研究与应用机构，基于自研工业大模型和面向智能体编程（AOP）理论体系，构建了覆盖游戏AI、工程机械智能化、数字孪生、AIGC美术和数据标注等多领域的AI产品矩阵。核心产品包括网易灵动（工程机器人）、绘梦天工（美术服务平台）、网易有灵众包（数据采标平台）和有灵智能体平台，日调用量亿级，拥有多项顶会论文和技术专利。
 parameters: 未公开
@@ -38,17 +38,20 @@ datasets:
   type: rlhf
 benchmarks:
 - name: 日调用量
-  score: "亿+"
+  score: 亿+
   metric: daily_calls
-  comparison: "企业级AI应用日调用量达亿级规模"
+  comparison: 企业级AI应用日调用量达亿级规模
+  source: self-reported
 - name: 顶会论文
-  score: "多篇"
+  score: 多篇
   metric: publications
-  comparison: "包含多篇GDC和顶会论文，获全球机器之心、ACM、IEEE等权威荣誉"
+  comparison: 包含多篇GDC和顶会论文，获全球机器之心、ACM、IEEE等权威荣誉
+  source: paper
 - name: 技术专利
-  score: "多项"
+  score: 多项
   metric: patents
-  comparison: "拥有多项行业定制标准和技术专利"
+  comparison: 拥有多项行业定制标准和技术专利
+  source: self-reported
 capabilities:
 - 工程机械智能化（无人装载机、无人挖掘机）自主路径规划与作业
 - 游戏AI智能体（NPC对话、行为决策、智能陪玩）

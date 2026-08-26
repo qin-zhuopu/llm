@@ -3,80 +3,80 @@ name_en: Zi Yue
 company: 网易有道
 domain: education
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.youdao.com
-description: >-
-  网易有道推出的教育领域大语言模型，专注于语言学习、作文辅导、口语练习和作业辅助等教育场景。
-  开源的子曰-o1推理模型拥有14B参数，支持消费级显卡部署，采用思维链(Chain of Thought)技术强化逻辑推理能力。
-  已深度集成到有道词典、有道翻译、有道精品课等多款产品中，覆盖数千万教育用户，
-  特别优化中文逻辑推理与教学引导能力。
-parameters: "14B (o1推理模型)"
+description: 网易有道推出的教育领域大语言模型，专注于语言学习、作文辅导、口语练习和作业辅助等教育场景。 开源的子曰-o1推理模型拥有14B参数，支持消费级显卡部署，采用思维链(Chain
+  of Thought)技术强化逻辑推理能力。 已深度集成到有道词典、有道翻译、有道精品课等多款产品中，覆盖数千万教育用户， 特别优化中文逻辑推理与教学引导能力。
+parameters: 14B (o1推理模型)
 architecture: decoder-only transformer
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模中英文通用语料进行基础预训练，构建语言理解和生成能力
-    - name: continual-pre-training
-      description: 使用教育领域专有语料(教材、题库、作文范文、语法知识等)进行领域持续预训练
-    - name: sft
-      description: 基于教育场景标注数据进行监督微调，包括解题过程、写作辅导、口语对话等任务
-    - name: rlhf
-      description: 结合教育专家和学生反馈优化教学引导策略，确保解答准确性和引导性
-  context_length: "32K"
+  - name: pre-training
+    description: 基于大规模中英文通用语料进行基础预训练，构建语言理解和生成能力
+  - name: continual-pre-training
+    description: 使用教育领域专有语料(教材、题库、作文范文、语法知识等)进行领域持续预训练
+  - name: sft
+    description: 基于教育场景标注数据进行监督微调，包括解题过程、写作辅导、口语对话等任务
+  - name: rlhf
+    description: 结合教育专家和学生反馈优化教学引导策略，确保解答准确性和引导性
+  context_length: 32K
 datasets:
-  - name: 教育通用语料
-    description: 教材、教辅、作文范文、语法教程等中英文教育文本
-    type: pre-training
-  - name: 题库标注数据
-    description: 数学、语文、英语等学科解题过程和知识点关联的专家标注数据
-    type: sft
-  - name: 口语对话数据
-    description: 多场景英语口语对话和发音评测数据
-    type: sft
+- name: 教育通用语料
+  description: 教材、教辅、作文范文、语法教程等中英文教育文本
+  type: pre-training
+- name: 题库标注数据
+  description: 数学、语文、英语等学科解题过程和知识点关联的专家标注数据
+  type: sft
+- name: 口语对话数据
+  description: 多场景英语口语对话和发音评测数据
+  type: sft
 tech_stack:
   framework: PyTorch
   techniques:
-    - Chain of Thought (思维链推理)
-    - 语音识别与发音评估
-    - 遗忘曲线记忆算法
-    - 知识点图谱关联
+  - Chain of Thought (思维链推理)
+  - 语音识别与发音评估
+  - 遗忘曲线记忆算法
+  - 知识点图谱关联
 benchmarks:
-  - name: 中文数学解题准确率
-    score: "85%"
-    metric: accuracy
-    comparison: "vs 通用大模型约70%，14B参数实现接近大模型水平"
-  - name: 英语作文评分一致性
-    score: "90%"
-    metric: agreement rate
-    comparison: "与人类教师评分一致性对比"
-  - name: 口语发音评估准确率
-    score: "92%"
-    metric: accuracy
-    comparison: "与专业教师评估的相关性"
+- name: 中文数学解题准确率
+  score: 85%
+  metric: accuracy
+  comparison: vs 通用大模型约70%，14B参数实现接近大模型水平
+  source: self-reported
+- name: 英语作文评分一致性
+  score: 90%
+  metric: agreement rate
+  comparison: 与人类教师评分一致性对比
+  source: self-reported
+- name: 口语发音评估准确率
+  score: 92%
+  metric: accuracy
+  comparison: 与专业教师评估的相关性
+  source: self-reported
 capabilities:
-  - 智能翻译与多语言词汇释义
-  - 中英文作文全流程辅导(思路引导、文法修正、润色建议)
-  - AI口语对话与发音评估(多场景模拟)
-  - 学科作业解析与思路引导(强调教学而非答案)
-  - 思维链推理的复杂逻辑解题
-  - 基于遗忘曲线的个性化记忆计划
+- 智能翻译与多语言词汇释义
+- 中英文作文全流程辅导(思路引导、文法修正、润色建议)
+- AI口语对话与发音评估(多场景模拟)
+- 学科作业解析与思路引导(强调教学而非答案)
+- 思维链推理的复杂逻辑解题
+- 基于遗忘曲线的个性化记忆计划
 tags:
-  - education
-  - reasoning
-  - open-source
-  - translation
-  - writing-assistant
-  - chain-of-thought
-  - speech-recognition
+- education
+- reasoning
+- open-source
+- translation
+- writing-assistant
+- chain-of-thought
+- speech-recognition
 access:
-  - open-weights
-  - saas
+- open-weights
+- saas
 api:
   available: true
   protocol: rest
   pricing: 集成于有道产品中，部分功能需订阅
 references:
-  - title: 网易有道官网
-    url: https://www.youdao.com
-  - title: 子曰-o1推理模型开源发布
-    url: https://github.com/netease-youdao
+- title: 网易有道官网
+  url: https://www.youdao.com
+- title: 子曰-o1推理模型开源发布
+  url: https://github.com/netease-youdao

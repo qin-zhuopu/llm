@@ -36,17 +36,20 @@ datasets:
   type: sft
 benchmarks:
 - name: 商家采用率
-  score: "数百万商家"
+  score: 数百万商家
   metric: user_count
-  comparison: "集成于全球数百万Shopify商家的管理后台"
+  comparison: 集成于全球数百万Shopify商家的管理后台
+  source: self-reported
 - name: 多语言支持
   score: 多语言
   metric: language_coverage
-  comparison: "支持商家以任何语言提问，适配店铺语言设置"
+  comparison: 支持商家以任何语言提问，适配店铺语言设置
+  source: self-reported
 - name: 功能更新频率
-  score: "月度更新"
+  score: 月度更新
   metric: update_frequency
-  comparison: "2025-2026年持续新增客户创建、支付数据查询、全屏模式等功能"
+  comparison: 2025-2026年持续新增客户创建、支付数据查询、全屏模式等功能
+  source: self-reported
 api:
   available: true
   protocol: proprietary

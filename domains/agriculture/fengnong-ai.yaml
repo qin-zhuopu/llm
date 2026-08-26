@@ -3,7 +3,7 @@ name_en: FengNong AI
 company: 丰农控股
 domain: agriculture
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.fengnong.com
 description: 丰农控股旗下智慧农业人工智能平台，融合计算机视觉、深度学习、遥感分析和大数据技术，覆盖水稻、小麦、玉米等主要农作物的病虫害智能诊断、精准种植推荐和产量预测。平台整合卫星遥感、气象数据和田间传感器等多源信息，积累大量中国本土农业数据，支持离线使用和方言语音交互，服务个体农户到大型农业企业的全链路智能化管理。
 parameters: 未公开
@@ -38,17 +38,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 病虫害识别准确率
-  score: "90%+"
+  score: 90%+
   metric: accuracy
-  comparison: "覆盖主要农作物常见病害，手机拍照即可快速识别"
+  comparison: 覆盖主要农作物常见病害，手机拍照即可快速识别
+  source: self-reported
 - name: 农作物覆盖种类
-  score: "5+"
+  score: 5+
   metric: crop_types
-  comparison: "覆盖水稻、小麦、玉米、蔬菜、水果等主要品类"
+  comparison: 覆盖水稻、小麦、玉米、蔬菜、水果等主要品类
+  source: self-reported
 - name: 方言语音支持
-  score: "多种方言"
+  score: 多种方言
   metric: dialect_coverage
-  comparison: "支持多种方言语音输入，降低农户使用门槛"
+  comparison: 支持多种方言语音输入，降低农户使用门槛
+  source: self-reported
 capabilities:
 - 作物病虫害智能诊断与防治建议（手机拍照识别）
 - 精准种植方案推荐（品种、播种、施肥、灌溉）

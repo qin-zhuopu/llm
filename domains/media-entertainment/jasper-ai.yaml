@@ -3,9 +3,10 @@ name_en: Jasper AI
 company: Jasper AI
 domain: media-entertainment
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.jasper.ai
-description: Jasper 是面向企业营销团队的 AI 智能体工作平台，提供100多个专业营销AI Agent和内容管道（Content Pipeline），支持从策略到执行的端到端营销工作流自动化。核心特色为 Jasper IQ 品牌智能层，能将品牌声音、风格指南、受众画像嵌入每一个AI输出，确保跨团队品牌一致性。已被 Adidas 等世界级企业采用，实现内容产出3倍提升。
+description: Jasper 是面向企业营销团队的 AI 智能体工作平台，提供100多个专业营销AI Agent和内容管道（Content Pipeline），支持从策略到执行的端到端营销工作流自动化。核心特色为
+  Jasper IQ 品牌智能层，能将品牌声音、风格指南、受众画像嵌入每一个AI输出，确保跨团队品牌一致性。已被 Adidas 等世界级企业采用，实现内容产出3倍提升。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model:
@@ -32,21 +33,25 @@ datasets:
   type: sft
 benchmarks:
 - name: Content Production Speed
-  score: "3x"
+  score: 3x
   metric: throughput_multiplier
-  comparison: "vs 无AI辅助: 内容产出量提升3倍"
+  comparison: 'vs 无AI辅助: 内容产出量提升3倍'
+  source: self-reported
 - name: SEO Automation Rate (Adidas)
-  score: "60%"
+  score: 60%
   metric: automation_rate
-  comparison: "Adidas 60% SEO工作实现自动化"
+  comparison: Adidas 60% SEO工作实现自动化
+  source: self-reported
 - name: Product Description Speed
-  score: "7500 in 24h"
+  score: 7500 in 24h
   metric: throughput
-  comparison: "24小时内生成7500条产品描述，vs 人工需数周"
+  comparison: 24小时内生成7500条产品描述，vs 人工需数周
+  source: self-reported
 - name: Time Saved (Cushman & Wakefield)
-  score: "10000+"
+  score: 10000+
   metric: hours_saved_annually
-  comparison: "每年节省10000+小时"
+  comparison: 每年节省10000+小时
+  source: self-reported
 capabilities:
 - 100+专业营销AI Agent执行SEO/GEO/邮件/社媒等具体任务
 - Content Pipelines 将策划自动转化为上线内容的端到端工作流

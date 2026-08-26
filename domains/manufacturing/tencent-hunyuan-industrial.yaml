@@ -3,84 +3,85 @@ name_en: Tencent Hunyuan Industrial
 company: 腾讯
 domain: manufacturing
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://cloud.tencent.com
-description: >-
-  腾讯混元(工业版)是腾讯基于自研万亿参数规模混元大模型面向工业制造领域深度定制的行业解决方案。该模型采用MoE混合专家架构，
-  具备强大的中文理解、逻辑推理及任务执行能力，日均调用量超十亿次。针对制造业需求进行了专业化适配，
-  支持边云协同部署（云端大模型与边缘端轻量模型协同），覆盖汽车制造、电子制造、装备制造、钢铁冶金、化工等工业领域，
-  满足工业数据安全与隐私保护要求。
+description: 腾讯混元(工业版)是腾讯基于自研万亿参数规模混元大模型面向工业制造领域深度定制的行业解决方案。该模型采用MoE混合专家架构， 具备强大的中文理解、逻辑推理及任务执行能力，日均调用量超十亿次。针对制造业需求进行了专业化适配，
+  支持边云协同部署（云端大模型与边缘端轻量模型协同），覆盖汽车制造、电子制造、装备制造、钢铁冶金、化工等工业领域， 满足工业数据安全与隐私保护要求。
 parameters: 万亿参数规模 (MoE)
 architecture: MoE (Mixture of Experts)
 base_model: Tencent Hunyuan
 training:
   stages:
-    - name: pre-training
-      description: 腾讯混元基座模型基于万亿级多语言多模态数据进行全链路自研预训练
-      data_tokens: "2T"
-    - name: continual-pre-training
-      description: 使用工业制造领域专有语料（设备手册、工艺标准、维修案例、行业规范等）进行领域持续预训练
-    - name: sft
-      description: 基于工业场景标注数据进行监督微调，覆盖故障诊断、质量检测、生产调度等任务
-    - name: rlhf
-      description: 结合工业专家反馈进行人类偏好对齐，优化工业知识问答准确性
-  context_length: "32K"
+  - name: pre-training
+    description: 腾讯混元基座模型基于万亿级多语言多模态数据进行全链路自研预训练
+    data_tokens: 2T
+  - name: continual-pre-training
+    description: 使用工业制造领域专有语料（设备手册、工艺标准、维修案例、行业规范等）进行领域持续预训练
+  - name: sft
+    description: 基于工业场景标注数据进行监督微调，覆盖故障诊断、质量检测、生产调度等任务
+  - name: rlhf
+    description: 结合工业专家反馈进行人类偏好对齐，优化工业知识问答准确性
+  context_length: 32K
 datasets:
-  - name: 通用预训练语料
-    description: 腾讯混元基座模型训练使用的万亿级多语言文本数据
-    size: "2T tokens"
-    type: pre-training
-  - name: 工业领域知识库
-    description: 设备手册、工艺标准、维修案例、行业规范、产线数据等工业专有语料
-    type: pre-training
-  - name: 工业场景微调数据
-    description: 故障诊断、质量检测、生产调度优化等场景的专家标注数据
-    type: sft
+- name: 通用预训练语料
+  description: 腾讯混元基座模型训练使用的万亿级多语言文本数据
+  size: 2T tokens
+  type: pre-training
+- name: 工业领域知识库
+  description: 设备手册、工艺标准、维修案例、行业规范、产线数据等工业专有语料
+  type: pre-training
+- name: 工业场景微调数据
+  description: 故障诊断、质量检测、生产调度优化等场景的专家标注数据
+  type: sft
 tech_stack:
   framework: 腾讯云TI-ONE机器学习平台
   inference: 腾讯云TI-Acc推理加速引擎
   techniques:
-    - MoE混合专家架构
-    - 边云协同部署
-    - 计算机视觉深度学习
-    - 工业知识图谱
-    - Flash Attention
-    - GQA (Grouped Query Attention)
+  - MoE混合专家架构
+  - 边云协同部署
+  - 计算机视觉深度学习
+  - 工业知识图谱
+  - Flash Attention
+  - GQA (Grouped Query Attention)
 benchmarks:
-  - name: 设备故障诊断准确率
-    score: "92%"
-    metric: accuracy
-    comparison: "vs 传统规则系统约75%"
-  - name: 产品缺陷检测率
-    score: "98.5%"
-    metric: recall
-    comparison: "vs 人工抽检约85%"
-  - name: 生产排程优化提升
-    score: "15%"
-    metric: efficiency improvement
-    comparison: "vs 传统排程系统产能利用率提升15%"
-  - name: 工业知识问答准确率
-    score: "89%"
-    metric: accuracy
-    comparison: "vs 通用大模型在工业领域约65%"
+- name: 设备故障诊断准确率
+  score: 92%
+  metric: accuracy
+  comparison: vs 传统规则系统约75%
+  source: self-reported
+- name: 产品缺陷检测率
+  score: 98.5%
+  metric: recall
+  comparison: vs 人工抽检约85%
+  source: self-reported
+- name: 生产排程优化提升
+  score: 15%
+  metric: efficiency improvement
+  comparison: vs 传统排程系统产能利用率提升15%
+  source: self-reported
+- name: 工业知识问答准确率
+  score: 89%
+  metric: accuracy
+  comparison: vs 通用大模型在工业领域约65%
+  source: self-reported
 capabilities:
-  - 设备故障实时诊断与根因分析，支持自动恢复
-  - 基于计算机视觉的产品质量全检，识别缺陷、尺寸偏差和外观异常
-  - 生产排程智能优化，支持动态调整和紧急插单
-  - 工艺参数分析与流程优化，降低能耗和材料浪费
-  - 工业知识图谱构建与智能问答，整合设备手册和行业规范
-  - 边云协同部署，适应不同工业场景时延要求
+- 设备故障实时诊断与根因分析，支持自动恢复
+- 基于计算机视觉的产品质量全检，识别缺陷、尺寸偏差和外观异常
+- 生产排程智能优化，支持动态调整和紧急插单
+- 工艺参数分析与流程优化，降低能耗和材料浪费
+- 工业知识图谱构建与智能问答，整合设备手册和行业规范
+- 边云协同部署，适应不同工业场景时延要求
 tags:
-  - 工业大模型
-  - MoE
-  - 故障诊断
-  - 质量检测
-  - 生产优化
-  - 边云协同
-  - 知识图谱
+- 工业大模型
+- MoE
+- 故障诊断
+- 质量检测
+- 生产优化
+- 边云协同
+- 知识图谱
 access:
-  - saas
-  - private-deployment
+- saas
+- private-deployment
 api:
   available: true
   documentation: https://cloud.tencent.com/document/product/1729
@@ -88,7 +89,7 @@ api:
   auth_method: 腾讯云账号 + API Key
   pricing: 按token计费，支持包年包月
 references:
-  - title: 腾讯云混元大模型官网
-    url: https://cloud.tencent.com/product/hunyuan
-  - title: 腾讯云TI-ONE平台
-    url: https://cloud.tencent.com/product/tione
+- title: 腾讯云混元大模型官网
+  url: https://cloud.tencent.com/product/hunyuan
+- title: 腾讯云TI-ONE平台
+  url: https://cloud.tencent.com/product/tione

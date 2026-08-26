@@ -3,84 +3,86 @@ name_en: PathAI AISight
 company: PathAI
 domain: healthcare
 status: released
-release_date: "2021"
+release_date: '2021'
 website: https://www.pathai.com
-description: >-
-  PathAI 推出的 AISight 是一个云原生开放平台企业级数字病理图像管理与 AI 分析系统，服务于全球领先的实验室和研究中心。
-  平台采用深度学习技术（CNN/Vision Transformer）训练专病种 AI 模型实现亚细胞级别精确分析，
-  整合病例管理、全切片图像(WSI)管理和最佳 AI 工具，支持肿瘤诊断、免疫组化评分、生物标志物定量分析和药物研发临床试验样本评估，
+description: PathAI 推出的 AISight 是一个云原生开放平台企业级数字病理图像管理与 AI 分析系统，服务于全球领先的实验室和研究中心。 平台采用深度学习技术（CNN/Vision
+  Transformer）训练专病种 AI 模型实现亚细胞级别精确分析， 整合病例管理、全切片图像(WSI)管理和最佳 AI 工具，支持肿瘤诊断、免疫组化评分、生物标志物定量分析和药物研发临床试验样本评估，
   通过 AI 实现评分标准化以减少观察者间差异，提升诊断准确性并缩短周转时间。
 architecture: CNN + Vision Transformer (multi-model ensemble)
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模全切片病理图像(WSI)数据集对视觉模型进行预训练，学习组织形态学通用特征表示
-    - name: fine-tuning
-      description: 针对特定病种（乳腺癌、肺癌、结直肠癌等）和特定任务（肿瘤检测、生物标志物评分）进行监督微调
-    - name: other
-      description: 持续学习与主动标注 - 与病理学家协同标注新数据，结合可解释性反馈持续优化模型性能
+  - name: pre-training
+    description: 基于大规模全切片病理图像(WSI)数据集对视觉模型进行预训练，学习组织形态学通用特征表示
+  - name: fine-tuning
+    description: 针对特定病种（乳腺癌、肺癌、结直肠癌等）和特定任务（肿瘤检测、生物标志物评分）进行监督微调
+  - name: other
+    description: 持续学习与主动标注 - 与病理学家协同标注新数据，结合可解释性反馈持续优化模型性能
 datasets:
-  - name: 全切片病理图像数据集
-    description: 来自全球顶级实验室和研究中心的H&E染色和IHC染色全切片图像
-    type: pre-training
-  - name: 临床标注数据
-    description: 病理学家专家标注的肿瘤区域、细胞分类和生物标志物评分数据
-    type: sft
-  - name: 临床试验病理样本
-    description: 制药公司临床试验中的组织样本分析数据，用于药物研发相关模型训练
-    type: other
+- name: 全切片病理图像数据集
+  description: 来自全球顶级实验室和研究中心的H&E染色和IHC染色全切片图像
+  type: pre-training
+- name: 临床标注数据
+  description: 病理学家专家标注的肿瘤区域、细胞分类和生物标志物评分数据
+  type: sft
+- name: 临床试验病理样本
+  description: 制药公司临床试验中的组织样本分析数据，用于药物研发相关模型训练
+  type: other
 tech_stack:
   framework: PyTorch
   inference: 云原生GPU推理集群
   techniques:
-    - convolutional neural networks (CNN)
-    - Vision Transformer (ViT)
-    - whole-slide image (WSI) processing
-    - attention-based multiple instance learning
-    - explainable AI visualization
-    - multi-scale feature extraction
-    - transfer learning from ImageNet
+  - convolutional neural networks (CNN)
+  - Vision Transformer (ViT)
+  - whole-slide image (WSI) processing
+  - attention-based multiple instance learning
+  - explainable AI visualization
+  - multi-scale feature extraction
+  - transfer learning from ImageNet
 benchmarks:
-  - name: 肿瘤检测灵敏度
-    score: "97%"
-    metric: sensitivity
-    comparison: "vs 单个病理学家约93%灵敏度"
-  - name: 生物标志物评分一致性
-    score: "95%"
-    metric: inter-observer agreement (kappa)
-    comparison: "AI标准化评分 vs 人类观察者间kappa约0.7"
-  - name: HER2 IHC评分准确率
-    score: "94%"
-    metric: accuracy
-    comparison: "vs 3位病理学家共识金标准"
-  - name: 诊断周转时间缩减
-    score: "50%"
-    metric: turnaround time reduction
-    comparison: "引入AI辅助后诊断周转时间缩短约50%"
+- name: 肿瘤检测灵敏度
+  score: 97%
+  metric: sensitivity
+  comparison: vs 单个病理学家约93%灵敏度
+  source: self-reported
+- name: 生物标志物评分一致性
+  score: 95%
+  metric: inter-observer agreement (kappa)
+  comparison: AI标准化评分 vs 人类观察者间kappa约0.7
+  source: self-reported
+- name: HER2 IHC评分准确率
+  score: 94%
+  metric: accuracy
+  comparison: vs 3位病理学家共识金标准
+  source: self-reported
+- name: 诊断周转时间缩减
+  score: 50%
+  metric: turnaround time reduction
+  comparison: 引入AI辅助后诊断周转时间缩短约50%
+  source: self-reported
 capabilities:
-  - 云原生全切片图像(WSI)存储、检索与高性能查看
-  - 深度学习驱动的亚细胞级肿瘤检测与分类
-  - 免疫组化(IHC)标准化AI评分减少观察者间差异
-  - 生物标志物定量分析（HER2/PD-L1/Ki-67等）
-  - AI决策可视化解释辅助病理学家理解判断依据
-  - 药物研发临床试验标准化病理工作流程支持
-  - 高通量批量处理满足大规模样本分析需求
-  - 开放平台API支持第三方AI工具集成
+- 云原生全切片图像(WSI)存储、检索与高性能查看
+- 深度学习驱动的亚细胞级肿瘤检测与分类
+- 免疫组化(IHC)标准化AI评分减少观察者间差异
+- 生物标志物定量分析（HER2/PD-L1/Ki-67等）
+- AI决策可视化解释辅助病理学家理解判断依据
+- 药物研发临床试验标准化病理工作流程支持
+- 高通量批量处理满足大规模样本分析需求
+- 开放平台API支持第三方AI工具集成
 tags:
-  - digital-pathology
-  - diagnostic-ai
-  - oncology
-  - image-analysis
-  - cloud-native
-  - explainable-ai
-  - biomarker
+- digital-pathology
+- diagnostic-ai
+- oncology
+- image-analysis
+- cloud-native
+- explainable-ai
+- biomarker
 access:
-  - saas
-  - private-deployment
+- saas
+- private-deployment
 api:
   available: true
   protocol: rest
   auth_method: 企业认证
 references:
-  - title: PathAI 官方网站
-    url: https://www.pathai.com
+- title: PathAI 官方网站
+  url: https://www.pathai.com

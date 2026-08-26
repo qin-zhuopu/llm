@@ -2,88 +2,93 @@ name: Deep Origin
 company: Deep Origin
 domain: pharma-biotech
 status: released
-release_date: "2022"
+release_date: '2022'
 website: https://www.deeporigin.com/
-description: >-
-  Deep Origin是物理AI药物发现平台，针对90%药物临床试验失败的根本问题，建立从量子力学到细胞生物学的多尺度预测模型。
-  在Therapeutic Data Commons排行榜上取得6项ADMET性质(渗透性、脂溶性、溶解度、半衰期、hERG心脏毒性、AMES致突变性)排名第一。
-  CD73靶点项目中159个化合物达30%命中率。由Oculus联合创始人Michael Antonov创立，
-  团队100+科学家，累计融资超8200万美元并获ARPA-H合同。
+description: Deep Origin是物理AI药物发现平台，针对90%药物临床试验失败的根本问题，建立从量子力学到细胞生物学的多尺度预测模型。 在Therapeutic
+  Data Commons排行榜上取得6项ADMET性质(渗透性、脂溶性、溶解度、半衰期、hERG心脏毒性、AMES致突变性)排名第一。 CD73靶点项目中159个化合物达30%命中率。由Oculus联合创始人Michael
+  Antonov创立， 团队100+科学家，累计融资超8200万美元并获ARPA-H合同。
 parameters: 未公开
 architecture: physics-informed neural network ensemble
 training:
   stages:
-    - name: pre-training
-      description: 基于第一性原理物理仿真数据(量子力学计算、分子动力学模拟)进行预训练，构建分子行为基础理解
-    - name: fine-tuning
-      description: 在ADMET相关实验数据上进行微调，优化渗透性、脂溶性、溶解度等药物性质预测
-    - name: continual-pre-training
-      description: 使用多尺度模型(从量子到细胞层级)进行持续学习，提升跨尺度预测泛化能力
+  - name: pre-training
+    description: 基于第一性原理物理仿真数据(量子力学计算、分子动力学模拟)进行预训练，构建分子行为基础理解
+  - name: fine-tuning
+    description: 在ADMET相关实验数据上进行微调，优化渗透性、脂溶性、溶解度等药物性质预测
+  - name: continual-pre-training
+    description: 使用多尺度模型(从量子到细胞层级)进行持续学习，提升跨尺度预测泛化能力
 tech_stack:
   techniques:
-    - Quantum mechanics simulation
-    - Multi-scale modeling (quantum-to-cell)
-    - Physics-informed neural networks
-    - Molecular dynamics
-    - First-principles physics integration
-    - ADMET property prediction
+  - Quantum mechanics simulation
+  - Multi-scale modeling (quantum-to-cell)
+  - Physics-informed neural networks
+  - Molecular dynamics
+  - First-principles physics integration
+  - ADMET property prediction
 datasets:
-  - name: 量子力学计算数据
-    description: 第一性原理分子模拟与量子力学计算产生的训练数据
-    type: pre-training
-  - name: ADMET实验数据
-    description: 药物ADMET性质(吸收、分布、代谢、排泄、毒性)的实验测量数据
-    type: sft
-  - name: Therapeutic Data Commons
-    description: 公开的治疗学数据集，用于模型评估和训练
-    type: evaluation
+- name: 量子力学计算数据
+  description: 第一性原理分子模拟与量子力学计算产生的训练数据
+  type: pre-training
+- name: ADMET实验数据
+  description: 药物ADMET性质(吸收、分布、代谢、排泄、毒性)的实验测量数据
+  type: sft
+- name: Therapeutic Data Commons
+  description: 公开的治疗学数据集，用于模型评估和训练
+  type: evaluation
 benchmarks:
-  - name: TDC Permeability (渗透性)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: TDC Lipophilicity (脂溶性)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: TDC Solubility (溶解度)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: TDC Half-life (半衰期)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: TDC hERG (心脏毒性)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: TDC AMES (致突变性)
-    score: "#1"
-    metric: ranking
-    comparison: "Therapeutic Data Commons排行榜第一名"
-  - name: CD73靶点命中率
-    score: "30%"
-    metric: hit rate
-    comparison: "159化合物中30%命中，远高于行业平均约5-10%"
+- name: TDC Permeability (渗透性)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: TDC Lipophilicity (脂溶性)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: TDC Solubility (溶解度)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: TDC Half-life (半衰期)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: TDC hERG (心脏毒性)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: TDC AMES (致突变性)
+  score: '#1'
+  metric: ranking
+  comparison: Therapeutic Data Commons排行榜第一名
+  source: leaderboard
+- name: CD73靶点命中率
+  score: 30%
+  metric: hit rate
+  comparison: 159化合物中30%命中，远高于行业平均约5-10%
+  source: self-reported
 capabilities:
-  - 量子到细胞多尺度物理AI预测模型
-  - Therapeutic Data Commons多项ADMET性质排名第一
-  - 第一性原理物理仿真与AI融合的药物发现
-  - CD73等靶点的高命中率药物设计
-  - ARPA-H资助的前沿药物发现研究
-  - 跨化学空间泛化的机制理解
+- 量子到细胞多尺度物理AI预测模型
+- Therapeutic Data Commons多项ADMET性质排名第一
+- 第一性原理物理仿真与AI融合的药物发现
+- CD73等靶点的高命中率药物设计
+- ARPA-H资助的前沿药物发现研究
+- 跨化学空间泛化的机制理解
 tags:
-  - physics-ai
-  - drug-discovery
-  - admet
-  - multi-scale-modeling
-  - quantum-chemistry
-  - clinical-translation
+- physics-ai
+- drug-discovery
+- admet
+- multi-scale-modeling
+- quantum-chemistry
+- clinical-translation
 access:
-  - internal-only
+- internal-only
 references:
-  - title: Deep Origin 官方网站
-    url: https://www.deeporigin.com/
-  - title: Therapeutic Data Commons Leaderboard
-    url: https://tdcommons.ai/
+- title: Deep Origin 官方网站
+  url: https://www.deeporigin.com/
+- title: Therapeutic Data Commons Leaderboard
+  url: https://tdcommons.ai/

@@ -3,9 +3,10 @@ name_en: WeiKuang AI (Mineral Intelligence Cloud)
 company: 中国科学院合作方
 domain: materials-science
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.cas.cn
-description: 微矿智云是由中国科学院体系研究机构联合开发的矿物材料科学人工智能平台，基于大语言模型和领域知识图谱技术，面向矿物材料的智能识别、性质预测和工艺优化等场景。平台整合了矿物学数据库、光谱分析数据和工艺流程知识，为材料科学研究和矿业生产提供 AI 驱动的决策支持。
+description: 微矿智云是由中国科学院体系研究机构联合开发的矿物材料科学人工智能平台，基于大语言模型和领域知识图谱技术，面向矿物材料的智能识别、性质预测和工艺优化等场景。平台整合了矿物学数据库、光谱分析数据和工艺流程知识，为材料科学研究和矿业生产提供
+  AI 驱动的决策支持。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -31,9 +32,10 @@ datasets:
   type: sft
 benchmarks:
 - name: 矿物智能识别准确率
-  score: "高于传统方法"
+  score: 高于传统方法
   metric: accuracy
-  comparison: "vs 传统人工鉴定: 识别效率提升数倍，准确率可比肩专家水平"
+  comparison: 'vs 传统人工鉴定: 识别效率提升数倍，准确率可比肩专家水平'
+  source: self-reported
 capabilities:
 - 矿物材料智能识别与分类
 - 材料性质预测与模拟

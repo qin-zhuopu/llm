@@ -17,6 +17,7 @@
 """
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -208,27 +209,54 @@ def score_source(data, yaml_path):
         score += 5
     details["data_points"] = f"{len(numbers)}"
 
-    # 论文/学术来源 (0-25)
-    has_arxiv = bool(re.search(r'arxiv|arXiv|论文|paper|Nature|Science|ICML|NeurIPS|AAAI', body))
-    if has_arxiv:
-        score += 25
-    details["paper"] = "Y" if has_arxiv else "N"
+    # 来源证据：基于 data/raw/{slug}/sources.json（原始资料）评分
+    # 优先用 sources.json（真实抓取的原始证据），回退到 MD 正则
+    slug = yaml_path.stem
+    sources_json = yaml_path.parents[2] / "data" / "raw" / slug / "sources.json"
 
-    # 官方/一手来源 vs 二手 (0-20)
-    source_match = re.search(r'来源:\s*\[([^\]]+)\]', md_content)
-    if source_match:
-        source_url = source_match.group(1)
-        # 新闻/聚合网站 = 二手
-        news_sites = ["techcrunch", "reuters", "36kr", "bloomberg.com/news", "wired", "theverge"]
-        is_news = any(s in source_url.lower() for s in news_sites)
-        if not is_news:
+    src_types = []
+    if sources_json.exists():
+        try:
+            sj = json.loads(sources_json.read_text(encoding="utf-8"))
+            src_types = [f.get("type", "unknown") for f in sj.get("files", [])]
+        except Exception:
+            src_types = []
+
+    if src_types:
+        # 来源数量与多样性 (0-25)：多个独立来源 = 更可信
+        n_sources = len(src_types)
+        n_distinct = len(set(src_types))
+        if n_sources >= 3 and n_distinct >= 2:
+            score += 25
+        elif n_sources >= 2:
+            score += 18
+        elif n_sources >= 1:
+            score += 10
+        details["sources"] = f"{n_sources}个({n_distinct}类)"
+
+        # 来源类型质量 (0-20)：论文/官方一手 > 官网 > 新闻
+        has_paper = any(t in ("arxiv", "paper", "github") for t in src_types)
+        has_official = any(t in ("official-website", "huggingface") for t in src_types)
+        only_news = all(t == "news" for t in src_types)
+        if has_paper:
             score += 20
-            details["source"] = "official"
+            details["src_quality"] = "paper/repo"
+        elif has_official:
+            score += 15
+            details["src_quality"] = "official"
+        elif only_news:
+            score += 8
+            details["src_quality"] = "news-only"
         else:
             score += 10
-            details["source"] = "news"
+            details["src_quality"] = "mixed"
     else:
-        details["source"] = "unknown"
+        # 回退：无 sources.json 时用 MD 正则（旧逻辑，降级评分）
+        has_arxiv = bool(re.search(r'arxiv|arXiv|论文|paper|Nature|Science|ICML|NeurIPS|AAAI', body))
+        if has_arxiv:
+            score += 15
+        details["sources"] = "no-raw(MD-fallback)"
+        details["src_quality"] = "paper" if has_arxiv else "unknown"
 
     return score, details
 

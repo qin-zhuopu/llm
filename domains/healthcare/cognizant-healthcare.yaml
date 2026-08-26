@@ -3,9 +3,10 @@ name_en: Cognizant Healthcare AI
 company: Cognizant
 domain: healthcare
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.cognizant.com
-description: Cognizant作为企业级AI Builder，为医疗健康行业提供端到端的AI解决方案，帮助医疗机构现代化技术栈、重塑业务流程和转型用户体验。结合物理AI系统与Agentic AI创建统一的机构智能平台，支持医疗组织弥合AI执行差距，实现从概念到业务价值的落地。Frontier Engineers项目助力释放4.5万亿美元的AI机会。
+description: Cognizant作为企业级AI Builder，为医疗健康行业提供端到端的AI解决方案，帮助医疗机构现代化技术栈、重塑业务流程和转型用户体验。结合物理AI系统与Agentic
+  AI创建统一的机构智能平台，支持医疗组织弥合AI执行差距，实现从概念到业务价值的落地。Frontier Engineers项目助力释放4.5万亿美元的AI机会。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -32,13 +33,15 @@ datasets:
   type: sft
 benchmarks:
 - name: AI执行差距缩小
-  score: "20亿美元业务提升"
+  score: 20亿美元业务提升
   metric: business_impact
-  comparison: "vs 未采用AI的企业: 拥有成熟技术基础设施和聚焦AI投资的企业获得显著竞争优势"
+  comparison: 'vs 未采用AI的企业: 拥有成熟技术基础设施和聚焦AI投资的企业获得显著竞争优势'
+  source: self-reported
 - name: AI部署成功率
-  score: "领先1/3企业"
+  score: 领先1/3企业
   metric: deployment_success
-  comparison: "vs 行业平均: 2/3领导者尚未展示可衡量的AI生产力收益，1/4已暂停或放弃部署"
+  comparison: 'vs 行业平均: 2/3领导者尚未展示可衡量的AI生产力收益，1/4已暂停或放弃部署'
+  source: self-reported
 api:
   available: true
   protocol: rest

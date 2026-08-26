@@ -3,9 +3,11 @@ name_en: Cerence CaLLM
 company: Cerence AI
 domain: automotive
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.cerence.com
-description: Cerence CaLLM 是 Cerence AI 开发的先进车载大语言模型系列，专为汽车和移动出行领域设计。核心产品 xUI 已与吉利等主机厂合作部署，支持上下文感知的多轮自然对话、Say What You See屏幕元素语音操控和多座位分区识别。技术已搭载于5.25亿+辆汽车中，服务80+主机厂和Tier-1客户，拥有625项专利和25年以上创新积累。配套 Dealer Assist Agent (DAA) 为经销商提供24/7 AI客户服务和预约管理。
+description: Cerence CaLLM 是 Cerence AI 开发的先进车载大语言模型系列，专为汽车和移动出行领域设计。核心产品 xUI 已与吉利等主机厂合作部署，支持上下文感知的多轮自然对话、Say
+  What You See屏幕元素语音操控和多座位分区识别。技术已搭载于5.25亿+辆汽车中，服务80+主机厂和Tier-1客户，拥有625项专利和25年以上创新积累。配套
+  Dealer Assist Agent (DAA) 为经销商提供24/7 AI客户服务和预约管理。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -41,25 +43,30 @@ datasets:
   type: sft
 benchmarks:
 - name: Vehicles Shipped
-  score: "525M+"
+  score: 525M+
   metric: deployment_scale
-  comparison: "5.25亿+辆汽车搭载 Cerence AI 技术，全球车载AI部署规模最大"
+  comparison: 5.25亿+辆汽车搭载 Cerence AI 技术，全球车载AI部署规模最大
+  source: self-reported
 - name: OEM Customers
-  score: "80+"
+  score: 80+
   metric: customer_count
-  comparison: "服务全球80+主机厂和Tier-1供应商"
+  comparison: 服务全球80+主机厂和Tier-1供应商
+  source: self-reported
 - name: Emergency Vehicle Detection Range (Interior)
-  score: "300m+"
+  score: 300m+
   metric: detection_distance
-  comparison: "车内麦克风可从300米外检测到紧急车辆警笛"
+  comparison: 车内麦克风可从300米外检测到紧急车辆警笛
+  source: self-reported
 - name: Emergency Vehicle Detection Range (Exterior)
-  score: "800m+"
+  score: 800m+
   metric: detection_distance
-  comparison: "配合外部麦克风检测距离超过800米"
+  comparison: 配合外部麦克风检测距离超过800米
+  source: self-reported
 - name: Revenue Growth
-  score: "12% YoY"
+  score: 12% YoY
   metric: revenue_growth
-  comparison: "Q3 2026营收同比增长12%，联网服务收入同比增长20%"
+  comparison: Q3 2026营收同比增长12%，联网服务收入同比增长20%
+  source: self-reported
 capabilities:
 - 上下文感知的多轮自然对话（无唤醒词打断、跨轮次记忆）
 - Say What You See 屏幕元素语音操控，实时读取UI界面转为语音快捷方式

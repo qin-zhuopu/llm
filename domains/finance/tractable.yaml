@@ -4,7 +4,8 @@ company: Tractable
 domain: finance
 status: released
 website: https://www.tractable.ai/
-description: Tractable利用深度学习计算机视觉技术革新保险理赔与灾害恢复的AI系统，能够从照片和视频中像素级精准识别和量化车辆及房产损害，每天处理数千件理赔案件。产品矩阵涵盖AI定损、AI审核和AI分诊，提供多维置信度评分系统。已在北美、欧洲、亚太地区的主要保险公司部署，通过RESTful API与现有理赔工作流无缝集成。
+description: Tractable利用深度学习计算机视觉技术革新保险理赔与灾害恢复的AI系统，能够从照片和视频中像素级精准识别和量化车辆及房产损害，每天处理数千件理赔案件。产品矩阵涵盖AI定损、AI审核和AI分诊，提供多维置信度评分系统。已在北美、欧洲、亚太地区的主要保险公司部署，通过RESTful
+  API与现有理赔工作流无缝集成。
 parameters: 未公开
 architecture: deep learning computer vision
 training:
@@ -34,17 +35,20 @@ datasets:
   type: sft
 benchmarks:
 - name: Damage Assessment Accuracy
-  score: "像素级精度"
+  score: 像素级精度
   metric: precision
-  comparison: "vs 人工定损师: 精度媲美资深定损师，一致性更高"
+  comparison: 'vs 人工定损师: 精度媲美资深定损师，一致性更高'
+  source: self-reported
 - name: Processing Speed
-  score: "数分钟/件"
+  score: 数分钟/件
   metric: latency
-  comparison: "vs 人工评估: 从数天缩短到数分钟"
+  comparison: 'vs 人工评估: 从数天缩短到数分钟'
+  source: self-reported
 - name: Daily Processing Volume
-  score: "数千件/天"
+  score: 数千件/天
   metric: throughput
-  comparison: "vs 人工处理: 处理量提升数个数量级"
+  comparison: 'vs 人工处理: 处理量提升数个数量级'
+  source: self-reported
 capabilities:
 - 车辆损害像素级精准检测（凹陷、刮擦、裂缝、变形）和维修方案生成
 - 房产损害评估，支持风暴、洪水、火灾等灾后快速检测

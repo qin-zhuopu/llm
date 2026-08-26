@@ -3,7 +3,7 @@ name_en: Makya 2.0
 company: Iktos
 domain: pharma-biotech
 status: released
-release_date: "2026"
+release_date: '2026'
 website: https://www.iktos.ai/solution/makya
 description: Iktos公司开发的生成式AI药物设计平台Makya 2.0，专注于从头药物设计（de novo drug design），通过生成式AI驱动的分子创新设计，结合Spaya逆合成路径规划和自主机器人实验室，形成完整的DMTA（设计-合成-测试-分析）闭环，将药物发现阶段缩短至2年以内。已与超过60家领先制药、生物科技和学术机构合作。
 parameters: 未公开
@@ -38,17 +38,20 @@ datasets:
   type: other
 benchmarks:
 - name: 药物发现周期
-  score: "<2年"
+  score: <2年
   metric: time_to_discovery
-  comparison: "vs 传统药物发现: 通常需要4-6年，Iktos平台缩短至2年以内"
+  comparison: 'vs 传统药物发现: 通常需要4-6年，Iktos平台缩短至2年以内'
+  source: self-reported
 - name: 合作项目数量
-  score: "60+"
+  score: 60+
   metric: partnerships
-  comparison: "与超过60家领先制药、生物科技和学术机构建立合作"
+  comparison: 与超过60家领先制药、生物科技和学术机构建立合作
+  source: self-reported
 - name: 管线进展
-  score: "3个靶点进入先导化合物优化或临床前阶段"
+  score: 3个靶点进入先导化合物优化或临床前阶段
   metric: pipeline_progress
-  comparison: "MTHFD2（炎症免疫）、Amylin Receptor（肥胖代谢）、SKP2-CKS1（肿瘤免疫）"
+  comparison: MTHFD2（炎症免疫）、Amylin Receptor（肥胖代谢）、SKP2-CKS1（肿瘤免疫）
+  source: self-reported
 api:
   available: true
   protocol: rest

@@ -113,6 +113,16 @@ def extract_urls(md_text):
 # 单个抓取文件最大保存大小（字符）。超过则截断，避免抓到媒体/CDN 大文件撑爆仓库。
 MAX_CONTENT_CHARS = 500_000  # ~500KB 文本，远超任何研究文档所需
 
+# 常见第三方密钥模式，抓取内容中命中则脱敏（避免触发 GitHub secret scanning）
+SECRET_RE = re.compile(
+    r"sk\.eyJ[\w.-]+"              # Mapbox secret token
+    r"|pk\.eyJ[\w.-]+"            # Mapbox public token
+    r"|AKIA[0-9A-Z]{16}"          # AWS access key
+    r"|sk_live_[0-9a-zA-Z]{24,}"  # Stripe live key
+    r"|ghp_[0-9a-zA-Z]{36}"       # GitHub PAT
+    r"|AIza[0-9A-Za-z_\-]{35}"    # Google API key
+)
+
 
 def fetch(url, session, timeout=40, retries=3):
     """抓取 URL，返回 (text, status)。
@@ -130,6 +140,9 @@ def fetch(url, session, timeout=40, retries=3):
                 text = r.text
                 if len(text) > MAX_CONTENT_CHARS:
                     text = text[:MAX_CONTENT_CHARS] + "\n\n[... 内容过长已截断，完整内容见原始 URL ...]"
+                # 抓取的第三方页面可能嵌入密钥（Mapbox/AWS/Stripe 等），会触发 secret scanning。
+                # 用占位符脱敏，避免污染仓库。
+                text = SECRET_RE.sub("[REDACTED-SECRET]", text)
                 return text, "ok"
             else:
                 last = f"status={r.status_code}, len={len(r.text)}"
@@ -138,13 +151,13 @@ def fetch(url, session, timeout=40, retries=3):
     return None, f"failed ({last})"
 
 
-def process_model(md_path, session, dry_run=False):
+def process_model(md_path, session, dry_run=False, force=False):
     """处理单个模型 md，回填 raw 资料。返回 (status, msg)。"""
     slug = md_path.stem
     raw_dir = RAW / slug
 
-    if raw_dir.exists():
-        return "skip", f"{slug}: data/raw/{slug}/ 已存在，跳过"
+    if raw_dir.exists() and not force:
+        return "skip", f"{slug}: data/raw/{slug}/ 已存在，跳过（--force 可强制刷新）"
 
     md_text = md_path.read_text(encoding="utf-8")
     urls = extract_urls(md_text)
@@ -202,6 +215,7 @@ def main():
     parser.add_argument("--slug", type=str, help="只处理指定模型")
     parser.add_argument("--dry-run", action="store_true", help="只打印将抓取的 URL")
     parser.add_argument("--limit", type=int, help="最多处理 N 个模型")
+    parser.add_argument("--force", action="store_true", help="强制刷新（重抓已存在的 raw 目录，用于更新过期数据）")
     args = parser.parse_args()
 
     md_files = sorted(f for f in DOMAINS.rglob("*.md") if f.stem != "_meta")
@@ -212,8 +226,11 @@ def main():
             print(f"❌ 未找到 slug={args.slug} 的 md 文件")
             sys.exit(1)
 
-    # 只保留缺 raw 的
-    todo = [f for f in md_files if not (RAW / f.stem).exists()]
+    # 只保留缺 raw 的（--force 时保留全部/指定的）
+    if args.force:
+        todo = md_files
+    else:
+        todo = [f for f in md_files if not (RAW / f.stem).exists()]
 
     if args.limit:
         todo = todo[: args.limit]
@@ -228,7 +245,7 @@ def main():
 
     stats = {"ok": 0, "skip": 0, "no-url": 0, "dry-run": 0}
     for i, md in enumerate(todo, 1):
-        status, msg = process_model(md, session, dry_run=args.dry_run)
+        status, msg = process_model(md, session, dry_run=args.dry_run, force=args.force)
         stats[status] = stats.get(status, 0) + 1
         icon = {"ok": "✅", "skip": "⏭️", "no-url": "⚠️", "dry-run": "📝"}.get(status, "•")
         print(f"  [{i}/{len(todo)}] {icon} {msg}")

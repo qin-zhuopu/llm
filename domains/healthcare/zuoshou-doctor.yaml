@@ -3,7 +3,7 @@ name_en: Zuoshou Doctor GPT
 company: 左手医生（北京左手医生智能科技有限公司）
 domain: healthcare
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.zuoshouyisheng.com
 description: 基于大语言模型和医学知识图谱构建的医疗AI助手，覆盖数千种疾病和数万种药品信息，通过海量医患对话数据持续优化。核心NLP引擎针对中文医疗语境深度优化，能理解患者口语化描述并转化为结构化医学信息。已服务数百万用户，广泛应用于互联网医院、基层卫生服务中心和健康管理平台，为基层医生提供临床辅助决策支持。
 parameters: 未公开
@@ -34,28 +34,32 @@ datasets:
   type: sft
 - name: 医学知识库
   description: 涵盖数千种疾病、数万种药品、临床指南和专家共识的结构化知识
-  size: "数千种疾病 + 数万种药品"
+  size: 数千种疾病 + 数万种药品
   type: pre-training
 - name: 循证医学文献
   description: 医学文献、临床指南、药品说明书等专业资料
   type: pre-training
 benchmarks:
 - name: 用户服务规模
-  score: "数百万"
+  score: 数百万
   metric: user_count
-  comparison: "累计服务数百万用户，覆盖互联网医院和基层医疗机构"
+  comparison: 累计服务数百万用户，覆盖互联网医院和基层医疗机构
+  source: self-reported
 - name: 疾病覆盖
-  score: "数千种"
+  score: 数千种
   metric: disease_coverage
-  comparison: "知识图谱覆盖数千种疾病的诊断路径"
+  comparison: 知识图谱覆盖数千种疾病的诊断路径
+  source: self-reported
 - name: 药品信息
-  score: "数万种"
+  score: 数万种
   metric: drug_coverage
-  comparison: "整合数万种药品信息，支持药物相互作用查询"
+  comparison: 整合数万种药品信息，支持药物相互作用查询
+  source: self-reported
 - name: 应用场景覆盖
-  score: "4+"
+  score: 4+
   metric: scenario_count
-  comparison: "覆盖互联网医院、基层卫生中心、健康管理平台、医药电商"
+  comparison: 覆盖互联网医院、基层卫生中心、健康管理平台、医药电商
+  source: self-reported
 capabilities:
 - 智能预问诊（口语化描述转结构化医学信息）
 - 多症状联合分析与智能分诊导诊

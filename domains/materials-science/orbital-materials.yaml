@@ -3,9 +3,10 @@ name_en: Orbital Materials Multi-Scale World Models
 company: Orbital Materials
 domain: materials-science
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.orbitalmaterials.com/
-description: Orbital Materials（又名Orbital Industries）开发的多尺度世界模型，是材料科学领域世界领先的AI加速模拟器，覆盖量子物理到流体力学的跨尺度模拟。公司自称首个"AI Industrial"，结合前沿AI与物理产品开发，通过样本高效的自动研究智能体（Autoresearch Agents）加速新材料发明与制造。首个商业应用为高密度GPU冷却材料，已发现全新分子类别并在AI数据中心部署商用产品。
+description: Orbital Materials（又名Orbital Industries）开发的多尺度世界模型，是材料科学领域世界领先的AI加速模拟器，覆盖量子物理到流体力学的跨尺度模拟。公司自称首个"AI
+  Industrial"，结合前沿AI与物理产品开发，通过样本高效的自动研究智能体（Autoresearch Agents）加速新材料发明与制造。首个商业应用为高密度GPU冷却材料，已发现全新分子类别并在AI数据中心部署商用产品。
 parameters: 未公开
 architecture: multi-scale neural simulator
 training:
@@ -32,13 +33,15 @@ datasets:
   type: other
 benchmarks:
 - name: Materials Discovery Performance
-  score: "世界领先"
+  score: 世界领先
   metric: discovery_rate
-  comparison: "vs 传统实验方法: 从数年缩短到数周的材料发现周期"
+  comparison: 'vs 传统实验方法: 从数年缩短到数周的材料发现周期'
+  source: self-reported
 - name: GPU Cooling Material Performance
-  score: "全新分子类别"
+  score: 全新分子类别
   metric: novel_discovery
-  comparison: "vs 已知材料: 发现了全新分子类别用于高密度GPU冷却"
+  comparison: 'vs 已知材料: 发现了全新分子类别用于高密度GPU冷却'
+  source: self-reported
 capabilities:
 - 量子物理到流体力学的多尺度AI加速模拟
 - 跨尺度材料属性预测和新材料发现

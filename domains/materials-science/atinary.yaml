@@ -3,81 +3,81 @@ name_en: Atinary SDLabs
 company: Atinary Technologies
 domain: materials-science
 status: released
-release_date: "2021"
+release_date: '2021'
 website: https://www.atinary.com/
-description: >-
-  Atinary Technologies是Self-Driving Labs(SDLabs)领域先驱，提供AI+机器人闭环实验优化平台，
-  可将数年研发周期缩短至数周。采用贝叶斯优化和机器学习算法智能选择实验方案，
-  比传统DOE/OFAT方法快5-100倍、成本降低50%以上。2小时即可无代码部署AI驱动的实验流程。
-  客户包括Takeda(制药)、dsm-firmenich(香精香料)、Snapdragon Chemistry(流体化学)等，
-  获MIT教授验证推荐。
+description: Atinary Technologies是Self-Driving Labs(SDLabs)领域先驱，提供AI+机器人闭环实验优化平台，
+  可将数年研发周期缩短至数周。采用贝叶斯优化和机器学习算法智能选择实验方案， 比传统DOE/OFAT方法快5-100倍、成本降低50%以上。2小时即可无代码部署AI驱动的实验流程。
+  客户包括Takeda(制药)、dsm-firmenich(香精香料)、Snapdragon Chemistry(流体化学)等， 获MIT教授验证推荐。
 parameters: 未公开(非LLM，AI优化引擎)
 architecture: Bayesian optimization ensemble + ML models
 training:
   stages:
-    - name: pre-training
-      description: 基于材料科学和化学领域历史实验数据预训练贝叶斯优化先验模型
-    - name: fine-tuning
-      description: 针对每个具体实验任务(配方优化、催化剂筛选等)进行在线学习和模型适配
-    - name: other
-      description: 闭环实验中的持续在线学习，每轮实验结果反馈更新模型后验分布
+  - name: pre-training
+    description: 基于材料科学和化学领域历史实验数据预训练贝叶斯优化先验模型
+  - name: fine-tuning
+    description: 针对每个具体实验任务(配方优化、催化剂筛选等)进行在线学习和模型适配
+  - name: other
+    description: 闭环实验中的持续在线学习，每轮实验结果反馈更新模型后验分布
 datasets:
-  - name: 材料科学实验数据
-    description: 公开和合作伙伴的材料科学实验结果数据，覆盖配方、工艺参数和性能指标
-    type: pre-training
-  - name: 化学反应条件数据
-    description: 流体化学和催化反应的条件-产率数据
-    type: pre-training
-  - name: 在线实验反馈
-    description: 每个SDLab项目中实时产生的闭环实验数据
-    type: other
+- name: 材料科学实验数据
+  description: 公开和合作伙伴的材料科学实验结果数据，覆盖配方、工艺参数和性能指标
+  type: pre-training
+- name: 化学反应条件数据
+  description: 流体化学和催化反应的条件-产率数据
+  type: pre-training
+- name: 在线实验反馈
+  description: 每个SDLab项目中实时产生的闭环实验数据
+  type: other
 tech_stack:
   techniques:
-    - Bayesian optimization
-    - Multi-objective optimization
-    - Gaussian process regression
-    - Robotic automation integration
-    - Closed-loop experimentation
-    - No-code deployment interface
-    - Active learning
+  - Bayesian optimization
+  - Multi-objective optimization
+  - Gaussian process regression
+  - Robotic automation integration
+  - Closed-loop experimentation
+  - No-code deployment interface
+  - Active learning
 benchmarks:
-  - name: 实验效率提升(vs DOE)
-    score: "5-100x"
-    metric: speedup
-    comparison: "vs 传统Design of Experiments和One-Factor-At-A-Time方法"
-  - name: R&D成本降低
-    score: "50%+"
-    metric: cost reduction
-    comparison: "vs 传统实验方法的研发成本"
-  - name: 部署时间
-    score: "2小时"
-    metric: deployment time
-    comparison: "无需编程即可部署AI驱动实验(vs 传统AI需数周开发)"
+- name: 实验效率提升(vs DOE)
+  score: 5-100x
+  metric: speedup
+  comparison: vs 传统Design of Experiments和One-Factor-At-A-Time方法
+  source: self-reported
+- name: R&D成本降低
+  score: 50%+
+  metric: cost reduction
+  comparison: vs 传统实验方法的研发成本
+  source: self-reported
+- name: 部署时间
+  score: 2小时
+  metric: deployment time
+  comparison: 无需编程即可部署AI驱动实验(vs 传统AI需数周开发)
+  source: self-reported
 capabilities:
-  - AI驱动闭环自动实验优化(Self-Driving Labs)
-  - 贝叶斯优化智能选择下一步实验
-  - 机器人自动化实验执行集成
-  - 2小时无代码AI部署
-  - 多目标优化复杂材料性质
-  - 比DOE/OFAT快5-100倍并降低50%+成本
-  - 实时数据分析和可视化
+- AI驱动闭环自动实验优化(Self-Driving Labs)
+- 贝叶斯优化智能选择下一步实验
+- 机器人自动化实验执行集成
+- 2小时无代码AI部署
+- 多目标优化复杂材料性质
+- 比DOE/OFAT快5-100倍并降低50%+成本
+- 实时数据分析和可视化
 tags:
-  - self-driving-lab
-  - no-code
-  - closed-loop
-  - bayesian-optimization
-  - pharmaceutical
-  - chemical-optimization
-  - materials-discovery
+- self-driving-lab
+- no-code
+- closed-loop
+- bayesian-optimization
+- pharmaceutical
+- chemical-optimization
+- materials-discovery
 access:
-  - saas
+- saas
 api:
   available: true
   documentation: https://www.atinary.com/platform
   protocol: rest
   pricing: 企业订阅(联系销售)
 references:
-  - title: Atinary Technologies 官方网站
-    url: https://www.atinary.com/
-  - title: Atinary SDLabs平台介绍
-    url: https://www.atinary.com/platform
+- title: Atinary Technologies 官方网站
+  url: https://www.atinary.com/
+- title: Atinary SDLabs平台介绍
+  url: https://www.atinary.com/platform

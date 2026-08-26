@@ -3,9 +3,10 @@ name_en: AI @ Morgan Stanley Assistant
 company: 摩根士丹利 (Morgan Stanley)
 domain: finance
 status: released
-release_date: "2023-09"
+release_date: 2023-09
 website: https://www.morganstanley.com
-description: 摩根士丹利基于OpenAI GPT-4构建的财富管理AI助手，整合约10万份研究报告和内部文档，通过RAG检索增强生成架构为16,000+名财务顾问提供投资策略检索、市场分析摘要和客户服务支持。2024年扩展推出AI Debrief会议纪要工具，可自动记录客户会议并生成结构化后续行动建议，显著提升顾问工作效率。
+description: 摩根士丹利基于OpenAI GPT-4构建的财富管理AI助手，整合约10万份研究报告和内部文档，通过RAG检索增强生成架构为16,000+名财务顾问提供投资策略检索、市场分析摘要和客户服务支持。2024年扩展推出AI
+  Debrief会议纪要工具，可自动记录客户会议并生成结构化后续行动建议，显著提升顾问工作效率。
 parameters: 未公开（基于GPT-4）
 architecture: decoder-only transformer
 base_model: GPT-4
@@ -27,24 +28,27 @@ tech_stack:
 datasets:
 - name: Morgan Stanley Research Reports
   description: 约10万份内部研究报告、投资策略文档和市场分析材料
-  size: "~100,000 documents"
+  size: ~100,000 documents
   type: pre-training
 - name: Financial Advisor Interaction Data
   description: 财务顾问使用反馈数据，用于持续优化检索质量和回答准确性
   type: sft
 benchmarks:
 - name: Financial Advisor Adoption
-  score: "16,000+"
+  score: 16,000+
   metric: user_count
-  comparison: "覆盖Morgan Stanley全体财富管理财务顾问"
+  comparison: 覆盖Morgan Stanley全体财富管理财务顾问
+  source: self-reported
 - name: Knowledge Base Coverage
-  score: "100,000+"
+  score: 100,000+
   metric: document_count
-  comparison: "整合几乎所有内部研究报告和策略文档"
+  comparison: 整合几乎所有内部研究报告和策略文档
+  source: self-reported
 - name: Labor Market AI Impact Research
-  score: "44%"
+  score: 44%
   metric: occupation_affected_rate
-  comparison: "Morgan Stanley Research预测三年内44%职业受AI影响，涉及4.1万亿美元劳动力成本"
+  comparison: Morgan Stanley Research预测三年内44%职业受AI影响，涉及4.1万亿美元劳动力成本
+  source: self-reported
 capabilities:
 - 投资研报快速检索与知识问答（覆盖10万+文档）
 - 市场趋势分析与投资策略辅助

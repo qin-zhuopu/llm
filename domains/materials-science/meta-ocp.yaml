@@ -11,7 +11,7 @@ training:
   stages:
   - name: pre-training
     description: 在大规模密度泛函理论（DFT）计算数据上训练图神经网络模型，学习原子间相互作用和催化反应能量预测。OC20数据集包含130万分子弛豫，来自超过2.6亿DFT计算。
-    data_tokens: "260M+ DFT calculations"
+    data_tokens: 260M+ DFT calculations
 tech_stack:
   framework: PyTorch
   techniques:
@@ -30,14 +30,16 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Catalyst Discovery Acceleration
-  score: "数千倍加速"
+  score: 数千倍加速
   metric: speedup
-  comparison: "vs 传统DFT模拟: ML近似方法比量子力学模拟快数千倍"
+  comparison: 'vs 传统DFT模拟: ML近似方法比量子力学模拟快数千倍'
+  source: self-reported
 - name: Energy Prediction Accuracy
-  score: "接近DFT精度"
+  score: 接近DFT精度
   metric: mae
   split: test
-  comparison: "vs DFT ground truth: 在保持接近精度的同时实现数千倍加速"
+  comparison: 'vs DFT ground truth: 在保持接近精度的同时实现数千倍加速'
+  source: self-reported
 capabilities:
 - 基于ML高效近似量子力学催化剂模拟计算
 - CO2还原催化剂发现与优化

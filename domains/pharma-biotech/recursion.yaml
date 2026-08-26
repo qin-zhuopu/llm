@@ -3,7 +3,7 @@ name_en: Recursion OS
 company: Recursion
 domain: pharma-biotech
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.recursion.com
 description: Recursion公司开发的AI原生药物发现与开发平台Recursion OS，通过自动化实验室每周运行多达200万次实验构建50+PB专有数据集，结合计算机视觉从细胞图像中训练AI理解疾病生物学，实现从靶点发现到临床前候选药物的端到端AI驱动药物发现，显著降低传统药物发现90%的失败率。管线覆盖肿瘤和罕见病领域，多个项目进入临床阶段。
 parameters: 未公开
@@ -40,21 +40,25 @@ datasets:
   type: sft
 benchmarks:
 - name: 药物发现效率提升
-  score: "显著提升"
+  score: 显著提升
   metric: efficiency_improvement
-  comparison: "vs 传统药物发现: 从命中物识别到IND申报阶段在速度、效率和成本方面均有显著改善"
+  comparison: 'vs 传统药物发现: 从命中物识别到IND申报阶段在速度、效率和成本方面均有显著改善'
+  source: self-reported
 - name: 管线进展
-  score: "7+个项目"
+  score: 7+个项目
   metric: pipeline_count
-  comparison: "覆盖肿瘤和罕见病，多个项目处于临床1/2期和关键性3期试验阶段"
+  comparison: 覆盖肿瘤和罕见病，多个项目处于临床1/2期和关键性3期试验阶段
+  source: self-reported
 - name: 数据生成规模
-  score: "200万次/周"
+  score: 200万次/周
   metric: weekly_experiments
-  comparison: "vs 传统药物发现实验室: 实现工业级规模的自动化实验吞吐"
+  comparison: 'vs 传统药物发现实验室: 实现工业级规模的自动化实验吞吐'
+  source: self-reported
 - name: 战略合作伙伴
   score: Genentech等
   metric: partnerships
-  comparison: "与Genentech等行业领导者建立战略合作，解锁神经科学等新靶点"
+  comparison: 与Genentech等行业领导者建立战略合作，解锁神经科学等新靶点
+  source: self-reported
 api:
   available: false
 capabilities:

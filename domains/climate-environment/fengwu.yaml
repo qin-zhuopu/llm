@@ -3,80 +3,82 @@ name_en: FengWu
 company: 上海人工智能实验室
 domain: climate-environment
 status: released
-release_date: "2023-04"
+release_date: 2023-04
 website: https://www.shlab.org.cn
-description: >-
-  风乌(FengWu)是上海人工智能实验室发布的全球中期气象预报AI大模型，采用多模态多任务深度学习架构，
-  配备模型特定编解码器和跨模态融合Transformer。基于39年ERA5再分析数据训练，
-  能在0.25度经纬度分辨率、37个垂直层上预测未来大气和地面状态。单次推理仅需600毫秒(NVIDIA A100)，
-  可在30秒内生成未来10天全球天气预报，首次将有效预报时效延伸至10.75天(z500 ACC>0.6)，
-  在880个预报因子中80%优于GraphCast。论文发表于Nature Communications Earth & Environment。
+description: 风乌(FengWu)是上海人工智能实验室发布的全球中期气象预报AI大模型，采用多模态多任务深度学习架构， 配备模型特定编解码器和跨模态融合Transformer。基于39年ERA5再分析数据训练，
+  能在0.25度经纬度分辨率、37个垂直层上预测未来大气和地面状态。单次推理仅需600毫秒(NVIDIA A100)， 可在30秒内生成未来10天全球天气预报，首次将有效预报时效延伸至10.75天(z500
+  ACC>0.6)， 在880个预报因子中80%优于GraphCast。论文发表于Nature Communications Earth & Environment。
 parameters: 未公开
 architecture: encoder-decoder transformer with cross-modal fusion
 training:
   stages:
-    - name: pre-training
-      description: 基于39年ERA5再分析数据(1979-2017)进行多模态多任务预训练，使用不确定性损失在不同预测因子间进行区域自适应优化
-      data_tokens: "39年全球气象再分析数据"
-      hardware: NVIDIA Tesla A100
-    - name: fine-tuning
-      description: 引入replay buffer机制改善中期预报性能，优化6小时步长迭代预报能力
-  context_length: "10天预报时效(6小时步长)"
+  - name: pre-training
+    description: 基于39年ERA5再分析数据(1979-2017)进行多模态多任务预训练，使用不确定性损失在不同预测因子间进行区域自适应优化
+    data_tokens: 39年全球气象再分析数据
+    hardware: NVIDIA Tesla A100
+  - name: fine-tuning
+    description: 引入replay buffer机制改善中期预报性能，优化6小时步长迭代预报能力
+  context_length: 10天预报时效(6小时步长)
 datasets:
-  - name: ERA5再分析数据
-    description: ECMWF发布的1979年至今的全球大气再分析数据集，0.25度分辨率，37个气压层
-    size: "39年(1979-2017训练)"
-    type: pre-training
-  - name: ERA5 2018年验证数据
-    description: 2018年全年6小时间隔全球气象数据用于回报验证
-    type: evaluation
+- name: ERA5再分析数据
+  description: ECMWF发布的1979年至今的全球大气再分析数据集，0.25度分辨率，37个气压层
+  size: 39年(1979-2017训练)
+  type: pre-training
+- name: ERA5 2018年验证数据
+  description: 2018年全年6小时间隔全球气象数据用于回报验证
+  type: evaluation
 tech_stack:
   framework: PyTorch
   inference: NVIDIA TensorRT (600ms/iteration on A100)
   techniques:
-    - Cross-modal fusion Transformer
-    - Model-specific encoder-decoders
-    - Uncertainty loss for multi-task balancing
-    - Replay buffer mechanism
-    - Region-adaptive optimization
-    - 6-hourly autoregressive prediction
+  - Cross-modal fusion Transformer
+  - Model-specific encoder-decoders
+  - Uncertainty loss for multi-task balancing
+  - Replay buffer mechanism
+  - Region-adaptive optimization
+  - 6-hourly autoregressive prediction
 benchmarks:
-  - name: z500 10天预报RMSE
-    score: "651 m2/s2"
-    metric: RMSE
-    comparison: "vs GraphCast 733 m2/s2，降低11.2%"
-  - name: 有效预报时效(z500 ACC>0.6)
-    score: "10.75天"
-    metric: ACC threshold
-    comparison: "首次将AI气象模型有效预报延伸超过10天"
-  - name: 880个预报因子对比
-    score: "80%优于GraphCast"
-    metric: win rate
-    comparison: "vs GraphCast在880个预报因子中的RMSE对比"
-  - name: 单次推理速度
-    score: "600ms"
-    metric: latency
-    comparison: "vs 传统数值模式需数小时超算计算"
+- name: z500 10天预报RMSE
+  score: 651 m2/s2
+  metric: RMSE
+  comparison: vs GraphCast 733 m2/s2，降低11.2%
+  source: paper
+- name: 有效预报时效(z500 ACC>0.6)
+  score: 10.75天
+  metric: ACC threshold
+  comparison: 首次将AI气象模型有效预报延伸超过10天
+  source: paper
+- name: 880个预报因子对比
+  score: 80%优于GraphCast
+  metric: win rate
+  comparison: vs GraphCast在880个预报因子中的RMSE对比
+  source: paper
+- name: 单次推理速度
+  score: 600ms
+  metric: latency
+  comparison: vs 传统数值模式需数小时超算计算
+  source: self-reported
 capabilities:
-  - 全球中期天气预报(10.75天有效预报)
-  - 0.25度经纬度高空间分辨率预测
-  - 37个垂直层大气状态预报
-  - 6小时时间步长高时间分辨率
-  - 极端天气事件识别与预警
-  - 600毫秒超快速推理生成
+- 全球中期天气预报(10.75天有效预报)
+- 0.25度经纬度高空间分辨率预测
+- 37个垂直层大气状态预报
+- 6小时时间步长高时间分辨率
+- 极端天气事件识别与预警
+- 600毫秒超快速推理生成
 tags:
-  - 天气预报
-  - AI气象
-  - 多模态
-  - encoder-decoder
-  - ERA5
-  - 数值天气预报
+- 天气预报
+- AI气象
+- 多模态
+- encoder-decoder
+- ERA5
+- 数值天气预报
 access:
-  - api
+- api
 references:
-  - title: "FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead"
-    url: https://arxiv.org/abs/2304.02948
-  - title: 上海人工智能实验室官网
-    url: https://www.shlab.org.cn
-  - title: Nature Communications Earth & Environment论文
-    url: https://doi.org/10.1038/s43247-025-02502-y
+- title: 'FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond
+    10 Days Lead'
+  url: https://arxiv.org/abs/2304.02948
+- title: 上海人工智能实验室官网
+  url: https://www.shlab.org.cn
+- title: Nature Communications Earth & Environment论文
+  url: https://doi.org/10.1038/s43247-025-02502-y

@@ -4,7 +4,10 @@ company: Relativity
 domain: legal
 status: released
 website: https://www.relativity.com/aiR
-description: Relativity公司开发的法律AI软件套件，集成于RelativityOne平台，通过生成式AI加速诉讼和调查流程。产品矩阵包含aiR for Review（文档审查）、aiR for Privilege（特权保护）、aiR for Case Strategy（案件策略）、aiR for Data Breach Response（数据泄露响应）和aiR Assist（AI助手）五大核心产品。采用Azure OpenAI集成架构，客户数据永不被保留，已获ISO 27001、SOC 2和FedRAMP认证。客户实证显示节省20%-85%成本。
+description: Relativity公司开发的法律AI软件套件，集成于RelativityOne平台，通过生成式AI加速诉讼和调查流程。产品矩阵包含aiR
+  for Review（文档审查）、aiR for Privilege（特权保护）、aiR for Case Strategy（案件策略）、aiR for Data
+  Breach Response（数据泄露响应）和aiR Assist（AI助手）五大核心产品。采用Azure OpenAI集成架构，客户数据永不被保留，已获ISO
+  27001、SOC 2和FedRAMP认证。客户实证显示节省20%-85%成本。
 parameters: 未公开
 architecture: decoder-only transformer (Azure OpenAI)
 base_model: GPT-4 (Azure OpenAI)
@@ -32,17 +35,20 @@ datasets:
   type: evaluation
 benchmarks:
 - name: Microsoft Document Review Cost Savings
-  score: "20%-40%"
+  score: 20%-40%
   metric: cost_reduction
-  comparison: "vs 传统人工审查: Microsoft预计文档审查平均节省20%-40%成本"
+  comparison: 'vs 传统人工审查: Microsoft预计文档审查平均节省20%-40%成本'
+  source: self-reported
 - name: Teneo Review Efficiency
-  score: "70%"
+  score: 70%
   metric: cost_reduction
-  comparison: "vs 传统流程: 18天内审查100万份文档，实现70%成本节约"
+  comparison: 'vs 传统流程: 18天内审查100万份文档，实现70%成本节约'
+  source: self-reported
 - name: KordaMentha Cost Reduction
-  score: "85%"
+  score: 85%
   metric: cost_reduction
-  comparison: "vs 传统流程: 降低85%成本，同时节省25天审查时间"
+  comparison: 'vs 传统流程: 降低85%成本，同时节省25天审查时间'
+  source: self-reported
 capabilities:
 - 大规模文档审查和相关性自动判定（aiR for Review）
 - 律师-客户特权通信自动识别与特权日志创建（aiR for Privilege）

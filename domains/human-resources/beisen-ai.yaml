@@ -3,9 +3,10 @@ name_en: Beisen AI Mavens
 company: 北森云计算
 domain: human-resources
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.beisen.com
-description: 北森云计算推出的AI原生人力资源管理平台"Mavens"，是国内首家港交所上市HR SaaS公司的核心AI产品。采用AI原生架构将智能能力内嵌产品底层，构建招聘-入职-发展-绩效全流程数据闭环持续优化模型。产品矩阵覆盖AI人力战略经营、AI招聘专家团、AI Learning学习平台、AI领导力专家团和AI核心人力专家团五大模块，针对互联网、金融、制造等多行业建立专属模型，服务中大型企业的全生命周期智能化人才管理。
+description: 北森云计算推出的AI原生人力资源管理平台"Mavens"，是国内首家港交所上市HR SaaS公司的核心AI产品。采用AI原生架构将智能能力内嵌产品底层，构建招聘-入职-发展-绩效全流程数据闭环持续优化模型。产品矩阵覆盖AI人力战略经营、AI招聘专家团、AI
+  Learning学习平台、AI领导力专家团和AI核心人力专家团五大模块，针对互联网、金融、制造等多行业建立专属模型，服务中大型企业的全生命周期智能化人才管理。
 parameters: 未公开
 architecture: 多模型融合（NLP + ML + 推荐系统）
 training:
@@ -44,21 +45,25 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 行业覆盖
-  score: "5+"
+  score: 5+
   metric: industry_coverage
-  comparison: "覆盖互联网、金融、制造、地产、零售等多个行业专属模型"
+  comparison: 覆盖互联网、金融、制造、地产、零售等多个行业专属模型
+  source: self-reported
 - name: 产品模块
-  score: "5大AI专家团"
+  score: 5大AI专家团
   metric: product_modules
-  comparison: "人力战略+招聘+学习+领导力+核心人力五大AI模块"
+  comparison: 人力战略+招聘+学习+领导力+核心人力五大AI模块
+  source: self-reported
 - name: 数据闭环
-  score: "全流程"
+  score: 全流程
   metric: data_pipeline
-  comparison: "招聘-入职-发展-绩效全流程数据打通，持续优化"
+  comparison: 招聘-入职-发展-绩效全流程数据打通，持续优化
+  source: self-reported
 - name: 上市地位
-  score: "港交所上市"
+  score: 港交所上市
   metric: market_position
-  comparison: "首家登陆香港联交所的中国HR SaaS公司"
+  comparison: 首家登陆香港联交所的中国HR SaaS公司
+  source: self-reported
 capabilities:
 - AI智能简历筛选与多格式解析匹配
 - 多维度人才测评与AI画像（认知+性格+领导力）

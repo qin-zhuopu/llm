@@ -31,15 +31,17 @@ datasets:
   type: sft
 benchmarks:
 - name: 中国执业医师资格考试
-  score: "通过"
+  score: 通过
   metric: pass_rate
   split: test
-  comparison: "vs 人类考生合格线: 达到通过标准，是中国首个通过执业医师考试的AI系统"
+  comparison: 'vs 人类考生合格线: 达到通过标准，是中国首个通过执业医师考试的AI系统'
+  source: self-reported
 - name: 医疗NLP任务
-  score: "业界领先"
+  score: 业界领先
   metric: accuracy
   split: test
-  comparison: "vs 通用大模型: 在医疗领域任务上显著领先"
+  comparison: 'vs 通用大模型: 在医疗领域任务上显著领先'
+  source: self-reported
 capabilities:
 - 智能辅助诊疗，基于症状和检查结果推荐诊断和治疗方案
 - 电子病历自动生成与结构化信息提取

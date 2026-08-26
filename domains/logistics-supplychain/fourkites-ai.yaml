@@ -3,9 +3,10 @@ name_en: FourKites AI Agents
 company: FourKites
 domain: logistics-supplychain
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.fourkites.com
-description: FourKites AI 是全球领先的 AI 驱动供应链自主执行平台，开创了 Outcome-as-a-Service 模式。平台拥有6个在产的AI Agent（Tracy/Cassie/Alan/Sam/Polly/Sophie），每月执行250万+自主操作，覆盖承运商管理、客户运营、设施运营、供应商管理、合规文档和工作流开发等场景。底层依托11年积累的供应链网络数据（50万+承运商、360万设施、270万车道、1600+品牌、234个国家），通过八维度智能图谱和数字孪生实现真正的自主供应链运营。
+description: FourKites AI 是全球领先的 AI 驱动供应链自主执行平台，开创了 Outcome-as-a-Service 模式。平台拥有6个在产的AI
+  Agent（Tracy/Cassie/Alan/Sam/Polly/Sophie），每月执行250万+自主操作，覆盖承运商管理、客户运营、设施运营、供应商管理、合规文档和工作流开发等场景。底层依托11年积累的供应链网络数据（50万+承运商、360万设施、270万车道、1600+品牌、234个国家），通过八维度智能图谱和数字孪生实现真正的自主供应链运营。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -33,28 +34,32 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Monthly Agent Actions
-  score: "2500000+"
+  score: 2500000+
   metric: actions_per_month
-  comparison: "每月250万+自主操作，替代人工重复性供应链工作"
+  comparison: 每月250万+自主操作，替代人工重复性供应链工作
+  source: self-reported
 - name: Operator Hours Saved
-  score: "11730"
+  score: '11730'
   metric: hours_saved
-  comparison: "以$50/hr计算，等值$16.9M劳动力价值"
+  comparison: 以$50/hr计算，等值$16.9M劳动力价值
+  source: self-reported
 - name: Detention Cost Reduction (First Solar)
-  score: "98.6%"
+  score: 98.6%
   metric: cost_reduction
-  comparison: "First Solar: 消除几乎所有年度滞留费用，成本降低98.6%"
+  comparison: 'First Solar: 消除几乎所有年度滞留费用，成本降低98.6%'
+  source: self-reported
 - name: Response Time Improvement (Church & Dwight)
-  score: "从90分钟降至数秒"
+  score: 从90分钟降至数秒
   metric: latency_reduction
-  comparison: "Tracy AI将响应时间从90分钟缩短至几秒钟"
+  comparison: Tracy AI将响应时间从90分钟缩短至几秒钟
+  source: self-reported
 capabilities:
-- "Tracy Agent: 货运全程监控、延迟预检测、自动联系承运商和更新利益相关者"
-- "Cassie Agent: 客户查询即时响应、主动延迟通知、自动收集争议文档"
-- "Alan Agent: 基于实时ETA的自动排程/改期/确认、码头利用率优化"
-- "Sam Agent: 多格式运输文档自动读取处理、自动创建货运单并关联订单"
-- "Polly Agent: 交付证明收集、海关文档验证、AP系统路由和PO生命周期管理"
-- "Sophie Agent: 用自然语言描述供应链流程即可创建生产级工作流"
+- 'Tracy Agent: 货运全程监控、延迟预检测、自动联系承运商和更新利益相关者'
+- 'Cassie Agent: 客户查询即时响应、主动延迟通知、自动收集争议文档'
+- 'Alan Agent: 基于实时ETA的自动排程/改期/确认、码头利用率优化'
+- 'Sam Agent: 多格式运输文档自动读取处理、自动创建货运单并关联订单'
+- 'Polly Agent: 交付证明收集、海关文档验证、AP系统路由和PO生命周期管理'
+- 'Sophie Agent: 用自然语言描述供应链流程即可创建生产级工作流'
 - 数字孪生实时建模全供应链运营状态
 access:
 - saas

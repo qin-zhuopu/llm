@@ -3,7 +3,7 @@ name_en: JPMorgan AI Research
 company: 摩根大通 (JPMorgan Chase)
 domain: finance
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.jpmorgan.com/technology/artificial-intelligence
 description: 摩根大通自主研发的金融AI研究体系，拥有2,000+数据科学家和工程师，已部署300+个AI用例。核心产品包括IndexGPT智能投顾（基于LLM的投资组合优化）、DocLLM多模态文档理解模型，以及涵盖AI智能体混合推理、金融策略规划、流程优化决策、合成数据时序分析和AI可信安全等七大研究方向的完整技术布局。
 parameters: 未公开
@@ -42,17 +42,20 @@ datasets:
   type: sft
 benchmarks:
 - name: AI Use Cases Deployed
-  score: "300+"
+  score: 300+
   metric: deployment_count
-  comparison: "覆盖风控、交易、运营等核心金融业务线"
+  comparison: 覆盖风控、交易、运营等核心金融业务线
+  source: self-reported
 - name: AI/ML Team Scale
-  score: "2000+"
+  score: 2000+
   metric: team_size
-  comparison: "全球AI/ML数据科学家和工程师规模"
+  comparison: 全球AI/ML数据科学家和工程师规模
+  source: self-reported
 - name: Federal Reserve Policy Detection
-  score: "实时检测"
+  score: 实时检测
   metric: capability
-  comparison: "开发模型检测美联储政策变化的潜在信号"
+  comparison: 开发模型检测美联储政策变化的潜在信号
+  source: self-reported
 capabilities:
 - 多智能体多步骤金融任务自动化（computer-use + human-in-the-loop）
 - IndexGPT智能投顾与投资组合优化

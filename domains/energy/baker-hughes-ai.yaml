@@ -31,17 +31,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Pump Failure Prediction Lead Time
-  score: "30-50 days"
+  score: 30-50 days
   metric: advance_warning_days
-  comparison: "vs 传统计划维护: 从被动响应到提前30-50天预警"
+  comparison: 'vs 传统计划维护: 从被动响应到提前30-50天预警'
+  source: self-reported
 - name: Projected Cost Savings
-  score: "$10M+"
+  score: $10M+
   metric: cost_savings
-  comparison: "vs 传统维护方式: 节省超过1000万美元"
+  comparison: 'vs 传统维护方式: 节省超过1000万美元'
+  source: self-reported
 - name: Drilling ROP Optimization
-  score: "显著提升"
+  score: 显著提升
   metric: rate_of_penetration
-  comparison: "vs 人工钻井参数调节: 减少过度振动，最大化钻进速率"
+  comparison: 'vs 人工钻井参数调节: 减少过度振动，最大化钻进速率'
+  source: self-reported
 capabilities:
 - 提前30-50天预测泵等关键设备故障，优化维护人员部署
 - 自动化定向钻井，优化钻进速率并减少井眼曲折度

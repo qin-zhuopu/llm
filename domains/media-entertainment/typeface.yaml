@@ -3,9 +3,10 @@ name_en: Typeface Arc
 company: Typeface
 domain: media-entertainment
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.typeface.ai
-description: 面向企业的营销AI平台，核心产品Typeface Arc是"营销编排引擎"，通过Agentic工作流加速营销ROI。包含Arc Graph（将内容锚定到品牌指南和受众上下文）、Arc Agents（跨阶段和渠道处理复杂营销任务）、Arc Spaces（统一管理规划/创建/审查/批准/发布）和Arc Forge（将工作流转化为定制Agent）。采用品牌安全模型和专用模型，配备护栏、合规、加密和严格访问控制，与Cognizant等系统集成商战略合作。
+description: 面向企业的营销AI平台，核心产品Typeface Arc是"营销编排引擎"，通过Agentic工作流加速营销ROI。包含Arc Graph（将内容锚定到品牌指南和受众上下文）、Arc
+  Agents（跨阶段和渠道处理复杂营销任务）、Arc Spaces（统一管理规划/创建/审查/批准/发布）和Arc Forge（将工作流转化为定制Agent）。采用品牌安全模型和专用模型，配备护栏、合规、加密和严格访问控制，与Cognizant等系统集成商战略合作。
 parameters: 未公开
 architecture: Multi-agent marketing orchestration (多智能体营销编排)
 training:
@@ -35,11 +36,13 @@ benchmarks:
 - name: Brand Alignment
   score: 品牌安全生成
   metric: brand_compliance
-  comparison: "vs 通用生成模型: 内置品牌护栏和安全控制，确保输出对齐企业品牌指南"
+  comparison: 'vs 通用生成模型: 内置品牌护栏和安全控制，确保输出对齐企业品牌指南'
+  source: self-reported
 - name: Marketing Workflow Automation
   score: 端到端营销编排
   metric: workflow_coverage
-  comparison: "vs 单点生成工具: 覆盖规划-创建-审查-批准-发布全流程"
+  comparison: 'vs 单点生成工具: 覆盖规划-创建-审查-批准-发布全流程'
+  source: self-reported
 api:
   available: true
   protocol: rest

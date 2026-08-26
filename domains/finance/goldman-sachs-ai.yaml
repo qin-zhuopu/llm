@@ -3,7 +3,7 @@ name_en: Goldman Sachs GS AI
 company: Goldman Sachs
 domain: finance
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.goldmansachs.com
 description: 高盛内部开发的企业级AI系统，服务于全球银行与市场、资产与财富管理、平台解决方案等核心业务线。该系统融合AI与生成式AI能力，支撑投资研究、全球市场分析、交易策略、风险管理和客户服务等关键金融场景，为高盛46000余名员工提供智能决策辅助。
 parameters: 未公开
@@ -35,13 +35,15 @@ datasets:
   type: sft
 benchmarks:
 - name: 客户满意度评分
-  score: "95%+"
+  score: 95%+
   metric: top_rating_percentage
-  comparison: "95%+客户在'最佳人才'和'专业能力'方面给予最高评分"
+  comparison: 95%+客户在'最佳人才'和'专业能力'方面给予最高评分
+  source: self-reported
 - name: 研究报告覆盖
   score: 全球覆盖
   metric: coverage
-  comparison: "覆盖宏观经济、市场、AI、替代投资、IPO与M&A等多个主题"
+  comparison: 覆盖宏观经济、市场、AI、替代投资、IPO与M&A等多个主题
+  source: self-reported
 api:
   available: false
 capabilities:

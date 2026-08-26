@@ -5,7 +5,8 @@ domain: healthcare
 status: released
 release_date: 2023-05
 website: https://health.google
-description: Google DeepMind开发的医疗领域大语言模型Med-PaLM 2，基于PaLM 2基座模型针对医疗问答和临床推理进行专业微调。在MedQA（美国医学执照考试风格）基准上达到86.5%准确率，成为首个达到专家医生水平的AI系统。支持医疗信息检索、临床对话、健康问答等场景，是Google Health生态系统的核心AI能力。
+description: Google DeepMind开发的医疗领域大语言模型Med-PaLM 2，基于PaLM 2基座模型针对医疗问答和临床推理进行专业微调。在MedQA（美国医学执照考试风格）基准上达到86.5%准确率，成为首个达到专家医生水平的AI系统。支持医疗信息检索、临床对话、健康问答等场景，是Google
+  Health生态系统的核心AI能力。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: PaLM 2
@@ -47,21 +48,25 @@ benchmarks:
   score: 86.5
   metric: accuracy
   split: test
-  comparison: "vs GPT-4: 87.0%; vs Med-PaLM 1: 67.6%; vs 人类医生及格线: 60%"
+  comparison: 'vs GPT-4: 87.0%; vs Med-PaLM 1: 67.6%; vs 人类医生及格线: 60%'
+  source: self-reported
 - name: MedMCQA
   score: 72.3
   metric: accuracy
   split: test
-  comparison: "vs GPT-4: 69.5%; vs Med-PaLM 1: 57.6%"
+  comparison: 'vs GPT-4: 69.5%; vs Med-PaLM 1: 57.6%'
+  source: self-reported
 - name: PubMedQA
   score: 81.8
   metric: accuracy
   split: test
-  comparison: "vs GPT-4: 75.2%; vs Med-PaLM 1: 79.0%"
+  comparison: 'vs GPT-4: 75.2%; vs Med-PaLM 1: 79.0%'
+  source: self-reported
 - name: 临床医生对比评估
-  score: "专家级"
+  score: 专家级
   metric: physician_alignment
-  comparison: "在9个评估维度中的8个与专家医生水平相当或更优"
+  comparison: 在9个评估维度中的8个与专家医生水平相当或更优
+  source: self-reported
 api:
   available: true
   endpoint: https://cloud.google.com/vertex-ai

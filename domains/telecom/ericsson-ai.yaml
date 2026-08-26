@@ -4,7 +4,8 @@ company: Ericsson
 domain: telecom
 status: released
 website: https://www.ericsson.com
-description: 全球通信设备巨头爱立信推出的面向电信网络的AI解决方案体系，核心战略为AI RAN（AI赋能的无线接入网）。包含"Networks for AI"（网络支撑AI应用）和"AI in Networks"（AI嵌入网络功能）两大方向。基于图神经网络的网络优化框架、强化学习实现RAN自主优化、嵌入式AI推理能力直接部署在基站硬件中。已与Telstra合作部署全球首个新型RAN计算平台（2024年8月）。
+description: 全球通信设备巨头爱立信推出的面向电信网络的AI解决方案体系，核心战略为AI RAN（AI赋能的无线接入网）。包含"Networks for
+  AI"（网络支撑AI应用）和"AI in Networks"（AI嵌入网络功能）两大方向。基于图神经网络的网络优化框架、强化学习实现RAN自主优化、嵌入式AI推理能力直接部署在基站硬件中。已与Telstra合作部署全球首个新型RAN计算平台（2024年8月）。
 parameters: 未公开
 architecture: graph neural network + reinforcement learning
 training:
@@ -32,17 +33,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: RAN Performance Improvement
-  score: "显著提升"
+  score: 显著提升
   metric: network_performance
-  comparison: "vs 传统规则优化: GNN框架为运营商带来显著的网络性能提升"
+  comparison: 'vs 传统规则优化: GNN框架为运营商带来显著的网络性能提升'
+  source: self-reported
 - name: Energy Efficiency
-  score: "大幅节能"
+  score: 大幅节能
   metric: energy_reduction
-  comparison: "vs 传统基站管理: 通过智能休眠策略和功率控制显著降低能耗"
+  comparison: 'vs 传统基站管理: 通过智能休眠策略和功率控制显著降低能耗'
+  source: self-reported
 - name: Telstra RAN Deployment
-  score: "全球首个"
+  score: 全球首个
   metric: milestone
-  comparison: "2024年8月与Telstra合作部署全球首个新型RAN计算平台"
+  comparison: 2024年8月与Telstra合作部署全球首个新型RAN计算平台
+  source: self-reported
 capabilities:
 - 图神经网络驱动的无线接入网络设计和性能优化
 - 强化学习实现RAN功能的意图驱动自主优化

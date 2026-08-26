@@ -2,66 +2,67 @@ name: Chemify
 company: Chemify
 domain: materials-science
 status: released
-release_date: "2022"
+release_date: '2022'
 website: https://www.chemify.io/
-description: >-
-  Chemify 由 Glasgow 大学 Lee Cronin 教授创立，开创 Chemputation（可编程化学）技术，将 ML 化学智能、通用化学编程语言 χDL 和高级机器人系统融合，
-  实现化学发现与合成的完全数字化和自动化。平台采用 Design-Make-Test-Analyze 闭环范式，通过 ASSEMBLER 路线优化软件和
-  自驱动学习机制持续改进合成效率，已在 Glasgow 建立 Chemifarm 自动化工厂，支持从毫克到千克级无缝放大。
+description: Chemify 由 Glasgow 大学 Lee Cronin 教授创立，开创 Chemputation（可编程化学）技术，将 ML 化学智能、通用化学编程语言
+  χDL 和高级机器人系统融合， 实现化学发现与合成的完全数字化和自动化。平台采用 Design-Make-Test-Analyze 闭环范式，通过 ASSEMBLER
+  路线优化软件和 自驱动学习机制持续改进合成效率，已在 Glasgow 建立 Chemifarm 自动化工厂，支持从毫克到千克级无缝放大。
 parameters: 未公开
 architecture: ML chemical intelligence + robotic execution
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模化学反应数据库和文献预训练分子设计和反应预测模型
-    - name: fine-tuning
-      description: 使用 Chemify 自有机器人实验产生的高质量验证数据微调反应优化模型
-    - name: other
-      description: Chemputation 自学习改进 - 从每次化学反应中收集数据（试剂、催化剂、温度、压力、产率），持续优化反应路径
+  - name: pre-training
+    description: 基于大规模化学反应数据库和文献预训练分子设计和反应预测模型
+  - name: fine-tuning
+    description: 使用 Chemify 自有机器人实验产生的高质量验证数据微调反应优化模型
+  - name: other
+    description: Chemputation 自学习改进 - 从每次化学反应中收集数据（试剂、催化剂、温度、压力、产率），持续优化反应路径
 datasets:
-  - name: Chemify 私有反应数据库
-    description: 经验证、优化并在机器人系统上自动化执行的反应库，用于 ASSEMBLER 路线优化
-    type: pre-training
-  - name: 实时反应监控数据
-    description: 从每次化学反应实时采集的试剂、催化剂、温度、压力和产率数据
-    type: other
+- name: Chemify 私有反应数据库
+  description: 经验证、优化并在机器人系统上自动化执行的反应库，用于 ASSEMBLER 路线优化
+  type: pre-training
+- name: 实时反应监控数据
+  description: 从每次化学反应实时采集的试剂、催化剂、温度、压力和产率数据
+  type: other
 tech_stack:
   framework: PyTorch
   techniques:
-    - χDL universal chemical programming language
-    - quantum mechanics inverse design
-    - ML-based retrosynthesis
-    - closed-loop DMTA automation
-    - predictive analytics for reaction optimization
-    - graph neural networks for molecular representation
+  - χDL universal chemical programming language
+  - quantum mechanics inverse design
+  - ML-based retrosynthesis
+  - closed-loop DMTA automation
+  - predictive analytics for reaction optimization
+  - graph neural networks for molecular representation
 benchmarks:
-  - name: 合成路线成功率
-    score: ">90%"
-    metric: success rate
-    comparison: "vs 传统文献路线合成成功率约60-70%（因文献可靠性问题）"
-  - name: 化学发现生产力
-    score: "10x"
-    metric: productivity improvement
-    comparison: "vs 传统手工合成流程提升一个数量级"
+- name: 合成路线成功率
+  score: '>90%'
+  metric: success rate
+  comparison: vs 传统文献路线合成成功率约60-70%（因文献可靠性问题）
+  source: self-reported
+- name: 化学发现生产力
+  score: 10x
+  metric: productivity improvement
+  comparison: vs 传统手工合成流程提升一个数量级
+  source: self-reported
 capabilities:
-  - Chemputation 可编程化学范式实现完全数字化合成
-  - χDL 通用化学编程语言编码合成流程
-  - Quantum Chemputation 量子力学驱动的反向分子设计
-  - ASSEMBLER 路线优化确保合成可行性
-  - Chemifarm 自动化工厂从毫克到千克级无缝放大
-  - 闭环 DMTA 自驱动学习持续优化反应效率
+- Chemputation 可编程化学范式实现完全数字化合成
+- χDL 通用化学编程语言编码合成流程
+- Quantum Chemputation 量子力学驱动的反向分子设计
+- ASSEMBLER 路线优化确保合成可行性
+- Chemifarm 自动化工厂从毫克到千克级无缝放大
+- 闭环 DMTA 自驱动学习持续优化反应效率
 tags:
-  - chemputation
-  - programmable-chemistry
-  - digital-chemistry
-  - robotic-synthesis
-  - molecule-discovery
-  - closed-loop-automation
+- chemputation
+- programmable-chemistry
+- digital-chemistry
+- robotic-synthesis
+- molecule-discovery
+- closed-loop-automation
 access:
-  - saas
-  - private-deployment
+- saas
+- private-deployment
 references:
-  - title: Chemify 官方网站
-    url: https://www.chemify.io/
-  - title: Chemify Technology Page
-    url: https://www.chemify.io/technology
+- title: Chemify 官方网站
+  url: https://www.chemify.io/
+- title: Chemify Technology Page
+  url: https://www.chemify.io/technology

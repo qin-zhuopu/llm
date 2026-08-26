@@ -3,80 +3,80 @@ name_en: Li Mind GPT
 company: 理想汽车
 domain: automotive
 status: released
-release_date: "2023-12"
+release_date: 2023-12
 website: https://www.lixiang.com
-description: >-
-  理想汽车自主研发的车载大语言模型，是理想汽车AI战略的核心组成部分。截至2025年1月已部署于超50万辆理想汽车中，
-  日均处理1.2亿次交互请求，任务执行准确率达98.7%。2025年3月发布MindVLA架构，
-  统一空间智能、语言智能和行为智能，赋能L4级自动驾驶。支持多方言语音识别、免唤醒激活和全场景自主驾驶功能，
-  是目前国内车载大模型量产规模最大的应用之一。
+description: 理想汽车自主研发的车载大语言模型，是理想汽车AI战略的核心组成部分。截至2025年1月已部署于超50万辆理想汽车中， 日均处理1.2亿次交互请求，任务执行准确率达98.7%。2025年3月发布MindVLA架构，
+  统一空间智能、语言智能和行为智能，赋能L4级自动驾驶。支持多方言语音识别、免唤醒激活和全场景自主驾驶功能， 是目前国内车载大模型量产规模最大的应用之一。
 parameters: 未公开
 architecture: MindVLA (Vision-Language-Action unified architecture)
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模中文通用语料和车载场景文本进行基础预训练
-    - name: continual-pre-training
-      description: 使用车辆功能手册、驾驶数据、导航POI数据等汽车领域语料进行持续预训练
-    - name: sft
-      description: 基于50万+辆车实际交互数据进行监督微调，优化语音指令理解和车辆控制
-    - name: rlhf
-      description: 基于用户满意度和任务执行成功率反馈进行偏好对齐
-    - name: fine-tuning
-      description: MindVLA架构训练，融合视觉感知、语言理解和行为决策的多模态对齐
-  context_length: "32K"
+  - name: pre-training
+    description: 基于大规模中文通用语料和车载场景文本进行基础预训练
+  - name: continual-pre-training
+    description: 使用车辆功能手册、驾驶数据、导航POI数据等汽车领域语料进行持续预训练
+  - name: sft
+    description: 基于50万+辆车实际交互数据进行监督微调，优化语音指令理解和车辆控制
+  - name: rlhf
+    description: 基于用户满意度和任务执行成功率反馈进行偏好对齐
+  - name: fine-tuning
+    description: MindVLA架构训练，融合视觉感知、语言理解和行为决策的多模态对齐
+  context_length: 32K
 datasets:
-  - name: 车载交互数据
-    description: 50万+辆车日均1.2亿次交互产生的用户对话和指令执行数据
-    size: "1.2亿次/天交互"
-    type: sft
-  - name: 自动驾驶视觉数据
-    description: 车辆摄像头和传感器采集的驾驶场景视觉数据
-    type: pre-training
-  - name: 导航POI与路况数据
-    description: 全国范围导航数据、兴趣点和实时路况信息
-    type: sft
+- name: 车载交互数据
+  description: 50万+辆车日均1.2亿次交互产生的用户对话和指令执行数据
+  size: 1.2亿次/天交互
+  type: sft
+- name: 自动驾驶视觉数据
+  description: 车辆摄像头和传感器采集的驾驶场景视觉数据
+  type: pre-training
+- name: 导航POI与路况数据
+  description: 全国范围导航数据、兴趣点和实时路况信息
+  type: sft
 tech_stack:
   framework: PyTorch
   techniques:
-    - MindVLA (Vision-Language-Action)
-    - Multi-dialect ASR (多方言语音识别)
-    - Wake-free activation (免唤醒)
-    - OTA continuous update
-    - On-device inference
-    - Multi-modal fusion (视觉+语言+行为)
+  - MindVLA (Vision-Language-Action)
+  - Multi-dialect ASR (多方言语音识别)
+  - Wake-free activation (免唤醒)
+  - OTA continuous update
+  - On-device inference
+  - Multi-modal fusion (视觉+语言+行为)
 benchmarks:
-  - name: 任务执行准确率
-    score: "98.7%"
-    metric: accuracy
-    comparison: "50万+辆车实际运行数据统计"
-  - name: 日均交互处理量
-    score: "1.2亿次"
-    metric: throughput
-    comparison: "国内车载大模型最大量产规模"
-  - name: 部署车辆数
-    score: "50万+"
-    metric: deployment scale
-    comparison: "2025年1月数据，国内最大规模车载LLM部署"
+- name: 任务执行准确率
+  score: 98.7%
+  metric: accuracy
+  comparison: 50万+辆车实际运行数据统计
+  source: self-reported
+- name: 日均交互处理量
+  score: 1.2亿次
+  metric: throughput
+  comparison: 国内车载大模型最大量产规模
+  source: self-reported
+- name: 部署车辆数
+  score: 50万+
+  metric: deployment scale
+  comparison: 2025年1月数据，国内最大规模车载LLM部署
+  source: self-reported
 capabilities:
-  - 智能语音交互：支持多方言、自由指令、免唤醒激活
-  - 多轮对话：上下文理解、记忆历史和连贯交互
-  - 车辆自然语言控制(空调、座椅、车窗、导航)
-  - 导航与出行辅助(路况查询、个性化推荐)
-  - MindVLA全场景自主驾驶(自适应巡航、自动变道、自动泊车)
-  - 个性化驾驶体验(用户画像学习与定制服务)
+- 智能语音交互：支持多方言、自由指令、免唤醒激活
+- 多轮对话：上下文理解、记忆历史和连贯交互
+- 车辆自然语言控制(空调、座椅、车窗、导航)
+- 导航与出行辅助(路况查询、个性化推荐)
+- MindVLA全场景自主驾驶(自适应巡航、自动变道、自动泊车)
+- 个性化驾驶体验(用户画像学习与定制服务)
 tags:
-  - llm
-  - automotive
-  - voice-assistant
-  - autonomous-driving
-  - in-car-computing
-  - MindVLA
-  - multi-modal
+- llm
+- automotive
+- voice-assistant
+- autonomous-driving
+- in-car-computing
+- MindVLA
+- multi-modal
 access:
-  - internal-only
+- internal-only
 references:
-  - title: 理想汽车官方网站
-    url: https://www.lixiang.com
-  - title: MindVLA架构发布
-    url: https://www.lixiang.com/technology
+- title: 理想汽车官方网站
+  url: https://www.lixiang.com
+- title: MindVLA架构发布
+  url: https://www.lixiang.com/technology

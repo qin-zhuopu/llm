@@ -3,70 +3,71 @@ name_en: DriveGPT
 company: 毫末智行
 domain: automotive
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.haomo.ai
-description: >-
-  DriveGPT（雪湖·海若）是毫末智行于2023年AI Day发布的自动驾驶生成式大模型，采用自回归 Transformer 架构将驾驶行为建模为序列化决策过程，
-  提出"Drive Language"驾驶语言概念将复杂驾驶行为编码为结构化语义表示（含位置、速度、加速度、方向等token）。
-  基于毫末智行海量真实道路数据训练，具备 Scaling Law 可扩展性设计，为城市NOH和高速NOH等量产智驾功能提供核心AI引擎，
-  已搭载在多款量产车型上。
+description: DriveGPT（雪湖·海若）是毫末智行于2023年AI Day发布的自动驾驶生成式大模型，采用自回归 Transformer 架构将驾驶行为建模为序列化决策过程，
+  提出"Drive Language"驾驶语言概念将复杂驾驶行为编码为结构化语义表示（含位置、速度、加速度、方向等token）。 基于毫末智行海量真实道路数据训练，具备
+  Scaling Law 可扩展性设计，为城市NOH和高速NOH等量产智驾功能提供核心AI引擎， 已搭载在多款量产车型上。
 parameters: 未公开(可扩展架构)
 architecture: decoder-only transformer (autoregressive)
 training:
   stages:
-    - name: pre-training
-      description: 基于毫末智行海量真实道路驾驶数据进行自回归预训练，学习人类驾驶行为模式，覆盖城市道路、高速公路、停车场等场景
-    - name: fine-tuning
-      description: 针对特定场景（城市NOH、高速NOH）使用高质量标注驾驶数据进行场景微调
-    - name: rlhf
-      description: 基于人类驾驶偏好和安全约束进行强化学习优化，确保决策符合人类驾驶习惯和安全规范
+  - name: pre-training
+    description: 基于毫末智行海量真实道路驾驶数据进行自回归预训练，学习人类驾驶行为模式，覆盖城市道路、高速公路、停车场等场景
+  - name: fine-tuning
+    description: 针对特定场景（城市NOH、高速NOH）使用高质量标注驾驶数据进行场景微调
+  - name: rlhf
+    description: 基于人类驾驶偏好和安全约束进行强化学习优化，确保决策符合人类驾驶习惯和安全规范
 datasets:
-  - name: 毫末智行真实道路驾驶数据
-    description: 覆盖城市道路、高速公路、停车场等多种场景的大规模真实驾驶日志，包含传感器数据和行为标注
-    type: pre-training
-  - name: 多智能体交互数据
-    description: 复杂交通场景中多个交通参与者的交互行为数据，用于训练多智能体建模能力
-    type: sft
+- name: 毫末智行真实道路驾驶数据
+  description: 覆盖城市道路、高速公路、停车场等多种场景的大规模真实驾驶日志，包含传感器数据和行为标注
+  type: pre-training
+- name: 多智能体交互数据
+  description: 复杂交通场景中多个交通参与者的交互行为数据，用于训练多智能体建模能力
+  type: sft
 tech_stack:
   framework: PyTorch
   inference: TensorRT (车载推理优化)
   techniques:
-    - autoregressive sequence modeling
-    - Drive Language tokenization
-    - multi-agent interaction modeling
-    - scaling law architecture design
-    - multi-modal sensor fusion
-    - attention mechanism for spatial-temporal reasoning
+  - autoregressive sequence modeling
+  - Drive Language tokenization
+  - multi-agent interaction modeling
+  - scaling law architecture design
+  - multi-modal sensor fusion
+  - attention mechanism for spatial-temporal reasoning
 benchmarks:
-  - name: 城市NOH接管率
-    score: "<0.1次/百公里"
-    metric: disengagement rate
-    comparison: "vs 行业平均水平显著降低人工接管频次"
-  - name: 场景覆盖率
-    score: "95%+"
-    metric: scenario coverage
-    comparison: "覆盖城市/高速/停车场等95%以上常见驾驶场景"
-  - name: 行为预测准确率
-    score: "90%+"
-    metric: accuracy
-    comparison: "对其他交通参与者未来轨迹预测 vs 传统规则方法提升30%+"
+- name: 城市NOH接管率
+  score: <0.1次/百公里
+  metric: disengagement rate
+  comparison: vs 行业平均水平显著降低人工接管频次
+  source: self-reported
+- name: 场景覆盖率
+  score: 95%+
+  metric: scenario coverage
+  comparison: 覆盖城市/高速/停车场等95%以上常见驾驶场景
+  source: self-reported
+- name: 行为预测准确率
+  score: 90%+
+  metric: accuracy
+  comparison: 对其他交通参与者未来轨迹预测 vs 传统规则方法提升30%+
+  source: self-reported
 capabilities:
-  - 自回归行为规划与多交通参与者轨迹预测
-  - Drive Language 驾驶语言将复杂行为编码为结构化决策序列
-  - 多模态传感器输入理解复杂交通场景
-  - 决策推理与可解释性（能解释特定驾驶选择原因）
-  - 多智能体交互建模预测整体交通流演化
-  - Scaling Law 可扩展设计支持持续性能提升
+- 自回归行为规划与多交通参与者轨迹预测
+- Drive Language 驾驶语言将复杂行为编码为结构化决策序列
+- 多模态传感器输入理解复杂交通场景
+- 决策推理与可解释性（能解释特定驾驶选择原因）
+- 多智能体交互建模预测整体交通流演化
+- Scaling Law 可扩展设计支持持续性能提升
 tags:
-  - autonomous-driving
-  - decision-making
-  - generative-model
-  - autoregressive
-  - behavior-planning
-  - drive-language
-  - scaling-law
+- autonomous-driving
+- decision-making
+- generative-model
+- autoregressive
+- behavior-planning
+- drive-language
+- scaling-law
 access:
-  - internal-only
+- internal-only
 references:
-  - title: 毫末智行官方网站
-    url: https://www.haomo.ai
+- title: 毫末智行官方网站
+  url: https://www.haomo.ai

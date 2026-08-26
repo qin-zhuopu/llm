@@ -3,9 +3,11 @@ name_en: KPMG Clara & AI Solutions
 company: KPMG
 domain: accounting-audit
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://kpmg.com/us/en/ai.html
-description: KPMG 基于生成式 AI 技术构建的企业级审计与会计智能解决方案套件，核心产品包括 KPMG Clara 智能审计平台、KPMG Ignite AI 平台和 KPMG Blaze 技术现代化工具。通过与 OpenAI 战略联盟（Elite Partner）整合大语言模型能力，为审计、税务、咨询等专业领域提供 AI 驱动的决策支持、风险识别和效率提升，已获得 HFS Research、IDC MarketScape 等多个行业权威机构认可为 AI 服务市场领导者。
+description: KPMG 基于生成式 AI 技术构建的企业级审计与会计智能解决方案套件，核心产品包括 KPMG Clara 智能审计平台、KPMG Ignite
+  AI 平台和 KPMG Blaze 技术现代化工具。通过与 OpenAI 战略联盟（Elite Partner）整合大语言模型能力，为审计、税务、咨询等专业领域提供
+  AI 驱动的决策支持、风险识别和效率提升，已获得 HFS Research、IDC MarketScape 等多个行业权威机构认可为 AI 服务市场领导者。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GPT-4
@@ -36,19 +38,23 @@ benchmarks:
 - name: HFS Research - Generative Enterprise Services 2025
   score: Market Leader
   metric: industry_ranking
-  comparison: "被评为生成式企业服务市场领导者，以人本和风险适当方法领先"
+  comparison: 被评为生成式企业服务市场领导者，以人本和风险适当方法领先
+  source: self-reported
 - name: IDC MarketScape - AI Services 2025
   score: Leader
   metric: industry_ranking
-  comparison: "IDC MarketScape 全球人工智能服务厂商评估认证"
+  comparison: IDC MarketScape 全球人工智能服务厂商评估认证
+  source: self-reported
 - name: HFS Horizons - Agentic Services 2026
   score: Leader
   metric: industry_ranking
-  comparison: "智能体服务领域获得认可"
+  comparison: 智能体服务领域获得认可
+  source: self-reported
 - name: Forrester Wave - Automation Fabric Services Q4 2024
   score: Leader
   metric: industry_ranking
-  comparison: "自动化架构服务领域领先位置"
+  comparison: 自动化架构服务领域领先位置
+  source: self-reported
 capabilities:
 - AI 驱动的智能审计，聚焦风险所在提升审计质量
 - 自动化全软件开发生命周期，半时半费交付新能力（KPMG Blaze）

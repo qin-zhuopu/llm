@@ -3,9 +3,11 @@ name_en: Siemens Industrial Copilot / Eigen Engineering Agent
 company: 西门子 (Siemens)
 domain: manufacturing
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html
-description: 西门子工业 Copilot 及 Eigen Engineering Agent 是面向工业自动化工程的专用 AI 系统。Eigen Engineering Agent 为超过60万 TIA Portal 用户提供服务，能够自主规划、编写代码、配置和验证自动化工程任务，将 AI 从建议生成提升至端到端任务执行。西门子与 NVIDIA 合作构建工业 AI 操作系统，覆盖产品设计、工程、生产到运维的全价值链。
+description: 西门子工业 Copilot 及 Eigen Engineering Agent 是面向工业自动化工程的专用 AI 系统。Eigen Engineering
+  Agent 为超过60万 TIA Portal 用户提供服务，能够自主规划、编写代码、配置和验证自动化工程任务，将 AI 从建议生成提升至端到端任务执行。西门子与
+  NVIDIA 合作构建工业 AI 操作系统，覆盖产品设计、工程、生产到运维的全价值链。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GPT-4
@@ -34,13 +36,15 @@ datasets:
   type: sft
 benchmarks:
 - name: TIA Portal User Base
-  score: "600000+"
+  score: 600000+
   metric: user_reach
-  comparison: "面向超过60万TIA Portal用户提供AI工程辅助"
+  comparison: 面向超过60万TIA Portal用户提供AI工程辅助
+  source: self-reported
 - name: Engineering Task Automation
-  score: "端到端执行"
+  score: 端到端执行
   metric: capability_level
-  comparison: "vs 传统Copilot建议模式: 从生成建议升级为自主规划-编码-配置-验证全流程执行"
+  comparison: 'vs 传统Copilot建议模式: 从生成建议升级为自主规划-编码-配置-验证全流程执行'
+  source: self-reported
 capabilities:
 - 自主规划、编写和验证PLC自动化程序代码
 - TIA Portal工程任务端到端自动化执行

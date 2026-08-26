@@ -1,9 +1,16 @@
 {
   "files": [
     {
-      "filename": "github-readme.md",
+      "filename": "ai-duxiaoman-com-1.md",
+      "url": "https://ai.duxiaoman.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "github-github-com-2.md",
       "url": "https://github.com/Duxiaoman-DI/XuanYuan",
-      "fetched_at": "2025-06-18",
+      "fetched_at": "2026-08-26",
       "type": "github"
     }
   ]

@@ -3,84 +3,84 @@ name_en: Xueersi MathGPT
 company: 好未来
 domain: education
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.100tal.com
-description: >-
-  学而思MathGPT是好未来集团自主研发的教育领域大模型，专注于数学解题与个性化学习。
-  深度融合学而思22年教育沉淀与数据积累，通过AI技术提供个性化学习路径、AI学情诊断及智能教学内容生成。
-  已集成于学而思学习机T6系列旗舰产品、华为鸿蒙教育空间等终端，与华为平板达成独家战略合作。
-  获新华网"AI+教育融合发展案例"评选认可，服务中国数百万学生家庭。
+description: 学而思MathGPT是好未来集团自主研发的教育领域大模型，专注于数学解题与个性化学习。 深度融合学而思22年教育沉淀与数据积累，通过AI技术提供个性化学习路径、AI学情诊断及智能教学内容生成。
+  已集成于学而思学习机T6系列旗舰产品、华为鸿蒙教育空间等终端，与华为平板达成独家战略合作。 获新华网"AI+教育融合发展案例"评选认可，服务中国数百万学生家庭。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模中文通用语料和教育领域文本(教材、教辅、题库)进行预训练
-    - name: continual-pre-training
-      description: 使用好未来22年积累的教育内容(数学题库、解题过程、教学方案)进行领域持续预训练
-    - name: sft
-      description: 基于专业教师标注的解题步骤、知识点讲解和学习路径规划数据进行监督微调
-    - name: rlhf
-      description: 结合学生学习效果和教师评价反馈优化教学引导策略
-  context_length: "32K"
+  - name: pre-training
+    description: 基于大规模中文通用语料和教育领域文本(教材、教辅、题库)进行预训练
+  - name: continual-pre-training
+    description: 使用好未来22年积累的教育内容(数学题库、解题过程、教学方案)进行领域持续预训练
+  - name: sft
+    description: 基于专业教师标注的解题步骤、知识点讲解和学习路径规划数据进行监督微调
+  - name: rlhf
+    description: 结合学生学习效果和教师评价反馈优化教学引导策略
+  context_length: 32K
 datasets:
-  - name: 好未来教育知识库
-    description: 22年积累的教材解析、题库、解题方法和教学方案
-    type: pre-training
-  - name: 数学解题标注数据
-    description: 覆盖小学到高中各年级数学题目的完整解题过程标注
-    type: sft
-  - name: 学情诊断数据
-    description: 学生学习行为、掌握程度和知识薄弱点的分析数据
-    type: sft
-  - name: AI互动课堂数据
-    description: 学生与AI家教的互动对话和学习效果评估数据
-    type: rlhf
+- name: 好未来教育知识库
+  description: 22年积累的教材解析、题库、解题方法和教学方案
+  type: pre-training
+- name: 数学解题标注数据
+  description: 覆盖小学到高中各年级数学题目的完整解题过程标注
+  type: sft
+- name: 学情诊断数据
+  description: 学生学习行为、掌握程度和知识薄弱点的分析数据
+  type: sft
+- name: AI互动课堂数据
+  description: 学生与AI家教的互动对话和学习效果评估数据
+  type: rlhf
 tech_stack:
   framework: PyTorch
   inference: 学而思AI推理平台 + 端侧推理(学习机)
   techniques:
-    - 个性化学习路径规划
-    - AI学情诊断算法
-    - 知识图谱与知识点关联
-    - 端侧推理优化(学习机部署)
-    - 多模态交互(语音+手写识别)
+  - 个性化学习路径规划
+  - AI学情诊断算法
+  - 知识图谱与知识点关联
+  - 端侧推理优化(学习机部署)
+  - 多模态交互(语音+手写识别)
 benchmarks:
-  - name: 数学解题准确率
-    score: "92%"
-    metric: accuracy
-    comparison: "vs 通用大模型约75%，针对K12数学场景优化"
-  - name: 学习效率提升
-    score: "30%"
-    metric: improvement
-    comparison: "使用AI家教后学生学习效率提升(学而思内部评估)"
-  - name: 知识点覆盖率
-    score: "98%"
-    metric: coverage
-    comparison: "覆盖K12全年级数学知识点体系"
+- name: 数学解题准确率
+  score: 92%
+  metric: accuracy
+  comparison: vs 通用大模型约75%，针对K12数学场景优化
+  source: self-reported
+- name: 学习效率提升
+  score: 30%
+  metric: improvement
+  comparison: 使用AI家教后学生学习效率提升(学而思内部评估)
+  source: self-reported
+- name: 知识点覆盖率
+  score: 98%
+  metric: coverage
+  comparison: 覆盖K12全年级数学知识点体系
+  source: self-reported
 capabilities:
-  - 个性化学习路径规划与智能推荐
-  - AI学情诊断与精准分析
-  - 数学垂直领域高精度解题与步骤讲解
-  - 智能教学内容生成与互动课堂
-  - 端侧部署(学习机T6系列旗舰产品)
-  - 华为鸿蒙生态学习中心集成
+- 个性化学习路径规划与智能推荐
+- AI学情诊断与精准分析
+- 数学垂直领域高精度解题与步骤讲解
+- 智能教学内容生成与互动课堂
+- 端侧部署(学习机T6系列旗舰产品)
+- 华为鸿蒙生态学习中心集成
 tags:
-  - 教育大模型
-  - 数学大模型
-  - ai家教
-  - 个性化学习
-  - 智能硬件
-  - 学情诊断
+- 教育大模型
+- 数学大模型
+- ai家教
+- 个性化学习
+- 智能硬件
+- 学情诊断
 access:
-  - private-deployment
-  - saas
+- private-deployment
+- saas
 api:
   available: false
 references:
-  - title: 好未来官方网站
-    url: https://www.100tal.com
-  - title: 新华网"AI+教育融合发展案例"
-    url: https://www.xinhuanet.com
-  - title: 华为平板与学而思独家战略合作
-    url: https://www.100tal.com/zh-cn/news/detail/3034
+- title: 好未来官方网站
+  url: https://www.100tal.com
+- title: 新华网"AI+教育融合发展案例"
+  url: https://www.xinhuanet.com
+- title: 华为平板与学而思独家战略合作
+  url: https://www.100tal.com/zh-cn/news/detail/3034

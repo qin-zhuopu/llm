@@ -3,7 +3,7 @@ name_en: Cainiao AI
 company: 菜鸟网络
 domain: logistics-supplychain
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.cainiao.com
 description: 菜鸟网络打造的物流科技智能平台，融合深度强化学习、时序预测和计算机视觉技术，覆盖揽收、运输、仓储到配送的全链路数字化。核心路由引擎具备毫秒级路径优化计算能力，日均处理数亿级物流数据，服务覆盖200+国家和地区。系统在双11等大促期间支撑日处理数十亿包裹级别的超高峰值运营，同时驱动AGV自动化仓储实现无人化运营。
 parameters: 未公开
@@ -30,7 +30,7 @@ tech_stack:
 datasets:
 - name: 物流路由历史数据
   description: 全链路物流路由记录，包含配送路径、时效、交通状况和运力分布信息
-  size: "日均数亿级"
+  size: 日均数亿级
   type: pre-training
 - name: 仓储运营数据
   description: 仓内AGV调度轨迹、库位热度分布和包裹分拣视频数据
@@ -43,21 +43,25 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 路径优化响应时间
-  score: "毫秒级"
+  score: 毫秒级
   metric: latency
-  comparison: "核心VRP路由引擎在毫秒级完成复杂路径优化计算"
+  comparison: 核心VRP路由引擎在毫秒级完成复杂路径优化计算
+  source: self-reported
 - name: 全球服务覆盖
-  score: "200+"
+  score: 200+
   metric: country_coverage
-  comparison: "服务中国及海外200多个国家和地区的物流网络"
+  comparison: 服务中国及海外200多个国家和地区的物流网络
+  source: self-reported
 - name: 日均数据处理量
-  score: "数亿级"
+  score: 数亿级
   metric: daily_throughput
-  comparison: "日均处理数亿级物流数据，支撑双11超高峰值"
+  comparison: 日均处理数亿级物流数据，支撑双11超高峰值
+  source: self-reported
 - name: 仓储自动化
-  score: "无人化运营"
+  score: 无人化运营
   metric: automation_level
-  comparison: "AGV智能调度实现仓内无人化运营"
+  comparison: AGV智能调度实现仓内无人化运营
+  source: self-reported
 capabilities:
 - 基于深度强化学习的VRP实时智能路由规划（毫秒级）
 - AGV智能调度与仓内无人化运营

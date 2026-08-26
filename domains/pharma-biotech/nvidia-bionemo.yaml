@@ -41,17 +41,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 蛋白质结构预测精度
-  score: "接近AlphaFold2水平"
+  score: 接近AlphaFold2水平
   metric: TM-score
-  comparison: "vs AlphaFold2: 在蛋白质结构预测任务上接近最先进水平"
+  comparison: 'vs AlphaFold2: 在蛋白质结构预测任务上接近最先进水平'
+  source: self-reported
 - name: 分子生成多样性
-  score: "高"
+  score: 高
   metric: diversity
-  comparison: "vs 传统分子生成方法: 生成分子具有更高的化学多样性和成药性"
+  comparison: 'vs 传统分子生成方法: 生成分子具有更高的化学多样性和成药性'
+  source: self-reported
 - name: 训练加速比
-  score: "显著加速"
+  score: 显著加速
   metric: speedup
-  comparison: "vs 单GPU训练: 利用多GPU分布式训练实现数十倍加速"
+  comparison: 'vs 单GPU训练: 利用多GPU分布式训练实现数十倍加速'
+  source: self-reported
 api:
   available: true
   endpoint: https://api.ngc.nvidia.com

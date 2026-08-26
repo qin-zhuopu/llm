@@ -3,9 +3,10 @@ name_en: Citrine Informatics AI Platform
 company: Citrine Informatics
 domain: materials-science
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.citrine.io
-description: Citrine Informatics开发的材料与化学领域AI平台，利用生成式AI技术帮助企业从已有数据中发掘更大价值，通过运行数千次虚拟实验找到更优解决方案。平台包含DataManager数据管理、VirtualLab虚拟实验室和Catalyst数字助手三大核心模块，已获ISO 27001认证，服务于特种化学品、塑料、涂料、食品饮料等多个行业的领先企业。
+description: Citrine Informatics开发的材料与化学领域AI平台，利用生成式AI技术帮助企业从已有数据中发掘更大价值，通过运行数千次虚拟实验找到更优解决方案。平台包含DataManager数据管理、VirtualLab虚拟实验室和Catalyst数字助手三大核心模块，已获ISO
+  27001认证，服务于特种化学品、塑料、涂料、食品饮料等多个行业的领先企业。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -32,17 +33,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 产品开发加速
-  score: "5倍"
+  score: 5倍
   metric: speedup
-  comparison: "工程团队使用Citrine平台开发更优产品的速度提升5倍"
+  comparison: 工程团队使用Citrine平台开发更优产品的速度提升5倍
+  source: self-reported
 - name: 虚拟实验规模
-  score: "数千次/项目"
+  score: 数千次/项目
   metric: virtual_experiments
-  comparison: "vs 传统实验: 在实验室实验前通过AI运行数千次虚拟实验筛选最优候选"
+  comparison: 'vs 传统实验: 在实验室实验前通过AI运行数千次虚拟实验筛选最优候选'
+  source: self-reported
 - name: 行业覆盖
-  score: "10+行业"
+  score: 10+行业
   metric: industry_coverage
-  comparison: "覆盖特种化学品、塑料、涂料、食品饮料、包装、金属合金等10+行业"
+  comparison: 覆盖特种化学品、塑料、涂料、食品饮料、包装、金属合金等10+行业
+  source: self-reported
 api:
   available: true
   protocol: rest

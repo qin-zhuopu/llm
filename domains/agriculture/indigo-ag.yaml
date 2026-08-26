@@ -4,7 +4,8 @@ company: Indigo Agriculture
 domain: agriculture
 status: released
 website: https://www.indigo-ag.com/
-description: Indigo Agriculture融合微生物组科学与人工智能技术的农业科技平台，是全球碳农业市场的创建者和领导者。核心技术包括微生物组AI分析（土壤微生物组测序、最佳种子-微生物组合推荐）、碳信用量化交易平台（MRV系统结合卫星遥感和AI模型）、以及数字化粮食交易市场Indigo Marketplace。服务已覆盖数千万英亩农田，是全球最大的农业碳信用项目之一。
+description: Indigo Agriculture融合微生物组科学与人工智能技术的农业科技平台，是全球碳农业市场的创建者和领导者。核心技术包括微生物组AI分析（土壤微生物组测序、最佳种子-微生物组合推荐）、碳信用量化交易平台（MRV系统结合卫星遥感和AI模型）、以及数字化粮食交易市场Indigo
+  Marketplace。服务已覆盖数千万英亩农田，是全球最大的农业碳信用项目之一。
 parameters: 未公开
 architecture: ensemble ML models
 training:
@@ -35,17 +36,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Carbon Credit Certification Accuracy
-  score: "科学可信"
+  score: 科学可信
   metric: verification_rate
-  comparison: "vs 传统测量方法: MRV系统结合遥感和地面实测，提供第三方认证级精度"
+  comparison: 'vs 传统测量方法: MRV系统结合遥感和地面实测，提供第三方认证级精度'
+  source: third-party
 - name: Coverage Scale
-  score: "数千万英亩"
+  score: 数千万英亩
   metric: coverage_area
-  comparison: "vs 同行: 全球最大农业碳信用项目之一"
+  comparison: 'vs 同行: 全球最大农业碳信用项目之一'
+  source: self-reported
 - name: Microbe-Seed Recommendation Accuracy
-  score: "显著增产"
+  score: 显著增产
   metric: yield_improvement
-  comparison: "vs 未处理对照: 通过最优微生物组合推荐实现产量提升"
+  comparison: 'vs 未处理对照: 通过最优微生物组合推荐实现产量提升'
+  source: self-reported
 capabilities:
 - 土壤微生物组高通量测序分析和多样性图谱构建
 - AI驱动的最佳种子-微生物涂层组合推荐

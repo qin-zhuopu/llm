@@ -4,14 +4,15 @@ company: Taranis
 domain: agriculture
 status: released
 website: https://www.taranis.com/
-description: Taranis是全球领先的AI作物智能平台，利用无人机采集亚毫米级超高分辨率叶片图像，结合超过5亿数据点训练的深度学习模型，自动识别病虫害、杂草、营养缺乏和田间健康状况。产品矩阵包括Ag Assistant生成式AI农艺引擎和Yield Impact产量预测技术。已与Syngenta建立战略合作，在北美、南美、欧洲等主要农业产区覆盖数百万英亩农田。
+description: Taranis是全球领先的AI作物智能平台，利用无人机采集亚毫米级超高分辨率叶片图像，结合超过5亿数据点训练的深度学习模型，自动识别病虫害、杂草、营养缺乏和田间健康状况。产品矩阵包括Ag
+  Assistant生成式AI农艺引擎和Yield Impact产量预测技术。已与Syngenta建立战略合作，在北美、南美、欧洲等主要农业产区覆盖数百万英亩农田。
 parameters: 未公开
 architecture: deep learning computer vision
 training:
   stages:
   - name: pre-training
     description: 基于超过5亿（500M+）数据点训练深度学习模型，数据来源于无人机采集的亚毫米级叶片图像，覆盖多种作物的病害、虫害、杂草和营养缺乏样本。
-    data_tokens: "500M+ data points"
+    data_tokens: 500M+ data points
   - name: fine-tuning
     description: 针对不同气候区、种植体系和作物类型进行持续微调。随着更多农田数据的采集，模型持续学习识别更多细微的病虫害变种。
 tech_stack:
@@ -33,17 +34,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Disease Detection Accuracy
-  score: "高精度"
+  score: 高精度
   metric: accuracy
-  comparison: "vs 人工田间巡查: 能够捕捉单片叶片上的早期病害症状，远超肉眼识别能力"
+  comparison: 'vs 人工田间巡查: 能够捕捉单片叶片上的早期病害症状，远超肉眼识别能力'
+  source: self-reported
 - name: Image Resolution
-  score: "亚毫米级"
+  score: 亚毫米级
   metric: resolution
-  comparison: "vs 卫星遥感: 分辨率远超卫星遥感和传统航拍，可识别单个害虫个体"
+  comparison: 'vs 卫星遥感: 分辨率远超卫星遥感和传统航拍，可识别单个害虫个体'
+  source: self-reported
 - name: Data Scale
-  score: "500M+"
+  score: 500M+
   metric: data_points
-  comparison: "vs 同行: 行业领先的训练数据规模"
+  comparison: 'vs 同行: 行业领先的训练数据规模'
+  source: self-reported
 capabilities:
 - 亚毫米级精度的真菌、细菌、病毒等作物病害早期识别
 - 害虫种类识别、虫口密度估计和危害程度评估

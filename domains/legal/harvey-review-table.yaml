@@ -5,14 +5,19 @@ domain: legal
 status: released
 release_date: 2026-08
 website: https://appliedcompute.com/case-studies/harvey-review-table
-description: 由 Applied Compute 与 Harvey 合作训练的专业法律文档审查模型，专为 Harvey Review Table 产品优化。基于 GLM 5.2 进行后训练，通过精心设计的多维奖励函数（结合答案正确性、schema 合规和引用质量）进行强化学习。最终模型 Answer Score 达 0.903（超越 Fable 5 的 0.867 和 GPT-5.6-Sol 的 0.857），引用精确率 84.1%，引用召回率 91.93%，相比基线 GLM 5.2 引用分数提升 15.38 个百分点，同时相比 Claude Sonnet 5 降低 54.8% 的单元成本。
+description: 由 Applied Compute 与 Harvey 合作训练的专业法律文档审查模型，专为 Harvey Review Table 产品优化。基于
+  GLM 5.2 进行后训练，通过精心设计的多维奖励函数（结合答案正确性、schema 合规和引用质量）进行强化学习。最终模型 Answer Score 达 0.903（超越
+  Fable 5 的 0.867 和 GPT-5.6-Sol 的 0.857），引用精确率 84.1%，引用召回率 91.93%，相比基线 GLM 5.2 引用分数提升
+  15.38 个百分点，同时相比 Claude Sonnet 5 降低 54.8% 的单元成本。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GLM 5.2
 training:
   stages:
   - name: post-training
-    description: 使用 AC2 平台进行强化学习后训练。在 Harvey 生产 Review Table harness 中训练，采用自定义多维奖励函数，分别评估 schema 合规、答案正确性和引用质量。奖励公式 r = b[(1-lambda) + lambda * q_cite]，其中 lambda=0.3，b = min(s_schema, s_correctness)，引用质量 q_cite = R_cite * P_cite。模型为单轮语义检索优化。
+    description: 使用 AC2 平台进行强化学习后训练。在 Harvey 生产 Review Table harness 中训练，采用自定义多维奖励函数，分别评估
+      schema 合规、答案正确性和引用质量。奖励公式 r = b[(1-lambda) + lambda * q_cite]，其中 lambda=0.3，b
+      = min(s_schema, s_correctness)，引用质量 q_cite = R_cite * P_cite。模型为单轮语义检索优化。
   context_length: 未公开
 tech_stack:
   framework: AC2 (Applied Compute Agent Cloud)
@@ -26,31 +31,39 @@ tech_stack:
   - Agentic retrieval (experimental with Qwen3.6-35B-A3B)
 datasets:
 - name: Harvey Review Table Synthetic Dataset
-  description: 合成法律文档数据集，基于开源法律数据（诉讼文件、合同、邮件等）构建。通过 frontier 模型模拟律师用户生成多样化查询，oracle agent 确定标准答案，经多轮人工质量审查。不使用任何客户数据。
+  description: 合成法律文档数据集，基于开源法律数据（诉讼文件、合同、邮件等）构建。通过 frontier 模型模拟律师用户生成多样化查询，oracle
+    agent 确定标准答案，经多轮人工质量审查。不使用任何客户数据。
   type: rlhf
 - name: Open-source legal corpus
-  description: 用于训练数据基础的开源法律文档语料库，包含 filings、contracts、emails 等多种文档类型，附带 metadata 和 embeddings 用于过滤去重
+  description: 用于训练数据基础的开源法律文档语料库，包含 filings、contracts、emails 等多种文档类型，附带 metadata
+    和 embeddings 用于过滤去重
   type: other
 benchmarks:
 - name: Review Table Answer Score
   score: 0.903
   metric: answer_score
-  comparison: "vs Fable 5: 0.867; vs GPT-5.6-Sol: 0.857; vs GLM 5.2 Base: +5.8pp"
+  comparison: 'vs Fable 5: 0.867; vs GPT-5.6-Sol: 0.857; vs GLM 5.2 Base: +5.8pp'
+  source: self-reported
 - name: Review Table Citation Precision
   score: 0.841
   metric: citation_precision
-  comparison: "vs GLM 5.2 Base: +15.38pp citation score improvement"
+  comparison: 'vs GLM 5.2 Base: +15.38pp citation score improvement'
+  source: self-reported
 - name: Review Table Citation Recall
   score: 0.9193
   metric: citation_recall
+  source: self-reported
 - name: Review Table Cost Efficiency
-  score: "54.8% cost reduction"
+  score: 54.8% cost reduction
   metric: cost_per_cell
-  comparison: "vs Claude Sonnet 5: 54.8% lower cost per cell"
+  comparison: 'vs Claude Sonnet 5: 54.8% lower cost per cell'
+  source: self-reported
 - name: Agentic Retrieval Token Efficiency (Qwen3.6-35B-A3B)
-  score: "50.3% fewer input tokens"
+  score: 50.3% fewer input tokens
   metric: token_efficiency
-  comparison: "Agentic harness vs single-turn: 50.3% fewer input tokens, 28.6% fewer output tokens at matched answer quality (0.799 vs 0.794)"
+  comparison: 'Agentic harness vs single-turn: 50.3% fewer input tokens, 28.6% fewer
+    output tokens at matched answer quality (0.799 vs 0.794)'
+  source: self-reported
 capabilities:
 - 大规模法律文档审查（支持 10000 个文件）
 - 高精度结构化信息提取与格式化输出

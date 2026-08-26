@@ -3,85 +3,86 @@ name_en: iFlytek Spark Agriculture
 company: 科大讯飞
 domain: agriculture
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.xfyun.cn
-description: >-
-  讯飞星火-农业大模型是科大讯飞基于星火认知大模型（参数规模超百亿）针对农业领域深度定制的垂直行业大模型，融合约500亿tokens农业语料进行持续预训练，
-  覆盖200+种农作物病虫害识别，整合气象、土壤和遥感数据，为农业生产提供从种植决策、病虫害诊断到产量预测的全链路智能服务，
-  已在安徽、江苏等省份农业部门试点应用。
-parameters: "100B+"
+description: 讯飞星火-农业大模型是科大讯飞基于星火认知大模型（参数规模超百亿）针对农业领域深度定制的垂直行业大模型，融合约500亿tokens农业语料进行持续预训练，
+  覆盖200+种农作物病虫害识别，整合气象、土壤和遥感数据，为农业生产提供从种植决策、病虫害诊断到产量预测的全链路智能服务， 已在安徽、江苏等省份农业部门试点应用。
+parameters: 100B+
 architecture: decoder-only transformer
 base_model: 星火认知大模型 V3.5/V4.0
 training:
   stages:
-    - name: pre-training
-      description: 星火大模型基座预训练，使用数万亿tokens中英文多模态语料
-      data_tokens: "数万亿tokens"
-      hardware: 昇腾910B集群
-    - name: continual-pre-training
-      description: 使用农业领域专业语料（农业论文、种植技术手册、气象报告、农业百科等）进行领域持续预训练
-      data_tokens: "50B"
-    - name: sft
-      description: 基于超10万条农业专家标注的指令数据进行监督微调，覆盖病虫害诊断、种植建议、政策咨询等任务
-  context_length: "8K-128K"
+  - name: pre-training
+    description: 星火大模型基座预训练，使用数万亿tokens中英文多模态语料
+    data_tokens: 数万亿tokens
+    hardware: 昇腾910B集群
+  - name: continual-pre-training
+    description: 使用农业领域专业语料（农业论文、种植技术手册、气象报告、农业百科等）进行领域持续预训练
+    data_tokens: 50B
+  - name: sft
+    description: 基于超10万条农业专家标注的指令数据进行监督微调，覆盖病虫害诊断、种植建议、政策咨询等任务
+  context_length: 8K-128K
 datasets:
-  - name: 农业领域语料
-    description: 农业论文、种植技术手册、气象数据报告、农业百科等专业文本
-    size: "50B tokens"
-    type: pre-training
-  - name: 农业专家标注指令数据
-    description: 覆盖病虫害诊断、种植建议、产量预测等农业任务的专家标注问答对
-    size: "100K+ samples"
-    type: sft
-  - name: 农作物病虫害图像数据集
-    description: 覆盖200+种病虫害的多标签图像数据，用于视觉模型训练
-    type: other
+- name: 农业领域语料
+  description: 农业论文、种植技术手册、气象数据报告、农业百科等专业文本
+  size: 50B tokens
+  type: pre-training
+- name: 农业专家标注指令数据
+  description: 覆盖病虫害诊断、种植建议、产量预测等农业任务的专家标注问答对
+  size: 100K+ samples
+  type: sft
+- name: 农作物病虫害图像数据集
+  description: 覆盖200+种病虫害的多标签图像数据，用于视觉模型训练
+  type: other
 tech_stack:
   framework: 讯飞自研训练框架(基于昇腾生态)
   inference: 讯飞开放平台推理引擎
   techniques:
-    - ViT视觉编码器
-    - 多模态对齐
-    - 知识图谱增强
-    - RAG检索增强生成
-    - 方言语音识别集成
+  - ViT视觉编码器
+  - 多模态对齐
+  - 知识图谱增强
+  - RAG检索增强生成
+  - 方言语音识别集成
 benchmarks:
-  - name: 农作物病虫害识别准确率
-    score: "92%"
-    metric: accuracy
-    comparison: "覆盖200+种常见病虫害，vs 传统图像分类模型约85%"
-  - name: 农业知识问答
-    score: "88%"
-    metric: accuracy
-    comparison: "vs 通用大模型(GPT-4)在农业领域约75%"
-  - name: 产量预测误差率
-    score: "8%"
-    metric: MAPE
-    comparison: "vs 传统统计模型误差率15-20%"
+- name: 农作物病虫害识别准确率
+  score: 92%
+  metric: accuracy
+  comparison: 覆盖200+种常见病虫害，vs 传统图像分类模型约85%
+  source: self-reported
+- name: 农业知识问答
+  score: 88%
+  metric: accuracy
+  comparison: vs 通用大模型(GPT-4)在农业领域约75%
+  source: self-reported
+- name: 产量预测误差率
+  score: 8%
+  metric: MAPE
+  comparison: vs 传统统计模型误差率15-20%
+  source: self-reported
 capabilities:
-  - 200+种农作物病虫害多模态智能诊断与防治建议
-  - 结合气象土壤数据的精准种植决策推荐
-  - 卫星遥感和物联网数据融合的产量预测
-  - 方言语音交互降低农户使用门槛
-  - 农业政策法规智能解读
-  - 智能施肥和灌溉方案优化
+- 200+种农作物病虫害多模态智能诊断与防治建议
+- 结合气象土壤数据的精准种植决策推荐
+- 卫星遥感和物联网数据融合的产量预测
+- 方言语音交互降低农户使用门槛
+- 农业政策法规智能解读
+- 智能施肥和灌溉方案优化
 tags:
-  - 农业大模型
-  - 病虫害诊断
-  - 精准农业
-  - 多模态
-  - 星火大模型
-  - 国产算力
+- 农业大模型
+- 病虫害诊断
+- 精准农业
+- 多模态
+- 星火大模型
+- 国产算力
 access:
-  - api
-  - private-deployment
+- api
+- private-deployment
 api:
   available: true
   documentation: https://www.xfyun.cn/doc/
   protocol: proprietary
   auth_method: API Key
 references:
-  - title: 讯飞开放平台
-    url: https://www.xfyun.cn
-  - title: 星火认知大模型
-    url: https://xinghuo.xfyun.cn
+- title: 讯飞开放平台
+  url: https://www.xfyun.cn
+- title: 星火认知大模型
+  url: https://xinghuo.xfyun.cn

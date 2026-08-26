@@ -3,9 +3,11 @@ name_en: Scale AI Donovan
 company: Scale AI
 domain: aerospace-defense
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://scale.com/donovan
-description: Scale AI开发的军事和国防领域AI Agent部署平台Donovan，支持在保密和断网环境中快速定制、评估和部署任务级AI智能体。基于无代码Agent Factory，集成多种前沿模型（如Defense Llama、Gemma、Llama 3.3等），为作战人员提供从概念到战场的快速AI能力部署，获得DISA IL4和FedRAMP High认证。
+description: Scale AI开发的军事和国防领域AI Agent部署平台Donovan，支持在保密和断网环境中快速定制、评估和部署任务级AI智能体。基于无代码Agent
+  Factory，集成多种前沿模型（如Defense Llama、Gemma、Llama 3.3等），为作战人员提供从概念到战场的快速AI能力部署，获得DISA
+  IL4和FedRAMP High认证。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model:
@@ -44,19 +46,23 @@ benchmarks:
 - name: 模型事实准确性
   score: 0.91
   metric: factual_accuracy
-  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.91 vs 0.81"
+  comparison: 'Llama 3.1 70B vs Scale Gemma 7B: 0.91 vs 0.81'
+  source: self-reported
 - name: 幻觉率
   score: 0.14
   metric: hallucination_rate
-  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.14 vs 0.24（越低越好）"
+  comparison: 'Llama 3.1 70B vs Scale Gemma 7B: 0.14 vs 0.24（越低越好）'
+  source: self-reported
 - name: 上下文召回率
   score: 0.79
   metric: context_recall
-  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 0.79 vs 0.71"
+  comparison: 'Llama 3.1 70B vs Scale Gemma 7B: 0.79 vs 0.71'
+  source: self-reported
 - name: P95延迟
-  score: "2.1s"
+  score: 2.1s
   metric: latency_p95
-  comparison: "Llama 3.1 70B vs Scale Gemma 7B: 2.1s vs 1.4s（精度与延迟权衡）"
+  comparison: 'Llama 3.1 70B vs Scale Gemma 7B: 2.1s vs 1.4s（精度与延迟权衡）'
+  source: self-reported
 api:
   available: true
   protocol: rest

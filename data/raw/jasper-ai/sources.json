@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "filename": "jasper-ai-1.md",
+      "url": "https://www.jasper.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "app-jasper-ai-2.md",
+      "url": "https://app.jasper.ai/auth/signup",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://community.jasper.ai/c/jasper-foundations/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "removed-contains-thirdparty-secret",
+      "note": "fetched page contained embedded third-party token; content removed, url retained"
+    },
+    {
+      "filename": "community-jasper-ai-4.md",
+      "url": "https://community.jasper.ai/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "url": "https://community.jasper.ai/s/learn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "removed-contains-thirdparty-secret",
+      "note": "fetched page contained embedded third-party token; content removed, url retained"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ name_en: SF Tech AI
 company: 顺丰科技
 domain: logistics-supplychain
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.sf-tech.com.cn
 description: 顺丰科技基于物流与供应链场景深度理解和行业头部公司数智化实践经验，构建的覆盖自然语言处理、多模态交互、智能决策等能力的行业垂直大模型体系，深度赋能物流行业收、转、运、派、营销、客服等全环节及供应链优化场景，支撑全网亿级运单的规划调度。
 parameters: 未公开
@@ -39,17 +39,20 @@ datasets:
   type: sft
 benchmarks:
 - name: 物流路径规划准确率
-  score: "95%+"
+  score: 95%+
   metric: accuracy
-  comparison: "vs 传统规则引擎: 显著提升规划效率与资源利用率"
+  comparison: 'vs 传统规则引擎: 显著提升规划效率与资源利用率'
+  source: self-reported
 - name: 全网运单调度效率
   score: 亿级/日
   metric: throughput
-  comparison: "vs 人工调度: 实现全网亿级运单智能规划调度"
+  comparison: 'vs 人工调度: 实现全网亿级运单智能规划调度'
+  source: self-reported
 - name: 数字孪生覆盖
-  score: "百余个中转场"
+  score: 百余个中转场
   metric: coverage
-  comparison: "已应用于百余个中转场与深圳机场货站"
+  comparison: 已应用于百余个中转场与深圳机场货站
+  source: self-reported
 api:
   available: true
   protocol: rest

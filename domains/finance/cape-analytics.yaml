@@ -3,7 +3,7 @@ name_en: CAPE Analytics
 company: CAPE Analytics
 domain: finance
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://capeanalytics.com/
 description: CAPE Analytics开发的AI驱动房产风险评估平台，面向保险和房地产行业，基于地理空间影像分析和计算机视觉技术，从卫星、航拍和街景影像中自动提取物业属性数据。核心能力包括屋顶状况评估、树木覆盖分析、野火风险评级、建筑状况评分等，将核保从数天缩短到数秒，覆盖美国大部分住宅和商业物业。
 parameters: 未公开
@@ -38,17 +38,20 @@ datasets:
   type: sft
 benchmarks:
 - name: 核保效率提升
-  score: "从数天到数秒"
+  score: 从数天到数秒
   metric: time_reduction
-  comparison: "vs 传统人工现场查勘: 核保从数天缩短到数秒获取物业数据"
+  comparison: 'vs 传统人工现场查勘: 核保从数天缩短到数秒获取物业数据'
+  source: self-reported
 - name: 物业覆盖范围
-  score: "美国大部分住宅和商业物业"
+  score: 美国大部分住宅和商业物业
   metric: coverage
-  comparison: "与多家卫星和航拍数据提供商合作确保数据时效性和覆盖广度"
+  comparison: 与多家卫星和航拍数据提供商合作确保数据时效性和覆盖广度
+  source: self-reported
 - name: 风险评估精度
-  score: "物业级细粒度"
+  score: 物业级细粒度
   metric: granularity
-  comparison: "vs 传统统计假设定价: 基于实际物业状况的精准定价"
+  comparison: 'vs 传统统计假设定价: 基于实际物业状况的精准定价'
+  source: self-reported
 api:
   available: true
   protocol: rest

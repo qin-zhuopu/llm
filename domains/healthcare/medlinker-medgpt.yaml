@@ -3,7 +3,7 @@ name_en: Medlinker MedGPT
 company: 医联（北京医联智数科技有限公司）
 domain: healthcare
 status: released
-release_date: "2023-05"
+release_date: 2023-05
 website: https://www.medlinker.com
 description: 医联MedGPT是医联集团开发的医疗领域大语言模型，通过"未来医生"App为患者提供AI辅助的在线问诊服务。系统覆盖临床医学26个二级学科方向、109个亚专科（覆盖率95%以上）、30000余种疾病，依托50000余份疾病指南/共识、800万余例问诊病例库和1200余条临床路径，实现真人医生与AI协同的循证医疗服务模式。所有诊疗建议均经临床医生严格复核确认。
 parameters: 未公开
@@ -40,17 +40,20 @@ datasets:
   type: sft
 benchmarks:
 - name: 亚专科覆盖率
-  score: "95%"
+  score: 95%
   metric: coverage
-  comparison: "覆盖26个二级学科、109个亚专科，超越大多数在线问诊平台"
+  comparison: 覆盖26个二级学科、109个亚专科，超越大多数在线问诊平台
+  source: self-reported
 - name: 疾病覆盖范围
-  score: "30000+"
+  score: 30000+
   metric: disease_coverage
-  comparison: "覆盖ICD 2000+病种，包括常见病和部分专科疾病"
+  comparison: 覆盖ICD 2000+病种，包括常见病和部分专科疾病
+  source: self-reported
 - name: 合理用药审计
-  score: "650+"
+  score: 650+
   metric: audit_algorithms
-  comparison: "650余个审计算法单元确保处方合理性，超过传统药师人工审核效率"
+  comparison: 650余个审计算法单元确保处方合理性，超过传统药师人工审核效率
+  source: self-reported
 capabilities:
 - 26个临床二级学科的AI辅助问诊与分诊
 - 基于循证医学的诊疗建议生成

@@ -3,9 +3,11 @@ name_en: CoCounsel Tax & Audit AI
 company: Thomson Reuters
 domain: accounting-audit
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://tax.thomsonreuters.com/en/products/cocounsel-tax
-description: CoCounsel Tax & Audit 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准为税务、审计和会计专业人员打造的 AI 助手。系统整合 Checkpoint 税务权威内容数据库和 Thomson Reuters 175年专业知识，基于 OpenAI GPT 和 Google Gemini 大语言模型，为高风险专业工作提供可防御、可验证的答案。所有输出均展示权威来源和推理过程，确保在监管审查中经得起检验。已超过100万用户信任使用。
+description: CoCounsel Tax & Audit 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准为税务、审计和会计专业人员打造的
+  AI 助手。系统整合 Checkpoint 税务权威内容数据库和 Thomson Reuters 175年专业知识，基于 OpenAI GPT 和 Google
+  Gemini 大语言模型，为高风险专业工作提供可防御、可验证的答案。所有输出均展示权威来源和推理过程，确保在监管审查中经得起检验。已超过100万用户信任使用。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model:
@@ -40,13 +42,15 @@ datasets:
   type: sft
 benchmarks:
 - name: User Trust Base
-  score: "1000000+"
+  score: 1000000+
   metric: active_users
-  comparison: "CoCounsel全产品线已超过100万用户信任使用"
+  comparison: CoCounsel全产品线已超过100万用户信任使用
+  source: self-reported
 - name: Professional Efficiency Gain
-  score: "90%日常工作可替代"
+  score: 90%日常工作可替代
   metric: coverage
-  comparison: "CFO反馈: 90%日常工作CoCounsel是完美解决方案（OMNIUX CFO）"
+  comparison: 'CFO反馈: 90%日常工作CoCounsel是完美解决方案（OMNIUX CFO）'
+  source: self-reported
 capabilities:
 - 基于 Checkpoint 权威内容的税务研究和法规查询
 - 审计工作底稿辅助和风险识别

@@ -2,69 +2,68 @@ name: Kebotix
 company: Kebotix
 domain: materials-science
 status: released
-release_date: "2019"
+release_date: '2019'
 website: https://www.kebotix.com/
-description: >-
-  Kebotix 是一家材料科学 AI 公司，将云技术、AI、物理建模和高级自动化结合于企业级平台，加速材料创新。
-  采用闭环设计范式 Predict-Produce-Prove（预测-生产-验证），配备自驱动实验室实现 24/7 全自动实验迭代，
-  为企业客户提供定制化 R&D 数字化解决方案，覆盖先进聚合物、电池材料、催化剂和特种化学品等领域，
-  显著缩短新材料从发现到市场的周期。
+description: Kebotix 是一家材料科学 AI 公司，将云技术、AI、物理建模和高级自动化结合于企业级平台，加速材料创新。 采用闭环设计范式 Predict-Produce-Prove（预测-生产-验证），配备自驱动实验室实现
+  24/7 全自动实验迭代， 为企业客户提供定制化 R&D 数字化解决方案，覆盖先进聚合物、电池材料、催化剂和特种化学品等领域， 显著缩短新材料从发现到市场的周期。
 parameters: 未公开
 architecture: graph neural network + physics-based modeling
 training:
   stages:
-    - name: pre-training
-      description: 基于材料科学文献、专利和公开数据库训练材料属性预测基础模型
-    - name: fine-tuning
-      description: 使用客户特定领域数据和自驱动实验室产生的闭环验证数据进行领域微调
-    - name: other
-      description: Predict-Produce-Prove 闭环迭代学习 - 每次实验验证结果自动反馈优化 AI 预测模型
+  - name: pre-training
+    description: 基于材料科学文献、专利和公开数据库训练材料属性预测基础模型
+  - name: fine-tuning
+    description: 使用客户特定领域数据和自驱动实验室产生的闭环验证数据进行领域微调
+  - name: other
+    description: Predict-Produce-Prove 闭环迭代学习 - 每次实验验证结果自动反馈优化 AI 预测模型
 datasets:
-  - name: 材料属性数据库
-    description: 公开材料数据库（如 Materials Project、AFLOW）及文献提取的材料属性数据
-    type: pre-training
-  - name: 自驱动实验室验证数据
-    description: 闭环实验产生的高质量合成-表征数据，持续扩充训练集
-    type: other
+- name: 材料属性数据库
+  description: 公开材料数据库（如 Materials Project、AFLOW）及文献提取的材料属性数据
+  type: pre-training
+- name: 自驱动实验室验证数据
+  description: 闭环实验产生的高质量合成-表征数据，持续扩充训练集
+  type: other
 tech_stack:
   framework: PyTorch
   techniques:
-    - physics-based modeling
-    - machine learning property prediction
-    - closed-loop active learning
-    - self-driving lab automation
-    - Bayesian optimization
-    - graph neural networks
+  - physics-based modeling
+  - machine learning property prediction
+  - closed-loop active learning
+  - self-driving lab automation
+  - Bayesian optimization
+  - graph neural networks
 benchmarks:
-  - name: R&D 周期加速
-    score: "5-10x"
-    metric: time-to-market reduction
-    comparison: "vs 传统 Edisonian 试错方法缩短5-10倍"
-  - name: 预测准确率
-    score: "85%+"
-    metric: accuracy
-    comparison: "材料属性预测准确率 vs 纯 DFT 计算相当但速度提升1000倍"
+- name: R&D 周期加速
+  score: 5-10x
+  metric: time-to-market reduction
+  comparison: vs 传统 Edisonian 试错方法缩短5-10倍
+  source: self-reported
+- name: 预测准确率
+  score: 85%+
+  metric: accuracy
+  comparison: 材料属性预测准确率 vs 纯 DFT 计算相当但速度提升1000倍
+  source: self-reported
 capabilities:
-  - 自驱动实验室实现 24/7 全自动实验无人值守
-  - AI + 物理建模预测新材料候选及目标属性
-  - 闭环 Predict-Produce-Prove 设计范式加速材料发现
-  - 企业级云平台支持协作式材料 R&D
-  - 为客户定制化材料发现和 R&D 数字化服务
-  - 覆盖聚合物/电池材料/催化剂/特种化学品多领域
+- 自驱动实验室实现 24/7 全自动实验无人值守
+- AI + 物理建模预测新材料候选及目标属性
+- 闭环 Predict-Produce-Prove 设计范式加速材料发现
+- 企业级云平台支持协作式材料 R&D
+- 为客户定制化材料发现和 R&D 数字化服务
+- 覆盖聚合物/电池材料/催化剂/特种化学品多领域
 tags:
-  - self-driving-lab
-  - materials-discovery
-  - closed-loop
-  - enterprise-ai
-  - r&d-digitalization
-  - active-learning
+- self-driving-lab
+- materials-discovery
+- closed-loop
+- enterprise-ai
+- r&d-digitalization
+- active-learning
 access:
-  - saas
-  - private-deployment
+- saas
+- private-deployment
 api:
   available: true
   protocol: rest
   pricing: 企业定制（联系销售）
 references:
-  - title: Kebotix 官方网站
-    url: https://www.kebotix.com/
+- title: Kebotix 官方网站
+  url: https://www.kebotix.com/

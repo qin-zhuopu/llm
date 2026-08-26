@@ -3,7 +3,7 @@ name_en: Amazon Rufus
 company: Amazon
 domain: retail-ecommerce
 status: released
-release_date: "2024-02"
+release_date: 2024-02
 website: https://www.aboutamazon.com/news/retail/amazon-rufus
 description: Amazon Rufus 是亚马逊推出的生成式 AI 购物助手，集成于 Amazon Shopping App 中，基于大语言模型训练，利用亚马逊商品目录、用户评价、社区问答和网络信息进行对话式购物交互。用户可通过自然语言提问获取商品推荐、产品对比、购物建议等，显著提升电商搜索发现效率和购物转化率。
 parameters: 未公开
@@ -37,13 +37,15 @@ datasets:
   type: sft
 benchmarks:
 - name: Shopping Query Relevance
-  score: "内部评测优于传统搜索"
+  score: 内部评测优于传统搜索
   metric: relevance
-  comparison: "vs 传统关键词搜索: 显著提升商品发现准确率"
+  comparison: 'vs 传统关键词搜索: 显著提升商品发现准确率'
+  source: self-reported
 - name: User Satisfaction Score
-  score: "高满意度"
+  score: 高满意度
   metric: user_satisfaction
-  comparison: "vs 无AI辅助购物体验: 用户参与度和转化率提升"
+  comparison: 'vs 无AI辅助购物体验: 用户参与度和转化率提升'
+  source: self-reported
 capabilities:
 - 基于自然语言的对话式商品搜索与发现
 - 跨品类商品对比和规格分析

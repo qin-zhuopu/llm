@@ -4,7 +4,8 @@ company: insitro
 domain: pharma-biotech
 status: released
 website: https://www.insitro.com
-description: 由Daphne Koller（Coursera联合创始人、斯坦福ML教授）创立的因果AI药物研发公司，结合20+PB自动化细胞实验数据和群体规模遗传学数据构建Physical AI系统，揭示人类疾病的真正因果驱动因素。核心平台Virtual Human是以基因为锚点的因果AI引擎，在候选药物优化前精确识别因果疾病靶点；TherML是模态无关的治疗药物设计引擎，涵盖小分子、寡核苷酸和复杂生物制剂，将药物发现从随机筛选转变为预测性自适应工程。
+description: 由Daphne Koller（Coursera联合创始人、斯坦福ML教授）创立的因果AI药物研发公司，结合20+PB自动化细胞实验数据和群体规模遗传学数据构建Physical
+  AI系统，揭示人类疾病的真正因果驱动因素。核心平台Virtual Human是以基因为锚点的因果AI引擎，在候选药物优化前精确识别因果疾病靶点；TherML是模态无关的治疗药物设计引擎，涵盖小分子、寡核苷酸和复杂生物制剂，将药物发现从随机筛选转变为预测性自适应工程。
 parameters: 未公开
 architecture: Causal AI + multimodal foundation model (因果AI + 多模态基础模型)
 base_model: 自研因果AI引擎
@@ -36,11 +37,13 @@ benchmarks:
 - name: Causal Target Identification
   score: 因果靶点精确识别
   metric: causal_target_accuracy
-  comparison: "vs 传统随机筛选: 在候选优化前识别因果疾病靶点，而非相关性靶点"
+  comparison: 'vs 传统随机筛选: 在候选优化前识别因果疾病靶点，而非相关性靶点'
+  source: self-reported
 - name: Modality Matching (TherML)
   score: 模态无关药物设计
   metric: design_efficiency
-  comparison: "vs 随机筛选(stochastic screening): 转变为预测性自适应工程，推进更好的分子更快"
+  comparison: 'vs 随机筛选(stochastic screening): 转变为预测性自适应工程，推进更好的分子更快'
+  source: self-reported
 api:
   available: false
   pricing: 药企合作预付款+里程碑+版税+自有管线

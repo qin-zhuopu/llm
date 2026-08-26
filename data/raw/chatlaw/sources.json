@@ -1,15 +1,22 @@
 {
   "files": [
     {
-      "filename": "github-readme.md",
+      "filename": "chatlaw-cloud-1.md",
+      "url": "https://chatlaw.cloud",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "github-github-com-2.md",
       "url": "https://github.com/PKU-YuanGroup/ChatLaw",
-      "fetched_at": "2025-06-17",
+      "fetched_at": "2026-08-26",
       "type": "github"
     },
     {
-      "filename": "arxiv-abstract.txt",
+      "filename": "arxiv-2306.16092.md",
       "url": "https://arxiv.org/abs/2306.16092",
-      "fetched_at": "2025-06-17",
+      "fetched_at": "2026-08-26",
       "type": "arxiv"
     }
   ]

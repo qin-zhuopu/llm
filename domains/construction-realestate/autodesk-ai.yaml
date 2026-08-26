@@ -3,9 +3,10 @@ name_en: Autodesk AI
 company: Autodesk
 domain: construction-realestate
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.autodesk.com
-description: Autodesk推出的嵌入式AI和机器学习能力套件，覆盖AutoCAD、Revit、Fusion等设计、工程和建筑软件产品。核心功能包括生成式设计（算法优化空间规划和结构设计）、Autodesk Assistant自然语言建模助手（Revit 2027技术预览）、AutoCAD机器学习自动化和BIM智能化，服务于全球数百万建筑、工程、施工和制造专业人员。
+description: Autodesk推出的嵌入式AI和机器学习能力套件，覆盖AutoCAD、Revit、Fusion等设计、工程和建筑软件产品。核心功能包括生成式设计（算法优化空间规划和结构设计）、Autodesk
+  Assistant自然语言建模助手（Revit 2027技术预览）、AutoCAD机器学习自动化和BIM智能化，服务于全球数百万建筑、工程、施工和制造专业人员。
 parameters: 未公开
 architecture: multi-model ensemble
 training:
@@ -28,17 +29,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: Design Alternative Generation Speed
-  score: "数百种方案/小时"
+  score: 数百种方案/小时
   metric: throughput
-  comparison: "vs 人工设计: 从数周缩短到数小时生成数百种优化方案"
+  comparison: 'vs 人工设计: 从数周缩短到数小时生成数百种优化方案'
+  source: self-reported
 - name: Topology Optimization Efficiency
-  score: "显著减重"
+  score: 显著减重
   metric: weight_reduction
-  comparison: "vs 传统设计: 在满足强度要求的同时实现显著减重"
+  comparison: 'vs 传统设计: 在满足强度要求的同时实现显著减重'
+  source: self-reported
 - name: Construction Risk Prediction
-  score: "高准确率"
+  score: 高准确率
   metric: accuracy
-  comparison: "vs 传统项目管理: 提供数据驱动的进度和风险预测"
+  comparison: 'vs 传统项目管理: 提供数据驱动的进度和风险预测'
+  source: self-reported
 capabilities:
 - 生成式设计快速生成满足约束条件的数百种空间规划和结构方案
 - Autodesk Assistant自然语言交互，直接在建模环境中提问和触发操作

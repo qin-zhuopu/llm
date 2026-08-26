@@ -3,7 +3,7 @@ name_en: Glodon Construction AI
 company: 广联达科技股份有限公司
 domain: construction-realestate
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.glodon.com
 description: 广联达面向建筑全生命周期的数字化AI平台，集成计算机视觉、BIM引擎和建筑行业知识图谱技术。核心能力包括CAD图纸自动识别与智能算量、AI辅助BIM协同设计、工程造价智能计算、施工现场安全监控（智能塔机AI视觉）和建筑数字孪生。产品矩阵覆盖数字设计、数字成本、数字施工和信息服务四大板块，服务于中国建筑行业全过程数字化转型。
 parameters: 未公开
@@ -42,17 +42,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 产品线覆盖
-  score: "4大板块"
+  score: 4大板块
   metric: product_coverage
-  comparison: "数字设计+数字成本+数字施工+信息服务全生命周期覆盖"
+  comparison: 数字设计+数字成本+数字施工+信息服务全生命周期覆盖
+  source: self-reported
 - name: 行业服务年限
-  score: "25+"
+  score: 25+
   metric: years_of_service
-  comparison: "自1998年成立以来深耕建筑信息化行业超25年"
+  comparison: 自1998年成立以来深耕建筑信息化行业超25年
+  source: self-reported
 - name: 上市公司
-  score: "深交所002410"
+  score: 深交所002410
   metric: market_presence
-  comparison: "A股上市公司，中国建筑信息化领域龙头企业"
+  comparison: A股上市公司，中国建筑信息化领域龙头企业
+  source: self-reported
 capabilities:
 - CAD图纸自动识别与智能工程量计算
 - AI辅助BIM多专业协同设计

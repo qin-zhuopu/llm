@@ -3,87 +3,88 @@ name_en: Tongyi Farui
 company: 阿里达摩院
 domain: legal
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://tongyi.aliyun.com
-description: >-
-  通义法睿是由阿里巴巴达摩院推出的法律领域AI大模型产品，依托通义千问(Qwen)大模型的强大基础能力，
-  结合法律专业知识进行深度优化。采用RAG检索增强生成和法律知识图谱技术，支持智能法律咨询、合同审查与起草、
-  案例检索与分析、诉讼风险量化评估等全方位法律服务。面向律师事务所、企业法务、法院、仲裁机构和个人用户，
-  提供云端API和应用级产品服务。
-parameters: "72B (基于通义千问)"
+description: 通义法睿是由阿里巴巴达摩院推出的法律领域AI大模型产品，依托通义千问(Qwen)大模型的强大基础能力， 结合法律专业知识进行深度优化。采用RAG检索增强生成和法律知识图谱技术，支持智能法律咨询、合同审查与起草、
+  案例检索与分析、诉讼风险量化评估等全方位法律服务。面向律师事务所、企业法务、法院、仲裁机构和个人用户， 提供云端API和应用级产品服务。
+parameters: 72B (基于通义千问)
 architecture: decoder-only transformer
 base_model: 通义千问 Qwen-72B
 training:
   stages:
-    - name: pre-training
-      description: 通义千问基座模型基于3万亿tokens多语言数据预训练
-      data_tokens: "3T"
-    - name: continual-pre-training
-      description: 使用中国法律法规、司法解释、指导性案例等专业法律语料进行持续预训练
-    - name: sft
-      description: 基于法律场景标注数据进行监督微调，覆盖法律咨询、合同审查、案例分析、文书起草等任务
-    - name: rlhf
-      description: 结合法律专家反馈优化回答的专业性、准确性和实用性
-  context_length: "32K"
+  - name: pre-training
+    description: 通义千问基座模型基于3万亿tokens多语言数据预训练
+    data_tokens: 3T
+  - name: continual-pre-training
+    description: 使用中国法律法规、司法解释、指导性案例等专业法律语料进行持续预训练
+  - name: sft
+    description: 基于法律场景标注数据进行监督微调，覆盖法律咨询、合同审查、案例分析、文书起草等任务
+  - name: rlhf
+    description: 结合法律专家反馈优化回答的专业性、准确性和实用性
+  context_length: 32K
 datasets:
-  - name: 通用预训练语料
-    description: 通义千问基座模型训练使用的3万亿tokens多语言文本数据
-    size: "3T tokens"
-    type: pre-training
-  - name: 法律法规知识库
-    description: 中国现行法律法规、司法解释、行政法规和指导性案例
-    type: pre-training
-  - name: 裁判文书数据
-    description: 海量中国法院裁判文书，用于案例检索和判决趋势分析训练
-    type: sft
-  - name: 法律问答标注
-    description: 民商事、刑事、行政等领域专家标注的法律问答对
-    type: sft
+- name: 通用预训练语料
+  description: 通义千问基座模型训练使用的3万亿tokens多语言文本数据
+  size: 3T tokens
+  type: pre-training
+- name: 法律法规知识库
+  description: 中国现行法律法规、司法解释、行政法规和指导性案例
+  type: pre-training
+- name: 裁判文书数据
+  description: 海量中国法院裁判文书，用于案例检索和判决趋势分析训练
+  type: sft
+- name: 法律问答标注
+  description: 民商事、刑事、行政等领域专家标注的法律问答对
+  type: sft
 tech_stack:
   framework: PAI (阿里云机器学习平台)
   inference: 阿里云PAI-EAS推理服务
   techniques:
-    - RAG检索增强生成
-    - 法律知识图谱
-    - Flash Attention
-    - GQA (Grouped Query Attention)
-    - RoPE位置编码
-    - 合同条款风险识别NER
+  - RAG检索增强生成
+  - 法律知识图谱
+  - Flash Attention
+  - GQA (Grouped Query Attention)
+  - RoPE位置编码
+  - 合同条款风险识别NER
 benchmarks:
-  - name: 法律咨询准确率
-    score: "88%"
-    metric: accuracy
-    comparison: "vs 通用大模型在法律领域约68%"
-  - name: 合同风险识别召回率
-    score: "92%"
-    metric: recall
-    comparison: "vs 传统规则系统约75%"
-  - name: 案例检索相关性
-    score: "85%"
-    metric: nDCG@10
-    comparison: "vs 关键词检索约60%"
-  - name: 法律文书规范性
-    score: "90%"
-    metric: compliance rate
-    comparison: "专家评估法律文书格式和内容规范性"
+- name: 法律咨询准确率
+  score: 88%
+  metric: accuracy
+  comparison: vs 通用大模型在法律领域约68%
+  source: self-reported
+- name: 合同风险识别召回率
+  score: 92%
+  metric: recall
+  comparison: vs 传统规则系统约75%
+  source: self-reported
+- name: 案例检索相关性
+  score: 85%
+  metric: nDCG@10
+  comparison: vs 关键词检索约60%
+  source: self-reported
+- name: 法律文书规范性
+  score: 90%
+  metric: compliance rate
+  comparison: 专家评估法律文书格式和内容规范性
+  source: self-reported
 capabilities:
-  - 智能法律咨询(民商事、刑事、行政等领域)
-  - 合同智能审查与起草(风险识别与条款优化)
-  - 案例智能检索与裁判逻辑分析
-  - 诉讼风险量化评估与策略建议
-  - 法律文书智能生成(起诉状、法律意见书等)
-  - 合同版本对比和修改建议生成
+- 智能法律咨询(民商事、刑事、行政等领域)
+- 合同智能审查与起草(风险识别与条款优化)
+- 案例智能检索与裁判逻辑分析
+- 诉讼风险量化评估与策略建议
+- 法律文书智能生成(起诉状、法律意见书等)
+- 合同版本对比和修改建议生成
 tags:
-  - legal-ai
-  - nlp
-  - knowledge-graph
-  - contract-review
-  - case-analysis
-  - smart-assistant
-  - qwen
+- legal-ai
+- nlp
+- knowledge-graph
+- contract-review
+- case-analysis
+- smart-assistant
+- qwen
 access:
-  - api
-  - saas
+- api
+- saas
 api:
   available: true
   documentation: https://help.aliyun.com/zh/model-studio/
@@ -91,7 +92,7 @@ api:
   auth_method: 阿里云账号 + API Key
   pricing: 按token计费
 references:
-  - title: 通义法睿官网
-    url: https://tongyi.aliyun.com
-  - title: 阿里云模型服务灵积文档
-    url: https://help.aliyun.com/zh/model-studio/
+- title: 通义法睿官网
+  url: https://tongyi.aliyun.com
+- title: 阿里云模型服务灵积文档
+  url: https://help.aliyun.com/zh/model-studio/

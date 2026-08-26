@@ -3,9 +3,10 @@ name_en: LinkedIn Hiring AI
 company: LinkedIn (Microsoft)
 domain: human-resources
 status: released
-release_date: "2023-10"
+release_date: 2023-10
 website: https://www.linkedin.com
-description: LinkedIn Hiring AI 是领英基于大语言模型开发的智能招聘与人才管理 AI 系统，整合于 LinkedIn Recruiter 和 LinkedIn Talent Solutions 产品线。通过 GPT-4 技术增强的 AI 辅助撰写职位描述、智能候选人匹配、InMail 自动化撰写、技能推荐等功能，帮助招聘者从10亿+会员网络中高效发现和触达目标人才，显著提升招聘效率和人才匹配准确度。
+description: LinkedIn Hiring AI 是领英基于大语言模型开发的智能招聘与人才管理 AI 系统，整合于 LinkedIn Recruiter
+  和 LinkedIn Talent Solutions 产品线。通过 GPT-4 技术增强的 AI 辅助撰写职位描述、智能候选人匹配、InMail 自动化撰写、技能推荐等功能，帮助招聘者从10亿+会员网络中高效发现和触达目标人才，显著提升招聘效率和人才匹配准确度。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GPT-4
@@ -37,13 +38,15 @@ datasets:
   type: rlhf
 benchmarks:
 - name: 候选人匹配准确率
-  score: "显著提升"
+  score: 显著提升
   metric: match_quality
-  comparison: "vs 传统关键词搜索: AI辅助匹配大幅提升候选人响应率"
+  comparison: 'vs 传统关键词搜索: AI辅助匹配大幅提升候选人响应率'
+  source: self-reported
 - name: InMail回复率
-  score: "高于平均"
+  score: 高于平均
   metric: response_rate
-  comparison: "AI撰写的InMail相比手动撰写回复率提升40%+"
+  comparison: AI撰写的InMail相比手动撰写回复率提升40%+
+  source: self-reported
 capabilities:
 - AI 辅助撰写招聘职位描述，优化JD吸引力和包容性
 - 基于技能图谱的智能候选人搜索与推荐

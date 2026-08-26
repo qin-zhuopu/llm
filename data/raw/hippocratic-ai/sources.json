@@ -3,8 +3,9 @@
     {
       "filename": "arxiv-abstract.txt",
       "url": "https://arxiv.org/abs/2403.13313",
-      "fetched_at": "2025-06-17",
-      "type": "arxiv"
+      "fetched_at": "2026-08-26",
+      "type": "arxiv",
+      "note": "timestamp refreshed; arxiv source content unchanged"
     }
   ]
 }

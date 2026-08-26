@@ -4,13 +4,15 @@ company: Palantir
 domain: aerospace-defense
 status: released
 website: https://www.palantir.com/platforms/aip/
-description: Palantir推出的企业级生成式AI平台，支撑全球最关键的商业和政府场景中的实时AI驱动决策。AIP通过Ontology语义层集成企业数据，为LLM提供丰富的结构化上下文。核心组件包括AIP Chatbot Studio（对话式AI代理开发）、AIP Logic（LLM驱动的自动化函数）和Evals Framework（AI工作流治理评估）。平台通过k-LLM范式安全连接多种大语言模型和多模态模型，已在公共健康、电池生产、国防、供应链等领域部署。
+description: Palantir推出的企业级生成式AI平台，支撑全球最关键的商业和政府场景中的实时AI驱动决策。AIP通过Ontology语义层集成企业数据，为LLM提供丰富的结构化上下文。核心组件包括AIP
+  Chatbot Studio（对话式AI代理开发）、AIP Logic（LLM驱动的自动化函数）和Evals Framework（AI工作流治理评估）。平台通过k-LLM范式安全连接多种大语言模型和多模态模型，已在公共健康、电池生产、国防、供应链等领域部署。
 parameters: 未公开
 architecture: platform (multi-LLM orchestration)
 training:
   stages:
   - name: fine-tuning
-    description: 通过Palantir Ontology语义层将企业数据组织为有意义的对象、关系和操作，为LLM提供组织级上下文。AIP Logic创建结构化AI操作，定义明确的输入、输出和治理控制。Evals Framework在生产环境中持续评估和治理AI工作流性能。
+    description: 通过Palantir Ontology语义层将企业数据组织为有意义的对象、关系和操作，为LLM提供组织级上下文。AIP Logic创建结构化AI操作，定义明确的输入、输出和治理控制。Evals
+      Framework在生产环境中持续评估和治理AI工作流性能。
 tech_stack:
   framework: Palantir Platform (Foundry + Apollo + AIP)
   techniques:
@@ -27,17 +29,20 @@ datasets:
   type: other
 benchmarks:
 - name: Enterprise AI Deployment Scale
-  score: "全球部署"
+  score: 全球部署
   metric: deployment_scale
-  comparison: "vs 通用LLM: 通过Ontology提供组织级上下文，输出更准确和相关"
+  comparison: 'vs 通用LLM: 通过Ontology提供组织级上下文，输出更准确和相关'
+  source: self-reported
 - name: Security Compliance
-  score: "企业级"
+  score: 企业级
   metric: compliance_level
-  comparison: "vs 开放LLM API: 提供完整的访问控制、加密和审计能力"
+  comparison: 'vs 开放LLM API: 提供完整的访问控制、加密和审计能力'
+  source: self-reported
 - name: Multi-industry Coverage
-  score: "跨行业"
+  score: 跨行业
   metric: industry_coverage
-  comparison: "覆盖公共健康、电池生产、国防、供应链、流程挖掘等多个行业"
+  comparison: 覆盖公共健康、电池生产、国防、供应链、流程挖掘等多个行业
+  source: self-reported
 capabilities:
 - AIP Chatbot Studio构建可与企业数据交互的对话式AI代理
 - AIP Logic创建可集成到企业工作流的LLM驱动自动化

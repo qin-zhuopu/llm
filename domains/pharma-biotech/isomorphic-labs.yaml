@@ -5,7 +5,8 @@ domain: pharma-biotech
 status: released
 release_date: 2026-02
 website: https://www.isomorphiclabs.com
-description: Google DeepMind旗下Isomorphic Labs开发的科学基础模型，构建于诺贝尔奖获奖AlphaFold系统之上。IsoDDE可预测蛋白-配体结构、结合亲和力及抗体-抗原结构，被Nature评价为"AlphaFold 4级别"突破。公司已与礼来、诺华达成近30亿美元合作，2026年完成21亿美元B轮融资，并与强生开展多靶点合作。覆盖小分子、抗体等多种药物模态，以数字速度加速药物发现。
+description: Google DeepMind旗下Isomorphic Labs开发的科学基础模型，构建于诺贝尔奖获奖AlphaFold系统之上。IsoDDE可预测蛋白-配体结构、结合亲和力及抗体-抗原结构，被Nature评价为"AlphaFold
+  4级别"突破。公司已与礼来、诺华达成近30亿美元合作，2026年完成21亿美元B轮融资，并与强生开展多靶点合作。覆盖小分子、抗体等多种药物模态，以数字速度加速药物发现。
 parameters: 未公开
 architecture: diffusion + transformer (科学基础模型)
 base_model: AlphaFold 3
@@ -43,25 +44,29 @@ datasets:
   type: sft
 benchmarks:
 - name: Protein-Ligand Structure Prediction (PoseBusters)
-  score: "显著优于AlphaFold 3"
+  score: 显著优于AlphaFold 3
   metric: success_rate
   split: test
-  comparison: "vs AlphaFold 3: Nature评价为'AlphaFold 4级别'提升"
+  comparison: 'vs AlphaFold 3: Nature评价为''AlphaFold 4级别''提升'
+  source: paper
 - name: Binding Affinity Prediction (PDBbind)
-  score: "SOTA"
+  score: SOTA
   metric: Pearson_correlation
   split: test
-  comparison: "vs 传统方法: 大幅提升亲和力预测精度"
+  comparison: 'vs 传统方法: 大幅提升亲和力预测精度'
+  source: self-reported
 - name: Antibody-Antigen Structure Prediction
-  score: "SOTA"
+  score: SOTA
   metric: DockQ
   split: test
-  comparison: "vs AlphaFold 3: 新增能力维度，支持抗体药物设计"
+  comparison: 'vs AlphaFold 3: 新增能力维度，支持抗体药物设计'
+  source: self-reported
 - name: Molecular Generation Quality
-  score: "高合成可行性"
+  score: 高合成可行性
   metric: validity_and_synthesizability
   split: test
-  comparison: "vs 传统CADD方法: 生成分子的药物相似性和合成可行性显著提升"
+  comparison: 'vs 传统CADD方法: 生成分子的药物相似性和合成可行性显著提升'
+  source: self-reported
 api:
   available: false
   pricing: 通过合作协议接入(礼来、诺华、强生等战略合作)
@@ -88,7 +93,7 @@ tags:
 references:
 - title: Isomorphic Labs Official Website
   url: https://www.isomorphiclabs.com
-- title: "Isomorphic Labs Drug Design Engine: A New Frontier Beyond AlphaFold"
+- title: 'Isomorphic Labs Drug Design Engine: A New Frontier Beyond AlphaFold'
   url: https://www.isomorphiclabs.com/news
 - title: Isomorphic Labs Series B ($2.1B) Announcement
   url: https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round

@@ -3,7 +3,7 @@ name_en: Yuewen MiaoBi
 company: 阅文集团
 domain: media-entertainment
 status: released
-release_date: "2023-07"
+release_date: 2023-07
 website: https://www.yuewen.com
 description: 阅文妙笔是阅文集团推出的AIGC文学创作大模型，专注于网络文学辅助创作。依托阅文平台超千万创作者、200多种内容品类的海量优质IP资源以及漫剧助手等多模态AI创作平台，妙笔模型在故事生成、角色塑造、情节推进和文风模拟等方面具有独特优势，支撑阅文IP全产业链（文学、动漫、影视、游戏、周边）的智能化内容生产。
 parameters: 未公开
@@ -37,13 +37,15 @@ datasets:
   type: sft
 benchmarks:
 - name: 中文故事生成质量
-  score: "行业领先"
+  score: 行业领先
   metric: expert_evaluation
-  comparison: "vs 通用大模型: 在网文风格一致性、情节连贯性上显著优于GPT-4等通用模型"
+  comparison: 'vs 通用大模型: 在网文风格一致性、情节连贯性上显著优于GPT-4等通用模型'
+  source: self-reported
 - name: 角色对话一致性
-  score: "高一致性"
+  score: 高一致性
   metric: character_consistency
-  comparison: "角色人设保持能力优于通用对话模型"
+  comparison: 角色人设保持能力优于通用对话模型
+  source: self-reported
 capabilities:
 - 多流派网络文学长篇故事生成（玄幻、言情、悬疑等200+品类）
 - 角色人设创建与对话生成，保持人物性格一致性

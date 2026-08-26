@@ -14,11 +14,16 @@
 用于区分公司自报数据 vs 第三方验证 vs 论文，提升数据可信度透明度。
 
 ### 数据与工具
-- 新增 `scripts/backfill_raw.py`：从 MD 提取来源 URL 回填原始资料到 `data/raw/`，含内容类型过滤和 500KB 大小上限
+- 新增 `scripts/backfill_raw.py`：从 MD 提取来源 URL 回填原始资料到 `data/raw/`，含内容类型过滤、500KB 大小上限、`--force` 刷新
 - 全部 100 个模型完成 raw 资料回填（每个含 sources.json）
 - 新增 `scripts/suggest_benchmark_source.py`：扫描并建议 benchmark source 标注（只读）
+- 新增 `scripts/apply_benchmark_source.py`：按规则批量应用 benchmark source 标注
+- 新增 `scripts/check_freshness.py`：基于 sources.json 的 fetched_at 检查数据新鲜度
+- **全部 312 条 benchmark 完成 source 标注**（self-reported/third-party/paper/leaderboard）
+- **check.py 来源(S)维度改为基于 data/raw/sources.json 评分**（来源数量+类型质量），替代旧的 MD 正则
+- 全部 100 模型 sources.json 齐全且新鲜度为 fresh
 - 修正 README 知识图谱章节：如实描述 NetworkX 实现（此前错误宣称 LightRAG + 不存在的 query_kg.py）
-- 新增 `AGENTS.md`：完整 7 阶段数据收集方法论
+- 新增 `AGENTS.md`：完整 7 阶段数据收集方法论，含全部自检问题的解决记录
 
 ---
 

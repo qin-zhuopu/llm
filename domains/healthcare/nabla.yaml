@@ -2,81 +2,83 @@ name: Nabla
 company: Nabla
 domain: healthcare
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.nabla.com
-description: >-
-  Nabla是专为临床场景设计的嵌入式AI平台(Clinical AI Layer)，通过环境文档(Ambient Documentation)技术自动捕获医患对话并生成结构化临床笔记。
-  已部署于130+医疗组织、被85000+临床医生使用，每年处理2000万+患者就诊记录。
-  核心优势在于临床级语音识别、AI辅助E/M和ICD-10编码，显著降低医生职业倦怠(最高90%)，
+description: Nabla是专为临床场景设计的嵌入式AI平台(Clinical AI Layer)，通过环境文档(Ambient Documentation)技术自动捕获医患对话并生成结构化临床笔记。
+  已部署于130+医疗组织、被85000+临床医生使用，每年处理2000万+患者就诊记录。 核心优势在于临床级语音识别、AI辅助E/M和ICD-10编码，显著降低医生职业倦怠(最高90%)，
   提升医患互动质量81%，严格遵循HIPAA、SOC 2 Type 2、ISO 27001和GDPR合规标准。
 parameters: 未公开
 architecture: transformer (proprietary clinical LLM)
 training:
   stages:
-    - name: pre-training
-      description: 基于大规模医学文献和临床文本进行基础预训练
-    - name: fine-tuning
-      description: 使用2000万+患者就诊记录中的临床对话进行领域微调，优化医学术语识别和文档生成
-    - name: sft
-      description: 基于临床医生偏好的笔记格式和编码标准进行监督微调
-    - name: post-training
-      description: 持续优化的临床AI，每次技术升级提升准确性和智能性
-  context_length: "32K"
+  - name: pre-training
+    description: 基于大规模医学文献和临床文本进行基础预训练
+  - name: fine-tuning
+    description: 使用2000万+患者就诊记录中的临床对话进行领域微调，优化医学术语识别和文档生成
+  - name: sft
+    description: 基于临床医生偏好的笔记格式和编码标准进行监督微调
+  - name: post-training
+    description: 持续优化的临床AI，每次技术升级提升准确性和智能性
+  context_length: 32K
 datasets:
-  - name: 临床对话语音数据
-    description: 覆盖130+医疗组织的医患对话录音和转录文本
-    size: "2000万+年就诊记录"
-    type: sft
-  - name: 结构化临床笔记
-    description: 85000+临床医生编写的标准化医疗文档用于训练和评估
-    type: sft
-  - name: 医疗编码标准数据
-    description: AMA指南E/M编码和ICD-10编码标注数据
-    type: sft
+- name: 临床对话语音数据
+  description: 覆盖130+医疗组织的医患对话录音和转录文本
+  size: 2000万+年就诊记录
+  type: sft
+- name: 结构化临床笔记
+  description: 85000+临床医生编写的标准化医疗文档用于训练和评估
+  type: sft
+- name: 医疗编码标准数据
+  description: AMA指南E/M编码和ICD-10编码标注数据
+  type: sft
 tech_stack:
   techniques:
-    - Clinical-grade speech recognition
-    - Ambient documentation (环境感知文档)
-    - E/M and ICD-10 coding AI
-    - EHR integration (Epic等系统)
-    - Nabla Connect embedded integration
-    - Deep customization engine
+  - Clinical-grade speech recognition
+  - Ambient documentation (环境感知文档)
+  - E/M and ICD-10 coding AI
+  - EHR integration (Epic等系统)
+  - Nabla Connect embedded integration
+  - Deep customization engine
 benchmarks:
-  - name: 职业倦怠降低(长期)
-    score: "90%"
-    metric: reduction
-    comparison: "长期使用后医生职业倦怠减少90%"
-  - name: 医患互动质量提升
-    score: "81%"
-    metric: improvement
-    comparison: "使用前后对比医患互动质量"
-  - name: 文档时间节省
-    score: "55%用户每天节省1小时+"
-    metric: time saved
-    comparison: "55%的临床医生用户反馈每天节省1小时以上"
-  - name: 患者接诊量提升
-    score: "1.5倍"
-    metric: throughput
-    comparison: "每月就诊患者数量增加1.5倍"
+- name: 职业倦怠降低(长期)
+  score: 90%
+  metric: reduction
+  comparison: 长期使用后医生职业倦怠减少90%
+  source: self-reported
+- name: 医患互动质量提升
+  score: 81%
+  metric: improvement
+  comparison: 使用前后对比医患互动质量
+  source: self-reported
+- name: 文档时间节省
+  score: 55%用户每天节省1小时+
+  metric: time saved
+  comparison: 55%的临床医生用户反馈每天节省1小时以上
+  source: self-reported
+- name: 患者接诊量提升
+  score: 1.5倍
+  metric: throughput
+  comparison: 每月就诊患者数量增加1.5倍
+  source: self-reported
 capabilities:
-  - 环境文档自动生成：实时捕获医患对话并转化为结构化临床笔记
-  - 临床语音听写：高精度语音识别引擎，嵌入Epic等EHR系统
-  - 智能医疗编码：基于AMA指南提供E/M和ICD-10编码建议
-  - 工作流深度定制：根据专科、偏好灵活配置笔记格式
-  - 企业级集成：Nabla Connect可在数周内完成嵌入集成
-  - HIPAA/SOC2/ISO27001/GDPR全面合规
+- 环境文档自动生成：实时捕获医患对话并转化为结构化临床笔记
+- 临床语音听写：高精度语音识别引擎，嵌入Epic等EHR系统
+- 智能医疗编码：基于AMA指南提供E/M和ICD-10编码建议
+- 工作流深度定制：根据专科、偏好灵活配置笔记格式
+- 企业级集成：Nabla Connect可在数周内完成嵌入集成
+- HIPAA/SOC2/ISO27001/GDPR全面合规
 tags:
-  - 临床文档
-  - 语音识别
-  - 医疗编码
-  - 医生助手
-  - ehr集成
-  - ambient-ai
-  - hipaa
+- 临床文档
+- 语音识别
+- 医疗编码
+- 医生助手
+- ehr集成
+- ambient-ai
+- hipaa
 access:
-  - api
-  - private-deployment
-  - saas
+- api
+- private-deployment
+- saas
 api:
   available: true
   documentation: https://www.nabla.com/developers
@@ -84,7 +86,7 @@ api:
   auth_method: API Key + 企业认证
   pricing: 企业订阅
 references:
-  - title: Nabla 官方网站
-    url: https://www.nabla.com
-  - title: Coalition for Health AI (CHAI) 合作
-    url: https://www.coalitionforhealthai.org/
+- title: Nabla 官方网站
+  url: https://www.nabla.com
+- title: Coalition for Health AI (CHAI) 合作
+  url: https://www.coalitionforhealthai.org/

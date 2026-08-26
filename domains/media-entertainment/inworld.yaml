@@ -4,7 +4,9 @@ company: Inworld AI
 domain: media-entertainment
 status: released
 website: https://inworld.ai
-description: 面向消费级应用的实时AI平台，为大规模语音优先的伴侣类应用提供支持，实现持续、个性化、情感投入的AI交互。核心产品包括Realtime TTS（首字延迟<100ms）、Realtime API（可控speech-to-speech）、Realtime Router（智能路由220+模型，零加价）和Realtime STT（内置语音画像，低至$0.10/小时）。采用激进定价补贴AI成本（TTS $12.50 vs ElevenLabs $100/1M字符），Status应用19天达100万用户，属于"实时体验型"垂类AI，壁垒在推理经济学和体验工程。
+description: 面向消费级应用的实时AI平台，为大规模语音优先的伴侣类应用提供支持，实现持续、个性化、情感投入的AI交互。核心产品包括Realtime TTS（首字延迟<100ms）、Realtime
+  API（可控speech-to-speech）、Realtime Router（智能路由220+模型，零加价）和Realtime STT（内置语音画像，低至$0.10/小时）。采用激进定价补贴AI成本（TTS
+  $12.50 vs ElevenLabs $100/1M字符），Status应用19天达100万用户，属于"实时体验型"垂类AI，壁垒在推理经济学和体验工程。
 parameters: 未公开
 architecture: Realtime multimodal voice AI + model router (实时多模态语音AI + 模型路由)
 training:
@@ -33,21 +35,25 @@ datasets:
   type: other
 benchmarks:
 - name: Realtime TTS Latency
-  score: "<100ms TTFB (25ms Flash)"
+  score: <100ms TTFB (25ms Flash)
   metric: time_to_first_byte
-  comparison: "vs 竞品: 语音Agent在用户察觉延迟前响应"
+  comparison: 'vs 竞品: 语音Agent在用户察觉延迟前响应'
+  source: self-reported
 - name: Cost Efficiency (TTS)
-  score: "$12.50 / 1M chars"
+  score: $12.50 / 1M chars
   metric: cost
-  comparison: "vs ElevenLabs $100: 成本降低约8倍"
+  comparison: 'vs ElevenLabs $100: 成本降低约8倍'
+  source: self-reported
 - name: Cost Efficiency (STT)
-  score: "$0.10 / hour"
+  score: $0.10 / hour
   metric: cost
-  comparison: "vs Deepgram $0.46: 成本降低约4.6倍"
+  comparison: 'vs Deepgram $0.46: 成本降低约4.6倍'
+  source: self-reported
 - name: User Adoption
-  score: "1M users in 19 days"
+  score: 1M users in 19 days
   metric: user_growth
-  comparison: "Status应用19天达100万用户，验证消费级规模化"
+  comparison: Status应用19天达100万用户，验证消费级规模化
+  source: self-reported
 api:
   available: true
   documentation: https://inworld.ai

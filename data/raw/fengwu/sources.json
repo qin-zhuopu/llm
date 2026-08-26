@@ -1,9 +1,81 @@
 {
   "files": [
     {
-      "filename": "arxiv-abstract.txt",
+      "filename": "shlab-org-cn-1.md",
+      "url": "https://www.shlab.org.cn",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "discovery-home-intern-ai-org-cn-2.md",
+      "url": "https://discovery-home.intern-ai.org.cn/home",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "internrobotics-shlab-org-cn-3.md",
+      "url": "https://internrobotics.shlab.org.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ai45-shlab-org-cn-4.md",
+      "url": "https://ai45.shlab.org.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "opencompass-org-cn-5.md",
+      "url": "https://opencompass.org.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "opendatalab-org-cn-6.md",
+      "url": "https://opendatalab.org.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "github-github-com-7.md",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "github-github-com-8.md",
+      "url": "https://github.com/opendatalab/MinerU",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "github-github-com-9.md",
+      "url": "https://github.com/InternLM/lmdeploy",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "github-github-com-10.md",
+      "url": "https://github.com/InternLM/InternLM",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "github-github-com-11.md",
+      "url": "https://github.com/open-compass/",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "github-github-com-12.md",
+      "url": "https://github.com/InternLM/xtuner",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "arxiv-2304.02948.md",
       "url": "https://arxiv.org/abs/2304.02948",
-      "fetched_at": "2025-06-17",
+      "fetched_at": "2026-08-26",
       "type": "arxiv"
     }
   ]

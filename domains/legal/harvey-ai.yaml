@@ -3,9 +3,10 @@ name_en: Harvey AI
 company: Harvey
 domain: legal
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.harvey.ai
-description: Harvey是面向顶尖律所和企业法务团队的前沿法律AI平台，已获2400+法律组织信任用于处理高风险法律工作。平台提供Harvey II新一代智能体引擎、Agents工作编排、Spaces协作空间、Vault文档管理、Contract Intelligence合同智能和Command Center使用分析等产品矩阵，支持律师团队在统一平台上安全高效地完成复杂法律任务。平均每月为用户节省25+小时。
+description: Harvey是面向顶尖律所和企业法务团队的前沿法律AI平台，已获2400+法律组织信任用于处理高风险法律工作。平台提供Harvey II新一代智能体引擎、Agents工作编排、Spaces协作空间、Vault文档管理、Contract
+  Intelligence合同智能和Command Center使用分析等产品矩阵，支持律师团队在统一平台上安全高效地完成复杂法律任务。平均每月为用户节省25+小时。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GPT-4
@@ -35,17 +36,20 @@ datasets:
   type: rlhf
 benchmarks:
 - name: 用户采用规模
-  score: "2400+"
+  score: 2400+
   metric: organizations
-  comparison: "覆盖75+ AmLaw 100律所，在70+国家使用"
+  comparison: 覆盖75+ AmLaw 100律所，在70+国家使用
+  source: self-reported
 - name: 月均节省时间
-  score: "25+"
+  score: 25+
   metric: hours_saved_monthly
-  comparison: "平均每位用户每月节省25+小时"
+  comparison: 平均每位用户每月节省25+小时
+  source: self-reported
 - name: 专业用户数
-  score: "200000+"
+  score: 200000+
   metric: active_users
-  comparison: "超过20万法律专业人员在日常工作中使用Harvey"
+  comparison: 超过20万法律专业人员在日常工作中使用Harvey
+  source: self-reported
 api:
   available: true
   protocol: rest

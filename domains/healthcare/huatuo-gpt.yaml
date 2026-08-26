@@ -38,9 +38,11 @@ benchmarks:
 - name: cMedQA2
   score: '27.39'
   metric: BLEU-1
+  source: paper
 - name: WebMedQA
   score: '24.85'
   metric: BLEU-1
+  source: self-reported
 capabilities:
 - 中文医疗多轮对话问诊
 - 医学问题解答与建议

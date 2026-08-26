@@ -3,7 +3,7 @@ name_en: China Telecom Xinghe LLM
 company: 中国电信
 domain: telecom
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://www.chinatelecom.com.cn
 description: 中国电信自主研发的行业大模型平台，采用"1+N+M"架构体系（1个基础大模型+N个行业垂直模型+M个场景应用）。依托天翼云全国分布式GPU集群支撑千亿级参数训练，覆盖网络智能运营、客户服务自动化、电信安全防护、云计算优化和数字政务服务五大核心领域，推动企业从传统流量经营向Token经营的战略转型。
 parameters: 千亿级
@@ -45,21 +45,25 @@ datasets:
   type: sft
 benchmarks:
 - name: 模型参数规模
-  score: "千亿级"
+  score: 千亿级
   metric: parameters
-  comparison: "依托天翼云全国分布式GPU集群支撑千亿级参数训练"
+  comparison: 依托天翼云全国分布式GPU集群支撑千亿级参数训练
+  source: self-reported
 - name: 架构体系
-  score: "1+N+M"
+  score: 1+N+M
   metric: architecture_scope
-  comparison: "1个基础大模型 + N个行业大模型 + M个场景应用"
+  comparison: 1个基础大模型 + N个行业大模型 + M个场景应用
+  source: self-reported
 - name: 网络故障诊断
-  score: "显著提升"
+  score: 显著提升
   metric: accuracy_improvement
-  comparison: "网络故障根因分析准确率较传统方法显著提升"
+  comparison: 网络故障根因分析准确率较传统方法显著提升
+  source: self-reported
 - name: 12345热线智能接听
-  score: "已部署"
+  score: 已部署
   metric: deployment_status
-  comparison: "覆盖政务热线智能接听和事件分类"
+  comparison: 覆盖政务热线智能接听和事件分类
+  source: self-reported
 capabilities:
 - 网络智能运营（故障预测、性能优化、容量规划、自治网络）
 - 全渠道客户服务自动化（意图识别、情感分析、主动服务）

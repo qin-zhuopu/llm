@@ -3,9 +3,10 @@ name_en: XtalPi Science
 company: 晶泰科技
 domain: pharma-biotech
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.xtalpi.com/en
-description: 晶泰科技开发的AI驱动科学发现平台XtalPi Science，通过多智能体（Multi-Agent）架构编排科学AI和物理AI，连接人类科学家与200+垂直领域AI模型以及24/7运行的自主实验室机器人，实现干湿实验的自主闭环迭代，加速分子研发过程的民主化。平台包含Genius Agents智能枢纽、领域AI模型和Physical AI实体实验室机器人三层架构。
+description: 晶泰科技开发的AI驱动科学发现平台XtalPi Science，通过多智能体（Multi-Agent）架构编排科学AI和物理AI，连接人类科学家与200+垂直领域AI模型以及24/7运行的自主实验室机器人，实现干湿实验的自主闭环迭代，加速分子研发过程的民主化。平台包含Genius
+  Agents智能枢纽、领域AI模型和Physical AI实体实验室机器人三层架构。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -37,17 +38,20 @@ datasets:
   type: sft
 benchmarks:
 - name: 垂直领域AI模型数量
-  score: "200+"
+  score: 200+
   metric: model_count
-  comparison: "覆盖分子发现全流程的智能实验设计、预测和分析"
+  comparison: 覆盖分子发现全流程的智能实验设计、预测和分析
+  source: self-reported
 - name: SureRoute逆合成准确性
   score: Hallucination-free
   metric: hallucination_rate
-  comparison: "vs 传统逆合成工具: 实现无幻觉的自改进逆合成平台"
+  comparison: 'vs 传统逆合成工具: 实现无幻觉的自改进逆合成平台'
+  source: self-reported
 - name: 药物发现效率
-  score: "28天发现新颖高活性命中化合物"
+  score: 28天发现新颖高活性命中化合物
   metric: time_to_hit
-  comparison: "GPX4靶点28天内发现非共价高活性命中物"
+  comparison: GPX4靶点28天内发现非共价高活性命中物
+  source: self-reported
 api:
   available: true
   protocol: rest

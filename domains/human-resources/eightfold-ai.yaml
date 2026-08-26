@@ -3,9 +3,10 @@ name_en: Eightfold AI Talent Intelligence
 company: Eightfold
 domain: human-resources
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://eightfold.ai
-description: Eightfold AI开发的AI原生人才智能平台，基于16亿职业轨迹和160万技能的专有数据训练，为企业提供覆盖招聘、员工发展和劳动力规划的全方位AI智能决策系统。2026年获得HR Tech突破大奖的Agentic AI人力资源解决方案年度奖，通过AI Interviewer和Candidate Agent等Talent Agents实现高效人才管理，部分客户将岗位填充时间缩短33%。
+description: Eightfold AI开发的AI原生人才智能平台，基于16亿职业轨迹和160万技能的专有数据训练，为企业提供覆盖招聘、员工发展和劳动力规划的全方位AI智能决策系统。2026年获得HR
+  Tech突破大奖的Agentic AI人力资源解决方案年度奖，通过AI Interviewer和Candidate Agent等Talent Agents实现高效人才管理，部分客户将岗位填充时间缩短33%。
 parameters: 未公开
 architecture: decoder-only transformer
 training:
@@ -37,17 +38,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: 岗位填充时间缩短
-  score: "33%"
+  score: 33%
   metric: time_to_fill_reduction
-  comparison: "部分客户将岗位填充时间缩短33%"
+  comparison: 部分客户将岗位填充时间缩短33%
+  source: self-reported
 - name: 高量级岗位填充速度
-  score: "1.3天"
+  score: 1.3天
   metric: days_to_fill
-  comparison: "部分客户在高量级时薪岗位实现最快1.3天填充"
+  comparison: 部分客户在高量级时薪岗位实现最快1.3天填充
+  source: self-reported
 - name: 数据覆盖
-  score: "16亿"
+  score: 16亿
   metric: profile_coverage
-  comparison: "vs 竞品: 16亿职业轨迹和160万技能的专有数据是其他解决方案无法匹配的"
+  comparison: 'vs 竞品: 16亿职业轨迹和160万技能的专有数据是其他解决方案无法匹配的'
+  source: self-reported
 api:
   available: true
   protocol: rest

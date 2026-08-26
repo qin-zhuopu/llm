@@ -3,7 +3,7 @@ name_en: Tongyi Stardust (E-commerce)
 company: 阿里巴巴
 domain: retail-ecommerce
 status: released
-release_date: "2023"
+release_date: '2023'
 website: https://tongyi.aliyun.com/xingchen
 description: 阿里巴巴基于通义千问(Qwen)大模型体系推出的电商行业AI内容生成和智能服务平台，以角色扮演和个性化AI为特色。通过海量电商交易数据和用户行为数据训练，具备多模态理解和生成能力，支持商品文案自动生成、7x24智能客服、个性化推荐和评论洞察分析。系统可承载双11大促百万级并发，帮助商家内容生产效率提升数倍、客服成本大幅降低。
 parameters: 未公开（基于Qwen系列）
@@ -41,21 +41,25 @@ datasets:
   type: sft
 benchmarks:
 - name: 内容生产效率
-  score: "数倍提升"
+  score: 数倍提升
   metric: efficiency_gain
-  comparison: "vs 人工文案：生成速度提升数倍，覆盖多平台规范适配"
+  comparison: vs 人工文案：生成速度提升数倍，覆盖多平台规范适配
+  source: self-reported
 - name: 大促并发能力
-  score: "百万级QPS"
+  score: 百万级QPS
   metric: throughput
-  comparison: "双11期间承担大量瞬时咨询并发，服务质量不降级"
+  comparison: 双11期间承担大量瞬时咨询并发，服务质量不降级
+  source: self-reported
 - name: 客服成本降低
-  score: "大幅降低"
+  score: 大幅降低
   metric: cost_reduction
-  comparison: "7x24智能客服替代大量人工客服，售前售中售后全覆盖"
+  comparison: 7x24智能客服替代大量人工客服，售前售中售后全覆盖
+  source: self-reported
 - name: 平台覆盖
-  score: "3+"
+  score: 3+
   metric: platform_count
-  comparison: "适配淘宝、天猫、1688等多个阿里电商平台"
+  comparison: 适配淘宝、天猫、1688等多个阿里电商平台
+  source: self-reported
 capabilities:
 - AI商品标题和详情文案自动生成（多风格多平台适配）
 - 7x24智能客服（售前咨询、售中跟踪、售后支持）

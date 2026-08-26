@@ -3,9 +3,10 @@ name_en: AlphaSense AI Platform
 company: AlphaSense
 domain: finance
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.alpha-sense.com
-description: 全球领先的AI驱动金融与企业研究平台，拥有5亿+高级商业文档和7000+企业客户。2026年ARR超6亿美元，估值75亿美元。平台集成Generative Search多智能体系统、Deep Research自主研究代理和Workflow Agents，提供句子级引用和无幻觉输出，覆盖投资银行、对冲基金、私募股权、咨询等核心金融场景。数据源涵盖Tegus专家访谈、券商研报、公司文件和私有金融数据。
+description: 全球领先的AI驱动金融与企业研究平台，拥有5亿+高级商业文档和7000+企业客户。2026年ARR超6亿美元，估值75亿美元。平台集成Generative
+  Search多智能体系统、Deep Research自主研究代理和Workflow Agents，提供句子级引用和无幻觉输出，覆盖投资银行、对冲基金、私募股权、咨询等核心金融场景。数据源涵盖Tegus专家访谈、券商研报、公司文件和私有金融数据。
 parameters: 未公开
 architecture: Multi-agent system (多智能体架构)
 training:
@@ -41,17 +42,20 @@ datasets:
   type: other
 benchmarks:
 - name: Citation Accuracy
-  score: "句子级精确引用"
+  score: 句子级精确引用
   metric: citation_precision
-  comparison: "vs 通用AI搜索: 提供可审计的句子级引用，消除幻觉"
+  comparison: 'vs 通用AI搜索: 提供可审计的句子级引用，消除幻觉'
+  source: self-reported
 - name: Research Efficiency
-  score: "数周压缩至数分钟"
+  score: 数周压缩至数分钟
   metric: time_savings
-  comparison: "vs 传统分析师工作流: Deep Research将数周分析压缩到几分钟"
+  comparison: 'vs 传统分析师工作流: Deep Research将数周分析压缩到几分钟'
+  source: self-reported
 - name: Document Coverage
-  score: "500M+"
+  score: 500M+
   metric: document_count
-  comparison: "vs 竞品: 拥有业界最大的高级金融和商业文档库"
+  comparison: 'vs 竞品: 拥有业界最大的高级金融和商业文档库'
+  source: self-reported
 api:
   available: true
   documentation: https://www.alpha-sense.com/platform/

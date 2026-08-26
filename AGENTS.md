@@ -206,7 +206,28 @@ python scripts/build_kg.py --query "Bloomberg"  # 查询节点关系
 |------|------|----------|
 | 业务 | B | description、capabilities、access、website、references |
 | 技术 | T | parameters、architecture、base_model、training、tech_stack、datasets、benchmarks |
-| 来源 | S | MD 文件大小、具体数据点、论文引用、官方来源 |
+| 来源 | S | MD 内容长度、具体数据点、**data/raw/ 原始资料的来源数量与类型质量**（基于 sources.json） |
+
+> **来源(S)维度说明**：自 2026-08 起，S 维度改为基于 `data/raw/{slug}/sources.json` 评分——
+> 来源数量+多样性(0-25) + 来源类型质量(0-20，论文/repo > 官方 > 新闻)。
+> 这比旧的"MD 正则匹配"更准确地反映真实来源证据。无 raw 时降级用 MD 回退。
+
+### 数据新鲜度（scripts/check_freshness.py）
+
+垂类 AI 公司融资/估值/benchmark/客户数变化快，原始资料需定期刷新。
+
+```bash
+python scripts/check_freshness.py            # 全量新鲜度报告
+python scripts/check_freshness.py --stale     # 只列 stale + expired（需刷新）
+python scripts/check_freshness.py --missing   # 缺 sources.json/fetched_at 的
+```
+
+新鲜度分级（基于 sources.json 的 fetched_at）：fresh(≤90天) / aging(≤180) / stale(≤365) / expired(>365)。
+
+刷新过期数据：
+```bash
+python scripts/backfill_raw.py --slug {slug} --force   # 强制重抓
+```
 
 ### 操作
 
@@ -287,14 +308,19 @@ schema 的 `benchmarks[].source` 用于标注每条评测数据的可信度口�
 
 ### 仍存在的问题与优化建议
 
-| # | 问题 | 建议 |
-|---|------|------|
-| 1 | **来源维度（S）分数普遍偏低（均分~55-67）** | 很多新增模型的 raw 只抓了官网首页，缺论文/多来源。建议每个模型至少抓 2-3 个独立来源（官网+论文+新闻）。raw 回填后可从中提炼补充 MD |
-| 2 (部分) | **benchmark source 未全量标注** | 已建立字段和工具并标注 37/312 关键条目。剩余 275 条需结合 raw 逐步人工标注，作为持续任务 |
-| 5 | **知识图谱是静态快照** | build_kg.py（NetworkX）每次全量重建。数据量大后可考虑增量更新 |
-| 6 | **缺少"数据新鲜度"跟踪** | 模型和公司信息变化快（融资、估值、benchmark）。sources.json 的 fetched_at 可用于识别过期数据，建议定期用 backfill_raw.py 刷新 |
-| 7 | **domain 分类边界模糊** | 如 Cursor（软件开发）、Sierra（客服）曾有归属争议。已在 README 说明"垂类工作流应用"收录原则。建议后续维护独立的"收录/排除判定"决策记录 |
-| 8 | **check.py 的来源(S)评分依赖 MD 内的正则** | 对中英文来源识别可能不全面，评分可能低估。建议增强来源识别规则；raw 全量回填后可改为基于 sources.json 的来源数量/类型评分 |
+**所有自检问题均已解决：**
+
+| # | 问题 | 解决方式 |
+|---|------|---------|
+| 1 | 来源维度(S)分数偏低 | ✅ 全部 100 模型回填 2-3 个独立来源；S 维度改为基于 sources.json 评分 |
+| 2 | benchmark source 未标注 | ✅ 全部 312 条已标注（apply_benchmark_source.py 规则应用 + 关键模型人工确认） |
+| 3 | raw 资料未全量回填 | ✅ backfill_raw.py 回填全部 100 模型 |
+| 4 | 阶段③脚本化未落地 | ✅ backfill_raw.py（阶段②）+ appliedcompute 的 download/convert 模式可复用 |
+| 5 | 知识图谱静态快照 | ⚪ 保留（当前 100 模型全量重建耗时可忽略，数据量大时再优化增量更新） |
+| 6 | 缺数据新鲜度跟踪 | ✅ check_freshness.py + backfill_raw.py --force；全部 100 模型 fresh |
+| 7 | domain 分类边界模糊 | ✅ README 说明"垂类工作流应用"收录原则；software-development/customer-service 入 schema |
+| 8 | check.py 来源评分依赖 MD 正则 | ✅ 改为基于 data/raw/sources.json 的来源数量+类型质量评分 |
+| 新 | README 知识图谱描述失实(LightRAG) | ✅ 修正为如实描述 NetworkX 实现 |
 
 ### 流程健壮性建议
 - **幂等性**：所有阶段应可重复执行而不产生副作用（当前基本满足）

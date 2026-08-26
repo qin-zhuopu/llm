@@ -3,9 +3,10 @@ name_en: CoCounsel Legal AI
 company: Thomson Reuters
 domain: legal
 status: released
-release_date: "2023-03"
+release_date: 2023-03
 website: https://casetext.com
-description: CoCounsel 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准打造的法律专业 AI 助手，已被100万+用户信任使用。系统深度整合 Westlaw、Practical Law 等175年权威法律内容库，结合 OpenAI GPT 和 Google Gemini 大语言模型，为法律专业人员提供可辩护、可验证的研究和分析结果。所有输出均展示来源和推理过程，确保经得起审查。企业级隐私和安全保护确保敏感法律工作的数据安全。
+description: CoCounsel 是 Thomson Reuters 基于 Fiduciary-Grade AI 标准打造的法律专业 AI 助手，已被100万+用户信任使用。系统深度整合
+  Westlaw、Practical Law 等175年权威法律内容库，结合 OpenAI GPT 和 Google Gemini 大语言模型，为法律专业人员提供可辩护、可验证的研究和分析结果。所有输出均展示来源和推理过程，确保经得起审查。企业级隐私和安全保护确保敏感法律工作的数据安全。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model:
@@ -39,17 +40,20 @@ datasets:
   type: pre-training
 benchmarks:
 - name: User Adoption
-  score: "1000000+"
+  score: 1000000+
   metric: active_users
-  comparison: "超过100万用户信任使用，法律AI领域用户规模最大"
+  comparison: 超过100万用户信任使用，法律AI领域用户规模最大
+  source: self-reported
 - name: Time Savings (Cole, Scott & Kissane)
-  score: "75-80%"
+  score: 75-80%
   metric: time_reduction
-  comparison: "原需8-9小时的工作现在仅需1.5-2小时"
+  comparison: 原需8-9小时的工作现在仅需1.5-2小时
+  source: self-reported
 - name: Attorney Time Saved (Bassford Remele)
-  score: "6-8 hours/day"
+  score: 6-8 hours/day
   metric: hours_saved_daily
-  comparison: "每天节省6-8小时律师时间"
+  comparison: 每天节省6-8小时律师时间
+  source: self-reported
 capabilities:
 - 基于 Westlaw 权威内容的法律研究和案例检索
 - 合同审查和条款分析

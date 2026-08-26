@@ -34,18 +34,21 @@ datasets:
   type: sft
 benchmarks:
 - name: 金融研报生成质量
-  score: "可用级"
+  score: 可用级
   metric: quality_score
-  comparison: "vs 人工分析师: 框架生成和数据整合能力媲美初级分析师"
+  comparison: 'vs 人工分析师: 框架生成和数据整合能力媲美初级分析师'
+  source: self-reported
 - name: 合规检查准确率
-  score: "高准确率"
+  score: 高准确率
   metric: accuracy
-  comparison: "vs 人工审核: 显著提升审查效率，减少遗漏"
+  comparison: 'vs 人工审核: 显著提升审查效率，减少遗漏'
+  source: self-reported
 - name: 金融NLP任务
-  score: "领域领先"
+  score: 领域领先
   metric: accuracy
   split: test
-  comparison: "vs 通用大模型: 在金融术语理解、财报解读等任务上显著优于通用模型"
+  comparison: 'vs 通用大模型: 在金融术语理解、财报解读等任务上显著优于通用模型'
+  source: self-reported
 capabilities:
 - 智能研报生成，包含数据整合、框架撰写和多版本输出
 - 上市公司财务报表智能解读和关键指标提取
