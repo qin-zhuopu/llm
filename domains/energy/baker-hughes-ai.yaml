@@ -1,27 +1,67 @@
 name: Baker Hughes AI
+name_en: Baker Hughes AI
 company: Baker Hughes
 domain: energy
 status: released
-release_date: '2023'
 website: https://www.bakerhughes.com
-description: Baker Hughes AI 是一套专为石油天然气及更广泛能源行业设计的综合性人工智能与机器学习解决方案套件。通过 C3 AI 的合作伙伴关系（BHC3
-  合资企业）和专有技术开发，该套件提供企业级 AI 应用。其核心能力涵盖预测性维护（可提前 30-50 天预测泵故障）、钻井优化（I-Trak 自动化）、油藏建模及排放监测，旨在通过分析大量传感器数据（近
-  1TB 量级）来解决能源价值链中的关键运营挑战。
+description: Baker Hughes联合C3 AI打造的企业级能源行业AI解决方案体系，覆盖预测性维护、钻井优化、储层建模、排放监测和设备健康诊断等全价值链应用。其BHC3可靠性应用可提前30-50天预测泵故障，分析近1TB传感器数据，预计节省超过1000万美元。Leucipa自动化油田生产平台已在美国主要页岩气田部署。
+architecture: ensemble ML models
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于企业AI平台（BHC3 joint venture with C3 AI）对机器学习模型进行针对能源设备数据的持续训练和优化，整合5年历史时间序列数据、资产层级和工单通知等多源数据进行模型训练。
+tech_stack:
+  framework: C3 AI / BHC3 Enterprise AI Platform
+  techniques:
+  - Neural Networks for failure prediction
+  - Time-series analysis
+  - Predictive maintenance ML
+  - Drilling automation (I-Trak)
+  - Geostopping and lookahead services
+  - Multi-source data fusion
+  - Edge computing for real-time monitoring
+datasets:
+- name: Equipment Sensor Data
+  description: 来自泵、压缩机、涡轮等能源设备的近1TB传感器时间序列数据，用于故障预测模型训练
+  size: ~1TB
+  type: pre-training
+- name: Historical Maintenance Records
+  description: 5年历史时间序列数据，结合资产层级信息和工单通知，用于控制阀故障预测
+  size: 5 years historical data
+  type: pre-training
+benchmarks:
+- name: Pump Failure Prediction Lead Time
+  score: "30-50 days"
+  metric: advance_warning_days
+  comparison: "vs 传统计划维护: 从被动响应到提前30-50天预警"
+- name: Projected Cost Savings
+  score: "$10M+"
+  metric: cost_savings
+  comparison: "vs 传统维护方式: 节省超过1000万美元"
+- name: Drilling ROP Optimization
+  score: "显著提升"
+  metric: rate_of_penetration
+  comparison: "vs 人工钻井参数调节: 减少过度振动，最大化钻进速率"
 capabilities:
-- 预测性维护：利用机器学习预测泵和控制阀等设备的故障
-- 钻井优化：通过 I-Trak 自动化提高钻进速度并降低井眼扭曲
-- 油藏建模：结合地质和地震数据创建更准确的地下储层模型
-- 排放监测：AI 驱动的温室气体检测、测量和减排解决方案
-- 设备健康诊断：实时监控泵、压缩机和涡轮机等关键设备
-tags:
-- oil & gas
-- predictive maintenance
-- drilling automation
-- reservoir management
-- emissions monitoring
-- industrial ai
+- 提前30-50天预测泵等关键设备故障，优化维护人员部署
+- 自动化定向钻井，优化钻进速率并减少井眼曲折度
+- AI增强储层建模，改善采收率预测和井位优化
+- 实时排放监测与温室气体减排支持
+- 关键能源设备（泵、压缩机、涡轮）实时健康诊断
+- Leucipa平台自动化油田生产工作流优化
 access:
 - saas
+- private-deployment
+tags:
+- predictive-maintenance
+- drilling-optimization
+- oil-gas
+- energy-transition
+- emissions-monitoring
+- bhc3
+- leucipa
 references:
-- title: Baker Hughes Official Website
+- title: Baker Hughes AI Solutions
   url: https://www.bakerhughes.com
+- title: BHC3 Enterprise AI Platform
+  url: https://www.bakerhughes.com/bhc3

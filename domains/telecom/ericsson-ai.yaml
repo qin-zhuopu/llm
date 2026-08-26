@@ -1,26 +1,68 @@
-name: Ericsson AI
+name: Ericsson AI RAN
+name_en: Ericsson AI RAN
 company: Ericsson
 domain: telecom
 status: released
-release_date: '2024'
 website: https://www.ericsson.com
-description: 爱立信（Ericsson）推出的面向电信网络的AI解决方案体系，核心战略为'AI RAN'，结合意图驱动管理与AI原生能力，旨在为运营商提供5G及6G时代的智能网络方案。该体系涵盖RAN优化、预测性维护、网络切片自动化及能效优化等关键功能。
+description: 全球通信设备巨头爱立信推出的面向电信网络的AI解决方案体系，核心战略为AI RAN（AI赋能的无线接入网）。包含"Networks for AI"（网络支撑AI应用）和"AI in Networks"（AI嵌入网络功能）两大方向。基于图神经网络的网络优化框架、强化学习实现RAN自主优化、嵌入式AI推理能力直接部署在基站硬件中。已与Telstra合作部署全球首个新型RAN计算平台（2024年8月）。
+parameters: 未公开
+architecture: graph neural network + reinforcement learning
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模网络运行数据训练图神经网络（GNN）框架，学习网络拓扑、流量模式和性能指标之间的复杂关系。覆盖网络设计、优化和故障预测等任务。
+  - name: fine-tuning
+    description: 利用强化学习（RL）技术实现RAN功能的意图驱动自主优化，研究泛化学习方法使AI模型在不同网络环境中高效泛化。嵌入式AI推理部署在RAN的无线计算架构中。
+tech_stack:
+  framework: Ericsson AI RAN Platform
+  techniques:
+  - Graph Neural Networks (GNN) for network optimization
+  - Reinforcement learning for autonomous RAN
+  - Embedded AI inference in base stations
+  - Intent-driven network management
+  - AI-native RAN architecture
+  - Digital twin for network simulation
+  - Edge AI computing
+datasets:
+- name: Network Performance Data
+  description: 全球运营商网络的运行数据，包括流量模式、设备状态、信号质量和性能指标
+  type: pre-training
+- name: Network Topology Data
+  description: 基站部署、天线配置和网络拓扑结构数据，用于图神经网络训练
+  type: pre-training
+benchmarks:
+- name: RAN Performance Improvement
+  score: "显著提升"
+  metric: network_performance
+  comparison: "vs 传统规则优化: GNN框架为运营商带来显著的网络性能提升"
+- name: Energy Efficiency
+  score: "大幅节能"
+  metric: energy_reduction
+  comparison: "vs 传统基站管理: 通过智能休眠策略和功率控制显著降低能耗"
+- name: Telstra RAN Deployment
+  score: "全球首个"
+  metric: milestone
+  comparison: "2024年8月与Telstra合作部署全球首个新型RAN计算平台"
 capabilities:
-- 基于图神经网络GNN的RAN网络设计与优化
-- 利用强化学习实现意图驱动的RAN自主优化
-- 网络设备预测性维护与故障智能识别
-- 5G网络切片资源动态分配与SLA实时保障
-- AI驱动的基站休眠策略与能耗管理优化
-- 面向自治网络的闭环自动化与自愈能力
-tags:
-- ai-ran
-- 电信网络
-- 预测性维护
-- 网络切片
-- 自主网络
-- 能效优化
+- 图神经网络驱动的无线接入网络设计和性能优化
+- 强化学习实现RAN功能的意图驱动自主优化
+- 预测性维护识别设备老化、性能退化和潜在故障
+- 5G网络切片资源动态分配和SLA保障
+- AI驱动的基站休眠策略和负载感知功率控制
+- 闭环自动化实现感知、决策到执行的全自动网络运营
 access:
 - private-deployment
+tags:
+- ai-ran
+- 5g
+- network-optimization
+- graph-neural-network
+- reinforcement-learning
+- predictive-maintenance
+- network-slicing
+- energy-efficiency
 references:
-- title: Ericsson 官方网站
+- title: Ericsson AI RAN Solutions
   url: https://www.ericsson.com
+- title: Ericsson and Telstra RAN Deployment
+  url: https://www.ericsson.com/en/news

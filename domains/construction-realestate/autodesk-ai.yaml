@@ -1,26 +1,63 @@
 name: Autodesk AI
+name_en: Autodesk AI
 company: Autodesk
 domain: construction-realestate
 status: released
-release_date: '2024'
+release_date: "2024"
 website: https://www.autodesk.com
-description: Autodesk AI 是一套嵌入在 Autodesk 设计、工程和施工软件产品中的人工智能和机器学习功能套件。它结合了基于算法的生成式设计（Generative
-  Design）和基于神经网络的生成式 AI（Generative AI），旨在增强 AutoCAD、Revit 和 Fusion 等生态系统工具。该模型通过智能辅助和工作流自动化，服务于全球数百万建筑、工程、施工（AEC）及制造领域的专业人士，显著提升工作效率并优化项目成果。
+description: Autodesk推出的嵌入式AI和机器学习能力套件，覆盖AutoCAD、Revit、Fusion等设计、工程和建筑软件产品。核心功能包括生成式设计（算法优化空间规划和结构设计）、Autodesk Assistant自然语言建模助手（Revit 2027技术预览）、AutoCAD机器学习自动化和BIM智能化，服务于全球数百万建筑、工程、施工和制造专业人员。
+parameters: 未公开
+architecture: multi-model ensemble
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于AEC和制造业领域的设计数据、BIM模型和工程文档进行模型训练和优化，支撑生成式设计的参数化搜索和AI助手的自然语言交互能力。
+tech_stack:
+  framework: Autodesk Platform (Cloud-connected)
+  techniques:
+  - Generative Design (algorithmic optimization)
+  - Generative AI (neural network-based creation)
+  - Machine Learning for drafting automation
+  - Natural Language Processing (Autodesk Assistant)
+  - Topology optimization
+  - BIM intelligence and clash detection
+  - Predictive analytics for construction
+datasets:
+- name: BIM and Design Data
+  description: 来自Revit、AutoCAD、Fusion等产品积累的海量建筑信息模型、工程设计文件和施工文档数据
+  type: pre-training
+benchmarks:
+- name: Design Alternative Generation Speed
+  score: "数百种方案/小时"
+  metric: throughput
+  comparison: "vs 人工设计: 从数周缩短到数小时生成数百种优化方案"
+- name: Topology Optimization Efficiency
+  score: "显著减重"
+  metric: weight_reduction
+  comparison: "vs 传统设计: 在满足强度要求的同时实现显著减重"
+- name: Construction Risk Prediction
+  score: "高准确率"
+  metric: accuracy
+  comparison: "vs 传统项目管理: 提供数据驱动的进度和风险预测"
 capabilities:
-- '生成式设计 (Generative Design): 基于目标和约束快速生成设计替代方案'
-- '自然语言交互 (Autodesk Assistant): 使用自然语言查询模型、生成文档并执行建模操作'
-- '机器学习辅助 (AutoCAD ML): 支持绘图、工程和设计工作流的自动化与洞察提取'
-- 'BIM 智能增强: AI 增强的建筑信息模型，用于碰撞检测、算量提取和设计协调'
-- '预测性分析: 针对项目进度安排、风险评估和资源优化的预测分析'
+- 生成式设计快速生成满足约束条件的数百种空间规划和结构方案
+- Autodesk Assistant自然语言交互，直接在建模环境中提问和触发操作
+- AutoCAD机器学习辅助制图、工程设计和工作流自动化
+- BIM智能碰撞检测、工程量提取和设计协调
+- 拓扑优化实现轻量化高强度组件设计
+- 施工项目预测分析，包括进度预测和资源优化
+access:
+- saas
 tags:
 - generative-design
 - bim
+- architecture
 - construction
-- aec
 - cad
-- autonomous-workflow
-access:
-- saas
+- natural-language-interface
+- topology-optimization
 references:
-- title: Autodesk Official Website
+- title: Autodesk AI Official Website
   url: https://www.autodesk.com
+- title: Autodesk Revit 2027 AI Features
+  url: https://www.autodesk.com/products/revit

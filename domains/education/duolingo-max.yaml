@@ -1,25 +1,65 @@
 name: Duolingo Max
+name_en: Duolingo Max
 company: Duolingo
 domain: education
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.duolingo.com
-description: Duolingo Max 是多邻国推出的高级订阅服务，深度集成了 OpenAI 的 GPT-4 模型。该产品定位于语言学习场景中的深度交互与个性化辅导，核心差异化在于通过
-  GPT-4 提供语法规则解释（Explain My Answer）和实景角色扮演对话练习。它支持 40 多种语言和 100 多门课程，显著弥补了传统自学中缺少即时反馈和真实对话练习的短板。
+description: Duolingo推出的高级AI语言学习订阅产品，基于OpenAI GPT-4提供两大核心AI功能：Explain My Answer（语法错误详解和交互式问答）和Roleplay（场景化AI对话练习）。产品直接嵌入现有学习流程，用户可在做错题时获得即时的个性化语法解释，或与AI角色进行真实场景对话练习并获得表现报告。支持40+种语言、100+门课程，已成为公司重要收入驱动力。
+parameters: 未公开
+architecture: decoder-only transformer
 base_model: GPT-4
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于GPT-4对语言学习场景进行定制化调优，包括语法错误解释的个性化生成、场景化对话的自适应难度控制和学习者水平匹配。Duolingo将AI嵌入用户已熟悉的学习流程中，而非构建独立的AI产品。
+tech_stack:
+  framework: OpenAI GPT-4 API
+  techniques:
+  - GPT-4 language generation
+  - Personalized grammar explanation
+  - Adaptive conversation difficulty
+  - Performance report generation
+  - Context-aware error feedback
+  - Multi-language support (40+ languages)
+datasets:
+- name: Language Learning Interaction Data
+  description: Duolingo平台积累的海量学习者交互数据，包括错误模式、学习进度和课程完成数据
+  type: sft
+- name: Duolingo English Test Data
+  description: Duolingo English Test测试数据，用于AI个性化和评估能力优化
+  type: evaluation
+benchmarks:
+- name: Language Coverage
+  score: "40+"
+  metric: languages_supported
+  comparison: "vs 其他AI语言学习产品: 覆盖语言数量行业领先"
+- name: Course Coverage
+  score: "100+"
+  metric: courses_available
+  comparison: "vs 传统语言学习APP: 从简单词汇到复杂句型的全覆盖课程体系"
+- name: Revenue Impact
+  score: "显著增收"
+  metric: revenue_growth
+  comparison: "vs Super Duolingo: 证明高级AI功能可在消费教育领域成功变现"
 capabilities:
-- 详细语法解释：提供针对特定错误的语法规则拆解与上下文说明
-- 场景化角色扮演：模拟咖啡馆点餐、酒店预订等真实对话场景进行练习
-- 个性化学习反馈：根据用户的错误上下文生成定制化的改进建议
-- 即时交互练习：用户可针对困惑点进行追问，获得类私教般的深度解答
-tags:
-- language-learning
-- ed-tech
-- ai-tutor
-- roleplay
-- personalized-learning
+- Explain My Answer：做错题后即时获得详细语法规则解释和个性化反馈
+- Roleplay：真实场景（餐厅点餐、酒店预订、面试等）AI对话练习
+- AI对话伙伴自适应学习者水平和回答难度
+- 对话结束后生成详细表现报告（优势和改进方向）
+- 支持40+种语言的跨语言学习场景
+- 无后果的安全对话练习环境，模拟与母语者交互
 access:
 - saas
+tags:
+- language-learning
+- gpt-4
+- education-ai
+- conversational-ai
+- personalized-learning
+- gamification
 references:
 - title: Duolingo Official Website
   url: https://www.duolingo.com
+- title: Duolingo Max AI Features
+  url: https://blog.duolingo.com/duolingo-max/

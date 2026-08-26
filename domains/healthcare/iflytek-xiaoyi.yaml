@@ -1,20 +1,64 @@
 name: 讯飞晓医
+name_en: iFLYTEK Xiaoyi
 company: 科大讯飞
 domain: healthcare
 status: released
-release_date: '2023'
 website: https://www.iflytek.com
-description: 讯飞晓医是一款专注于医疗健康领域的垂直大模型，具备强大的医学知识理解和生成能力。该模型基于海量医学文献和临床数据训练，能够提供专业的诊疗建议、医学知识问答及辅助决策服务，旨在提升医疗服务的效率与准确性。
+description: 科大讯飞推出的医疗健康AI大模型，基于讯飞星火大模型底座，结合医疗领域深度语义理解和知识图谱技术，为医疗机构提供智能辅助诊疗、病历生成、医学影像分析和健康管理等服务。讯飞在AI领域拥有超过20年的技术积累，其医疗AI已通过执业医师资格考试，是中国最早将大模型应用于医疗领域的企业之一。
+parameters: 未公开
+architecture: decoder-only transformer
+base_model: 讯飞星火大模型
+training:
+  stages:
+  - name: continual-pre-training
+    description: 在讯飞星火大模型基础上，使用大规模医疗领域语料进行持续预训练，包括医学教材、临床指南、病例数据和医学文献等。
+  - name: sft
+    description: 使用医疗对话、辅助诊疗、病历生成等医疗场景指令数据进行监督微调，提升模型在医疗垂直场景的交互能力。
+tech_stack:
+  framework: iFLYTEK Spark Platform
+  techniques:
+  - Medical knowledge graph integration
+  - Retrieval-augmented generation (RAG)
+  - Multi-modal medical AI (NLP + image)
+  - Speech recognition for medical dictation
+  - Continual domain pre-training
+datasets:
+- name: Medical Knowledge Corpus
+  description: 包含医学教材、临床诊疗指南、医学文献、药品说明书等结构化和非结构化医疗知识数据
+  type: pre-training
+- name: Clinical Dialogue Data
+  description: 医患对话、辅助诊疗交互和病历生成场景的指令微调数据
+  type: sft
+benchmarks:
+- name: 中国执业医师资格考试
+  score: "通过"
+  metric: pass_rate
+  split: test
+  comparison: "vs 人类考生合格线: 达到通过标准，是中国首个通过执业医师考试的AI系统"
+- name: 医疗NLP任务
+  score: "业界领先"
+  metric: accuracy
+  split: test
+  comparison: "vs 通用大模型: 在医疗领域任务上显著领先"
 capabilities:
-- 医学知识问答
-- 辅助诊疗决策
-- 医学文献生成
-- 临床数据分析
-tags:
-- 星火大模型
-- 医疗
+- 智能辅助诊疗，基于症状和检查结果推荐诊断和治疗方案
+- 电子病历自动生成与结构化信息提取
+- 医学影像辅助分析（结合视觉模型）
+- 医疗语音识别与病历听写转录
+- 医学知识问答与患者健康咨询
+- 药物相互作用检查与用药建议
 access:
-- api
+- saas
+- private-deployment
+tags:
+- medical-ai
+- clinical-decision-support
+- chinese-medical-nlp
+- spark-model
+- iflytek
+- healthcare-assistant
 references:
 - title: 科大讯飞官网
   url: https://www.iflytek.com
+- title: 讯飞医疗AI解决方案
+  url: https://www.iflytek.com/en/about-us/about.html

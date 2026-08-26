@@ -1,25 +1,66 @@
-name: Gridmatic
+name: Gridmatic AI
+name_en: Gridmatic AI
 company: Gridmatic
 domain: energy
 status: released
 website: https://www.gridmatic.com/
-description: Gridmatic 是一家 AI 驱动的电力公司，用研究级机器学习优化能源供应、存储和使用。覆盖美国七大电力市场的全自动化能源交易系统，电网级电池储能优化（CAISO
-  2024-2025 排名第一电池），可再生能源 PPA 采购。深度学习预测能源价格，在 ERCOT 市场创造历史最高盈利，Best-in-class 预测能力超越人类交易员。
+description: Gridmatic是以人工智能驱动的电力公司，在美国七大电力市场（CAISO、ERCOT、PJM、NYISO、ISO-NE、MISO、SPP）部署全自动化能源交易系统。深度学习模型24/7预测价格波动并自动执行竞价策略，在ERCOT市场创造历史最高盈利。管理的电网级电池在CAISO市场排名第一。团队来自斯坦福、MIT等顶级研究机构，将前沿ML研究成果直接应用于生产系统。
+parameters: 未公开
+architecture: deep learning
+training:
+  stages:
+  - name: pre-training
+    description: 基于历史电力市场价格数据、天气模式、负荷波动、发电机组状态和输电约束等多维度数据训练深度学习价格预测模型。模型持续学习和迭代，适应市场结构变化和新监管环境。
+  - name: fine-tuning
+    description: 针对各电力市场（CAISO、ERCOT、PJM等）的特定规则和定价机制进行模型微调，优化充放电策略和竞价策略的具体参数。
+tech_stack:
+  framework: Custom deep learning platform
+  techniques:
+  - Deep learning price forecasting
+  - Reinforcement learning for bidding strategy
+  - Real-time market data processing
+  - Battery charge/discharge optimization
+  - Multi-market automated trading
+  - Millisecond-level market response
+datasets:
+- name: Electricity Market Historical Data
+  description: 美国七大电力市场的历史价格、负荷和交易数据，结合天气、发电机组状态和输电约束信息
+  type: pre-training
+- name: Battery Performance Data
+  description: 电网级电池储能系统的充放电数据和性能指标
+  type: pre-training
+benchmarks:
+- name: ERCOT Market Performance
+  score: "历史最高盈利"
+  metric: profit
+  comparison: "vs 人类交易员: 在极端市场条件下创造历史最高盈利记录"
+- name: CAISO Battery Ranking
+  score: "#1"
+  metric: rank
+  comparison: "vs 所有CAISO电池: 2024-2025年度排名第一"
+- name: Price Prediction Accuracy
+  score: "超越人类"
+  metric: accuracy
+  comparison: "vs 人类交易员和传统统计模型: 在多个市场中预测精度领先"
 capabilities:
-- 全自动化能源交易：覆盖美国7大电力市场的24/7自动竞价系统
-- 电网级电池储能优化：CAISO 2024-2025排名第一的电池管理
-- 深度学习能源价格预测：超越人类交易员的Best-in-class预测精度
-- 可再生能源PPA采购：AI辅助的购电协议定价和风险评估
-- 实时电网响应：毫秒级市场变化响应和套利机会捕获
-tags:
-- energy trading
-- battery storage
-- deep learning
-- price forecasting
-- renewable energy
-- grid optimization
+- 七大美国电力市场全自动化24/7能源交易
+- 深度学习模型精准预测电力价格波动
+- 电网级电池储能系统优化充放电策略最大化收益
+- 毫秒级响应市场变化捕获高波动性套利机会
+- 可再生能源PPA采购的风险评估和定价建议
+- 辅助服务市场参与获取额外收益
 access:
 - saas
+- private-deployment
+tags:
+- energy-trading
+- battery-optimization
+- electricity-market
+- deep-learning
+- automated-trading
+- clean-energy
+- caiso
+- ercot
 references:
 - title: Gridmatic Official Website
   url: https://www.gridmatic.com/

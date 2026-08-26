@@ -1,22 +1,76 @@
 name: BloombergGPT
+name_en: BloombergGPT
 company: Bloomberg
 domain: finance
-status: released
-release_date: 2023-03
+status: research
+release_date: "2023-03"
 website: https://www.bloomberg.com
-description: 500亿参数金融大语言模型，使用363B token的金融数据（财报、新闻、SEC文件）训练，在金融NLP任务上显著优于通用模型，同时保持较好的通用语言能力。
+description: Bloomberg开发的506亿参数金融领域专用大语言模型，基于包含3630亿token金融数据的FinPile数据集和3450亿token通用数据训练，总计消耗130万GPU小时，历时53天完成训练。在金融NLP任务上比同规模通用模型高出8-10个百分点，同时在通用基准上保持竞争力，是金融领域大模型的里程碑之作。
+parameters: 50.6B
+architecture: decoder-only transformer
+base_model: BLOOM architecture variant
+training:
+  stages:
+  - name: pre-training
+    description: 在FinPile（363B tokens金融数据）和通用数据集（345B tokens）上进行预训练，总计约708B tokens。FinPile包含金融新闻、监管文件、新闻稿、网络爬取金融文档和社交媒体数据。训练历时53天，消耗130万GPU小时。
+    data_tokens: 708B
+    duration: 53 days
+  total_tokens: 708B
+  total_cost: "$2.67M-$10M"
+tech_stack:
+  framework: Custom (BLOOM architecture)
+  techniques:
+  - Decoder-only transformer
+  - Domain-specific pre-training
+  - Mixed-domain training (financial + general)
+  - Large-scale GPU training
+datasets:
+- name: FinPile
+  description: Bloomberg构建的综合金融领域数据集，包含金融新闻文章、SEC监管文件、年报、公司公告、网络爬取金融文档和金融社交媒体数据，是当时最大的领域专用数据集
+  size: 363B tokens
+  type: pre-training
+- name: General-purpose dataset
+  description: 通用LLM训练中常用的公开数据集合，用于增强模型的通用语言能力
+  size: 345B tokens
+  type: pre-training
+benchmarks:
+- name: Financial NLP Tasks (Average)
+  score: "62.5%"
+  metric: accuracy
+  split: test
+  comparison: "vs 同规模通用模型: 高出8-10个百分点"
+- name: Financial Sentiment Analysis
+  score: "优于基线"
+  metric: accuracy
+  split: test
+  comparison: "vs GPT-NeoX, OPT-66B: 显著领先"
+- name: Financial NER
+  score: "优于基线"
+  metric: F1
+  split: test
+  comparison: "vs 通用模型: 领先"
+- name: General NLP Benchmarks
+  score: "竞争力水平"
+  metric: accuracy
+  split: test
+  comparison: "vs 同规模通用模型: 保持竞争力，未因领域专用训练而牺牲通用能力"
 capabilities:
-- 金融命名实体识别(NER)
-- 金融情感分析
-- 金融问答
-- 新闻分类与摘要
-- 金融文本生成
-parameters: 50B
+- 金融新闻和社交媒体情感分析与分类
+- 金融文本命名实体识别（公司、人物、金融工具等）
+- 金融新闻主题分类和相关性排序
+- 金融领域问答与专业知识检索
+- 金融事件摘要和标题生成
+- 通用语言理解、阅读理解和常识推理
 access:
 - internal-only
 tags:
-- 金融nlp
-- 情感分析
+- financial-nlp
+- domain-specific-pretraining
+- bloomberg-terminal
+- sentiment-analysis
+- named-entity-recognition
 references:
-- title: 'BloombergGPT: A Large Language Model for Finance'
+- title: BloombergGPT - A Large Language Model for Finance
   url: https://arxiv.org/abs/2303.17564
+- title: Bloomberg Official Website
+  url: https://www.bloomberg.com

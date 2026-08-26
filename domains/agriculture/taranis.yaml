@@ -1,25 +1,66 @@
-name: Taranis
+name: Taranis AI Crop Intelligence
+name_en: Taranis AI Crop Intelligence
 company: Taranis
 domain: agriculture
 status: released
 website: https://www.taranis.com/
-description: Taranis 是全球领先的 AI 作物智能平台，通过叶片级精准农业技术提供田间洞察。无人机采集亚毫米级图像，深度学习模型（500M+ 数据点训练）分析病虫害、杂草和营养缺乏。Ag
-  Assistant 是农业行业首个生成式 AI 农艺引擎，Yield Impact 将叶片级洞察转化为产量预测。与 Syngenta 作物保护合作，提供全季节覆盖服务。
+description: Taranis是全球领先的AI作物智能平台，利用无人机采集亚毫米级超高分辨率叶片图像，结合超过5亿数据点训练的深度学习模型，自动识别病虫害、杂草、营养缺乏和田间健康状况。产品矩阵包括Ag Assistant生成式AI农艺引擎和Yield Impact产量预测技术。已与Syngenta建立战略合作，在北美、南美、欧洲等主要农业产区覆盖数百万英亩农田。
+parameters: 未公开
+architecture: deep learning computer vision
+training:
+  stages:
+  - name: pre-training
+    description: 基于超过5亿（500M+）数据点训练深度学习模型，数据来源于无人机采集的亚毫米级叶片图像，覆盖多种作物的病害、虫害、杂草和营养缺乏样本。
+    data_tokens: "500M+ data points"
+  - name: fine-tuning
+    description: 针对不同气候区、种植体系和作物类型进行持续微调。随着更多农田数据的采集，模型持续学习识别更多细微的病虫害变种。
+tech_stack:
+  framework: Custom deep learning pipeline
+  techniques:
+  - Sub-millimeter aerial imaging
+  - Deep learning object detection
+  - Image classification and segmentation
+  - Generative AI (Ag Assistant)
+  - Yield impact prediction models
+  - Drone-based data collection
+datasets:
+- name: Leaf-Level Imagery Dataset
+  description: 无人机采集的亚毫米级超高分辨率叶片图像，覆盖病害、虫害、杂草和营养缺乏等多种标注类别
+  size: 500M+ data points
+  type: pre-training
+- name: Yield and Management Records
+  description: 历史产量数据、病虫害严重程度记录与管理决策关联数据，用于Yield Impact模型训练
+  type: pre-training
+benchmarks:
+- name: Disease Detection Accuracy
+  score: "高精度"
+  metric: accuracy
+  comparison: "vs 人工田间巡查: 能够捕捉单片叶片上的早期病害症状，远超肉眼识别能力"
+- name: Image Resolution
+  score: "亚毫米级"
+  metric: resolution
+  comparison: "vs 卫星遥感: 分辨率远超卫星遥感和传统航拍，可识别单个害虫个体"
+- name: Data Scale
+  score: "500M+"
+  metric: data_points
+  comparison: "vs 同行: 行业领先的训练数据规模"
 capabilities:
-- 亚毫米级图像采集与AI分析：无人机叶片级病虫害/杂草/营养检测
-- Ag Assistant 生成式AI农艺引擎：农业行业首个生成式AI咨询系统
-- Yield Impact 产量预测：将叶片级洞察转化为经济效益量化
-- 全季节覆盖：季前规划、季中监测、季后分析完整闭环
-- 500M+数据点深度学习模型：持续学习提升识别精度
-tags:
-- precision agriculture
-- crop intelligence
-- computer vision
-- generative ai
-- drone imaging
-- pest detection
+- 亚毫米级精度的真菌、细菌、病毒等作物病害早期识别
+- 害虫种类识别、虫口密度估计和危害程度评估
+- 杂草种类分类和分布密度映射支持精准除草决策
+- Ag Assistant生成式AI农艺引擎提供自然语言智能咨询
+- Yield Impact技术将叶片级洞察转化为产量预测和经济效益量化
+- 全季节覆盖（季前规划、季中监测、季后分析）
 access:
 - saas
+tags:
+- precision-agriculture
+- crop-intelligence
+- drone-imaging
+- disease-detection
+- pest-monitoring
+- generative-ai
+- syngenta-partner
 references:
 - title: Taranis Official Website
   url: https://www.taranis.com/

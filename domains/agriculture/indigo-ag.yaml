@@ -1,25 +1,67 @@
-name: Indigo Ag
+name: Indigo Ag AI Platform
+name_en: Indigo Ag AI Platform
 company: Indigo Agriculture
 domain: agriculture
 status: released
 website: https://www.indigo-ag.com/
-description: Indigo Agriculture 是融合微生物组科学与 AI 的农业科技公司，碳农业市场创建者。AI 平台分析土壤微生物组数据推荐最佳种子/微生物涂层组合，提供碳信用量化与交易市场，Indigo
-  Marketplace 数字化粮食交易平台。覆盖数千万英亩农田，致力于通过技术创新实现农业可持续发展。
+description: Indigo Agriculture融合微生物组科学与人工智能技术的农业科技平台，是全球碳农业市场的创建者和领导者。核心技术包括微生物组AI分析（土壤微生物组测序、最佳种子-微生物组合推荐）、碳信用量化交易平台（MRV系统结合卫星遥感和AI模型）、以及数字化粮食交易市场Indigo Marketplace。服务已覆盖数千万英亩农田，是全球最大的农业碳信用项目之一。
+parameters: 未公开
+architecture: ensemble ML models
+training:
+  stages:
+  - name: pre-training
+    description: 基于数百万土壤微生物组样本、卫星遥感多光谱数据、历史产量记录和气象数据训练机器学习模型，建立土壤微生物群落与作物健康之间的复杂关系映射。
+  - name: fine-tuning
+    description: 针对碳信用量化、种子-微生物组合推荐和物流优化等具体任务进行模型微调，结合地面实测数据进行验证和迭代。
+tech_stack:
+  framework: Custom ML Platform
+  techniques:
+  - Microbiome sequencing analysis
+  - Satellite remote sensing (multi-spectral)
+  - Carbon credit quantification models
+  - MRV (Measurement, Reporting, Verification)
+  - Route optimization algorithms
+  - Seed-microbe pairing recommendation
+datasets:
+- name: Soil Microbiome Dataset
+  description: 数百万土壤微生物组高通量测序样本数据，建立土壤微生物多样性图谱
+  size: 数百万样本
+  type: pre-training
+- name: Remote Sensing Data
+  description: 卫星和无人机多光谱遥感数据，用于碳固定量化和作物健康监测
+  type: pre-training
+- name: Agricultural Production Records
+  description: 历史产量数据、种植实践记录和气象气候数据
+  type: pre-training
+benchmarks:
+- name: Carbon Credit Certification Accuracy
+  score: "科学可信"
+  metric: verification_rate
+  comparison: "vs 传统测量方法: MRV系统结合遥感和地面实测，提供第三方认证级精度"
+- name: Coverage Scale
+  score: "数千万英亩"
+  metric: coverage_area
+  comparison: "vs 同行: 全球最大农业碳信用项目之一"
+- name: Microbe-Seed Recommendation Accuracy
+  score: "显著增产"
+  metric: yield_improvement
+  comparison: "vs 未处理对照: 通过最优微生物组合推荐实现产量提升"
 capabilities:
-- 土壤微生物组AI分析：推荐最佳种子-微生物涂层组合
-- 碳农业市场：碳信用量化、交易和再生农业实践验证
-- Indigo Marketplace：数字化粮食交易平台与物流优化
-- MRV系统：结合遥感和地面实测的碳信用认证
-- 作物健康预测：基于微生物组和环境数据的风险预测
-tags:
-- microbiome
-- carbon credits
-- sustainable agriculture
-- agtech
-- marketplace
-- regenerative farming
+- 土壤微生物组高通量测序分析和多样性图谱构建
+- AI驱动的最佳种子-微生物涂层组合推荐
+- 卫星遥感结合AI模型的碳固定量精准量化
+- 碳信用交易平台连接农民与企业买家
+- 数字化粮食交易市场透明定价和物流优化
+- 再生农业实践验证和MRV认证系统
 access:
 - saas
+tags:
+- carbon-agriculture
+- microbiome
+- remote-sensing
+- carbon-credits
+- sustainable-agriculture
+- precision-farming
 references:
-- title: Indigo Ag Official Website
+- title: Indigo Agriculture Official Website
   url: https://www.indigo-ag.com/

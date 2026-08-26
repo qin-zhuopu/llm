@@ -1,25 +1,60 @@
-name: Orbital Materials
-company: Orbital Industries
+name: Orbital Materials Multi-Scale World Models
+name_en: Orbital Materials Multi-Scale World Models
+company: Orbital Materials
 domain: materials-science
 status: released
-description: Orbital Materials 是 Orbital Industries 推出的面向材料科学领域的生成式 AI 系统。其核心定位是通过结合前沿
-  AI 与物理产品开发，加速新型材料的发明与制造。该系统利用多尺度世界模型，涵盖从量子物理到流体动力学的模拟，能够在虚拟环境中进行迭代，从而显著降低物理实验的高昂成本与时间周期。其差异化的'自主研究代理'（Autoresearch
-  Agents）针对物理行业样本少、成本高的痛点进行优化，旨在通过极少的实验次数找到最优解，代表了'AI 工业化'（AI Industrial）的落地实践。
+release_date: "2023"
+website: https://www.orbitalmaterials.com/
+description: Orbital Materials（又名Orbital Industries）开发的多尺度世界模型，是材料科学领域世界领先的AI加速模拟器，覆盖量子物理到流体力学的跨尺度模拟。公司自称首个"AI Industrial"，结合前沿AI与物理产品开发，通过样本高效的自动研究智能体（Autoresearch Agents）加速新材料发明与制造。首个商业应用为高密度GPU冷却材料，已发现全新分子类别并在AI数据中心部署商用产品。
+parameters: 未公开
+architecture: multi-scale neural simulator
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模物理模拟数据上训练多尺度世界模型，覆盖量子物理、分子动力学和流体力学尺度的模拟计算数据。模型学习跨尺度物理属性预测。
+  - name: fine-tuning
+    description: Autoresearch Agents通过样本高效的探索策略进行强化学习优化，每次实验耗费数月数百万美元，因此需要在尽可能少的实验中找到正确答案。与机器人实验室和物理工程站点集成。
+tech_stack:
+  framework: Custom AI platform
+  techniques:
+  - Multi-scale physics simulation (quantum to fluid dynamics)
+  - Sample-efficient exploration
+  - Autoresearch agents
+  - Robotic lab integration
+  - Cross-scale property prediction
+  - In silico materials discovery
+datasets:
+- name: Physics Simulation Data
+  description: 覆盖量子物理、分子动力学和流体力学的多尺度物理模拟计算数据，用于训练世界模型
+  type: pre-training
+- name: Experimental Materials Data
+  description: 来自机器人实验室和物理工程站点的实验数据，用于验证和优化模型预测
+  type: other
+benchmarks:
+- name: Materials Discovery Performance
+  score: "世界领先"
+  metric: discovery_rate
+  comparison: "vs 传统实验方法: 从数年缩短到数周的材料发现周期"
+- name: GPU Cooling Material Performance
+  score: "全新分子类别"
+  metric: novel_discovery
+  comparison: "vs 已知材料: 发现了全新分子类别用于高密度GPU冷却"
 capabilities:
-- 量子物理模拟与分子动力学预测
-- 跨尺度属性预测（从微观到宏观流体动力学）
-- 基于 AI 的高效材料筛选与设计
-- 样本稀缺型环境下的自主实验规划
+- 量子物理到流体力学的多尺度AI加速模拟
+- 跨尺度材料属性预测和新材料发现
+- 样本高效的自动研究智能体，最少实验次数找到最优解
+- GPU冷却新材料的发现与商业化部署
+- 与机器人实验室集成的自动化实验验证
+- 能源、半导体等多领域材料研发加速
+access:
+- private-deployment
+tags:
+- materials-discovery
+- multi-scale-simulation
+- ai-industrial
+- autoresearch
+- gpu-cooling
+- physics-ai
 references:
 - title: Orbital Materials Official Website
   url: https://www.orbitalmaterials.com/
-tags:
-- materials-science
-- simulation
-- discovery
-- autonomous-agents
-- computational-chemistry
-- industrial-ai
-access:
-- saas
-website: https://www.orbitalmaterials.com/

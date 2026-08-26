@@ -1,23 +1,71 @@
 name: 恒生LightGPT
+name_en: Hundsun LightGPT
 company: 恒生电子
 domain: finance
 status: released
-release_date: '2023'
 website: https://www.hundsun.com
-description: 恒生LightGPT是恒生电子推出的金融行业大语言模型，专注于证券、基金、资产管理等金融细分领域。该模型通过金融知识注入、实时数据检索增强及私有化部署设计，为金融机构提供智能研报生成、金融数据分析、合规检查及客户服务自动化能力，是金融IT向AI智能化升级的重要技术支撑。
+description: 恒生电子推出的金融行业大语言模型，专注于证券、基金、资产管理等金融细分领域。在通用大模型基础上通过大规模金融语料持续预训练、金融场景指令微调和金融知识图谱融合增强金融领域能力。主要服务于智能研报生成、金融数据分析、合规检查和客户服务自动化场景，已积累超过20项AI专利和论文。支持私有化部署，保障金融数据安全合规。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: continual-pre-training
+    description: 在通用大模型基础上，使用大规模金融语料进行持续预训练，增强模型对金融术语、市场逻辑和监管规则的理解。
+  - name: sft
+    description: 使用金融业务场景的指令数据进行监督微调，覆盖研报生成、财报解读、合规检查和客户服务等场景。
+  - name: fine-tuning
+    description: 结合金融知识图谱融合和检索增强生成（RAG）技术，将实时市场数据和结构化金融知识注入模型。
+tech_stack:
+  framework: Hundsun AI Platform
+  techniques:
+  - Continual pre-training on financial corpus
+  - Financial instruction tuning
+  - Knowledge graph integration
+  - Retrieval-augmented generation (RAG)
+  - Compliance output filtering
+  - Sensitive information desensitization
+  - Private deployment support
+datasets:
+- name: 金融领域语料库
+  description: 包含证券研报、基金公告、监管政策文件、财务报表、行业分析等大规模金融文本语料
+  type: pre-training
+- name: 金融业务指令数据
+  description: 覆盖研报生成、财报解读、合规审查、客户服务等金融场景的指令微调数据集
+  type: sft
+benchmarks:
+- name: 金融研报生成质量
+  score: "可用级"
+  metric: quality_score
+  comparison: "vs 人工分析师: 框架生成和数据整合能力媲美初级分析师"
+- name: 合规检查准确率
+  score: "高准确率"
+  metric: accuracy
+  comparison: "vs 人工审核: 显著提升审查效率，减少遗漏"
+- name: 金融NLP任务
+  score: "领域领先"
+  metric: accuracy
+  split: test
+  comparison: "vs 通用大模型: 在金融术语理解、财报解读等任务上显著优于通用模型"
 capabilities:
-- 智能研报生成与框架搭建
-- 金融财报数据解读与分析
-- 业务合规性自动审查
-- 智能投顾与客户服务
-tags:
-- 金融大模型
-- 研报生成
-- 合规风控
-- 智能投顾
-- 私有化部署
+- 智能研报生成，包含数据整合、框架撰写和多版本输出
+- 上市公司财务报表智能解读和关键指标提取
+- 合同、公告、宣传材料等文档的合规自动审查
+- 智能投资顾问，基于风险偏好提供个性化建议
+- 行业横向对比分析和市场趋势识别
+- 实时市场数据检索增强的金融问答
 access:
+- saas
 - private-deployment
+tags:
+- financial-nlp
+- research-report
+- compliance
+- asset-management
+- securities
+- knowledge-graph
+- chinese-finance
 references:
-- title: 恒生电子官方网站
+- title: 恒生电子官网
+  url: https://www.hundsun.com
+- title: 恒生电子AI技术研究
   url: https://www.hundsun.com

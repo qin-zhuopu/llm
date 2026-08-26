@@ -1,23 +1,64 @@
 name: Palantir AIP
+name_en: Palantir Artificial Intelligence Platform
 company: Palantir
 domain: aerospace-defense
 status: released
-release_date: '2023'
 website: https://www.palantir.com/platforms/aip/
-description: Palantir AIP 是一个企业级生成式人工智能平台，旨在为关键的商业和政府环境提供实时、AI 驱动的决策支持。该平台通过连接多种大语言模型（遵循
-  k-LLM 范式）与 Palantir 本体（Ontology）语义层，使开发者能够构建 LLM 支持的工作流、智能体和应用。其核心差异化在于利用企业的结构化数据上下文，确保
-  AI 输出的准确性和相关性，并提供企业级的安全治理。
+description: Palantir推出的企业级生成式AI平台，支撑全球最关键的商业和政府场景中的实时AI驱动决策。AIP通过Ontology语义层集成企业数据，为LLM提供丰富的结构化上下文。核心组件包括AIP Chatbot Studio（对话式AI代理开发）、AIP Logic（LLM驱动的自动化函数）和Evals Framework（AI工作流治理评估）。平台通过k-LLM范式安全连接多种大语言模型和多模态模型，已在公共健康、电池生产、国防、供应链等领域部署。
+parameters: 未公开
+architecture: platform (multi-LLM orchestration)
+training:
+  stages:
+  - name: fine-tuning
+    description: 通过Palantir Ontology语义层将企业数据组织为有意义的对象、关系和操作，为LLM提供组织级上下文。AIP Logic创建结构化AI操作，定义明确的输入、输出和治理控制。Evals Framework在生产环境中持续评估和治理AI工作流性能。
+tech_stack:
+  framework: Palantir Platform (Foundry + Apollo + AIP)
+  techniques:
+  - k-LLM paradigm (secure multi-LLM connectivity)
+  - Ontology-based context integration
+  - Agentic AI development (Chatbot Studio)
+  - LLM-driven automation (AIP Logic)
+  - Evals Framework for governance
+  - Pipeline Builder and Workshop
+  - Enterprise access controls and encryption
+datasets:
+- name: Enterprise Ontology Data
+  description: 通过Palantir Ontology持续集成的企业数据，组织为有意义的对象、关系和操作的语义层
+  type: other
+benchmarks:
+- name: Enterprise AI Deployment Scale
+  score: "全球部署"
+  metric: deployment_scale
+  comparison: "vs 通用LLM: 通过Ontology提供组织级上下文，输出更准确和相关"
+- name: Security Compliance
+  score: "企业级"
+  metric: compliance_level
+  comparison: "vs 开放LLM API: 提供完整的访问控制、加密和审计能力"
+- name: Multi-industry Coverage
+  score: "跨行业"
+  metric: industry_coverage
+  comparison: "覆盖公共健康、电池生产、国防、供应链、流程挖掘等多个行业"
 capabilities:
-- 通过本体语义层集成企业数据上下文
-- 构建和部署对话式 AI 智能体（Chatbot Studio）
-- 定义结构化的 LLM 驱动函数与自动化工作流
-- 提供企业级的安全控制、加密与审计治理
-- 全栈 AI 工作流评估与性能监控（Evals）
-tags:
-- 情报
-- 国防
+- AIP Chatbot Studio构建可与企业数据交互的对话式AI代理
+- AIP Logic创建可集成到企业工作流的LLM驱动自动化
+- Ontology语义层为LLM提供丰富的组织级结构化上下文
+- k-LLM范式安全连接多种大语言模型和多模态模型
+- Evals Framework在生产环境中治理和评估AI工作流
+- 完整的企业安全控制（访问控制、加密、审计、合规）
 access:
 - saas
+- private-deployment
+tags:
+- enterprise-ai
+- defense
+- ontology
+- multi-llm
+- agentic
+- government
+- governance
+- security
 references:
 - title: Palantir AIP Official Website
   url: https://www.palantir.com/platforms/aip/
+- title: Palantir Platform Overview
+  url: https://www.palantir.com/platforms/

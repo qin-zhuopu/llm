@@ -1,24 +1,72 @@
 name: 国网智能电网AI
+name_en: State Grid AI Platform
 company: 国家电网
 domain: energy
 status: released
-release_date: '2023'
 website: http://www.sgcc.com.cn
-description: 由国家电网公司开发的全球规模最大的电力AI应用系统，覆盖电网规划、建设、运行、检修、营销全业务链。基于覆盖全网的大数据平台，利用深度学习和计算机视觉技术，支持中国26个省的数百万公里输配电线路及数亿用户管理，实现从负荷预测到设备诊断的全方位智能化。
+description: 国家电网公司（SGCC）构建的覆盖电网规划、建设、运行、检修、营销全业务链的智能电网AI平台，支撑世界最大规模电网的安全稳定运行。核心能力包括AI驱动的智能调度（负荷预测、新能源消纳优化）、故障预测与诊断、无人机和机器人智能巡检、以及智能电表用电分析。平台服务覆盖中国26个省，管理超过数百万公里输配电线路和数亿用户。
+parameters: 未公开
+architecture: multi-model ensemble
+training:
+  stages:
+  - name: pre-training
+    description: 基于覆盖发电、输电、变电、配电、用电各环节的电力大数据平台进行模型训练，包括历史用电数据、气象信息、设备传感器数据和运维记录等多维度数据。
+  - name: fine-tuning
+    description: 针对负荷预测、设备状态评估、故障预警、缺陷识别等具体任务进行专项模型训练和优化，结合边缘计算在变电站侧实现数据就地处理。
+tech_stack:
+  framework: Custom AI Platform (Big Data + Edge Computing)
+  techniques:
+  - Deep learning for load forecasting
+  - Pattern recognition and anomaly detection
+  - Computer vision for defect identification
+  - Graph Neural Networks for power flow
+  - Edge AI computing at substations
+  - Digital twin simulation
+  - Reinforcement learning for scheduling
+datasets:
+- name: 电力大数据
+  description: 覆盖发电、输电、变电、配电、用电全环节的海量运行数据，包含历史用电、气象、经济活动等多维度信息
+  type: pre-training
+- name: 设备传感器数据
+  description: 变压器、断路器等关键设备的实时传感器数据和历史运维记录
+  type: pre-training
+- name: 巡检图像数据
+  description: 无人机巡线和机器人巡检采集的绝缘子、导线、杆塔等设备图像
+  type: sft
+benchmarks:
+- name: 负荷预测精度
+  score: "高精度"
+  metric: accuracy
+  comparison: "vs 传统统计方法: 深度学习模型在短中长期负荷预测上显著优于传统方法"
+- name: 故障预警提前量
+  score: "提前预警"
+  metric: advance_warning
+  comparison: "vs 被动响应: 实现从被动抢修到主动预防的转变"
+- name: 巡检缺陷识别率
+  score: "高识别率"
+  metric: detection_rate
+  comparison: "vs 人工巡检: AI视觉识别绝缘子破损、导线断股等缺陷准确率达到实用水平"
+- name: 服务覆盖范围
+  score: "26省, 数亿用户"
+  metric: coverage
+  comparison: "全球规模最大的电力AI应用系统之一"
 capabilities:
-- 智能调度与负荷预测
-- 故障预测与设备诊断
-- 无人机与机器人智能巡检
-- 智能电表与用电行为分析
-tags:
-- 电力系统
-- 智能电网
-- 调度优化
-- 故障诊断
-- 巡检
-- 大数据
+- 深度学习驱动的短中长期电力负荷精准预测
+- 新能源（风电、光伏）消纳率优化和调度策略生成
+- 关键电力设备（变压器、断路器）健康状态评估和故障预警
+- 无人机和机器人智能巡检自动缺陷识别
+- 智能电表数据挖掘和异常用电行为检测
+- 电网数字孪生实时映射和预测性分析
 access:
 - internal-only
+tags:
+- smart-grid
+- load-forecasting
+- predictive-maintenance
+- drone-inspection
+- digital-twin
+- state-grid
+- edge-computing
 references:
-- title: 国家电网官方网站
+- title: 国家电网公司官网
   url: http://www.sgcc.com.cn

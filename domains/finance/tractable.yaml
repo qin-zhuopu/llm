@@ -1,26 +1,71 @@
-name: Tractable
+name: Tractable AI
+name_en: Tractable AI
 company: Tractable
 domain: finance
 status: released
 website: https://www.tractable.ai/
-description: Tractable 是 AI 计算机视觉驱动的保险理赔损害检测和评估平台。像素级精准车辆/房产损害评估，多维度置信度评分（考虑可见性、图像质量、损害严重程度），每天处理数千理赔案件。AI
-  定损、AI 审核和 AI 分诊产品矩阵。支持全球市场部署，提供开放 API 集成，通过持续学习不断提升评估精度。
+description: Tractable利用深度学习计算机视觉技术革新保险理赔与灾害恢复的AI系统，能够从照片和视频中像素级精准识别和量化车辆及房产损害，每天处理数千件理赔案件。产品矩阵涵盖AI定损、AI审核和AI分诊，提供多维置信度评分系统。已在北美、欧洲、亚太地区的主要保险公司部署，通过RESTful API与现有理赔工作流无缝集成。
+parameters: 未公开
+architecture: deep learning computer vision
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模车辆和房产损害图像数据进行深度学习模型预训练，建立损害检测和分类的视觉特征表示。
+  - name: fine-tuning
+    description: 利用理赔员标注的损害评估数据和维修方案进行监督微调，持续优化模型精度。通过每天数千件理赔案件的处理反馈进行在线学习，理赔员反馈用于模型修正，新车型和新损害模式持续纳入训练集。
+tech_stack:
+  framework: Custom deep learning pipeline
+  techniques:
+  - Pixel-level damage segmentation
+  - Multi-dimensional confidence scoring
+  - Continuous learning from adjuster feedback
+  - Object detection and classification
+  - Semantic segmentation
+  - RESTful API integration
+datasets:
+- name: Vehicle Damage Image Dataset
+  description: 海量标注的车辆损害图像数据，覆盖凹陷、刮擦、裂缝、变形等多种损害类型和严重程度
+  type: pre-training
+- name: Property Damage Dataset
+  description: 建筑物外观、屋顶、外墙等房产损害图像，覆盖风暴、洪水、火灾等灾害场景
+  type: pre-training
+- name: Adjuster Feedback Data
+  description: 理赔员的评估反馈和修正数据，用于模型持续学习和精度提升
+  type: sft
+benchmarks:
+- name: Damage Assessment Accuracy
+  score: "像素级精度"
+  metric: precision
+  comparison: "vs 人工定损师: 精度媲美资深定损师，一致性更高"
+- name: Processing Speed
+  score: "数分钟/件"
+  metric: latency
+  comparison: "vs 人工评估: 从数天缩短到数分钟"
+- name: Daily Processing Volume
+  score: "数千件/天"
+  metric: throughput
+  comparison: "vs 人工处理: 处理量提升数个数量级"
 capabilities:
-- 像素级车辆损害评估：自动识别受损部件、损害类型和程度
-- 多维度置信度评分：综合可见性/图像质量/损害程度的可信度评估
-- 可回收零件识别：智能推荐使用翻新件降低维修成本
-- AI定损/审核/分诊产品矩阵：覆盖理赔全流程自动化
-- 持续学习改进：每日数千案件反馈驱动模型迭代提升
-tags:
-- computer vision
-- insurance claims
-- damage assessment
-- auto insurance
-- property insurance
-- insurtech
+- 车辆损害像素级精准检测（凹陷、刮擦、裂缝、变形）和维修方案生成
+- 房产损害评估，支持风暴、洪水、火灾等灾后快速检测
+- 多维度置信度评分系统，综合可见性、图像质量和损害程度
+- AI分诊快速判断案件类型（可维修/全损/需现场查勘）
+- 可回收零件智能识别，支持循环经济降低维修成本
+- AI审核已完成的维修估算，识别不合理费用项
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
 access:
 - api
 - saas
+tags:
+- insurance-claims
+- computer-vision
+- damage-assessment
+- vehicle-inspection
+- property-damage
+- continuous-learning
 references:
-- title: Tractable Official Website
+- title: Tractable AI Official Website
   url: https://www.tractable.ai/
