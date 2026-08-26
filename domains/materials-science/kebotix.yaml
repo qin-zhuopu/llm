@@ -1,0 +1,38 @@
+name: Kebotix
+company: Kebotix
+domain: materials-science
+status: released
+website: https://www.kebotix.com/
+description: "Kebotix 是一家材料科学 AI 公司，将人工智能、物理建模和高级自动化结合于云平台，加速材料发现。采用闭环设计范式 Predict-Produce-Prove（预测-生产-验证），为客户提供定制化材料发现和研发数字化解决方案，显著缩短新材料开发周期。"
+
+capabilities:
+  - 自驱动实验室(Self-Driving Lab)实现 24/7 全自动实验
+  - AI + 物理建模预测新材料候选
+  - 闭环 Predict-Produce-Prove 设计范式加速材料发现
+  - 企业级云平台支持协作式材料研发
+  - 为客户定制化材料发现和研发数字化服务
+
+tech_stack:
+  techniques:
+    - physics-based modeling
+    - machine learning
+    - closed-loop automation
+    - self-driving lab
+
+tags:
+  - self-driving-lab
+  - materials-discovery
+  - closed-loop
+  - enterprise-ai
+  - r&d-digitalization
+
+access:
+  - saas
+  - private-deployment
+
+region:
+  - global
+
+references:
+  - title: Kebotix 官方网站
+    url: https://www.kebotix.com/

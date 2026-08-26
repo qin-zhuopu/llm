@@ -1,0 +1,37 @@
+name: Aionics
+company: Aionics
+domain: materials-science
+status: released
+website: https://www.aionics.io/
+description: "Aionics 利用 AI 和物理仿真设计新材料配方，面向电动汽车电池、航空电池、长时储能和绿色制造。平台可筛选数十亿配方寻找最佳候选，并支持新分子设计与供应链对接，覆盖 EV、航空、电网储能、消费电子等客户。"
+
+capabilities:
+  - AI 驱动筛选数十亿材料配方候选
+  - 物理仿真验证 AI 预测结果
+  - 生成式 AI 设计新分子结构
+  - 供应链对接实现材料落地
+  - 面向电池/储能/航空/绿色制造的定制化配方优化
+
+tech_stack:
+  techniques:
+    - generative AI
+    - physics simulation
+    - molecular dynamics
+    - high-throughput screening
+
+tags:
+  - battery-materials
+  - ev-battery
+  - energy-storage
+  - formulation-design
+  - green-manufacturing
+
+access:
+  - saas
+
+region:
+  - global
+
+references:
+  - title: Aionics 官方网站
+    url: https://www.aionics.io/
