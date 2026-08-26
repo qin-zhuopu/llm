@@ -1,17 +1,72 @@
-name: 北森AI
+name: 北森AI (Mavens)
+name_en: Beisen AI Mavens
 company: 北森云计算
 domain: human-resources
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.beisen.com
-description: 由北森云计算推出的面向人力资源管理领域的AI智能平台，采用AI原生架构。平台融合自然语言处理和机器学习技术，为中大型企业提供从招聘到离职的全生命周期智能化服务。核心功能覆盖简历智能筛选、人才测评、敬业度分析、绩效预测及组织洞察，通过数据闭环持续优化模型，助力企业实现科学的人才管理与战略决策。
+description: 北森云计算推出的AI原生人力资源管理平台"Mavens"，是国内首家港交所上市HR SaaS公司的核心AI产品。采用AI原生架构将智能能力内嵌产品底层，构建招聘-入职-发展-绩效全流程数据闭环持续优化模型。产品矩阵覆盖AI人力战略经营、AI招聘专家团、AI Learning学习平台、AI领导力专家团和AI核心人力专家团五大模块，针对互联网、金融、制造等多行业建立专属模型，服务中大型企业的全生命周期智能化人才管理。
+parameters: 未公开
+architecture: 多模型融合（NLP + ML + 推荐系统）
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模简历语料、职位描述、行业人才数据进行语言模型预训练，构建HR领域语义理解基础
+  - name: sft
+    description: 针对简历解析、人才匹配、测评分析、绩效预测等HR核心场景进行多任务监督微调
+  - name: rlhf
+    description: 基于HR专家和企业用户反馈持续优化推荐质量和预测准确性，构建数据闭环
+  - name: other
+    description: 多行业专属模型训练 - 针对互联网、金融、制造、地产、零售等不同行业积累专属数据和模型
+tech_stack:
+  framework: 自主研发AI平台
+  inference: Cloud SaaS + 私有化部署
+  techniques:
+  - AI-native architecture (深度内嵌产品底层)
+  - Full-lifecycle data closed loop
+  - NLP resume parsing & understanding
+  - Psychometric AI assessment
+  - Predictive analytics (turnover/performance)
+  - Multi-industry specialized models
+  - Evidence-based talent profiling
+datasets:
+- name: 简历与职位数据
+  description: 海量简历文档和职位描述数据，覆盖多行业多层级岗位信息
+  type: pre-training
+- name: 人才测评数据
+  description: 认知能力、性格特质、领导力等多维度测评结果和验证数据
+  type: sft
+- name: 绩效与行为数据
+  description: 员工历史绩效记录、行为数据和离职样本，用于预测模型训练
+  type: sft
+- name: 行业人才基准数据
+  description: 互联网、金融、制造、地产、零售等行业的人才结构和薪酬基准数据
+  type: pre-training
+benchmarks:
+- name: 行业覆盖
+  score: "5+"
+  metric: industry_coverage
+  comparison: "覆盖互联网、金融、制造、地产、零售等多个行业专属模型"
+- name: 产品模块
+  score: "5大AI专家团"
+  metric: product_modules
+  comparison: "人力战略+招聘+学习+领导力+核心人力五大AI模块"
+- name: 数据闭环
+  score: "全流程"
+  metric: data_pipeline
+  comparison: "招聘-入职-发展-绩效全流程数据打通，持续优化"
+- name: 上市地位
+  score: "港交所上市"
+  metric: market_position
+  comparison: "首家登陆香港联交所的中国HR SaaS公司"
 capabilities:
-- AI智能简历筛选与解析
-- 多维度人才测评与画像
-- 员工敬业度监测与预警
-- 绩效预测与智能管理
-- 组织健康度数据分析
-- 全流程HR智能辅助
+- AI智能简历筛选与多格式解析匹配
+- 多维度人才测评与AI画像（认知+性格+领导力）
+- 员工敬业度实时监测与离职风险预警
+- 数据驱动的绩效预测与智能目标设定
+- 组织健康度分析与人才梯队洞察
+- AI原生学习平台与个性化发展路径推荐
+- 领导力评估与干部能力进阶辅助
 tags:
 - hr-saas
 - 招聘筛选
@@ -19,8 +74,12 @@ tags:
 - 绩效预测
 - 员工敬业度
 - 组织分析
+- ai-native
 access:
 - saas
+- private-deployment
 references:
+- title: 北森AI产品页面
+  url: https://www.beisen.com/product/ai
 - title: 北森官方网站
   url: https://www.beisen.com

@@ -3,18 +3,97 @@ name_en: XuanYuan
 company: 度小满
 domain: finance
 status: released
-release_date: '2023'
-website: https://ai.duxiaoman.com
-description: 中文金融领域大模型，面向风控、智能客服和投研场景，专注于中国金融市场。
+release_date: "2023-05"
+website: https://github.com/Duxiaoman-DI/XuanYuan
+description: 度小满开源的中文金融大语言模型系列，已迭代至第三代XuanYuan3-70B及金融推理模型FinX1。最新版XuanYuan3-70B基于LLaMA3-70B进行增量预训练和RLHF对齐，支持16K上下文，金融场景综合评测媲美GPT-4o。FinX1采用思维链+双奖励模型+PPO强化学习训练范式，在FinanceIQ金融认证评测中全面超越GPT-4o和Qwen2.5-72B，是国内首个开源千亿级中文对话大模型的持续演进版本。
+parameters: 70B
+architecture: decoder-only transformer
+base_model:
+- LLaMA3-70B
+- LLaMA2-70B
+- BLOOM-176B
+training:
+  stages:
+  - name: continual-pre-training
+    description: 基于LLaMA3-70B进行大量中英文语料增量预训练，采用精细化数据组织方式和动态调控策略，显著增强中文处理和金融理解能力
+  - name: sft
+    description: 使用高质量金融领域指令数据进行监督微调，覆盖金融事件解读、业务分析、合规风控、投研等八大场景任务
+  - name: rlhf
+    description: 聘请金融专业人员进行偏好标注，采用迭代式强化训练方法(PEI-RLHF)进行价值观对齐，训练全能金融奖励模型(UFRM)结合对比学习与逆强化学习
+  - name: other
+    description: FinX1推理模型训练 - 构建思维链生成模型，使用过程奖励模型(PRM)和结果奖励模型(ORM)双引导下的PPO强化学习微调
+  context_length: "16K"
+tech_stack:
+  framework: PyTorch (transformers)
+  inference: vLLM (tensor_parallel_size=4)
+  techniques:
+  - Chain-of-Thought (CoT) reasoning
+  - Process Reward Model (PRM)
+  - Outcome Reward Model (ORM)
+  - PPO reinforcement learning
+  - MCTS-based backward verification
+  - Contrastive learning + Inverse RL
+  - PEI-RLHF iterative alignment
+  - 8-bit / 4-bit quantization
+datasets:
+- name: 中文金融预训练语料
+  description: 60G高质量中文金融数据，覆盖银行、信贷、保险、证券等领域
+  size: 60GB
+  type: pre-training
+- name: FinanceIQ
+  description: 中文金融领域知识评估数据集，覆盖CPA、银行从业、证券从业等10大类金融认证考试
+  type: evaluation
+- name: 金融SFT指令数据
+  description: 涵盖金融事件解读、业务分析、计算、合规风控、投研、知识问答、内容创作和理解认知八大场景
+  type: sft
+benchmarks:
+- name: FinanceIQ (精算师)
+  score: "65.7"
+  metric: accuracy
+  comparison: "vs GPT-4o: 低于65.7; vs Qwen2.5-72B: 低于65.7; vs XuanYuan3 baseline: 37.5"
+- name: FinanceIQ (10大金融认证综合)
+  score: "超越GPT-4o"
+  metric: accuracy
+  comparison: "vs GPT-4o: 全面超越; vs Qwen2.5-72B: 全面超越"
+- name: GPQA (科学推理)
+  score: "超越GPT-4o"
+  metric: accuracy
+  comparison: "与O1及国内最新推理版大模型位列顶尖梯队"
+- name: MATH-500
+  score: "超越GPT-4o"
+  metric: accuracy
+  comparison: "Greedy推理，与O1同一梯队"
+- name: AIME2024 (数学竞赛)
+  score: "顶尖梯队"
+  metric: pass@1
+  comparison: "与O1及最新推理大模型位列顶尖梯队"
+- name: 金融场景综合评测 (XuanYuan3)
+  score: "媲美GPT-4o"
+  metric: expert_evaluation
+  comparison: "在金融事件解读、业务分析、投研应用等维度超越GPT-4o，整体超越中文开源72B模型"
 capabilities:
-- 金融风控
-- 智能客服
-- 投研分析
-access:
-- api
+- 金融事件深度解读与专业术语分析
+- 金融业务分析与信息精确提炼
+- 投研报告生成与多维度深度分析
+- 合规风险识别与管理建议
+- 金融逻辑推理与数学计算（类O1思维链）
+- 信用风险评估与舆情分析
+- 智能客服多轮对话
+- 长上下文金融研报解析（16K）
 tags:
 - 中文金融
+- 开源大模型
 - 风控
+- 推理模型
+- RLHF
+- 思维链
+access:
+- open-weights
+- api
 references:
+- title: XuanYuan GitHub开源仓库
+  url: https://github.com/Duxiaoman-DI/XuanYuan
 - title: 度小满AI开放平台
   url: https://ai.duxiaoman.com
+- title: XuanYuan模型HuggingFace
+  url: https://huggingface.co/Duxiaoman-DI

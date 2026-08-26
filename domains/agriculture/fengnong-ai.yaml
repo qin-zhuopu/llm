@@ -1,21 +1,69 @@
 name: 丰农AI
+name_en: FengNong AI
 company: 丰农控股
 domain: agriculture
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.fengnong.com
-description: 丰农AI是丰农控股旗下的智慧农业人工智能平台，致力于将先进的AI技术应用于农业生产全流程，覆盖水稻、小麦、玉米等多种农作物。该平台采用计算机视觉、深度学习及大数据分析技术，实现病虫害智能诊断与精准种植推荐，并支持离线使用与方言交互，推动中国农业数字化与智能化转型。
+description: 丰农控股旗下智慧农业人工智能平台，融合计算机视觉、深度学习、遥感分析和大数据技术，覆盖水稻、小麦、玉米等主要农作物的病虫害智能诊断、精准种植推荐和产量预测。平台整合卫星遥感、气象数据和田间传感器等多源信息，积累大量中国本土农业数据，支持离线使用和方言语音交互，服务个体农户到大型农业企业的全链路智能化管理。
+parameters: 未公开
+architecture: 多模型融合（CNN/ViT + NLP + 时序预测）
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模农业图像数据预训练视觉模型，覆盖水稻、小麦、玉米、蔬菜、水果等主要农作物的病虫害样本
+  - name: fine-tuning
+    description: 针对中国本土农业场景进行多任务微调，包括病虫害分类、产量回归预测和种植方案推荐
+  - name: other
+    description: 多模态数据融合训练，整合卫星遥感、气象时序、土壤传感器和农业知识图谱数据进行联合建模
+tech_stack:
+  framework: PyTorch (推测)
+  inference: Edge + Cloud hybrid (支持离线推理)
+  techniques:
+  - CNN / Vision Transformer (病虫害图像识别)
+  - 多模态数据融合 (图像+文本+传感器)
+  - 时序预测模型 (产量预测)
+  - 知识图谱 (农业专家系统)
+  - 语音识别 (方言ASR)
+  - 离线推理优化 (模型轻量化)
+datasets:
+- name: 农作物病虫害图像数据集
+  description: 覆盖水稻、小麦、玉米、蔬菜、水果等主要农作物常见病虫害标注图像
+  type: pre-training
+- name: 中国本土农业环境数据
+  description: 土壤条件、气候特征、历史产量、种植方案等多维度本地化数据
+  type: pre-training
+- name: 卫星遥感与气象数据
+  description: 卫星遥感影像、气象站数据、田间传感器时序数据用于产量预测和农事规划
+  type: pre-training
+benchmarks:
+- name: 病虫害识别准确率
+  score: "90%+"
+  metric: accuracy
+  comparison: "覆盖主要农作物常见病害，手机拍照即可快速识别"
+- name: 农作物覆盖种类
+  score: "5+"
+  metric: crop_types
+  comparison: "覆盖水稻、小麦、玉米、蔬菜、水果等主要品类"
+- name: 方言语音支持
+  score: "多种方言"
+  metric: dialect_coverage
+  comparison: "支持多种方言语音输入，降低农户使用门槛"
 capabilities:
-- 作物病虫害智能诊断与防治建议
-- 精准种植方案与施肥灌溉推荐
-- 多源数据融合的产量预测分析
-- 全生长周期的智能农事管理
+- 作物病虫害智能诊断与防治建议（手机拍照识别）
+- 精准种植方案推荐（品种、播种、施肥、灌溉）
+- 多源数据融合的产量预测分析（遥感+气象+传感器）
+- 全生长周期智能农事管理
+- 多种方言语音交互
+- 离线环境下核心功能可用
 tags:
 - agriculture
 - crop-disease
 - computer-vision
 - precision-farming
 - multi-modal
+- edge-computing
+- remote-sensing
 access:
 - saas
 references:

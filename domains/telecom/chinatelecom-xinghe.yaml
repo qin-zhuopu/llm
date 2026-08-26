@@ -1,17 +1,73 @@
 name: 星河大模型
-name_en: China Telecom Xinghe
+name_en: China Telecom Xinghe LLM
 company: 中国电信
 domain: telecom
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.chinatelecom.com.cn
-description: 中国电信自主研发的行业大模型平台，定位为电信行业智能化转型的核心引擎。依托中国电信遍布全国的云网基础设施和算力资源，采用模块化架构设计，支持基础大模型与行业微调模型的灵活组合。覆盖网络运营、客户服务、安全保障、云计算和数字政府等多个领域，旨在推动企业从传统流量经营向Token经营的战略转型。
+description: 中国电信自主研发的行业大模型平台，采用"1+N+M"架构体系（1个基础大模型+N个行业垂直模型+M个场景应用）。依托天翼云全国分布式GPU集群支撑千亿级参数训练，覆盖网络智能运营、客户服务自动化、电信安全防护、云计算优化和数字政务服务五大核心领域，推动企业从传统流量经营向Token经营的战略转型。
+parameters: 千亿级
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 基于中国电信海量网络日志、客服对话、业务文档等电信行业数据进行基础大模型预训练
+  - name: continual-pre-training
+    description: 分别面向网络运维、客户服务、安全防护、政务服务等N个行业方向进行垂直领域继续预训练
+  - name: sft
+    description: 针对网络故障诊断、工单处理、诈骗识别、12345热线等M个具体场景进行监督微调
+  - name: rlhf
+    description: 基于电信运维专家和客服人员反馈进行对齐优化，提升故障诊断准确率和客服满意度
+  context_length: 未公开
+tech_stack:
+  framework: 自主研发训练平台
+  inference: 天翼云分布式推理集群
+  techniques:
+  - 1+N+M architecture (基础+行业+场景)
+  - Modular model composition
+  - Network KPI time-series analysis
+  - Anomaly detection (DDoS / fraud)
+  - Multi-channel intent recognition
+  - Cloud resource scheduling optimization
+  - Knowledge-enhanced generation
+datasets:
+- name: 电信网络运维数据
+  description: 网络设备日志、KPI指标、故障工单和历史处理方案
+  type: pre-training
+- name: 客服对话数据
+  description: 多渠道(电话、在线、App)客服交互记录和满意度标注
+  type: sft
+- name: 网络安全数据
+  description: 诈骗电话/短信样本、异常流量特征和攻击模式数据
+  type: sft
+- name: 政务服务数据
+  description: 12345热线通话记录、政务文书和城市治理事件分类数据
+  type: sft
+benchmarks:
+- name: 模型参数规模
+  score: "千亿级"
+  metric: parameters
+  comparison: "依托天翼云全国分布式GPU集群支撑千亿级参数训练"
+- name: 架构体系
+  score: "1+N+M"
+  metric: architecture_scope
+  comparison: "1个基础大模型 + N个行业大模型 + M个场景应用"
+- name: 网络故障诊断
+  score: "显著提升"
+  metric: accuracy_improvement
+  comparison: "网络故障根因分析准确率较传统方法显著提升"
+- name: 12345热线智能接听
+  score: "已部署"
+  metric: deployment_status
+  comparison: "覆盖政务热线智能接听和事件分类"
 capabilities:
-- 网络智能运营与自治网络管理
-- 全渠道客户服务自动化与意图识别
-- 网络安全监控与异常流量防护
-- 云资源智能调度与成本优化
-- 数字政务服务与城市治理支持
+- 网络智能运营（故障预测、性能优化、容量规划、自治网络）
+- 全渠道客户服务自动化（意图识别、情感分析、主动服务）
+- 电信诈骗智能识别与网络安全防护
+- 天翼云资源智能调度与成本优化
+- 12345热线智能接听与政务文档处理
+- 网络工单智能处理与根因分析
+- 基站能耗优化智能调节
 tags:
 - 电信运营商
 - 行业大模型
@@ -19,8 +75,12 @@ tags:
 - 智能客服
 - 数字政府
 - 云网融合
+- 安全防护
 access:
 - internal-only
+- private-deployment
 references:
 - title: 中国电信官方网站
   url: https://www.chinatelecom.com.cn
+- title: 天翼云
+  url: https://www.ctyun.cn

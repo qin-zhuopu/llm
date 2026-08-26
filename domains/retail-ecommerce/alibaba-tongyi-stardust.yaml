@@ -1,22 +1,81 @@
 name: 通义星尘(电商版)
-name_en: Tongyi Stardust
+name_en: Tongyi Stardust (E-commerce)
 company: 阿里巴巴
 domain: retail-ecommerce
 status: released
-release_date: '2023'
-website: https://www.aliyun.com
-description: 通义星尘(电商版)是阿里巴巴基于通义大模型体系推出的面向电商行业的AI内容生成和智能服务平台。模型以角色扮演和个性化AI为特色，深度应用于电商运营的各个环节，具备多模态理解和生成能力，专精于处理商品描述生成、智能客服、个性化推荐及评论分析等任务，旨在帮助商家降低内容生产成本、提升运营效率和用户体验。
+release_date: "2023"
+website: https://tongyi.aliyun.com/xingchen
+description: 阿里巴巴基于通义千问(Qwen)大模型体系推出的电商行业AI内容生成和智能服务平台，以角色扮演和个性化AI为特色。通过海量电商交易数据和用户行为数据训练，具备多模态理解和生成能力，支持商品文案自动生成、7x24智能客服、个性化推荐和评论洞察分析。系统可承载双11大促百万级并发，帮助商家内容生产效率提升数倍、客服成本大幅降低。
+parameters: 未公开（基于Qwen系列）
+architecture: decoder-only transformer
+base_model: 通义千问 (Qwen)
+training:
+  stages:
+  - name: continual-pre-training
+    description: 基于通义千问基座模型，使用阿里巴巴海量电商交易数据、商品属性信息、用户评论和行为数据进行电商领域继续预训练
+  - name: sft
+    description: 针对商品文案生成、智能客服对话、评论分析、营销内容创作等电商核心场景进行多任务监督微调
+  - name: rlhf
+    description: 基于商家和用户反馈进行对齐优化，提升文案质量和客服对话满意度
+  - name: other
+    description: 角色扮演和个性化定制训练，支持商家按品牌调性自定义AI风格
+tech_stack:
+  framework: 阿里云百炼平台 (PAI)
+  inference: 阿里云高并发推理集群（支持百万级QPS）
+  techniques:
+  - Role-playing personalization
+  - Multi-modal understanding (text + image)
+  - Few-shot style customization
+  - High-concurrency inference (Double-11 scale)
+  - Sentiment analysis
+  - Multi-platform content adaptation
+datasets:
+- name: 阿里电商交易数据
+  description: 淘宝、天猫、1688等平台的海量商品信息、交易记录和用户行为数据
+  type: pre-training
+- name: 电商用户评论数据
+  description: 数十亿条用户评论数据，用于情感分析和产品洞察模型训练
+  type: sft
+- name: 商品文案标注数据
+  description: 人工标注的高质量商品描述、营销文案和客服对话数据
+  type: sft
+benchmarks:
+- name: 内容生产效率
+  score: "数倍提升"
+  metric: efficiency_gain
+  comparison: "vs 人工文案：生成速度提升数倍，覆盖多平台规范适配"
+- name: 大促并发能力
+  score: "百万级QPS"
+  metric: throughput
+  comparison: "双11期间承担大量瞬时咨询并发，服务质量不降级"
+- name: 客服成本降低
+  score: "大幅降低"
+  metric: cost_reduction
+  comparison: "7x24智能客服替代大量人工客服，售前售中售后全覆盖"
+- name: 平台覆盖
+  score: "3+"
+  metric: platform_count
+  comparison: "适配淘宝、天猫、1688等多个阿里电商平台"
 capabilities:
-- AI商品文案生成
-- 智能客服对话
-- 个性化推荐分析
-- 用户评论洞察
-- 营销内容创作
+- AI商品标题和详情文案自动生成（多风格多平台适配）
+- 7x24智能客服（售前咨询、售中跟踪、售后支持）
+- 个性化商品推荐引擎
+- 海量用户评论智能分析与产品洞察
+- 营销内容创作（促销文案、种草内容、视频脚本、直播话术）
+- 品牌调性自定义AI风格
+- 多模态商品理解（图片+文本联合分析）
 tags:
 - 电商运营
-- 文案
+- 文案生成
+- 智能客服
+- 个性化推荐
+- 通义千问
+- 多模态
 access:
 - api
+- saas
 references:
+- title: 通义星尘官方平台
+  url: https://tongyi.aliyun.com/xingchen
 - title: 阿里云官方网站
   url: https://www.aliyun.com

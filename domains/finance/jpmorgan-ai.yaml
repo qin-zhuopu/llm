@@ -1,18 +1,67 @@
 name: JPMorgan AI Research
-company: 摩根大通
+name_en: JPMorgan AI Research
+company: 摩根大通 (JPMorgan Chase)
 domain: finance
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.jpmorgan.com/technology/artificial-intelligence
-description: 摩根大通金融AI研究体系：涵盖AI智能体混合推理、金融策略规划与知识管理、流程优化决策、金融垂直领域基础模型、合成数据/时序/行为分析、多模态文档处理分析，以及AI可信透明安全七大核心方向。
+description: 摩根大通自主研发的金融AI研究体系，拥有2,000+数据科学家和工程师，已部署300+个AI用例。核心产品包括IndexGPT智能投顾（基于LLM的投资组合优化）、DocLLM多模态文档理解模型，以及涵盖AI智能体混合推理、金融策略规划、流程优化决策、合成数据时序分析和AI可信安全等七大研究方向的完整技术布局。
+parameters: 未公开
+architecture: decoder-only transformer
+training:
+  stages:
+  - name: pre-training
+    description: 金融垂直领域基础模型预训练，使用大规模金融文档、交易数据和市场数据构建领域理解能力
+  - name: fine-tuning
+    description: 针对投资顾问、文档处理、风险评估等具体业务场景进行专项微调
+  - name: rlhf
+    description: 基于金融专家反馈进行对齐训练，确保模型输出符合金融监管和合规要求
+  - name: other
+    description: 合成数据生成与时序行为分析模型训练，支持金融市场模拟和风险建模
+tech_stack:
+  framework: PyTorch / proprietary infrastructure
+  inference: Cloud-based proprietary platform
+  techniques:
+  - Multi-agent hybrid reasoning
+  - RAG (Retrieval-Augmented Generation)
+  - Multimodal document understanding (DocLLM)
+  - Synthetic data generation
+  - Time series behavior modeling
+  - AlgoCRYPT privacy-preserving computation
+  - TrustAI explainability framework
+  - Computer-use automation
+datasets:
+- name: Financial Document Corpus
+  description: 涵盖年报、研报、合同、监管文件等多类型金融文档数据
+  type: pre-training
+- name: Market Time Series Data
+  description: 全球金融市场交易数据和行为数据，用于时序建模和合成数据生成
+  type: pre-training
+- name: Investment Advisory Data
+  description: IndexGPT投资顾问训练数据，包含投资组合历史表现和客户偏好信息
+  type: sft
+benchmarks:
+- name: AI Use Cases Deployed
+  score: "300+"
+  metric: deployment_count
+  comparison: "覆盖风控、交易、运营等核心金融业务线"
+- name: AI/ML Team Scale
+  score: "2000+"
+  metric: team_size
+  comparison: "全球AI/ML数据科学家和工程师规模"
+- name: Federal Reserve Policy Detection
+  score: "实时检测"
+  metric: capability
+  comparison: "开发模型检测美联储政策变化的潜在信号"
 capabilities:
-- 多智能体多步骤任务自动化
-- 金融策略规划与场景模拟
-- 流程效率优化与成本控制
-- 金融垂直领域基础模型开发
-- 合成数据生成与时序行为分析
-- 多模态文档自动化处理
-- AI决策的可信度与透明化保障
+- 多智能体多步骤金融任务自动化（computer-use + human-in-the-loop）
+- IndexGPT智能投顾与投资组合优化
+- DocLLM多模态金融文档理解与信息抽取
+- 金融策略规划与场景模拟决策
+- 合成数据生成与时序行为分析建模
+- 金融流程效率优化与成本控制
+- AI决策可信度、公平性与透明化保障
+- 密码学隐私计算保护金融数据安全
 tags:
 - finance
 - foundation-models
@@ -20,8 +69,12 @@ tags:
 - ai-agents
 - document-processing
 - optimization
+- indexgpt
+- privacy-computing
 access:
 - internal-only
 references:
 - title: JPMorgan AI Research Official Website
   url: https://www.jpmorgan.com/technology/artificial-intelligence
+- title: JPMorgan Chase Wikipedia - IndexGPT
+  url: https://en.wikipedia.org/wiki/JPMorgan_Chase

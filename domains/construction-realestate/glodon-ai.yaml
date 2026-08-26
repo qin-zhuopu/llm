@@ -1,24 +1,79 @@
 name: 广联达建筑AI
-company: 广联达
+name_en: Glodon Construction AI
+company: 广联达科技股份有限公司
 domain: construction-realestate
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.glodon.com
-description: 广联达建筑AI是面向建筑与房地产领域的数字化智能解决方案。该体系覆盖数字设计、数字成本、数字施工及信息服务全流程，集成了BIM协同、智能算量、云计价、劳务物资管理等核心功能，旨在通过数据驱动提升建筑行业全生命周期的协同效率与管理水平。
+description: 广联达面向建筑全生命周期的数字化AI平台，集成计算机视觉、BIM引擎和建筑行业知识图谱技术。核心能力包括CAD图纸自动识别与智能算量、AI辅助BIM协同设计、工程造价智能计算、施工现场安全监控（智能塔机AI视觉）和建筑数字孪生。产品矩阵覆盖数字设计、数字成本、数字施工和信息服务四大板块，服务于中国建筑行业全过程数字化转型。
+parameters: 未公开
+architecture: 多模型融合（CNN/ViT + BIM Engine + Knowledge Graph）
+training:
+  stages:
+  - name: pre-training
+    description: 基于大量建筑工程CAD图纸、BIM模型和施工文档进行视觉和语言模型预训练
+  - name: fine-tuning
+    description: 针对工程量计算、造价分析、安全监控等建筑行业专项任务进行监督微调
+  - name: other
+    description: 建筑行业知识图谱构建和对齐训练，整合定额标准、材料价格、工程规范等结构化知识
+tech_stack:
+  framework: 自主研发平台
+  inference: Cloud + Edge (施工现场部署)
+  techniques:
+  - Computer Vision (CAD图纸识别、安全监控)
+  - BIM Engine (自主三维建模渲染引擎)
+  - BIMFACE (轻量化BIM可视化)
+  - Digital Twin (建筑数字孪生)
+  - Knowledge Graph (建筑规范+定额+材料)
+  - IoT Integration (智能塔机传感器融合)
+  - Optimization algorithms (工程量计算)
+datasets:
+- name: 建筑CAD图纸数据集
+  description: 大量标注的建筑、结构、机电CAD图纸，用于自动识别和工程量提取
+  type: pre-training
+- name: 工程造价数据
+  description: 历史工程造价数据、定额标准和材料价格信息
+  type: pre-training
+- name: 施工现场视频数据
+  description: 施工现场监控视频，用于安全行为识别和塔吊监控模型训练
+  type: sft
+- name: BIM模型库
+  description: 多专业BIM标准构件库和工程实例模型
+  type: pre-training
+benchmarks:
+- name: 产品线覆盖
+  score: "4大板块"
+  metric: product_coverage
+  comparison: "数字设计+数字成本+数字施工+信息服务全生命周期覆盖"
+- name: 行业服务年限
+  score: "25+"
+  metric: years_of_service
+  comparison: "自1998年成立以来深耕建筑信息化行业超25年"
+- name: 上市公司
+  score: "深交所002410"
+  metric: market_presence
+  comparison: "A股上市公司，中国建筑信息化领域龙头企业"
 capabilities:
-- 数字化建筑设计协同
-- 土建智能算量与计价
-- 数字施工现场管理
-- 建筑行业数据信息服务
-- BIM模型与数字孪生应用
+- CAD图纸自动识别与智能工程量计算
+- AI辅助BIM多专业协同设计
+- 工程造价智能计算与清标审核
+- 施工现场AI安全监控（智能塔机视觉）
+- 建筑数字孪生三维可视化
+- 建筑行业知识图谱驱动的智能查询
+- 劳务物资智能化调度管理
 tags:
 - bim
 - 数字化施工
 - 工程造价
-- 企业管理
+- 计算机视觉
 - 数字孪生
+- 知识图谱
+- 建筑信息化
 access:
 - saas
+- private-deployment
 references:
 - title: 广联达官方网站
   url: https://www.glodon.com
+- title: 广联达BIMFACE平台
+  url: https://bimface.com

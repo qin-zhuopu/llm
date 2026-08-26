@@ -3,23 +3,81 @@ name_en: Cainiao AI
 company: 菜鸟网络
 domain: logistics-supplychain
 status: released
-release_date: '2023'
+release_date: "2023"
 website: https://www.cainiao.com
-description: 菜鸟物流AI是由菜鸟网络打造的物流科技智能平台，依托阿里巴巴技术生态，将人工智能与大数据深度应用于物流全链路。系统具备毫秒级路径优化计算能力，日均处理数亿级物流数据，并能在双11等超高峰值期间稳定运行，致力于构建全球化的智能物流骨干网。
+description: 菜鸟网络打造的物流科技智能平台，融合深度强化学习、时序预测和计算机视觉技术，覆盖揽收、运输、仓储到配送的全链路数字化。核心路由引擎具备毫秒级路径优化计算能力，日均处理数亿级物流数据，服务覆盖200+国家和地区。系统在双11等大促期间支撑日处理数十亿包裹级别的超高峰值运营，同时驱动AGV自动化仓储实现无人化运营。
+parameters: 未公开
+architecture: 多模型融合（DRL + Transformer时序 + CNN视觉）
+training:
+  stages:
+  - name: pre-training
+    description: 基于历史物流数据（路由记录、运力分布、交通状况等）预训练时序预测和路径规划基础模型
+  - name: fine-tuning
+    description: 针对智能路由、需求预测、送达时间估计、仓储调度等具体任务进行监督微调
+  - name: other
+    description: 深度强化学习训练VRP路径优化引擎，在动态交通和多约束条件下持续优化配送策略
+tech_stack:
+  framework: 阿里巴巴自研分布式训练平台
+  inference: 阿里云实时推理集群（毫秒级响应）
+  techniques:
+  - Deep Reinforcement Learning (VRP routing)
+  - Time-series forecasting (LSTM/Transformer)
+  - Computer Vision (package sorting)
+  - AGV path planning & scheduling
+  - IoT sensor network integration
+  - Real-time stream processing
+  - Multi-objective optimization
+datasets:
+- name: 物流路由历史数据
+  description: 全链路物流路由记录，包含配送路径、时效、交通状况和运力分布信息
+  size: "日均数亿级"
+  type: pre-training
+- name: 仓储运营数据
+  description: 仓内AGV调度轨迹、库位热度分布和包裹分拣视频数据
+  type: sft
+- name: 跨境物流数据
+  description: 200+国家/地区的跨境物流路线、通关时效和运输方式选择数据
+  type: pre-training
+- name: 需求预测数据
+  description: 历史销售数据、季节因素、营销活动和外部事件对物流需求的影响数据
+  type: pre-training
+benchmarks:
+- name: 路径优化响应时间
+  score: "毫秒级"
+  metric: latency
+  comparison: "核心VRP路由引擎在毫秒级完成复杂路径优化计算"
+- name: 全球服务覆盖
+  score: "200+"
+  metric: country_coverage
+  comparison: "服务中国及海外200多个国家和地区的物流网络"
+- name: 日均数据处理量
+  score: "数亿级"
+  metric: daily_throughput
+  comparison: "日均处理数亿级物流数据，支撑双11超高峰值"
+- name: 仓储自动化
+  score: "无人化运营"
+  metric: automation_level
+  comparison: "AGV智能调度实现仓内无人化运营"
 capabilities:
-- 基于VRP算法的实时智能路由规划
-- 涵盖视觉识别与AGV调度的智能仓储自动化
-- 包括智能派单与时效预测的末端配送优化
-- 预测未来物流需求量的机器学习分析
-- 跨境路线优化与通关预测管理
+- 基于深度强化学习的VRP实时智能路由规划（毫秒级）
+- AGV智能调度与仓内无人化运营
+- 视觉识别驱动的自动化包裹分拣
+- 时序模型精准需求预测与运力调配
+- 末端配送智能派单与送达时间预测
+- 跨境物流路线优化与通关预测
+- 双11超高峰值稳定运营保障
 tags:
 - logistics
 - vrp
 - supply-chain
 - automation
-- cainiao
+- reinforcement-learning
+- computer-vision
+- iot
 access:
 - internal-only
 references:
 - title: 菜鸟官方网站
   url: https://www.cainiao.com
+- title: 菜鸟物流科技
+  url: https://tech.cainiao.com
