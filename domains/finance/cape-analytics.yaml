@@ -1,0 +1,32 @@
+name: CAPE Analytics
+company: CAPE Analytics
+domain: finance
+status: released
+website: https://capeanalytics.com/
+description: "CAPE Analytics 是 AI 房产风险评估平台，面向保险和房地产行业。融合地理空间影像分析与计算机视觉，提供屋顶状况、树木覆盖、野火风险、泳池数量、建筑状况等物业属性数据。应用于个人线核保、商业保险定价和房屋权益贷款估值。使命是为不确定的世界带来确定性。"
+
+capabilities:
+  - 屋顶状况AI评估：自动检测材料类型、老化程度和损坏情况
+  - 野火风险评分：分析植被密度、防御空间和建筑材料易燃性
+  - 树木覆盖分析：量化树木密度和倒塌风险
+  - 个人线和商业保险核保：替代人工现场查勘的远程风险评估
+  - 时序变化检测：追踪物业状况随时间的变化趋势
+
+tags:
+  - Geospatial AI
+  - Computer Vision
+  - Property Insurance
+  - Risk Assessment
+  - Underwriting
+  - InsurTech
+
+access:
+  - api
+  - saas
+
+region:
+  - us
+
+references:
+  - title: "CAPE Analytics Official Website"
+    url: "https://capeanalytics.com/"
