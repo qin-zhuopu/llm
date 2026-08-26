@@ -2,9 +2,10 @@ name: Med-PaLM 2
 company: Google DeepMind
 domain: healthcare
 status: research
-release_date: '2023-05'
+release_date: 2023-05
 website: https://health.google
-description: Med-PaLM 2 是由 Google DeepMind 开发的医疗专用大语言模型，在 MedQA 数据集上达到 86.5% 的准确率，达到专家级医学问答水平。在 USMLE 级别的临床问题中，医生在 9 个临床效用维度中的 8 个更偏好 Med-PaLM 2 的回答。该模型致力于通过先进的生成式 AI 技术解锁医疗信息的潜力，辅助临床决策支持，并帮助医疗组织优化工作流程。
+description: Med-PaLM 2 是由 Google DeepMind 开发的医疗专用大语言模型，在 MedQA 数据集上达到 86.5% 的准确率，达到专家级医学问答水平。在
+  USMLE 级别的临床问题中，医生在 9 个临床效用维度中的 8 个更偏好 Med-PaLM 2 的回答。该模型致力于通过先进的生成式 AI 技术解锁医疗信息的潜力，辅助临床决策支持，并帮助医疗组织优化工作流程。
 parameters: unknown
 capabilities:
 - 医学问答（USMLE级别）
@@ -16,7 +17,8 @@ benchmarks:
 - name: MedQA
   score: 86.5
   metric: accuracy
-access: api
+access:
+- api
 region:
 - global
 tags:

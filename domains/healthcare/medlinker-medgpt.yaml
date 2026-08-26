@@ -18,7 +18,8 @@ tags:
 - 循证医学
 - 智慧医疗
 - 大语言模型
-access: saas
+access:
+- saas
 region:
 - china
 references:

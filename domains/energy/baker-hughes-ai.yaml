@@ -4,7 +4,9 @@ domain: energy
 status: released
 release_date: '2023'
 website: https://www.bakerhughes.com
-description: Baker Hughes AI 是一套专为石油天然气及更广泛能源行业设计的综合性人工智能与机器学习解决方案套件。通过 C3 AI 的合作伙伴关系（BHC3 合资企业）和专有技术开发，该套件提供企业级 AI 应用。其核心能力涵盖预测性维护（可提前 30-50 天预测泵故障）、钻井优化（I-Trak 自动化）、油藏建模及排放监测，旨在通过分析大量传感器数据（近 1TB 量级）来解决能源价值链中的关键运营挑战。
+description: Baker Hughes AI 是一套专为石油天然气及更广泛能源行业设计的综合性人工智能与机器学习解决方案套件。通过 C3 AI 的合作伙伴关系（BHC3
+  合资企业）和专有技术开发，该套件提供企业级 AI 应用。其核心能力涵盖预测性维护（可提前 30-50 天预测泵故障）、钻井优化（I-Trak 自动化）、油藏建模及排放监测，旨在通过分析大量传感器数据（近
+  1TB 量级）来解决能源价值链中的关键运营挑战。
 capabilities:
 - 预测性维护：利用机器学习预测泵和控制阀等设备的故障
 - 钻井优化：通过 I-Trak 自动化提高钻进速度并降低井眼扭曲
@@ -18,7 +20,8 @@ tags:
 - Reservoir Management
 - Emissions Monitoring
 - Industrial AI
-access: saas
+access:
+- saas
 region:
 - global
 references:

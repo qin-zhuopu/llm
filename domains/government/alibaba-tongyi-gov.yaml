@@ -19,7 +19,8 @@ tags:
 - 舆情分析
 - 私有化部署
 - 数字政府
-access: api
+access:
+- api
 region:
 - china
 references:

@@ -4,7 +4,8 @@ domain: pharma-biotech
 status: released
 release_date: '2021'
 website: https://www.recursion.com
-description: Recursion OS 是一个端到端的 AI 驱动药物发现与开发平台，旨在通过解码生物学从根本上改善生活。该平台利用物理自动化和机器学习模型的闭环系统，每周可运行高达 200 万次实验，构建了超过 50 PB 的专有数据集。与传统制药公司平均水平相比，它在从靶点识别到 IND-enabling 研究的速度、效率和成本降低方面表现出显著提升。
+description: Recursion OS 是一个端到端的 AI 驱动药物发现与开发平台，旨在通过解码生物学从根本上改善生活。该平台利用物理自动化和机器学习模型的闭环系统，每周可运行高达
+  200 万次实验，构建了超过 50 PB 的专有数据集。与传统制药公司平均水平相比，它在从靶点识别到 IND-enabling 研究的速度、效率和成本降低方面表现出显著提升。
 capabilities:
 - '高通量自动化实验: 每周运行 200 万次实验以生成大规模生物数据集'
 - '生物图像分析: 利用细胞图像训练人工智能理解驱动疾病的未知生物空间'
@@ -13,7 +14,8 @@ capabilities:
 tags:
 - 高通量
 - AI原生
-access: internal-only
+access:
+- internal-only
 region:
 - global
 references:

@@ -18,7 +18,8 @@ website: https://www.fourkites.com
 architecture: Multi-Agent System (MAS) with Digital Twins and Knowledge Graph
 release_date: '2024'
 parameters: 未公开
-access: saas
+access:
+- saas
 region:
 - global
 tags:

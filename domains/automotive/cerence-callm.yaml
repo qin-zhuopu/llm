@@ -4,7 +4,8 @@ domain: automotive
 status: released
 release_date: 2025-01
 website: https://www.cerence.com
-description: Cerence AI 推出的先进车载大语言模型系列，旨在为汽车及移动出行领域提供生成式对话 AI 能力。通过深度集成汽车信号与多模态交互，该模型支持自然、流畅的上下文对话，能够无缝控制车辆功能（如导航、多媒体、车控），并具备动态语音增强、多座分区识别及零信任安全架构。目前技术已应用于超过 5.25 亿辆汽车，服务全球 80 余家主机厂及一级供应商。
+description: Cerence AI 推出的先进车载大语言模型系列，旨在为汽车及移动出行领域提供生成式对话 AI 能力。通过深度集成汽车信号与多模态交互，该模型支持自然、流畅的上下文对话，能够无缝控制车辆功能（如导航、多媒体、车控），并具备动态语音增强、多座分区识别及零信任安全架构。目前技术已应用于超过
+  5.25 亿辆汽车，服务全球 80 余家主机厂及一级供应商。
 tech_stack:
   nlp: Large Language Models (LLM)
   architecture: Generative AI for Automotive
@@ -21,7 +22,8 @@ tags:
 - voice-control
 - conversational-ai
 - multi-modal
-access: api
+access:
+- api
 region:
 - global
 references:

@@ -15,7 +15,8 @@ tags:
 - wealth-management
 - investment-research
 - enterprise-search
-access: internal-only
+access:
+- internal-only
 region:
 - global
 references:

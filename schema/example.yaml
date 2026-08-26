@@ -77,7 +77,8 @@ tags:
   - 领域预训练
   - 50B参数
 
-access: internal-only
+access:
+  - internal-only
 region:
   - global
 

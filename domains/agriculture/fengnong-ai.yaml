@@ -16,7 +16,8 @@ tags:
 - computer-vision
 - precision-farming
 - multi-modal
-access: saas
+access:
+- saas
 region:
 - china
 references:

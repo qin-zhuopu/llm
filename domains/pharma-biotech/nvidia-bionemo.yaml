@@ -16,7 +16,8 @@ tags:
 - Life Sciences
 - Protein Design
 - Genomics
-access: saas
+access:
+- saas
 region:
 - global
 references:

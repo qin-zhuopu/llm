@@ -4,7 +4,8 @@ domain: healthcare
 status: released
 release_date: 2024-06
 website: https://www.cognizant.com
-description: Cognizant 推出的医疗领域大语言模型，旨在通过 AI 技术弥合从技术到影响力的差距。该模型作为企业级 AI 构建方案的一部分，专注于帮助医疗机构实现技术现代化、流程重塑及体验转型。它致力于通过连接物理 AI 系统与代理式 AI，构建单一机构级思维，帮助企业消除 AI 执行差距，释放生产力并提升运营效率，从而在快速变化的医疗环境中保持领先。
+description: Cognizant 推出的医疗领域大语言模型，旨在通过 AI 技术弥合从技术到影响力的差距。该模型作为企业级 AI 构建方案的一部分，专注于帮助医疗机构实现技术现代化、流程重塑及体验转型。它致力于通过连接物理
+  AI 系统与代理式 AI，构建单一机构级思维，帮助企业消除 AI 执行差距，释放生产力并提升运营效率，从而在快速变化的医疗环境中保持领先。
 capabilities:
 - 医疗技术基础设施现代化
 - 智能流程重塑与优化
@@ -14,7 +15,8 @@ capabilities:
 tags:
 - Google Cloud
 - 行政流程
-access: saas
+access:
+- saas
 region:
 - global
 references:

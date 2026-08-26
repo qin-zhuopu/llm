@@ -17,7 +17,8 @@ tags:
 - ip-development
 - comic-adaptation
 - nlp
-access: saas
+access:
+- saas
 region:
 - china
 - global

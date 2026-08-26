@@ -4,7 +4,8 @@ domain: construction-realestate
 status: released
 release_date: '2023'
 website: https://www.xkool.ai
-description: 小库科技推出的面向建筑与房地产行业的一站式 AIGC 创新平台，融合了设计、云端协作与智能管理功能。该平台旨在通过人工智能技术为设计、施工及管理环节提供数字化与智能化赋能，拥有 10M+ 生成任务和 200K+ 注册用户，构建了集文本与图像内容生成、模型市场及行业工具箱于一体的 AI 生态。
+description: 小库科技推出的面向建筑与房地产行业的一站式 AIGC 创新平台，融合了设计、云端协作与智能管理功能。该平台旨在通过人工智能技术为设计、施工及管理环节提供数字化与智能化赋能，拥有
+  10M+ 生成任务和 200K+ 注册用户，构建了集文本与图像内容生成、模型市场及行业工具箱于一体的 AI 生态。
 capabilities:
 - 基于文本或图像的 AI 辅助设计与内容生成
 - 云端 AI 驱动的建筑信息模型 (BIM) 协同设计
@@ -17,7 +18,8 @@ tags:
 - BIM
 - 云端协作
 - 房地产数字化
-access: saas
+access:
+- saas
 region:
 - china
 references:

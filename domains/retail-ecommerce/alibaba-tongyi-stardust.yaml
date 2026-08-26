@@ -15,7 +15,8 @@ capabilities:
 tags:
 - 电商运营
 - 文案
-access: api
+access:
+- api
 region:
 - china
 references:

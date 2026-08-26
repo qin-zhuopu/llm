@@ -19,7 +19,8 @@ tags:
 - 智能客服
 - 数字政府
 - 云网融合
-access: internal-only
+access:
+- internal-only
 region:
 - china
 references:

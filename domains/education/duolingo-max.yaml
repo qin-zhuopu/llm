@@ -4,7 +4,8 @@ domain: education
 status: released
 release_date: '2023'
 website: https://www.duolingo.com
-description: Duolingo Max 是多邻国推出的高级订阅服务，深度集成了 OpenAI 的 GPT-4 模型。该产品定位于语言学习场景中的深度交互与个性化辅导，核心差异化在于通过 GPT-4 提供语法规则解释（Explain My Answer）和实景角色扮演对话练习。它支持 40 多种语言和 100 多门课程，显著弥补了传统自学中缺少即时反馈和真实对话练习的短板。
+description: Duolingo Max 是多邻国推出的高级订阅服务，深度集成了 OpenAI 的 GPT-4 模型。该产品定位于语言学习场景中的深度交互与个性化辅导，核心差异化在于通过
+  GPT-4 提供语法规则解释（Explain My Answer）和实景角色扮演对话练习。它支持 40 多种语言和 100 多门课程，显著弥补了传统自学中缺少即时反馈和真实对话练习的短板。
 base_model: GPT-4
 capabilities:
 - 详细语法解释：提供针对特定错误的语法规则拆解与上下文说明
@@ -17,7 +18,8 @@ tags:
 - ai-tutor
 - roleplay
 - personalized-learning
-access: saas
+access:
+- saas
 region:
 - global
 references:

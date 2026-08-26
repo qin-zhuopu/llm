@@ -24,7 +24,8 @@ tags:
 - 工业大模型
 - 智能体平台
 - 数据众包
-access: saas
+access:
+- saas
 region:
 - china
 - global

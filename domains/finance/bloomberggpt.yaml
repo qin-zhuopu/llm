@@ -2,22 +2,23 @@ name: BloombergGPT
 company: Bloomberg
 domain: finance
 status: released
-release_date: "2023-03"
+release_date: 2023-03
 website: https://www.bloomberg.com
-description: "500亿参数金融大语言模型，使用363B token的金融数据（财报、新闻、SEC文件）训练，在金融NLP任务上显著优于通用模型，同时保持较好的通用语言能力。"
+description: 500亿参数金融大语言模型，使用363B token的金融数据（财报、新闻、SEC文件）训练，在金融NLP任务上显著优于通用模型，同时保持较好的通用语言能力。
 capabilities:
-  - 金融命名实体识别(NER)
-  - 金融情感分析
-  - 金融问答
-  - 新闻分类与摘要
-  - 金融文本生成
-parameters: "50B"
-access: internal-only
+- 金融命名实体识别(NER)
+- 金融情感分析
+- 金融问答
+- 新闻分类与摘要
+- 金融文本生成
+parameters: 50B
+access:
+- internal-only
 region:
-  - global
+- global
 tags:
-  - 金融NLP
-  - 情感分析
+- 金融NLP
+- 情感分析
 references:
-  - title: "BloombergGPT: A Large Language Model for Finance"
-    url: "https://arxiv.org/abs/2303.17564"
+- title: 'BloombergGPT: A Large Language Model for Finance'
+  url: https://arxiv.org/abs/2303.17564

@@ -2,30 +2,32 @@ name: Eightfold AI
 company: Eightfold
 domain: human-resources
 status: released
-release_date: "2022"
-website: "https://eightfold.ai"
-description: "基于16亿职业轨迹和160万技能数据构建的AI原生人才智能平台，2026年HR Tech大奖Agentic AI解决方案获奖者。提供AI面试官、候选人Agent等产品，支持高峰招聘场景下最快1.3天完成岗位填充，部分客户招聘周期缩短33%。通过ISO/IEC 42001认证和FedRAMP Moderate授权。"
+release_date: '2022'
+website: https://eightfold.ai
+description: 基于16亿职业轨迹和160万技能数据构建的AI原生人才智能平台，2026年HR Tech大奖Agentic AI解决方案获奖者。提供AI面试官、候选人Agent等产品，支持高峰招聘场景下最快1.3天完成岗位填充，部分客户招聘周期缩短33%。通过ISO/IEC
+  42001认证和FedRAMP Moderate授权。
 capabilities:
-  - AI面试官自动面试与候选人评估
-  - 基于16亿职业轨迹的人才技能匹配
-  - 高峰量招聘场景快速筛选(500+申请者)
-  - 职业路径预测与内部人才流动推荐
-  - TalentForge自定义HR应用构建平台
-  - 第三方偏见审计的负责任AI
+- AI面试官自动面试与候选人评估
+- 基于16亿职业轨迹的人才技能匹配
+- 高峰量招聘场景快速筛选(500+申请者)
+- 职业路径预测与内部人才流动推荐
+- TalentForge自定义HR应用构建平台
+- 第三方偏见审计的负责任AI
 api:
   available: true
   protocol: proprietary
-access: saas
+access:
+- saas
 region:
-  - global
+- global
 tags:
-  - 人才智能
-  - AI招聘
-  - Agentic AI
-  - 技能匹配
-  - HR科技
+- 人才智能
+- AI招聘
+- Agentic AI
+- 技能匹配
+- HR科技
 references:
-  - title: Eightfold AI官网
-    url: "https://eightfold.ai"
-  - title: "Eightfold AI获评2026年Agentic AI HR解决方案年度奖"
-    url: "https://eightfold.ai/company/press/press-releases/eightfold-ai-named-agentic-ai-hr-solution-of-the-year-in-2026-hr-tech-breakthrough-awards-program/"
+- title: Eightfold AI官网
+  url: https://eightfold.ai
+- title: Eightfold AI获评2026年Agentic AI HR解决方案年度奖
+  url: https://eightfold.ai/company/press/press-releases/eightfold-ai-named-agentic-ai-hr-solution-of-the-year-in-2026-hr-tech-breakthrough-awards-program/

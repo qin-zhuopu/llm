@@ -18,7 +18,8 @@ tags:
 - supply-chain
 - automation
 - cainiao
-access: internal-only
+access:
+- internal-only
 region:
 - china
 references:

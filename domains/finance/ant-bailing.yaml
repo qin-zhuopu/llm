@@ -20,7 +20,8 @@ tags:
 - 智能体
 - 多模态
 - 风险管理
-access: api
+access:
+- api
 region:
 - china
 references:

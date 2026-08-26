@@ -21,7 +21,8 @@ references:
   url: https://www.jasper.ai/case-studies/cushman-wakefield
 website: https://www.jasper.ai
 release_date: '2023'
-access: saas
+access:
+- saas
 tags:
 - marketing-automation
 - generative-ai
