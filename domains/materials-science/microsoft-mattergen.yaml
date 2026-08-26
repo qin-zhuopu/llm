@@ -40,10 +40,9 @@ tags:
 - azure-quantum
 access:
 - saas
-region:
-- global
 references:
-- title: "MatterGen: A Generative Model for Inorganic Materials Design - Microsoft Research Blog"
+- title: 'MatterGen: A Generative Model for Inorganic Materials Design - Microsoft
+    Research Blog'
   url: https://www.microsoft.com/en-us/research/blog/mattergen-a-generative-model-for-inorganic-materials-design/
 - title: MatterGen Nature Publication (2024)
   url: https://www.nature.com/articles/s41586-025-08628-5

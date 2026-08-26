@@ -13,15 +13,13 @@ capabilities:
 - 个性化驾驶：学习用户习惯，提供定制化服务与用户画像
 - 全场景自主：支持自适应巡航、自动变道及自动泊车功能
 tags:
-- LLM
-- Automotive
-- Voice-Assistant
-- Autonomous-Driving
-- In-Car-Computing
+- llm
+- automotive
+- voice-assistant
+- autonomous-driving
+- in-car-computing
 access:
 - internal-only
-region:
-- china
 references:
 - title: 理想汽车官方网站
   url: https://www.lixiang.com

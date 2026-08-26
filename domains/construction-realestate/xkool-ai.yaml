@@ -13,15 +13,13 @@ capabilities:
 - 装配式建筑与预制构件智能生成方案
 - 学术研究平台支持 (ARP Researcher)
 tags:
-- AIGC
+- aigc
 - 建筑设计
-- BIM
+- bim
 - 云端协作
 - 房地产数字化
 access:
 - saas
-region:
-- china
 references:
 - title: 官方网站
   url: https://www.xkool.ai

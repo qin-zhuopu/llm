@@ -22,8 +22,6 @@ tags:
 - smart-assistant
 access:
 - api
-region:
-- china
 references:
 - title: 通义法睿官网
   url: https://damo.alibaba.com

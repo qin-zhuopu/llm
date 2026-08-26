@@ -22,8 +22,6 @@ tags:
 - optimization
 access:
 - internal-only
-region:
-- global
 references:
 - title: JPMorgan AI Research Official Website
   url: https://www.jpmorgan.com/technology/artificial-intelligence

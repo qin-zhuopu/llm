@@ -21,8 +21,6 @@ tags:
 - autonomous-workflow
 access:
 - saas
-region:
-- global
 references:
 - title: Autodesk Official Website
   url: https://www.autodesk.com

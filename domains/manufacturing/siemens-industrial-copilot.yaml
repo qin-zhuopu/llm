@@ -20,8 +20,6 @@ tags:
 - generative-ai
 access:
 - saas
-region:
-- global
 references:
 - title: Siemens Industrial Copilot Official Website
   url: https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html

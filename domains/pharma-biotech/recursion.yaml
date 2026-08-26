@@ -13,11 +13,9 @@ capabilities:
 - '临床转化工具: 整合临床数据以加速潜在药物从实验室到临床的转化'
 tags:
 - 高通量
-- AI原生
+- ai原生
 access:
 - internal-only
-region:
-- global
 references:
 - title: Recursion 官方网站
   url: https://www.recursion.com

@@ -16,13 +16,11 @@ capabilities:
 tags:
 - telecom-network
 - customer-service
-- 5G-optimization
+- 5g-optimization
 - fault-diagnosis
 - enterprise-ai
 access:
 - api
-region:
-- china
 references:
 - title: 中国移动官方网站
   url: https://www.chinamobile.com

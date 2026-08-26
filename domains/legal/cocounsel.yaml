@@ -12,10 +12,8 @@ capabilities:
 - 集成Westlaw权威数据
 access:
 - saas
-region:
-- global
 tags:
-- Westlaw
+- westlaw
 - 法律研究
 references:
 - title: CoCounsel官网

@@ -20,8 +20,6 @@ tags:
 - agents
 access:
 - saas
-region:
-- global
 references:
 - title: Harvey AI Official Website
   url: https://www.harvey.ai

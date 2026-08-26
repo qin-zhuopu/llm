@@ -20,8 +20,6 @@ tags:
 - 非诊断任务
 access:
 - api
-region:
-- us
 references:
 - title: Hippocratic AI 官方网站
   url: https://www.hippocratic.ai

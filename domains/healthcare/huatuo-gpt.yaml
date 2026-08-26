@@ -48,14 +48,12 @@ capabilities:
 - 用药建议和治疗方案说明
 access:
 - open-weights
-region:
-- china
 tags:
 - 中文医疗
 - 医疗对话
-- SFT微调
+- sft微调
 - 开源模型
-- EMNLP 2023
+- emnlp 2023
 references:
 - title: 'HuatuoGPT: Towards Taming Language Models To Be a Doctor'
   url: https://arxiv.org/abs/2305.15075

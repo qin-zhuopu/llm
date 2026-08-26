@@ -17,8 +17,6 @@ tags:
 - enterprise-search
 access:
 - internal-only
-region:
-- global
 references:
 - title: Morgan Stanley Official Website
   url: https://www.morganstanley.com

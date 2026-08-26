@@ -13,12 +13,10 @@ capabilities:
 - 连接物理系统与代理式 AI
 - 提升企业生产力与运营效率
 tags:
-- Google Cloud
+- google cloud
 - 行政流程
 access:
 - saas
-region:
-- global
 references:
 - title: Cognizant Official Website
   url: https://www.cognizant.com

@@ -11,15 +11,13 @@ capabilities:
 - 基因组学数据分析
 - 生物分子相互作用预测
 tags:
-- Generative AI
-- Drug Discovery
-- Life Sciences
-- Protein Design
-- Genomics
+- generative ai
+- drug discovery
+- life sciences
+- protein design
+- genomics
 access:
 - saas
-region:
-- global
 references:
 - title: BioNeMo 官方主页
   url: https://www.nvidia.com/en-us/clara/bionemo/

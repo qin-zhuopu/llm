@@ -16,14 +16,12 @@ capabilities:
 - 多模态遥感图像理解
 tags:
 - 金融大模型
-- MoE架构
+- moe架构
 - 智能体
 - 多模态
 - 风险管理
 access:
 - api
-region:
-- china
 references:
 - title: 蚂蚁集团官方网站
   url: https://www.antgroup.com

@@ -18,8 +18,6 @@ tags:
 - 客服
 access:
 - private-deployment
-region:
-- china
 references:
 - title: 京东言犀官网
   url: https://ai.jd.com

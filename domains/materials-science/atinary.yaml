@@ -3,37 +3,31 @@ company: Atinary Technologies
 domain: materials-science
 status: released
 website: https://www.atinary.com/
-description: "Atinary Technologies 是 Self-Driving Labs (SDLabs) 先驱，提供 AI + 机器人闭环实验平台，可将数年研发缩短至数周。号称比传统 DOE/OFAT 方法快 5-100 倍，成本降低 50% 以上，2 小时即可部署 AI 无需编程。客户包括 Takeda、dsm-firmenich、Snapdragon Chemistry 等。"
-
+description: Atinary Technologies 是 Self-Driving Labs (SDLabs) 先驱，提供 AI + 机器人闭环实验平台，可将数年研发缩短至数周。号称比传统
+  DOE/OFAT 方法快 5-100 倍，成本降低 50% 以上，2 小时即可部署 AI 无需编程。客户包括 Takeda、dsm-firmenich、Snapdragon
+  Chemistry 等。
 capabilities:
-  - AI 驱动闭环自动实验优化(Self-Driving Labs)
-  - 贝叶斯优化智能选择下一步实验
-  - 机器人自动化实验执行
-  - 2 小时无代码 AI 部署
-  - 多目标优化复杂材料性质
-  - 比 DOE/OFAT 快 5-100 倍并降低 50%+ 成本
-
+- AI 驱动闭环自动实验优化(Self-Driving Labs)
+- 贝叶斯优化智能选择下一步实验
+- 机器人自动化实验执行
+- 2 小时无代码 AI 部署
+- 多目标优化复杂材料性质
+- 比 DOE/OFAT 快 5-100 倍并降低 50%+ 成本
 tech_stack:
   techniques:
-    - Bayesian optimization
-    - machine learning
-    - robotic automation
-    - closed-loop experimentation
-
+  - Bayesian optimization
+  - machine learning
+  - robotic automation
+  - closed-loop experimentation
 tags:
-  - self-driving-lab
-  - no-code
-  - closed-loop
-  - bayesian-optimization
-  - pharmaceutical
-  - chemical-optimization
-
+- self-driving-lab
+- no-code
+- closed-loop
+- bayesian-optimization
+- pharmaceutical
+- chemical-optimization
 access:
-  - saas
-
-region:
-  - global
-
+- saas
 references:
-  - title: Atinary Technologies 官方网站
-    url: https://www.atinary.com/
+- title: Atinary Technologies 官方网站
+  url: https://www.atinary.com/

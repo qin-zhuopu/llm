@@ -14,16 +14,14 @@ capabilities:
 - 排放监测：AI 驱动的温室气体检测、测量和减排解决方案
 - 设备健康诊断：实时监控泵、压缩机和涡轮机等关键设备
 tags:
-- Oil & Gas
-- Predictive Maintenance
-- Drilling Automation
-- Reservoir Management
-- Emissions Monitoring
-- Industrial AI
+- oil & gas
+- predictive maintenance
+- drilling automation
+- reservoir management
+- emissions monitoring
+- industrial ai
 access:
 - saas
-region:
-- global
 references:
 - title: Baker Hughes Official Website
   url: https://www.bakerhughes.com

@@ -19,8 +19,6 @@ tags:
 - 审计
 access:
 - internal-only
-region:
-- global
 references:
 - title: KPMG AI 官方主页
   url: https://kpmg.com/us/en/ai.html

@@ -12,8 +12,6 @@ capabilities:
 - 投研分析
 access:
 - api
-region:
-- china
 tags:
 - 中文金融
 - 风控

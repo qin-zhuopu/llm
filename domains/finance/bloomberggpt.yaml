@@ -14,10 +14,8 @@ capabilities:
 parameters: 50B
 access:
 - internal-only
-region:
-- global
 tags:
-- 金融NLP
+- 金融nlp
 - 情感分析
 references:
 - title: 'BloombergGPT: A Large Language Model for Finance'

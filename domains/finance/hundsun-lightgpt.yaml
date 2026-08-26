@@ -18,8 +18,6 @@ tags:
 - 私有化部署
 access:
 - private-deployment
-region:
-- china
 references:
 - title: 恒生电子官方网站
   url: https://www.hundsun.com

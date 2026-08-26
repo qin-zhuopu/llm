@@ -12,15 +12,13 @@ capabilities:
 - 建筑行业数据信息服务
 - BIM模型与数字孪生应用
 tags:
-- BIM
+- bim
 - 数字化施工
 - 工程造价
 - 企业管理
 - 数字孪生
 access:
 - saas
-region:
-- china
 references:
 - title: 广联达官方网站
   url: https://www.glodon.com

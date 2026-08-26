@@ -15,8 +15,6 @@ tags:
 - 自主决策
 access:
 - private-deployment
-region:
-- us
 references:
 - title: Shield AI Official Website
   url: https://www.shield.ai

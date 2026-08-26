@@ -22,12 +22,10 @@ website: https://www.shopify.com/sidekick
 release_date: '2025'
 access:
 - saas
-region:
-- global
 tags:
 - 电商助手
-- SaaS集成
-- AI运营
-- Shopify生态
+- saas集成
+- ai运营
+- shopify生态
 - 数据分析
 - 多模态

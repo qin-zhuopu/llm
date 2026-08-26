@@ -15,11 +15,9 @@ tags:
 - 临床决策支持
 - 智能分诊
 - 健康咨询
-- NLP
+- nlp
 access:
 - saas
-region:
-- china
 references:
 - title: 左手医生官方网站
   url: https://www.zuoshouyisheng.com

@@ -20,8 +20,6 @@ release_date: '2024'
 parameters: 未公开
 access:
 - saas
-region:
-- global
 tags:
 - multi-agent
 - supply-chain
