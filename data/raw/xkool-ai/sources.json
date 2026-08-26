@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "filename": "xkool-ai-1.md",
+      "url": "https://www.xkool.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://prodcos.lookx.ai/aibackend/static/homepage.mov",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    },
+    {
+      "filename": "lookx-ai-3.md",
+      "url": "https://lookx.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

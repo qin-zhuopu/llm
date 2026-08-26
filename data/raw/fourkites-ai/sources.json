@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "filename": "fourkites-com-1.md",
+      "url": "https://www.fourkites.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "cdn-prod-website-files-com-2.md",
+      "url": "https://cdn.prod.website-files.com/6a1843324cfc7ec158c3aec9%2F6a85d3b0729f85529f90f9be_homepage%20animation%20v2_mp4.mp4",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    }
+  ]
+}

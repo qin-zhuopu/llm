@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "youdao-com-1.md",
+      "url": "https://www.youdao.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "github-github-com-2.md",
+      "url": "https://github.com/netease-youdao",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    }
+  ]
+}

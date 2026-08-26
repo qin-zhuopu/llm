@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "filename": "casetext-com-1.md",
+      "url": "https://casetext.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "thomsonreuters-com-2.md",
+      "url": "https://www.thomsonreuters.com/coco",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    },
+    {
+      "filename": "legal-thomsonreuters-com-3.md",
+      "url": "https://legal.thomsonreuters.com/en/products/cocounsel-legal",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    },
+    {
+      "filename": "tax-thomsonreuters-com-4.md",
+      "url": "https://tax.thomsonreuters.com/en/products/cocounsel-tax",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    },
+    {
+      "filename": "tax-thomsonreuters-com-5.md",
+      "url": "https://tax.thomsonreuters.com/en/products/cocounsel-audit",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    },
+    {
+      "filename": "tax-thomsonreuters-com-6.md",
+      "url": "https://tax.thomsonreuters.com/en/accounting-solutions/c/cocounsel-tax/cocounsel-ai-for-tax-audit-and-accounting-professionals",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    },
+    {
+      "filename": "thomsonreuters-com-7.md",
+      "url": "https://www.thomsonreuters.com/en.html",
+      "fetched_at": "2026-08-26",
+      "type": "news"
+    }
+  ]
+}

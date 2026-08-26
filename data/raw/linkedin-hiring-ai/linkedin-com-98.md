@@ -1,0 +1,3003 @@
+# Source: https://www.linkedin.com/hubs/top-colleges/?trk=homepage-basic_directory_topCollegesHubHomeUrl
+
+> 抓取日期: 2026-08-26
+
+---
+
+<!DOCTYPE html>
+
+      
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+    
+    <html lang="en">
+      <head>
+        <meta name="pageKey" content="d_top_colleges_hub_home">
+<!----><!----><!---->        <meta name="locale" content="en_US">
+<!---->        <meta id="config" data-app-version="0.0.1656" data-call-tree-id="AAZZ+pRw7Je6xPt8DEpxWQ==" data-multiproduct-name="directory-ssr-frontend" data-service-name="directory-ssr-frontend" data-browser-id="9e1d0819-930e-4d55-8682-c3df75d50f5a" data-is-bot="false" data-enable-page-view-heartbeat-tracking data-page-instance="urn:li:page:d_top_colleges_hub_home;osFgekuQSLGtf/0Tm588yw==" data-disable-jsbeacon-pagekey-suffix="false" data-member-id="0" data-should-use-full-url-in-pve-path="true" data-dna-member-lix-treatment="control" data-human-member-lix-treatment="control" data-dfp-member-lix-treatment="control" data-sync-apfc-headers-lix-treatment="control" data-sync-apfc-cb-lix-treatment="control" data-recaptcha-v3-integration-lix-value="control" data-network-interceptor-lix-value="control" data-is-epd-audit-event-enabled="false" data-is-feed-sponsored-tracking-kill-switch-enabled="false" data-sequence-auto-redirect-before-request-enabled="false">
+
+        <link rel="canonical" href="https://www.linkedin.com/hubs/top-colleges/">
+<!----><!---->
+<!---->
+<!---->
+<!---->
+          <link rel="manifest" href="/homepage-guest/manifest.json" crossorigin="use-credentials">
+
+          <link rel="icon" href="https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca">
+
+
+        <script>
+          function getDfd() {let yFn,nFn;const p=new Promise(function(y, n){yFn=y;nFn=n;});p.resolve=yFn;p.reject=nFn;return p;}
+          window.lazyloader = getDfd();
+          window.tracking = getDfd();
+          window.impressionTracking = getDfd();
+          window.ingraphTracking = getDfd();
+          window.appDetection = getDfd();
+          window.pemTracking = getDfd();
+          window.appRedirectCompleted = getDfd();
+        </script>
+
+<!---->
+        
+        <title>Top Colleges for career outcomes in United States (2025) | LinkedIn</title>
+        
+    
+    
+    
+
+    <meta name="description" content="Explore the top colleges in United States for the year 2025. LinkedIn’s Top Colleges list helps you by highlighting schools that set students and alumni up for long-term career success.">
+    <meta property="og:title" content="Top Colleges for career outcomes in United States (2025) | LinkedIn">
+    <meta property="og:description" content="Explore the top colleges in United States for the year 2025. LinkedIn’s Top Colleges list helps you by highlighting schools that set students and alumni up for long-term career success.">
+    <meta property="og:image" content="https://static.licdn.com/aero-v1/sc/h/en3f1pk3qk4cxtj2j4fff0gtr">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.linkedin.com/hubs/top-colleges/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@LinkedInEditors">
+    <meta name="twitter:title" content="Top Colleges for career outcomes in United States (2025) | LinkedIn">
+    <meta name="twitter:description" content="Explore the top colleges in United States for the year 2025. LinkedIn’s Top Colleges list helps you by highlighting schools that set students and alumni up for long-term career success.">
+    <meta name="twitter:image" content="https://static.licdn.com/aero-v1/sc/h/en3f1pk3qk4cxtj2j4fff0gtr">
+    <meta name="robots" content="noarchive, max-image-preview:large">
+    <meta name="appId" content="directory-ssr-frontend">
+<!----><!---->
+    <meta name="clientSideIngraphs" content="1" data-gauge-metric-endpoint="/directory-ssr-frontend/api/ingraphs/gauge" data-counter-metric-endpoint="/directory-ssr-frontend/api/ingraphs/counter">
+  
+          
+    
+      <script type="application/ld+json">
+        {"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":"Top Colleges for career outcomes in United States (2025) | LinkedIn","description":"Explore the top colleges in United States for the year 2025. LinkedIn’s Top Colleges list helps you by highlighting schools that set students and alumni up for long-term career success.","url":"https://www.linkedin.com/hubs/top-colleges/","numberOfItems":50,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"CollegeOrUniversity","name":"Princeton University","url":"https://www.linkedin.com/school/princeton-university/","description":"A vibrant community of learning that endeavors to fulfill its informal motto, '​'​in the nation's service and the service of humanity.'​'​ (Alumni note: The \"Notable Alumni\"​ section is generated by LinkedIn.)","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQE4zTC5PJAKSA/company-logo_100_100/company-logo_100_100/0/1630648147093/princeton_university_logo?e=2147483647&v=beta&t=YQ3rA8riytOAQh41Kdpy_9jquNqQaa6KtJU1K6PVBeU","address":{"@type":"PostalAddress","addressLocality":"Princeton"}}},{"@type":"ListItem","position":2,"item":{"@type":"CollegeOrUniversity","name":"Duke University","url":"https://www.linkedin.com/school/duke-university/","description":"The official LinkedIn Page of Duke University","logo":"https://media.licdn.com/dms/image/v2/D560BAQGVn2MO4DWnLg/company-logo_100_100/B56ZbZv8i_H4AQ-/0/1747409948261?e=2147483647&v=beta&t=G9wmkQ01VcJqaRbwD1WOvOpadn7FhEdDrE_16U6CMLI","address":{"@type":"PostalAddress","addressLocality":"Durham"}}},{"@type":"ListItem","position":3,"item":{"@type":"CollegeOrUniversity","name":"University of Pennsylvania","url":"https://www.linkedin.com/school/university-of-pennsylvania/","description":"The University of Pennsylvania is one of the oldest universities in America and, as a member of the Ivy League, one of the most prestigious institutions of higher learning in all the world. Penn is home to 12 schools including the School of Arts and Sciences, the School of Nursing, the School of Engineering and Applied Science and the Wharton School of Business, as well as several graduate and professional schools such as the Perelman School of Medicine.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQFJvX-Ed9d2gA/company-logo_100_100/B4EZxITZrAGwAQ-/0/1770739574173/university_of_pennsylvania_logo?e=2147483647&v=beta&t=7CxaXKZSClHVe8etdoIUJO54j7jWOuWO-dbGnMnKz9s","address":{"@type":"PostalAddress","addressLocality":"Philadelphia"}}},{"@type":"ListItem","position":4,"item":{"@type":"CollegeOrUniversity","name":"Massachusetts Institute of Technology","url":"https://www.linkedin.com/school/mit/","description":"The Massachusetts Institute of Technology (MIT) is a private research university located in Cambridge, Massachusetts.  MIT is devoted to the advancement of knowledge and education of students in areas that contribute to or prosper in an environment of science and technology.","logo":"https://media.licdn.com/dms/image/v2/D560BAQH-UXRfIDIKug/company-logo_100_100/company-logo_100_100/0/1689799729035/mit_logo?e=2147483647&v=beta&t=2BcyEkKb9m86JDvxtNLfDVfyept76unhOFNf5Wt_Vp4","address":{"@type":"PostalAddress","addressLocality":"Cambridge"}}},{"@type":"ListItem","position":5,"item":{"@type":"CollegeOrUniversity","name":"Cornell University","url":"https://www.linkedin.com/school/cornell-university/","description":"Cornell is a privately endowed research university and a partner of the State University of New York. As the federal land-grant institution in New York State, we have a responsibility—unique within the Ivy League—to make contributions in all fields of knowledge in a manner that prioritizes public engagement to help improve the quality of life in our state, the nation, the world.","logo":"https://media.licdn.com/dms/image/v2/C560BAQE8SOXGRyv7LA/company-logo_100_100/company-logo_100_100/0/1631339899678?e=2147483647&v=beta&t=zaLiQsKT8oh9_1lS1Umf_p93CQcCRLgO1kw8wT-HRVU","address":{"@type":"PostalAddress","addressLocality":"Ithaca"}}},{"@type":"ListItem","position":6,"item":{"@type":"CollegeOrUniversity","name":"Harvard University","url":"https://www.linkedin.com/school/harvard-university/","description":"Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. Founded in 1636, Harvard is the oldest institution of higher learning in the United States.\n\nThe official flagship Harvard social media channels are maintained by Harvard Public Affairs and Communications and aim to provide access to the people, places, events, news and research at our Institution. We ask that all visitors to Harvard’s digital spaces be civil to one another and to the site editors. Personal attacks, profanity, commercial solicitations, spam, misinformation or other inappropriate contributions are grounds for comment removal. We ask that you stay on topic when contributing to a discussion and refrain from duplicate posts.\n\nHateful or discriminatory comments regarding race, ethnicity, religion, gender, disability, sexual orientation, or political beliefs will not be tolerated. The page administrators reserve the right to delete inappropriate or abusive comments and to permanently ban or block users from the Harvard social media accounts.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQF5t62bcL0e9g/company-logo_100_100/company-logo_100_100/0/1631318058235?e=2147483647&v=beta&t=Ye1klXowyo8TIcnkhTlmORgiA5ZywvooNihDMnx5urQ","address":{"@type":"PostalAddress","addressLocality":"Cambridge"}}},{"@type":"ListItem","position":7,"item":{"@type":"CollegeOrUniversity","name":"Babson College","url":"https://www.linkedin.com/school/babson-college/","description":"The global leader in entrepreneurship education.\n\nThe No. 1 undergraduate school and MBA for entrepreneurship 29 and 32 times in a row. (U.S. News & World Report)\n\nThe No. 2 Best College in the United States. (Wall Street Journal)","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQG9uoVqHj4dSg/company-logo_100_100/company-logo_100_100/0/1630613547672/babson_college_logo?e=2147483647&v=beta&t=5xs2cp42whqtz_ESB35RaIfoshy5n-HPFwNyZISeSHk","address":{"@type":"PostalAddress","addressLocality":"Babson Park"}}},{"@type":"ListItem","position":8,"item":{"@type":"CollegeOrUniversity","name":"University of Notre Dame","url":"https://www.linkedin.com/school/university-of-notre-dame/","description":"The University of Notre Dame is the premier global Catholic research university in the U.S. and a force for good since 1842\n\nIt offers an outstanding undergraduate and graduate education guided by a Catholic mission.","logo":"https://media.licdn.com/dms/image/v2/D560BAQFTtW9IxZTgdA/company-logo_100_100/company-logo_100_100/0/1737395581692?e=2147483647&v=beta&t=9Ht-hP8N-TEyKwGuhzxw5yQbZgVY3Rfp85LZXtKRoz8","address":{"@type":"PostalAddress","addressLocality":"Notre Dame"}}},{"@type":"ListItem","position":9,"item":{"@type":"CollegeOrUniversity","name":"Dartmouth College","url":"https://www.linkedin.com/school/dartmouth-college/","description":"Dartmouth educates the most promising students and prepares them for a lifetime of learning and of responsible leadership, through a faculty dedicated to teaching and the creation of knowledge.","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQELVZKDzlGDzA/company-logo_100_100/company-logo_100_100/0/1631325633796?e=2147483647&v=beta&t=9XIq_QyCXJxJSCcQqXzPQKqSMq0rnKZ-bOx2b17Z3vs","address":{"@type":"PostalAddress","addressLocality":"Hanover"}}},{"@type":"ListItem","position":10,"item":{"@type":"CollegeOrUniversity","name":"Stanford University","url":"https://www.linkedin.com/school/stanford-university/","description":"Stanford University pursues its founding mission of research and education with a spirit of optimism and possibility. Stanford catalyzes discoveries, accelerates the human impact of its research, educates students in a culture of expansive inquiry and freedom of thought, and offers world-class medical care. An engine of innovation and economic growth, Stanford is at the frontier of new knowledge and breakthroughs that move from labs and classrooms out into the world. The university is located in the San Francisco Bay Area and first welcomed students in 1891. Its main campus is home to seven schools, along with interdisciplinary research and policy institutes, athletics, and the arts. More than 7,200 undergraduate and 10,000 graduate students study at Stanford each year. Stanford’s 2,402 faculty members are leaders in their fields, and their ranks currently include 20 Nobel laureates. Learn more at stanford.edu.  ","logo":"https://media.licdn.com/dms/image/v2/C560BAQHr9suxyJBXMw/company-logo_100_100/company-logo_100_100/0/1635534378870/stanford_university_logo?e=2147483647&v=beta&t=ZvB25L95o9w4q9drvsWxGcM49tX66Cf5LsLAxYp8rSs","address":{"@type":"PostalAddress","addressLocality":"Stanford"}}},{"@type":"ListItem","position":11,"item":{"@type":"CollegeOrUniversity","name":"Northwestern University","url":"https://www.linkedin.com/school/northwestern-university/","description":"Northwestern is one of the nation’s premier research universities, combining innovative teaching and pioneering research in a highly collaborative, multidisciplinary, and diverse environment. Northwestern provides both students and faculty exceptional opportunities for intellectual, personal, and professional growth in beautiful settings, with two campuses located on Lake Michigan: a 240-acre campus in Evanston, minutes north of Chicago, and a 25-acre campus in downtown Chicago. A third campus in Doha, Qatar was founded in 2008. For more information visit http://www.northwestern.edu","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQH-sXOOSUF3aA/company-logo_100_100/company-logo_100_100/0/1631319371681?e=2147483647&v=beta&t=Vcp9mqxmy784PTW-nLDD6zgQg1KLTPxoFratI4zO-pQ","address":{"@type":"PostalAddress","addressLocality":"Evanston"}}},{"@type":"ListItem","position":12,"item":{"@type":"CollegeOrUniversity","name":"University of Virginia","url":"https://www.linkedin.com/school/university-of-virginia/","description":"The University of Virginia was founded in 1819 as the model for modern universities that has since been emulated all over the world. After 200 years, this iconic institution of higher learning endures because it is fully immersed in meeting the greatest challenges of our time, day in and day out. It’s how we fulfill our animating purpose – to serve. UVA is Virginia’s flagship institution of higher learning, perennially ranked as one of the best public universities in the nation. Having the best public college financial aid package and the highest graduation rate in the nation, UVA offers a life-changing return on investment for students from all backgrounds. We promote access so a meritocracy of talent can participate in shaping our society. The revolutionary vision of an Academical Village has evolved to 12 Schools, each providing leadership in its field and attracting world-class talent. The University is the largest employer in the region and is a catalyst for growth across the Commonwealth, generating an annual economic impact of $5.9 billion. Ultimately, we prepare students to be citizen-leaders who themselves are guided by empathy, integrity, and truth. We believe that doing what you do best, for the benefit of others, is where greatness comes from. Which is why, at the University of Virginia, we strive to be great and good in all we do. #GreatandGood #UVA","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQFPXxfaisprvA/company-logo_100_100/company-logo_100_100/0/1712014926451?e=2147483647&v=beta&t=5-oCcxBKODvrUF8qddL01A6HVmr0MruxfH1R0dCgFzE","address":{"@type":"PostalAddress","addressLocality":"Charlottesville"}}},{"@type":"ListItem","position":13,"item":{"@type":"CollegeOrUniversity","name":"Vanderbilt University","url":"https://www.linkedin.com/school/vanderbilt-university/","description":"Vanderbilt University is a top-ranked teaching and research university in Nashville, Tennessee. Powered by collaboration.\n\nFollow Vanderbilt on Facebook, Twitter, TikTok and Instagram @VanderbiltU. See more Vanderbilt social media at https://social.vanderbilt.edu/\n\nLocated in Nashville, Tenn., and operating at a global crossroads of teaching and discovery, Vanderbilt University is a community of individuals who come to work each day with the simple aim of changing the world. It is a place where your expertise will be valued, your knowledge expanded and your abilities challenged. It is a place where your diversity — of culture, thinking, learning and leading — is sought and celebrated. It is a place where students and employees know they are part of something that is bigger than themselves, take exceptional pride in their work and never settle for what was good enough yesterday.\n\nWe hire hundreds of employees each year and have a wealth of opportunities ranging from information technology to development and dining to athletics.\n\nWe are Vanderbilt. Join Us.\n\nOur comment policy: https://news.vanderbilt.edu/resources/about/comment-policy","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQEhR74nz4kJ6g/company-logo_100_100/company-logo_100_100/0/1648406543324/vanderbilt_university_logo?e=2147483647&v=beta&t=rswH1SU1LJAcV_wMHge-xOquEPpvOQxCMJ_tm4ECarI","address":{"@type":"PostalAddress","addressLocality":"Nashville"}}},{"@type":"ListItem","position":14,"item":{"@type":"CollegeOrUniversity","name":"Brown University","url":"https://www.linkedin.com/school/brown-university/","description":"Located in historic Providence, Rhode Island and founded in 1764, Brown University is the seventh-oldest college in the United States. Brown is an independent, coeducational Ivy League institution comprising undergraduate and graduate programs, plus the Alpert Medical School, School of Public Health, School of Engineering, and the School of Professional Studies.\n\nWith its talented and motivated student body and accomplished faculty, Brown is a leading research university that maintains a particular commitment to exceptional undergraduate instruction. Brown’s vibrant, diverse community consists of about 6,200 undergraduates, 2,000 graduate students, 490 medical school students, more than 5,000 summer, visiting, and online students, and over 700 faculty members.\n\nBrown students come from all 50 states and more than 115 countries. Undergraduates pursue bachelor’s degrees in more than 70 concentrations, ranging from Egyptology to cognitive neuroscience. Anything’s possible at Brown—the university’s commitment to undergraduate freedom means students must take responsibility as architects of their courses of study.\n\nBrown University has 51 doctoral programs and 28 master’s programs. The broad scope of options vary from interdisciplinary opportunities in molecular pharmacology and physiology to a master’s program in acting and directing through the Brown/Trinity Repertory Consortium.\n\nAround the world, nearly 90,000 Brown alumni are - in the words of Brown’s charter - leading lives of “usefulness and reputation” in every imaginable field of endeavor. Through events around the globe, reunions on campus, career resources, a host of online connections, and other services, the Brown Alumni Association fosters and supports a vibrant alumni community, wherever its members may be.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQEK5eP7BQ975w/company-logo_100_100/company-logo_100_100/0/1630594275590/brown_university_logo?e=2147483647&v=beta&t=5W3qKNldwnon1_NFN-5AiHP5I3cDZZELoMEHnh2eHeM","address":{"@type":"PostalAddress","addressLocality":"Providence"}}},{"@type":"ListItem","position":15,"item":{"@type":"CollegeOrUniversity","name":"Bentley University","url":"https://www.linkedin.com/school/bentley-university/","description":"Bentley University is more than just one of the nation's top business schools. It is a lifelong-learning community that creates successful leaders who make business a force for positive change. With a combination of business and the arts and sciences and a flexible, personalized approach to education, Bentley provides students with critical thinking and practical skills that prepare them to lead successful, rewarding careers. Founded in 1917, the university enrolls 4,000 undergraduate and 1,000 graduate and PhD students and is set on 163 acres in Waltham, Massachusetts, 10 miles west of Boston. For more information, visit bentley.edu.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQGtLCpuTDvWDQ/company-logo_100_100/B4EZsOv4nFGQAc-/0/1765478992707/bentley_university_logo?e=2147483647&v=beta&t=pbDaFD08uul9pvJMq_x2x7H_a7Q0EVDTgLQpWU-5Q5w","address":{"@type":"PostalAddress","addressLocality":"Waltham"}}},{"@type":"ListItem","position":16,"item":{"@type":"CollegeOrUniversity","name":"Tufts University","url":"https://www.linkedin.com/school/tufts-university/","description":"With four campuses in Massachusetts, Tufts is a research university committed to helping students and faculty generate bold ideas, innovate, and become active citizens of the world. Tufts'​ unique combination of research and liberal arts attracts students, faculty, and staff who thrive in an environment of curiosity, creativity and engagement. ","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQH_656Vr-3pxA/company-logo_100_100/company-logo_100_100/0/1631326600842?e=2147483647&v=beta&t=y0YmIzw2owvA43xQMfqg2lFYVjY3TyLBBqnnf7gHVRc","address":{"@type":"PostalAddress","addressLocality":"Medford"}}},{"@type":"ListItem","position":17,"item":{"@type":"CollegeOrUniversity","name":"Lehigh University","url":"https://www.linkedin.com/school/lehigh-university/","description":"Lehigh is a premier residential research university, ranked in the top tier of national research universities each year. We are a coeducational, nondenominational, private university that offers a rigorous academic environment for undergraduate and graduate students from across the globe.\n\nLehigh offers majors and programs in five colleges: the College of Arts and Sciences, the College of Business, the College of Health, the P.C. Rossin College of Engineering and Applied Science and the College of Education.\n\nMore than 5,000 undergraduate and 2,000 graduate students call Lehigh home.​ Located in Pennsylvania’s scenic Lehigh Valley, the campus is in close proximity to both New York City and Philadelphia. Lehigh is comprised of 2,358 acres, making it one of the largest private universities in the country. \n\nSince 1865, generations of students have chosen Lehigh for their educational experience. They know Lehigh is a place where they can make strong personal connections with faculty, conduct research in diverse fields of study, thrive in a dynamic campus community, form lasting bonds with Lehigh alumni, and learn from their own life experiences.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQHmhyMQACBQTQ/company-logo_100_100/company-logo_100_100/0/1691769642538/lehigh_university_logo?e=2147483647&v=beta&t=ZARwAci3TjtyKlRIPqI0ix6rw-446S05Td5tmGMfi-0","address":{"@type":"PostalAddress","addressLocality":"Bethlehem"}}},{"@type":"ListItem","position":18,"item":{"@type":"CollegeOrUniversity","name":"Columbia University","url":"https://www.linkedin.com/school/columbia-university/","description":"For more than 250 years, Columbia has been a leader in higher education in the nation and around the world. At the core of our wide range of academic inquiry is the commitment to attract and engage the best minds in pursuit of greater human understanding, pioneering new discoveries and service to society. ","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQFxn78nvVaTDA/company-logo_100_100/company-logo_100_100/0/1630638452046/columbia_university_logo?e=2147483647&v=beta&t=f-050SrbzjElMuDqUFVhVaZOX79OjMdqz47bO6aLk3k","address":{"@type":"PostalAddress","addressLocality":"New York"}}},{"@type":"ListItem","position":19,"item":{"@type":"CollegeOrUniversity","name":"Yale University","url":"https://www.linkedin.com/school/yale-university/","description":"For more than 300 years, Yale University has inspired the minds that inspire the world. Based in New Haven, Connecticut, Yale brings people and ideas together for positive impact around the globe. A research university that focuses on students and encourages learning as an essential way of life, Yale is a place for connection, creativity, and innovation among cultures and across disciplines.","logo":"https://media.licdn.com/dms/image/v2/C560BAQGGJUjGgSYcWQ/company-logo_100_100/company-logo_100_100/0/1631385636084?e=2147483647&v=beta&t=HJuRQU0iSF6PHT11JcO0lVfn8vylHhAxBNFoDepriXA","address":{"@type":"PostalAddress","addressLocality":"New Haven"}}},{"@type":"ListItem","position":20,"item":{"@type":"CollegeOrUniversity","name":"Carnegie Mellon University","url":"https://www.linkedin.com/school/carnegie-mellon-university/","description":"Carnegie Mellon University founder Andrew Carnegie said: \"My heart is in the work.\"​\r\n\r\nNo statement better captures the passion and drive of our people to make a real difference. \r\n\r\nAt Carnegie Mellon, we're not afraid of the work.\r\n\r\nOur educational environment creates problem solvers, drivers of innovation and pioneers in technology and the arts.  \r\n\r\nEmployers in every field say our graduates are ready to hit the ground running the day they graduate. \r\n\r\nSo, join us. Whether you're looking for a career or an education. Or both.","logo":"https://media.licdn.com/dms/image/v2/C560BAQH0rMqWuDcNzA/company-logo_100_100/company-logo_100_100/0/1656670432790/carnegie_mellon_university_logo?e=2147483647&v=beta&t=aPUYNrOY_aNQ_xYOLYuS6QMkoaAk4TILUhTj-qpZOTs","address":{"@type":"PostalAddress","addressLocality":"Pittsburgh"}}},{"@type":"ListItem","position":21,"item":{"@type":"CollegeOrUniversity","name":"Bucknell University","url":"https://www.linkedin.com/school/bucknell-university/","description":"Bucknell University is a private, undergraduate, liberal arts university in the heart of Pennsylvania. Our more than 3,700 students can choose from more than 60 majors in three top colleges: Arts & Sciences, Engineering and the Freeman College of Management. One hundred percent of our classes are taught by our more than 350 full-time faculty, virtually all of whom hold a Ph.D. or equivalent terminal degree.\n\nOur students and professors are united by a curiosity about the world, and together they push the limits of understanding through cooperative research projects, frequently leading to publication in the world’s leading academic journals. Our students also find numerous opportunities to take their learning experience beyond the classroom through internships, job-shadowing experiences, independent research and study abroad.\n\nBucknell’s Center for Career Advancement helps connect students with internships and other opportunities that lead to fulfilling careers, frequently in collaboration with Bucknell’s passionate alumni community of more than 56,000 living graduates. Combined with their top-notch education, these experiences are a major reason why virtually all of our students report being employed or continuing their education at top graduate schools within nine months of graduation.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQEArEwbHMxYRg/company-logo_100_100/company-logo_100_100/0/1631314412155?e=2147483647&v=beta&t=k0l89QQXQ5bxIaMGMDcpxzSDsdYlFlCcNs7A_utAplA","address":{"@type":"PostalAddress","addressLocality":"Lewisburg"}}},{"@type":"ListItem","position":22,"item":{"@type":"CollegeOrUniversity","name":"Boston College","url":"https://www.linkedin.com/school/boston-college/","description":"The official page of Boston College, a Jesuit Catholic university dedicated to uniting academic excellence with leadership and service to society.","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQHQq9GTK55wuA/company-logo_100_100/company-logo_100_100/0/1630580523474/boston_college_logo?e=2147483647&v=beta&t=4qPw9GCYb-eRvwqlDOl8vXzBwuiy52Jn3vdeyvUT79c","address":{"@type":"PostalAddress","addressLocality":"Chestnut Hill"}}},{"@type":"ListItem","position":23,"item":{"@type":"CollegeOrUniversity","name":"Villanova University","url":"https://www.linkedin.com/school/villanova-university/","description":"Villanova University was founded in 1842 by the Order of St. Augustine. To this day, Villanova's Augustinian Catholic tradition is the cornerstone of an academic community where students learn to think critically, act compassionately and succeed while serving others. \n\nThe Villanova community helps students grow intellectually, professionally and spiritually and challenges them to reach their full potential. Villanova’s academic experience, rooted in the liberal arts, forms an environment in which students and professors are partners in learning. Through academic and service programs, students use their skills, knowledge and compassion to better the world around them.\n\nThe University draws students from 45 states and nearly 50 countries. More than 10,000 undergraduate, graduate and law students take part in a wide variety of degree and certificate programs throughout the University's six colleges – the College of Liberal Arts and Sciences, the Villanova School of Business, the College of Engineering, the M. Louise Fitzpatrick College of Nursing, the College of Professional Studies and the Villanova University Charles Widger School of Law. \n\nAfter graduation, students join nearly 125,000 Villanova alumni worldwide. ","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQGVZYUrw7RmEg/company-logo_100_100/company-logo_100_100/0/1631353498907?e=2147483647&v=beta&t=hGWnXihcEqMmWTAia64xhg90eh0bg7YdCCjFBGdUGMs","address":{"@type":"PostalAddress","addressLocality":"Villanova"}}},{"@type":"ListItem","position":24,"item":{"@type":"CollegeOrUniversity","name":"University of Illinois Urbana-Champaign","url":"https://www.linkedin.com/school/university-of-illinois-urbana-champaign/","description":"The University of Illinois Urbana-Champaign is dedicated to building upon its tradition of excellence in education, research, public engagement and economic development. More than 3,000 faculty members discover and create new knowledge. Their work is an economic engine for the state and is recognized with many of the world’s top academic and creative awards. The campus’ outstanding academic programs, extraordinary resources and bountiful opportunities attract top-caliber students. They join research teams, spend semesters abroad, create art in old and new ways and lead and participate in hundreds of student organizations. The Urbana campus has more than 425,000 alumni who are global leaders across the spectrum of human endeavor.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQGFFDl_Z9pIAA/company-logo_100_100/company-logo_100_100/0/1630611684443/university_of_illinois_at_urbana_champaign_logo?e=2147483647&v=beta&t=TrFZBxAmbqYOYfdIFq5Zq_OlfV_xHrxA3oNZGy05CEU","address":{"@type":"PostalAddress","addressLocality":"Champaign"}}},{"@type":"ListItem","position":25,"item":{"@type":"CollegeOrUniversity","name":"Wake Forest University","url":"https://www.linkedin.com/school/wake-forest-university/","description":"Wake Forest is a private, coeducational university located in Winston-Salem, North Carolina. Wake Forest offers the personal attention of a small liberal arts college, coupled with the breadth and global relevancy of a leading research institution. Our mission is to educate the whole person, graduating students who seek purpose-filled lives while building a community dedicated to serving humanity in the spirit of our motto, Pro Humanitate.","logo":"https://media.licdn.com/dms/image/v2/D560BAQEFqp85altM1g/company-logo_100_100/B56Z.KsNIbIUAI-/0/1784738271983/wake_forest_university_logo?e=2147483647&v=beta&t=FhHBzQ_cLxJEHG6dd5vcqFRTllfNs2gnd-1edVkxUvY","address":{"@type":"PostalAddress","addressLocality":"Winston-Salem"}}},{"@type":"ListItem","position":26,"item":{"@type":"CollegeOrUniversity","name":"University of Chicago","url":"https://www.linkedin.com/school/uchicago/","description":"One of the world’s great intellectual destinations, the University of Chicago empowers scholars and students to ask tough questions, cross disciplinary boundaries, and challenge conventional thinking to enrich human life around the globe. http://www.uchicago.edu/about/","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQHbp_dv8CAlpQ/company-logo_100_100/company-logo_100_100/0/1630577480920/uchicago_logo?e=2147483647&v=beta&t=cAtlujPg_gTYAJEyaRAqq_mGt_-UR02Z7OGx9bpFBFI","address":{"@type":"PostalAddress","addressLocality":"Chicago"}}},{"@type":"ListItem","position":27,"item":{"@type":"CollegeOrUniversity","name":"University of Southern California","url":"https://www.linkedin.com/school/university-of-southern-california/","description":"The University of Southern California is a leading private research university located in Los Angeles, the capital of the Pacific Rim.\n\nThis is the official LinkedIn presence for the University of Southern California. This account is managed and mediated by the staff of USC University Communications. Content (including posts from 3rd parties) that include videos, photographs, opinions and links to content outside of this channel do not necessarily represent the University of Southern California’s academic goals or opinions. \n\nCommunity guidelines: Alumni and students are welcome to post professional updates and news. Posts containing solicitations, product placements, derogatory or inflammatory comments are prohibited and will be removed. Off-topic comments will also be removed. \n\nPosts are not regularly monitored. Please note: for questions regarding degrees offered and admissions policies please call (213) 740-2311.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQHatTfEv4Af6w/company-logo_100_100/company-logo_100_100/0/1631312619853?e=2147483647&v=beta&t=uv2J12HEewxyizWMwIblg7CO1XROk-nsuuljqXSZdb0","address":{"@type":"PostalAddress","addressLocality":"Los Angeles"}}},{"@type":"ListItem","position":28,"item":{"@type":"CollegeOrUniversity","name":"Fairfield University","url":"https://www.linkedin.com/school/fairfield-university/","description":"Fairfield University is a Jesuit Catholic institution that prepares undergraduate, graduate, doctoral and continuing education students for leadership and service in a constantly changing world. Over 5,800 students from 35 states, 46 countries, the District of Columbia, and Puerto Rico are enrolled at the University's five schools. The University was founded in 1942 in the scenic shoreline community of Fairfield, Connecticut.\n\nFairfield University is committed to encouraging diversity in its student population and dedicated to the notion of cura personalis - a commitment to caring for the whole person, body, mind and spirit. Put it all together and you get an inspiring education that prepares you for an inspired life.\n\nAt Fairfield, we're committed to every aspect of your education, including what happens after you graduate. We want to provide you with a return on your investment by helping you find a career you're passionate about pursuing. The Career Planning Center offers many services to assist students and alumni at any stage of their career development process and maintains strong partnerships with companies that regularly hire Fairfield graduates. \n\nFairfield’s campus is conveniently located an hour from New York City, two hours from Boston, and 30 minutes from Stamford and New Haven, Conn., allowing students to seek internships and employment in a variety of locations. \n\nAfter graduation, students join a strong network of 40,000 successful and passionate Fairfield alumni. In fact, last year’s post-grad summary reported that 98% of the Class of 2013 were employed, in graduate school, or in a volunteer or service program within six months of graduation. They and all alumni are welcomed back to campus as a member of the Fairfield University family, and invited to join one of 10 alumni chapters and regional groups across the country.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQE3wYIz3Q372A/company-logo_100_100/company-logo_100_100/0/1644977665248/fairfield_university_logo?e=2147483647&v=beta&t=6WenHoL51Zp-sIgapouTyI0GvwrjS3xCu264LbErUxg","address":{"@type":"PostalAddress","addressLocality":"Fairfield"}}},{"@type":"ListItem","position":29,"item":{"@type":"CollegeOrUniversity","name":"Washington and Lee University","url":"https://www.linkedin.com/school/washington-and-lee-university/","description":"Founded in 1749, Washington and Lee is one of the preeminent liberal arts colleges in the country.\n\nMission:\nWashington and Lee University provides a liberal arts education that develops students'​ capacity to think freely, critically, and humanely and to conduct themselves with honor, integrity, and civility. Graduates will be prepared for life-long learning, personal achievement, responsible leadership, service to others, and engaged citizenship in a global and diverse society.\n\nContent Policy:\nWashington and Lee (W&L) encourages contributions to any and all of its social media sites and asks that all contributors observe the civility that the University attempts to foster. We reserve the right to review all comments and will remove any that are inappropriate. A posting may be considered inappropriate if it constitutes bullying, discrimination, harassment, threat of violence, unsolicited advertising (SPAM), obscenity, similar inappropriate or unlawful conduct, or is irrelevant to the page or topic.\n\nAny community-contributed content is the opinion of the author and does not represent the views of W&L.\n\nW&L abides by the Terms of Service of all social media platforms. We encourage users to use the \"Report\"​ links if they find content that is abusive.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQFCivwH5KIFlA/company-logo_100_100/company-logo_100_100/0/1631325180050?e=2147483647&v=beta&t=FckPrsz6At8ECGU8DweP_gFMZ1QHBsC8PlOzTAYDYa4","address":{"@type":"PostalAddress","addressLocality":"Lexington"}}},{"@type":"ListItem","position":30,"item":{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.linkedin.com/school/uc-berkeley/","description":"A wellspring of innovation, the school occupies a 1,232-acre campus near downtown Berkeley. UC Berkeley, also known as Cal, was established in 1868 as the flagship of today’s 10-campus University of California.","logo":"https://media.licdn.com/dms/image/v2/D560BAQGwjF_5CYj_JQ/company-logo_100_100/company-logo_100_100/0/1732135669731/uc_berkeley_logo?e=2147483647&v=beta&t=7XwNqDpzm3ORttlebBpryt59e62a2tAk2Xf7mIuoOlY","address":{"@type":"PostalAddress","addressLocality":"Berkeley"}}},{"@type":"ListItem","position":31,"item":{"@type":"CollegeOrUniversity","name":"Rice University","url":"https://www.linkedin.com/school/riceuniversity/","description":"Rice is a private, independent university dedicated to the \"advancement of letters, science, and art.\"​  Rice attracts a diverse group of highly talented students with a range of academic studies that includes humanities, social sciences, natural sciences, engineering, architecture, music, and business management. The school offers students the advantage of forging close relationships with members of the faculty and the option of tailoring graduate and undergraduate studies to their specific interests. The Electrical and Computer Engineering Department provides high quality undergraduate and graduate degree programs, which emphasize fundamental principles that respond to and create technological change.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQGBW9UluY3-Vg/company-logo_100_100/company-logo_100_100/0/1630602229448/riceuniversity_logo?e=2147483647&v=beta&t=nT7L0vAHJOhVV1e3iboxPvSfxf2gVCz79koAqZSoCNQ","address":{"@type":"PostalAddress","addressLocality":"Houston"}}},{"@type":"ListItem","position":32,"item":{"@type":"CollegeOrUniversity","name":"Georgetown University","url":"https://www.linkedin.com/school/georgetown-university/","description":"Georgetown University is the oldest and largest Catholic and Jesuit university in America. Georgetown today is a major student-centered, international research university, offering programs in Washington, DC; Doha, Qatar; and around the world.","logo":"https://media.licdn.com/dms/image/v2/C560BAQEnN4XznomLJw/company-logo_100_100/company-logo_100_100/0/1631309453384?e=2147483647&v=beta&t=qhnKcEUB4b1D7H4sSkrl-J48TF3Ty6KRA8PPj2QXEeo","address":{"@type":"PostalAddress","addressLocality":"Washington"}}},{"@type":"ListItem","position":33,"item":{"@type":"CollegeOrUniversity","name":"Purdue University","url":"https://www.linkedin.com/school/purdue-university/","description":"At Purdue University, we keep going. \n\nFor over 150 years, generations of Boilermakers have left their mark in small steps and giant leaps. Today, we continue in those footsteps as we bring our best and learn to build a better world, together.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQGUO9Kvy1lfEA/company-logo_100_100/company-logo_100_100/0/1630626191299/purdue_university_logo?e=2147483647&v=beta&t=tlUpHJaVXR4SeXJGydUm8jCEhBA2id00IYgqBFB_C2s","address":{"@type":"PostalAddress","addressLocality":"West Lafayette"}}},{"@type":"ListItem","position":34,"item":{"@type":"CollegeOrUniversity","name":"University of Michigan","url":"https://www.linkedin.com/school/university-of-michigan/","description":"The mission of the University of Michigan is to serve the people of Michigan and the world through preeminence in creating, communicating, preserving, and applying knowledge, art, and academic values, and in developing leaders and citizens who will challenge the present and enrich the future.\n\nWhy Work at Michigan?\n\nBeing part of something greater, of serving a larger mission of discovery and care — that's the heart of what drives people to work at Michigan. In some way, great or small, every person here helps to advance this world-class institution. It's adding a purpose to your profession. Work at Michigan and become a victor for the greater good.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQFGfERBPGurCg/company-logo_100_100/company-logo_100_100/0/1631307390795?e=2147483647&v=beta&t=biUbAvMst70Isp55XPAhKXb27SbtHxroKABNHOf3Y18","address":{"@type":"PostalAddress","addressLocality":"Ann Arbor"}}},{"@type":"ListItem","position":35,"item":{"@type":"CollegeOrUniversity","name":"Miami University","url":"https://www.linkedin.com/school/miami-university/","description":"Strong academics, highly personal instruction, energetic campus life, successful graduates — Miami University sets the standard for public higher education on one of America’s most beautiful campuses.\r\n\r\nAffiliation: Public\r\n\r\nPhilosophy: Miami is a residential university with a focus on teaching undergraduates. A liberal education core complements the more specialized studies of the majors.\r\n\r\nEstablished: 1809; Miami's name reflects the history of the Miami Indian Tribe that inhabited the area now known as the Miami Valley Region of Ohio.\r\n\r\nLocations: Main campus in Oxford, Ohio (35 miles north of Cincinnati); regional locations in Hamilton, Middletown, and West Chester, Ohio; European Center in Luxembourg.\r\n\r\nEnrollment: 15,208 undergraduates and 1,827 graduate students on the Oxford \r\n\r\nDegree Programs: Miami offers the bachelor's degree in over 100 areas of study and the master's degree in more than 50 areas; Miami also offers a number of doctoral degrees. Several associate's degrees as well as bachelor's degrees are offered through study at the regional locations.","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQHuMcdsr2R2Yg/company-logo_100_100/company-logo_100_100/0/1630577479053/miami_university_logo?e=2147483647&v=beta&t=oZdl-Y_f7Gk_QAXLJeLtTTiQXccJpfnRG9Y9J8S3zI8","address":{"@type":"PostalAddress","addressLocality":"Oxford"}}},{"@type":"ListItem","position":36,"item":{"@type":"CollegeOrUniversity","name":"Colgate University","url":"https://www.linkedin.com/school/colgateuniversity/","description":"Colgate University is defined by its unsurpassed liberal arts education. \n\nFor more than 200 years, Colgate University has cultivated well-rounded global citizens through intellectual rigor, dedication to diversity of thought, and a distinguished faculty. \n\nColgate alumni are known as leaders, innovators, and trailblazers who carry forward the university's tradition of excellence. They exemplify the diverse talents and contributions needed in the world today and share it openly with the Colgate network. \n \nNow in its third century, Colgate is a place of proud tradition and bold ambition.","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQE4KuERiKRkIw/company-logo_100_100/company-logo_100_100/0/1630525598354/colgate_university_logo?e=2147483647&v=beta&t=Nnj3kce3k-I97yk4p40DJZ6DKdfLwMTaOsPRrd1u3f8","address":{"@type":"PostalAddress","addressLocality":"Hamilton"}}},{"@type":"ListItem","position":37,"item":{"@type":"CollegeOrUniversity","name":"Southern Methodist University","url":"https://www.linkedin.com/school/smudallas/","description":"A nationally ranked private university with seven degree-granting schools, SMU is a distinguished center for teaching and research located in the heart of Dallas. SMU’s 11,000 students benefit from small classes, leadership opportunities, international study and innovative programs.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQGEEtZebsFPhA/company-logo_100_100/company-logo_100_100/0/1735922305631/smudallas_logo?e=2147483647&v=beta&t=9zflus-vQJBpp5o_TzU6KtNLC7YHlJBGRzyi3kcnOsw","address":{"@type":"PostalAddress","addressLocality":"Dallas"}}},{"@type":"ListItem","position":38,"item":{"@type":"CollegeOrUniversity","name":"Bryant University","url":"https://www.linkedin.com/school/bryant-university/","description":"For more than 160 years, Bryant University has earned a distinguished reputation for innovative academic programs and certifications that are marketplace-driven and highly attuned to the emerging needs of industry and society. Bryant's close-knit, student-centric community delivers challenging and rewarding academic programs through the College of Business, College of Arts and Sciences, and the School of Health and Behavioral Sciences, with an ethical, global perspective. Abundant co-curricular opportunities, service-learning programs, internships, and real-world experiences both on and off campus put theory into practice while building character and leadership skills. Thanks to that foundation, Bryant’s network of more than 50,000 alumni are making a difference in their work and their communities around the world.\nAlong with Bryant's robust undergraduate programs, Bryant is also home to transformational graduate programs: the Online MBA program is ranked in the top online MBAs by U.S. News and World Report, and the Physician Assistant Program is educating competent, compassionate front-line experts who are helping to alleviate the nationwide healthcare shortage.  \nBryant University is accredited by the New England Commission of Higher Education (NECHE), Association of American Colleges and Universities (AACU), Association to Advance Collegiate Schools of Business (AACSB) International, and the NCAA for 25 Division I varsity teams. Bryant is ranked in the top 1% nationally for return on investment; #5 by U.S. News & World Report, Regional Universities North; one of the top undergraduate business programs by Business Week; top in the country for Digital Communication; and a Campus Technology Innovator by Campus Technology magazine. Go Bulldogs!  ","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQGoCBbyzu8x3A/company-logo_100_100/B4EZqdOTFHHEAQ-/0/1763574362864/bryant_university_logo?e=2147483647&v=beta&t=r8B72FPzjg0WzbXZAlFnc87b2cXbr2mqQCNZAKFoj9o","address":{"@type":"PostalAddress","addressLocality":"Smithfield"}}},{"@type":"ListItem","position":39,"item":{"@type":"CollegeOrUniversity","name":"Worcester Polytechnic Institute","url":"https://www.linkedin.com/school/worcester-polytechnic-institute/","description":"WPI has a lot to offer - extraordinary students, world-renowned faculty members at the top of their fields, state-of-the-art research facilities, and a community teeming with activity. You have a lot to offer too - you're ambitious, you want to be challenged, you want to succeed, and you want to make a difference in the world. You know where you want to go; WPI can help you get there.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQGZvFtjPIJQBw/company-logo_100_100/B4EZg32CJSHoAY-/0/1753283568663/worcester_polytechnic_institute_logo?e=2147483647&v=beta&t=d6zF1Q5RHJM1WvrnouGrpPbJ_iJy40gP2pkrC24JPls","address":{"@type":"PostalAddress","addressLocality":"Worcester"}}},{"@type":"ListItem","position":40,"item":{"@type":"CollegeOrUniversity","name":"Penn State University","url":"https://www.linkedin.com/school/penn-state-university/","description":"There’s a reason Penn State consistently ranks among the top one percent of the world’s universities. Across 24 campuses, our nearly 88,000 students and 17,000 faculty and staff know the real measure of success goes beyond the classroom—it’s the positive impact made on communities across the world.\n\nFrom access to state-of-the-art resources to interdisciplinary pursuits in collaborative atmospheres, a Penn State degree is more than an education. The experiences and knowledge gained here will form the foundation for the lives our students build. Their contributions to the world begin with a Penn State degree.\n\nWe Are Penn State.","logo":"https://media.licdn.com/dms/image/v2/C560BAQEFv0lqpE-gsQ/company-logo_100_100/company-logo_100_100/0/1631308876392?e=2147483647&v=beta&t=ml3TyxvEkfTs3nRuI-2Q39Y7Gz4AyHy2157zyPT1Zow","address":{"@type":"PostalAddress","addressLocality":"University Park"}}},{"@type":"ListItem","position":41,"item":{"@type":"CollegeOrUniversity","name":"Caltech","url":"https://www.linkedin.com/school/california-institute-of-technology/","description":"The California Institute of Technology (Caltech) is a world-renowned science and engineering research and education institution, where extraordinary faculty, students and staff seek answers to complex questions, discover new knowledge, lead innovation, and transform our future.\r\n\r\nCaltech's 124-acre campus is located in Pasadena, California.","logo":"https://media.licdn.com/dms/image/v2/C510BAQFCGqEmSwrc4w/company-logo_100_100/company-logo_100_100/0/1631338994369?e=2147483647&v=beta&t=c9UlAx6IJwmjpR9EGoLUCmZJO7WiBgPNVrZw-N5Pmow","address":{"@type":"PostalAddress","addressLocality":"Pasadena"}}},{"@type":"ListItem","position":42,"item":{"@type":"CollegeOrUniversity","name":"Trinity College-Hartford","url":"https://www.linkedin.com/school/trinity-college-hartford/","description":"Trinity College is an independent, nonsectarian liberal arts college for men and women, with approximately 2,200 undergraduate students and 200 faculty members, located in Hartford, Connecticut. It is an actively engaged community of students, faculty and staff who work together to develop and sustain the intellectual and creative opportunities central to a first-class liberal arts education. Hartford, the state capital, provides many opportunities for cultural and social engagement.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQHE775T3tzGxA/company-logo_100_100/company-logo_100_100/0/1722356792079?e=2147483647&v=beta&t=RoqyuFGtdN54pNl4obaZ0zMnaJ9rsWR_j8aGmP1v11M","address":{"@type":"PostalAddress","addressLocality":"Hartford"}}},{"@type":"ListItem","position":43,"item":{"@type":"CollegeOrUniversity","name":"Boston University","url":"https://www.linkedin.com/school/boston-university/","description":"Boston University is one of the leading private research and teaching institutions in the world today, with three primary campuses in the heart of Boston and programs around the world.\n\nBoston University was chartered in 1869 by Lee Claflin, Jacob Sleeper, and Isaac Rich, three successful Methodist businessmen whose abolitionist ideals led them to envision and create a university that was inclusive—that opened its doors to the world—and engaged in service to and collaboration with the city of Boston. Over 150 years later, BU has an alumni community of 310,000+ living and working worldwide.\n\nSocial Media Community Guidelines: https://www.bu.edu/prsocial/social-media-community-guidelines/ ","logo":"https://media.licdn.com/dms/image/v2/C560BAQFBK74krMig1Q/company-logo_100_100/company-logo_100_100/0/1631319084422?e=2147483647&v=beta&t=IsurhFvUMaC5Got7kdTPPlIe3_IRWC79EMpzXCd0LLg","address":{"@type":"PostalAddress","addressLocality":"Boston"}}},{"@type":"ListItem","position":44,"item":{"@type":"CollegeOrUniversity","name":"University of Richmond","url":"https://www.linkedin.com/school/university-of-richmond/","description":"The official LinkedIn of the University of Richmond. #URichmond #SpiderPride","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQEnxW6aUvEEog/company-logo_100_100/company-logo_100_100/0/1677769666393/university_of_richmond_logo?e=2147483647&v=beta&t=VM26iwhiXJI_mbSgXMdqzJCu3asH6qxh7gqGDynXO1Y","address":{"@type":"PostalAddress","addressLocality":"University of Richmond"}}},{"@type":"ListItem","position":45,"item":{"@type":"CollegeOrUniversity","name":"Stevens Institute of Technology","url":"https://www.linkedin.com/school/stevens-institute-of-technology/","description":"Stevens Institute of Technology is a premier, private research university situated in Hoboken, New Jersey. Since our founding in 1870, technological innovation has been the hallmark of Stevens’ education and research. Within the university’s three schools and one college, 8,000 undergraduate and graduate students collaborate closely with faculty in an interdisciplinary, student-centric, entrepreneurial environment. Academic and research programs spanning business, computing, engineering, the arts and other disciplines actively advance the frontiers of science and leverage technology to confront our most pressing global challenges. The university continues to be consistently ranked among the nation’s leaders in career services, post-graduation salaries of alumni, and return on tuition investment.\n\nStevens is home to three national research centers of excellence, as well as joint research programs focused on critical industries such as healthcare, energy, finance, defense, STEM education and coastal sustainability. \n\nThe university is consistently ranked among the nation’s elite for return on investment for students, career services programs and mid-career salaries of alumni. Stevens is in the midst of a 10-year strategic plan, The Future. Ours to Create., designed to further extend the Stevens legacy to create a forward-looking and far-reaching institution with global impact.","logo":"https://media.licdn.com/dms/image/v2/C4E0BAQG4-wgic6mvtQ/company-logo_100_100/company-logo_100_100/0/1659965758390/stevens_institute_of_technology_logo?e=2147483647&v=beta&t=E5nwsOmxQElcCTGoIFrente7cbG3Q5KCwPVaaBxGro0","address":{"@type":"PostalAddress","addressLocality":"Hoboken"}}},{"@type":"ListItem","position":46,"item":{"@type":"CollegeOrUniversity","name":"The University of Texas at Austin","url":"https://www.linkedin.com/school/theuniversityoftexasataustin-/","description":"The University of Texas at Austin is one of the largest public universities in the United States. Founded in 1883, the University has grown from a single building, eight teachers, two departments and 221 students to a 350-acre main campus with 21,000 faculty and staff, 16 colleges and schools and more than 50,000 students.","logo":"https://media.licdn.com/dms/image/v2/C560BAQEREeDg1PACXA/company-logo_100_100/company-logo_100_100/0/1630670868977/theuniversityoftexasataustin__logo?e=2147483647&v=beta&t=x9hX3IC6uwnAme-mfp96yeYwWVvOP7NjMksQ3m-ri4o","address":{"@type":"PostalAddress","addressLocality":"Austin"}}},{"@type":"ListItem","position":47,"item":{"@type":"CollegeOrUniversity","name":"Indiana University Bloomington","url":"https://www.linkedin.com/school/indiana-university-bloomington/","description":"Indiana University Bloomington is the flagship residential, research-intensive campus of Indiana University. \n\nIts academic excellence is grounded in the humanities, arts and sciences, and a range of highly ranked professional programs. Founded in 1820, the campus serves more than 42,000 undergraduate and graduate students pursuing degrees in more than 300 disciplines. Widely recognized for its global and international programs, outstanding technology and historic limestone campus, IU Bloomington serves as a global gateway for students and faculty members pursuing issues of worldwide significance.\n\nIU Bloomington facts: \n• Indiana University's flagship campus \n• Enrolls approx. 42,000 students \n• More than 350,000 alumni around the world \n• Nationally ranked and recognized schools for graduate and undergraduate studies, including the Kelley School of Business, Maurer School of Law, School of Public and Environmental Affairs, and Jacobs School of Music \n• Member of the Big Ten Conference \n• Nationally ranked NCAA sports teams with 24 national championships \n• More than 650 student organizations \n• Comprehensive perspective to education with more than 180 majors \n• Located in one of America’s greatest college towns","logo":"https://media.licdn.com/dms/image/v2/C560BAQFonK534Iq8-Q/company-logo_100_100/company-logo_100_100/0/1631332394799?e=2147483647&v=beta&t=_esNXTh435F1CQAC9MxSt53TkeVxjNDpQFZrC6e9mFA","address":{"@type":"PostalAddress","addressLocality":"Bloomington"}}},{"@type":"ListItem","position":48,"item":{"@type":"CollegeOrUniversity","name":"Lafayette College","url":"https://www.linkedin.com/school/lafayette-college/","description":"Inspired by the desire to honor Marquis de Lafayette and his service to the cause of freedom during the American Revolution, Lafayette College was chartered in 1826 and established with an unwavering tradition of academic excellence and community spirit that has flourished for nearly 200 years.","logo":"https://media.licdn.com/dms/image/v2/D4E0BAQH4a0wh0mnreQ/company-logo_100_100/B4EZhcFlH8HgAY-/0/1753891623707/lafayette_college_logo?e=2147483647&v=beta&t=TqAtxuZ3J_Xhu9JPepuR9qhjXg3a5h296Z_pf8ZCyRs","address":{"@type":"PostalAddress","addressLocality":"Easton"}}},{"@type":"ListItem","position":49,"item":{"@type":"CollegeOrUniversity","name":"Providence College","url":"https://www.linkedin.com/school/providence-college/","description":"A Catholic, liberal arts college in Providence, R.I.  By exploring subjects through the complementary lenses of faith and reason, students learn to approach life with clear thinking and objective understanding.","logo":"https://media.licdn.com/dms/image/v2/C4D0BAQHuAhshTGd5Lw/company-logo_100_100/company-logo_100_100/0/1630572700669/providence_college_logo?e=2147483647&v=beta&t=WYT6VUYBkhNtMnHpTd4ek2AljBwlgG1H1S3U86Rz3W8","address":{"@type":"PostalAddress","addressLocality":"Providence"}}},{"@type":"ListItem","position":50,"item":{"@type":"CollegeOrUniversity","name":"University of Wisconsin-Madison","url":"https://www.linkedin.com/school/uwmadison/","description":"In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America's great universities. A public, land-grant institution, UW–Madison offers a complete spectrum of liberal arts studies, professional programs and student activities. Spanning 936 acres along the southern shore of Lake Mendota, the campus is located in the city of Madison.","logo":"https://media.licdn.com/dms/image/v2/C560BAQFyYW54n5mwAw/company-logo_100_100/company-logo_100_100/0/1630601304331/university_of_wisconsin_madison_logo?e=2147483647&v=beta&t=yXQHCZ5iL7OeeAfCfYqLmpIshlgcs15N8QyTTzH08iQ","address":{"@type":"PostalAddress","addressLocality":"Madison"}}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.linkedin.com","name":"LinkedIn"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.linkedin.com/hubs/top-colleges/","name":"Top Colleges"}}]}]}
+      </script>
+  
+  
+        <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/chfywlftg9kdkwvidhfh2i4fy">
+      
+<!---->      </head>
+      <body dir="ltr">
+<!----><!----><!---->
+        
+          
+<!---->
+    
+      
+      
+      
+    
+
+    <a href="#main_content" class="skip-link btn-md btn-primary absolute z-11 -top-[100vh] focus:top-0">
+      Skip to main content
+    </a>
+  
+    <header class="header base-detail-page__header px-mobile-container-padding bg-color-background-container global-alert-offset">
+      
+        
+
+    
+    
+    
+    
+
+    
+
+    <nav class="nav pt-1.5 pb-2 flex items-center justify-between relative flex-nowrap babymamabear:py-1.5
+        
+        
+         babybear:flex-wrap " aria-label="Primary">
+
+      <a href="/?trk=top-entities-hub-page_nav-header-logo" class="nav__logo-link link-no-visited-state z-1 mr-auto min-h-[52px] flex items-center babybear:z-0 hover:no-underline focus:no-underline active:no-underline
+          " data-tracking-control-name="top-entities-hub-page_nav-header-logo" data-tracking-will-navigate>
+          
+              
+    
+    <span class="sr-only">LinkedIn</span>
+<!---->      <icon class="block text-color-brand w-[102px] h-[26px] " data-test-id="nav-logo" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/8fkga714vy9b2wk5auqo5reeb"></icon>
+  
+          
+      </a>
+
+<!---->
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="top-nav-menu flex items-center babybear:w-full babybear:justify-between babybear:pt-1 justify-start w-max pt-0 overflow-x-auto
+        
+         nav__menu babybear:order-last order-3 ml-auto">
+        <li class>
+          
+    <a href="https://www.linkedin.com/top-content?trk=top-entities-hub-page_guest_nav_menu_topContent" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_topContent" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        min-w-8
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/5ofmdgombsj3cqmfn03qb7h60">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        Top Content
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/pub/dir/+/+?trk=top-entities-hub-page_guest_nav_menu_people" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_people" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        min-w-8
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/7kb6sn3tm4cx918cx9a5jlb0">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        People
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/learning/search?trk=top-entities-hub-page_guest_nav_menu_learning" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_learning" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        min-w-8
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/8wykgzgbqy0t3fnkgborvz54u">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        Learning
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/jobs/search?trk=top-entities-hub-page_guest_nav_menu_jobs" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_jobs" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        min-w-8
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/92eb1xekc34eklevj0io6x4ki">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        Jobs
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/games?trk=top-entities-hub-page_guest_nav_menu_games" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_games" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        min-w-8
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/29h8hsjuomfp50lam5ipnc3uh">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        Games
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="ms-windows-store://pdp/?ProductId=9WZDNCRFJ4Q7&amp;mode=mini&amp;cid=guest_nav_upsell&amp;trk=top-entities-hub-page_guest_nav_menu_windows" data-tracking-control-name="top-entities-hub-page_guest_nav_menu_windows" data-tracking-will-navigate class="top-nav-link flex justify-center items-center min-h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        w-[96px] px-1 border-solid border-l-1 border-r-1 babybear:border-r-0 border-color-border-faint
+        flex-col mx-1 babybear:mx-0
+        text-color-text-secondary visited:text-color-text-secondary">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 justify-center " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/admayac2rnonsqhz9v3rzwcyu">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-xs leading-regular text-center
+          font-regular whitespace-nowrap">
+        Get the app
+      </span>
+    </a>
+  
+        </li>
+    </ul>
+  
+
+      <div class="nav__cta-container order-3 flex gap-x-1 justify-end min-w-[100px] flex-nowrap flex-shrink-0 babybear:flex-wrap flex-2
+          ">
+<!---->
+          
+    
+    <a class="nav__button-tertiary btn-tertiary ml-1 btn-md" href="https://www.linkedin.com/signup/cold-join?session_redirect=%2Fhubs%2Ftop-colleges%2F%3Ftrk%3Dhomepage-basic_directory_topCollegesHubHomeUrl&amp;trk=top-entities-hub-page_nav-header-join" data-tracking-control-name="top-entities-hub-page_nav-header-join" data-test-live-nav-primary-cta data-tracking-will-navigate data-tracking-client-ingraph>
+      Join now
+<!---->    </a>
+
+
+<!---->
+          
+  
+  
+
+      
+      <a class="nav__button-secondary btn-secondary-emphasis btn-md" href="https://www.linkedin.com/uas/login?session_redirect=%2Fhubs%2Ftop-colleges%2F%3Ftrk%3Dhomepage-basic_directory_topCollegesHubHomeUrl&amp;fromSignIn=true&amp;trk=top-entities-hub-page_nav-header-signin" data-tracking-control-name="top-entities-hub-page_nav-header-signin" data-tracking-will-navigate data-tracking-client-ingraph>
+          Sign in
+      </a>
+
+
+<!---->      </div>
+
+<!---->
+<!---->    </nav>
+  
+      
+    </header>
+
+    
+<!---->      
+
+<!---->
+    <main class="main papabear:flex papabear:mx-auto papabear:pt-desktop-content-top-margin mamabear:pt-desktop-content-top-margin
+        " id="main-content" role="main">
+      <section class="core-rail mx-auto papabear:w-core-rail-width mamabear:max-w-[790px] babybear:max-w-[790px]">
+        
+        
+      
+
+        <div class="details mx-details-container-padding">
+          
+        
+              
+          <div class="top-entities-hub-core-rail">
+<!---->              
+            
+    <section class="core-section-container
+        my-3 top-entities-hub-blurb md:pt-2">
+          
+                <h2 class="text-display-md font-semibold text-color-text babybear:text-xl md:-mt-4">Top Colleges in United States, 2025</h2>
+              
+        
+<!---->
+<!---->
+      <div class="core-section-container__content break-words">
+        
+                <p class="text-light font-sans text-lg no-underline babybear:text-md">LinkedIn Top Colleges is a data-driven ranking of the 50 schools that best set up their students and alumni for long-term success, based on real-world career outcomes.</p>
+              
+      </div>
+    </section>
+  
+
+                
+    
+    <p class="container-lined p-2 font-semibold babybear:mb-2 reference-article">
+      Read more about how we compile the list <a href="https://www.linkedin.com/pulse/linkedin-top-colleges-2025-50-best-long-term-career-success-kritf">here</a>.
+    </p>
+  
+<!---->              
+    
+      <ol>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/princeton-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline" id="main_content" tabindex="0">
+        
+        
+                <span class="sr-only">list item 1 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQE4zTC5PJAKSA/company-logo_100_100/company-logo_100_100/0/1630648147093/princeton_university_logo?e=2147483647&amp;v=beta&amp;t=YQ3rA8riytOAQh41Kdpy_9jquNqQaa6KtJU1K6PVBeU" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Princeton University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#1</span>
+              <span class="pl-.5">Princeton University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Princeton</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      A vibrant community of learning that endeavors to fulfill its informal motto, ''in the nation's service and the service of humanity.''…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      A vibrant community of learning that endeavors to fulfill its informal motto, ''in the nation's service and the service of humanity.''…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/duke-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 2 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D560BAQGVn2MO4DWnLg/company-logo_100_100/B56ZbZv8i_H4AQ-/0/1747409948261?e=2147483647&amp;v=beta&amp;t=G9wmkQ01VcJqaRbwD1WOvOpadn7FhEdDrE_16U6CMLI" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Duke University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#2</span>
+              <span class="pl-.5">Duke University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Durham</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The official LinkedIn Page of Duke University
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The official LinkedIn Page of Duke University
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-pennsylvania/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 3 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQFJvX-Ed9d2gA/company-logo_100_100/B4EZxITZrAGwAQ-/0/1770739574173/university_of_pennsylvania_logo?e=2147483647&amp;v=beta&amp;t=7CxaXKZSClHVe8etdoIUJO54j7jWOuWO-dbGnMnKz9s" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Pennsylvania">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#3</span>
+              <span class="pl-.5">University of Pennsylvania</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Philadelphia</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Pennsylvania is one of the oldest universities in America and, as a member of the Ivy League, one of the most prestigious…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Pennsylvania is one of the oldest universities in America and, as a member of the Ivy League, one of the most prestigious…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/mit/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 4 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D560BAQH-UXRfIDIKug/company-logo_100_100/company-logo_100_100/0/1689799729035/mit_logo?e=2147483647&amp;v=beta&amp;t=2BcyEkKb9m86JDvxtNLfDVfyept76unhOFNf5Wt_Vp4" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Massachusetts Institute of Technology">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#4</span>
+              <span class="pl-.5">Massachusetts Institute of Technology</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Cambridge</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The Massachusetts Institute of Technology (MIT) is a private research university located in Cambridge, Massachusetts.  MIT is devoted to…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The Massachusetts Institute of Technology (MIT) is a private research university located in Cambridge, Massachusetts.  MIT is devoted to…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/cornell-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 5 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQE8SOXGRyv7LA/company-logo_100_100/company-logo_100_100/0/1631339899678?e=2147483647&amp;v=beta&amp;t=zaLiQsKT8oh9_1lS1Umf_p93CQcCRLgO1kw8wT-HRVU" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Cornell University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#5</span>
+              <span class="pl-.5">Cornell University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Ithaca</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Cornell is a privately endowed research university and a partner of the State University of New York. As the federal land-grant institution…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Cornell is a privately endowed research university and a partner of the State University of New York. As the federal land-grant institution…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/harvard-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 6 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQF5t62bcL0e9g/company-logo_100_100/company-logo_100_100/0/1631318058235?e=2147483647&amp;v=beta&amp;t=Ye1klXowyo8TIcnkhTlmORgiA5ZywvooNihDMnx5urQ" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Harvard University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#6</span>
+              <span class="pl-.5">Harvard University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Cambridge</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/babson-college/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 7 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQG9uoVqHj4dSg/company-logo_100_100/company-logo_100_100/0/1630613547672/babson_college_logo?e=2147483647&amp;v=beta&amp;t=5xs2cp42whqtz_ESB35RaIfoshy5n-HPFwNyZISeSHk" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Babson College">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#7</span>
+              <span class="pl-.5">Babson College</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Babson Park</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The global leader in entrepreneurship education.
+
+The No. 1 undergraduate school and MBA for entrepreneurship 29 and 32 times in a row…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The global leader in entrepreneurship education.
+
+The No. 1 undergraduate school and MBA for entrepreneurship 29 and 32 times in a row…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-notre-dame/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 8 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D560BAQFTtW9IxZTgdA/company-logo_100_100/company-logo_100_100/0/1737395581692?e=2147483647&amp;v=beta&amp;t=9Ht-hP8N-TEyKwGuhzxw5yQbZgVY3Rfp85LZXtKRoz8" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Notre Dame">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#8</span>
+              <span class="pl-.5">University of Notre Dame</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Notre Dame</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Notre Dame is the premier global Catholic research university in the U.S. and a force for good since 1842
+
+It offers an…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Notre Dame is the premier global Catholic research university in the U.S. and a force for good since 1842
+
+It offers an…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/dartmouth-college/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 9 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQELVZKDzlGDzA/company-logo_100_100/company-logo_100_100/0/1631325633796?e=2147483647&amp;v=beta&amp;t=9XIq_QyCXJxJSCcQqXzPQKqSMq0rnKZ-bOx2b17Z3vs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Dartmouth College">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#9</span>
+              <span class="pl-.5">Dartmouth College</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Hanover</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Dartmouth educates the most promising students and prepares them for a lifetime of learning and of responsible leadership, through a…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Dartmouth educates the most promising students and prepares them for a lifetime of learning and of responsible leadership, through a…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/stanford-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 10 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQHr9suxyJBXMw/company-logo_100_100/company-logo_100_100/0/1635534378870/stanford_university_logo?e=2147483647&amp;v=beta&amp;t=ZvB25L95o9w4q9drvsWxGcM49tX66Cf5LsLAxYp8rSs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Stanford University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#10</span>
+              <span class="pl-.5">Stanford University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Stanford</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Stanford University pursues its founding mission of research and education with a spirit of optimism and possibility. Stanford catalyzes…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Stanford University pursues its founding mission of research and education with a spirit of optimism and possibility. Stanford catalyzes…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/northwestern-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 11 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQH-sXOOSUF3aA/company-logo_100_100/company-logo_100_100/0/1631319371681?e=2147483647&amp;v=beta&amp;t=Vcp9mqxmy784PTW-nLDD6zgQg1KLTPxoFratI4zO-pQ" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Northwestern University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#11</span>
+              <span class="pl-.5">Northwestern University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Evanston</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Northwestern is one of the nation’s premier research universities, combining innovative teaching and pioneering research in a highly…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Northwestern is one of the nation’s premier research universities, combining innovative teaching and pioneering research in a highly…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-virginia/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 12 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQFPXxfaisprvA/company-logo_100_100/company-logo_100_100/0/1712014926451?e=2147483647&amp;v=beta&amp;t=5-oCcxBKODvrUF8qddL01A6HVmr0MruxfH1R0dCgFzE" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Virginia">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#12</span>
+              <span class="pl-.5">University of Virginia</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Charlottesville</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Virginia was founded in 1819 as the model for modern universities that has since been emulated all over the world. After…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Virginia was founded in 1819 as the model for modern universities that has since been emulated all over the world. After…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/vanderbilt-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 13 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQEhR74nz4kJ6g/company-logo_100_100/company-logo_100_100/0/1648406543324/vanderbilt_university_logo?e=2147483647&amp;v=beta&amp;t=rswH1SU1LJAcV_wMHge-xOquEPpvOQxCMJ_tm4ECarI" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Vanderbilt University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#13</span>
+              <span class="pl-.5">Vanderbilt University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Nashville</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Vanderbilt University is a top-ranked teaching and research university in Nashville, Tennessee. Powered by collaboration.
+
+Follow…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Vanderbilt University is a top-ranked teaching and research university in Nashville, Tennessee. Powered by collaboration.
+
+Follow…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/brown-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 14 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQEK5eP7BQ975w/company-logo_100_100/company-logo_100_100/0/1630594275590/brown_university_logo?e=2147483647&amp;v=beta&amp;t=5W3qKNldwnon1_NFN-5AiHP5I3cDZZELoMEHnh2eHeM" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Brown University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#14</span>
+              <span class="pl-.5">Brown University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Providence</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Located in historic Providence, Rhode Island and founded in 1764, Brown University is the seventh-oldest college in the United States…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Located in historic Providence, Rhode Island and founded in 1764, Brown University is the seventh-oldest college in the United States…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/bentley-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 15 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQGtLCpuTDvWDQ/company-logo_100_100/B4EZsOv4nFGQAc-/0/1765478992707/bentley_university_logo?e=2147483647&amp;v=beta&amp;t=pbDaFD08uul9pvJMq_x2x7H_a7Q0EVDTgLQpWU-5Q5w" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Bentley University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#15</span>
+              <span class="pl-.5">Bentley University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Waltham</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Bentley University is more than just one of the nation's top business schools. It is a lifelong-learning community that creates successful…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Bentley University is more than just one of the nation's top business schools. It is a lifelong-learning community that creates successful…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/tufts-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 16 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQH_656Vr-3pxA/company-logo_100_100/company-logo_100_100/0/1631326600842?e=2147483647&amp;v=beta&amp;t=y0YmIzw2owvA43xQMfqg2lFYVjY3TyLBBqnnf7gHVRc" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Tufts University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#16</span>
+              <span class="pl-.5">Tufts University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Medford</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      With four campuses in Massachusetts, Tufts is a research university committed to helping students and faculty generate bold ideas…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      With four campuses in Massachusetts, Tufts is a research university committed to helping students and faculty generate bold ideas…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/lehigh-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 17 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQHmhyMQACBQTQ/company-logo_100_100/company-logo_100_100/0/1691769642538/lehigh_university_logo?e=2147483647&amp;v=beta&amp;t=ZARwAci3TjtyKlRIPqI0ix6rw-446S05Td5tmGMfi-0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Lehigh University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#17</span>
+              <span class="pl-.5">Lehigh University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Bethlehem</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Lehigh is a premier residential research university, ranked in the top tier of national research universities each year. We are a…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Lehigh is a premier residential research university, ranked in the top tier of national research universities each year. We are a…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/columbia-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 18 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQFxn78nvVaTDA/company-logo_100_100/company-logo_100_100/0/1630638452046/columbia_university_logo?e=2147483647&amp;v=beta&amp;t=f-050SrbzjElMuDqUFVhVaZOX79OjMdqz47bO6aLk3k" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Columbia University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#18</span>
+              <span class="pl-.5">Columbia University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>New York</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      For more than 250 years, Columbia has been a leader in higher education in the nation and around the world. At the core of our wide range…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      For more than 250 years, Columbia has been a leader in higher education in the nation and around the world. At the core of our wide range…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/yale-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 19 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQGGJUjGgSYcWQ/company-logo_100_100/company-logo_100_100/0/1631385636084?e=2147483647&amp;v=beta&amp;t=HJuRQU0iSF6PHT11JcO0lVfn8vylHhAxBNFoDepriXA" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Yale University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#19</span>
+              <span class="pl-.5">Yale University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>New Haven</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      For more than 300 years, Yale University has inspired the minds that inspire the world. Based in New Haven, Connecticut, Yale brings people…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      For more than 300 years, Yale University has inspired the minds that inspire the world. Based in New Haven, Connecticut, Yale brings people…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/carnegie-mellon-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 20 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQH0rMqWuDcNzA/company-logo_100_100/company-logo_100_100/0/1656670432790/carnegie_mellon_university_logo?e=2147483647&amp;v=beta&amp;t=aPUYNrOY_aNQ_xYOLYuS6QMkoaAk4TILUhTj-qpZOTs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Carnegie Mellon University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#20</span>
+              <span class="pl-.5">Carnegie Mellon University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Pittsburgh</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Carnegie Mellon University founder Andrew Carnegie said: "My heart is in the work."
+
+No statement better captures the passion and drive…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Carnegie Mellon University founder Andrew Carnegie said: "My heart is in the work."
+
+No statement better captures the passion and drive…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/bucknell-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 21 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQEArEwbHMxYRg/company-logo_100_100/company-logo_100_100/0/1631314412155?e=2147483647&amp;v=beta&amp;t=k0l89QQXQ5bxIaMGMDcpxzSDsdYlFlCcNs7A_utAplA" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Bucknell University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#21</span>
+              <span class="pl-.5">Bucknell University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Lewisburg</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Bucknell University is a private, undergraduate, liberal arts university in the heart of Pennsylvania. Our more than 3,700 students can…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Bucknell University is a private, undergraduate, liberal arts university in the heart of Pennsylvania. Our more than 3,700 students can…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/boston-college/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 22 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQHQq9GTK55wuA/company-logo_100_100/company-logo_100_100/0/1630580523474/boston_college_logo?e=2147483647&amp;v=beta&amp;t=4qPw9GCYb-eRvwqlDOl8vXzBwuiy52Jn3vdeyvUT79c" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Boston College">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#22</span>
+              <span class="pl-.5">Boston College</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Chestnut Hill</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The official page of Boston College, a Jesuit Catholic university dedicated to uniting academic excellence with leadership and service to…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The official page of Boston College, a Jesuit Catholic university dedicated to uniting academic excellence with leadership and service to…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/villanova-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 23 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQGVZYUrw7RmEg/company-logo_100_100/company-logo_100_100/0/1631353498907?e=2147483647&amp;v=beta&amp;t=hGWnXihcEqMmWTAia64xhg90eh0bg7YdCCjFBGdUGMs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Villanova University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#23</span>
+              <span class="pl-.5">Villanova University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Villanova</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Villanova University was founded in 1842 by the Order of St. Augustine. To this day, Villanova's Augustinian Catholic tradition is the…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Villanova University was founded in 1842 by the Order of St. Augustine. To this day, Villanova's Augustinian Catholic tradition is the…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-illinois-urbana-champaign/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 24 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQGFFDl_Z9pIAA/company-logo_100_100/company-logo_100_100/0/1630611684443/university_of_illinois_at_urbana_champaign_logo?e=2147483647&amp;v=beta&amp;t=TrFZBxAmbqYOYfdIFq5Zq_OlfV_xHrxA3oNZGy05CEU" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Illinois Urbana-Champaign">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#24</span>
+              <span class="pl-.5">University of Illinois Urbana-Champaign</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Champaign</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Illinois Urbana-Champaign is dedicated to building upon its tradition of excellence in education, research, public…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Illinois Urbana-Champaign is dedicated to building upon its tradition of excellence in education, research, public…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/wake-forest-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 25 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D560BAQEFqp85altM1g/company-logo_100_100/B56Z.KsNIbIUAI-/0/1784738271983/wake_forest_university_logo?e=2147483647&amp;v=beta&amp;t=FhHBzQ_cLxJEHG6dd5vcqFRTllfNs2gnd-1edVkxUvY" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Wake Forest University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#25</span>
+              <span class="pl-.5">Wake Forest University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Winston-Salem</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Wake Forest is a private, coeducational university located in Winston-Salem, North Carolina. Wake Forest offers the personal attention of a…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Wake Forest is a private, coeducational university located in Winston-Salem, North Carolina. Wake Forest offers the personal attention of a…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/uchicago/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 26 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQHbp_dv8CAlpQ/company-logo_100_100/company-logo_100_100/0/1630577480920/uchicago_logo?e=2147483647&amp;v=beta&amp;t=cAtlujPg_gTYAJEyaRAqq_mGt_-UR02Z7OGx9bpFBFI" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Chicago">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#26</span>
+              <span class="pl-.5">University of Chicago</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Chicago</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      One of the world’s great intellectual destinations, the University of Chicago empowers scholars and students to ask tough questions, cross…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      One of the world’s great intellectual destinations, the University of Chicago empowers scholars and students to ask tough questions, cross…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-southern-california/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 27 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQHatTfEv4Af6w/company-logo_100_100/company-logo_100_100/0/1631312619853?e=2147483647&amp;v=beta&amp;t=uv2J12HEewxyizWMwIblg7CO1XROk-nsuuljqXSZdb0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Southern California">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#27</span>
+              <span class="pl-.5">University of Southern California</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Los Angeles</span>
+                <span class="before:middot"></span>
+              <span>Nonprofit</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Southern California is a leading private research university located in Los Angeles, the capital of the Pacific…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Southern California is a leading private research university located in Los Angeles, the capital of the Pacific…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/fairfield-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 28 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQE3wYIz3Q372A/company-logo_100_100/company-logo_100_100/0/1644977665248/fairfield_university_logo?e=2147483647&amp;v=beta&amp;t=6WenHoL51Zp-sIgapouTyI0GvwrjS3xCu264LbErUxg" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Fairfield University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#28</span>
+              <span class="pl-.5">Fairfield University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Fairfield</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Fairfield University is a Jesuit Catholic institution that prepares undergraduate, graduate, doctoral and continuing education students for…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Fairfield University is a Jesuit Catholic institution that prepares undergraduate, graduate, doctoral and continuing education students for…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/washington-and-lee-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 29 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQFCivwH5KIFlA/company-logo_100_100/company-logo_100_100/0/1631325180050?e=2147483647&amp;v=beta&amp;t=FckPrsz6At8ECGU8DweP_gFMZ1QHBsC8PlOzTAYDYa4" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Washington and Lee University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#29</span>
+              <span class="pl-.5">Washington and Lee University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Lexington</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Founded in 1749, Washington and Lee is one of the preeminent liberal arts colleges in the country.
+
+Mission:
+Washington and Lee University…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Founded in 1749, Washington and Lee is one of the preeminent liberal arts colleges in the country.
+
+Mission:
+Washington and Lee University…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/uc-berkeley/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 30 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D560BAQGwjF_5CYj_JQ/company-logo_100_100/company-logo_100_100/0/1732135669731/uc_berkeley_logo?e=2147483647&amp;v=beta&amp;t=7XwNqDpzm3ORttlebBpryt59e62a2tAk2Xf7mIuoOlY" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of California, Berkeley">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#30</span>
+              <span class="pl-.5">University of California, Berkeley</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Berkeley</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      A wellspring of innovation, the school occupies a 1,232-acre campus near downtown Berkeley. UC Berkeley, also known as Cal, was established…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      A wellspring of innovation, the school occupies a 1,232-acre campus near downtown Berkeley. UC Berkeley, also known as Cal, was established…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/riceuniversity/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 31 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQGBW9UluY3-Vg/company-logo_100_100/company-logo_100_100/0/1630602229448/riceuniversity_logo?e=2147483647&amp;v=beta&amp;t=nT7L0vAHJOhVV1e3iboxPvSfxf2gVCz79koAqZSoCNQ" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Rice University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#31</span>
+              <span class="pl-.5">Rice University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Houston</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Rice is a private, independent university dedicated to the "advancement of letters, science, and art."  Rice attracts a diverse group of…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Rice is a private, independent university dedicated to the "advancement of letters, science, and art."  Rice attracts a diverse group of…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/georgetown-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 32 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQEnN4XznomLJw/company-logo_100_100/company-logo_100_100/0/1631309453384?e=2147483647&amp;v=beta&amp;t=qhnKcEUB4b1D7H4sSkrl-J48TF3Ty6KRA8PPj2QXEeo" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Georgetown University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#32</span>
+              <span class="pl-.5">Georgetown University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Washington</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Georgetown University is the oldest and largest Catholic and Jesuit university in America. Georgetown today is a major student-centered…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Georgetown University is the oldest and largest Catholic and Jesuit university in America. Georgetown today is a major student-centered…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/purdue-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 33 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQGUO9Kvy1lfEA/company-logo_100_100/company-logo_100_100/0/1630626191299/purdue_university_logo?e=2147483647&amp;v=beta&amp;t=tlUpHJaVXR4SeXJGydUm8jCEhBA2id00IYgqBFB_C2s" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Purdue University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#33</span>
+              <span class="pl-.5">Purdue University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>West Lafayette</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      At Purdue University, we keep going. 
+
+For over 150 years, generations of Boilermakers have left their mark in small steps and giant leaps.…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      At Purdue University, we keep going. 
+
+For over 150 years, generations of Boilermakers have left their mark in small steps and giant leaps.…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-michigan/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 34 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQFGfERBPGurCg/company-logo_100_100/company-logo_100_100/0/1631307390795?e=2147483647&amp;v=beta&amp;t=biUbAvMst70Isp55XPAhKXb27SbtHxroKABNHOf3Y18" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Michigan">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#34</span>
+              <span class="pl-.5">University of Michigan</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Ann Arbor</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The mission of the University of Michigan is to serve the people of Michigan and the world through preeminence in creating, communicating…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The mission of the University of Michigan is to serve the people of Michigan and the world through preeminence in creating, communicating…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/miami-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 35 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQHuMcdsr2R2Yg/company-logo_100_100/company-logo_100_100/0/1630577479053/miami_university_logo?e=2147483647&amp;v=beta&amp;t=oZdl-Y_f7Gk_QAXLJeLtTTiQXccJpfnRG9Y9J8S3zI8" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Miami University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#35</span>
+              <span class="pl-.5">Miami University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Oxford</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Strong academics, highly personal instruction, energetic campus life, successful graduates — Miami University sets the standard for public…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Strong academics, highly personal instruction, energetic campus life, successful graduates — Miami University sets the standard for public…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/colgateuniversity/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 36 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQE4KuERiKRkIw/company-logo_100_100/company-logo_100_100/0/1630525598354/colgate_university_logo?e=2147483647&amp;v=beta&amp;t=Nnj3kce3k-I97yk4p40DJZ6DKdfLwMTaOsPRrd1u3f8" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Colgate University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#36</span>
+              <span class="pl-.5">Colgate University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Hamilton</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Colgate University is defined by its unsurpassed liberal arts education. 
+
+For more than 200 years, Colgate University has cultivated…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Colgate University is defined by its unsurpassed liberal arts education. 
+
+For more than 200 years, Colgate University has cultivated…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/smudallas/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 37 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQGEEtZebsFPhA/company-logo_100_100/company-logo_100_100/0/1735922305631/smudallas_logo?e=2147483647&amp;v=beta&amp;t=9zflus-vQJBpp5o_TzU6KtNLC7YHlJBGRzyi3kcnOsw" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Southern Methodist University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#37</span>
+              <span class="pl-.5">Southern Methodist University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Dallas</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      A nationally ranked private university with seven degree-granting schools, SMU is a distinguished center for teaching and research located…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      A nationally ranked private university with seven degree-granting schools, SMU is a distinguished center for teaching and research located…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/bryant-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 38 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQGoCBbyzu8x3A/company-logo_100_100/B4EZqdOTFHHEAQ-/0/1763574362864/bryant_university_logo?e=2147483647&amp;v=beta&amp;t=r8B72FPzjg0WzbXZAlFnc87b2cXbr2mqQCNZAKFoj9o" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Bryant University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#38</span>
+              <span class="pl-.5">Bryant University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Smithfield</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      For more than 160 years, Bryant University has earned a distinguished reputation for innovative academic programs and certifications that…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      For more than 160 years, Bryant University has earned a distinguished reputation for innovative academic programs and certifications that…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/worcester-polytechnic-institute/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 39 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQGZvFtjPIJQBw/company-logo_100_100/B4EZg32CJSHoAY-/0/1753283568663/worcester_polytechnic_institute_logo?e=2147483647&amp;v=beta&amp;t=d6zF1Q5RHJM1WvrnouGrpPbJ_iJy40gP2pkrC24JPls" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Worcester Polytechnic Institute">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#39</span>
+              <span class="pl-.5">Worcester Polytechnic Institute</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Worcester</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      WPI has a lot to offer - extraordinary students, world-renowned faculty members at the top of their fields, state-of-the-art research…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      WPI has a lot to offer - extraordinary students, world-renowned faculty members at the top of their fields, state-of-the-art research…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/penn-state-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 40 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQEFv0lqpE-gsQ/company-logo_100_100/company-logo_100_100/0/1631308876392?e=2147483647&amp;v=beta&amp;t=ml3TyxvEkfTs3nRuI-2Q39Y7Gz4AyHy2157zyPT1Zow" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Penn State University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#40</span>
+              <span class="pl-.5">Penn State University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>University Park</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      There’s a reason Penn State consistently ranks among the top one percent of the world’s universities. Across 24 campuses, our nearly 88,000…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      There’s a reason Penn State consistently ranks among the top one percent of the world’s universities. Across 24 campuses, our nearly 88,000…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/california-institute-of-technology/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 41 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C510BAQFCGqEmSwrc4w/company-logo_100_100/company-logo_100_100/0/1631338994369?e=2147483647&amp;v=beta&amp;t=c9UlAx6IJwmjpR9EGoLUCmZJO7WiBgPNVrZw-N5Pmow" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Caltech">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#41</span>
+              <span class="pl-.5">Caltech</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Pasadena</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The California Institute of Technology (Caltech) is a world-renowned science and engineering research and education institution, where…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The California Institute of Technology (Caltech) is a world-renowned science and engineering research and education institution, where…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/trinity-college-hartford/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 42 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQHE775T3tzGxA/company-logo_100_100/company-logo_100_100/0/1722356792079?e=2147483647&amp;v=beta&amp;t=RoqyuFGtdN54pNl4obaZ0zMnaJ9rsWR_j8aGmP1v11M" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Trinity College-Hartford">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#42</span>
+              <span class="pl-.5">Trinity College-Hartford</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Hartford</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Trinity College is an independent, nonsectarian liberal arts college for men and women, with approximately 2,200 undergraduate students and…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Trinity College is an independent, nonsectarian liberal arts college for men and women, with approximately 2,200 undergraduate students and…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/boston-university/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 43 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQFBK74krMig1Q/company-logo_100_100/company-logo_100_100/0/1631319084422?e=2147483647&amp;v=beta&amp;t=IsurhFvUMaC5Got7kdTPPlIe3_IRWC79EMpzXCd0LLg" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Boston University">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#43</span>
+              <span class="pl-.5">Boston University</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Boston</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Boston University is one of the leading private research and teaching institutions in the world today, with three primary campuses in the…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Boston University is one of the leading private research and teaching institutions in the world today, with three primary campuses in the…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/university-of-richmond/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 44 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQEnxW6aUvEEog/company-logo_100_100/company-logo_100_100/0/1677769666393/university_of_richmond_logo?e=2147483647&amp;v=beta&amp;t=VM26iwhiXJI_mbSgXMdqzJCu3asH6qxh7gqGDynXO1Y" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Richmond">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#44</span>
+              <span class="pl-.5">University of Richmond</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>University of Richmond</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The official LinkedIn of the University of Richmond. #URichmond #SpiderPride
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The official LinkedIn of the University of Richmond. #URichmond #SpiderPride
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/stevens-institute-of-technology/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 45 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4E0BAQG4-wgic6mvtQ/company-logo_100_100/company-logo_100_100/0/1659965758390/stevens_institute_of_technology_logo?e=2147483647&amp;v=beta&amp;t=E5nwsOmxQElcCTGoIFrente7cbG3Q5KCwPVaaBxGro0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Stevens Institute of Technology">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#45</span>
+              <span class="pl-.5">Stevens Institute of Technology</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Hoboken</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Stevens Institute of Technology is a premier, private research university situated in Hoboken, New Jersey. Since our founding in 1870…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Stevens Institute of Technology is a premier, private research university situated in Hoboken, New Jersey. Since our founding in 1870…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/theuniversityoftexasataustin-/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 46 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQEREeDg1PACXA/company-logo_100_100/company-logo_100_100/0/1630670868977/theuniversityoftexasataustin__logo?e=2147483647&amp;v=beta&amp;t=x9hX3IC6uwnAme-mfp96yeYwWVvOP7NjMksQ3m-ri4o" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="The University of Texas at Austin">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#46</span>
+              <span class="pl-.5">The University of Texas at Austin</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Austin</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      The University of Texas at Austin is one of the largest public universities in the United States. Founded in 1883, the University has grown…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      The University of Texas at Austin is one of the largest public universities in the United States. Founded in 1883, the University has grown…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/indiana-university-bloomington/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 47 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQFonK534Iq8-Q/company-logo_100_100/company-logo_100_100/0/1631332394799?e=2147483647&amp;v=beta&amp;t=_esNXTh435F1CQAC9MxSt53TkeVxjNDpQFZrC6e9mFA" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Indiana University Bloomington">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#47</span>
+              <span class="pl-.5">Indiana University Bloomington</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Bloomington</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Indiana University Bloomington is the flagship residential, research-intensive campus of Indiana University. 
+
+Its academic excellence is…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Indiana University Bloomington is the flagship residential, research-intensive campus of Indiana University. 
+
+Its academic excellence is…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/lafayette-college/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 48 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/D4E0BAQH4a0wh0mnreQ/company-logo_100_100/B4EZhcFlH8HgAY-/0/1753891623707/lafayette_college_logo?e=2147483647&amp;v=beta&amp;t=TqAtxuZ3J_Xhu9JPepuR9qhjXg3a5h296Z_pf8ZCyRs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Lafayette College">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#48</span>
+              <span class="pl-.5">Lafayette College</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Easton</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      Inspired by the desire to honor Marquis de Lafayette and his service to the cause of freedom during the American Revolution, Lafayette…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      Inspired by the desire to honor Marquis de Lafayette and his service to the cause of freedom during the American Revolution, Lafayette…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/providence-college/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 49 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C4D0BAQHuAhshTGd5Lw/company-logo_100_100/company-logo_100_100/0/1630572700669/providence_college_logo?e=2147483647&amp;v=beta&amp;t=WYT6VUYBkhNtMnHpTd4ek2AljBwlgG1H1S3U86Rz3W8" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="Providence College">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#49</span>
+              <span class="pl-.5">Providence College</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Providence</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      A Catholic, liberal arts college in Providence, R.I.  By exploring subjects through the complementary lenses of faith and reason, students…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      A Catholic, liberal arts college in Providence, R.I.  By exploring subjects through the complementary lenses of faith and reason, students…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+          <li class="top-entities-hub-entities my-2">
+            
+    
+      <a href="https://www.linkedin.com/school/uwmadison/" target="_self" data-tracking-control-name="full-link" data-tracking-will-navigate class="top-entities-hub-company-card block container-lined p-2 md:pt-3 !no-underline">
+        
+        
+                <span class="sr-only">list item 50 of 50</span>
+              
+        <div class="flex">
+          
+      <img class="inline-block relative hue-web-entity__image
+          
+          w-12 h-12
+           flex-grow-0 mr-2 rounded-md" data-delayed-url="https://media.licdn.com/dms/image/v2/C560BAQFyYW54n5mwAw/company-logo_100_100/company-logo_100_100/0/1630601304331/university_of_wisconsin_madison_logo?e=2147483647&amp;v=beta&amp;t=yXQHCZ5iL7OeeAfCfYqLmpIshlgcs15N8QyTTzH08iQ" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt="University of Wisconsin-Madison">
+      
+          <div class="flex-grow">
+            <p class="papabear-text-xl font-bold">
+              <span class="px-[4px] py-[1px] font-normal text-sm bg-amber-30 rounded-sm">#50</span>
+              <span class="pl-.5">University of Wisconsin-Madison</span>
+            </p>
+            <p class="text-color-text-low-emphasis pb-2 text-sm">
+                <span>Higher Education</span>
+                <span class="before:middot"></span>
+                <span>Madison</span>
+                <span class="before:middot"></span>
+              <span>Educational</span>
+            </p>
+            
+    <p class="hidden md:block">
+      In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America's great universities. A public,…
+    </p>
+  
+          </div>
+        </div>
+        
+    <p class="md:hidden pt-2">
+      In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America's great universities. A public,…
+    </p>
+  
+    
+      </a>
+  
+  
+          </li>
+      </ol>
+  
+          </div>
+        
+            
+      
+        </div>
+      </section>
+      <section class="right-rail papabear:w-right-rail-width papabear:ml-column-gutter mamabear:max-w-[790px] mamabear:px-mobile-container-padding babybear:max-w-[790px] babybear:px-mobile-container-padding">
+        
+        
+              
+        <div class="top-entities-hub-right-rail">
+<!---->        </div>
+      
+            
+      
+      </section>
+    </main>
+
+<!---->
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    <footer class="li-footer bg-transparent w-full ">
+      <ul class="li-footer__list flex flex-wrap flex-row items-start justify-start w-full h-auto min-h-[50px] my-[0px] mx-auto py-3 px-2 papabear:p-0">
+        <li role="presentation" class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+          <span class="sr-only">LinkedIn</span>
+          <icon class="li-footer__copy-logo text-color-logo-brand-alt inline-block self-center h-[14px] w-[56px] mr-1" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/5mebydpuuijm3uhv1q375inqh"></icon>
+          <span class="li-footer__copy-text flex items-center">&copy; 2026</span>
+        </li>
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://about.linkedin.com?trk=d_top_colleges_hub_home_footer-about" data-tracking-control-name="d_top_colleges_hub_home_footer-about" data-tracking-will-navigate>
+          
+          About
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/accessibility?trk=d_top_colleges_hub_home_footer-accessibility" data-tracking-control-name="d_top_colleges_hub_home_footer-accessibility" data-tracking-will-navigate>
+          
+          Accessibility
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/user-agreement?trk=d_top_colleges_hub_home_footer-user-agreement" data-tracking-control-name="d_top_colleges_hub_home_footer-user-agreement" data-tracking-will-navigate>
+          
+          User Agreement
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/privacy-policy?trk=d_top_colleges_hub_home_footer-privacy-policy" data-tracking-control-name="d_top_colleges_hub_home_footer-privacy-policy" data-tracking-will-navigate>
+          
+          Privacy Policy
+        
+        </a>
+  </li>
+
+          
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/california-privacy-disclosure?trk=d_top_colleges_hub_home_footer-california-privacy-rights-act" data-tracking-control-name="d_top_colleges_hub_home_footer-california-privacy-rights-act" data-tracking-will-navigate>
+          
+            Your California Privacy Choices
+          
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/cookie-policy?trk=d_top_colleges_hub_home_footer-cookie-policy" data-tracking-control-name="d_top_colleges_hub_home_footer-cookie-policy" data-tracking-will-navigate>
+          
+          Cookie Policy
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/copyright-policy?trk=d_top_colleges_hub_home_footer-copyright-policy" data-tracking-control-name="d_top_colleges_hub_home_footer-copyright-policy" data-tracking-will-navigate>
+          
+          Copyright Policy
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://brand.linkedin.com/policies?trk=d_top_colleges_hub_home_footer-brand-policy" data-tracking-control-name="d_top_colleges_hub_home_footer-brand-policy" data-tracking-will-navigate>
+          
+          Brand Policy
+        
+        </a>
+  </li>
+
+          
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/psettings/guest-controls?trk=d_top_colleges_hub_home_footer-guest-controls" data-tracking-control-name="d_top_colleges_hub_home_footer-guest-controls" data-tracking-will-navigate>
+          
+            Guest Controls
+          
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-solid-secondary hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/professional-community-policies?trk=d_top_colleges_hub_home_footer-community-guide" data-tracking-control-name="d_top_colleges_hub_home_footer-community-guide" data-tracking-will-navigate>
+          
+          Community Guidelines
+        
+        </a>
+  </li>
+
+        
+<!---->
+          
+          
+  <li class="li-footer__item font-sans text-xs text-color-text-solid-secondary flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        
+              
+
+    
+    
+
+    
+
+    
+
+    <div class="collapsible-dropdown collapsible-dropdown--footer collapsible-dropdown--up flex items-center relative hyphens-auto language-selector z-2">
+<!---->
+        <ul class="collapsible-dropdown__list hidden container-raised absolute w-auto overflow-y-auto flex-col items-stretch z-[9999] bottom-[100%] top-auto" role="menu" tabindex="-1">
+          
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="العربية (Arabic)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ar_AE" data-locale="ar_AE" role="menuitem" lang="ar_AE">
+                العربية (Arabic)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="বাংলা (Bangla)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-bn_IN" data-locale="bn_IN" role="menuitem" lang="bn_IN">
+                বাংলা (Bangla)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Čeština (Czech)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-cs_CZ" data-locale="cs_CZ" role="menuitem" lang="cs_CZ">
+                Čeština (Czech)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Dansk (Danish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-da_DK" data-locale="da_DK" role="menuitem" lang="da_DK">
+                Dansk (Danish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Deutsch (German)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-de_DE" data-locale="de_DE" role="menuitem" lang="de_DE">
+                Deutsch (German)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Ελληνικά (Greek)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-el_GR" data-locale="el_GR" role="menuitem" lang="el_GR">
+                Ελληνικά (Greek)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="English (English) selected" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link--selected" data-tracking-control-name="language-selector-en_US" data-locale="en_US" role="menuitem" lang="en_US">
+                <strong>English (English)</strong>
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Español (Spanish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-es_ES" data-locale="es_ES" role="menuitem" lang="es_ES">
+                Español (Spanish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="فارسی (Persian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-fa_IR" data-locale="fa_IR" role="menuitem" lang="fa_IR">
+                فارسی (Persian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Suomi (Finnish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-fi_FI" data-locale="fi_FI" role="menuitem" lang="fi_FI">
+                Suomi (Finnish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Français (French)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-fr_FR" data-locale="fr_FR" role="menuitem" lang="fr_FR">
+                Français (French)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="हिंदी (Hindi)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-hi_IN" data-locale="hi_IN" role="menuitem" lang="hi_IN">
+                हिंदी (Hindi)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Magyar (Hungarian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-hu_HU" data-locale="hu_HU" role="menuitem" lang="hu_HU">
+                Magyar (Hungarian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Bahasa Indonesia (Indonesian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-in_ID" data-locale="in_ID" role="menuitem" lang="in_ID">
+                Bahasa Indonesia (Indonesian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Italiano (Italian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-it_IT" data-locale="it_IT" role="menuitem" lang="it_IT">
+                Italiano (Italian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="עברית (Hebrew)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-iw_IL" data-locale="iw_IL" role="menuitem" lang="iw_IL">
+                עברית (Hebrew)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="日本語 (Japanese)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ja_JP" data-locale="ja_JP" role="menuitem" lang="ja_JP">
+                日本語 (Japanese)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="한국어 (Korean)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ko_KR" data-locale="ko_KR" role="menuitem" lang="ko_KR">
+                한국어 (Korean)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="मराठी (Marathi)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-mr_IN" data-locale="mr_IN" role="menuitem" lang="mr_IN">
+                मराठी (Marathi)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Bahasa Malaysia (Malay)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ms_MY" data-locale="ms_MY" role="menuitem" lang="ms_MY">
+                Bahasa Malaysia (Malay)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Nederlands (Dutch)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-nl_NL" data-locale="nl_NL" role="menuitem" lang="nl_NL">
+                Nederlands (Dutch)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Norsk (Norwegian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-no_NO" data-locale="no_NO" role="menuitem" lang="no_NO">
+                Norsk (Norwegian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="ਪੰਜਾਬੀ (Punjabi)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-pa_IN" data-locale="pa_IN" role="menuitem" lang="pa_IN">
+                ਪੰਜਾਬੀ (Punjabi)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Polski (Polish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-pl_PL" data-locale="pl_PL" role="menuitem" lang="pl_PL">
+                Polski (Polish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Português (Portuguese)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-pt_BR" data-locale="pt_BR" role="menuitem" lang="pt_BR">
+                Português (Portuguese)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Română (Romanian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ro_RO" data-locale="ro_RO" role="menuitem" lang="ro_RO">
+                Română (Romanian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Русский (Russian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ru_RU" data-locale="ru_RU" role="menuitem" lang="ru_RU">
+                Русский (Russian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Svenska (Swedish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-sv_SE" data-locale="sv_SE" role="menuitem" lang="sv_SE">
+                Svenska (Swedish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="తెలుగు (Telugu)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-te_IN" data-locale="te_IN" role="menuitem" lang="te_IN">
+                తెలుగు (Telugu)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="ภาษาไทย (Thai)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-th_TH" data-locale="th_TH" role="menuitem" lang="th_TH">
+                ภาษาไทย (Thai)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Tagalog (Tagalog)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-tl_PH" data-locale="tl_PH" role="menuitem" lang="tl_PH">
+                Tagalog (Tagalog)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Türkçe (Turkish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-tr_TR" data-locale="tr_TR" role="menuitem" lang="tr_TR">
+                Türkçe (Turkish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Українська (Ukrainian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-uk_UA" data-locale="uk_UA" role="menuitem" lang="uk_UA">
+                Українська (Ukrainian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Tiếng Việt (Vietnamese)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-vi_VN" data-locale="vi_VN" role="menuitem" lang="vi_VN">
+                Tiếng Việt (Vietnamese)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="简体中文 (Chinese (Simplified))" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-zh_CN" data-locale="zh_CN" role="menuitem" lang="zh_CN">
+                简体中文 (Chinese (Simplified))
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="正體中文 (Chinese (Traditional))" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-zh_TW" data-locale="zh_TW" role="menuitem" lang="zh_TW">
+                正體中文 (Chinese (Traditional))
+            </button>
+          </li>
+<!---->      
+        </ul>
+
+          
+        <button class="language-selector__button select-none relative pr-2 font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover hover:cursor-pointer focus:text-color-link-focus focus:outline-dotted focus:outline-1" aria-expanded="false" data-tracking-control-name="footer-lang-dropdown_trigger">
+          <span class="language-selector__label-text mr-0.5 break-words">
+            Language
+          </span>
+          <icon class="language-selector__label-chevron w-2 h-2 absolute top-0 right-0" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/cyolgscd0imw2ldqppkrb84vo"></icon>
+        </button>
+      
+    </div>
+  
+  
+          
+  </li>
+
+      </ul>
+
+<!---->    </footer>
+  
+  
+  
+      
+
+            <script src="https://static.licdn.com/aero-v1/sc/h/dtrv9swzghlxpyzfyk2gsgbur" async></script>
+<!---->          
+        
+        <script src="https://static.licdn.com/aero-v1/sc/h/qhmjsgsmzh43j8dv7e8ut8m1" async defer></script>
+      
+      
+          
+<!----><!---->  
+      </body>
+    </html>
+  
+  
+  

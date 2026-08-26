@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "nvidia-com-1.md",
+      "url": "https://www.nvidia.com/en-us/clara/bionemo/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "nvidia-com-2.md",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/privacy-policy/?deeplink=visiting-our-website",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

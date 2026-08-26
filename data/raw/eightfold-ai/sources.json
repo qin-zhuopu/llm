@@ -1,0 +1,90 @@
+{
+  "files": [
+    {
+      "filename": "eightfold-ai-1.md",
+      "url": "https://eightfold.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-2.md",
+      "url": "https://eightfold.ai/company/press/press-releases/eightfold-ai-named-agentic-ai-hr-solution-of-the-year-in-2026-hr-tech-breakthrough-awards-program/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-3.md",
+      "url": "https://eightfold.ai/products/talent-agents/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-4.md",
+      "url": "https://eightfold.ai/customers/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-5.md",
+      "url": "https://eightfold.ai/the-infinite-workforce/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-6.md",
+      "url": "https://eightfold.ai/products/ai-interviewer/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-7.md",
+      "url": "https://eightfold.ai/products/ai-interviewer/use-cases/high-volume-hourly-hiring/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-8.md",
+      "url": "https://eightfold.ai/products/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-9.md",
+      "url": "https://eightfold.ai/products/talent-forge/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "trust-eightfold-ai-10.md",
+      "url": "https://trust.eightfold.ai/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "eightfold-ai-11.md",
+      "url": "https://eightfold.ai/security/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-12.md",
+      "url": "https://eightfold.ai/trust/ai-interviewer-bias-audit-results/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-13.md",
+      "url": "https://eightfold.ai/responsible-ai/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "eightfold-ai-14.md",
+      "url": "https://eightfold.ai/request-demo/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

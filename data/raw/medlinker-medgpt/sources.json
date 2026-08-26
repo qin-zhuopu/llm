@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "medlinker-com-1.md",
+      "url": "https://www.medlinker.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "applink-medlinker-com-2.md",
+      "url": "https://applink.medlinker.com/medgpt/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "medgpt-protocol-medlinker-com-3.md",
+      "url": "https://medgpt-protocol.medlinker.com/wlys-PrivacyPolicy",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

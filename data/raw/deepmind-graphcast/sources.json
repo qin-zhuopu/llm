@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "filename": "deepmind-google-1.md",
+      "url": "https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "science-org-2.md",
+      "url": "https://www.science.org/stoken/author-tokens/ST-1550/full",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "github-github-com-3.md",
+      "url": "https://github.com/google-deepmind/graphcast",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "charts-ecmwf-int-4.md",
+      "url": "https://charts.ecmwf.int/products/graphcast_medium-mslp-wind850",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "sites-research-google-5.md",
+      "url": "https://sites.research.google/floodforecasting/?utm_source=&utm_medium=&utm_campaign=&utm_content=",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "deepmind-google-6.md",
+      "url": "https://deepmind.google/discover/blog/nowcasting-the-next-hour-of-rain/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "blog-research-google-7.md",
+      "url": "https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html?utm_source=&utm_medium=&utm_campaign=&utm_content=",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/Learning_skillful_medium-range_global_weather_forecasting.pdf?utm_source=&utm_medium=&utm_campaign=&utm_content=/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    }
+  ]
+}

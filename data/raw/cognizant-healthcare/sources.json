@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "filename": "cognizant-com-1.md",
+      "url": "https://www.cognizant.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "news-cognizant-com-2.md",
+      "url": "https://news.cognizant.com/2026-06-01-Cognizant-Develops-Frontier-Certified-Engineer-and-Frontier-Business-Operator-Roles-to-Define-the-Next-Generation-of-AI-Powered-Work",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "news-cognizant-com-3.md",
+      "url": "https://news.cognizant.com/api/newsfeed\\\\_releases/list.php?\\&fields=headline,releaseDate,image\\\\_url,social\\\\_image\\\\_url,url,summary",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "news-cognizant-com-4.md",
+      "url": "https://news.cognizant.com/api/newsfeed%5C_releases/list.php?%5C&fields=headline,releaseDate,image%5C_url,social%5C_image%5C_url,url,summary",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "mma-prnewswire-com-5.md",
+      "url": "https://mma.prnewswire.com/media/1794711/Cognizant\\\\_Logo.jpg?p=facebook",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "mma-prnewswire-com-6.md",
+      "url": "https://mma.prnewswire.com/media/1794711/Cognizant%5C_Logo.jpg?p=facebook",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "news-cognizant-com-7.md",
+      "url": "https://news.cognizant.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "careers-cognizant-com-8.md",
+      "url": "https://careers.cognizant.com/global-en/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

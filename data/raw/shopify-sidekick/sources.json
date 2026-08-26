@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "filename": "shopify-com-1.md",
+      "url": "https://www.shopify.com/magic",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "admin-shopify-com-2.md",
+      "url": "https://admin.shopify.com/signup?locale=en&language=en&signup_page=https%3A%2F%2Fwww.shopify.com%2Fsidekick&signup_types%5B%5D=paid_trial_experience",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "cdn-shopify-com-3.md",
+      "url": "https://cdn.shopify.com/b/shopify-brochure2-assets/8d64d83d4fcd2c568ed67c5b1c0a0864.webm",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "cdn-shopify-com-4.md",
+      "url": "https://cdn.shopify.com/b/shopify-brochure2-assets/567410e8af85a1c7cc57796da64f4f5b.webm",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    }
+  ]
+}

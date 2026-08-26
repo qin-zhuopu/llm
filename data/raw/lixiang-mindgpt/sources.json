@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "filename": "lixiang-com-1.md",
+      "url": "https://www.lixiang.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "lixiang-com-2.md",
+      "url": "https://www.lixiang.com/technology",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    }
+  ]
+}

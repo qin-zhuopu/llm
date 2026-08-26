@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "filename": "atinary-com-1.md",
+      "url": "https://www.atinary.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "atinary-com-2.md",
+      "url": "https://www.atinary.com/platform",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    }
+  ]
+}

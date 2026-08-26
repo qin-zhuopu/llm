@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "filename": "chinamobile-com-1.md",
+      "url": "https://www.chinamobile.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "jiutian-10086-cn-2.md",
+      "url": "https://jiutian.10086.cn",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

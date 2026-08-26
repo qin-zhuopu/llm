@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "shield-ai-1.md",
+      "url": "https://shield.ai/hivemind",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "shield-ai-2.md",
+      "url": "https://shield.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "shield-ai-3.md",
+      "url": "https://shield.ai/news",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "filename": "deepmind-google-1.md",
+      "url": "https://deepmind.google/discover/blog/millions-of-new-materials-discovered-with-deep-learning/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "nature-com-2.md",
+      "url": "https://www.nature.com/articles/s41586-023-06735-9",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "nature-com-3.md",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "next-gen-materialsproject-org-4.md",
+      "url": "https://next-gen.materialsproject.org/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "materialsproject-org-5.md",
+      "url": "https://materialsproject.org/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "pubmed-ncbi-nlm-nih-gov-6.md",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28191965/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "pubs-rsc-org-7.md",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2017/ee/c6ee02697d",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "matbench-discovery-materialsproject-org-8.md",
+      "url": "https://matbench-discovery.materialsproject.org/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "github-github-com-9.md",
+      "url": "https://github.com/google-deepmind/materials_discovery",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    }
+  ]
+}

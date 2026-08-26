@@ -1,0 +1,474 @@
+# Source: https://www.chemify.io/technology
+
+> 抓取日期: 2026-08-26
+
+---
+
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Aug 11 2026 10:14:37 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.chemify.io" data-wf-page="68e9348be66ae16b95e26873" data-wf-site="68e42181973c7c8a774a8be9" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Technology</title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/css/chemifystaging.webflow.shared.059fa87d3.css" rel="stylesheet" type="text/css" integrity="sha384-BZ+ofTg+pE2jPLX3vI1IsjCFe17LTI7Bt0gIUOU4VB5sPYv8AWIRL9JsMZ6QLtv/" crossorigin="anonymous"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/6905222b4b762ec89f6ffc28_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/6905222fee6fed8a244a8a7f_webclip.png" rel="apple-touch-icon"/><script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c8910cab-01af-4e61-8293-eb6d0af0a940" data-blockingmode="auto" type="text/javascript"></script>
+
+<style>
+
+	#CybotCookiebotDialog, #CookiebotWidget-widgetContent, .CybotCookiebotDialogContentWrapper {
+	    /* Customize with brand typeface */
+	    font-family: Geist, sans-serif !important;
+	}
+	  
+	#CybotCookiebotDialog {
+	  
+	  button {
+		/* Customize button text style as needed */
+        font-family: Geist, sans-serif !important;
+	    font-weight: 700 !important;
+	    /* Rounded buttons */
+	    border-radius: 100em !important;
+	  }
+	  .CybotCookiebotDialogBodyBottomWrapper, #CybotCookiebotDialogPoweredByText {
+	    display: none !important;
+	  }
+	  #CybotCookiebotDialogHeader {
+	    display: none;
+	  }
+	}
+  	#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter {
+      align-self: center;
+  	}
+	#CookiebotWidget-widgetContent {
+	  
+	  .CookiebotWidget-main-logo {
+	    display: none !important;
+	  } 
+	}
+	
+	#CookiebotWidget-buttons button {
+		/* Customize button text style as needed */
+        font-family: Geist, sans-serif !important;
+	    font-weight: 700 !important;
+	    /* Rounded buttons */
+	    border-radius: 100em !important;
+	    
+	}  
+	
+	button.CybotCookiebotDialogDetailBodyContentCookieContainerButton {
+	  display: flex;
+      align-items: center;
+	}
+  
+  .CybotCookiebotDialogDetailBodyContentCookieContainerButton.CybotCookiebotDialogCollapsed:before, .CybotCookiebotDialogDetailBodyContentIABv2Tab.CybotCookiebotDialogCollapsed:before {
+    	top: 0;
+  }
+  
+  	#CookiebotWidget .CookiebotWidget-consent-details button {
+      color: var(--base-color-brand--violet) !important;
+  	}
+  
+  	#CookiebotWidget #CookiebotWidget-buttons {
+      #CookiebotWidget-btn-change {
+        background-color: var(--base-color-brand--violet) !important;
+      	border-color: var(--base-color-brand--violet) !important;
+      	color: var(--base-color-brand--mist) !important;
+      }
+      #CookiebotWidget-btn-withdraw {
+        border-color: var(--base-color-brand--violet) !important;
+      	color: var(--base-color-brand--asphalt) !important;
+      }
+  	}
+  
+  	#CookiebotWidget .CookiebotWidget-body .CookiebotWidget-consents-list li svg {
+      fill: var(--base-color-brand--violet) !important;
+  	}
+ 
+ 
+  
+</style>
+  </head><body><div class="page-wrapper has-top-decor"><div class="global-styles w-embed"><style>
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.heading-style-xlarge, .heading-style-large, .heading-style-medium, .heading-style-small, .heading-style-xsmall {
+ 	color: var(--base-color-brand--asphalt);
+ }
+
+.background-color-secondary, .background-color-tertiary, .card-container-dark {
+	.heading-style-xlarge, .heading-style-large, .heading-style-medium, .heading-style-small, .heading-style-xsmall {
+  	color: var(--base-color-brand--mist);
+  }
+  .heading-style-eyebrow-large, .heading-style-eyebrow-small {
+  	color: var(--base-color-brand--sky);
+  }
+}
+
+.card-container-dark.is-work {
+	.heading-style-eyebrow-large, .heading-style-eyebrow-small {
+  	color: var(--base-color-brand--mist);
+  }
+}
+
+.is-gradient-emphasis {
+  background: linear-gradient(to right, #FF4EA0, #FE3B3B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+ }
+ 
+.button.is-text, .button.is-text {
+	border-image: linear-gradient(to right, var(--base-color-brand--aqua), var(--base-color-brand--aqua)) 1;
+}
+
+.news-and-jobs_card{
+	border-image: linear-gradient(to right, var(--base-color-brand--peony), var(--base-color-brand--peony)) 1;
+}
+ 
+.button.is-text:hover, .button.is-text:hover, .news-and-jobs_card:hover {
+	border-image: linear-gradient(to right, #FF4EA0, #FE3B3B) 1;
+}
+
+.text-rich-text:last-child {
+	margin-bottom: 0rem;
+}
+
+.platform_subnav_item-link.w--current .platform_subnav_dot, .platform_subnav_item-link:hover .platform_subnav_dot{
+	background-color: var(--base-color-brand--poppy);
+  box-shadow: 0 0 1rem var(--base-color-brand--peony);
+}
+
+.platform_subnav_item-link:hover .subnav_link-text {
+	color: var(--base-color-brand--asphalt);
+}
+
+.platform_subnav_list::before {
+	content:"";
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 1rem;
+  height: calc(100% + 4rem);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e9522cd14e952c94a50b0d_subnav_line.svg");
+  z-index: -1;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+	.platform_subnav_list::before {
+    left: 1rem;
+  }
+}
+
+.team_card:hover .team_info-wrap {
+	box-shadow: 0 3.75rem 6.25rem 0 hsla(332.20338983050846, 100.00%, 65.29%, 0.20), 0 0.25rem 0 0 var(--base-color-brand--poppy);
+}
+
+.team_personal-info .heading-style-eyebrow-small {
+	color: var(--base-color-brand--mist);
+}
+
+.w-nav-link.w--current {
+	color: var(--base-color-brand--geranium);
+}
+
+.w-nav-link.w--current.footer_menu-link {
+	color: var(--base-color-brand--sky);
+}
+
+#leadership .team_modal_name {
+	padding-right: 0;
+}
+
+.news-and-jobs_card:hover .news-and-jobs_details {
+	color: var(--text-color--text-primary);
+}
+
+.section_news .tabs_link.w--current .heading-style-xsmall {
+	font-weight: 700;
+}
+
+.section_secondary-hero.is-work-page::after {
+	content:"";
+  background-image: url("https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68efe14b57799b98de478e82_bg_pink-grid-vertical.svg");
+  position: absolute;
+  bottom: -20rem;
+  width: 100%;
+  left: -2rem;
+  height: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+@media screen and (max-width: 479px) {
+	.section_secondary-hero.is-work-page::after {
+  	height: 18.75rem;
+    bottom: -12rem;
+  }
+}
+
+.w-webflow-badge {
+	display: none !important;
+}
+
+</style></div><div class="nav_fixed"><div data-animation="over-right" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component w-nav"><div class="padding-global"><a id="skip-to-content" href="#" class="skip-link">Skip to Content</a><div class="nav_container"><a href="/" class="nav_brand w-nav-brand"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e96ef3c3d9a2a250b40eb0_logo_nav.png" loading="lazy" alt="Chemify logo" class="nav_logo"/></a><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav_button w-nav-button"><div class="nav_hamburger-container is-close"><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1709 2.47461L15.3096 12.335L24.7773 21.8027L22.3027 24.2783L12.835 14.8105L3.36816 24.2783L0.892578 21.8027L10.3594 12.335L0.5 2.47461L2.97461 0L12.835 9.86035L22.6953 0L25.1709 2.47461Z" fill="currentColor"/>
+</svg></div></div></div><ul role="list" class="nav_list"><li class="nav_list-item"><a href="/technology" aria-current="page" class="nav_menu_link w-nav-link w--current">Technology</a></li><li class="nav_list-item"><a href="/ways-we-work" class="nav_menu_link w-nav-link">Ways We Work</a></li><li class="nav_list-item"><a href="/about" class="nav_menu_link w-nav-link">About</a></li><li class="nav_list-item"><a href="/careers" class="nav_menu_link w-nav-link">Careers</a></li><li class="nav_list-item"><a href="/news" class="nav_menu_link w-nav-link">News &amp; Media</a></li><li class="nav_list-item"><a href="/genesis" class="nav_menu_link w-nav-link">Genesis</a></li><li class="nav_list-item"><div class="w-layout-hflex cta_buttons-flex is-nav-buttons"><a href="/contact" class="button is-text is-light w-button">Contact</a><a data-w-id="da74771a-387f-66d3-50fb-21e17d502d3c" href="/partner" class="button is-arrow w-inline-block"><div>Partner With Us</div><div class="icon-1x1-large is-arrow"><div class="arrow_container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="arrow_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.915 9.70703L8.70703 18.915L7.29297 17.501L14.0859 10.707H0V8.70703H14.0859L7.29297 1.91406L8.70703 0.5L17.915 9.70703Z" fill="#F9FDFF"/>
+</svg></div></div></div></a></div></li></ul></nav><div data-w-id="396176c6-906a-9f74-c6d0-8a4663dfdeb3" class="nav_button w-nav-button"><div class="nav_hamburger-container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="hamburger_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.896851" y1="1.01034" x2="32.1752" y2="1.01034" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="9.46394" x2="32.1752" y2="9.46394" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="17.9176" x2="32.1752" y2="17.9176" stroke="#F9FDFF" stroke-width="1.69072"/>
+</svg></div></div></div></div></div></div><div data-animation="over-right" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component w-nav"><div class="padding-global"><a id="skip-to-content" href="#" class="skip-link">Skip to Content</a><div class="nav_container"><a href="/" class="nav_brand w-nav-brand"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e96ef3c3d9a2a250b40eb0_logo_nav.png" loading="lazy" alt="Chemify logo" class="nav_logo"/></a><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav_button w-nav-button"><div class="nav_hamburger-container is-close"><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1709 2.47461L15.3096 12.335L24.7773 21.8027L22.3027 24.2783L12.835 14.8105L3.36816 24.2783L0.892578 21.8027L10.3594 12.335L0.5 2.47461L2.97461 0L12.835 9.86035L22.6953 0L25.1709 2.47461Z" fill="currentColor"/>
+</svg></div></div></div><ul role="list" class="nav_list"><li class="nav_list-item"><a href="/technology" aria-current="page" class="nav_menu_link w-nav-link w--current">Technology</a></li><li class="nav_list-item"><a href="/ways-we-work" class="nav_menu_link w-nav-link">Ways We Work</a></li><li class="nav_list-item"><a href="/about" class="nav_menu_link w-nav-link">About</a></li><li class="nav_list-item"><a href="/careers" class="nav_menu_link w-nav-link">Careers</a></li><li class="nav_list-item"><a href="/news" class="nav_menu_link w-nav-link">News &amp; Media</a></li><li class="nav_list-item"><a href="/genesis" class="nav_menu_link w-nav-link">Genesis</a></li><li class="nav_list-item"><div class="w-layout-hflex cta_buttons-flex is-nav-buttons"><a href="/contact" class="button is-text is-light w-button">Contact</a><a data-w-id="da74771a-387f-66d3-50fb-21e17d502d3c" href="/partner" class="button is-arrow w-inline-block"><div>Partner With Us</div><div class="icon-1x1-large is-arrow"><div class="arrow_container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="arrow_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.915 9.70703L8.70703 18.915L7.29297 17.501L14.0859 10.707H0V8.70703H14.0859L7.29297 1.91406L8.70703 0.5L17.915 9.70703Z" fill="#F9FDFF"/>
+</svg></div></div></div></a></div></li></ul></nav><div data-w-id="396176c6-906a-9f74-c6d0-8a4663dfdeb3" class="nav_button w-nav-button"><div class="nav_hamburger-container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="hamburger_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.896851" y1="1.01034" x2="32.1752" y2="1.01034" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="9.46394" x2="32.1752" y2="9.46394" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="17.9176" x2="32.1752" y2="17.9176" stroke="#F9FDFF" stroke-width="1.69072"/>
+</svg></div></div></div></div></div></div><div data-animation="over-right" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav_component w-nav"><div class="padding-global"><a id="skip-to-content" href="#" class="skip-link">Skip to Content</a><div class="nav_container"><a href="/" class="nav_brand w-nav-brand"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e96ef3c3d9a2a250b40eb0_logo_nav.png" loading="lazy" alt="Chemify logo" class="nav_logo"/></a><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav_button w-nav-button"><div class="nav_hamburger-container is-close"><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1709 2.47461L15.3096 12.335L24.7773 21.8027L22.3027 24.2783L12.835 14.8105L3.36816 24.2783L0.892578 21.8027L10.3594 12.335L0.5 2.47461L2.97461 0L12.835 9.86035L22.6953 0L25.1709 2.47461Z" fill="currentColor"/>
+</svg></div></div></div><ul role="list" class="nav_list"><li class="nav_list-item"><a href="/technology" aria-current="page" class="nav_menu_link w-nav-link w--current">Technology</a></li><li class="nav_list-item"><a href="/ways-we-work" class="nav_menu_link w-nav-link">Ways We Work</a></li><li class="nav_list-item"><a href="/about" class="nav_menu_link w-nav-link">About</a></li><li class="nav_list-item"><a href="/careers" class="nav_menu_link w-nav-link">Careers</a></li><li class="nav_list-item"><a href="/news" class="nav_menu_link w-nav-link">News &amp; Media</a></li><li class="nav_list-item"><a href="/genesis" class="nav_menu_link w-nav-link">Genesis</a></li><li class="nav_list-item"><div class="w-layout-hflex cta_buttons-flex is-nav-buttons"><a href="/contact" class="button is-text is-light w-button">Contact</a><a data-w-id="da74771a-387f-66d3-50fb-21e17d502d3c" href="/partner" class="button is-arrow w-inline-block"><div>Partner With Us</div><div class="icon-1x1-large is-arrow"><div class="arrow_container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="arrow_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.915 9.70703L8.70703 18.915L7.29297 17.501L14.0859 10.707H0V8.70703H14.0859L7.29297 1.91406L8.70703 0.5L17.915 9.70703Z" fill="#F9FDFF"/>
+</svg></div></div></div></a></div></li></ul></nav><div data-w-id="396176c6-906a-9f74-c6d0-8a4663dfdeb3" class="nav_button w-nav-button"><div class="nav_hamburger-container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="hamburger_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.896851" y1="1.01034" x2="32.1752" y2="1.01034" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="9.46394" x2="32.1752" y2="9.46394" stroke="#F9FDFF" stroke-width="1.69072"/>
+<line x1="0.896851" y1="17.9176" x2="32.1752" y2="17.9176" stroke="#F9FDFF" stroke-width="1.69072"/>
+</svg></div></div></div></div></div></div></div><main id="main" class="main-wrapper"><section class="section_platform-hero"><div class="padding-global padding-section-first"><div class="container-large"><div class="w-layout-grid platform-hero_grid"><div id="w-node-_60e537aa-5c50-39db-4834-e9fb31862b06-95e26873" class="w-layout-vflex stack-medium"><h1 class="heading-style-eyebrow-large">Technology</h1><h2 class="heading-style-xlarge">Chemify Chemputation <span class="is-gradient-emphasis">Technology</span></h2><p class="heading-style-xsmall">ML Chemical Intelligence + Universal Chemical Programming Language + Advanced Robotics</p></div><div class="platform-hero_image-wrap glow-pink"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide.webp" loading="lazy" sizes="(max-width: 479px) 48vw, (max-width: 1439px) 49vw, (max-width: 5832px) 50vw, 2916px" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-1080.webp 1080w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-1600.webp 1600w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-2000.webp 2000w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide-p-2600.webp 2600w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f274121c5aa30f64cde58d_317f70da35f01cbe8e07e826e5bb5fed_platform-hero-wide.webp 2916w" alt="" class="image-size-cover"/></div></div></div></div></section><div class="group_outer"><div class="sticky_wrapper padding-global"><ul role="list" class="platform_subnav_list"><li><a href="#novel-design" class="platform_subnav_item-link w-inline-block"><div class="platform_subnav_dot"></div><div class="subnav_link-text heading-style-eyebrow-large">Novel Design</div></a></li><li><a href="#route-optimization" class="platform_subnav_item-link w-inline-block"><div class="platform_subnav_dot"></div><div class="subnav_link-text heading-style-eyebrow-large">Route Optimization</div></a></li><li><a href="#synthesis" class="platform_subnav_item-link w-inline-block"><div class="platform_subnav_dot"></div><div class="subnav_link-text heading-style-eyebrow-large">Synthesis</div></a></li><li><a href="#advanced-robotics" class="platform_subnav_item-link w-inline-block"><div class="platform_subnav_dot"></div><div class="subnav_link-text heading-style-eyebrow-large">Advanced Robotics</div></a></li><li><a href="#data" class="platform_subnav_item-link w-inline-block"><div class="platform_subnav_dot"></div><div class="subnav_link-text heading-style-eyebrow-large">Data</div></a></li></ul></div><div class="group"><section class="section_platform-overview"><div class="padding-global padding-section-medium"><div class="container-medium"><div class="platform-overview_container"><div class="w-layout-vflex stack-medium"><h2 class="heading-style-eyebrow-large">Overview</h2><h3 data-w-id="2dac9204-29dd-d835-000d-1833006d8899" class="heading-style-medium">Digitization of chemistry — <strong>a fundamental shift</strong></h3><div class="w-richtext"><p>Chemify is digitizing and automating the entire chemical discovery and synthesis process through Chemputation, a technological breakthrough that combines ML-based molecular design and automated synthesis.</p><p>Chemify’s Chemputation Technology translates target molecules into proven chemical code that runs directly on Chemify’s robotic systems, enabling fully automated Design–Make–Test–Analyze cycles. This closed-loop approach eliminates the synthesis bottleneck, AI hallucinations and speeds the path from idea to compound.</p><p>Through the harmonization of our hardware and software technologies Chemify is unlocking the next generation of chemical discovery, increasing productivity by an order of magnitude.</p></div></div></div></div></div></section><div class="background-color-secondary"><section id="novel-design" class="section_novel-design"><div class="padding-global padding-section-medium"><div class="container-large"><div class="w-layout-grid platform_grid"><div class="card-container-dark glow-blue"><div class="w-layout-vflex stack-small"><h2 class="heading-style-eyebrow-large">Novel Design</h2><h3 class="heading-style-small">Quantum Chemputation</h3><div class="w-richtext"><p>Quantum Chemputation, our design process, unites quantum mechanics with inverse design with Chemputation. Quantum mechanics tells us what is physically allowable, inverse design tells us what we want, Chemputation tells us what we can make.</p><p><strong>Crucially, all of our designs are synthesis-aware.</strong> Every design output is synthetically tractable, bridging the critical gap between conceptual design and physical makeability.</p></div></div></div><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412180832790560b2a6_9531faf701841d36b26ef9cb15f96df0_platform_xdesign.webp" loading="lazy" sizes="(max-width: 479px) 48vw, 49vw" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412180832790560b2a6_9531faf701841d36b26ef9cb15f96df0_platform_xdesign-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412180832790560b2a6_9531faf701841d36b26ef9cb15f96df0_platform_xdesign-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412180832790560b2a6_9531faf701841d36b26ef9cb15f96df0_platform_xdesign.webp 964w" alt="" class="image-size-auto image-shape-rounded"/></div></div></div></section><section id="route-optimization" class="section_route-optimization"><div class="padding-global padding-section-small"><div class="container-large"><div class="w-layout-grid platform_grid is-flipped"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412d8295a3644f6dd0e_platform_assembler.webp" loading="lazy" id="w-node-_6419217d-0a9c-ee86-4c6a-7e01642d1160-95e26873" sizes="(max-width: 479px) 48vw, 49vw" alt="" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412d8295a3644f6dd0e_platform_assembler-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412d8295a3644f6dd0e_platform_assembler-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412d8295a3644f6dd0e_platform_assembler.webp 964w" class="image-size-auto image-shape-rounded"/><div class="card-container-dark"><div class="w-layout-vflex stack-small"><h2 class="heading-style-eyebrow-large">Route Optimization</h2><h3 class="heading-style-small">ASSEMBLER</h3><div class="w-richtext"><p>Our <strong>route optimization software, ASSEMBLER</strong>, identifies the most efficient synthetic path by drawing from our extensive database of pre-validated and automated reaction classes. </p><p>Traditional retrosynthesis often fails due to unreliable literature references, wasting time and resources. </p><p>ASSEMBLER solves this by using Chemify’s proprietary database of reactions that have been validated, optimized, and automated on our own robotics technology, ensuring reliability and success.</p></div><div class="spacer-small"></div><div data-w-id="2f3324d5-285c-31c5-6629-367620b44630" class="button is-arrow play-video"><div>See It In Action</div><div class="icon-1x1-large is-arrow"><div class="arrow_container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="arrow_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.915 9.70703L8.70703 18.915L7.29297 17.501L14.0859 10.707H0V8.70703H14.0859L7.29297 1.91406L8.70703 0.5L17.915 9.70703Z" fill="#F9FDFF"/>
+</svg></div></div></div></div></div></div></div></div></div></section><section id="synthesis" class="section_synthesis"><div class="padding-global padding-section-small"><div class="container-large"><div class="w-layout-grid platform_grid"><div class="card-container-dark glow-blue"><div class="w-layout-vflex stack-small"><h2 class="heading-style-eyebrow-large">Synthesis</h2><h3 class="heading-style-small">χDL</h3><div class="w-richtext"><p>ASSEMBLER converts the optimized reaction information into a fully defined, hardware-agnostic chemical code using <strong>χDL, the world’s first universal chemical programming language</strong>, invented by Chemify. </p><p>This universal description enables synthesis procedures to be standardized and perfectly replicated. This digital workflow is then seamlessly executed by our pioneering automation systems. </p><p>Reusable ‘railroads’ into chemical space: every validated reaction and multi-step route is encoded in χDL with guardrails and error checks.</p><p>From reaction optimization and synthesis to workup, purification, and analytical assessment, our advanced robotics technologies maximize access to complex molecules with unprecedented ease.</p></div></div></div><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412551eab7f3eac8f5e_platform_chi-dl.webp" loading="lazy" sizes="(max-width: 479px) 48vw, 49vw" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412551eab7f3eac8f5e_platform_chi-dl-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412551eab7f3eac8f5e_platform_chi-dl-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412551eab7f3eac8f5e_platform_chi-dl.webp 964w" alt="" class="image-size-auto image-shape-rounded"/></div></div></div></section><section id="advanced-robotics" class="section_advanced-robotics"><div class="padding-global padding-section-small"><div class="container-large"><div class="w-layout-grid platform_grid is-flipped"><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412a7d70b86319ecb6a_platform_reaction-synthesis.webp" loading="lazy" id="w-node-ff9de906-3536-9e80-3524-a00ca4a6abd2-95e26873" sizes="(max-width: 479px) 48vw, 49vw" alt="" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412a7d70b86319ecb6a_platform_reaction-synthesis-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412a7d70b86319ecb6a_platform_reaction-synthesis-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412a7d70b86319ecb6a_platform_reaction-synthesis.webp 964w" class="image-size-auto image-shape-rounded"/><div class="card-container-dark glow-blue"><div class="w-layout-vflex stack-small"><h2 class="heading-style-eyebrow-large">Advanced Robotics</h2><h3 class="heading-style-small">Automated Reaction Synthesis</h3><div class="w-richtext"><p>Our pioneering automation enables the seamless execution of our digital workflow. </p><p>From reaction optimization to automated reaction synthesis and workup to purification to analytical assessment, our automated robotics technologies maximize access to sophisticated molecules with ease.</p></div></div></div></div></div></div></section><section id="data" class="seciton_data"><div class="padding-global padding-section-small"><div class="container-large"><div class="w-layout-grid platform_grid"><div class="card-container-dark glow-blue"><div class="w-layout-vflex stack-small"><h2 class="heading-style-eyebrow-large">Chemputation Self-Learning Improvement</h2><h3 class="heading-style-small">Data</h3><div class="w-richtext"><p>We collect and analyze vast amounts of data from every chemical reaction, monitoring essential components like reagents, catalysts, temperature, pressure, and yield in real-time. </p><p>This constant feedback loop not only ensures precise control but also feeds our machine learning algorithms. </p><p>By analyzing this rich data, we enable predictive analytics that continually optimize reaction pathways, identify new synthesis routes, and prevent potential errors, ensuring our Chemputation technology is always learning and improving.</p></div></div></div><img src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412816089fff1fe91c7_platform_data.webp" loading="lazy" sizes="(max-width: 479px) 48vw, 49vw" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412816089fff1fe91c7_platform_data-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412816089fff1fe91c7_platform_data-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68f27412816089fff1fe91c7_platform_data.webp 964w" alt="" class="image-size-auto image-shape-rounded"/></div></div><div class="spacer-xhuge"></div></div></section></div><div style="background-color:rgba(104,119,127,0)" class="section_overlay"><div style="-webkit-transform:translate3d(100vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="overlay_content-wrap"><div class="padding-global is-modal-padding"><div class="container-medium is-modal-container"><div id="modal-close" data-w-id="a407dbab-7073-1c8f-13ac-7b3ab6b6395f" class="overlay_close-button"><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1709 2.47461L15.3096 12.335L24.7773 21.8027L22.3027 24.2783L12.835 14.8105L3.36816 24.2783L0.892578 21.8027L10.3594 12.335L0.5 2.47461L2.97461 0L12.835 9.86035L22.6953 0L25.1709 2.47461Z" fill="currentColor"/>
+</svg></div></div><div class="overlay_video-card glow-pink"><div class="w-embed"><video width="100%" height="auto" id="video1" controls playsinline>
+<source src="https://ics-cdn.nyc3.cdn.digitaloceanspaces.com/Chemify/Assembler-trim.mp4" type="video/mp4">
+</video></div></div></div></div></div></div></div></div><section class="section_cta"><div class="background-color-tertiary"><div class="padding-global padding-section-medium"><div class="container-large"><div class="w-layout-grid cta_grid"><div class="w-layout-vflex stack-medium"><h2 class="heading-style-eyebrow-large">Ways We Work</h2><h3 class="heading-style-large">From Technology to <strong>Practice</strong></h3><div class="w-richtext"><p>Discover how Chemify’s technology is used across industries to accelerate discovery and development.</p></div><div class="w-layout-hflex cta_buttons-flex"><a data-w-id="da74771a-387f-66d3-50fb-21e17d502d3c" href="/ways-we-work" class="button is-arrow w-inline-block"><div>Ways We Work</div><div class="icon-1x1-large is-arrow"><div class="arrow_container"><div class="arrow_crescent-bottom w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5061 0.506012C5.73253 5.05433 3.46391 10.8962 3.46391 17.2679C3.46391 31.7753 15.2245 43.5359 29.7319 43.5359C36.1036 43.5359 41.9455 41.2673 46.4938 37.4937C41.6756 43.3012 34.4037 46.9998 26.268 46.9998C11.7606 46.9998 0 35.2392 0 20.7318C0 12.5961 3.69859 5.32428 9.5061 0.506012Z" fill="currentColor"/>
+</svg></div><div class="arrow_background"></div><div class="arrow_crescent-top w-embed"><svg width="100%" height="100%" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.4938 46.4938C43.3013 41.6755 46.9999 34.4037 46.9999 26.268C46.9999 11.7606 35.2393 0 20.7319 0C12.5963 0 5.32438 3.69861 0.506104 9.50612C5.05446 5.73254 10.8963 3.46391 17.268 3.46391C31.7754 3.46391 43.536 15.2245 43.536 29.7319C43.536 36.1036 41.2674 41.9455 37.4938 46.4938Z" fill="currentColor"/>
+</svg></div><div class="svg w-embed"><svg width="100%" height="100%" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.915 9.70703L8.70703 18.915L7.29297 17.501L14.0859 10.707H0V8.70703H14.0859L7.29297 1.91406L8.70703 0.5L17.915 9.70703Z" fill="#F9FDFF"/>
+</svg></div></div></div></a></div></div><div class="cta_image-wrap"><img sizes="(max-width: 479px) 48vw, (max-width: 3004px) 49vw, 1472px" srcset="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e6df86be7088bd6dfe27e3_32eab3dfd37727ef97aff24c0cbd8212_careers_hero-p-500.webp 500w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e6df86be7088bd6dfe27e3_32eab3dfd37727ef97aff24c0cbd8212_careers_hero-p-800.webp 800w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e6df86be7088bd6dfe27e3_32eab3dfd37727ef97aff24c0cbd8212_careers_hero-p-1080.webp 1080w, https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e6df86be7088bd6dfe27e3_32eab3dfd37727ef97aff24c0cbd8212_careers_hero.webp 1472w" alt="Laptop open running Chemify&#x27;s software in a modern chemistry lab" src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e6df86be7088bd6dfe27e3_32eab3dfd37727ef97aff24c0cbd8212_careers_hero.webp" loading="lazy" class="image-size-cover image-shape-rounded glow-blue"/></div></div></div></div></div></section></main><div data-animation="default" class="footer_component w-nav" data-easing2="ease" data-easing="ease" data-collapse="none" role="banner" data-duration="400" id="footer"><div class="padding-global"><div class="footer_grid is-main-footer"><div class="footer_grid is-with-logo"><a href="/" class="nav_brand w-nav-brand"><img loading="lazy" src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/68e96111502ec04977c0da4c_logo_footer.png" alt="Chemify logo" class="footer_logo"/></a><div class="footer_address"><div class="w-layout-vflex stack-small"><div>Advanced Research Centre<br/>11 Chapel Lane<br/>Glasgow G11 6 EW</div><div>Maryhill Chemifarm<br/>UNIT 8/9, OakBank Industrial Estate<br/>Maryhill, Glasgow G20 7LU<br/></div><ul role="list" class="socials_list"><li class="socials_list-item"><div class="footer_menu-link"><a href="https://www.linkedin.com/company/chemify-limited/" target="_blank" class="socials_link-block w-inline-block"><div class="link-text-screenreader">LinkedIn</div><div class="icon-1x1-medium w-embed"><svg aria-hidden="true" role="img" fill='currentColor' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div></a></div></li></ul></div></div></div><div class="footer_links-wrapper"><ul role="list" class="footer_primary-list"><li class="footer_list-item"><a href="/technology" aria-current="page" class="footer_menu-link w-nav-link w--current">Technology</a></li><li class="footer_list-item"><a href="/ways-we-work" class="footer_menu-link w-nav-link">Ways We Work</a></li><li class="footer_list-item"><a href="/about" class="footer_menu-link w-nav-link">About</a></li><li class="footer_list-item"><a href="/careers" class="footer_menu-link w-nav-link">Careers</a></li><li class="footer_list-item"><a href="/news" class="footer_menu-link w-nav-link">News &amp; Media</a></li><li class="footer_list-item"><a href="/partner" class="footer_menu-link w-nav-link">Partner With Us</a></li><li class="footer_list-item"><a href="/contact" class="footer_menu-link w-nav-link">Contact</a></li></ul></div></div></div><div class="footer_bottom"><div class="padding-global"><div class="footer_grid text-size-small"><div id="w-node-_716059eb-6a2c-b039-f35e-3bde37ab092e-60735e9a"><strong>©</strong>2026 Chemify</div><div id="w-node-e98b24cf-6bf9-8982-3651-697c26f01c03-60735e9a" class="footer_links-wrapper is-secondary-links"><ul role="list" class="footer_secondary-list"><li class="footer_list-item"><a href="/privacy-policy" class="footer_tertiary-menu-link w-nav-link">Privacy Policy</a></li><li class="footer_list-item"><a href="/terms" class="footer_tertiary-menu-link w-nav-link">Terms of Use</a></li><li class="footer_list-item"><a href="/cookie-policy" class="footer_tertiary-menu-link w-nav-link">Cookie Policy</a></li></ul></div></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68e42181973c7c8a774a8be9" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/js/webflow.schunk.56998e5110e9c524.js" type="text/javascript" integrity="sha384-bZBeASrWNmgG2znJn55qGwapquL8J9t7FnU0HNzf9g9tWDjKxjY328/gk+MLF5GA" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68e42181973c7c8a774a8be9/js/webflow.6a1b5ef4.0fdef0f171dcc76e.js" type="text/javascript" integrity="sha384-sMx5Nx6gOsqTZGAgPSjJODPm4lOVAOVWX3QWTKTrXj/VG8xCCcgVbRe9GTUHV917" crossorigin="anonymous"></script><!-- Skip-to-main script -->
+<script>
+  $(document).ready(function () {
+    $('#skip-to-content').on('click keydown', function(e) {
+      if (e.type === "keydown" && e.which !== 13) {
+          return;
+      }
+
+      e.preventDefault();
+      var target = $('#main');
+      target.attr('tabindex', '-1');
+      target.focus();
+    });
+  });
+</script><script>
+	var videoModal = document.getElementById('video1');
+	$(".play-video").click(function(){
+  	videoModal.play();
+   });
+	$('#modal-close').click(function(){
+  		 setTimeout(function() {
+      		videoModal.pause();
+					videoModal.currentTime = 0;
+					videoModal.load();
+    		}, 500);
+    });
+</script></body></html>

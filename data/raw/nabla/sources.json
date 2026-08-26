@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "filename": "nabla-com-1.md",
+      "url": "https://www.nabla.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "nabla-com-2.md",
+      "url": "https://www.nabla.com/about",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    }
+  ]
+}

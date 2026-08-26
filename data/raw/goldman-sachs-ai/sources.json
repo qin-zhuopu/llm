@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "filename": "goldmansachs-com-1.md",
+      "url": "https://www.goldmansachs.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "marquee-gs-com-2.md",
+      "url": "https://marquee.gs.com/welcome/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "gsam-com-3.md",
+      "url": "https://www.gsam.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "pwm-gs-com-4.md",
+      "url": "https://pwm.gs.com/nam/en-us?gsid=10200&chl=ref&plt=gs",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "pwm-gs-com-5.md",
+      "url": "https://pwm.gs.com/nam/en-us/what-we-do/strategic-lending?gsid=10201&chl=ref&plt=gs",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "marcus-com-6.md",
+      "url": "https://www.marcus.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "higher-gs-com-7.md",
+      "url": "https://higher.gs.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://video.goldmansachs.com/gsvideo/delivery/X26-70986_6897_STAGING_FOR_GSdotCOM_AdobeStock_131653097-AKAMAI.mp4",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    },
+    {
+      "filename": "goldmansachs-com-9.md",
+      "url": "https://www.goldmansachs.com/privacy-and-cookies",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

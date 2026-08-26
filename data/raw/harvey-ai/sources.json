@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "filename": "harvey-ai-1.md",
+      "url": "https://www.harvey.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "aicpa-cima-com-2.md",
+      "url": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "oag-ca-gov-3.md",
+      "url": "https://oag.ca.gov/privacy/ccpa",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iso-org-4.md",
+      "url": "https://www.iso.org/standard/27001",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "commission-europa-eu-5.md",
+      "url": "https://commission.europa.eu/law/law-topic/data-protection_en",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iso-org-6.md",
+      "url": "https://www.iso.org/standard/27701",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "iso-org-7.md",
+      "url": "https://www.iso.org/standard/42001",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    }
+  ]
+}

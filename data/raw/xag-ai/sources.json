@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "filename": "xa-com-1.md",
+      "url": "https://www.xa.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-2.md",
+      "url": "https://xa.com/en/p150max",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-3.md",
+      "url": "https://www.xa.com/en/p150",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-4.md",
+      "url": "https://www.xa.com/en/p60",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-5.md",
+      "url": "https://www.xa.com/en/p100pro",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-6.md",
+      "url": "https://www.xa.com/en/apc2",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-7.md",
+      "url": "https://xa.com/en/smart-farm",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-8.md",
+      "url": "https://xa.com/en/r100",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-9.md",
+      "url": "https://xa.com/en/r200",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-10.md",
+      "url": "https://www.xa.com/en/service/downloads",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xa-com-11.md",
+      "url": "https://www.xa.com/en/about",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

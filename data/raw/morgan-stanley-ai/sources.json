@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "morganstanley-com-1.md",
+      "url": "https://www.morganstanley.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "morganstanley-com-2.md",
+      "url": "https://www.morganstanley.com/ideas/generative-ai-future-of-work",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

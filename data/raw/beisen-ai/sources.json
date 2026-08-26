@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "beisen-com-1.md",
+      "url": "https://www.beisen.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "beisen-com-2.md",
+      "url": "https://www.beisen.com/product/ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

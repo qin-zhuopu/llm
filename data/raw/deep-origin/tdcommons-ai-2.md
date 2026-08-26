@@ -1,0 +1,495 @@
+# Source: https://tdcommons.ai/
+
+> 抓取日期: 2026-08-26
+
+---
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Therapeutics Data Commons - TDC</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Therapeutics Data Commons | TDC</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Therapeutics Data Commons" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Artificial intelligence foundation for therapeutic science" />
+<meta property="og:description" content="Artificial intelligence foundation for therapeutic science" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="TDC" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Therapeutics Data Commons" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Artificial intelligence foundation for therapeutic science","headline":"Therapeutics Data Commons","name":"TDC","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-183522810-1"></script>
+<script>
+  window['ga-disable-UA-183522810-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-183522810-1');
+</script><!-- head scripts --></head>
+
+  <body>
+    
+<nav class="navbar is-primary" >
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="/">
+            <span><img src="/logonav.png" alt="Logo" style="height: auto; width: auto; max-height: 45px; max-width: 250px;"></span>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+                
+                
+                    
+                    <a href="/" class="navbar-item is-active">Home</a>
+                    
+                
+                    
+                    <a href="/start/" class="navbar-item ">Start</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="/overview/" class="navbar-link ">Datasets</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/overview/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/single_pred_tasks/overview" class="navbar-item ">Single-instance Prediction</a>
+                            
+                            <a href="/multi_pred_tasks/overview" class="navbar-item ">Multi-instance Prediction</a>
+                            
+                            <a href="/generation_tasks/overview" class="navbar-item ">Generation</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="/fct_overview/" class="navbar-link ">Data Functions</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/fct_overview/" class="navbar-item ">Overview</a>
+                            
+                            <a href="/functions/data_evaluation/" class="navbar-item ">Model Evaluation</a>
+                            
+                            <a href="/functions/data_split/" class="navbar-item ">Dataset Splits</a>
+                            
+                            <a href="/functions/data_process/" class="navbar-item ">Data Processing</a>
+                            
+                            <a href="/functions/oracles/" class="navbar-item ">Molecule Generation Oracles</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="/benchmark/overview/" class="navbar-link ">Leaderboards</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/benchmark/overview/" class="navbar-item ">Guidelines</a>
+                            
+                            <a href="/benchmark/admet_group/overview" class="navbar-item ">ADMET Group</a>
+                            
+                            <a href="/benchmark/drugcombo_group/overview" class="navbar-item ">DrugCombo Group</a>
+                            
+                            <a href="/benchmark/docking_group/overview" class="navbar-item ">Docking Group</a>
+                            
+                            <a href="/benchmark/dti_dg_group/overview" class="navbar-item ">DTI DG Group</a>
+                            
+                            <a href="/benchmark/scdti_group/overview" class="navbar-item ">Single-cell DTI Group</a>
+                            
+                            <a href="/benchmark/proteinpeptide_group/overview" class="navbar-item ">Protein-Peptide Binding Affinity Group</a>
+                            
+                            <a href="/benchmark/counterfactual_group/overview" class="navbar-item ">Counterfactual Prediction Group</a>
+                            
+                            <a href="/benchmark/clinical_trial/overview" class="navbar-item ">Clinical Trial Outcome Prediction Group</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="https://huggingface.co/tdc" class="navbar-item ">HF Models</a>
+                    
+                
+                    
+                    <a href="/news/" class="navbar-item ">News</a>
+                    
+                
+                    
+                    <a href="/team/" class="navbar-item ">Team</a>
+                    
+                
+                <a href="https://arxiv.org/abs/2102.09548" class="navbar-item">NeurIPS Paper</a>
+                <a href="https://www.nature.com/articles/s41589-022-01131-2" class="navbar-item">Nat Chem Bio Paper</a>
+                <a href="https://tdc.readthedocs.io" class="navbar-item">Docs</a>
+                <a href="https://github.com/mims-harvard/TDC" class="navbar-item">GitHub</a>
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary"  style="background: url('/hero.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body">
+        <div class="container">
+            <p class="title is-1">Therapeutics Data Commons</p>
+            <p class="subtitle is-2">Artificial intelligence foundation for therapeutic science</p>
+
+            <div class="container is-pulled-left">
+		        <div class="columns">
+		        	
+		            <div class="column has-text-centered is-pulled-left"> <a href="/start/" class="button is-rounded is-large is-info is-focused">Get Started</a></div>
+		            
+		            <div class="column has-text-centered is-pulled-left"><a href="https://twitter.com/ProjectTDC" class="button is-rounded is-large is-primary is-focused">Follow us on Twitter</a></div>
+		            <div class="column has-text-centered is-pulled-left"><a href="https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g" class="button is-rounded is-large is-primary is-focused">Join us on Slack</a></div>
+		            <div class="column has-text-centered is-pulled-left"><a href="https://huggingface.co/tdc" class="button is-rounded is-large is-primary is-focused">Our HuggingFace Hub</a></div>
+					
+		        </div>
+			</div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+
+    <section class="section">
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-12 is-size-5">
+                        <div class="box has-background-white">
+                            Artificial intelligence is poised to enable breakthroughs and discoveries in therapeutic science. Therapeutics Data Commons is a coordinated initiative to access and evaluate artificial intelligence capability across therapeutic modalities and stages of discovery. The Commons is a resource with  AI-solvable tasks, AI-ready datasets, and curated benchmarks, providing an ecosystem of tools, libraries, leaderboards, and community resources, including data functions, strategies for systematic model evaluation, meaningful data splits, data processors, and molecule generation oracles. All resources are integrated via an open Python library.
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-12 is-size-5">
+                        <div class="box has-background-info has-text-white">
+                            Therapeutic science is an exciting field with incredible opportunities for expansion, innovation, and impact. Curated AI-ready datasets, machine learning tasks, and benchmarks in the Commons serve as a meeting point betwen biochemical, biomedical and machine learning scientists.
+                            Therapeutics Data Commons is a resource to access and evaluate AI methods, supporting the development of AI methods, with a strong bent towards establishing the foundation of which AI methods are most suitable for drug discovery applications and why.
+                            It can facilitate algorithmic and scientific advances and accelerate AI method development, validation and transition into biomedical and clinical implementation.
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-12 is-size-5">
+                        <div class="box has-background-white">
+<!--                            <b>TDC at a Glance</b><br/>-->
+                            <img src="/img/tdc_at_glance.png" alt="TDC at a glance" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-2 has-text-centered">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-4 has-text-centered">
+                <div class="box has-background-white">
+                    Key presentations and publications of the Commons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-12 is-size-5">
+                        <div class="box has-background-white">
+                            <ul>
+                                <li><b>Zero-shot Prediction of Therapeutic Use with Geometric Deep Learning and Clinician Centered Design,</b> MedRxiv, 2023 <a href="https://www.medrxiv.org/content/10.1101/2023.03.19.23287458">[Paper]</a> <a href="http://txgnn.org/">[TxGNN Explorer]</a></li>
+
+                                <li><b>Artificial Intelligence Foundation for Therapeutic Science,</b> Nature Chemical Biology, 2022 <a href="https://www.nature.com/articles/s41589-022-01131-2">[Paper]</a> </li>
+                                
+                                <li><b>Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development</b>, NeurIPS, 2021 <a href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/4c56ff4ce4aaf9573aa5dff913df997a-Abstract-round1.html">[Paper]</a> <a href="https://drive.google.com/file/d/1LfF8mfPLUqAVEzH3KPBxDO_VF7nLFtiJ/view?usp=sharing">[Poster]</a> </li>
+
+                                <li><b>Benchmarking Molecular Machine Learning in Therapeutics Data Commons</b>, ELLIS ML4Molecules, 2021 <a href="https://cloud.ml.jku.at/s/54pB5Eqf6ftX7qA">[Paper]</a> <a href="https://drive.google.com/file/d/1iOSW_5eruca4vdygDxS1H64c49oQuH40/view?usp=sharing">[Slides]</a></li> 
+
+                                <li><b>Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development</b>, Baylearn, 2021 <a href="https://drive.google.com/file/d/1BNpk3dOdqE3ksgyVV-V3xySdBMq-8cXL/view?usp=sharing">[Slides]</a> <a href="https://drive.google.com/file/d/1LfF8mfPLUqAVEzH3KPBxDO_VF7nLFtiJ/view?usp=sharing">[Poster]</a></li>
+
+                                <li><b>Therapeutics Data Commons</b>, NSF-Harvard Symposium on Drugs for Future Pandemics, 2020 <a href="https://www.drugsymposium.org/">[#futuretx20]</a> <a href="https://drive.google.com/file/d/11eTrh_lsqPcwu3RZRYjJGNpJ3s18YlBS/view">[Slides]</a> <a href="https://youtu.be/ZuCOhEZtaOw">[Video]</a></li>
+
+                                <li><b>TDC User Group Meetup</b>, 2022 <a href="https://harvard.zoom.us/rec/share/HO0TjRPs56YG-Fu3i033izaTwebB4KwUhPeNURkWSI-anrH9su03lCtUlHeZG-WP.67ZJmAIHsD7Q_2GQ">[Video]</a> <a href="https://shoutout.wix.com/so/d1Nv1pC2d#/main">[Agenda]</a></li>
+
+                                <li><b>Machine Learning to Translate the Cancer Genome and Epigenome Session</b>, <a href="https://www.aacr.org/meeting/aacr-annual-meeting-2022/">AACR Annual Meeting</a>, 2022</li>
+
+                                <li><b>Few-Shot Learning for Network Biology</b>, <a href="https://biokdd.org/biokdd21/keynote.html">KDD Workshop on Data Mining in Bioinformatics</a>, 2021</li>
+
+                                <li><b>Actionable machine learning for drug discovery and development</b>, <a href="https://www.broadinstitute.org/talks/actionable-machine-learning-drug-discovery-and-development">Broad Institute, Models, Inference & Algorithms Seminar</a>, 2021</li>
+
+                                <li><b>Graph Neural Networks for Biomedical Data</b>, <a href="https://sites.google.com/cs.washington.edu/mlcb2020/schedule?authuser=0">Machine Learning in Computational Biology</a>, 2020</li>
+
+                                <li><b>Graph Neural Networks for Identifying COVID-19 Drug Repurposing Opportunities</b>, <a href="https://www.aicures.mit.edu/drugdiscoveryconference">MIT AI Cures</a>, 2020</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-12 is-size-4 has-text-centered">
+                <div class="box has-background-white">
+                    We welcome  <a href="https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g">contributions from the research community.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section class="hero  is-small  is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-multiline is-centered">
+                    
+                        <div class="column is-4 has-text-centered">
+                            
+                            <div class="icon callout-icon">
+                                <i class="fas fa-user-plus fa-4x"></i>
+                            </div>
+                            
+                            <p class="title is-5">Intuitive Interface</p>
+                            <p class="subtitle is-5"></p>
+                            
+                            
+                            <div class="content has-text-left">
+                                <p>TDC software is minimally dependent on external packages. Any TDC dataset can be retrieved with just 3 lines of code.<br />
+</p>
+                            </div>
+                            
+
+                            
+                        </div>
+                    
+                        <div class="column is-4 has-text-centered">
+                            
+                            <div class="icon callout-icon">
+                                <i class="fas fa-th fa-4x"></i>
+                            </div>
+                            
+                            <p class="title is-5">From Bench to Bedside</p>
+                            <p class="subtitle is-5"></p>
+                            
+                            
+                            <div class="content has-text-left">
+                                <p>TDC covers a wide range of learning tasks, including target discovery, activity screening, efficacy, safety, and manufacturing across biomedical products, including small molecules, antibodies, and vaccines.<br />
+</p>
+                            </div>
+                            
+
+                            
+                        </div>
+                    
+                        <div class="column is-4 has-text-centered">
+                            
+                            <div class="icon callout-icon">
+                                <i class="fas fa-wrench fa-4x"></i>
+                            </div>
+                            
+                            <p class="title is-5">Numerous Data Functions</p>
+                            <p class="subtitle is-5"></p>
+                            
+                            
+                            <div class="content has-text-left">
+                                <p>TDC provides extensive data functions, including data evaluators, meaningful data splits, data processors, and molecule generation oracles.</p>
+                            </div>
+                            
+
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+<div class="content">
+    <!--
+<div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-10 is-offset-1 has-text-centered">
+                <p class="is-size-4"> Our <b><a href="https://openreview.net/pdf?id=8nvgnORnoWr">NeurIPS 2021 Datasets and Benchmarks Paper</a></b> </p>
+            </div>
+        </div>
+</div>
+
+```
+@article{Huang2021tdc,
+  title={Therapeutics Data Commons: Machine Learning Datasets and Tasks for Drug Discovery and Development},
+  author={Huang, Kexin and Fu, Tianfan and Gao, Wenhao and Zhao, Yue and Roohani, Yusuf and Leskovec, Jure and Coley, 
+          Connor W and Xiao, Cao and Sun, Jimeng and Zitnik, Marinka},
+  journal={Proceedings of Neural Information Processing Systems, NeurIPS Datasets and Benchmarks},
+  year={2021}
+}
+```
+-->
+
+<div class="container">
+    <div class="columns is-vcentered">
+        <div class="column is-12 is-size-2 has-text-centered">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="columns is-vcentered">
+        <div class="column is-12 is-size-2 has-text-centered">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-10 is-offset-1 has-text-centered">
+                <a href="/start/" class="button is-rounded is-large is-info is-focused">Get Started</a>
+            </div>
+        </div>
+</div>
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        <div class="columns is-mobile">
+            <div class="column is-8 has-text-left is-vcentered">
+                <a class="navbar-brand" href="/">
+                    <span><img src="/tdc_horizontal.png" alt="Logo" style="max-height: 40px; max-width: 250px;"></span>
+                </a>
+            </div>
+            <div class="column is-4 has-text-right is-vcentered">
+                <a href="https://arxiv.org/abs/2102.09548">
+                    <span class="icon is-large">
+                      <i class="fas fa-file-alt fa-3x"></i>
+                    </span>
+                </a>
+
+                <a href="https://github.com/mims-harvard/TDC">
+                    <span class="icon is-large">
+                      <i class="fas fab fa-github fa-3x"></i>
+                    </span>
+                </a>
+
+                <a href="https://twitter.com/ProjectTDC">
+                    <span class="icon is-large">
+                      <i class="fas fab fa-twitter fa-3x"></i>
+                    </span>
+                </a>
+
+                <a href="https://join.slack.com/t/pytdc/shared_invite/zt-x0ujg5v6-zwtQZt83fhRdgrYjXRFz5g">
+                    <span class="icon is-large">
+                      <i class="fas fab fa-slack fa-3x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
+

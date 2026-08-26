@@ -1,0 +1,58 @@
+{
+  "files": [
+    {
+      "filename": "siemens-com-1.md",
+      "url": "https://www.siemens.com/global/en/products/automation/topic-areas/industrial-copilot.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "mobility-siemens-com-2.md",
+      "url": "https://www.mobility.siemens.com/global/en/portfolio/rolling-stock/locomotives/vectron.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "events-sw-siemens-com-3.md",
+      "url": "https://events.sw.siemens.com/en-US/realizelive/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "resources-sw-siemens-com-4.md",
+      "url": "https://resources.sw.siemens.com/en-US/brochure-industrial-ai-transform-entire-value-chain/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xcelerator-siemens-com-5.md",
+      "url": "https://xcelerator.siemens.com/global/en/all-offerings/solutions/m/movilitas-cloud.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xcelerator-siemens-com-6.md",
+      "url": "https://xcelerator.siemens.com/global/en/all-offerings/products/s/sigrid.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "press-siemens-com-7.md",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-humanoid-bring-physical-ai-factory-floor-deploying-humanoids-industrial",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "press-siemens-com-8.md",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-digitalizes-new-york-citys-iconic-fulton-line-advanced-signaling-technology",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "press-siemens-com-9.md",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-gridscale-x-redefines-system-operations-and-agentic-transmission-planning",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "filename": "yuewen-com-1.md",
+      "url": "https://www.yuewen.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ataru-qidian-com-2.md",
+      "url": "https://ataru.qidian.com/noah/125876280",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "join-yuewen-com-3.md",
+      "url": "https://join.yuewen.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ncmchina-com-4.md",
+      "url": "http://www.ncmchina.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ac-qq-com-5.md",
+      "url": "https://ac.qq.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "qidian-com-6.md",
+      "url": "https://www.qidian.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "qdmm-com-7.md",
+      "url": "https://www.qdmm.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "yunqi-qq-com-8.md",
+      "url": "http://yunqi.qq.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "chuangshi-qq-com-9.md",
+      "url": "http://chuangshi.qq.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "hongxiu-com-10.md",
+      "url": "https://www.hongxiu.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "cnstock-com-11.md",
+      "url": "https://www.cnstock.com/commonDetail/768694",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "news-qq-com-12.md",
+      "url": "https://news.qq.com/rain/a/20260811A08RLX00?id=20260811A08RLX00&path=a&app=news&suid=&redirect_pc=1",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "peopleapp-com-13.md",
+      "url": "https://www.peopleapp.com/column/30052664792-500007599124",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "mp-weixin-qq-com-14.md",
+      "url": "https://mp.weixin.qq.com/s/g_hvPu9jVOkbdkGxtGJHaA?scene=1&click_id=111",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "m-thepaper-cn-15.md",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33295323",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "iambic-ai-1.md",
+      "url": "https://www.iambic.ai/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iambic-ai-2.md",
+      "url": "https://www.iambic.ai/platform",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iambic-ai-3.md",
+      "url": "https://www.iambic.ai/pipeline",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

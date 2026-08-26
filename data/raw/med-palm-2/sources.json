@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "filename": "health-google-1.md",
+      "url": "https://health.google",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://community.fitbit.com/t5/The-Pulse-Fitbit-Community-Blog/See-what-s-new-for-Fitbit-Labs/ba-p/5750673",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    },
+    {
+      "filename": "cloud-google-com-3.md",
+      "url": "https://cloud.google.com/transform/bayer-life-sciences-gen-ai-healthcare-efficiency-interview?e=48754805",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "blog-google-4.md",
+      "url": "https://blog.google/technology/health/gemini-ai-japan-hospitals/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "blog-google-5.md",
+      "url": "https://blog.google/technology/health/google-ai-institute-womens-cancers/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "blog-google-6.md",
+      "url": "https://blog.google/technology/health/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "gv-com-7.md",
+      "url": "https://www.gv.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "verily-com-8.md",
+      "url": "https://verily.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "wing-com-9.md",
+      "url": "https://wing.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "calicolabs-com-10.md",
+      "url": "https://www.calicolabs.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "isomorphiclabs-com-11.md",
+      "url": "https://www.isomorphiclabs.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

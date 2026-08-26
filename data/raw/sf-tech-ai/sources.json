@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "filename": "sf-tech-com-cn-1.md",
+      "url": "https://www.sf-tech.com.cn",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "sf-laas-com-2.md",
+      "url": "https://www.sf-laas.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "sf-laas-com-3.md",
+      "url": "https://www.sf-laas.com/products",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "sf-laas-com-4.md",
+      "url": "https://www.sf-laas.com/solutions",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

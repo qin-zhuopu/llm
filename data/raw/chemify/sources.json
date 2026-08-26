@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "chemify-io-1.md",
+      "url": "https://www.chemify.io/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "chemify-io-2.md",
+      "url": "https://www.chemify.io/technology",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

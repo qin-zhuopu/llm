@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "xfyun-cn-1.md",
+      "url": "https://www.xfyun.cn",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "xinghuo-xfyun-cn-2.md",
+      "url": "https://xinghuo.xfyun.cn",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

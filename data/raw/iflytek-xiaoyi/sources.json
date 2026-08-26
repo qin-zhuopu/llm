@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "filename": "iflytek-com-1.md",
+      "url": "https://www.iflytek.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "wallexiflytek-com-2.md",
+      "url": "https://wallexiflytek.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "astron-ai-3.md",
+      "url": "https://astron.ai/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytekau-com-4.md",
+      "url": "https://iflytekau.com/products/iflytek-ainote-2",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytekau-com-5.md",
+      "url": "https://iflytekau.com/products/ai-translator-4-0",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "store-iflytek-com-6.md",
+      "url": "https://store.iflytek.com/products/iflytek-smart-recorder-pro?utm_source=officialwebsite&utm_medium=iFLYTEK",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "store-iflytek-com-7.md",
+      "url": "https://store.iflytek.com/products/iflytek-dictionary-pen?utm_source=officialwebsite&utm_medium=iFLYTEK",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "deepting-ai-8.md",
+      "url": "https://www.deepting.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "global-chinese-learning-cn-9.md",
+      "url": "https://global.chinese-learning.cn/#/web",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "global-xfyun-cn-10.md",
+      "url": "https://global.xfyun.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytek-com-11.md",
+      "url": "https://www.iflytek.com/en/news-events/news/299.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytek-com-12.md",
+      "url": "https://www.iflytek.com/en/news-events/news/298.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytek-com-13.md",
+      "url": "https://www.iflytek.com/en/news-events/news/296.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytek-com-14.md",
+      "url": "https://www.iflytek.com/en/news-events/news/290.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "iflytek-com-15.md",
+      "url": "https://www.iflytek.com/en/news-events/news/288.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

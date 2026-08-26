@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "filename": "recursion-com-1.md",
+      "url": "https://www.recursion.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "cdn-prod-website-files-com-2.md",
+      "url": "https://cdn.prod.website-files.com/604197abb43603652c167bfa%2F677b5f41339b2f96d41241cd_2024WebsiteVideos_HOME_EDIT2-transcode.mp4",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "recursion-com-3.md",
+      "url": "https://www.recursion.com/news/unlocking-the-first-neuroscience-target-for-the-recursion-and-genentech-collaboration",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ir-recursion-com-4.md",
+      "url": "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-first-patient-dosed-phase-1-clinical-study",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "recursion-com-5.md",
+      "url": "https://www.recursion.com/news/leveraging-the-power-of-patient-data-in-ai-drug-discovery",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "fortune-com-6.md",
+      "url": "https://fortune.com/2025/04/03/recursion-pharmaceuticals-ai-drug-discovery/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "biohive-com-7.md",
+      "url": "https://www.biohive.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "linkedin-com-8.md",
+      "url": "http://linkedin.com/company/4990022",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "instagram-com-9.md",
+      "url": "https://www.instagram.com/recursionpharma?igsh=cTVnYTY0eHV6dXpk&utm_source=qr",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "facebook-com-10.md",
+      "url": "https://www.facebook.com/RecursionPharma",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    },
+    {
+      "filename": "bsky-app-11.md",
+      "url": "https://bsky.app/profile/recursionpharma.bsky.social",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "ir-recursion-com-12.md",
+      "url": "https://ir.recursion.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "failed"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "appliedcompute-com-1.md",
+      "url": "https://appliedcompute.com/case-studies/doordash",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "about-doordash-com-2.md",
+      "url": "https://about.doordash.com/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

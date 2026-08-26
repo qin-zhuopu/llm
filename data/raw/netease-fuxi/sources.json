@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "filename": "fuxi-163-com-1.md",
+      "url": "https://fuxi.163.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "tiangong-yl-163-com-2.md",
+      "url": "https://tiangong.yl.163.com/portal",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "youling-miaoqi-portal-apps-hp-danlu-netease-com-3.md",
+      "url": "https://youling-miaoqi-portal.apps-hp.danlu.netease.com/home",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "leihuo-163-com-4.md",
+      "url": "https://leihuo.163.com/ur/#/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "lingdong-fuxi-163-com-5.md",
+      "url": "https://lingdong.fuxi.163.com/productSummary/cabin_cleaner",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "lingdong-fuxi-163-com-6.md",
+      "url": "https://lingdong.fuxi.163.com/productSummary/loader",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "lingdong-fuxi-163-com-7.md",
+      "url": "https://lingdong.fuxi.163.com/productSummary/wj",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, removed; see url for original"
+    },
+    {
+      "filename": "gb-corp-163-com-8.md",
+      "url": "http://gb.corp.163.com/gb/about/overview.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "help-mail-163-com-9.md",
+      "url": "https://help.mail.163.com/service.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "gb-corp-163-com-10.md",
+      "url": "http://gb.corp.163.com/gb/legal.html",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

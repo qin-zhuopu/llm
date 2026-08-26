@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "cloud-tencent-com-1.md",
+      "url": "https://cloud.tencent.com",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "cloud-tencent-com-2.md",
+      "url": "https://cloud.tencent.com/product/hunyuan",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

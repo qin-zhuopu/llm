@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "filename": "github-github-com-1.md",
+      "url": "https://github.com/FreedomIntelligence/HuatuoGPT",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "aclanthology-org-2.md",
+      "url": "https://aclanthology.org/2023.findings-emnlp.725/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "github-github-com-3.md",
+      "url": "https://github.com/FreedomIntelligence/HuatuoGPT-II",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    },
+    {
+      "filename": "huggingface-co-4.md",
+      "url": "https://huggingface.co/FreedomIntelligence/HuatuoGPT-reward-model-7B",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "filename": "huggingface-co-5.md",
+      "url": "https://huggingface.co/FreedomIntelligence/HuatuoGPT-7B",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "filename": "huggingface-co-6.md",
+      "url": "https://huggingface.co/FreedomIntelligence/HuatuoGPT-13b-delta",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2305.15075.pdf",
+      "fetched_at": "2026-08-26",
+      "type": "arxiv",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    },
+    {
+      "filename": "huatuogpt-cn-8.md",
+      "url": "https://www.huatuogpt.cn/",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "huggingface-co-9.md",
+      "url": "https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT-sft-data-v1",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "filename": "huggingface-co-10.md",
+      "url": "https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-Pretrain-v1",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "filename": "huggingface-co-11.md",
+      "url": "https://huggingface.co/baichuan-inc/baichuan-7B",
+      "fetched_at": "2026-08-26",
+      "type": "huggingface"
+    },
+    {
+      "filename": "arxiv-2302.13971.md",
+      "url": "https://arxiv.org/abs/2302.13971",
+      "fetched_at": "2026-08-26",
+      "type": "arxiv"
+    },
+    {
+      "filename": "github-github-com-13.md",
+      "url": "https://github.com/yizhongw/self-instruct",
+      "fetched_at": "2026-08-26",
+      "type": "github"
+    }
+  ]
+}

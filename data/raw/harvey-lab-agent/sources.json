@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "filename": "appliedcompute-com-1.md",
+      "url": "https://appliedcompute.com/case-studies/harvey",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "harvey-ai-2.md",
+      "url": "https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "appliedcompute-com-3.md",
+      "url": "https://www.appliedcompute.com/#platform",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "filename": "harvey-ai-4.md",
+      "url": "https://harvey.ai",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    }
+  ]
+}

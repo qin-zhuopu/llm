@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "filename": "jpmorgan-com-1.md",
+      "url": "https://www.jpmorgan.com/technology/artificial-intelligence",
+      "fetched_at": "2026-08-26",
+      "type": "official-website"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/JPMorgan_Chase",
+      "fetched_at": "2026-08-26",
+      "type": "official-website",
+      "fetch_status": "skipped-oversized",
+      "note": "content too large, see url"
+    }
+  ]
+}
