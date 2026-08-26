@@ -3,9 +3,11 @@ name_en: Cognite Atlas AI
 company: Cognite
 domain: manufacturing
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://www.cognite.com
-description: 工业AI与数据平台，将时序数据、工程文档、事件、3D与设备数据上下文化为工业知识图谱，再由Atlas AI Agent访问和推理。采用模型无关架构(any LLM/any cloud/any data)，配合Cognite Flows行动层执行工业工作流。客户案例实现465% ROI、维护时间减少30-80%、生产力提升10X。2025年收入超1.7亿美元，Atlas AI客户数同比增长近700%，70%+新签订单包含Atlas AI，被IDC MarketScape评为工业DataOps平台领导者。
+description: 工业AI与数据平台，将时序数据、工程文档、事件、3D与设备数据上下文化为工业知识图谱，再由Atlas AI Agent访问和推理。采用模型无关架构(any
+  LLM/any cloud/any data)，配合Cognite Flows行动层执行工业工作流。客户案例实现465% ROI、维护时间减少30-80%、生产力提升10X。2025年收入超1.7亿美元，Atlas
+  AI客户数同比增长近700%，70%+新签订单包含Atlas AI，被IDC MarketScape评为工业DataOps平台领导者。
 parameters: 未公开
 architecture: Industrial Knowledge Graph + Model-agnostic Agent (工业知识图谱 + 模型无关Agent)
 training:
@@ -33,21 +35,25 @@ datasets:
   type: sft
 benchmarks:
 - name: Customer ROI
-  score: "465% ROI"
+  score: 465% ROI
   metric: return_on_investment
-  comparison: "客户案例实现465% ROI和$29.4M总收益"
+  comparison: 客户案例实现465% ROI和$29.4M总收益
+  source: self-reported
 - name: Maintenance Time Reduction
-  score: "30-80%"
+  score: 30-80%
   metric: time_reduction
-  comparison: "vs 传统工业运维: 维护执行时间减少30-80%"
+  comparison: 'vs 传统工业运维: 维护执行时间减少30-80%'
+  source: self-reported
 - name: Productivity Gain
-  score: "10X"
+  score: 10X
   metric: productivity_multiplier
-  comparison: "vs 数字化转型前: 生产力提升10倍，部署7周见成效"
+  comparison: 'vs 数字化转型前: 生产力提升10倍，部署7周见成效'
+  source: self-reported
 - name: Deployment Speed
-  score: "4个月扩展到9个工厂"
+  score: 4个月扩展到9个工厂
   metric: deployment_scalability
-  comparison: "vs 传统工业软件部署: 大幅缩短从部署到规模化的周期"
+  comparison: 'vs 传统工业软件部署: 大幅缩短从部署到规模化的周期'
+  source: self-reported
 api:
   available: true
   documentation: https://docs.cognite.com
@@ -77,7 +83,7 @@ tags:
 references:
 - title: Cognite Official Website
   url: https://www.cognite.com
-- title: "Cognite's Moonshot and AI Drive Record-Breaking Year"
+- title: Cognite's Moonshot and AI Drive Record-Breaking Year
   url: https://www.cognite.com/en/company/newsroom/cognite-s-moonshot-and-ai-drive-record-breaking-year
 - title: Cognite Atlas AI Product Page
   url: https://www.cognite.com/en/product

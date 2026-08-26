@@ -39,21 +39,25 @@ benchmarks:
   metric: accuracy
   split: test
   comparison: "vs 同规模通用模型: 高出8-10个百分点"
+  source: paper
 - name: Financial Sentiment Analysis
   score: "优于基线"
   metric: accuracy
   split: test
   comparison: "vs GPT-NeoX, OPT-66B: 显著领先"
+  source: paper
 - name: Financial NER
   score: "优于基线"
   metric: F1
   split: test
   comparison: "vs 通用模型: 领先"
+  source: paper
 - name: General NLP Benchmarks
   score: "竞争力水平"
   metric: accuracy
   split: test
   comparison: "vs 同规模通用模型: 保持竞争力，未因领域专用训练而牺牲通用能力"
+  source: paper
 capabilities:
 - 金融新闻和社交媒体情感分析与分类
 - 金融文本命名实体识别（公司、人物、金融工具等）

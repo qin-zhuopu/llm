@@ -1,5 +1,27 @@
 # 变更日志
 
+## 2026-08-26
+
+### Schema v3 变更
+
+#### 新增 2 个 domain 枚举值
+- `software-development`（软件开发，如 Cursor）
+- `customer-service`（客户服务，如 Sierra）
+- 相应更新 README 领域分类和收录原则（垂类工作流应用作为例外收录）
+
+#### 新增 `benchmarks[].source` 字段（可选）
+标注每条评测数据的可信度口径：`self-reported` / `third-party` / `paper` / `leaderboard` / `unknown`。
+用于区分公司自报数据 vs 第三方验证 vs 论文，提升数据可信度透明度。
+
+### 数据与工具
+- 新增 `scripts/backfill_raw.py`：从 MD 提取来源 URL 回填原始资料到 `data/raw/`，含内容类型过滤和 500KB 大小上限
+- 全部 100 个模型完成 raw 资料回填（每个含 sources.json）
+- 新增 `scripts/suggest_benchmark_source.py`：扫描并建议 benchmark source 标注（只读）
+- 修正 README 知识图谱章节：如实描述 NetworkX 实现（此前错误宣称 LightRAG + 不存在的 query_kg.py）
+- 新增 `AGENTS.md`：完整 7 阶段数据收集方法论
+
+---
+
 ## 2026-08-25
 
 ### Schema v2 重大变更

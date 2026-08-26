@@ -2,91 +2,94 @@ name: Abridge
 company: Abridge
 domain: healthcare
 status: released
-release_date: "2022"
+release_date: '2022'
 website: https://www.abridge.com
-description: >-
-  Abridge是企业级临床对话生成式AI平台，为300+医疗系统提供从诊前到诊后的统一智能层。
-  覆盖40+医学专科、9400+临床医生，支持28种语言。与OpenAI合作利用GPT-5.5实现25%临床质量评估精准度提升，
-  在消除AI幻觉(Confabulation Elimination)方面拥有专有技术。荣获Best in KLAS 2025&2026环境AI市场领导者、
-  TIME最佳发明2025、Forbes 250最伟大创新者等多项殊荣。
+description: Abridge是企业级临床对话生成式AI平台，为300+医疗系统提供从诊前到诊后的统一智能层。 覆盖40+医学专科、9400+临床医生，支持28种语言。与OpenAI合作利用GPT-5.5实现25%临床质量评估精准度提升，
+  在消除AI幻觉(Confabulation Elimination)方面拥有专有技术。荣获Best in KLAS 2025&2026环境AI市场领导者、 TIME最佳发明2025、Forbes
+  250最伟大创新者等多项殊荣。
 parameters: 未公开(基于GPT-5.5定制)
 architecture: transformer (GPT系列定制)
 base_model: GPT-5.5 (OpenAI合作)
 training:
   stages:
-    - name: pre-training
-      description: 基于OpenAI GPT系列基座模型的大规模预训练
-    - name: fine-tuning
-      description: 使用临床对话数据进行领域微调，覆盖40+医学专科和28种语言
-    - name: rlhf
-      description: 基于临床医生评分标准(rubric-based clinical quality)进行人类偏好对齐
-    - name: post-training
-      description: Confabulation Elimination专有技术，消除AI幻觉提高临床安全性
-  context_length: "128K"
+  - name: pre-training
+    description: 基于OpenAI GPT系列基座模型的大规模预训练
+  - name: fine-tuning
+    description: 使用临床对话数据进行领域微调，覆盖40+医学专科和28种语言
+  - name: rlhf
+    description: 基于临床医生评分标准(rubric-based clinical quality)进行人类偏好对齐
+  - name: post-training
+    description: Confabulation Elimination专有技术，消除AI幻觉提高临床安全性
+  context_length: 128K
 datasets:
-  - name: 临床对话数据
-    description: 覆盖40+专科的医患对话记录(500K+患者)
-    size: "500K+ 患者就诊记录"
-    type: sft
-  - name: 临床文档标注
-    description: 医生标注的病历笔记、编码和医嘱数据
-    type: sft
-  - name: 临床质量评估数据
-    description: 基于评分标准的临床质量量化评估和临床医生研究流程数据
-    type: rlhf
+- name: 临床对话数据
+  description: 覆盖40+专科的医患对话记录(500K+患者)
+  size: 500K+ 患者就诊记录
+  type: sft
+- name: 临床文档标注
+  description: 医生标注的病历笔记、编码和医嘱数据
+  type: sft
+- name: 临床质量评估数据
+  description: 基于评分标准的临床质量量化评估和临床医生研究流程数据
+  type: rlhf
 tech_stack:
   inference: GPT-5.5 (OpenAI合作)
   techniques:
-    - Confabulation Elimination (幻觉消除)
-    - Rubric-based clinical quality evaluation
-    - Multi-lingual clinical NLP (28种语言)
-    - Real-time ambient speech recognition
-    - Clinical decision support
-    - EHR integration
+  - Confabulation Elimination (幻觉消除)
+  - Rubric-based clinical quality evaluation
+  - Multi-lingual clinical NLP (28种语言)
+  - Real-time ambient speech recognition
+  - Clinical decision support
+  - EHR integration
 benchmarks:
-  - name: 临床质量评估精准度
-    score: "25%相对提升"
-    metric: relative improvement
-    comparison: "与OpenAI合作利用GPT-5.5实现的精准度提升"
-  - name: 认知负荷降低
-    score: "78%"
-    metric: reduction
-    comparison: "临床医生反馈的认知负荷降低幅度"
-  - name: 文档工作量减少
-    score: "83%"
-    metric: reduction
-    comparison: "笔记撰写工作量减少(多中心评估)"
-  - name: 用户留存率
-    score: "95%"
-    metric: retention rate
-    comparison: "覆盖22个儿科专科的长期使用留存"
-  - name: wRVU提升
-    score: "14%"
-    metric: improvement
-    comparison: "Riverside Health案例中医生工作相对价值单位提升"
+- name: 临床质量评估精准度
+  score: 25%相对提升
+  metric: relative improvement
+  comparison: 与OpenAI合作利用GPT-5.5实现的精准度提升
+  source: self-reported
+- name: 认知负荷降低
+  score: 78%
+  metric: reduction
+  comparison: 临床医生反馈的认知负荷降低幅度
+  source: self-reported
+- name: 文档工作量减少
+  score: 83%
+  metric: reduction
+  comparison: 笔记撰写工作量减少(多中心评估)
+  source: self-reported
+- name: 用户留存率
+  score: 95%
+  metric: retention rate
+  comparison: 覆盖22个儿科专科的长期使用留存
+  source: self-reported
+- name: wRVU提升
+  score: 14%
+  metric: improvement
+  comparison: Riverside Health案例中医生工作相对价值单位提升
+  source: self-reported
 capabilities:
-  - 诊前准备：自动汇集患者历史与就诊记录
-  - 诊中记录：实时捕获对话并提供临床决策支持
-  - 诊后处理：自动生成病历、编码细化与医嘱
-  - 多语言处理：支持28种语言的临床对话
-  - AI幻觉消除(Confabulation Elimination)专有技术
-  - 护理缺口识别与医嘱辅助下达
+- 诊前准备：自动汇集患者历史与就诊记录
+- 诊中记录：实时捕获对话并提供临床决策支持
+- 诊后处理：自动生成病历、编码细化与医嘱
+- 多语言处理：支持28种语言的临床对话
+- AI幻觉消除(Confabulation Elimination)专有技术
+- 护理缺口识别与医嘱辅助下达
 tags:
-  - clinical-documentation
-  - ambient-ai
-  - generative-ai
-  - multi-specialty
-  - multilingual
-  - confabulation-elimination
+- clinical-documentation
+- ambient-ai
+- generative-ai
+- multi-specialty
+- multilingual
+- confabulation-elimination
 access:
-  - saas
-  - private-deployment
+- saas
+- private-deployment
 api:
   available: true
   protocol: rest
   pricing: 企业订阅模式
 references:
-  - title: Abridge 官方网站
-    url: https://www.abridge.com
-  - title: Best in KLAS 2025 & 2026 环境AI市场领导者
-    url: https://klasresearch.com/best-in-klas-ranking
+- title: Abridge 官方网站
+  url: https://www.abridge.com
+- title: Best in KLAS 2025 & 2026 环境AI市场领导者
+  url: https://klasresearch.com/best-in-klas-ranking

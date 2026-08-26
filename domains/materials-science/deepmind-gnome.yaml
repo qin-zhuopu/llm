@@ -41,18 +41,22 @@ benchmarks:
   score: "80%"
   metric: discovery_rate
   comparison: "vs 此前最佳模型: 约50% -> 80%，稳定性预测准确率提升60%"
+  source: paper
 - name: Discovery Efficiency
   score: "80%+"
   metric: efficiency
   comparison: "vs 此前方法: 从不到10%提升至80%以上，每次计算发现的有效材料数大幅增加"
+  source: paper
 - name: Total Stable Materials Discovered
   score: "380000"
   metric: count
   comparison: "vs 人类此前知识: 从约48000种稳定材料扩展至421000种，等同约800年知识积累"
+  source: paper
 - name: Experimental Validation
   score: "736"
   metric: count
   comparison: "736种GNoME预测材料已被全球独立实验室成功合成验证"
+  source: third-party
 capabilities:
 - 预测无机晶体材料稳定性（凸包分析）
 - 发现新型层状化合物（如类石墨烯材料，发现52000种）

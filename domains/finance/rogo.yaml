@@ -3,9 +3,10 @@ name_en: Rogo
 company: Rogo
 domain: finance
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://rogo.ai
-description: 面向全球领先金融机构的金融专用AI Agent平台，由前银行家和投资人团队创立，平台和模型专为投资银行、并购、投研等高复杂度金融工作流构建。已有50,000+银行家和投资人使用、日查询量150,000+、服务350+机构，2026年完成1.6亿美元D轮融资。采用模型无关的多Agent架构，配备Big Finance Benchmark私有评测，能生成可审计的Excel模型、投资备忘录和幻灯片，客户包括Truist Securities、Nomura、Baird等顶级投行。
+description: 面向全球领先金融机构的金融专用AI Agent平台，由前银行家和投资人团队创立，平台和模型专为投资银行、并购、投研等高复杂度金融工作流构建。已有50,000+银行家和投资人使用、日查询量150,000+、服务350+机构，2026年完成1.6亿美元D轮融资。采用模型无关的多Agent架构，配备Big
+  Finance Benchmark私有评测，能生成可审计的Excel模型、投资备忘录和幻灯片，客户包括Truist Securities、Nomura、Baird等顶级投行。
 parameters: 未公开
 architecture: Model-agnostic multi-agent system (模型无关多智能体架构)
 training:
@@ -38,11 +39,13 @@ benchmarks:
 - name: Big Finance Benchmark
   score: 内部金融专业评测
   metric: financial_task_accuracy
-  comparison: "vs 通用AI聊天机器人: 专为金融工作流构建，避免通用模型在专业场景的失效"
+  comparison: 'vs 通用AI聊天机器人: 专为金融工作流构建，避免通用模型在专业场景的失效'
+  source: self-reported
 - name: Institutional Output Quality
   score: 机构级可审计输出
   metric: output_quality
-  comparison: "vs 通用助手: 生成可审计Excel模型、投资备忘录、尽调材料和幻灯片"
+  comparison: 'vs 通用助手: 生成可审计Excel模型、投资备忘录、尽调材料和幻灯片'
+  source: self-reported
 api:
   available: false
   pricing: 大型金融机构年度合同（定制部署，联系销售）
@@ -69,7 +72,7 @@ tags:
 references:
 - title: Rogo Official Website
   url: https://rogo.ai
-- title: "Rogo: Our $160M Series D and the Road Ahead"
+- title: 'Rogo: Our $160M Series D and the Road Ahead'
   url: https://rogo.ai/news/series-d
 - title: Rogo Platform (Felix)
   url: https://rogo.ai

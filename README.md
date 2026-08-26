@@ -108,27 +108,27 @@ python scripts/validate.py
 
 ### 知识图谱 (Knowledge Graph)
 
-本项目集成了 [LightRAG](https://github.com/HKUDS/LightRAG)，可从所有 markdown 研究文件中构建知识图谱，支持基于图谱的智能问答。
+本项目使用 [NetworkX](https://networkx.org/) 从所有 `domains/**/*.yaml` 和 `platforms/*.yaml` 结构化数据中构建实体-关系知识图谱。构图为纯本地确定性操作，不依赖任何外部 API 或 LLM。
 
 **构建知识图谱：**
 
 ```bash
-python scripts/build_kg.py
+python scripts/build_kg.py            # 构建并保存 kg_data.graphml + 输出统计
+python scripts/build_kg.py --stats    # 只输出统计信息
 ```
 
-该脚本会读取 `domains/`、`platforms/`、`docs/` 下的所有 `.md` 文件，提取实体和关系，构建知识图谱并存储在 `kg_data/` 目录下。
+该脚本读取 `domains/` 和 `platforms/` 下的所有 YAML 文件，提取实体（模型、公司、领域、基座模型、标签、接入方式、平台）和关系，构建有向图并保存为 `kg_data.graphml`。
 
-**查询知识图谱：**
+图谱结构：
+- **节点类型**：`model`、`company`、`domain`、`base_model`、`tag`、`access_type`、`platform`
+- **关系**：`company → developed → model`、`model → in_domain → domain`、`model → based_on → base_model`、`model → tagged → tag`、`model → accessible_via → access_type`、`company → operates → platform`
+
+**查询节点关系（模糊匹配）：**
 
 ```bash
-python scripts/query_kg.py "哪些公司在做药物研发AI？"
-python scripts/query_kg.py --mode global "各领域AI模型分布情况"
-python scripts/query_kg.py --mode local "介绍一下BloombergGPT"
+python scripts/build_kg.py --query "Bloomberg"    # 查询某节点的所有出边/入边关系
 ```
 
-支持的查询模式：
-- `naive` - 简单文本匹配
-- `local` - 局部子图搜索
-- `global` - 全局知识图谱搜索
-- `hybrid` - 混合局部和全局搜索（默认）
-- `mix` - 混合朴素搜索和图谱搜索
+**可视化：** 输出的 `kg_data.graphml` 可用 [Gephi](https://gephi.org/)、[yEd](https://www.yworks.com/products/yed) 或 [Cytoscape](https://cytoscape.org/) 打开。
+
+> 注：当前为基于 NetworkX 的结构化图谱（确定性构建 + 模糊查询）。若未来需要基于 LLM 的自然语言图谱问答（如 LightRAG 的 local/global/hybrid 模式），可作为独立增强模块引入，届时再更新本节。

@@ -36,14 +36,17 @@ benchmarks:
   score: "9.8 (CVSS critical)"
   metric: vulnerability_severity
   comparison: "完全自主发现一个9.8分critical级Microsoft漏洞，无其他AI做到过"
+  source: third-party
 - name: HackerOne Leaderboard
   score: "第1名"
   metric: leaderboard_rank
   comparison: "vs 全球顶级人类安全研究员: 曾登顶HackerOne排行榜"
+  source: leaderboard
 - name: False Positive Rate
   score: "近零误报"
   metric: false_positive_rate
   comparison: "vs 传统扫描器/SAST/DAST: 每个发现都有可复现exploit证明，近零误报"
+  source: self-reported
 api:
   available: true
   protocol: proprietary

@@ -5,14 +5,18 @@ domain: legal
 status: released
 release_date: 2026-06
 website: https://appliedcompute.com/case-studies/harvey
-description: 基于 GLM-5.1 通过全参数异步强化学习后训练的前沿法律智能体模型。在 Harvey 开源法律智能体基准 (LAB) 上，Rubric Pass Rate 从基线 0.853 提升至 0.913，All-Pass Rate 从 0.059 提升至 0.126，在 Rubric Pass Rate 上超越 GPT-5.5 xhigh 和 Opus 4.8 Max，成为业内首个突破该阈值的训练模型。LAB 覆盖 24 个法律实践领域、1250+ 任务和 75000+ 二元标准。模型通过改进工具调用、增强归因准确性和提高精确度实现性能突破。
+description: 基于 GLM-5.1 通过全参数异步强化学习后训练的前沿法律智能体模型。在 Harvey 开源法律智能体基准 (LAB) 上，Rubric
+  Pass Rate 从基线 0.853 提升至 0.913，All-Pass Rate 从 0.059 提升至 0.126，在 Rubric Pass Rate
+  上超越 GPT-5.5 xhigh 和 Opus 4.8 Max，成为业内首个突破该阈值的训练模型。LAB 覆盖 24 个法律实践领域、1250+ 任务和 75000+
+  二元标准。模型通过改进工具调用、增强归因准确性和提高精确度实现性能突破。
 parameters: 未公开
 architecture: decoder-only transformer
 base_model: GLM-5.1
 training:
   stages:
   - name: post-training
-    description: 全参数完全异步强化学习 (full-parameter fully-asynchronous RL)，使用 AC2 平台训练。训练信号来自 GPT-5 Mini 作为评分模型，采用 4 criteria-per-call 批量评分策略。训练过程中模型学会更精准的工具调用、更高的文档归因准确性和更具体的数值引用。
+    description: 全参数完全异步强化学习 (full-parameter fully-asynchronous RL)，使用 AC2 平台训练。训练信号来自
+      GPT-5 Mini 作为评分模型，采用 4 criteria-per-call 批量评分策略。训练过程中模型学会更精准的工具调用、更高的文档归因准确性和更具体的数值引用。
   context_length: 131K
 tech_stack:
   framework: AC2 (Applied Compute Agent Cloud)
@@ -39,12 +43,15 @@ benchmarks:
   score: 0.913
   metric: rubric_pass_rate
   split: test
-  comparison: "vs GLM-5.1 Base: 0.853; vs GPT-5.5 xhigh: lower; vs Opus 4.8 Max: lower (model exceeds both)"
+  comparison: 'vs GLM-5.1 Base: 0.853; vs GPT-5.5 xhigh: lower; vs Opus 4.8 Max: lower
+    (model exceeds both)'
+  source: self-reported
 - name: Harvey LAB - All Pass Eval Score
   score: 0.126
   metric: all_pass_rate
   split: test
-  comparison: "vs GLM-5.1 Base: 0.059; approaching Opus 4.8 Max"
+  comparison: 'vs GLM-5.1 Base: 0.059; approaching Opus 4.8 Max'
+  source: self-reported
 capabilities:
 - 处理 24 个法律实践领域的复杂文档审查与推理任务
 - 精准工具调用 (read/grep/bash)，避免冗余信息加载

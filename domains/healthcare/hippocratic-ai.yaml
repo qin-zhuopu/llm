@@ -45,18 +45,22 @@ benchmarks:
     score: "与人类护士持平"
     metric: clinician evaluation
     comparison: "1100+注册护士端到端对话评估"
+    source: self-reported
   - name: LawBench医疗安全维度
     score: "显著优于GPT-4"
     metric: task-based evaluation
     comparison: "vs GPT-4和LLaMA-2 70B，专业支持智能体显著胜出"
+    source: self-reported
   - name: 临床准备度
     score: "与人类护士持平"
     metric: clinician evaluation
     comparison: "130+美国执业医师评估"
+    source: self-reported
   - name: 对话质量与床旁态度
     score: "与人类护士持平"
     metric: conversational quality
     comparison: "综合维度人类评估"
+    source: self-reported
 capabilities:
   - 患者导航与就医流程指导
   - 个性化用药提醒与药物咨询

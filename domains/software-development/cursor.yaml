@@ -37,14 +37,17 @@ benchmarks:
   score: ">50% Fortune 500"
   metric: adoption_rate
   comparison: "超过一半Fortune 500使用，NVIDIA 40,000名工程师使用"
+  source: self-reported
 - name: ARR
   score: ">$500M (2025)"
   metric: annual_recurring_revenue
   comparison: "估值99亿美元"
+  source: self-reported
 - name: Tab Model Latency
   score: 低延迟补全
   metric: completion_latency
   comparison: "vs 通用模型: 自研稀疏Tab模型专为低延迟高交互补全优化"
+  source: self-reported
 api:
   available: true
   documentation: https://cursor.com/docs

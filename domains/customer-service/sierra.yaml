@@ -3,9 +3,10 @@ name_en: Sierra
 company: Sierra
 domain: customer-service
 status: released
-release_date: "2024"
+release_date: '2024'
 website: https://sierra.ai
-description: 领先的企业级对话式AI平台，由Bret Taylor（前Salesforce联合CEO、OpenAI董事长）创立，专注客服Agent。采用多模型constellation、Supervisor和企业系统工具，通过Ghostwriter从SOP/对话记录/音频构建生产就绪的多语言多渠道Agent。核心产品Horizon支持长程规划、客户上下文记忆、结果优化和主动互动。2026年融资9.5亿美元、估值超150亿美元、覆盖40%+ Fortune 50。护城河是行动权/结算权——将客服Agent直接连接企业系统并按成功结果计费。
+description: 领先的企业级对话式AI平台，由Bret Taylor（前Salesforce联合CEO、OpenAI董事长）创立，专注客服Agent。采用多模型constellation、Supervisor和企业系统工具，通过Ghostwriter从SOP/对话记录/音频构建生产就绪的多语言多渠道Agent。核心产品Horizon支持长程规划、客户上下文记忆、结果优化和主动互动。2026年融资9.5亿美元、估值超150亿美元、覆盖40%+
+  Fortune 50。护城河是行动权/结算权——将客服Agent直接连接企业系统并按成功结果计费。
 parameters: 未公开
 architecture: Multi-model constellation + Supervisor (多模型星座 + 监督器)
 training:
@@ -34,17 +35,20 @@ datasets:
   type: other
 benchmarks:
 - name: Enterprise Coverage
-  score: "40%+ Fortune 50"
+  score: 40%+ Fortune 50
   metric: enterprise_adoption
-  comparison: "覆盖超过40%的Fortune 50企业（公司口径）"
+  comparison: 覆盖超过40%的Fortune 50企业（公司口径）
+  source: self-reported
 - name: Outcome-based Performance
   score: 按成功结果计费
   metric: outcome_resolution
-  comparison: "vs 传统客服自动化: 按解决问题/留存/转化等真实结果收费"
+  comparison: 'vs 传统客服自动化: 按解决问题/留存/转化等真实结果收费'
+  source: self-reported
 - name: Agent Build Speed
   score: Ghostwriter快速构建
   metric: deployment_speed
-  comparison: "vs 手工配置: 从SOP/录音自动构建生产就绪的多语言多渠道Agent"
+  comparison: 'vs 手工配置: 从SOP/录音自动构建生产就绪的多语言多渠道Agent'
+  source: self-reported
 api:
   available: true
   protocol: proprietary
@@ -72,5 +76,5 @@ tags:
 references:
 - title: Sierra Official Website
   url: https://sierra.ai
-- title: "Sierra: Better Customer Experiences. Built on Sierra"
+- title: 'Sierra: Better Customer Experiences. Built on Sierra'
   url: https://sierra.ai/blog/better-customer-experiences-built-on-sierra

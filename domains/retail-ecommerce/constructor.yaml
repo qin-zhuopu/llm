@@ -35,14 +35,17 @@ benchmarks:
   score: "+13%"
   metric: conversion_rate_lift
   comparison: "vs 原有电商搜索: Petco电商转化率提升13%"
+  source: self-reported
 - name: ROI Payback
   score: "<1年收回成本"
   metric: payback_period
   comparison: "vs 竞品: 实施后不到一年收回成本（含切换成本）"
+  source: self-reported
 - name: AI Transparency
   score: glassbox可解释
   metric: explainability
   comparison: "vs 黑盒AI: 商品化决策透明可解释，支持人工介入"
+  source: self-reported
 api:
   available: true
   protocol: rest

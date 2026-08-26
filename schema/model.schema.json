@@ -260,6 +260,17 @@
           "comparison": {
             "type": "string",
             "description": "与基线对比（如 vs GPT-4: 86.5% vs 87.0%）"
+          },
+          "source": {
+            "type": "string",
+            "description": "评测数据的出处口径，用于区分数据可信度。self-reported=公司自报未经审计；third-party=第三方独立评测；paper=学术论文/同行评审；leaderboard=公开排行榜",
+            "enum": [
+              "self-reported",
+              "third-party",
+              "paper",
+              "leaderboard",
+              "unknown"
+            ]
           }
         }
       }
