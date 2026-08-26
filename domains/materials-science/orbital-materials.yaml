@@ -1,0 +1,26 @@
+name: Orbital Materials
+company: Orbital Industries
+domain: materials-science
+status: released
+description: Orbital Materials 是 Orbital Industries 推出的面向材料科学领域的生成式 AI 系统。其核心定位是通过结合前沿
+  AI 与物理产品开发，加速新型材料的发明与制造。该系统利用多尺度世界模型，涵盖从量子物理到流体动力学的模拟，能够在虚拟环境中进行迭代，从而显著降低物理实验的高昂成本与时间周期。其差异化的'自主研究代理'（Autoresearch
+  Agents）针对物理行业样本少、成本高的痛点进行优化，旨在通过极少的实验次数找到最优解，代表了'AI 工业化'（AI Industrial）的落地实践。
+capabilities:
+- 量子物理模拟与分子动力学预测
+- 跨尺度属性预测（从微观到宏观流体动力学）
+- 基于 AI 的高效材料筛选与设计
+- 样本稀缺型环境下的自主实验规划
+references:
+- title: Orbital Materials Official Website
+  url: https://www.orbitalmaterials.com/
+tags:
+- materials-science
+- simulation
+- discovery
+- autonomous-agents
+- computational-chemistry
+- industrial-ai
+access:
+- saas
+region:
+- global
