@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "github-readme.md",
+      "url": "https://github.com/PKU-YuanGroup/ChatLaw",
+      "fetched_at": "2025-06-17",
+      "type": "github"
+    },
+    {
+      "filename": "arxiv-abstract.txt",
+      "url": "https://arxiv.org/abs/2306.16092",
+      "fetched_at": "2025-06-17",
+      "type": "arxiv"
+    }
+  ]
+}

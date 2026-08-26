@@ -1,0 +1,15 @@
+Chatlaw: A Multi-Agent Legal Assistant based on a Role-Aligned Mixture-of-Experts Architecture
+
+arXiv:2306.16092 [cs.CL]
+
+Abstract:
+Artificial Intelligence (AI) holds great potential in legal services, yet Large Language Models (LLMs) face two major challenges: limited knowledge of the Chinese legal system and vulnerability to hallucinations. To address these issues, we present Chatlaw, a multi-agent legal assistant. Chatlaw's framework is designed to emulate the Standard Operating Procedures (SOP) of real law firms, where different roles (e.g., assistant, researcher, senior lawyer) collaborate on a case. To computationally mirror this collaborative structure, we developed a novel Role-Aligned Mixture-of-Experts (RA-MoE) architecture. In this system, the internal "experts" are specifically trained to align with the distinct tasks of each agent role (e.g., inquiry, analysis, drafting). These specialized agents (Legal Assistant, Researcher, etc.) then form the collaborative framework. When they interact with users, retrieve legal knowledge, analyze case details, or generate reliable consultations, the RA-MoE architecture intelligently routes their computations to the corresponding dedicated expert, ensuring each step is handled by the most qualified parameters. In evaluations, Chatlaw surpasses general-purpose AI models, including GPT-4, achieving a 7.73% improvement in accuracy on the LawBench benchmark and an 11-point higher score on the Unified Qualification Exam for Legal Professionals. Real-case studies and expert assessments further confirm its robustness. Chatlaw enhances the accessibility and reliability of legal services, advancing the provision of legal support to the public.
+
+Comments: Accepted manuscript. Updated to match the journal version and added DOI
+Subjects: Computation and Language (cs.CL)
+Related DOI: https://doi.org/10.1016/j.fmre.2026.03.026
+
+Submission history:
+[v1] Wed, 28 Jun 2023 10:48:34 UTC (1,040 KB)
+[v2] Thu, 30 May 2024 13:46:00 UTC (2,294 KB)
+[v3] Mon, 8 Jun 2026 08:40:57 UTC (1,197 KB)

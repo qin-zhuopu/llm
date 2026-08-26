@@ -88,6 +88,54 @@ orchestrator 传递任务时的规则：
 （补充内容...）
 ```
 
+### 原始资料保存规范（必需）
+
+子代理每次通过 `web_fetch` 获取到内容后，**必须同时**执行以下操作：
+
+1. **保存原始内容**到 `data/raw/{model-slug}/{filename}`
+   - model-slug 与 `domains/` 下的 md 文件名一致
+   - 文件名使用描述性命名（如 `github-readme.md`, `arxiv-abstract.txt`, `official-website.md`）
+
+2. **更新 sources.json**，在 `data/raw/{model-slug}/sources.json` 中记录来源：
+   ```json
+   {
+     "files": [
+       {
+         "filename": "github-readme.md",
+         "url": "https://github.com/example/repo",
+         "fetched_at": "2025-06-17",
+         "type": "github"
+       }
+     ]
+   }
+   ```
+
+3. **md 摘要与 raw 文件的关系**：
+   - `domains/` 下的 `.md` 文件是从 raw 原始内容整理出来的摘要
+   - `data/raw/` 是原始证据，用于验证和回溯
+   - md 中标注的来源 URL 必须与 `sources.json` 中的记录一致
+
+#### 完整工作流示例
+
+```
+1. web_fetch 获取 https://github.com/org/model 的内容
+2. 保存到 data/raw/model-name/github-readme.md
+3. 创建或更新 data/raw/model-name/sources.json
+4. 基于原始内容整理摘要，追加到 domains/category/model-name.md
+5. 写或更新 model-name.yaml
+```
+
+#### type 字段可选值
+
+| type 值 | 说明 |
+|---------|------|
+| `github` | GitHub 仓库 README 或页面 |
+| `arxiv` | arXiv 论文摘要页 |
+| `official-website` | 公司/产品官方网站 |
+| `blog` | 技术博客文章 |
+| `huggingface` | Hugging Face 模型卡片 |
+| `paper-pdf` | 论文 PDF 内容 |
+
 ### 适合自主研究的字段
 
 | 字段 | 典型来源 |
