@@ -1,0 +1,24 @@
+name: Abridge
+company: Abridge
+domain: healthcare
+status: released
+description: Abridge 是一个专注于临床对话生成式 AI 的企业级医疗平台，旨在通过统一智能层覆盖从诊前到诊后的完整临床工作流程。该模型已获得超过
+  300 家医疗系统信任，支持 40 多个医学专科及 28 种语言，与 OpenAI 合作利用 GPT-5.5 提升了 25% 的临床质量评估精准度，并在消除 AI
+  幻觉方面拥有专有技术。
+capabilities:
+- 诊前准备：自动汇集患者历史与就诊记录
+- 诊中记录：实时捕获对话并提供临床决策支持
+- 诊后处理：自动生成病历、编码细化与医嘱
+- 多语言处理：支持 28 种语言的临床对话
+references:
+- title: Abridge 官方网站
+  url: https://www.abridge.com
+tags:
+- clinical-documentation
+- ambient-ai
+- generative-ai
+- multi-specialty
+- multilingual
+access:
+- saas
+website: https://www.abridge.com
