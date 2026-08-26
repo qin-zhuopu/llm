@@ -1,7 +1,14 @@
 {
   "task_id": "task-improve-model-data-quality",
   "task_description": "Improve data quality of all model YAML files by regenerating from MD content using LLM extraction, and deleting garbage files that cannot be improved",
-  "status": "in_progress",
-  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
-  "blocked_reason": null
+  "status": "completed",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004", "FEAT-005"],
+  "blocked_reason": null,
+  "verification": {
+    "build": "pass",
+    "tests": "pass",
+    "test_quality": "pass",
+    "docker_build": "skipped",
+    "summary": "All 65 remaining model YAML files pass schema validation. 11 garbage files deleted. 166 lost metadata fields restored from main branch. Hallucinated 2026 dates fixed. Med-PaLM 2 concrete benchmark data restored."
+  }
 }
