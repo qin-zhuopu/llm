@@ -1,0 +1,30 @@
+name: Relativity aiR
+company: Relativity
+domain: legal
+status: released
+description: Relativity aiR 是 Relativity 公司开发的法律 AI 软件套件，集成在 RelativityOne 平台中。基于生成式
+  AI 技术与 Azure OpenAI 服务深度集成，专为律师和法务团队设计。它通过 Agentic AI（代理式 AI）架构加速诉讼和调查流程，涵盖文档审查、特权保护、案件策略制定、数据泄露响应及
+  AI 对话助手五大核心产品。其技术特点是强调人机协同与可辩护性，提供文档级引用和推理支持，确保数据安全不外泄。据客户案例显示，该系统可帮助平均节省 20%-40%
+  的审查成本，部分案例甚至降低 85% 成本并节省 25 天时间。
+capabilities:
+- 文档审查与优先排序：利用 AI 快速识别相关文档，进行首轮相关性判定和议题识别，加速大规模文档审查流程。
+- 特权信息保护：自动识别律师-客户特权通信，防止特权信息泄露，并创建特权日志以减少 clawback 风险。
+- 案件策略辅助：通过 AI 分析海量文档提取事实并建立时间线，帮助律师理解案件全貌并构建案件叙事。
+- 数据泄露响应：在数据泄露事件中，快速识别受影响的个人信息，协助团队满足监管通知要求并加速响应。
+- 自然语言数据探索：提供对话式 AI 工具，允许法律团队通过自然语言提问来探索数据，加快策略制定并增强决策信心。
+references:
+- title: Relativity aiR 官方介绍
+  url: https://www.relativity.com/aiR
+access:
+- api
+- saas
+website: https://www.relativity.com/aiR
+tech_stack:
+  foundation_provider: Azure OpenAI
+tags:
+- Legal AI
+- E-Discovery
+- Generative AI
+- Document Review
+- Agentic AI
+- Case Strategy

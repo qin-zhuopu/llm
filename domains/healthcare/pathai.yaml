@@ -1,0 +1,25 @@
+name: AISight
+company: PathAI
+domain: healthcare
+status: released
+description: PathAI推出的AISight是一个面向病理学的数字病理图像管理和AI分析平台。该平台采用云原生架构，旨在革新病理学诊断和研究，支持从样本接收到报告出具的全流程管理。其核心差异化在于利用深度学习技术提供亚细胞级别的精确分析、生物标志物标准化评分以及高通量图像处理能力。
+capabilities:
+- 全切片图像(WSI)存储与管理
+- 肿瘤病理学AI辅助诊断
+- 免疫组化评分与生物标志物分析
+- 高通量图像批量处理
+- 药物研发中的临床试验样本分析
+- AI决策可视化解释
+references:
+- title: PathAI官方网站
+  url: https://www.pathai.com
+tags:
+- digital-pathology
+- diagnostic-ai
+- oncology
+- image-analysis
+- cloud-native
+access:
+- saas
+region:
+- global

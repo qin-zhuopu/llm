@@ -1,0 +1,25 @@
+name: Nabla
+company: Nabla
+domain: healthcare
+status: released
+description: Nabla 是一个专为临床场景设计的嵌入式 AI 平台，通过环境文档（Ambient Documentation）技术自动捕获医患对话并生成结构化的临床笔记。该平台被
+  130+ 医疗组织、85,000+ 临床医生使用，每年处理 2000万+ 患者就诊记录。其核心优势在于通过临床级语音识别、AI 辅助编码和深度定制化功能，显著降低医生职业倦怠（最高降幅达
+  90%），并大幅提升医患互动质量（81%），遵循 HIPAA、SOC 2 Type 2 和 ISO 27001 等严格的安全合规标准。
+capabilities:
+- 环境文档自动生成：实时捕获医患对话并转化为结构化临床笔记
+- 临床语音听写：高精度语音识别引擎，嵌入电子健康记录系统（EHR）
+- 智能医疗编码：基于临床文档和 AMA 指南提供 E/M 和 ICD-10 编码建议
+- 工作流深度定制：根据专科、偏好灵活配置笔记格式和交互逻辑
+references:
+- title: Nabla 官方网站
+  url: https://www.nabla.com
+access:
+- api
+- private-deployment
+tags:
+- 临床文档
+- 语音识别
+- 医疗编码
+- 医生助手
+- EHR集成
+website: https://www.nabla.com
