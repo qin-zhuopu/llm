@@ -3,10 +3,9 @@ name_en: SF Vertical Domain Large Model
 company: 顺丰科技
 domain: logistics-supplychain
 status: released
-description: 顺丰科技基于对物流与供应链场景的深度理解和行业头部公司的数智化实战经验，构建了覆盖自然语言处理、多模态交互、智能决策等的垂域大模型体系。该模型依托行业领先的技术，深度赋能物流行业的收、转、运、派、营销、客服等各环节及供应链众多场景，致力于实现从感知智能向认知智能的新跨越。
-release_date: '2026'
+release_date: '2023'
 website: https://www.sf-tech.com.cn
-access: api
+description: 顺丰科技基于对物流与供应链场景的深度理解和行业头部公司的数智化实战经验，构建了覆盖自然语言处理、多模态交互、智能决策等的垂域大模型体系。该模型依托行业领先的技术，深度赋能物流行业的收、转、运、派、营销、客服等各环节及供应链众多场景，致力于实现从感知智能向认知智能的新跨越。
 capabilities:
 - 供应链全流程智能溯源与可信存证
 - 超大规模物流网络智能规划与调度
@@ -14,12 +13,15 @@ capabilities:
 - 多模态物流数据处理与交互分析
 - 海量订单预测与资源精准匹配
 - 高度仿真的物流数字孪生与仿真推演
-references:
-- title: 顺丰科技官方网站
-  url: https://www.sf-tech.com.cn
 tags:
 - logistics
 - supply-chain
 - optimization
 - decision-making
 - digital-twin
+access: api
+region:
+- china
+references:
+- title: 顺丰科技官方网站
+  url: https://www.sf-tech.com.cn

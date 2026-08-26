@@ -2,6 +2,8 @@ name: 广联达建筑AI
 company: 广联达
 domain: construction-realestate
 status: released
+release_date: '2023'
+website: https://www.glodon.com
 description: 广联达建筑AI是面向建筑与房地产领域的数字化智能解决方案。该体系覆盖数字设计、数字成本、数字施工及信息服务全流程，集成了BIM协同、智能算量、云计价、劳务物资管理等核心功能，旨在通过数据驱动提升建筑行业全生命周期的协同效率与管理水平。
 capabilities:
 - 数字化建筑设计协同
@@ -9,13 +11,15 @@ capabilities:
 - 数字施工现场管理
 - 建筑行业数据信息服务
 - BIM模型与数字孪生应用
-references:
-- title: 广联达官方网站
-  url: https://www.glodon.com
-website: https://www.glodon.com
 tags:
 - BIM
 - 数字化施工
 - 工程造价
 - 企业管理
 - 数字孪生
+access: saas
+region:
+- china
+references:
+- title: 广联达官方网站
+  url: https://www.glodon.com

@@ -2,18 +2,23 @@ name: 丰农AI
 company: 丰农控股
 domain: agriculture
 status: released
+release_date: '2023'
+website: https://www.fengnong.com
 description: 丰农AI是丰农控股旗下的智慧农业人工智能平台，致力于将先进的AI技术应用于农业生产全流程，覆盖水稻、小麦、玉米等多种农作物。该平台采用计算机视觉、深度学习及大数据分析技术，实现病虫害智能诊断与精准种植推荐，并支持离线使用与方言交互，推动中国农业数字化与智能化转型。
 capabilities:
 - 作物病虫害智能诊断与防治建议
 - 精准种植方案与施肥灌溉推荐
 - 多源数据融合的产量预测分析
 - 全生长周期的智能农事管理
-references:
-- title: 丰农AI官方网站
-  url: https://www.fengnong.com
 tags:
 - agriculture
 - crop-disease
 - computer-vision
 - precision-farming
 - multi-modal
+access: saas
+region:
+- china
+references:
+- title: 丰农AI官方网站
+  url: https://www.fengnong.com

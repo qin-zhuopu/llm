@@ -2,14 +2,21 @@ name: Cognizant Healthcare LLM
 company: Cognizant
 domain: healthcare
 status: released
-description: Cognizant 推出的医疗领域大语言模型，旨在通过 AI 技术弥合从技术到影响力的差距。该模型作为企业级 AI 构建方案的一部分，专注于帮助医疗机构实现技术现代化、流程重塑及体验转型。它致力于通过连接物理
-  AI 系统与代理式 AI，构建单一机构级思维，帮助企业消除 AI 执行差距，释放生产力并提升运营效率，从而在快速变化的医疗环境中保持领先。
+release_date: 2024-06
+website: https://www.cognizant.com
+description: Cognizant 推出的医疗领域大语言模型，旨在通过 AI 技术弥合从技术到影响力的差距。该模型作为企业级 AI 构建方案的一部分，专注于帮助医疗机构实现技术现代化、流程重塑及体验转型。它致力于通过连接物理 AI 系统与代理式 AI，构建单一机构级思维，帮助企业消除 AI 执行差距，释放生产力并提升运营效率，从而在快速变化的医疗环境中保持领先。
 capabilities:
 - 医疗技术基础设施现代化
 - 智能流程重塑与优化
 - 患者体验数字化变革
 - 连接物理系统与代理式 AI
 - 提升企业生产力与运营效率
+tags:
+- Google Cloud
+- 行政流程
+access: saas
+region:
+- global
 references:
 - title: Cognizant Official Website
   url: https://www.cognizant.com

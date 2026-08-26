@@ -2,18 +2,16 @@ name: Scale AI Donovan
 company: Scale AI
 domain: aerospace-defense
 status: released
-description: Donovan 是一个专门为关键任务设计的人工智能代理平台，旨在通过 'Agent Arsenal' 和 'Agent Factory'
-  为作战人员提供从概念到战斗的快速部署能力。该平台采用 Agentic RAG 架构，具备本地化、云和 API 数据摄取能力，支持构建知识库（如 GDELT 事件数据、国防部政策文件）并集成外部工具。Donovan
-  强调安全性、可追溯性和模型无关性（支持 Llama 3.3 70B Instruct 等多种模型），可在分类和隔离网络（如 GovCloud）上运行，以实现情报分析、威胁监控和行动报告的自动化。
+release_date: '2023'
+website: https://scale.com/donovan
+description: Donovan 是一个专门为关键任务设计的人工智能代理平台，旨在通过 'Agent Arsenal' 和 'Agent Factory' 为作战人员提供从概念到战斗的快速部署能力。该平台采用 Agentic RAG 架构，具备本地化、云和 API 数据摄取能力，支持构建知识库（如 GDELT 事件数据、国防部政策文件）并集成外部工具。Donovan 强调安全性、可追溯性和模型无关性（支持
+  Llama 3.3 70B Instruct 等多种模型），可在分类和隔离网络（如 GovCloud）上运行，以实现情报分析、威胁监控和行动报告的自动化。
 capabilities:
 - Agentic RAG 与知识库构建：支持通过本地上传、API 及连接器（如 GDELT）摄取数据，构建包含事件数据、政策文档等的高质量知识库。
 - 任务定制化代理开发：通过无代码界面，利用 SGP 集成快速定制和部署具备特定角色（如军事情报分析师）的 AI 代理。
 - 多模态情报分析与检索：进行全球事件多工具分析、非结构化文本位置提取、炮兵能力分析及详尽的行动报告生成。
 - 模型评估与比对：内置测试框架，支持对不同模型（如 Llama 3.1 70B vs Scale Gemma 7B）进行真实性、幻觉率和上下文召回等指标的严格评测。
 - 分级网络安全部署：获得 DISA IL4 和 FedRAMP High 授权，支持在分类网络、隔离网络及 Kubernetes 容器化平台上的云原生部署。
-references:
-- title: Scale AI Donovan Official Website
-  url: https://scale.com/donovan
 tags:
 - military-ai
 - agent-platform
@@ -21,3 +19,9 @@ tags:
 - intelligence-analysis
 - govcloud
 - llm-ops
+access: private-deployment
+region:
+- us
+references:
+- title: Scale AI Donovan Official Website
+  url: https://scale.com/donovan

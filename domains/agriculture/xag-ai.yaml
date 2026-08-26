@@ -1,7 +1,10 @@
 name: 极飞科技AI
+name_en: XAG AI
 company: 极飞科技
 domain: agriculture
 status: released
+release_date: '2023'
+website: https://www.xa.com
 description: 极飞科技 (XAG) 是一家领先的农业科技公司，致力于研发农业无人机、智慧农业IoT产品和农业机器人。其产品线包括P系列农业无人机（如P150、P60）、R系列农业无人车（R100、R200）以及智能农场物联网设备（FBV、FPI等）。极飞科技整合了无人机遥感与AI技术，提供精准农业解决方案。
 capabilities:
 - 农业无人机植保作业
@@ -9,6 +12,15 @@ capabilities:
 - 智能农业物联网数据监测
 - 农业自动驾驶与机器人作业
 - 农场数字化管理
+tags:
+- agriculture
+- drone
+- iot
+- robotics
+- precision-agriculture
+access: saas
+region:
+- china
 references:
 - title: 极飞科技官网
   url: https://www.xa.com
@@ -18,11 +30,3 @@ references:
   url: https://xa.com/en/r100
 - title: 智慧农业物联网产品页
   url: https://xa.com/en/smart-farm
-tags:
-- agriculture
-- drone
-- iot
-- robotics
-- precision-agriculture
-access: saas
-website: https://www.xa.com

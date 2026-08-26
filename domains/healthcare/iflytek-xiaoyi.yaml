@@ -2,12 +2,20 @@ name: 讯飞晓医
 company: 科大讯飞
 domain: healthcare
 status: released
+release_date: '2023'
+website: https://www.iflytek.com
 description: 讯飞晓医是一款专注于医疗健康领域的垂直大模型，具备强大的医学知识理解和生成能力。该模型基于海量医学文献和临床数据训练，能够提供专业的诊疗建议、医学知识问答及辅助决策服务，旨在提升医疗服务的效率与准确性。
 capabilities:
 - 医学知识问答
 - 辅助诊疗决策
 - 医学文献生成
 - 临床数据分析
+tags:
+- 星火大模型
+- 医疗
+access: api
+region:
+- china
 references:
 - title: 科大讯飞官网
   url: https://www.iflytek.com

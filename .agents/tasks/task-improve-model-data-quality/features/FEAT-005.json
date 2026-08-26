@@ -1,0 +1,24 @@
+{
+  "id": "FEAT-005",
+  "type": "fix",
+  "description": "Fix data quality issues found in semantic review: hallucinated 2026 dates, broken URL in med-palm-2, Med-PaLM 2 data regression, and batch-restore lost metadata fields from main branch",
+  "status": "in_progress",
+  "steps": [
+    "Fix hallucinated release_date 2026 in jasper-ai.yaml (change to 2023), sf-tech-ai.yaml (change to 2023), yuewen-miaobi.yaml (change to 2023)",
+    "Fix Med-PaLM 2: change status to research, add MedQA 86.5% benchmark, fix broken URL to arxiv paper, rewrite description with concrete achievements",
+    "Write and run a Python script to batch-restore lost metadata fields (release_date, website, tags, access, region, name_en) from git main branch into current files where missing",
+    "Run python3 scripts/validate.py to confirm all 65 files pass"
+  ],
+  "acceptance_criteria": [
+    "No files have release_date containing 2026",
+    "Med-PaLM 2 has status: research, MedQA benchmark, correct arxiv URL",
+    "Lost metadata fields from main are restored where current files are missing them",
+    "python3 scripts/validate.py shows 65 pass, 0 fail"
+  ],
+  "verification": [
+    "python3 scripts/validate.py exits with 0 failures",
+    "grep -r '2026' domains/ returns no matches for release_date"
+  ],
+  "blocked_reason": null,
+  "findings": null
+}

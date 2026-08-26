@@ -2,15 +2,14 @@ name: 国网智能电网AI
 company: 国家电网
 domain: energy
 status: released
+release_date: '2023'
+website: http://www.sgcc.com.cn
 description: 由国家电网公司开发的全球规模最大的电力AI应用系统，覆盖电网规划、建设、运行、检修、营销全业务链。基于覆盖全网的大数据平台，利用深度学习和计算机视觉技术，支持中国26个省的数百万公里输配电线路及数亿用户管理，实现从负荷预测到设备诊断的全方位智能化。
 capabilities:
 - 智能调度与负荷预测
 - 故障预测与设备诊断
 - 无人机与机器人智能巡检
 - 智能电表与用电行为分析
-references:
-- title: 国家电网官方网站
-  url: http://www.sgcc.com.cn
 tags:
 - 电力系统
 - 智能电网
@@ -18,3 +17,9 @@ tags:
 - 故障诊断
 - 巡检
 - 大数据
+access: internal-only
+region:
+- china
+references:
+- title: 国家电网官方网站
+  url: http://www.sgcc.com.cn

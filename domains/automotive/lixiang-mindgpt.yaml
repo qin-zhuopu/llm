@@ -2,6 +2,8 @@ name: 理想Mind GPT
 company: 理想汽车
 domain: automotive
 status: released
+release_date: '2023'
+website: https://www.lixiang.com
 description: 理想汽车自主研发的车载大语言模型，是理想汽车AI战略的核心。采用MindVLA架构统一空间、语言和行为智能，赋能自动驾驶。截至2025年1月已部署于超50万辆车，日均处理1.2亿次交互，任务执行准确率达98.7%。
 capabilities:
 - 智能语音交互：支持多方言、自由指令、免唤醒激活及精简模式
@@ -10,9 +12,6 @@ capabilities:
 - 导航与出行辅助：自然语言设置目的地、路况查询及个性化推荐
 - 个性化驾驶：学习用户习惯，提供定制化服务与用户画像
 - 全场景自主：支持自适应巡航、自动变道及自动泊车功能
-references:
-- title: 理想汽车官方网站
-  url: https://www.lixiang.com
 tags:
 - LLM
 - Automotive
@@ -22,3 +21,6 @@ tags:
 access: internal-only
 region:
 - china
+references:
+- title: 理想汽车官方网站
+  url: https://www.lixiang.com

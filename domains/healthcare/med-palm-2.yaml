@@ -1,28 +1,34 @@
 name: Med-PaLM 2
 company: Google DeepMind
 domain: healthcare
-status: released
-description: Med-PaLM 2 是由 Google DeepMind 开发的医疗专用大语言模型，旨在通过先进的生成式 AI 技术，解锁医疗信息的潜力，为健康科学研究生成新颖见解，并开发个性化的健康解决方案。该模型致力于辅助用户获取高质量的医学信息，确保信息的可及性和文化相关性，同时帮助医疗组织优化工作流程，减轻行政负担并降低成本。
+status: research
+release_date: '2023-05'
+website: https://health.google
+description: Med-PaLM 2 是由 Google DeepMind 开发的医疗专用大语言模型，在 MedQA 数据集上达到 86.5% 的准确率，达到专家级医学问答水平。在 USMLE 级别的临床问题中，医生在 9 个临床效用维度中的 8 个更偏好 Med-PaLM 2 的回答。该模型致力于通过先进的生成式 AI 技术解锁医疗信息的潜力，辅助临床决策支持，并帮助医疗组织优化工作流程。
+parameters: unknown
 capabilities:
+- 医学问答（USMLE级别）
+- 临床辅助决策
+- 消费者健康问题回答
 - 提供高质量的医疗与健康信息检索
 - 生成医学科学见解与健康研究报告
-- 辅助医疗组织优化工作流程与管理
-- 开发个性化的健康解决方案与建议
-- 支持多语言医疗咨询与科普服务
-references:
-- title: Google Health 官方网站
-  url: https://health.google
-- title: 'Google Health 博客: 最新健康科技资讯'
-  url: https://blog.google/technology/health/
-- title: 'Project AMIE: 对话式医疗 AI 研究'
-  url: ./../ai-models/#amie
+benchmarks:
+- name: MedQA
+  score: 86.5
+  metric: accuracy
+access: api
+region:
+- global
 tags:
+- 医学问答
+- 临床决策
 - 医疗大模型
 - 生成式AI
 - Google DeepMind
-- 医疗信息化
-- 临床决策支持
-website: https://health.google
-access: unknown
-region:
-- global
+references:
+- title: Med-PaLM 2 论文
+  url: https://arxiv.org/abs/2305.09617
+- title: Google Health 官方网站
+  url: https://health.google
+- title: Google Health 博客
+  url: https://blog.google/technology/health/

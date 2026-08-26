@@ -2,22 +2,23 @@ name: BioNeMo
 company: NVIDIA
 domain: pharma-biotech
 status: released
+release_date: '2023'
+website: https://www.nvidia.com/en-us/clara/bionemo/
 description: NVIDIA BioNeMo 是一个专为生物制药领域设计的生成式 AI 平台和服务套件。它为药物发现、基因组学、蛋白质工程等生命科学应用提供了加速计算和预训练模型，帮助企业加速新药研发和生物数据分析。
 capabilities:
 - 药物分子生成与优化
 - 蛋白质结构预测与设计
 - 基因组学数据分析
 - 生物分子相互作用预测
-references:
-- title: BioNeMo 官方主页
-  url: https://www.nvidia.com/en-us/clara/bionemo/
-website: https://www.nvidia.com/en-us/clara/bionemo/
-access: saas
-region:
-- global
 tags:
 - Generative AI
 - Drug Discovery
 - Life Sciences
 - Protein Design
 - Genomics
+access: saas
+region:
+- global
+references:
+- title: BioNeMo 官方主页
+  url: https://www.nvidia.com/en-us/clara/bionemo/

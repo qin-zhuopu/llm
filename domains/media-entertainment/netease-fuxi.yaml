@@ -1,8 +1,15 @@
 name: 网易伏羲
+name_en: NetEase Fuxi
 company: 网易
 domain: media-entertainment
 status: released
+release_date: '2023'
+website: https://fuxi.163.com
 description: 网易伏羲是网易集团旗下专业从事AI研究和应用的顶尖机构，致力于成为全球领先的人工智能解决方案提供商。该平台不仅提供人机协作与万物有灵的智能化服务，还通过自研的工业大模型、面向智能体编程（AOP）理论及高性能分布式引擎（ACE），将AI与人工无缝融合。其核心技术在工程机械智能化（如无人装载机、挖掘机器人）、数字孪生、游戏美术生产及数据标注等领域应用广泛，覆盖视觉、语音、文本及视频等多模态能力。
+tech_stack:
+  foundation: 自研工业大模型
+  architecture: 面向智能体编程 (AOP)
+  platform: ACE高性能分布式引擎
 capabilities:
 - 面向智能体编程（AOP）与任务执行
 - 工程机械远程遥控与自主作业
@@ -10,14 +17,6 @@ capabilities:
 - 多模态数据采集与智能质检
 - 游戏美术资产在线预览与审核
 - 群体智能协作与价值回报分解
-references:
-- title: 网易伏羲官方网站
-  url: https://fuxi.163.com
-website: https://fuxi.163.com
-tech_stack:
-  foundation: 自研工业大模型
-  architecture: 面向智能体编程 (AOP)
-  platform: ACE高性能分布式引擎
 tags:
 - 人机协作
 - 工程机械智能化
@@ -29,3 +28,6 @@ access: saas
 region:
 - china
 - global
+references:
+- title: 网易伏羲官方网站
+  url: https://fuxi.163.com

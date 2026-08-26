@@ -1,13 +1,26 @@
 name: 阅文妙笔
+name_en: Yuewen Miaobi
 company: 阅文集团
 domain: media-entertainment
 status: released
+release_date: '2023'
+website: https://www.yuewen.com
 description: 阅文妙笔是阅文集团推出的垂直领域大模型，专注于网络文学创作与IP开发。该模型基于阅文海量的正版文学语料（超千亿Token）进行训练，能够理解长篇小说的复杂逻辑与世界观设定，具备剧情续写、角色塑造、风格模仿及文本润色等核心能力。该模型旨在为千万创作者提供智能辅助，降低创作门槛，并提升IP培育与衍生的效率，是阅文'AIGC+IP'战略的核心技术支撑。
 capabilities:
 - 长篇小说剧情续写与生成
 - 个性化角色对话与风格模仿
 - 多模态漫剧脚本改编
 - 文本润色与违禁词检测
+tags:
+- aigc
+- writing-assistant
+- ip-development
+- comic-adaptation
+- nlp
+access: saas
+region:
+- china
+- global
 references:
 - title: 阅文集团官方网站
   url: https://www.yuewen.com
@@ -15,15 +28,3 @@ references:
   url: https://www.peopleapp.com/column/30052664792-500007599124
 - title: 打造AIGC+IP发展新标杆
   url: https://mp.weixin.qq.com/s/g_hvPu9jVOkbdkGxtGJHaA?scene=1&click_id=111
-tags:
-- aigc
-- writing-assistant
-- ip-development
-- comic-adaptation
-- nlp
-release_date: '2026'
-website: https://www.yuewen.com
-access: saas
-region:
-- china
-- global

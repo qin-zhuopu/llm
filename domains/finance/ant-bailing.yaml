@@ -2,7 +2,11 @@ name: 蚂蚁百灵
 company: 蚂蚁集团
 domain: finance
 status: released
+release_date: '2023'
+website: https://www.antgroup.com
 description: 蚂蚁百灵是蚂蚁集团旗下AI研究机构inclusionAI打造的大语言模型系列，作为集团AI战略的核心技术底座，服务于支付宝、蚂蚁财富、蚂蚁保险等多个业务场景。该模型系列拥有万亿参数规模的旗舰版本Ling-1T，主打生产级混合推理MoE架构的Ling-3.0-flash（124B总参数/5.1B激活参数），以及轻量级的Ling-3.0-Tiny（7.9B参数）。模型在金融服务、智能体构建、多模态感知及代码编写等维度展现了强大能力，兼顾了推理能力与推理效率。
+parameters: 124B (Ling-3.0-flash), 7.9B (Ling-3.0-Tiny), 1T (Ling-1T)
+architecture: Mixture of Experts (MoE)
 capabilities:
 - 金融智能客服与复杂咨询问答
 - 金融风险评估与反欺诈检测
@@ -10,13 +14,6 @@ capabilities:
 - 智能投顾辅助与市场资讯解读
 - 保险理赔材料智能审核与建议生成
 - 多模态遥感图像理解
-parameters: 124B (Ling-3.0-flash), 7.9B (Ling-3.0-Tiny), 1T (Ling-1T)
-architecture: Mixture of Experts (MoE)
-references:
-- title: 蚂蚁集团官方网站
-  url: https://www.antgroup.com
-- title: 'SkySense: A General and Flexible Remote Sensing Foundation Model (CVPR 2024)'
-  url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_SkySense_A_General_and_Flexible_Remote_Sensing_Foundation_Model_CVPR_2024_paper.html
 tags:
 - 金融大模型
 - MoE架构
@@ -24,3 +21,10 @@ tags:
 - 多模态
 - 风险管理
 access: api
+region:
+- china
+references:
+- title: 蚂蚁集团官方网站
+  url: https://www.antgroup.com
+- title: 'SkySense: A General and Flexible Remote Sensing Foundation Model (CVPR 2024)'
+  url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_SkySense_A_General_and_Flexible_Remote_Sensing_Foundation_Model_CVPR_2024_paper.html

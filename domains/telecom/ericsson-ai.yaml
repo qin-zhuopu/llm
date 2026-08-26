@@ -2,6 +2,8 @@ name: Ericsson AI
 company: Ericsson
 domain: telecom
 status: released
+release_date: '2024'
+website: https://www.ericsson.com
 description: 爱立信（Ericsson）推出的面向电信网络的AI解决方案体系，核心战略为'AI RAN'，结合意图驱动管理与AI原生能力，旨在为运营商提供5G及6G时代的智能网络方案。该体系涵盖RAN优化、预测性维护、网络切片自动化及能效优化等关键功能。
 capabilities:
 - 基于图神经网络GNN的RAN网络设计与优化
@@ -10,9 +12,6 @@ capabilities:
 - 5G网络切片资源动态分配与SLA实时保障
 - AI驱动的基站休眠策略与能耗管理优化
 - 面向自治网络的闭环自动化与自愈能力
-references:
-- title: Ericsson 官方网站
-  url: https://www.ericsson.com
 tags:
 - AI-RAN
 - 电信网络
@@ -23,3 +22,6 @@ tags:
 access: private-deployment
 region:
 - global
+references:
+- title: Ericsson 官方网站
+  url: https://www.ericsson.com

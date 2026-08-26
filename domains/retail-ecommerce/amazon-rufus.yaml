@@ -2,12 +2,20 @@ name: Amazon Rufus
 company: Amazon
 domain: retail-ecommerce
 status: released
+release_date: '2024'
+website: https://www.amazon.com
 description: Amazon Rufus 是亚马逊推出的一款生成式 AI 购物助手，旨在通过对话式交互帮助用户在 Amazon.com 上快速搜索和发现商品。它不仅能够回答产品相关问题，还能根据用户需求提供个性化的购物建议和比较，显著优化了电商购物体验和转化率。
 capabilities:
 - 提供个性化的商品推荐
 - 通过自然语言进行产品搜索
 - 比较不同产品的规格与价格
 - 解答关于产品细节的常见问题
+tags:
+- 购物助手
+- 消费者
+access: saas
+region:
+- global
 references:
 - title: Amazon 官网
   url: https://www.amazon.com
