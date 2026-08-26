@@ -1,0 +1,150 @@
+name: "Tinker"
+name_en: "Tinker (Thinking Machines Lab)"
+company: "Thinking Machines Lab"
+founded: "2025-02"
+website: "https://thinkingmachines.ai/tinker/"
+status: beta
+description: "Thinking Machines Lab推出的AI推理与训练平台，由前OpenAI CTO Mira Murati创立。平台提供28+模型的LoRA微调服务（支持SFT/RL/DPO/蒸馏），以及自研Inkling系列模型的Serverless推理API。融资$2B，估值$12B。"
+
+funding:
+  total_raised: "$2B"
+  latest_round: "seed"
+  valuation: "$12B"
+  lead_investors:
+    - "a16z"
+
+team:
+  size: "~212人"
+  key_people:
+    - name: "Mira Murati"
+      role: "创始人/CEO"
+      background: "前OpenAI CTO"
+
+inference_api:
+  available: true
+  status: beta
+  models:
+    - name: "Inkling"
+      model_id: "thinkingmachines/Inkling"
+      parameters: "975B MoE"
+      context_length: "256K"
+      modalities:
+        - text
+        - vision
+        - audio
+      pricing:
+        input_per_million: "$1.00"
+        output_per_million: "$4.05"
+        unit: "per million tokens"
+    - name: "Inkling-Small"
+      model_id: "thinkingmachines/Inkling-Small"
+      parameters: "276B MoE"
+      context_length: "256K"
+      modalities:
+        - text
+      pricing:
+        input_per_million: "$0.30"
+        output_per_million: "$1.20"
+        unit: "per million tokens"
+
+training_api:
+  available: true
+  status: ga
+  methods:
+    - sft
+    - lora
+    - rl
+    - dpo
+    - distillation
+  models:
+    - name: "Inkling"
+      model_id: "thinkingmachines/Inkling"
+      parameters: "975B MoE"
+      architecture: "MoE"
+      context_length: "256K"
+      pricing:
+        train_per_million: "$11.23"
+        unit: "per million tokens"
+    - name: "Inkling-Small"
+      model_id: "thinkingmachines/Inkling-Small"
+      parameters: "276B MoE"
+      architecture: "MoE"
+      context_length: "256K"
+    - name: "Nemotron-3.5-Lightning-30B-A3B"
+      parameters: "30B MoE"
+      architecture: "MoE"
+    - name: "Nemotron-3-Ultra-550B-A55B"
+      parameters: "550B MoE"
+      architecture: "MoE"
+    - name: "Nemotron-3-Super-120B-A12B"
+      parameters: "120B MoE"
+      architecture: "MoE"
+    - name: "Nemotron-3-Nano-30B-A3B"
+      parameters: "30B MoE"
+      architecture: "MoE"
+    - name: "Kimi-K2.6"
+      parameters: "Large MoE"
+      architecture: "MoE"
+      context_length: "128K"
+    - name: "Qwen3.8-27B"
+      parameters: "27B Dense"
+      architecture: "Dense"
+      context_length: "256K"
+    - name: "Qwen3.6-35B-A3B"
+      parameters: "35B MoE"
+      architecture: "MoE"
+    - name: "Qwen3.5-397B-A17B"
+      parameters: "397B MoE"
+      architecture: "MoE"
+    - name: "Qwen3.5-35B-A3B-Base"
+      parameters: "35B MoE"
+      architecture: "MoE"
+    - name: "Qwen3.5-9B"
+      parameters: "9B Dense"
+      architecture: "Dense"
+    - name: "Qwen3.5-9B-Base"
+      parameters: "9B Dense"
+      architecture: "Dense"
+    - name: "Qwen3.5-4B"
+      parameters: "4B Dense"
+      architecture: "Dense"
+    - name: "Qwen3-8B"
+      parameters: "8B Dense"
+      architecture: "Dense"
+    - name: "GPT-OSS-120B"
+      parameters: "120B MoE"
+      architecture: "MoE"
+      context_length: "128K"
+    - name: "GPT-OSS-20B"
+      parameters: "20B MoE"
+      architecture: "MoE"
+      pricing:
+        train_per_million: "$0.396"
+        unit: "per million tokens"
+    - name: "DeepSeek-V3.1"
+      parameters: "Large MoE"
+      architecture: "MoE"
+  features:
+    - "LoRA微调"
+    - "支持SFT/RL/DPO/蒸馏多种训练方法"
+    - "28+模型可微调"
+
+deployment_options:
+  - serverless
+
+region:
+  - global
+
+tags:
+  - inference-api
+  - training-api
+  - lora
+  - serverless
+  - moe
+  - mira-murati
+
+references:
+  - title: "Tinker Platform 官网"
+    url: "https://thinkingmachines.ai/tinker/"
+  - title: "Thinking Machines Lab 官网"
+    url: "https://thinkingmachines.ai/"
