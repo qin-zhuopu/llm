@@ -11,8 +11,6 @@ capabilities:
 - 材料稳定性预测
 access:
 - api
-region:
-- global
 tags:
 - 材料发现
 - 晶体

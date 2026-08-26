@@ -1,0 +1,163 @@
+INFO: [] Created new empty graph file: /projects/sandbox/llm/kg_data/graph_chunk_entity_relation.graphml
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/projects/sandbox/llm/kg_data/vdb_entities.json'} 0 data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/projects/sandbox/llm/kg_data/vdb_relationships.json'} 0 data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/projects/sandbox/llm/kg_data/vdb_chunks.json'} 0 data
+INFO: Role LLM Configuration (initialized):
+INFO:  - extract: None/None, host=None, max_async=4, timeout=240
+INFO:  - keyword: None/None, host=None, max_async=4, timeout=240
+INFO:  - query: None/None, host=None, max_async=4, timeout=240
+INFO:  - vlm: None/None, host=None, max_async=4, timeout=240
+============================================================
+LightRAG Knowledge Graph Builder
+============================================================
+
+Knowledge graph working directory: /projects/sandbox/llm/kg_data
+Using model: glm-4-flash
+Found 86 markdown files to process
+  Loaded: domains/accounting-audit/kpmg-ai.md (20195 chars)
+  Loaded: domains/accounting-audit/thomson-reuters-cocounsel-tax.md (11106 chars)
+  Loaded: domains/aerospace-defense/palantir-aip.md (3109 chars)
+  Loaded: domains/aerospace-defense/scale-ai-donovan.md (4758 chars)
+  Loaded: domains/aerospace-defense/shield-ai.md (2237 chars)
+  Loaded: domains/agriculture/fengnong-ai.md (908 chars)
+  Loaded: domains/agriculture/indigo-ag.md (1379 chars)
+  Loaded: domains/agriculture/taranis.md (1338 chars)
+  Loaded: domains/agriculture/xag-ai.md (1328 chars)
+  Loaded: domains/automotive/cerence-callm.md (9596 chars)
+  Loaded: domains/automotive/haomo-drivegpt.md (1045 chars)
+  Loaded: domains/automotive/lixiang-mindgpt.md (1025 chars)
+  Loaded: domains/automotive/wayve-lingo.md (3376 chars)
+  Loaded: domains/climate-environment/deepmind-graphcast.md (11404 chars)
+  Loaded: domains/climate-environment/fengwu.md (1956 chars)
+  Loaded: domains/construction-realestate/autodesk-ai.md (3586 chars)
+  Loaded: domains/construction-realestate/glodon-ai.md (1113 chars)
+  Loaded: domains/construction-realestate/xkool-ai.md (1445 chars)
+  Loaded: domains/education/duolingo-max.md (3135 chars)
+  Loaded: domains/education/xueersi-mathgpt.md (1135 chars)
+  Loaded: domains/education/youdao-ziyue.md (1224 chars)
+  Loaded: domains/energy/baker-hughes-ai.md (3629 chars)
+  Loaded: domains/energy/gridmatic.md (1332 chars)
+  Loaded: domains/energy/sgcc-ai.md (1284 chars)
+  Loaded: domains/finance/ant-bailing.md (1244 chars)
+  Loaded: domains/finance/bloomberggpt.md (3637 chars)
+  Loaded: domains/finance/cape-analytics.md (1604 chars)
+  Loaded: domains/finance/duxiaoman-xuanyuan.md (1283 chars)
+  Loaded: domains/finance/goldman-sachs-ai.md (7997 chars)
+  Loaded: domains/finance/hundsun-lightgpt.md (1478 chars)
+  Loaded: domains/finance/jpmorgan-ai.md (1751 chars)
+  Loaded: domains/finance/morgan-stanley-ai.md (679 chars)
+  Loaded: domains/finance/shift-technology.md (1632 chars)
+  Loaded: domains/finance/tractable.md (1507 chars)
+  Loaded: domains/government/alibaba-tongyi-gov.md (935 chars)
+  Loaded: domains/healthcare/abridge.md (1393 chars)
+  Loaded: domains/healthcare/cognizant-healthcare.md (5754 chars)
+  Loaded: domains/healthcare/hippocratic-ai.md (1203 chars)
+  Loaded: domains/healthcare/huatuo-gpt.md (13162 chars)
+  Loaded: domains/healthcare/iflytek-xiaoyi.md (3614 chars)
+  Loaded: domains/healthcare/med-palm-2.md (6861 chars)
+  Loaded: domains/healthcare/medlinker-medgpt.md (6569 chars)
+  Loaded: domains/healthcare/nabla.md (1248 chars)
+  Loaded: domains/healthcare/pathai.md (1225 chars)
+  Loaded: domains/healthcare/zuoshou-doctor.md (956 chars)
+  Loaded: domains/human-resources/beisen-ai.md (1001 chars)
+  Loaded: domains/human-resources/eightfold-ai.md (4002 chars)
+  Loaded: domains/human-resources/linkedin-hiring-ai.md (11777 chars)
+  Loaded: domains/legal/chatlaw.md (1126 chars)
+  Loaded: domains/legal/cocounsel.md (11092 chars)
+  Loaded: domains/legal/harvey-ai.md (5186 chars)
+  Loaded: domains/legal/relativity-air.md (1650 chars)
+  Loaded: domains/legal/tongyi-farui.md (1016 chars)
+  Loaded: domains/logistics-supplychain/cainiao-ai.md (1002 chars)
+  Loaded: domains/logistics-supplychain/fourkites-ai.md (10003 chars)
+  Loaded: domains/logistics-supplychain/sf-tech-ai.md (4494 chars)
+  Loaded: domains/manufacturing/siemens-industrial-copilot.md (11465 chars)
+  Loaded: domains/manufacturing/tencent-hunyuan-industrial.md (1026 chars)
+  Loaded: domains/materials-science/aionics.md (2222 chars)
+  Loaded: domains/materials-science/atinary.md (2327 chars)
+  Loaded: domains/materials-science/chemify.md (2272 chars)
+  Loaded: domains/materials-science/citrine.md (3964 chars)
+  Loaded: domains/materials-science/deepmind-gnome.md (10570 chars)
+  Loaded: domains/materials-science/kebotix.md (2213 chars)
+  Loaded: domains/materials-science/meta-ocp.md (3324 chars)
+  Loaded: domains/materials-science/microsoft-mattergen.md (3462 chars)
+  Loaded: domains/materials-science/orbital-materials.md (3413 chars)
+  Loaded: domains/materials-science/weikuang-ai.md (10469 chars)
+  Loaded: domains/media-entertainment/jasper-ai.md (12239 chars)
+  Loaded: domains/media-entertainment/netease-fuxi.md (5901 chars)
+  Loaded: domains/media-entertainment/yuewen-miaobi.md (6590 chars)
+  Loaded: domains/pharma-biotech/deep-origin.md (2371 chars)
+  Loaded: domains/pharma-biotech/iambic.md (2356 chars)
+  Loaded: domains/pharma-biotech/iktos-makya.md (7308 chars)
+  Loaded: domains/pharma-biotech/nvidia-bionemo.md (5956 chars)
+  Loaded: domains/pharma-biotech/recursion.md (6179 chars)
+  Loaded: domains/pharma-biotech/xtalpi.md (6794 chars)
+  Loaded: domains/retail-ecommerce/alibaba-tongyi-stardust.md (1023 chars)
+  Loaded: domains/retail-ecommerce/amazon-rufus.md (24046 chars)
+  Loaded: domains/retail-ecommerce/jd-yanxi.md (1029 chars)
+  Loaded: domains/retail-ecommerce/shopify-sidekick.md (6252 chars)
+  Loaded: domains/telecom/chinamobile-jiutian.md (1011 chars)
+  Loaded: domains/telecom/chinatelecom-xinghe.md (1057 chars)
+  Loaded: domains/telecom/ericsson-ai.md (1373 chars)
+  Loaded: platforms/tinker.md (2337 chars)
+  Loaded: docs/search-methods.md (4713 chars)
+
+Inserting 86 documents into knowledge graph...
+This may take several minutes depending on API rate limits.
+
+Processing batch 1/18...
+  Warning: Error processing batch 1: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 2/18...
+  Warning: Error processing batch 2: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 3/18...
+  Warning: Error processing batch 3: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 4/18...
+  Warning: Error processing batch 4: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 5/18...
+  Warning: Error processing batch 5: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 6/18...
+  Warning: Error processing batch 6: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 7/18...
+  Warning: Error processing batch 7: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 8/18...
+  Warning: Error processing batch 8: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 9/18...
+  Warning: Error processing batch 9: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 10/18...
+  Warning: Error processing batch 10: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 11/18...
+  Warning: Error processing batch 11: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 12/18...
+  Warning: Error processing batch 12: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 13/18...
+  Warning: Error processing batch 13: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 14/18...
+  Warning: Error processing batch 14: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 15/18...
+  Warning: Error processing batch 15: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 16/18...
+  Warning: Error processing batch 16: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 17/18...
+  Warning: Error processing batch 17: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+Processing batch 18/18...
+  Warning: Error processing batch 18: "Pipeline namespace 'pipeline_status' not found.\n\nPipeline status should be auto-initialized by initialize_storages().\nIf you see this error, please ensure:\n\n  1. You called await rag.initialize_storages()\n  2. For multi-workspace setups, each LightRAG instance was properly initialized\n\nStandard initialization:\n  rag = LightRAG(workspace='your_workspace')\n  await rag.initialize_storages()  # Auto-initializes pipeline_status\n\nIf you need manual control (advanced):\n  from lightrag.kg.shared_storage import initialize_pipeline_status\n  await initialize_pipeline_status(workspace='your_workspace')"
+  Continuing with next batch...
+
+Knowledge graph build complete!
+Data stored in: /projects/sandbox/llm/kg_data

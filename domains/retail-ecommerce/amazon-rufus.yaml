@@ -15,8 +15,6 @@ tags:
 - 消费者
 access:
 - saas
-region:
-- global
 references:
 - title: Amazon 官网
   url: https://www.amazon.com

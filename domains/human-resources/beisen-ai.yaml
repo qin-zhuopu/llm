@@ -13,7 +13,7 @@ capabilities:
 - 组织健康度数据分析
 - 全流程HR智能辅助
 tags:
-- HR-SaaS
+- hr-saas
 - 招聘筛选
 - 人才管理
 - 绩效预测
@@ -21,8 +21,6 @@ tags:
 - 组织分析
 access:
 - saas
-region:
-- china
 references:
 - title: 北森官方网站
   url: https://www.beisen.com

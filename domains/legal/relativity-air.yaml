@@ -22,9 +22,9 @@ website: https://www.relativity.com/aiR
 tech_stack:
   foundation_provider: Azure OpenAI
 tags:
-- Legal AI
-- E-Discovery
-- Generative AI
-- Document Review
-- Agentic AI
-- Case Strategy
+- legal ai
+- e-discovery
+- generative ai
+- document review
+- agentic ai
+- case strategy

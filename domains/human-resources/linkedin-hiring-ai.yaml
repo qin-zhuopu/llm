@@ -18,8 +18,6 @@ tags:
 - 匹配
 access:
 - saas
-region:
-- global
 references:
 - title: LinkedIn 官方网站
   url: https://www.linkedin.com

@@ -3,29 +3,23 @@ company: Indigo Agriculture
 domain: agriculture
 status: released
 website: https://www.indigo-ag.com/
-description: "Indigo Agriculture 是融合微生物组科学与 AI 的农业科技公司，碳农业市场创建者。AI 平台分析土壤微生物组数据推荐最佳种子/微生物涂层组合，提供碳信用量化与交易市场，Indigo Marketplace 数字化粮食交易平台。覆盖数千万英亩农田，致力于通过技术创新实现农业可持续发展。"
-
+description: Indigo Agriculture 是融合微生物组科学与 AI 的农业科技公司，碳农业市场创建者。AI 平台分析土壤微生物组数据推荐最佳种子/微生物涂层组合，提供碳信用量化与交易市场，Indigo
+  Marketplace 数字化粮食交易平台。覆盖数千万英亩农田，致力于通过技术创新实现农业可持续发展。
 capabilities:
-  - 土壤微生物组AI分析：推荐最佳种子-微生物涂层组合
-  - 碳农业市场：碳信用量化、交易和再生农业实践验证
-  - Indigo Marketplace：数字化粮食交易平台与物流优化
-  - MRV系统：结合遥感和地面实测的碳信用认证
-  - 作物健康预测：基于微生物组和环境数据的风险预测
-
+- 土壤微生物组AI分析：推荐最佳种子-微生物涂层组合
+- 碳农业市场：碳信用量化、交易和再生农业实践验证
+- Indigo Marketplace：数字化粮食交易平台与物流优化
+- MRV系统：结合遥感和地面实测的碳信用认证
+- 作物健康预测：基于微生物组和环境数据的风险预测
 tags:
-  - Microbiome
-  - Carbon Credits
-  - Sustainable Agriculture
-  - AgTech
-  - Marketplace
-  - Regenerative Farming
-
+- microbiome
+- carbon credits
+- sustainable agriculture
+- agtech
+- marketplace
+- regenerative farming
 access:
-  - saas
-
-region:
-  - global
-
+- saas
 references:
-  - title: "Indigo Ag Official Website"
-    url: "https://www.indigo-ag.com/"
+- title: Indigo Ag Official Website
+  url: https://www.indigo-ag.com/

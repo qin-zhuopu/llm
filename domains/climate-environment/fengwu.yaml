@@ -15,8 +15,6 @@ tags:
 - 天气预报
 access:
 - api
-region:
-- china
 references:
 - title: 上海人工智能实验室官网
   url: https://www.shlab.org.cn

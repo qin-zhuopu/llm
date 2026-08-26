@@ -3,29 +3,23 @@ company: Shift Technology
 domain: finance
 status: released
 website: https://www.shift-technology.com/
-description: "Shift Technology 是专注于保险行业的 AI 公司，用 AI Agent 变革保险最关键业务。核心能力包括 FNOL 阶段欺诈检测（识别可疑活动和新型欺诈技术）、理赔自动化（智能分诊和损失评估）、核保优化。几分钟内完成分析师团队需要数天的工作。客户包括 Assurant、Markerstudy、三井住友和 Amica 等全球保险公司。"
-
+description: Shift Technology 是专注于保险行业的 AI 公司，用 AI Agent 变革保险最关键业务。核心能力包括 FNOL 阶段欺诈检测（识别可疑活动和新型欺诈技术）、理赔自动化（智能分诊和损失评估）、核保优化。几分钟内完成分析师团队需要数天的工作。客户包括
+  Assurant、Markerstudy、三井住友和 Amica 等全球保险公司。
 capabilities:
-  - FNOL阶段欺诈检测：实时风险评分和关联网络分析
-  - 新型欺诈技术发现：检测传统规则引擎无法捕捉的欺诈模式
-  - 理赔自动化：智能分诊、损失评估和文档处理
-  - 核保优化：AI增强的风险评估和定价精准化
-  - AI Agent架构：多Agent协作完成端到端业务流程
-
+- FNOL阶段欺诈检测：实时风险评分和关联网络分析
+- 新型欺诈技术发现：检测传统规则引擎无法捕捉的欺诈模式
+- 理赔自动化：智能分诊、损失评估和文档处理
+- 核保优化：AI增强的风险评估和定价精准化
+- AI Agent架构：多Agent协作完成端到端业务流程
 tags:
-  - Insurance
-  - Fraud Detection
-  - Claims Automation
-  - Underwriting
-  - AI Agent
-  - InsurTech
-
+- insurance
+- fraud detection
+- claims automation
+- underwriting
+- ai agent
+- insurtech
 access:
-  - saas
-
-region:
-  - global
-
+- saas
 references:
-  - title: "Shift Technology Official Website"
-    url: "https://www.shift-technology.com/"
+- title: Shift Technology Official Website
+  url: https://www.shift-technology.com/

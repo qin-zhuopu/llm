@@ -13,7 +13,7 @@ capabilities:
 - AI驱动的基站休眠策略与能耗管理优化
 - 面向自治网络的闭环自动化与自愈能力
 tags:
-- AI-RAN
+- ai-ran
 - 电信网络
 - 预测性维护
 - 网络切片
@@ -21,8 +21,6 @@ tags:
 - 能效优化
 access:
 - private-deployment
-region:
-- global
 references:
 - title: Ericsson 官方网站
   url: https://www.ericsson.com

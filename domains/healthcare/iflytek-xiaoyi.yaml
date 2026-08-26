@@ -15,8 +15,6 @@ tags:
 - 医疗
 access:
 - api
-region:
-- china
 references:
 - title: 科大讯飞官网
   url: https://www.iflytek.com

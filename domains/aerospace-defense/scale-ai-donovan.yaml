@@ -22,8 +22,6 @@ tags:
 - llm-ops
 access:
 - private-deployment
-region:
-- us
 references:
 - title: Scale AI Donovan Official Website
   url: https://scale.com/donovan

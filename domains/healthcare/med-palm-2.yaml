@@ -19,14 +19,12 @@ benchmarks:
   metric: accuracy
 access:
 - api
-region:
-- global
 tags:
 - 医学问答
 - 临床决策
 - 医疗大模型
-- 生成式AI
-- Google DeepMind
+- 生成式ai
+- google deepmind
 references:
 - title: Med-PaLM 2 论文
   url: https://arxiv.org/abs/2305.09617

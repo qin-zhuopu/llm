@@ -30,13 +30,11 @@ datasets:
   type: evaluation
 access:
 - internal-only
-region:
-- europe
 tags:
 - 自动驾驶
 - 多模态
 - 视觉语言模型
-- 可解释AI
+- 可解释ai
 - 闭环控制
 references:
 - title: 'LINGO-2: Driving with Language'

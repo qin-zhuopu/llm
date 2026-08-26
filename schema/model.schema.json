@@ -3,7 +3,15 @@
   "title": "Vertical Industry LLM Model",
   "description": "垂直业务领域大语言模型结构化数据，侧重训练过程、技术栈、数据集、评测和 API 接入",
   "type": "object",
-  "required": ["name", "company", "domain", "status", "description", "capabilities", "references"],
+  "required": [
+    "name",
+    "company",
+    "domain",
+    "status",
+    "description",
+    "capabilities",
+    "references"
+  ],
   "additionalProperties": false,
   "properties": {
     "name": {
@@ -49,7 +57,12 @@
     "status": {
       "type": "string",
       "description": "模型状态",
-      "enum": ["released", "internal", "research", "deprecated"]
+      "enum": [
+        "released",
+        "internal",
+        "research",
+        "deprecated"
+      ]
     },
     "release_date": {
       "type": "string",
@@ -84,7 +97,9 @@
         {
           "type": "array",
           "description": "多个基座模型（merge 场景）",
-          "items": { "type": "string" }
+          "items": {
+            "type": "string"
+          }
         }
       ]
     },
@@ -97,7 +112,9 @@
           "description": "训练阶段列表（按时序排列）",
           "items": {
             "type": "object",
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "properties": {
               "name": {
                 "type": "string",
@@ -164,7 +181,9 @@
         "techniques": {
           "type": "array",
           "description": "关键技术（如 Flash Attention, RoPE, GQA, MoE, speculative decoding）",
-          "items": { "type": "string" }
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
@@ -173,7 +192,9 @@
       "description": "训练数据集列表",
       "items": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -190,7 +211,13 @@
           "type": {
             "type": "string",
             "description": "数据集用途",
-            "enum": ["pre-training", "sft", "rlhf", "evaluation", "other"]
+            "enum": [
+              "pre-training",
+              "sft",
+              "rlhf",
+              "evaluation",
+              "other"
+            ]
           }
         }
       }
@@ -200,7 +227,10 @@
       "description": "评测结果（测试集 + 打分）",
       "items": {
         "type": "object",
-        "required": ["name", "score"],
+        "required": [
+          "name",
+          "score"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -209,8 +239,12 @@
           "score": {
             "description": "得分",
             "oneOf": [
-              { "type": "number" },
-              { "type": "string" }
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
             ]
           },
           "metric": {
@@ -248,7 +282,15 @@
         "protocol": {
           "type": "string",
           "description": "API 协议类型",
-          "enum": ["openai-compatible", "rest", "grpc", "graphql", "websocket", "proprietary", "other"]
+          "enum": [
+            "openai-compatible",
+            "rest",
+            "grpc",
+            "graphql",
+            "websocket",
+            "proprietary",
+            "other"
+          ]
         },
         "pricing": {
           "type": "string",
@@ -267,28 +309,31 @@
     "capabilities": {
       "type": "array",
       "description": "核心能力列表",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "minItems": 1
     },
     "tags": {
       "type": "array",
       "description": "标签（用于搜索和分类）",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "access": {
       "type": "array",
       "description": "使用方式（可多选，如一个模型同时开放权重并提供 API）",
       "items": {
         "type": "string",
-        "enum": ["api", "saas", "private-deployment", "open-weights", "internal-only", "unknown"]
-      }
-    },
-    "region": {
-      "type": "array",
-      "description": "主要服务地区",
-      "items": {
-        "type": "string",
-        "enum": ["global", "china", "us", "europe", "japan", "korea", "southeast-asia", "middle-east"]
+        "enum": [
+          "api",
+          "saas",
+          "private-deployment",
+          "open-weights",
+          "internal-only",
+          "unknown"
+        ]
       }
     },
     "references": {
@@ -296,10 +341,18 @@
       "description": "参考链接（论文、官网、技术博客等）",
       "items": {
         "type": "object",
-        "required": ["title", "url"],
+        "required": [
+          "title",
+          "url"
+        ],
         "properties": {
-          "title": { "type": "string" },
-          "url": { "type": "string", "format": "uri" }
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
         }
       },
       "minItems": 1

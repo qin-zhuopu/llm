@@ -21,8 +21,6 @@ tags:
 - 数字政府
 access:
 - api
-region:
-- china
 references:
 - title: 阿里云通义千问-政务版官网
   url: https://www.aliyun.com

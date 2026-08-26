@@ -13,13 +13,11 @@ capabilities:
 tags:
 - 教育大模型
 - 数学大模型
-- AI家教
+- ai家教
 - 个性化学习
 - 智能硬件
 access:
 - private-deployment
-region:
-- china
 references:
 - title: 学而思MathGPT官方网站
   url: https://www.100tal.com

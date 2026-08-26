@@ -3,37 +3,31 @@ company: Deep Origin
 domain: pharma-biotech
 status: released
 website: https://www.deeporigin.com/
-description: "Deep Origin 是物理 AI 药物发现平台，针对 90% 药物临床失败的问题，建立量子到细胞的多尺度预测模型。在 Therapeutic Data Commons 排名第一（渗透性/脂溶性/溶解度/半衰期/hERG/AMES），CD73 项目 159 化合物达 30% 命中率。由 Oculus 联合创始人 Michael Antonov 创立，融资 $50M+$32M，获 ARPA-H 合同。"
-
+description: Deep Origin 是物理 AI 药物发现平台，针对 90% 药物临床失败的问题，建立量子到细胞的多尺度预测模型。在 Therapeutic
+  Data Commons 排名第一（渗透性/脂溶性/溶解度/半衰期/hERG/AMES），CD73 项目 159 化合物达 30% 命中率。由 Oculus 联合创始人
+  Michael Antonov 创立，融资 $50M+$32M，获 ARPA-H 合同。
 capabilities:
-  - 量子到细胞多尺度物理 AI 预测模型
-  - Therapeutic Data Commons 多项 ADMET 性质排名第一
-  - 第一性原理物理仿真与 AI 融合
-  - CD73 等靶点的高命中率药物设计
-  - ARPA-H 资助的前沿药物发现研究
-
+- 量子到细胞多尺度物理 AI 预测模型
+- Therapeutic Data Commons 多项 ADMET 性质排名第一
+- 第一性原理物理仿真与 AI 融合
+- CD73 等靶点的高命中率药物设计
+- ARPA-H 资助的前沿药物发现研究
 tech_stack:
   techniques:
-    - quantum mechanics simulation
-    - multi-scale modeling
-    - physics-informed neural networks
-    - ADMET prediction
-    - molecular dynamics
-
+  - quantum mechanics simulation
+  - multi-scale modeling
+  - physics-informed neural networks
+  - ADMET prediction
+  - molecular dynamics
 tags:
-  - physics-ai
-  - drug-discovery
-  - admet
-  - multi-scale-modeling
-  - quantum-chemistry
-  - clinical-translation
-
+- physics-ai
+- drug-discovery
+- admet
+- multi-scale-modeling
+- quantum-chemistry
+- clinical-translation
 access:
-  - internal-only
-
-region:
-  - global
-
+- internal-only
 references:
-  - title: Deep Origin 官方网站
-    url: https://www.deeporigin.com/
+- title: Deep Origin 官方网站
+  url: https://www.deeporigin.com/

@@ -3,36 +3,30 @@ company: Iambic Therapeutics
 domain: pharma-biotech
 status: released
 website: https://www.iambic.ai/
-description: "Iambic Therapeutics 是 AI 分子超级智能平台，集成 Enchant（多模态 transformer）和 NeuralPLexer（co-folding AI）技术，配合高通量实验平台每周完成从新分子设计到生物学数据的完整闭环。管线包括 IAM1363（HER2 脑穿透抑制剂，Phase 1/1b）、IAM217（KIF18A 卵巢癌）、IAM-C1（CDK2/4 乳腺癌）。"
-
+description: Iambic Therapeutics 是 AI 分子超级智能平台，集成 Enchant（多模态 transformer）和 NeuralPLexer（co-folding
+  AI）技术，配合高通量实验平台每周完成从新分子设计到生物学数据的完整闭环。管线包括 IAM1363（HER2 脑穿透抑制剂，Phase 1/1b）、IAM217（KIF18A
+  卵巢癌）、IAM-C1（CDK2/4 乳腺癌）。
 capabilities:
-  - Enchant 多模态 transformer 统一分子数据理解
-  - NeuralPLexer co-folding AI 预测蛋白-配体结合结构
-  - 高通量实验平台每周从设计到生物学数据闭环
-  - AI 驱动 hit-to-lead 优化将数月缩至数周
-  - 脑穿透小分子抑制剂设计能力
-  - 多靶点临床管线(HER2/KIF18A/CDK2/4)
-
+- Enchant 多模态 transformer 统一分子数据理解
+- NeuralPLexer co-folding AI 预测蛋白-配体结合结构
+- 高通量实验平台每周从设计到生物学数据闭环
+- AI 驱动 hit-to-lead 优化将数月缩至数周
+- 脑穿透小分子抑制剂设计能力
+- 多靶点临床管线(HER2/KIF18A/CDK2/4)
 tech_stack:
   techniques:
-    - multi-modal transformer
-    - protein-ligand co-folding
-    - generative molecular design
-    - high-throughput experimentation
-
+  - multi-modal transformer
+  - protein-ligand co-folding
+  - generative molecular design
+  - high-throughput experimentation
 tags:
-  - ai-drug-discovery
-  - multi-modal-transformer
-  - protein-structure
-  - clinical-stage
-  - brain-penetrant
-
+- ai-drug-discovery
+- multi-modal-transformer
+- protein-structure
+- clinical-stage
+- brain-penetrant
 access:
-  - internal-only
-
-region:
-  - global
-
+- internal-only
 references:
-  - title: Iambic Therapeutics 官方网站
-    url: https://www.iambic.ai/
+- title: Iambic Therapeutics 官方网站
+  url: https://www.iambic.ai/

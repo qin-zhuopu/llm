@@ -21,8 +21,6 @@ tags:
 - 云网融合
 access:
 - internal-only
-region:
-- china
 references:
 - title: 中国电信官方网站
   url: https://www.chinatelecom.com.cn

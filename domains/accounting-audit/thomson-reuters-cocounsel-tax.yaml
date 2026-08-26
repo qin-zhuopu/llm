@@ -22,8 +22,6 @@ tags:
 - enterprise-security
 access:
 - saas
-region:
-- global
 references:
 - title: CoCounsel Official Website
   url: https://www.thomsonreuters.com/coco

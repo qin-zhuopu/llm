@@ -24,8 +24,6 @@ tags:
 - multi-modal
 access:
 - api
-region:
-- global
 references:
 - title: Cerence AI 官网
   url: https://www.cerence.com

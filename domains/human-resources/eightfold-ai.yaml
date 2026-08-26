@@ -18,14 +18,12 @@ api:
   protocol: proprietary
 access:
 - saas
-region:
-- global
 tags:
 - 人才智能
-- AI招聘
-- Agentic AI
+- ai招聘
+- agentic ai
 - 技能匹配
-- HR科技
+- hr科技
 references:
 - title: Eightfold AI官网
   url: https://eightfold.ai

@@ -10,8 +10,6 @@ capabilities:
 - 极端天气事件预测
 access:
 - api
-region:
-- global
 tags:
 - 天气预报
 - 图神经网络
