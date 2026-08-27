@@ -1,0 +1,68 @@
+name: PolyAI
+name_en: PolyAI
+company: PolyAI
+domain: customer-service
+status: released
+website: https://poly.ai
+description: "成立于2017年的企业级语音客服AI公司，创始人为剑桥大学机器学习研究者，定位世界上最逼真的语音AI agent。其Agentic Dialog Platform由专有模型Raven驱动，在10亿+企业对话上训练，强调full-stack对话原生runtime而非把语音硬接到聊天。处理欺诈、故障、分诊、多语言纠纷等最复杂对话，默认SOC 2/HIPAA/GDPR/PCI DSS合规。客户包括PG&E、UniCredit、Quicken等，单个语音agent曾带来120万美元收入，投资方含Khosla Ventures、Georgian。"
+parameters: 未公开
+architecture: "对话原生 Agentic Dialog Platform + 专有模型 Raven"
+release_date: '2017'
+training:
+  stages:
+  - name: pre-training
+    description: 在10亿+企业客服对话上训练专有对话模型Raven
+  - name: fine-tuning
+    description: 针对企业特定场景（语音、多语言、合规）适配对话agent
+datasets:
+- name: Enterprise Conversations
+  description: 10亿+真实企业客服对话，用于训练Raven对话模型
+  size: 1B+ conversations
+  type: pre-training
+benchmarks:
+- name: Revenue (voice agent)
+  score: "$1.2M"
+  metric: revenue
+  comparison: "酒店/赌场品牌单个语音agent带来120万美元收入"
+  source: self-reported
+- name: Cost Savings
+  score: "$1M+"
+  metric: cost_savings
+  comparison: "零售服装品牌减少季节性招聘节省100万美元以上"
+  source: self-reported
+tech_stack:
+  framework: 专有对话模型 Raven + 对话原生 runtime
+  inference: 企业云部署（语音优先，低延迟）
+  techniques:
+  - Proprietary dialog model (Raven)
+  - Dialog-native runtime
+  - Poly Agent Builder (no-code) + ADK (developer)
+  - Multilingual voice AI
+  - Compliance guardrails (SOC 2/HIPAA/GDPR/PCI DSS)
+api:
+  available: true
+  protocol: proprietary
+  documentation: https://poly.ai
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 处理欺诈/故障/分诊/多语言纠纷等最复杂的语音客服对话
+- 专有模型Raven驱动的full-stack对话agent
+- 面向非技术团队(Poly Agent Builder)与开发者(ADK)两种构建方式
+- 多语言、原生说话人质量的语音AI
+- 默认合规治理与全决策可见性
+access:
+- saas
+- api
+tags:
+- customer-service
+- voice-ai
+- conversational-ai
+- proprietary-model
+- ai-agent
+- enterprise-ai
+references:
+- title: PolyAI Official Website
+  url: https://poly.ai
+- title: PolyAI About
+  url: https://poly.ai/about/

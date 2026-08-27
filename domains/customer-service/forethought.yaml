@@ -1,0 +1,67 @@
+name: Forethought
+name_en: Forethought
+company: Forethought
+domain: customer-service
+status: released
+website: https://www.forethought.ai
+description: "面向现代支持团队的客服AI平台，为任意CX平台提供企业级AI Agent。核心是fully agentic的AI agent，不只理解意图还会推理、决策并依据业务策略采取行动实现端到端客服；从历史工单和帮助中心内容学习；多agent系统在客户旅程中协作识别、解决、分类和支持团队。产品含Solve(deflection/自助)与工单分类路由。报告平均15x ROI、首次响应时间缩短55%、解决率最高98%。曾获2018 TechCrunch Disrupt Battlefield。"
+parameters: 未公开
+architecture: "多Agent客服系统（Solve + 工单分类/路由）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在客户历史工单与帮助中心内容上训练，提供个性化客服
+benchmarks:
+- name: ROI
+  score: 15x
+  metric: roi
+  comparison: "平均15x投资回报"
+  source: self-reported
+- name: First Response Time
+  score: "-55%"
+  metric: response_time
+  comparison: "首次响应时间平均缩短55%"
+  source: self-reported
+- name: Resolution Rate
+  score: "98%"
+  metric: resolution_rate
+  comparison: "解决率最高达98%"
+  source: self-reported
+- name: Ticket Classification (Upwork)
+  score: "90%"
+  metric: accuracy
+  comparison: "Upwork新工单分类准确率与覆盖率90%，自助率65%"
+  source: self-reported
+tech_stack:
+  framework: 多Agent客服编排平台
+  inference: 企业云部署（对接主流helpdesk）
+  techniques:
+  - Agentic reasoning & action
+  - Multi-agent collaboration
+  - Ticket classification & routing
+  - Trained on customer tickets & help center
+  - Deflection / self-serve (Solve)
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 端到端agentic客服（推理、决策、依策略行动）
+- 从历史工单与帮助中心学习的个性化客服
+- 多agent协作识别/解决/分类工单
+- 工单优先级预测与最优坐席路由
+- 与主流helpdesk（如Zendesk/Salesforce）集成
+access:
+- saas
+- api
+tags:
+- customer-service
+- ai-agent
+- ticket-automation
+- multi-agent
+- deflection
+- enterprise-ai
+references:
+- title: Forethought Official Website
+  url: https://www.forethought.ai

@@ -1,0 +1,5 @@
+name: 客户服务
+name_en: Customer Service
+tier: 1
+description: "对话式客服Agent、工单自动化、坐席实时辅助、客服质检、语音客服、CX平台内嵌AI"
+market_notes: "客户服务是垂类AI商业化最成熟的领域之一，以Sierra、Decagon为代表的对话式Agent按成功结果计费，形成清晰的商业闭环；CCaaS/CX平台（NiCE、Salesforce、Intercom等）普遍内嵌专有客服模型，赛道融资密集、ARR增长快。"

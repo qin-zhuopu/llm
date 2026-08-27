@@ -1,0 +1,69 @@
+name: Cresta
+name_en: Cresta
+company: Cresta
+domain: customer-service
+status: released
+website: https://cresta.com
+description: "面向联络中心的生成式AI平台，定位每一次客户对话的AI平台，提供人机协同的统一平台。产品覆盖自助容留(AI Agent)、坐席实时辅助(Agent Assist)与质检分析(AI Analyst/Quality Management)。部署行业领先的多语言AI，受Fortune 500信赖，客户包括United Airlines、Alaska Airlines、CVS、Cox等。报告成效包括5.5倍容留率、CSAT提升23%、销售收入提升20%、NPS提升30个点、质检成本降低50%。"
+parameters: 未公开
+architecture: "联络中心生成式AI平台（AI Agent + Agent Assist + Quality Management）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业联络中心对话数据上适配，理解特定业务流程与坐席工作流
+  - name: rlhf
+    description: 基于容留率、CSAT、销售转化等结果信号优化
+benchmarks:
+- name: Containment
+  score: 5.5x
+  metric: containment_rate
+  comparison: "vs 基线: 容留率提升5.5倍"
+  source: self-reported
+- name: CSAT
+  score: "+23%"
+  metric: csat
+  comparison: "客户CSAT提升23%"
+  source: self-reported
+- name: Revenue (sales)
+  score: "+20%"
+  metric: revenue
+  comparison: "销售场景收入提升20%"
+  source: self-reported
+- name: Quality Management Cost
+  score: "-50%"
+  metric: cost_reduction
+  comparison: "质检(QM)成本降低50%"
+  source: self-reported
+tech_stack:
+  framework: 生成式AI客服平台
+  inference: 企业云部署（安全、可扩展）
+  techniques:
+  - AI Agent (self-service / containment)
+  - Real-time Agent Assist
+  - AI Analyst / Quality Management
+  - Multilingual conversation AI
+  - Post-call automation
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 面向联络中心的自助/容留AI Agent
+- 坐席实时辅助（Agent Assist）
+- 100%对话质检与质量管理（Quality Management）
+- 通话后处理自动化与销售效果提升
+- 多语言、覆盖整个客户旅程的对话AI
+access:
+- saas
+- api
+tags:
+- customer-service
+- contact-center
+- agent-assist
+- conversational-ai
+- quality-management
+- enterprise-ai
+references:
+- title: Cresta Official Website
+  url: https://cresta.com

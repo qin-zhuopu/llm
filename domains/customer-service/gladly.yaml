@@ -1,0 +1,67 @@
+name: Gladly
+name_en: Gladly
+company: Gladly
+domain: customer-service
+status: released
+website: https://www.gladly.com
+description: "为头部品牌构建的agentic commerce客服平台，把客服与商务合一，Commerce AI覆盖每个客户时刻。差异化在于以人而非工单为中心：One thread永不重置，围绕人组织对话，结合Customer Profile、Conversation History和Live Journey Context(浏览/购物车)。号称唯一零售训练的AI Commerce方案，其Commerce Agent可控制理想结果、品牌语气、推销强度、推荐产品数量和折扣意愿。报告转化率+19%、平均订单额+34美元、41%购物车挽回、4.8星满意度。"
+parameters: 未公开
+architecture: "Agentic commerce 客服平台（零售训练 Commerce Agent + Voice AI）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在零售/电商客服与商务数据上训练Commerce Agent，理解品牌语气与销售策略
+benchmarks:
+- name: Conversion Lift
+  score: "+19%"
+  metric: conversion_rate
+  comparison: "转化率提升19%"
+  source: self-reported
+- name: Average Order Value
+  score: "+$34"
+  metric: aov
+  comparison: "平均订单额提升34美元"
+  source: self-reported
+- name: Cart Recovery
+  score: "41%"
+  metric: cart_saved
+  comparison: "挽回41%购物车"
+  source: self-reported
+- name: CSAT (Rothy's)
+  score: "93%"
+  metric: csat
+  comparison: "Rothy's对话时长缩短66%，CSAT 93%"
+  source: self-reported
+tech_stack:
+  framework: Agentic commerce 客服平台
+  inference: 云SaaS（全渠道线程化 + Voice AI）
+  techniques:
+  - People-centered threading (one thread, never resets)
+  - Retail-trained Commerce Agent
+  - Voice AI
+  - Live journey context (browsing/cart)
+  - Configurable sell assertiveness & discounting
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 以人为中心的线程化客服（跨渠道永不重置）
+- 零售训练的Commerce Agent同时完成售卖/服务/支持
+- Voice AI语音客服
+- 结合客户档案、对话历史与实时旅程上下文
+- 可配置的推销强度、推荐数量与折扣策略
+access:
+- saas
+- api
+tags:
+- customer-service
+- ecommerce
+- agentic-commerce
+- conversational-ai
+- voice-ai
+- retail
+references:
+- title: Gladly Official Website
+  url: https://www.gladly.com

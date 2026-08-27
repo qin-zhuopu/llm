@@ -1,0 +1,62 @@
+name: Kore.ai
+name_en: Kore.ai
+company: Kore.ai
+domain: customer-service
+status: released
+website: https://kore.ai
+description: "企业级agentic AI平台，为客户与员工体验构建AI agent，新平台Artemis为面向agentic enterprise的AI可编程平台。面向服务的AI提供实时响应的客服agent与人工坐席工具，并有银行、医疗(HIPAA)、零售、IT、HR等行业专用应用及数百个预构建agent模板。平台强调编排、运行时合规、100%交互审计、无厂商锁定(底层LLM可替换)。被Forrester Wave评为客户服务与员工服务对话式AI平台领导者，战略伙伴含Microsoft与AWS。"
+parameters: 未公开
+architecture: "企业 agentic AI 可编程平台（Artemis）+ 多 agent 编排"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业客服/员工场景与行业知识上适配对话及推理agent
+benchmarks:
+- name: EBIT Gain
+  score: ">5%"
+  metric: ebit_gain
+  comparison: "Optimize with AI 带来 >5% EBIT 提升"
+  source: self-reported
+- name: Forrester Wave (Customer Service)
+  score: Leader
+  metric: analyst_rating
+  comparison: "Forrester Wave 客户服务对话式AI平台 Q2 2026 领导者"
+  source: third-party
+- name: Everest Group PEAK Matrix
+  score: Leader
+  metric: analyst_rating
+  comparison: "Everest Group Agentic AI Products PEAK Matrix 2026 领导者"
+  source: third-party
+tech_stack:
+  framework: Agentic AI 可编程平台（Artemis）
+  inference: 企业云部署（Azure/AWS，可替换底层LLM）
+  techniques:
+  - Multi-agent orchestration (parallel, fault recovery)
+  - Runtime compliance controls
+  - Agentic RAG search
+  - LLM-agnostic (no vendor lock-in)
+  - 100% interaction logging & audit
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 面向客户与员工的实时客服AI agent及坐席工具
+- 多agent并行编排与独立故障恢复
+- 行业专用agent应用（银行/医疗/零售/IT/HR）
+- 运行时合规控制与全交互审计治理
+- LLM无关架构，底层模型可替换避免厂商锁定
+access:
+- saas
+- api
+tags:
+- customer-service
+- agentic-ai
+- conversational-ai
+- multi-agent
+- enterprise-ai
+- contact-center
+references:
+- title: Kore.ai Official Website
+  url: https://kore.ai

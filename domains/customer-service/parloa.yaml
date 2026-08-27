@@ -1,0 +1,45 @@
+name: Parloa
+name_en: Parloa
+company: Parloa
+domain: customer-service
+status: released
+website: https://www.parloa.com
+description: "面向联络中心的AI Agent管理平台，AI agent可即时处理数百万次任意语言的对话、消除等待时间，把客户对话转化为长期忠诚。覆盖金融服务(身份验证/理赔)、公用事业(停电/账单)、电商零售(订单/退货)、医疗(预约/处方)、IT(工单/密码重置)等行业用例。平台编排完整AI Agent生命周期(build/run/manage)，面向可靠性和规模构建，是唯一获得SAP endorsed app premium认证的客户面向语音AI和联络中心平台。"
+parameters: 未公开
+architecture: "联络中心 AI Agent 管理平台（生命周期 build/run/manage）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在多语言联络中心场景数据上适配语音客服agent
+tech_stack:
+  framework: AI Agent 管理与编排平台
+  inference: 企业云部署（语音优先，多语言）
+  techniques:
+  - AI agent lifecycle management (build/run/manage)
+  - Multilingual voice AI
+  - Enterprise system integration
+  - SAP endorsed app premium certified
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 即时处理数百万次任意语言的语音客服对话
+- 覆盖金融/公用事业/电商/医疗/IT等行业用例
+- 编排完整AI Agent生命周期（构建、运行、管理）
+- 与企业后端系统安全集成
+- 从被动支持转向主动的长期客户关系
+access:
+- saas
+- api
+tags:
+- customer-service
+- voice-ai
+- contact-center
+- ai-agent
+- conversational-ai
+- enterprise-ai
+references:
+- title: Parloa Official Website
+  url: https://www.parloa.com

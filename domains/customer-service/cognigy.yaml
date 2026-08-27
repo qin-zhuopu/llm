@@ -1,0 +1,46 @@
+name: Cognigy
+name_en: Cognigy (NiCE Cognigy)
+company: NiCE (Cognigy)
+domain: customer-service
+status: released
+website: https://www.cognigy.com
+description: "企业联络中心的对话式与agentic AI平台，跨语音和数字渠道交付AI Agent，支持多语言、企业后端系统集成和实时人工坐席交接。已被联络中心/CX软件厂商NiCE收购并整合进其CX平台，为大型品牌规模化提供CX AI。定位帮助企业在联络中心快速部署AI Agent处理客服交互，替代表现不佳的人工客服体验。"
+parameters: 未公开
+architecture: "企业联络中心对话式/agentic AI 平台（语音 + 数字渠道）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业客服对话与知识库上适配，理解品牌语气与工作流
+tech_stack:
+  framework: 对话式/agentic AI 编排平台
+  inference: 企业云部署（集成 NiCE CX 平台）
+  techniques:
+  - Conversational & agentic AI
+  - Omnichannel (voice + digital)
+  - Multilingual support
+  - Enterprise/backend system integration
+  - Live-agent handoff
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 跨语音和数字渠道部署企业客服AI Agent
+- 多语言客服交互处理
+- 与企业/后端系统集成执行业务动作
+- 实时人工坐席交接
+- 集成于NiCE CX平台规模化交付
+access:
+- saas
+- api
+tags:
+- customer-service
+- contact-center
+- conversational-ai
+- agentic-ai
+- omnichannel
+- enterprise-ai
+references:
+- title: Cognigy Official Website
+  url: https://www.cognigy.com
