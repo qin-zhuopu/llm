@@ -1,0 +1,76 @@
+name: LandingAI LandingLens
+name_en: LandingAI LandingLens
+company: LandingAI
+domain: manufacturing
+status: released
+release_date: '2021'
+website: https://landing.ai
+description: LandingAI 由吴恩达（Andrew Ng）创立，是数据中心 AI（data-centric AI）理念的开创者。旗舰工业产品 LandingLens 是计算机视觉平台，让制造工程师用小数据集构建、部署并持续改进深度学习缺陷检测模型，支持分类、目标检测、分割和异常检测，云端训练 + 边缘部署（LandingEdge）。核心思想是工业缺陷检测数据量小，杠杆在于系统化提升数据质量与标注一致性而非堆模型规模。另有 Agentic Document Extraction（ADE）视觉优先文档抽取。50+ 企业客户，已处理 10 亿+ 图像与文档。
+parameters: 未公开
+architecture: CNN / Vision Transformer deep networks (视觉分类/检测/分割) + agentic orchestration
+base_model: Vision Transformer
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模视觉数据上预训练 CNN / 视觉 Transformer 骨干，用于图像分类、目标检测和分割
+  - name: fine-tuning
+    description: 数据中心 AI 工作流——用客户小规模缺陷图像集（几十到几百张）微调，通过策展数据质量、一致标注和失败样本反馈闭环提升精度
+tech_stack:
+  framework: PyTorch
+  inference: LandingEdge (边缘 CPU/GPU 推理) + cloud REST API
+  techniques:
+  - Data-centric AI (数据质量与标注一致性优先)
+  - Small-dataset training
+  - Human-in-the-loop labeling & review
+  - Agentic orchestration (plan-decide-verify)
+  - Edge deployment (LandingEdge)
+  - Confidence scoring & audit traceability
+datasets:
+- name: Customer Defect Image Sets
+  description: 客户产线缺陷图像（分类/检测/分割/异常检测），通常几十到几百张，强调标注一致性与策展
+  type: sft
+benchmarks:
+- name: Documents & Images Processed
+  score: 1B+
+  metric: throughput_scale
+  comparison: 累计处理超过 10 亿图像和文档
+  source: self-reported
+- name: Processing Latency
+  score: <2s
+  metric: latency
+  comparison: 'vs 通用 LLM 文档处理: 处理时延低于 2 秒'
+  source: self-reported
+- name: Enterprise Customers
+  score: 50+
+  metric: customer_count
+  comparison: 50+ 企业客户采用
+  source: self-reported
+api:
+  available: true
+  documentation: https://landing.ai
+  protocol: rest
+  pricing: SaaS 订阅 + 企业部署（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 工业产线自动化视觉质量检测
+- 小数据集构建缺陷检测模型（分类/检测/分割/异常检测）
+- 数据中心 AI 工作流，失败样本反馈闭环持续改进
+- 边缘部署（LandingEdge）实现在线实时检测
+- 与工厂摄像头和 PLC 集成实现 pass/fail 信号
+- Agentic Document Extraction 视觉优先文档结构化抽取
+access:
+- saas
+- api
+- private-deployment
+tags:
+- industrial-ai
+- machine-vision
+- defect-detection
+- data-centric-ai
+- quality-inspection
+- edge-deployment
+references:
+- title: LandingAI Official Website
+  url: https://landing.ai
+- title: LandingLens Visual Inspection Platform
+  url: https://landing.ai/landinglens

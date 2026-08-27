@@ -1,0 +1,71 @@
+name: Uptake Asset Performance Management
+name_en: Uptake Asset Performance Management
+company: Uptake Technologies
+domain: manufacturing
+status: released
+release_date: '2024'
+website: https://www.uptake.com
+description: Uptake Technologies 是工业 AI / 预测性维护公司，摄取车队和资产数据（传感器、车联网 telematics、维修记录），用机器学习模型做实时异常检测、故障预测和处方式维护建议，覆盖离散工业资产和车队。提供资产绩效管理（APM）、保修智能（自动识别符合条件的索赔）和告警过滤。2014 年由 Brad Keywell 创立，2015 年估值约 23 亿美元；2026 年 3 月 Bosch 宣布计划收购以在全球规模化 AI 预测性维护。
+parameters: 未公开
+architecture: Machine learning models over sensor/telematics/maintenance time-series (APM 平台)
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模传感器/车联网/维修时序数据上训练机器学习模型，构建失效模式库并学习资产正常与异常运行模式
+  - name: fine-tuning
+    description: 针对具体资产类型和车队做微调，输出实时异常检测、故障预测和处方式维护建议
+tech_stack:
+  framework: PyTorch (Asset IO 工业数据科学平台)
+  inference: Cloud + edge telematics
+  techniques:
+  - Time-series anomaly detection
+  - Failure prediction
+  - Failure-mode library
+  - Prescriptive maintenance recommendations
+  - Warranty claim intelligence
+datasets:
+- name: Fleet & Asset Telemetry
+  description: 传感器、车联网 telematics 和维修记录时序数据，用于故障预测和资产健康分析
+  type: pre-training
+- name: Failure-Mode Library
+  description: 工业资产失效模式知识库，用于监督模型和处方式维护建议
+  type: sft
+benchmarks:
+- name: Customer ROI
+  score: 4X
+  metric: return_on_investment
+  comparison: 'United Road 案例: 用 Uptake Fleet 实现 4x ROI 提升车队正常运行时间'
+  source: self-reported
+- name: Real-time Detection
+  score: 无需接触车辆
+  metric: capability_level
+  comparison: 'vs 传统人工检修: 无需接触车辆即可实时识别问题'
+  source: self-reported
+api:
+  available: true
+  documentation: https://www.uptake.com
+  protocol: rest
+  pricing: 企业 SaaS 订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 工业资产与车队的预测性维护
+- 基于传感器/车联网/维修数据的实时异常检测
+- 故障预测与处方式维护建议
+- 资产绩效管理（APM）跨车队标准化洞察
+- 保修智能自动识别并处理符合条件的索赔
+- 按时间/严重度/位置/受影响系统过滤告警
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- predictive-maintenance
+- asset-performance-management
+- telematics
+- anomaly-detection
+- fleet
+references:
+- title: Uptake Official Website
+  url: https://www.uptake.com
+- title: Uptake Joins Bosch to Scale AI-Powered Fleet Maintenance
+  url: https://www.uptake.com

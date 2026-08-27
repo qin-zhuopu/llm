@@ -1,0 +1,71 @@
+name: Bright Machines Brain (Physical AI)
+name_en: Bright Machines Brain (Physical AI)
+company: Bright Machines
+domain: manufacturing
+status: released
+release_date: '2024'
+website: https://www.brightmachines.com
+description: Bright Machines 是下一代制造商，用机器人和物理 AI（physical AI）改变产品设计与制造方式，专注软件定义的 AI 基础设施制造——用 AI 和计算机视觉驱动的模块化机器人装配单元（Microfactories）构建 AI 服务器、AI 机架和 AI 存储系统。其 Bright Machines Brain 软件/AI 栈用计算机视觉和 ML 实现自适应装配、在线检测和闭环控制，无需传统 PLC 手工编程即可重编程机器人单元。与 Microsoft（云/车间流式）和 NVIDIA（Omniverse 数字孪生）合作，累计融资超 4.3 亿美元。
+parameters: 未公开
+architecture: Physical AI (computer vision + ML) driving software-defined robotic assembly cells
+training:
+  stages:
+  - name: pre-training
+    description: 在机器人操作与装配图像数据上预训练计算机视觉与操作模型，学习部件识别、抓取和装配动作
+  - name: fine-tuning
+    description: 针对具体产品（AI 服务器/机架/存储系统）装配任务微调，结合 NVIDIA Omniverse 数字孪生仿真做虚拟调试与自适应装配
+tech_stack:
+  framework: PyTorch
+  inference: Edge (机器人单元) + NVIDIA Omniverse 仿真
+  techniques:
+  - Physical AI (computer vision + robotic manipulation)
+  - Software-defined automation (Bright Machines Brain)
+  - Adaptive assembly & closed-loop control
+  - Digital twin (NVIDIA Omniverse)
+  - Cloud streaming to factory floor (Microsoft)
+datasets:
+- name: Robotic Assembly Data
+  description: 机器人装配单元的图像与操作数据，用于自适应装配、抓取和在线检测
+  type: pre-training
+benchmarks:
+- name: Time to Revenue
+  score: 40%
+  metric: time_reduction
+  comparison: 'vs 传统制造: 上市时间加快 40%'
+  source: self-reported
+- name: Total Cost
+  score: 30%
+  metric: cost_reduction
+  comparison: 'vs 传统制造: 总成本降低 30%'
+  source: self-reported
+- name: Reliability
+  score: 15%
+  metric: reliability_improvement
+  comparison: 'vs 传统制造: 可靠性提升 15%'
+  source: self-reported
+api:
+  available: false
+  pricing: 制造服务 + 系统集成（联系销售）
+  auth_method: 企业合作
+capabilities:
+- 物理 AI 驱动的机器人自适应装配
+- 计算机视觉在线检测与闭环质量控制
+- 软件定义自动化，无需 PLC 手工编程重编程机器人单元
+- NVIDIA Omniverse 数字孪生仿真与虚拟调试
+- AI 服务器/机架/存储系统等数据中心基础设施装配
+- 基于云的流式能力接入车间
+access:
+- private-deployment
+- saas
+tags:
+- industrial-ai
+- physical-ai
+- robotics
+- software-defined-manufacturing
+- digital-twin
+- nvidia-partnership
+references:
+- title: Bright Machines Official Website
+  url: https://www.brightmachines.com
+- title: Bright Machines Physical AI Manufacturing
+  url: https://www.brightmachines.com

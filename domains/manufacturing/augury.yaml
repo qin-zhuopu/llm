@@ -1,0 +1,72 @@
+name: Augury Machine Health & Process Health
+name_en: Augury Machine Health & Process Health
+company: Augury
+domain: manufacturing
+status: released
+release_date: '2023'
+website: https://www.augury.com
+description: Augury 是工业 AI 公司，专注制造业的 Machine Health（机器健康）与 Process Health（工艺健康）。将专有多模态边缘传感器（振动、温度、磁场、超声，Halo）与机器学习诊断模型结合，在旋转设备（电机、泵、风机、压缩机）机械故障发生前进行预测，避免非计划停机。诊断模型在超过 11 亿小时真实机器运行读数上训练，并有人工诊断工程师验证闭环给出高置信低误报告警。已达独角兽估值，客户含高露洁-棕榄、杜邦、好时等大型制造商。
+parameters: 未公开
+architecture: Multi-modal sensor ML diagnostics (振动/温度/磁场/超声 + 机器学习分类器)
+training:
+  stages:
+  - name: pre-training
+    description: 在超过 11 亿小时真实机器运行读数（世界最大规模机器故障特征标注数据集）上训练多模态时序诊断模型，学习旋转设备的正常与故障振动/温度/磁场/超声特征
+  - name: fine-tuning
+    description: 针对具体设备类型（电机、泵、风机、压缩机）和客户现场做微调，结合人工诊断工程师的验证反馈提升精度、降低误报
+tech_stack:
+  framework: PyTorch (专有多模态时序 ML pipeline)
+  inference: Edge sensor (Halo) + cloud diagnostics
+  techniques:
+  - Multi-modal sensing (vibration/temperature/magnetic/ultrasound)
+  - Time-series anomaly detection
+  - Failure-mode classification
+  - Human-in-the-loop diagnostic verification
+  - Agentic operator assistants
+datasets:
+- name: Augury Machine Readings Dataset
+  description: 超过 11 亿小时真实旋转设备运行读数（振动/温度/磁场/超声），带故障特征标注
+  size: 1.1B+ machine-hours
+  type: pre-training
+- name: Diagnostic Engineer Labels
+  description: 人工诊断工程师对机器故障的验证标注，用于监督训练和误报抑制
+  type: sft
+benchmarks:
+- name: Training Data Scale
+  score: 1.1B+ machine-hours
+  metric: data_scale
+  comparison: 业内最大规模的机器故障特征标注数据集
+  source: self-reported
+- name: Diagnostic Confidence
+  score: 高置信低误报
+  metric: alert_quality
+  comparison: 'vs 纯阈值告警: 混合 AI + 人工诊断工程师验证闭环显著降低误报'
+  source: self-reported
+api:
+  available: true
+  documentation: https://www.augury.com
+  protocol: rest
+  pricing: 传感器硬件 + SaaS 订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 旋转设备（电机、泵、风机、压缩机）预测性维护
+- 多模态边缘传感（振动、温度、磁场、超声）实时监测
+- 机器故障早期预测与失效模式诊断
+- Process Health 生产过程分析，减少浪费提升产量
+- 混合 AI + 人工诊断工程师验证，给出高置信告警
+- 情境感知 Agent 将机器与运营知识转化为可执行行动
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- predictive-maintenance
+- machine-health
+- iot-sensors
+- anomaly-detection
+- rotating-equipment
+references:
+- title: Augury Official Website
+  url: https://www.augury.com
+- title: Augury Platform (Machine Health & Process Health)
+  url: https://www.augury.com

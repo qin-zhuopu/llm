@@ -1,0 +1,68 @@
+name: Falkonry Time Series AI
+name_en: Falkonry Time Series AI
+company: Falkonry
+domain: manufacturing
+status: released
+release_date: '2023'
+website: https://falkonry.com
+description: Falkonry 构建面向工业运营的 Time Series AI（时序 AI）平台，摄取高频多变量传感器/时序数据，用机器学习实时检测异常、诊断根因、预测故障，无需数据科学团队手工建模。平台自动学习正常运行模式、无需人工阈值即可标记偏差，并生成人类可读的诊断叙事将多个相关信号连接为可能根因。应用于制造、国防（美国海军/国防部 CBM）、金属、能源和重工业的预测性维护与工艺可靠性。
+parameters: 未公开
+architecture: Multivariate time-series ML engine + LLM diagnostic narration layer
+training:
+  stages:
+  - name: pre-training
+    description: 在多变量工业时序数据上训练模式识别与异常检测模型，学习设备与工艺的正常运行行为
+  - name: fine-tuning
+    description: 针对具体资产和工艺场景（燃气轮机、金属、国防装备等）适配，并结合 LLM 生成诊断叙事
+tech_stack:
+  framework: PyTorch (专有时序 ML 引擎)
+  inference: Edge + cloud streaming inference
+  techniques:
+  - Multivariate time-series pattern recognition
+  - Unsupervised anomaly detection
+  - Event condensation
+  - Root-cause diagnostics
+  - LLM-assisted diagnostic narration
+datasets:
+- name: Industrial Multivariate Time Series
+  description: 高频多变量传感器时序数据（温度、压力、振动、流量等），用于学习正常模式与异常
+  type: pre-training
+benchmarks:
+- name: Modeling Automation
+  score: 无需手工建模
+  metric: automation_level
+  comparison: 'vs 传统数据科学工作流: 无需人工阈值或手工特征工程即可实时检测异常'
+  source: self-reported
+- name: Diagnostic Output
+  score: 自然语言根因叙事
+  metric: capability_level
+  comparison: 将多个相关信号连接为可解释的可能根因（如燃烧室进气不稳定诊断）
+  source: self-reported
+api:
+  available: true
+  documentation: https://falkonry.com
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 多变量工业时序数据的实时异常检测
+- 无需人工阈值自动学习正常运行模式
+- 设备故障预测与状态维护（CBM）
+- 自然语言诊断叙事与根因分析
+- 良率/质量分析与工艺可靠性监测
+- 边缘与云流式部署，集成历史库与控制系统
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- time-series
+- predictive-maintenance
+- anomaly-detection
+- condition-based-maintenance
+- root-cause-analysis
+references:
+- title: Falkonry Official Website
+  url: https://falkonry.com
+- title: Falkonry Time Series AI Platform
+  url: https://falkonry.com

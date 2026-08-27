@@ -1,0 +1,78 @@
+name: Instrumental Manufacturing Acceleration Platform
+name_en: Instrumental Manufacturing Acceleration Platform
+company: Instrumental
+domain: manufacturing
+status: released
+release_date: '2023'
+website: https://instrumental.com
+description: Instrumental 为复杂电子制造构建 Manufacturing Acceleration Platform（制造加速平台），由前苹果工程师创立。它跨批次、产线、工厂捕获检测/测试/工艺信号形成工程数据集，用计算机视觉和 AI 做 Discovery-Driven Inspection（发现驱动检测），在生产早期识别此前未知的失效模式，并将失效提升为生产检测项部署控制。将每次失效分析所需时间节省 90%。客户含 NVIDIA、Meta、Toast，应用于 AI 算力基础设施、大批量电子和航空航天国防。
+parameters: 未公开
+architecture: Computer vision models over assembly imagery + multimodal test/process signal analytics
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模装配线图像上预训练计算机视觉模型，学习正常装配外观与部件特征
+  - name: fine-tuning
+    description: 用客户跨批次装配图像和测试/工艺信号微调，做发现驱动检测和跨批次功能漂移检测
+tech_stack:
+  framework: PyTorch
+  inference: Cloud + on-line factory inspection
+  techniques:
+  - Discovery-driven inspection (未知失效模式发现)
+  - Anomaly detection across builds
+  - Multimodal signal fusion (image + test + process)
+  - AI-accelerated root cause analysis
+  - Cross-factory inspection standard synchronization
+datasets:
+- name: Factory Signals Dataset
+  description: 跨批次、产线、工厂的检测/测试/工艺信号与装配图像，形成用于持续改进的工程数据集
+  type: pre-training
+benchmarks:
+- name: Failure Analysis Time Saved
+  score: 90%
+  metric: time_reduction
+  comparison: 'vs 人工失效分析: 每次失效分析节省 90% 时间，几分钟内识别并排除潜在根因'
+  source: self-reported
+- name: Engineering Weeks Saved
+  score: 900+
+  metric: engineering_weeks
+  comparison: 'Meta 案例: 跨 7 个项目每年节省 900+ 工程周'
+  source: self-reported
+- name: NPI Acceleration
+  score: 14 days
+  metric: time_acceleration
+  comparison: 'NVIDIA 案例: 整机托盘与机架装配通过测试与调试加速 14 天'
+  source: self-reported
+- name: Customer ROI
+  score: 5.3X
+  metric: return_on_investment
+  comparison: 'Toast 案例: 更早识别产品缺陷实现 5.3X ROI'
+  source: self-reported
+api:
+  available: true
+  documentation: https://instrumental.com
+  protocol: rest
+  pricing: 企业 SaaS 订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 跨批次/产线/工厂捕获检测、测试、工艺信号形成工程数据集
+- 发现驱动检测（Discovery-Driven Inspection）识别未知失效模式
+- 将发现的失效提升为生产检测项并部署控制拦截问题
+- AI 加速失效分析与根因排查
+- 新产品导入（NPI）加速与首次通过良率提升
+- 跨批次和产线功能漂移检测
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- machine-vision
+- electronics-manufacturing
+- defect-detection
+- npi
+- root-cause-analysis
+references:
+- title: Instrumental Official Website
+  url: https://instrumental.com
+- title: Instrumental Manufacturing Acceleration Platform
+  url: https://instrumental.com

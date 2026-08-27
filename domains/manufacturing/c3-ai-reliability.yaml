@@ -1,0 +1,78 @@
+name: C3 AI Reliability
+name_en: C3 AI Reliability
+company: C3.ai
+domain: manufacturing
+status: released
+release_date: '2024'
+website: https://www.c3.ai/products/c3-ai-reliability/
+description: C3 AI Reliability 是 C3.ai 面向工业资产运营方的 AI 预测性维护应用，运行于 C3 Agentic AI Platform。它统一传感器数据、维修记录和备件库存到灵活数据模型，用先进时序基础模型和成熟 ML 模型对即将发生的设备风险做早期准确预测，并自动生成失效模式识别与建议加速根因诊断，另配 AI 驱动的搜索与聊天界面将资产历史与机构知识带入实时运营。覆盖离散/连续/批次/半批次生产过程。Verdantix 在 2025 工业 AI 分析软件报告中评其为第一领导者，自报停机减少 50%、OEE 提升 5%。
+parameters: 未公开
+architecture: Time-series foundation models + classical ML on C3 Agentic AI Platform (model-driven architecture)
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模工业时序数据上预训练时序基础模型，学习设备正常运行模式与失效前兆
+  - name: fine-tuning
+    description: 针对具体资产和生产过程（离散/连续/批次/半批次）微调，结合失效模式识别与生成式 AI 搜索/聊天层
+tech_stack:
+  framework: C3 Agentic AI Platform (model-driven architecture)
+  inference: Edge + cloud
+  techniques:
+  - Time-series foundation models
+  - Predictive failure detection
+  - Automated root-cause diagnostics
+  - Generative-AI search & chat
+  - Unified data model & type system
+datasets:
+- name: Sensor & Maintenance Data
+  description: 传感器数据、维修记录、备件库存、文档和工艺图，统一为灵活数据模型做预测分析
+  type: pre-training
+benchmarks:
+- name: Downtime Reduction
+  score: 50%
+  metric: downtime_reduction
+  comparison: 'vs 部署前: 停机减少最多 50%'
+  source: self-reported
+- name: OEE Improvement
+  score: 5%
+  metric: oee_improvement
+  comparison: 'vs 部署前: 整体设备效率（OEE）提升 5%'
+  source: self-reported
+- name: Alert Noise Reduction
+  score: 99%
+  metric: alert_noise_reduction
+  comparison: 'vs 传统告警: 告警噪声减少 99%'
+  source: self-reported
+- name: Verdantix Industrial AI Analytics 2025
+  score: '#1 Leader'
+  metric: analyst_ranking
+  comparison: Verdantix 2025 工业 AI 分析软件报告评为第一领导者
+  source: third-party
+api:
+  available: true
+  documentation: https://www.c3.ai/products/c3-ai-reliability/
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 统一传感器/维修/备件数据的资产健康预测分析
+- 时序基础模型驱动的预测性故障检测
+- 自动化失效模式识别与根因诊断
+- AI 驱动搜索与聊天带入资产历史与机构知识
+- 维护排程与案例优先级排序
+- 覆盖离散/连续/批次/半批次生产过程
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- predictive-maintenance
+- time-series-foundation-model
+- asset-reliability
+- root-cause-analysis
+- generative-ai
+references:
+- title: C3 AI Reliability Product Page
+  url: https://www.c3.ai/products/c3-ai-reliability/
+- title: Verdantix Names C3 AI #1 in Industrial AI Analytics 2025
+  url: https://www.c3.ai/products/c3-ai-reliability/
