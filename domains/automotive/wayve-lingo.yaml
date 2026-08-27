@@ -28,6 +28,15 @@ datasets:
 - name: LingoQA
   description: Wayve发布的自动驾驶场景描述与问答基准数据集
   type: evaluation
+benchmarks:
+- name: LingoQA
+  score: 开源基准
+  metric: scene_description_qa
+  comparison: "Wayve发布的可解释自动驾驶基准，评估模型描述场景元素、预测未来动作、解释理由和标注注意力焦点的能力"
+  source: self-reported
+api:
+  available: false
+  pricing: 研发阶段(嵌入Wayve自动驾驶系统)
 access:
 - internal-only
 tags:

@@ -1,5 +1,19 @@
 # 变更日志
 
+## 2026-08-26 (数据质量复盘)
+
+### 复盘与修复
+- 新增 `docs/data-quality-review.md`：全量数据质量复盘报告
+- 修复关键字段缺失：ant-bailing 补全 training/datasets/benchmarks（技术分 25→71）、wayve-lingo 和 microsoft-mattergen 补全 benchmarks
+- 修复后：缺 benchmarks/training/datasets 的模型均为 0
+- 现状：110 模型 + 3 平台，综合质量分 78（B:95/T:77/S:64），343 条 benchmark 全标注 source，100% 有 raw 资料且 fresh
+
+### 两轮新渠道搜索成果（累计 +10 家报告未覆盖公司）
+- 第一轮：Hebbia、EvenUp、Norm Ai、Eudia、Decagon
+- 第二轮：Abnormal AI、Material Security、Tomorrow.io、Paradox、Eilla
+
+---
+
 ## 2026-08-26
 
 ### Schema v3 变更

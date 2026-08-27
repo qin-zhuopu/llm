@@ -7,6 +7,38 @@ website: https://www.antgroup.com
 description: 蚂蚁百灵是蚂蚁集团旗下AI研究机构inclusionAI打造的大语言模型系列，作为集团AI战略的核心技术底座，服务于支付宝、蚂蚁财富、蚂蚁保险等多个业务场景。该模型系列拥有万亿参数规模的旗舰版本Ling-1T，主打生产级混合推理MoE架构的Ling-3.0-flash（124B总参数/5.1B激活参数），以及轻量级的Ling-3.0-Tiny（7.9B参数）。模型在金融服务、智能体构建、多模态感知及代码编写等维度展现了强大能力，兼顾了推理能力与推理效率。
 parameters: 124B (Ling-3.0-flash), 7.9B (Ling-3.0-Tiny), 1T (Ling-1T)
 architecture: Mixture of Experts (MoE)
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模通用语料和金融领域数据上预训练MoE模型，构建Ling系列(1T/124B/7.9B)不同规模的基座能力
+  - name: post-training
+    description: 面向金融服务、智能体(Agent)场景的后训练优化，Ling-3.0-flash专为Agent场景打造混合推理能力，兼顾推理效果与效率
+tech_stack:
+  framework: 自研MoE训练框架(inclusionAI)
+  inference: 生产级MoE推理(支持大规模部署)
+  techniques:
+  - Mixture of Experts (MoE)
+  - 混合推理(hybrid reasoning)
+  - 稀疏激活(124B总参/5.1B激活)
+  - 多模态感知(SkySense遥感)
+datasets:
+- name: 金融领域语料
+  description: 覆盖支付宝、蚂蚁财富、蚂蚁保险等业务场景的金融文档、客服对话、风控数据
+  type: pre-training
+- name: SkySense遥感数据
+  description: 用于训练20亿参数遥感基础模型SkySense的多模态遥感影像数据
+  type: pre-training
+benchmarks:
+- name: 行业综合评测
+  score: 领先水平
+  metric: multi-dimensional
+  comparison: "覆盖文本生成/逻辑推理/代码编写/数学计算多维度，Ling-3.0-Tiny跑分超越同级别开源模型"
+  source: self-reported
+- name: SkySense (CVPR 2024)
+  score: SOTA
+  metric: remote_sensing_tasks
+  comparison: "20亿参数遥感基础模型，论文被CVPR 2024接收"
+  source: paper
 capabilities:
 - 金融智能客服与复杂咨询问答
 - 金融风险评估与反欺诈检测

@@ -31,6 +31,22 @@ datasets:
 - name: Candidate Materials Dataset
   description: 超过 3200 万个计算机生成的候选材料用于筛选
   type: other
+benchmarks:
+- name: Screening Acceleration
+  score: 数个数量级加速
+  metric: speedup
+  comparison: "vs 传统随机筛选: 在探索新材料组合空间上提供数个数量级(orders of magnitude)加速"
+  source: self-reported
+- name: DFT Emulator Speed
+  score: 3+ orders of magnitude
+  metric: speedup
+  comparison: "vs 原始DFT模拟器: 深度学习emulator快3个数量级以上"
+  source: self-reported
+- name: Battery Electrolyte Discovery
+  score: 减少70%锂用量
+  metric: material_property
+  comparison: "发现新电池电解质材料，比标准锂离子电池少用70%锂"
+  source: self-reported
 tags:
 - generative-ai
 - diffusion-model
