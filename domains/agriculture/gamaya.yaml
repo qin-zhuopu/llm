@@ -1,0 +1,62 @@
+name: Gamaya
+name_en: Gamaya
+company: Gamaya
+domain: agriculture
+status: released
+website: https://www.gamaya.com/
+description: Gamaya 是一家专注于甘蔗产量优化的农业 AI 公司，平台结合人工智能、遥感和农艺建模，针对甘蔗种植和加工的特定需求提供解决方案。公司在甘蔗领域训练和测试 AI 平台超过十年，已监测 400 万公顷农田，业务覆盖巴西、印度、南部非洲和美国，并支持巴西 RenovaBio 碳信用认证。
+parameters: 未公开
+architecture: deep learning remote sensing + agronomic modeling
+training:
+  stages:
+  - name: pre-training
+    description: 基于十余年积累的甘蔗遥感影像、气候数据和农艺记录训练作物特定模型，覆盖含糖量、成熟度、开花期和土壤水分等指标。
+  - name: fine-tuning
+    description: 针对不同产区（巴西、印度、南部非洲、美国）和种植体系微调，提升含糖量和产量预测精度。
+tech_stack:
+  framework: Custom remote sensing + agronomic modeling pipeline
+  techniques:
+  - Satellite imagery analysis
+  - Crop-specific (sugarcane) modeling
+  - Sugar content / yield prediction
+  - Soil moisture prediction (sensor-free)
+  - Carbon (RenovaBio) geospatial monitoring
+datasets:
+- name: Sugarcane Monitoring Dataset
+  description: 覆盖 400 万公顷的甘蔗遥感影像、气候数据和农艺记录，累计超过十年
+  size: 4M hectares monitored
+  type: pre-training
+benchmarks:
+- name: Sugar Content Prediction Accuracy
+  score: 97%+
+  metric: accuracy
+  comparison: 'vs 传统方法: 含糖量预测准确率 97% 以上（公司自报）'
+  source: self-reported
+- name: Yield Uplift
+  score: +5%
+  metric: sugar_yield
+  comparison: 'vs 基线: 客户糖产量提升最高 5%，每公顷增收约 85 美元'
+  source: self-reported
+- name: Soil Moisture Lead Time
+  score: 14 days
+  metric: lead_time
+  comparison: 'vs 物理传感器: 无需传感器即可提前 14 天预测土壤水分'
+  source: self-reported
+capabilities:
+- 基于卫星影像和气候数据的甘蔗每周产量预测
+- 含糖量预测与最佳收获时间推荐
+- 成熟度、开花期定制化农艺方案
+- 无物理传感器的土壤水分预测与灌溉排程
+- RenovaBio 碳信用认证支持（CBIO、森林砍伐报告、CAR 分析）
+access:
+- saas
+tags:
+- precision-agriculture
+- sugarcane
+- yield-optimization
+- remote-sensing
+- carbon-credits
+- renovabio
+references:
+- title: Gamaya Official Website
+  url: https://www.gamaya.com/

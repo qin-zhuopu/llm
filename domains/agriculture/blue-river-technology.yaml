@@ -1,0 +1,57 @@
+name: Blue River Technology See & Spray
+name_en: Blue River Technology See & Spray
+company: Blue River Technology (John Deere)
+domain: agriculture
+status: released
+website: https://www.bluerivertechnology.com/
+description: Blue River Technology 是约翰迪尔（John Deere）旗下子公司，2017 年被 John Deere 收购。旗舰产品 See & Spray 通过车载计算机视觉和机器学习模型，在农机行进中实时逐像素区分作物与杂草，仅对杂草点喷除草剂，可大幅减少除草剂用量。属于自研专用视觉模型加农机执行系统的模型系统型垂类 AI。
+parameters: 未公开
+architecture: embedded deep learning (object detection / segmentation)
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模标注的田间作物与杂草图像训练深度学习目标检测/语义分割模型，覆盖多种作物和杂草类别。
+  - name: fine-tuning
+    description: 针对不同作物、生长阶段和田间光照条件微调，保证在拖拉机行进速度下的实时推理精度。
+tech_stack:
+  framework: Custom embedded deep learning pipeline
+  inference: On-vehicle real-time GPU inference
+  techniques:
+  - Real-time object detection
+  - Semantic segmentation (crop vs weed)
+  - High-frame-rate camera arrays
+  - Edge/embedded GPU inference
+  - Targeted spot spraying
+datasets:
+- name: Crop and Weed Imagery
+  description: 大规模标注的田间作物与杂草图像，覆盖多种作物、生长阶段和光照条件
+  type: pre-training
+benchmarks:
+- name: Herbicide Reduction
+  score: 大幅降低
+  metric: herbicide_savings
+  comparison: 'vs 全田喷洒: 仅对识别出的杂草点喷，显著减少除草剂用量'
+  source: self-reported
+- name: Real-time Discrimination
+  score: 逐像素
+  metric: resolution
+  comparison: 'vs 传统喷雾机: 在农机行进速度下逐像素实时区分作物与杂草'
+  source: self-reported
+capabilities:
+- 实时机器视觉逐像素区分作物与杂草
+- 针对杂草的精准点喷除草剂（See & Spray）
+- 车载嵌入式 GPU 的实时推理
+- 减少除草剂用量、保护田间健康与可持续性
+- 与 John Deere 农机设备一体化集成
+access:
+- private-deployment
+tags:
+- precision-agriculture
+- see-and-spray
+- computer-vision
+- weed-detection
+- agricultural-robotics
+- john-deere
+references:
+- title: Blue River Technology Official Website
+  url: https://www.bluerivertechnology.com/

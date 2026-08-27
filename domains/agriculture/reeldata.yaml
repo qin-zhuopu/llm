@@ -1,0 +1,56 @@
+name: ReelData AI
+name_en: ReelData AI
+company: ReelData
+domain: agriculture
+status: released
+website: https://www.reeldata.ai/
+description: ReelData AI 是加拿大哈利法克斯的水产养殖 AI 公司，专注陆基循环水养殖（RAS）。ReelData AI Suite 覆盖 smolt、post-smolt 和 on-growing 阶段，包含 AI 智能投喂、非侵入式生物量估计（ReelWeight/ReelBiomass）、AI 相机、应激监测（ReelStress）和健康监测（ReelHealth），帮助陆基养殖场以最大盈利能力和可持续性运营。
+parameters: 未公开
+architecture: deep learning computer vision (RAS aquaculture)
+training:
+  stages:
+  - name: pre-training
+    description: 基于陆基循环水养殖场采集的鱼群图像和水质数据训练计算机视觉模型，覆盖体重估计、食欲识别、行为和健康分析。
+  - name: fine-tuning
+    description: 针对 smolt、post-smolt 和 on-growing 不同阶段及不同鱼种（如虹鳟）微调，专为陆基养殖场景从零构建。
+tech_stack:
+  framework: Custom RAS computer vision pipeline
+  techniques:
+  - Non-intrusive biomass estimation (ReelWeight)
+  - Real-time appetite detection (Smart Feeding)
+  - Fish behavior monitoring
+  - Water-quality integrated stress detection (ReelStress)
+  - Image-based health detection (ReelHealth)
+datasets:
+- name: RAS Fish Imagery and Water Data
+  description: 陆基循环水养殖场采集的鱼群图像与水质数据，用于生物量、行为、应激和健康建模
+  type: pre-training
+benchmarks:
+- name: Biomass Estimation Speed
+  score: within hours
+  metric: latency
+  comparison: 'vs 人工抽样称重: 非侵入式、自主，在数小时内给出高精度生物量分布'
+  source: self-reported
+- name: Feed Optimization
+  score: 减少浪费
+  metric: feed_efficiency
+  comparison: 'vs 固定投喂: 实时识别鱼群食欲并调整投喂量，最大化生物量同时限制饲料浪费'
+  source: self-reported
+capabilities:
+- AI 智能投喂：实时识别鱼群食欲并自动调整投喂量
+- 非侵入式生物量估计（ReelWeight/ReelBiomass），数小时内出结果
+- AI 相机监测鱼群行为并计数饲料
+- ReelStress 整合投喂与水质数据实时识别应激
+- ReelHealth 基于图像早期检测应激、性成熟和疾病
+access:
+- saas
+tags:
+- aquaculture
+- land-based-aquaculture
+- ras
+- computer-vision
+- smart-feeding
+- biomass-estimation
+references:
+- title: ReelData AI Official Website
+  url: https://www.reeldata.ai/

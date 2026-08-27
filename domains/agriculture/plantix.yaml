@@ -1,0 +1,58 @@
+name: Plantix
+name_en: Plantix
+company: PEAT GmbH
+domain: agriculture
+status: released
+website: https://plantix.net/en/
+description: Plantix 是德国 PEAT GmbH 开发的作物诊断移动应用，被称为全球下载量最高的免费作物诊断与防治 App。用户拍摄患病作物照片，深度学习计算机视觉模型在几秒内识别病害、虫害和营养缺乏，并给出化学与生物防治建议。主打印度、巴西、印尼等新兴市场的小农户，累计回答超过 1 亿个作物相关问题。
+parameters: 未公开
+architecture: deep learning computer vision (image classification)
+training:
+  stages:
+  - name: pre-training
+    description: 基于海量农户众包上传的田间作物图像训练深度卷积神经网络分类模型，覆盖多种作物的病害、虫害和营养缺乏标注类别。
+  - name: fine-tuning
+    description: 随着社区持续上传新图像和专家标注，模型持续迭代以覆盖更多作物和病害变种，并适配不同地区的种植体系。
+tech_stack:
+  framework: Custom deep learning pipeline
+  techniques:
+  - Image classification (CNN)
+  - Crowdsourced field imagery training
+  - Mobile on-device / cloud inference
+  - Expert-in-the-loop annotation
+datasets:
+- name: Crowdsourced Crop Imagery
+  description: 全球农户通过 App 上传的患病作物照片，配合农艺专家标注的病害/虫害/营养缺乏类别
+  type: pre-training
+- name: Crop Disease Knowledge Base
+  description: 覆盖多种作物病害的诊断说明、化学与生物防治方案的结构化知识库
+  type: other
+benchmarks:
+- name: Questions Answered
+  score: 100M+
+  metric: questions
+  comparison: 'vs 同类 ag-tech App: 全球下载量最高，累计回答超过 1 亿个作物相关问题'
+  source: self-reported
+- name: Diagnosis Latency
+  score: 秒级
+  metric: latency
+  comparison: 'vs 人工农技咨询: 拍照后几秒内返回诊断和防治建议'
+  source: self-reported
+capabilities:
+- 拍照识别作物病害、虫害和营养缺乏，秒级返回诊断结果
+- 提供针对性的化学与生物防治建议
+- agri-experts 专家社区在线答疑
+- 特定作物病害信息与预防方法知识库
+- 面向小农户的多语言移动端交付
+access:
+- saas
+tags:
+- crop-diagnosis
+- plant-disease
+- computer-vision
+- smallholder-farmers
+- mobile-app
+- precision-agriculture
+references:
+- title: Plantix Official Website
+  url: https://plantix.net/en/
