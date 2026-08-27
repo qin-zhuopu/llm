@@ -43,6 +43,11 @@ capabilities:
 - 车载嵌入式 GPU 的实时推理
 - 减少除草剂用量、保护田间健康与可持续性
 - 与 John Deere 农机设备一体化集成
+business:
+  latest_round: 被 John Deere 收购 (2017)
+  customers: John Deere 农机集成客户
+  investors:
+  - John Deere
 access:
 - private-deployment
 tags:
