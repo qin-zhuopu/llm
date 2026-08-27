@@ -120,8 +120,8 @@ python scripts/build_kg.py --stats    # 只输出统计信息
 该脚本读取 `domains/` 和 `platforms/` 下的所有 YAML 文件，提取实体（模型、公司、领域、基座模型、标签、接入方式、平台）和关系，构建有向图并保存为 `kg_data.graphml`。
 
 图谱结构：
-- **节点类型**：`model`、`company`、`domain`、`base_model`、`tag`、`access_type`、`platform`
-- **关系**：`company → developed → model`、`model → in_domain → domain`、`model → based_on → base_model`、`model → tagged → tag`、`model → accessible_via → access_type`、`company → operates → platform`
+- **节点类型**：`model`、`company`、`domain`、`base_model`、`tag`、`access_type`、`platform`、`script`（脚本）、`doc`（文档）
+- **关系**：`company → developed → model`、`model → in_domain → domain`、`model → based_on → base_model`、`model → tagged → tag`、`model → accessible_via → access_type`、`company → operates → platform`、`doc → documents → script`（文档引用脚本，可发现孤儿脚本）
 
 **查询节点关系（模糊匹配）：**
 

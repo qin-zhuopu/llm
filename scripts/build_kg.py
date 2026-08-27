@@ -1,18 +1,29 @@
 #!/usr/bin/env python3
 """从 YAML 文件构建知识图谱（NetworkX，无需 API）。
 
-直接解析现有 YAML 数据建立实体-关系图，不依赖任何外部服务。
+直接解析现有 YAML/脚本/文档建立实体-关系图，不依赖任何外部服务。
+
+节点类型：
+  model / company / domain / base_model / tag / access_type / platform
+  script（scripts/*.py，附 docstring 摘要）
+  doc（AGENTS.md/README.md/SCRIPTS.md/CHANGELOG.md/docs/*.md）
+关系：
+  company→developed→model、model→in_domain→domain、model→based_on→base_model、
+  model→tagged→tag、model→accessible_via→access_type、company→operates→platform、
+  doc→documents→script（哪个文档引用了哪个脚本，可发现孤儿脚本）
 
 用法:
     python scripts/build_kg.py              # 构建并保存
     python scripts/build_kg.py --stats      # 只输出统计
-    python scripts/build_kg.py --query "Microsoft"  # 查询某节点的关系
+    python scripts/build_kg.py --query "Microsoft"  # 查询某节点的关系（含 script/doc）
 
 输出:
     kg_data.graphml — 可用 Gephi/yEd/Cytoscape 可视化
 """
 
 import argparse
+import ast
+import re
 import sys
 from pathlib import Path
 
@@ -91,6 +102,43 @@ def build_graph():
             if company:
                 G.add_node(company, type="company")
                 G.add_edge(company, name, relation="operates")
+
+    # === 从 scripts/*.py 建图（脚本节点） ===
+    scripts_dir = ROOT / "scripts"
+    script_names = []
+    if scripts_dir.exists():
+        for f in sorted(scripts_dir.glob("*.py")):
+            if f.name == "__init__.py":
+                continue
+            script_names.append(f.name)
+            # 提取模块 docstring 首行作为摘要
+            summary = ""
+            try:
+                doc = ast.get_docstring(ast.parse(f.read_text(encoding="utf-8")))
+                if doc:
+                    summary = doc.strip().splitlines()[0][:120]
+            except Exception:
+                pass
+            G.add_node(f.name, type="script", summary=summary,
+                       file=str(f.relative_to(ROOT)))
+
+    # === 从文档建图（文档节点 + 文档→脚本 引用关系） ===
+    doc_files = []
+    for p in [ROOT / "AGENTS.md", ROOT / "README.md", ROOT / "SCRIPTS.md", ROOT / "CHANGELOG.md"]:
+        if p.is_file():
+            doc_files.append(p)
+    docs_dir = ROOT / "docs"
+    if docs_dir.exists():
+        doc_files.extend(sorted(docs_dir.rglob("*.md")))
+
+    for f in doc_files:
+        doc_name = str(f.relative_to(ROOT))
+        text = f.read_text(encoding="utf-8", errors="ignore")
+        G.add_node(doc_name, type="doc", file=doc_name)
+        # 文档 → 脚本：文档中提及了哪些脚本
+        for sname in script_names:
+            if sname in text:
+                G.add_edge(doc_name, sname, relation="documents")
 
     return G
 
