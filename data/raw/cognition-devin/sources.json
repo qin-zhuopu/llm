@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://cognition.ai/blog/introducing-devin",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "swe-bench-technical-report.md",
+      "url": "https://cognition.ai/blog/swe-bench-technical-report",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
+    },
+    {
+      "filename": "wikipedia.md",
+      "url": "https://en.wikipedia.org/wiki/Cognition_AI",
+      "fetched_at": "2026-08-27",
+      "type": "news"
+    }
+  ]
+}

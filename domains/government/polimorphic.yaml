@@ -1,0 +1,62 @@
+name: Polimorphic (Poli)
+name_en: Polimorphic
+company: Polimorphic
+domain: government
+status: released
+website: https://www.polimorphic.com
+description: Polimorphic 是面向美国地方政府（city/county）的完整 AI 服务交付平台，核心 AI 助手名为 Poli。属于工作流应用型：面向政务场景编排
+  AI（语音/短信/网页）+ CRM + 工作流编排，强调"政府专用、可控、合规"。Poli 比居民走完电话树更快地回答问题、路由来电、留言或解决常见问题，提供夜间/周末/多语种支持；工作流编排端到端处理请求并给领导层实时运营可视度。入选公共部门
+  AI 中心首届 AI 50 榜单，最新融资由 General Catalyst 领投。
+parameters: 未公开（编排通用模型 + RAG）
+architecture: Government-specific AI assistant (voice/text/web) + CRM + workflow orchestration over general models
+base_model: 前沿通用基座模型（未公开具体型号）
+training:
+  stages:
+  - name: other
+    description: Polimorphic 面向政务场景编排通用模型并结合政府知识库/工作流，未公开自研垂类基础模型的训练细节
+tech_stack:
+  techniques:
+  - Multi-channel AI (voice / text / web)
+  - Retrieval over government knowledge and services
+  - Workflow orchestration across departments
+  - Government CRM (real-time demand and service records)
+  - Multilingual support
+benchmarks:
+- name: Request turnaround (Tooele County, UT)
+  score: 缩短约 50%
+  metric: turnaround_time
+  comparison: 把两天的处理标准缩短到一半
+  source: self-reported
+- name: New Jersey coverage
+  score: 1 in 3 residents
+  metric: population_coverage
+  comparison: 新泽西每 3 名居民有 1 人可通过 Polimorphic 合作获得更快服务
+  source: self-reported
+business:
+  latest_round: General Catalyst 领投
+  customers: 美国多州 city/county（如 Newport RI、Tooele County UT、Polk County NC）
+  investors:
+  - General Catalyst
+capabilities:
+- 居民跨渠道自助（语音/短信/网页）：回答问题、路由来电、留言、解决常见事项
+- 24/7 与多语种服务，覆盖夜间与周末
+- 跨部门工作流编排（规划/公共工程/财政/康乐），端到端处理请求
+- 政府 CRM：记录每次交互与服务交付，提供领导层实时运营可视度
+- 灾后恢复等应急场景的服务协调（如飓风 Helene 后 Polk County）
+access:
+- saas
+tags:
+- government
+- govtech
+- citizen-services
+- "311"
+- workflow-orchestration
+- multilingual
+- workflow-application
+data_quality:
+  completeness: minimal
+  gap_reason: data-scarce
+  note: Polimorphic 编排通用模型、面向政务的产品型公司，官网未公开底层模型/参数/训练细节与具体融资金额；已收录官网能力、客户案例与 AI 50 认可。
+references:
+- title: Polimorphic Official Website
+  url: https://www.polimorphic.com

@@ -1,0 +1,76 @@
+name: Poolside (Laguna S)
+name_en: Poolside
+company: Poolside AI
+domain: software-development
+status: released
+release_date: 2026-07
+website: https://poolside.ai
+description: Poolside 是专门为软件与编码应用训练大语言模型的模型原生型垂类公司，由 GitHub 前 CTO Jason Warner 与 Eiso
+  Kant 于 2023 年创立。其模型专为软件开发设计（而非通用任务），用自然语言 prompt 生成并测试代码，并在其上构建自主软件开发引擎。2026-07 发布
+  118B 参数的开源权重代码大模型 Laguna S 2.1（OpenMDW 许可）。自研 Model Factory 训练系统采用 GPU-to-GPU 权重传输、自动化架构消融和大规模从代码执行中做强化学习。NVIDIA
+  2025-10 投资后估值达 $12B。
+parameters: 118B (Laguna S 2.1)
+architecture: decoder-only transformer (code-specialized foundation model)
+training:
+  stages:
+  - name: pre-training
+    description: 面向代码/软件工程的专用基础模型预训练，模型专为软件开发设计而非通用任务
+  - name: rlaif
+    description: Model Factory 系统中大规模从代码执行结果做强化学习（reinforcement learning from code execution at scale），用真实执行反馈优化代码生成
+tech_stack:
+  framework: Model Factory（自研训练与评估系统）
+  techniques:
+  - Reinforcement learning from code execution at scale
+  - GPU-to-GPU weight transfers
+  - Automated architecture ablations
+  - Code-specialized pretraining
+datasets:
+- name: 代码与软件工程语料
+  description: 面向软件开发的代码数据，用于专用基础模型预训练
+  type: pre-training
+- name: 代码执行反馈数据
+  description: 由代码执行结果构成的强化学习信号（RL from code execution）
+  type: rlhf
+benchmarks:
+- name: Laguna S 2.1 open-weights release
+  score: 118B params
+  metric: model_scale
+  comparison: 被 Forbes/TNW 视为"西方对 DeepSeek/Qwen 的回应"的开源权重代码模型
+  source: self-reported
+business:
+  funding_total: $626M+ ($26M 种子 + $100M + $500M Series B)
+  latest_round: NVIDIA 战略投资 (至多 $1B, 2025-10)
+  valuation: $12B (2025-10)
+  investors:
+  - Bain Capital
+  - DST Global
+  - eBay
+  - NVIDIA
+  customers: 美国国防部 (DoD)、RTX Corporation 等美国国防工业客户
+capabilities:
+- 面向软件工程的专用基础模型，用自然语言 prompt 生成并测试代码
+- 自主软件开发引擎（autonomous software development product）
+- 从代码执行结果做大规模强化学习，用真实反馈提升代码正确性
+- 开源权重模型（Laguna S 2.1）支持企业私有部署与二次开发
+- 通过 Amazon Bedrock/EC2 在企业自有 AWS 环境部署
+access:
+- open-weights
+- api
+- private-deployment
+tags:
+- software-development
+- code-llm
+- foundation-model
+- model-native
+- open-weights
+- reinforcement-learning
+- model-factory
+data_quality:
+  completeness: partial
+  gap_reason: coverage-gap
+  note: 已知参数量(118B)、训练系统(Model Factory)与 RL-from-execution 方法及融资估值；具体训练 token 数、硬件规模与 benchmark 分数官方尚未系统披露，Model Factory 博客系列后续可补充技术细节。
+references:
+- title: Poolside Official Website
+  url: https://poolside.ai
+- title: Poolside AI (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Poolside_AI

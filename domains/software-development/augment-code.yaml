@@ -1,0 +1,56 @@
+name: Augment Code (Cosmos)
+name_en: Augment Code
+company: Augment Code
+domain: software-development
+status: released
+website: https://www.augmentcode.com
+description: Augment Code 定位"组织规模的自主软件开发"，核心产品 Cosmos 是一个 Agent 编排平台，把软件交付变成 always-on
+  的"软件工厂"：Agent 承担 SDLC 中重复的中间环节（工单转 PR、代码评审、漏洞修复、事件响应），工程师把守质量关卡。属于模型系统型：以自研上下文引擎（Context
+  Engine）做代码库理解 + 组织级 Agent 编排与治理，编排前沿模型而非自研通用基础模型。支持本地/Dev VM/托管云/自有云多种运行环境，并集成 Slack/GitHub/Jira/CI。
+parameters: 未公开（编排前沿基座模型）
+architecture: Context Engine (codebase understanding) + agent orchestration platform (Cosmos) over frontier models
+base_model: 前沿通用基座模型（未公开具体型号）
+training:
+  stages:
+  - name: other
+    description: Augment 不训练通用基础模型；核心为自研 Context Engine（代码库理解）与 Agent 运行时/编排，编排前沿模型完成 SDLC 任务
+tech_stack:
+  inference: Agent Runtime（调度/隔离）+ Sandboxes（隔离执行）
+  techniques:
+  - Context Engine (codebase understanding)
+  - Multi-loop SDLC automation (ticket-to-PR / review / CVE / incident)
+  - Reusable expert templates (env + capabilities + memory)
+  - Human-in-the-loop escalation
+  - Organization knowledge / shared memory
+  - Integrations (Slack / GitHub / Jira / CI)
+benchmarks:
+- name: Code review turnaround
+  score: 分钟级首轮评审
+  metric: review_latency
+  comparison: 每个 PR 在数分钟内获得实质性首轮评审
+  source: self-reported
+capabilities:
+- Ticket to PR：自动调研、写改动并端到端验证，输出喂给评审循环
+- 代码评审循环：每个 PR 分钟级实质性首轮评审，工程师聚焦意图与架构
+- 漏洞修复（CVE → 补丁）：评估影响面并交付可审批补丁
+- 事件响应（告警 → 定级）：自动完成调查、时间线与上下文汇总
+- 组织级 Agent 编排与治理，跨 Agent/团队共享知识与记忆
+- 多环境运行（本地/Dev VM/托管云/自有云）与 Slack/GitHub/Jira/CI 集成
+access:
+- saas
+- private-deployment
+tags:
+- software-development
+- coding-agent
+- agent-orchestration
+- context-engine
+- software-factory
+- enterprise
+- model-system
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: Augment 编排前沿模型、不训练自有基础模型，无参数/训练细节；官网未公开融资/估值明细，已收录产品能力与平台架构。
+references:
+- title: Augment Code Official Website
+  url: https://www.augmentcode.com

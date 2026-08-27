@@ -1,0 +1,74 @@
+name: Sourcegraph Amp
+name_en: Sourcegraph Amp
+company: Sourcegraph
+domain: software-development
+status: released
+website: https://ampcode.com
+description: Amp 是 Sourcegraph 推出的自主编码 Agent。Sourcegraph 核心是代码理解/代码智能平台，索引企业全部代码仓库，为人类和
+  Agent 提供完整代码库上下文。属于模型系统型：不自研通用基础模型，而是以自研的代码检索/上下文引擎为核心，编排前沿模型完成跨文件、跨层的复杂改动，护城河是"大规模代码库的完整上下文"。强调
+  "agents are only as good as the context they receive"。企业级合规完善（SOC2 Type II、ISO27001、零数据保留），服务
+  200+ 企业工程团队。
+parameters: 未公开（编排前沿基座模型）
+architecture: Code retrieval / context engine + agent orchestration over frontier models
+base_model: 前沿通用基座模型（模型无关，未绑定单一型号）
+training:
+  stages:
+  - name: other
+    description: Sourcegraph 不训练通用基础模型；核心为代码索引/检索与上下文工程，Amp 在其上编排前沿模型完成任务
+tech_stack:
+  techniques:
+  - Whole-codebase indexing and retrieval
+  - Context engine for cross-layer code changes
+  - MCP-connected context gathering (docs / tickets / build status)
+  - Code search-driven code intelligence
+  - Model-agnostic agent orchestration
+benchmarks:
+- name: CodeScaleBench - cost per task
+  score: -30%
+  metric: cost_reduction
+  comparison: 使用 Sourcegraph 上下文后每任务成本降低约 30%
+  source: self-reported
+- name: CodeScaleBench - execution speed
+  score: +38%
+  metric: speed_improvement
+  comparison: 执行速度提升约 38%
+  source: self-reported
+- name: CodeScaleBench - retrieval quality
+  score: 2-3x
+  metric: retrieval_improvement
+  comparison: 检索质量提升 2–3 倍
+  source: self-reported
+- name: Enterprise Adoption
+  score: 200+ teams
+  metric: customers
+  comparison: 服务 200+ 企业工程团队
+  source: self-reported
+business:
+  customers: 200+ 企业工程团队
+capabilities:
+- 索引企业全部代码仓库，为 Agent 提供完整代码库上下文
+- 跨文件、跨层的复杂改动（cross-cutting changes），避免遗漏鉴权/DTO/测试等关联点
+- 改动上线前理解系统级影响（code oversight），追踪模式与监控风险
+- 通过 MCP 收集内部文档、工单、构建状态并结合代码搜索
+- 企业级安全合规（SOC2 Type II / ISO27001 / 零数据保留 / SSO / RBAC）
+- 处理世界最大 monorepo 与多仓架构
+access:
+- saas
+- private-deployment
+tags:
+- software-development
+- coding-agent
+- code-intelligence
+- context-engine
+- code-search
+- enterprise
+- model-system
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: Sourcegraph 不训练自有基础模型（模型无关编排），无参数/训练细节可填；已收录官网产品能力、CodeScaleBench 自报指标与企业采用数据。
+references:
+- title: Sourcegraph Official Website
+  url: https://sourcegraph.com
+- title: Amp by Sourcegraph
+  url: https://ampcode.com

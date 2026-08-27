@@ -1,0 +1,64 @@
+name: Replit Agent
+name_en: Replit Agent
+company: Replit
+domain: software-development
+status: released
+release_date: 2024-09
+website: https://replit.com/agent
+description: Replit Agent 是 Replit 于 2024 年 9 月发布的 AI 编程 Agent，用户用自然语言即可自动化软件开发、端到端构建并部署完整应用。属于工作流应用型：在前沿基座模型之上构建
+  Agent + 浏览器内云 IDE + 托管部署的一体化产品。Agent 4 接受一次性 prompt，先梳理需求再完整构建，支持通过 kanban 的多用户"氛围编程"协作。护城河来自"从描述到上线"的端到端闭环体验而非自研基础模型。据媒体报道
+  ARR 突破 $100M、估值达 $60B。
+parameters: 未公开（编排前沿基座模型）
+architecture: Agentic workflow application over frontier base models + cloud IDE + hosting
+base_model: 前沿通用基座模型（未公开具体型号）
+training:
+  stages:
+  - name: other
+    description: Replit Agent 主要编排前沿通用模型并结合浏览器 IDE、云执行与托管部署，未公开自研垂类基础模型的训练细节
+tech_stack:
+  inference: 云端执行 + 托管部署（浏览器内 IDE）
+  techniques:
+  - Natural-language app generation (vibe coding)
+  - One-shot prompt requirement elicitation
+  - Multi-user collaboration (kanban, role definitions)
+  - Cloud IDE + managed deployment integration
+  - Real-time collaboration and feedback loops
+benchmarks:
+- name: ARR
+  score: '>$100M'
+  metric: annual_recurring_revenue
+  comparison: 36Kr 报道 ARR 突破 $100M（二手媒体口径）
+  source: self-reported
+- name: Valuation
+  score: $60B
+  metric: valuation
+  comparison: 36Kr 报道公司估值达 $60B（二手媒体口径）
+  source: self-reported
+business:
+  arr: '>$100M (2026, 媒体口径)'
+  valuation: $60B (2026, 媒体口径)
+capabilities:
+- 用自然语言 one-shot prompt 端到端构建并部署完整应用
+- 在完整构建前自动梳理与澄清需求，把粗略概念变为可用原型
+- 多用户"氛围编程"协作（kanban 任务与角色定义）
+- 浏览器内云 IDE + 托管部署一体化
+- 与 Microsoft Azure 集成，上架 Azure Marketplace 面向企业
+access:
+- saas
+- api
+tags:
+- software-development
+- coding-agent
+- vibe-coding
+- cloud-ide
+- app-builder
+- workflow-application
+data_quality:
+  completeness: minimal
+  gap_reason: data-scarce
+  note: Replit Agent 编排前沿通用模型，未公开底层模型型号/参数/训练细节；ARR 与估值为二手媒体（36Kr）口径，非官方审计披露。
+references:
+- title: Replit Agent Official Page
+  url: https://replit.com/agent
+- title: Replit (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Replit

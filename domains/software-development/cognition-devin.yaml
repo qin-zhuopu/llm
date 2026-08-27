@@ -1,0 +1,72 @@
+name: Devin
+name_en: Devin
+company: Cognition AI
+domain: software-development
+status: released
+release_date: 2024-03
+website: https://devin.ai
+description: Cognition AI 开发的自主 AI 软件工程师，"autonomous software engineer" 品类的开创者。属于模型系统型/工作流应用型混合：在前沿基座模型之上构建长期推理与规划、工具使用（shell/编辑器/浏览器）、沙箱执行与自我修复的自主
+  Agent，可端到端完成需要数千次决策的复杂工程任务。在 SWE-bench 无辅助设定下解决 13.86% 的真实 GitHub issue，远超此前 1.96% 的 SOTA。公司估值从
+  2024 年 $350M 一路升至 2026 年 $26B，并洽谈 ≥$40B 新融资。
+parameters: 未公开（Agent 系统，编排前沿基座模型）
+architecture: Autonomous agent system (long-horizon planning + tool use + sandbox execution) over frontier base models
+base_model: 前沿通用基座模型（未公开具体型号）
+training:
+  stages:
+  - name: other
+    description: Cognition 定位为"专注推理"的应用 AI 实验室，Devin 的能力来自长期规划/工具使用的 Agent 系统工程与在前沿基座模型之上的编排优化，而非公开单一垂类基础模型的训练细节。
+tech_stack:
+  techniques:
+  - Long-horizon planning and reasoning
+  - Tool use (shell / code editor / browser)
+  - Sandboxed compute environment
+  - Real-time progress reporting and human collaboration
+  - Self-correction / error recovery
+  - Context recall across thousands of steps
+datasets:
+- name: SWE-bench
+  description: 2,294 个真实 GitHub issues 与 PRs 组成的软件工程评测数据集，通过 fail-to-pass 单元测试确定性评估
+  size: 2294 issues (评估用随机 25% 子集, 570 条)
+  type: evaluation
+benchmarks:
+- name: SWE-bench (unassisted)
+  score: 13.86%
+  metric: resolved_rate
+  split: 25% random subset (79/570)
+  comparison: 'vs 此前无辅助 SOTA: 1.96%; vs 此前最佳 assisted 模型 (Claude 2): 4.80%'
+  source: self-reported
+business:
+  latest_round: 后续融资洽谈中
+  valuation: $26B (2026-05); 洽谈 ≥$40B 新融资 (2026-08, Bloomberg)
+  investors:
+  - Founders Fund
+  - 8VC
+capabilities:
+- 端到端自主完成复杂工程任务（规划 + 数千次决策执行）
+- 在沙箱环境中使用 shell、代码编辑器与浏览器完成开发工作
+- 自主发现并修复代码库 bug（给定 GitHub issue 链接自动 setup 与上下文收集）
+- 端到端构建并部署应用（如构建交互式网站并部署到 Netlify）
+- 实时汇报进度、接受反馈、与开发者协作做设计决策
+- 学习使用不熟悉的新技术并应用
+access:
+- saas
+- api
+tags:
+- software-development
+- coding-agent
+- autonomous-software-engineer
+- agentic
+- swe-bench
+- tool-use
+- hybrid-architecture
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: Cognition 未公开 Devin 底层基座模型型号、参数量与训练细节（模型系统型公司，价值在编排与 Agent 工程）；已收录官网、SWE-bench 技术报告与融资/估值公开数据。
+references:
+- title: Introducing Devin, the first AI software engineer
+  url: https://cognition.ai/blog/introducing-devin
+- title: SWE-bench technical report
+  url: https://cognition.ai/blog/swe-bench-technical-report
+- title: Cognition AI (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Cognition_AI

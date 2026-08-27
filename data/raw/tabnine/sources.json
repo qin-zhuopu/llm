@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://www.tabnine.com",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "wikipedia.md",
+      "url": "https://en.wikipedia.org/wiki/Tabnine",
+      "fetched_at": "2026-08-27",
+      "type": "news"
+    }
+  ]
+}

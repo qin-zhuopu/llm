@@ -1,0 +1,44 @@
+name: Citibot
+name_en: Citibot
+company: Citibot
+domain: government
+status: released
+website: https://www.citibot.io
+description: Citibot 是"以居民为先、AI 驱动的政府沟通平台"，专为政府打造，整合 AI 驱动的语音、短信、网页自动化，帮助政府随时随地提供更快、更可及、更受信任的服务。属于工作流应用型：采用封闭系统
+  AI（closed-system AI）保证合规、隐私与安全，避免开放式生成模型的幻觉，让居民在每个渠道都获得经核验、准确的信息。聚焦 311/居民服务/服务请求/通知等场景，在全美与多家城市、县级政府合作。
+parameters: 未公开（封闭系统 AI，编排/约束式）
+architecture: Closed-system AI over multi-channel automation (voice / text / web)
+base_model: 未公开（封闭系统，强调可验证与低幻觉）
+training:
+  stages:
+  - name: other
+    description: Citibot 采用"封闭系统 AI"，以经核验的政府信息约束回答、降低幻觉；未公开底层模型与训练细节
+tech_stack:
+  techniques:
+  - Closed-system AI (verified, low-hallucination answers)
+  - Multi-channel automation (voice / text / web)
+  - Government system integrations
+  - Human-centered / accessible design
+capabilities:
+- 多渠道居民沟通自动化（语音/短信/网页）
+- 封闭系统 AI 提供经核验、准确的信息，优先合规/隐私/安全
+- 24/7 平等可及的居民服务
+- 与政府现有系统深度集成
+- 降低运营成本、扩大服务覆盖（如 311/服务请求/通知）
+access:
+- saas
+tags:
+- government
+- govtech
+- citizen-services
+- "311"
+- closed-system-ai
+- multichannel
+- workflow-application
+data_quality:
+  completeness: minimal
+  gap_reason: data-scarce
+  note: Citibot 为政务产品型公司，采用封闭系统 AI，官网未公开底层模型/参数/训练细节与融资数据；单一官网来源，客观资料稀缺。
+references:
+- title: Citibot Official Website
+  url: https://www.citibot.io

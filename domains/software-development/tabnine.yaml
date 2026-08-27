@@ -1,0 +1,75 @@
+name: Tabnine
+name_en: Tabnine
+company: Tabnine (formerly Codota)
+domain: software-development
+status: released
+release_date: 2021-05
+website: https://www.tabnine.com
+description: Tabnine 是最早的 AI 代码补全工具之一，定位"更聪明的 AI 编码 Agent + 完整企业控制"。前身为 2013 年在以色列创立的
+  Codota，2021 年更名并发布首个基于 LLM 的 AI 编码助手。属于模型系统型：自研/托管面向代码的 AI 模型 + 企业上下文引擎（Enterprise Context
+  Engine），学习组织特有架构、框架与编码规范，适配混合技术栈与遗留系统，强调私有部署、合规与"仅在授权代码上训练"的可控性。截至 2023-11 百万开发者使用、VS
+  Code 与 JetBrains 安装量达 1000 万。
+parameters: 未公开（多个面向代码的模型）
+architecture: Code-specialized LLM(s) + Enterprise Context Engine
+training:
+  stages:
+  - name: pre-training
+    description: 面向代码的模型训练；提供可选择"仅在授权/许可代码上训练"的模型以满足企业合规需求
+  - name: fine-tuning
+    description: 结合企业上下文引擎学习组织特有的架构、框架与编码规范，适配混合技术栈与遗留系统
+tech_stack:
+  techniques:
+  - Enterprise Context Engine (org architecture / frameworks / standards)
+  - Whole-line and full-function code completion
+  - AI chat agent (code gen / explain / tests / docs / fixes)
+  - Private deployment / air-gapped
+  - Permissioned-code-only model option
+datasets:
+- name: 许可代码语料
+  description: 用于训练的代码数据，提供仅含授权/许可代码的模型选项以满足企业合规
+  type: pre-training
+benchmarks:
+- name: Developer Adoption
+  score: 1M+ developers
+  metric: users
+  comparison: 截至 2023-11 百万开发者使用
+  source: self-reported
+- name: IDE Installations
+  score: 10M
+  metric: installations
+  comparison: VS Code 与 JetBrains 上安装量达 1000 万
+  source: self-reported
+business:
+  funding_total: $52.5M+ ($12M A + $15.5M + $25M B 等)
+  latest_round: Series B ($25M, 2023-11)
+  customers: 1M+ 开发者, 10M IDE 安装
+  investors:
+  - Khosla Ventures
+  - Qualcomm Ventures
+capabilities:
+- 多语言 AI 代码补全（整行/片段/整函数预测）
+- AI 聊天 Agent：自然语言生成代码、解释代码、生成测试与文档、提出修复
+- 企业上下文引擎：学习组织架构/框架/编码规范，适配混合栈与遗留系统
+- 私有/隔离部署，满足安全与合规要求
+- 可选"仅在授权代码上训练"的模型，降低知识产权与合规风险
+access:
+- saas
+- private-deployment
+- api
+tags:
+- software-development
+- code-completion
+- coding-agent
+- enterprise
+- private-deployment
+- compliance
+- model-system
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: Tabnine 未公开模型参数量与训练 token/硬件细节（企业级闭源，强调合规与私有部署）；已收录官网、公司沿革、融资与采用数据。
+references:
+- title: Tabnine Official Website
+  url: https://www.tabnine.com
+- title: Tabnine (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Tabnine
