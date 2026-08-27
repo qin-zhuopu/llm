@@ -1,0 +1,78 @@
+name: SeekOut
+name_en: SeekOut
+company: SeekOut
+domain: human-resources
+status: released
+website: https://www.seekout.com
+description: SeekOut 是一个 Agentic AI 招聘平台，用于人才的 sourcing、screening 与 engagement，被 750+ 客户使用。在
+  1B+ 候选人档案（外部来源与企业 ATS）上用理解上下文的 AI 进行智能搜索，数小时内处理成千上万主动投递者并按标准评估，自动 rubric 与智能短名单、规模化个性化触达，并能重新发现
+  ATS 中的「银牌候选人」。提供 SeekOut Recruit（自助平台）与 SeekOut Spot（AI + 专家服务）两条路径，客户可将时间到 hire 缩短
+  50%+、成本较猎头降低 70%。
+parameters: 未公开
+architecture: 模型系统型（语义人才搜索 + 评分/匹配模型 + agentic 编排）
+training:
+  stages:
+  - name: pre-training
+    description: 基于 1B+ 候选人档案与劳动力市场数据构建语义人才表示
+  - name: fine-tuning
+    description: 针对人岗匹配、rubric 评分、简历评估与候选人排序等场景微调
+  - name: rlhf
+    description: 基于招聘结果与招聘官反馈优化匹配与短名单质量
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS + ATS 集成
+  techniques:
+  - Context-aware talent search
+  - Automated rubric scoring
+  - Inbound applicant evaluation
+  - Personalized multi-touch outreach
+  - ATS rediscovery
+  - Agentic workflows
+datasets:
+- name: Talent profiles
+  description: 1B+ 候选人档案，来自外部来源与企业 ATS
+  size: 1B+ profiles
+  type: pre-training
+- name: Job & rubric data
+  description: 岗位描述与角色专属评分 rubric，用于候选人评估与排序
+  type: sft
+benchmarks:
+- name: Time-to-hire reduction
+  score: 50%+
+  metric: time_to_hire_reduction
+  comparison: 客户报告时间到 hire 缩短 50%+
+  source: self-reported
+- name: Cost vs agencies
+  score: -70%
+  metric: cost_reduction
+  comparison: 相较传统猎头成本降低 70%
+  source: self-reported
+- name: Time to interview-ready
+  score: 14 days
+  metric: time_to_interview_ready
+  comparison: 从 kickoff 到可面试候选人交付约 2 周
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅 / 按岗位（Spot）
+  auth_method: 企业认证 / SSO
+capabilities:
+- 在 1B+ 档案上的上下文感知智能搜索
+- 主动投递者的规模化 AI 评估与短名单
+- 角色专属工作流与自动 rubric 评分
+- 规模化个性化多触点触达
+- ATS 中「银牌候选人」重新发现与评估
+- 人才池与劳动力市场洞察可视化
+access:
+- saas
+tags:
+- human-resources
+- ai-sourcing
+- agentic-ai
+- talent-acquisition
+- candidate-screening
+- talent-analytics
+references:
+- title: SeekOut Official Website
+  url: https://www.seekout.com

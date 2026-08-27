@@ -1,0 +1,75 @@
+name: Gem
+name_en: Gem
+company: Gem
+domain: human-resources
+status: released
+website: https://www.gem.com
+description: Gem 是一个 AI-first 的一体化招聘平台，被 1,200+ 人才获取团队使用，把 sourcing、review、hire 与 report
+  整合在一处。核心是三个 AI 智能体——AI Sourcing Agent（搜索 800M+ 档案并用已验证联系方式触达）、AI App Review Agent（以
+  5x 速度对投递者排序并解释匹配理由）、AI Fraud Detection Agent（识别欺诈候选人）——并将 ATS、CRM、Scheduling、Analytics
+  内嵌 AI，可接入现有 ATS 或端到端替换 5+ 工具、技术成本降低最高 50%。
+parameters: 未公开
+architecture: 工作流应用型（招聘工作流编排 + 自研评分/欺诈检测模型）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在 800M+ 候选人档案与投递者评估数据上训练 sourcing、排序与欺诈检测模型
+  - name: rlhf
+    description: 基于招聘结果与招聘官反馈优化候选人排序与匹配解释
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS + ATS 集成
+  techniques:
+  - AI sourcing over 800M+ profiles
+  - Applicant ranking with rationale
+  - Fraud/duplicate candidate detection
+  - CRM nurture automation
+  - Interview scheduling automation
+datasets:
+- name: Candidate profiles
+  description: 800M+ 候选人档案与已验证联系方式，用于 sourcing
+  size: 800M+ profiles
+  type: pre-training
+- name: Applicant review data
+  description: 投递者评估与招聘结果数据，用于排序与欺诈检测
+  type: sft
+benchmarks:
+- name: TA teams adoption
+  score: 1,200+
+  metric: customers
+  comparison: 被 1,200+ 人才获取团队使用
+  source: self-reported
+- name: Application review speed
+  score: 5x
+  metric: review_speed
+  comparison: AI App Review Agent 对投递者排序评估速度提升 5x
+  source: self-reported
+- name: Tech cost reduction
+  score: -50%
+  metric: cost_reduction
+  comparison: 一体化替换 5+ 工具，技术成本降低最高 50%
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅
+  auth_method: 企业认证 / SSO
+capabilities:
+- AI Sourcing Agent 搜索 800M+ 档案并触达
+- AI App Review Agent 排序投递者并解释匹配
+- AI Fraud Detection Agent 识别欺诈候选人
+- CRM 候选人培育与管道保温
+- 自动面试排期与招聘分析
+- 一体化 ATS + CRM + AI 端到端招聘
+access:
+- saas
+tags:
+- human-resources
+- ai-sourcing
+- recruiting-crm
+- ats
+- talent-acquisition
+- fraud-detection
+references:
+- title: Gem Official Website
+  url: https://www.gem.com

@@ -1,0 +1,76 @@
+name: retrain.ai
+name_en: retrain.ai
+company: retrain.ai
+domain: human-resources
+status: released
+website: https://retrain.ai
+description: retrain.ai 是面向 HR 的人才智能平台，帮助企业成为技能型组织，覆盖招聘、留任与内部流动/再培训。基于稳健的技能分类法与「capabilities
+  genome」（由知识、技能、资质与个人特质四方面构成），用生成式 AI 对候选人 source/screen/rank，并将现有员工技能数据与 800M+ 主动/被动候选人数据按技能匹配到空缺岗位，同时提供自动生成的个性化职业路径规划，自报可将招聘时间缩短
+  55%、留任率提升 30%、内部流动提升 57%。
+parameters: 未公开
+architecture: 模型系统型（技能分类法 + 匹配/推荐模型 + 生成式 AI）
+training:
+  stages:
+  - name: pre-training
+    description: 基于 800M+ 候选人档案与技能分类法构建技能架构与语义表示
+  - name: fine-tuning
+    description: 针对候选人 source/screen/rank、技能缺口分析与职业路径生成微调
+  - name: rlhf
+    description: 基于留任、内部流动与招聘结果反馈优化推荐并降低偏见
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS
+  techniques:
+  - Skills taxonomy / architecture
+  - Competency-based assessment (capabilities genome)
+  - Generative candidate ranking
+  - Career pathing recommendation
+  - Bias mitigation / responsible AI
+datasets:
+- name: Candidate & skills data
+  description: 800M+ 主动与被动候选人数据及技能分类法，用于匹配与排序
+  size: 800M+ candidates
+  type: pre-training
+- name: Workforce skills data
+  description: 企业现有员工技能与胜任力评估数据，用于内部流动与职业路径
+  type: sft
+benchmarks:
+- name: Time-to-hire reduction
+  score: 55%
+  metric: time_to_hire_reduction
+  comparison: 自报招聘时间缩短 55%
+  source: self-reported
+- name: Retention increase
+  score: 30%
+  metric: retention_increase
+  comparison: 自报留任率提升 30%
+  source: self-reported
+- name: Internal mobility increase
+  score: 57%
+  metric: internal_mobility_increase
+  comparison: 自报内部流动提升 57%
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅
+  auth_method: 企业认证 / SSO
+capabilities:
+- 构建技能架构识别技能与缺口
+- 生成式 AI 对候选人 source/screen/rank
+- 按技能匹配内外部人选到空缺岗位
+- 自动生成个性化职业路径与内部流动
+- 无偏见、基于胜任力的人才评估
+- 预测新兴能力需求与再培训规划
+access:
+- saas
+tags:
+- human-resources
+- talent-intelligence
+- skills-based-organization
+- internal-mobility
+- reskilling
+- responsible-ai
+references:
+- title: retrain.ai Official Website
+  url: https://retrain.ai

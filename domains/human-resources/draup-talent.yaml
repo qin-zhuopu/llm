@@ -1,0 +1,74 @@
+name: Draup (Talent)
+name_en: Draup Talent Intelligence
+company: Draup
+domain: human-resources
+status: released
+website: https://draup.com/talent
+description: Draup 是一个 Agentic 人才智能平台，为企业提供持续更新的劳动力规划与人才决策数据，覆盖任意岗位/市场的人才供给、成本、竞争对手动向与技能变化。以四层智能（劳动力市场、工作架构、业务、技术）为核心，配套
+  AI 智能体 Curie（自然语言预测人才需求、映射技能、对标同业、设计面向未来岗位）与 Etter（AI 劳动力转型/岗位重设计），每日分析来自 100K+
+  来源的 1B+ 数据点，并可通过 MCP 将数据接入 LLM 与 copilot。
+parameters: 未公开
+architecture: 模型系统型（人才智能数据引擎 + 生成式 AI 智能体 + MCP 接入）
+training:
+  stages:
+  - name: pre-training
+    description: 基于 1B+ 职位描述、职业路径、技能与技术数据构建劳动力市场语义表示
+  - name: fine-tuning
+    description: 针对技能映射、岗位重设计、再培训路径与选址分析等场景微调
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS + API + MCP
+  techniques:
+  - Labor market intelligence
+  - Work architecture / task-level skills mapping
+  - Conversational explainable AI agent (Curie)
+  - Reskilling feasibility modeling
+  - MCP integration for LLMs/copilots
+datasets:
+- name: Labor market data
+  description: 6,100+ 地点、1B+ 专业人士、1B+ 职位描述、200K+ 课程等多源劳动力市场数据
+  size: 1B+ data points/day from 100K+ sources
+  type: pre-training
+- name: Skills & roles taxonomy
+  description: 28K+ 技能、3,500+ 角色、4M+ 职业路径的技能与角色分类
+  type: pre-training
+benchmarks:
+- name: Data scale
+  score: 1B+ professionals
+  metric: data_coverage
+  comparison: 覆盖 1B+ 专业人士、1B+ 职位描述、28K+ 技能、3,500+ 角色
+  source: self-reported
+- name: Daily ingestion
+  score: 1B+ data points/day
+  metric: ingestion_rate
+  comparison: 每日从 100K+ 来源分析 1B+ 数据点
+  source: self-reported
+- name: Analyst recognition
+  score: 10 mentions
+  metric: analyst_recognition
+  comparison: 被评为 HR 技术开拓者，10 次出现在分析师报告与 Hype Cycle
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅
+  auth_method: 企业认证 / scoped API keys
+capabilities:
+- 持续更新的劳动力市场供给/成本/竞争情报
+- 任务层技能缺口与再培训可行性分析
+- Curie 智能体的自然语言人才决策问答
+- 岗位重设计与面向未来的角色设计
+- 选址分析与校园招聘定位
+- 通过 MCP 将实时人才数据接入 LLM/copilot
+access:
+- saas
+tags:
+- human-resources
+- talent-intelligence
+- workforce-planning
+- reskilling
+- labor-market-intelligence
+- agentic-ai
+references:
+- title: Draup Talent Official Website
+  url: https://draup.com/talent

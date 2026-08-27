@@ -1,0 +1,80 @@
+name: Textio
+name_en: Textio
+company: Textio
+domain: human-resources
+status: released
+website: https://textio.com
+description: Textio 是面向 HR 的增强写作 AI 平台，基于大量真实招聘结果与语言数据的语料，实时分析语言的偏见与有效性，指导招聘官和管理者写出更包容的职位描述与更可执行的绩效反馈及目标。覆盖招聘（职位帖）与员工体验（绩效反馈、目标设定）两大场景，将
+  DEI 嵌入整个人才生命周期，能预测语言表现（如谁会响应某条职位帖）并实时标记带偏见或排他性的措辞。
+parameters: 未公开
+architecture: 模型系统型（NLP 语言评分 + 生成式改写建议）
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模职位帖、招聘结果与语言数据构建语言表现与偏见识别模型
+  - name: fine-tuning
+    description: 针对包容性职位描述与绩效反馈/目标撰写场景微调改写建议
+tech_stack:
+  framework: 自研 NLP 平台
+  inference: Cloud SaaS
+  techniques:
+  - Augmented writing
+  - Language outcome prediction
+  - Bias/exclusionary phrasing detection
+  - Real-time writing guidance
+  - Generative rewrite suggestions
+  - Textio Verified (safety/accuracy/quality screening)
+  - HRIS / performance management integration
+datasets:
+- name: Hiring outcomes corpus
+  description: 大规模职位帖与真实招聘结果的语言数据，用于预测语言表现
+  type: pre-training
+- name: Feedback & goals data
+  description: 绩效反馈与目标撰写语言数据，用于反馈质量建议
+  type: sft
+benchmarks:
+- name: Feedback time saved (Micron)
+  score: 500+ hours
+  metric: time_saved
+  comparison: Micron 2,700+ 员工使用，累计节省 500+ 小时反馈撰写时间
+  source: self-reported
+- name: Feedback quality improvement (Micron)
+  score: measurable transformation
+  metric: feedback_quality
+  comparison: Micron 反馈与目标质量更可执行、相关、直接
+  source: self-reported
+- name: Feedback quality increase
+  score: 67%
+  metric: feedback_quality_increase
+  comparison: 客户反馈质量提升 67%，反馈数量提升 12%
+  source: self-reported
+- name: Time writing reduction
+  score: 50%
+  metric: time_reduction
+  comparison: 撰写反馈时间减少 50%，管理者每次评估约省 3 小时
+  source: self-reported
+- name: Managers using Textio
+  score: 100,000+
+  metric: users
+  comparison: 100,000+ 管理者使用 Textio Feedback
+  source: self-reported
+capabilities:
+- 包容性职位描述生成与实时语言指导
+- 偏见与排他性措辞实时检测
+- 语言表现预测（如候选人响应率）
+- 高质量绩效反馈与目标撰写辅助
+- 将 DEI 嵌入招聘与员工体验全流程
+access:
+- saas
+tags:
+- human-resources
+- augmented-writing
+- inclusive-language
+- dei
+- employee-experience
+- nlp
+references:
+- title: Textio Official Website
+  url: https://textio.com
+- title: Textio Products (Feedback)
+  url: https://textio.com/products

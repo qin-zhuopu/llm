@@ -1,0 +1,79 @@
+name: HeyMilo
+name_en: HeyMilo
+company: HeyMilo
+domain: human-resources
+status: released
+website: https://www.heymilo.ai
+description: HeyMilo 是面向高量级招聘的 AI 招聘官，用结构化的 AI 语音、视频、SMS 和表单对每一位投递者进行筛选与面试，7×24 小时运行、支持
+  20+ 语言。提供 Fit score 及经验/技能/沟通/可用性/可靠性分项拆解与打分理由，配套身份验证、反作弊 trust score 与第三方偏见审计，人工在环并将排序短名单同步到主流
+  ATS。已筛选 1.4M+ 候选人，帮助客户将筛选成本降低约 90%、每周为招聘官释放 80+ 小时。
+parameters: 未公开
+architecture: 工作流应用型（对话式语音/文本 Agent + 评分模型 + 反作弊分类器）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在多渠道（语音/视频/SMS/表单）结构化面试作答数据上训练评分与对话模型
+  - name: rlhf
+    description: 基于招聘结果、公平性与偏见审计反馈优化评分与对话质量
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS + ATS 集成
+  techniques:
+  - Conversational voice/text AI agent
+  - Multilingual interviewing (20+ languages)
+  - Structured scoring with rationale
+  - Active proctoring & AI cheat classifier
+  - Third-party bias audits
+  - MCP server for hiring data queries
+datasets:
+- name: Multichannel interview data
+  description: 语音、视频、SMS 与表单渠道的结构化面试作答数据，用于训练评分模型
+  type: sft
+- name: Trust/anti-cheat signals
+  description: 身份验证与作弊检测信号数据，用于生成 trust score
+  type: sft
+benchmarks:
+- name: Candidates screened
+  score: 1.4M+
+  metric: candidates_screened
+  comparison: 累计筛选 1.4M+ 候选人
+  source: self-reported
+- name: Screening cost reduction (TRG)
+  score: ~90%
+  metric: cost_reduction
+  comparison: TRG 筛选成本降低约 90%
+  source: self-reported
+- name: Recruiter hours freed (Inergroup)
+  score: 80+/week
+  metric: hours_saved
+  comparison: Inergroup 每周为招聘官释放 80+ 小时
+  source: self-reported
+- name: Candidate satisfaction
+  score: 4.6/5
+  metric: candidate_satisfaction
+  comparison: 候选人平均满意度 4.6/5
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅 / 按量
+  auth_method: 企业认证
+capabilities:
+- 多渠道（语音/视频/SMS/表单）结构化 AI 面试
+- 7×24 小时、20+ 语言的高量级筛选
+- Fit score 分项打分与详细理由
+- 主动监考与作弊 trust score 检测
+- 第三方偏见审计的客观评分
+- 与 Greenhouse/Workday 等主流 ATS 集成回写
+access:
+- saas
+tags:
+- human-resources
+- ai-recruiter
+- voice-interview
+- high-volume-hiring
+- candidate-screening
+- anti-cheating
+references:
+- title: HeyMilo Official Website
+  url: https://www.heymilo.ai

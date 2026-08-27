@@ -1,0 +1,77 @@
+name: Mercor
+name_en: Mercor
+company: Mercor
+domain: human-resources
+status: released
+website: https://mercor.com
+description: Mercor 是一家旧金山公司，起步于 AI 招聘与人岗匹配——用 AI 自动化候选人 sourcing、简历评估与面试，把领域专家匹配到岗位/项目——随后演进为向前沿
+  AI 实验室供应专家人力数据与评测的市场。覆盖 300+ 专业领域、30k+ 专家（医生、律师、工程师、顾问），专家平均签约时薪 $111/hr、创建 411k
+  个岗位、每日支出 $4M+，并发布 APEX 系列基准评估前沿模型在专业服务、会计与软件工程中的经济价值任务表现。
+parameters: 未公开
+architecture: 模型系统型（简历/面试评估模型 + 人岗匹配 + 评测编排）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在简历、面试作答与专家履历数据上训练候选人评估与人岗匹配模型
+  - name: rlhf
+    description: 基于雇佣结果与专家表现反馈优化匹配与评分
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS
+  techniques:
+  - Resume evaluation
+  - AI interview screening
+  - Expert-to-role matching
+  - Automated anonymization (60+ identifier categories)
+  - Benchmark & RL environment construction (APEX)
+datasets:
+- name: Expert profiles & interviews
+  description: 30k+ 专家履历、简历与面试作答数据，用于评估与匹配
+  size: 30k+ experts
+  type: sft
+- name: APEX professional work data
+  description: 基于真实专业工作构建的 benchmark 与 RL 环境数据
+  type: evaluation
+benchmarks:
+- name: APEX-Agents
+  score: 60.6%
+  metric: task_success
+  split: test
+  comparison: 'Opus 5 Max 60.6% 领先；专业服务长程跨应用任务'
+  source: self-reported
+- name: APEX-Accounting
+  score: 56.4%
+  metric: task_success
+  split: test
+  comparison: 'Fable 5 Max 56.4% 领先；会计长程跨应用任务'
+  source: self-reported
+- name: APEX-SWE
+  score: 63.7%
+  metric: task_success
+  split: test
+  comparison: 'Opus 5 Max 63.7% 领先；真实软件工程任务'
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业合约 / 按小时
+  auth_method: 企业认证
+capabilities:
+- AI 自动化候选人 sourcing 与简历评估
+- AI 面试筛选与专家人岗匹配
+- 跨 300+ 专业领域的专家网络供给
+- 专家人力数据与模型评测（APEX）
+- 数据货币化与 60+ 类敏感标识自动匿名化
+- 企业 AI 工作流映射与生产部署
+access:
+- saas
+tags:
+- human-resources
+- ai-hiring
+- talent-matching
+- expert-marketplace
+- human-data
+- model-evaluation
+references:
+- title: Mercor Official Website
+  url: https://mercor.com
