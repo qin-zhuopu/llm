@@ -1,5 +1,26 @@
 # 变更日志
 
+## Schema 变更：新增可选字段 `data_quality`
+
+#### 新增 `data_quality` 字段（可选，object，additionalProperties: false）
+用于标注「条目质量低」的根因，区分**可补** vs **补不到**。含三个可选子字段：
+- `completeness`：`full` / `partial` / `minimal`——信息完整度自评。
+- `gap_reason`：`coverage-gap`（有公开资料但搜索/抓取不足，理论上可补）/ `data-scarce`（公司闭源、无公开资料，客观稀缺补不到）/ `not-applicable`（已充分无缺口）。
+- `note`：简要说明缺口原因的字符串。
+
+字段不加入 `required`，对现有 198 个条目零影响；因 schema `additionalProperties: false`，已显式定义以允许带此字段的 YAML 通过校验。
+
+#### `check.py` 保守增强（不改动三维度打分算法）
+- 全量汇总额外打印 data-scarce 条目数与「排除 data-scarce 后的综合均分」。
+- `--details` 输出附带 `data_quality.gap_reason` 标注。
+- 新增可选开关 `--exclude-scarce`，在展示列表中剔除 data-scarce 条目。
+- 现有评分对照不变（综合均分 74 / B92 / T73 / S57），`test_all.py` 17 项仍全绿。
+
+#### 文档
+- `AGENTS.md` 阶段⑥新增 `data_quality` 字段用途、三个 `gap_reason` 含义及填写规范。
+
+---
+
 ## 2026-08-26 (数据质量复盘)
 
 ### 复盘与修复

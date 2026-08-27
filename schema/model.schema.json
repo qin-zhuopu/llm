@@ -383,6 +383,35 @@
         ]
       }
     },
+    "data_quality": {
+      "type": "object",
+      "description": "数据质量自评与缺口根因标注（可选）。用于区分「条目质量低」的两种根因：coverage-gap（有公开资料但我们搜索/抓取不足，理论上可补）vs data-scarce（公司闭源、无公开资料，客观稀缺补不到）",
+      "additionalProperties": false,
+      "properties": {
+        "completeness": {
+          "type": "string",
+          "description": "信息完整度自评：full=技术/业务/来源字段已充分；partial=部分关键字段缺失；minimal=仅有最基本信息",
+          "enum": [
+            "full",
+            "partial",
+            "minimal"
+          ]
+        },
+        "gap_reason": {
+          "type": "string",
+          "description": "数据缺口根因分类：coverage-gap=有公开论文/技术资料但我们搜索或抓取不充分，理论上可补；data-scarce=公司闭源、不发论文、不公开参数，客观上没有更多可得信息，补也补不到；not-applicable=信息已充分，无缺口",
+          "enum": [
+            "coverage-gap",
+            "data-scarce",
+            "not-applicable"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "description": "简要说明缺口原因（如：官网未公开参数与训练细节，无论文，已查融资新闻无技术披露）"
+        }
+      }
+    },
     "references": {
       "type": "array",
       "description": "参考链接（论文、官网、技术博客等）",

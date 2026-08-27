@@ -14,6 +14,7 @@
     python scripts/check.py --top 10
     python scripts/check.py --bottom 10
     python scripts/check.py --details domains/finance/bloomberggpt.yaml
+    python scripts/check.py --exclude-scarce   # 汇总排除 data-scarce 条目
 """
 
 import argparse
@@ -273,6 +274,10 @@ def check_model(yaml_path):
 
     total = round((b_score + t_score + s_score) / 3)
 
+    # data_quality 是可选字段，仅用于标注/汇总，不参与三维度打分
+    dq = data.get("data_quality") or {}
+    gap_reason = dq.get("gap_reason")
+
     return {
         "name": data.get("name", "?"),
         "domain": yaml_path.parent.name,
@@ -280,6 +285,7 @@ def check_model(yaml_path):
         "technical": t_score,
         "source": s_score,
         "total": total,
+        "gap_reason": gap_reason,
         "b_details": b_details,
         "t_details": t_details,
         "s_details": s_details,
@@ -292,6 +298,11 @@ def main():
     parser.add_argument("--top", type=int, help="显示最好的 N 个")
     parser.add_argument("--bottom", type=int, help="显示最差的 N 个")
     parser.add_argument("--details", type=str, help="显示某个文件的详细得分")
+    parser.add_argument(
+        "--exclude-scarce",
+        action="store_true",
+        help="汇总列表中排除 data_quality.gap_reason=data-scarce 的条目（客观稀缺补不到，不因此被苛责）",
+    )
     args = parser.parse_args()
 
     domains_dir = ROOT / "domains"
@@ -322,6 +333,8 @@ def main():
         print(f"\n  来源 ({result['source']}/100):")
         for k, v in result["s_details"].items():
             print(f"    {k}: {v}")
+        if result.get("gap_reason"):
+            print(f"\n  数据质量标注: gap_reason={result['gap_reason']}")
         sys.exit(0)
 
     # 全量评分
@@ -343,7 +356,23 @@ def main():
     print("=" * 75)
     print(f"  数据质量三维度评分 — {len(results)} 个模型")
     print(f"  综合平均: {avg:.0f} | 业务均: {b_avg:.0f}/100 | 技术均: {t_avg:.0f}/100 | 来源均: {s_avg:.0f}/100")
+
+    # data_quality.gap_reason 标注汇总（不改变上面的三维度打分，仅额外提示）
+    scarce = [r for r in results if r.get("gap_reason") == "data-scarce"]
+    non_scarce = [r for r in results if r.get("gap_reason") != "data-scarce"]
+    if scarce:
+        ns_avg = sum(r["total"] for r in non_scarce) / len(non_scarce) if non_scarce else 0
+        print(
+            f"  data-scarce 条目: {len(scarce)} 个（客观稀缺补不到）"
+            f" | 排除 data-scarce 后综合均: {ns_avg:.0f}"
+        )
+    else:
+        print("  data-scarce 条目: 0 个（暂无条目标注 data_quality.gap_reason=data-scarce）")
     print("=" * 75)
+
+    # --exclude-scarce：从后续展示列表中剔除 data-scarce 条目
+    if args.exclude_scarce:
+        results = non_scarce
 
     # 显示列表
     if args.top:

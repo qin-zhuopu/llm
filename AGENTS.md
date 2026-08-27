@@ -218,6 +218,37 @@ python scripts/build_kg.py --query "Bloomberg"  # 查询节点关系
 > 来源数量+多样性(0-25) + 来源类型质量(0-20，论文/repo > 官方 > 新闻)。
 > 这比旧的"MD 正则匹配"更准确地反映真实来源证据。无 raw 时降级用 MD 回退。
 
+### 数据质量缺口标注（schema 可选字段 `data_quality`）
+
+`check.py` 只能给出质量分，却无法区分「某条目质量低」的两种根因。为此 schema 增加了**可选**字段 `data_quality`，用于人工标注缺口性质：
+
+```yaml
+data_quality:
+  completeness: minimal          # 信息完整度自评
+  gap_reason: data-scarce        # 缺口根因分类
+  note: 官网未公开参数与训练细节，无论文，已查融资新闻无技术披露
+```
+
+三个子字段均可选：
+
+| 子字段 | 取值 | 含义 |
+|--------|------|------|
+| `completeness` | `full` / `partial` / `minimal` | 信息完整度自评：full=技术/业务/来源已充分；partial=部分关键字段缺失；minimal=仅有最基本信息 |
+| `gap_reason` | `coverage-gap` / `data-scarce` / `not-applicable` | 缺口根因分类（见下） |
+| `note` | 任意字符串 | 简要说明缺口原因 |
+
+`gap_reason` 三个取值的判读：
+
+| 值 | 含义 | 后续动作 |
+|----|------|---------|
+| `coverage-gap` | 公司**有**公开论文/技术资料，只是我们搜索/抓取不充分，**理论上可补** | 回阶段①②补充研究，把技术细节补进 MD/raw 后回阶段④重提取 |
+| `data-scarce` | 公司闭源、不发论文、不公开参数，客观上**没有更多可得信息，补也补不到** | 不因客观稀缺被苛责；无需继续投入搜索 |
+| `not-applicable` | 信息已充分，无缺口 | 无 |
+
+**规范：新增条目或 `check.py --bottom N` 命中的低分条目，应填写此字段以区分「可补(coverage-gap)」vs「补不到(data-scarce)」**，避免把客观稀缺误判为搜索不足而反复浪费精力，也避免把可补的当成补不到而放弃。
+
+`check.py` 会在全量汇总里**额外**打印 data-scarce 条目数与「排除 data-scarce 后的综合均分」（不改变三维度打分算法本身）；`python3 scripts/check.py --exclude-scarce` 可在展示列表中剔除 data-scarce 条目，聚焦真正可补的短板。
+
 ### 数据新鲜度（scripts/check_freshness.py）
 
 垂类 AI 公司融资/估值/benchmark/客户数变化快，原始资料需定期刷新。
@@ -268,7 +299,7 @@ python scripts/check.py --domain finance             # 按领域
 
 | 脚本 | 用途 | 关键命令 | 输出/判读要点 |
 |------|------|----------|--------------|
-| `scripts/check.py` | 核心质量三维度评分（业务B/技术T/来源S，各满分100，综合=三者平均） | `python3 scripts/check.py`；`--domain {领域}`；`--top N`；`--bottom N`；`--details domains/{domain}/{slug}.yaml` | 全量输出综合均分与各维度均分；`--bottom N` 列最低分（优先修复）；`--details` 逐字段明细 |
+| `scripts/check.py` | 核心质量三维度评分（业务B/技术T/来源S，各满分100，综合=三者平均） | `python3 scripts/check.py`；`--domain {领域}`；`--top N`；`--bottom N`；`--details domains/{domain}/{slug}.yaml`；`--exclude-scarce` | 全量输出综合均分与各维度均分，并额外打印 data-scarce 条目数与排除后均分；`--bottom N` 列最低分（优先修复）；`--details` 逐字段明细（含 data_quality 标注）；`--exclude-scarce` 剔除 data_quality.gap_reason=data-scarce 条目 |
 | `scripts/check_freshness.py` | 数据新鲜度检查（基于 sources.json 的 fetched_at） | `python3 scripts/check_freshness.py`；`--stale`；`--missing`；`--days N` | 分级 fresh(≤90天)/aging(≤180)/stale(≤365)/expired(>365)；`--stale` 只列需刷新；`--missing` 列缺 sources.json/fetched_at |
 | `scripts/validate.py` | schema 合规校验（`domains/**/*.yaml` 对 `schema/model.schema.json`） | `python3 scripts/validate.py` | 输出「N 通过 / M 失败」；每次改 YAML 后必跑 |
 | `scripts/validate_platforms.py` | 校验 `platforms/*.yaml` 是否符合 `platforms/schema.json` | `python3 scripts/validate_platforms.py` | 平台数据 schema 合规判读 |
