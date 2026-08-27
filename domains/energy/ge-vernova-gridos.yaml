@@ -1,0 +1,72 @@
+name: GE Vernova GridOS
+name_en: GE Vernova GridOS
+company: GE Vernova
+domain: energy
+status: released
+website: https://www.gevernova.com/software/products/gridos
+description: GridOS是GE Vernova电气化软件业务打造的电网编排（grid orchestration）软件平台，用AI和机器学习为全球大型电力公用事业、电网调度和市场运营商提供电网现代化能力。平台由联邦式电网数据编织（Grid Data Fabric，支撑电网数字孪生）、零信任电网安全模型、智能电网AI应用套件和混合云架构组成，跨发电/输电/配电/市场/边缘协调电网活动，支持负荷预测、可再生能源整合与中断应对。GE Vernova自称其电网软件被75%的财富500强公用事业使用，客户已管理可再生渗透率高达70%的电网。
+parameters: 未公开
+architecture: AI/ML grid application suite on data fabric
+training:
+  stages:
+  - name: pre-training
+    description: 基于联邦式电网数据编织（Grid Data Fabric）汇聚的输配电网络模型、实时电网运行数据、天气和负荷数据训练AI/ML电网应用模型，构建电网数字孪生。
+  - name: fine-tuning
+    description: 针对负荷预测、可再生能源整合、电网中断应对等具体控制室任务微调智能电网应用模型。
+tech_stack:
+  framework: GridOS platform (Grid Data Fabric + hybrid cloud)
+  techniques:
+  - Grid orchestration
+  - AI/ML load forecasting
+  - Renewables integration management
+  - Grid digital twin
+  - Zero Trust security model
+  - Federated grid data fabric
+  - Edge/cloud/on-premise deployment
+datasets:
+- name: Grid Data Fabric
+  description: 用统一输配电网络模型汇聚的电网运行数据，消除企业数据孤岛，支撑电网数字孪生
+  type: pre-training
+- name: Grid Operations & Weather Data
+  description: 实时电网运行、负荷和天气数据，用于负荷预测和可再生能源整合
+  type: pre-training
+benchmarks:
+- name: Renewables Penetration Managed
+  score: 70%
+  metric: renewables_penetration
+  comparison: 'GE Vernova电网软件客户已管理可再生渗透率高达70%的清洁能源电网'
+  source: self-reported
+- name: Inertia Management Cost Reduction
+  score: 40%
+  metric: cost_reduction
+  comparison: '基于英国NG ESO单一示范项目: 高可再生渗透率大型电网可避免高达40%的惯量管理成本'
+  source: self-reported
+- name: Fortune 500 Utility Adoption
+  score: 75%
+  metric: adoption
+  comparison: 'GE Vernova自称其电网软件被75%的财富500强公用事业使用'
+  source: self-reported
+capabilities:
+- 电网编排：跨发电/输电/配电/市场/边缘协调电网活动
+- AI/ML驱动的电力负荷预测
+- 可再生能源整合与高渗透率电网管理
+- 电网数字孪生实时映射与预测分析
+- 联邦式电网数据编织消除数据孤岛
+- 零信任电网安全模型防护内外部威胁
+- 控制室内主动式与自动化电网管理
+access:
+- saas
+- private-deployment
+tags:
+- smart-grid
+- grid-orchestration
+- load-forecasting
+- renewables-integration
+- digital-twin
+- ge-vernova
+- utility-software
+references:
+- title: GE Vernova GridOS Product Page
+  url: https://www.gevernova.com/software/products/gridos
+- title: GE Vernova Electrification Software
+  url: https://www.gevernova.com/software

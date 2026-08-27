@@ -1,0 +1,54 @@
+name: Pando AI TMS
+name_en: Pando
+company: Pando
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.pando.ai
+description: Pando 是面向大型企业的 AI 驱动运输管理系统（TMS），把整个货运生命周期统一在一个自动化平台上，以 AI Agent 贯穿货运采购、多式联运运输管理与运费结算。平台服务全球制造与 CPG 货主，提供货运采购智能（对标运价、承运商竞价与合同管理）、多模式 TMS（国内/国际/进出口货运的规划、派单与追踪）以及承运商结算（发票行与合同费率匹配、消除支付泄漏）。
+parameters: 未公开
+architecture: AI agents over freight lifecycle platform
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于企业货运采购、运输执行与运费结算数据训练 TMS 场景 AI Agent
+tech_stack:
+  techniques:
+  - Freight procurement intelligence (rate benchmarking)
+  - Multi-modal transportation management
+  - Automated carrier settlement / freight audit & payment
+  - Real-time shipment visibility
+  - AI agents for freight lifecycle
+datasets:
+- name: Enterprise Freight & Rate Data
+  description: 企业货运采购、承运商竞价、合同费率与运输执行数据
+  type: pre-training
+benchmarks:
+- name: Payment Leakage Elimination
+  score: line-level match
+  metric: capability
+  comparison: 将每条发票行与合同费率及附加费条款匹配以消除支付泄漏
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
+  auth_method: 企业认证
+capabilities:
+- 货运采购智能：RFQ、承运商竞价与合同管理的对标与洞察
+- 多式联运 TMS：国内/国际/进出口货运的规划、派单与追踪
+- 实时货运可视化与自动化承运商协同
+- 承运商结算：发票行与合同费率匹配、消除支付泄漏
+- 运费审计与支付（freight audit & payment）
+access:
+- saas
+tags:
+- supply-chain
+- tms
+- transportation-management
+- freight-procurement
+- freight-audit-payment
+- multi-modal
+references:
+- title: Pando 官网
+  url: https://www.pando.ai

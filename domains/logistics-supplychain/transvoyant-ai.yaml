@@ -1,0 +1,54 @@
+name: TransVoyant CDI
+name_en: TransVoyant Continuous Decision Intelligence
+company: TransVoyant
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.transvoyant.com
+description: TransVoyant 的 Continuous Decision Intelligence（CDI，持续决策智能）平台以物理为基础的确定性建模驾驭供应链，持续摄取来自传感器、IoT、天气、航运及公共数据源的海量实时事件，预测供应链与物流结果（ETA、中断、风险），把全球供应链的混沌转化为单一确定性事实。平台已应用于商业供应链可视化预测与国防/政府物流情报场景。
+parameters: 未公开
+architecture: physics-based deterministic modeling + real-time event fusion
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于实时事件流与历史物流数据训练 ETA/中断/风险预测的持续决策智能模型
+tech_stack:
+  techniques:
+  - Real-time event fusion (sensors, IoT, weather, shipping)
+  - Physics-based deterministic modeling
+  - Constraint solver
+  - Predictive ETA & disruption modeling
+  - Supply chain mesh / digital twin
+datasets:
+- name: TransVoyant Event Stream
+  description: 来自传感器、IoT、天气、航运与公共数据源的海量实时事件流
+  type: pre-training
+benchmarks:
+- name: Supply Chain Mesh Nodes
+  score: '284700'
+  metric: node_count
+  comparison: 实时同步的供应链网格覆盖 284,700 个节点
+  source: self-reported
+- name: Autonomic Score
+  score: 94.7%
+  metric: autonomic_score
+  comparison: 平台自主评分（autonomic score）达 94.7%
+  source: self-reported
+capabilities:
+- 持续摄取传感器/IoT/天气/航运/公共数据的实时事件融合
+- 基于物理的确定性供应链建模
+- 预测性 ETA、中断与风险建模
+- 供应链网格实时同步与约束求解
+- 商业供应链可视化与国防/政府物流情报
+access:
+- saas
+tags:
+- supply-chain
+- logistics-visibility
+- predictive-eta
+- decision-intelligence
+- iot
+- risk-management
+references:
+- title: TransVoyant 官网
+  url: https://www.transvoyant.com

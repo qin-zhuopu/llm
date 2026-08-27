@@ -1,0 +1,65 @@
+name: Verdigris
+name_en: Verdigris
+company: Verdigris Technologies
+domain: energy
+status: released
+website: https://www.verdigris.co/
+description: Verdigris是用高频电气波形分析和AI为关键基础设施（尤其是AI数据中心和大型建筑）提供"电气地面真值（Electrical Ground Truth）"的能源智能公司。核心差异化是以8 kHz（每秒8000次采样）采集电气波形，远高于标准监测的1 Hz，从而在告警触发前捕捉毫秒级设备退化信号（如整流器5次/7次谐波比值漂移），释放被保守估算浪费的15%-25%电力容量。已监测2+GW峰值需求、2000万+平方英尺、1万+台电力设备。T-Mobile案例中在800+台UPS整流器上提前21天预测故障。
+parameters: 未公开
+architecture: waveform analysis ML models
+training:
+  stages:
+  - name: pre-training
+    description: 基于8 kHz高频电气波形数据训练故障特征识别模型，学习整流器谐波比值漂移、谐波尖峰等预示设备退化的频域特征。
+  - name: fine-tuning
+    description: 针对UPS整流器、冷机、开关柜等不同设备类型微调故障预测和容量优化模型，覆盖从主开关柜到每个回路的全电力链路13个节点。
+tech_stack:
+  framework: Verdigris waveform analytics platform
+  techniques:
+  - 8 kHz waveform sampling
+  - Frequency-domain harmonic analysis
+  - Predictive equipment failure detection
+  - Per-circuit power chain monitoring
+  - Capacity optimization
+datasets:
+- name: High-Frequency Waveform Data
+  description: 以8 kHz（每秒8000次采样）采集的电气波形数据，用于识别故障特征
+  size: 8000 samples/second per channel
+  type: pre-training
+- name: Equipment Power Chain Data
+  description: 从主开关柜到每个子配电盘和回路的13节点连续测量数据
+  type: pre-training
+benchmarks:
+- name: T-Mobile Failure Lead Time
+  score: 21 days
+  metric: advance_warning_days
+  comparison: 'vs 标准BMS告警(触发0台): 在800+台UPS整流器上提前21天预测故障'
+  source: self-reported
+- name: Data Center Chiller Energy Reduction
+  score: 19%
+  metric: energy_reduction
+  comparison: 'Fortune 50纽约数据中心依据物理验证运行上限削减冷机能耗19%'
+  source: self-reported
+- name: Stranded Capacity Recovery
+  score: 15-25%
+  metric: capacity_recovery
+  comparison: 'vs 保守铭牌降额: 每回路多释放15%-25%容量，可达铭牌值92%'
+  source: self-reported
+capabilities:
+- 8 kHz高频电气波形采集捕捉毫秒级设备退化信号
+- 频域谐波分析预测UPS整流器等设备故障
+- 全电力链路每回路连续监测与故障定位
+- 释放被保守降额浪费的15%-25%电力容量
+- AI数据中心与大型建筑的电气可靠性监测
+access:
+- saas
+tags:
+- data-center-energy
+- electrical-monitoring
+- predictive-maintenance
+- waveform-analysis
+- energy-efficiency
+- building-energy
+references:
+- title: Verdigris Official Website
+  url: https://www.verdigris.co/

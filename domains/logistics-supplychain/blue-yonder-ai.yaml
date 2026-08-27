@@ -1,0 +1,62 @@
+name: Blue Yonder Agentic Supply Chain
+name_en: Blue Yonder AI
+company: Blue Yonder
+domain: logistics-supplychain
+status: released
+release_date: '2024'
+website: https://blueyonder.com
+description: Blue Yonder 自称"面向供应链的 AI 公司"，其平台覆盖从第一公里到最后一公里的规划、执行（WMS/TMS）与网络。可扩展、透明、可解释的 AI/ML 每天在平台上产生超过 200 亿条预测。近期推出 Frictionless Outcomes AI Agent、与 NVIDIA 合作的 Model Training Factory 以及 2026.2 版本，统一 AI、规划、执行与网络能力驱动代理式（agentic）自主供应链。
+parameters: 未公开
+architecture: agentic AI + ML over common data cloud
+base_model: NVIDIA-accelerated specialized agents
+training:
+  stages:
+  - name: fine-tuning
+    description: 通过与 NVIDIA 合作的 Model Training Factory 训练面向供应链的专用 AI Agent
+tech_stack:
+  techniques:
+  - Explainable AI/ML at scale (20B+ predictions/day)
+  - Common Data Cloud
+  - Multi-enterprise multi-tier network
+  - Agentic AI (autonomous supply chain)
+  - NVIDIA Model Training Factory
+datasets:
+- name: Blue Yonder Common Data Cloud
+  description: 跨所有层级与贸易伙伴的统一供应链数据云，覆盖从原材料到最终客户的库存移动
+  type: pre-training
+benchmarks:
+- name: Daily Predictions
+  score: 20000000000+
+  metric: predictions_per_day
+  comparison: 平台每天产生超过 200 亿条 AI/ML 预测
+  source: self-reported
+- name: Gartner Magic Quadrant
+  score: Leader (4 MQs)
+  metric: analyst_rating
+  comparison: 在四项 Gartner Magic Quadrant 报告中被评为 Leader
+  source: third-party
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
+  auth_method: 企业认证
+capabilities:
+- 供应链规划、执行（WMS/TMS）与网络端到端能力
+- 可解释 AI/ML 大规模预测（每天 200 亿+）
+- 统一数据云实现跨层级实时库存可视与计划对齐
+- 多企业、多层级网络双向协同
+- Frictionless Outcomes AI Agent 自动化
+- 代理式自主供应链（Agentic Supply Chain）
+access:
+- saas
+- private-deployment
+tags:
+- supply-chain
+- demand-forecasting
+- wms
+- tms
+- agentic-ai
+- inventory-optimization
+references:
+- title: Blue Yonder 官网
+  url: https://blueyonder.com

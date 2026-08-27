@@ -1,0 +1,59 @@
+name: Everstream Analytics
+name_en: Everstream Analytics
+company: Everstream Analytics
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.everstream.ai
+description: Everstream Analytics 是端到端供应链风险管理平台，将 AI 驱动的预测分析与专有全球数据集（天气、地缘政治、财务、物流信号）及专家人工验证结合，产出前瞻性的供应链风险评分。平台提供供应链数字孪生的网络绘制、24/7 AI 驱动人工验证告警、当下与预测性风险评分，以及隐藏次级供应商的映射与监控。
+parameters: 未公开
+architecture: predictive analytics + human-in-the-loop validation
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于专有全球风险数据集训练供应链中断与供应商风险的预测评分模型
+tech_stack:
+  techniques:
+  - Predictive risk scoring
+  - Supply chain digital twin (network mapping)
+  - AI-driven alerting with human validation
+  - Sub-tier supplier mapping
+  - NLP over global event feeds
+datasets:
+- name: Everstream Global Risk Dataset
+  description: 天气、地缘政治、财务、物流等多源全球风险信号数据
+  type: pre-training
+benchmarks:
+- name: Nissan Cost Avoidance
+  score: 7-figure
+  metric: cost_avoidance
+  comparison: Nissan 前 6 个月内七位数成本规避，90% 影响缓解且零财务损失
+  source: self-reported
+- name: Danone Response Time Saved
+  score: 5 days
+  metric: response_time_saved
+  comparison: Danone 通过主动措施节省 5 天响应时间
+  source: self-reported
+- name: Gartner Supplier Risk Management MQ
+  score: included
+  metric: analyst_rating
+  comparison: 收录于 2025 Gartner Magic Quadrant for Supplier Risk Management Solutions
+  source: third-party
+capabilities:
+- 供应链数字孪生的网络绘制与可视化
+- 24/7 AI 驱动、人工验证的可操作风险告警
+- 当下自动化评分与面向未来的预测性风险评分
+- 隐藏次级供应商映射与集中度风险监控
+- 风险情报集成进规划、采购与物流系统
+access:
+- saas
+tags:
+- supply-chain
+- risk-management
+- predictive-analytics
+- digital-twin
+- sub-tier-visibility
+- supplier-risk
+references:
+- title: Everstream Analytics 官网
+  url: https://www.everstream.ai

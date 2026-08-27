@@ -1,0 +1,75 @@
+name: project44 Decision Intelligence
+name_en: project44 Movement Platform
+company: project44
+domain: logistics-supplychain
+status: released
+release_date: '2024'
+website: https://www.project44.com
+description: project44 是全球领先的供应链可视化与决策智能（Decision Intelligence）平台，通过编排 AI Agent 实时完成"检测-决策-执行"闭环，覆盖智能运输管理（含自主运价谈判）、货运与库存可视化、堆场管理和电商末端物流。其 AI Agent 运行在全球最大的实时物流数据图谱之上（每年 3.7T 经验证数据点、每天处理 700M+ 物流事件、连接 282K 承运商与 1M+ 物流设施）。
+parameters: 未公开
+architecture: multi-agent orchestration over logistics data graph
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于覆盖全球货运、承运商、设施与外部风险信号的物流数据图谱，训练可执行检测-决策-执行任务的 AI Agent
+tech_stack:
+  techniques:
+  - Multi-agent orchestration (detect / decide / act)
+  - Real-time logistics data graph
+  - Predictive ETA
+  - Autonomous rate negotiation
+  - Exception detection & resolution
+datasets:
+- name: project44 Logistics Data Graph
+  description: 全球实时物流数据图谱，覆盖货运、承运商、设施、订单与外部风险信号
+  size: 3.7T validated data points/yr, 700M+ events/day, 1.5B+ shipments/yr, 282K carriers, 1M+ facilities
+  type: pre-training
+benchmarks:
+- name: Baltimore Bridge Collapse Cost Avoidance
+  score: $16M
+  metric: cost_avoided
+  comparison: 为某 $29B 美国汽车公司在大桥坍塌期间实时改道避免 $16M 成本
+  source: self-reported
+- name: Detention & Demurrage Reduction
+  score: 99%
+  metric: fee_reduction
+  comparison: 某 $5.6B 全球烈酒公司滞留/滞期费降低 99%
+  source: self-reported
+- name: Exception Response Time
+  score: 72%
+  metric: response_speedup
+  comparison: 某 $150B+ 全球家居零售商供应链异常响应速度提升 72%
+  source: self-reported
+- name: Gate Wait Time Reduction
+  score: 86%
+  metric: wait_time_reduction
+  comparison: 某 $16B 加拿大汽配零售商闸口等待时间降低 86%
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
+  auth_method: 企业认证
+capabilities:
+- 智能运输管理：多式联运计价、订舱、计划与自主运价谈判
+- 智能货运与库存可视化：跨 mode/node 优化，AI Agent 解决中断与异常
+- 智能堆场管理：实时动态编排堆场排程、优先级与移动
+- 智能电商物流：末端配送预测预警与主动客户沟通
+- 基于实时物流数据图谱的预测性 ETA
+- AI Agent 编排的检测-决策-执行自主闭环
+access:
+- saas
+- api
+tags:
+- supply-chain
+- logistics-visibility
+- decision-intelligence
+- multi-agent
+- transportation-management
+- yard-management
+- last-mile-delivery
+references:
+- title: project44 官网
+  url: https://www.project44.com
+- title: project44 Platform
+  url: https://www.project44.com/platform

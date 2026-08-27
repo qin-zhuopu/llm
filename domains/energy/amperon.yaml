@@ -1,0 +1,70 @@
+name: Amperon
+name_en: Amperon
+company: Amperon
+domain: energy
+status: released
+website: https://www.amperon.co/
+description: Amperon是美国能源需求预测与分析公司，用机器学习融合5100万只电表的实际用电数据、4万+天气点集合预报和市场数据，输出电力负荷、净负荷、电价及风光出力的短期概率性预测。提供15天、亚小时级刷新的预测，覆盖北美、欧洲、澳洲26个电网/市场，通过UI/UX或API（含Snowflake集成）交付，帮助电力零售商、交易商和资产运营方提升电网可靠性、管理财务风险并优化可再生资产收益。自报预测精度比传统方法高3倍。
+parameters: 未公开
+architecture: machine learning ensemble
+training:
+  stages:
+  - name: pre-training
+    description: 基于5100万只电表的历史实际用电数据、多供应商天气集合预报（40K+天气点）以及电力市场价格数据训练机器学习负荷与电价预测模型，学习用电与天气/市场之间的非线性关系。
+  - name: fine-tuning
+    description: 针对不同电网/ISO市场和客户组合（零售负荷、可再生资产、需求响应容量峰值）微调专用模型，如4个专用CP（容量峰值）模型和风光资产概率性出力模型。
+tech_stack:
+  framework: Custom machine learning forecasting platform
+  techniques:
+  - Probabilistic load forecasting
+  - Weather ensemble modeling
+  - Solar and wind short-term generation forecasting
+  - Net demand and price forecasting
+  - Sub-hourly forecast updates
+  - Snowflake data integration
+datasets:
+- name: Smart Meter Consumption Data
+  description: 5100万只电表的实际历史用电数据，用于负荷预测模型训练
+  size: 51M meters
+  type: pre-training
+- name: Weather Ensemble Data
+  description: 来自4家气象供应商的4万+天气点，叠加自研天气集合，20+天气变量
+  size: 40K+ weather points
+  type: pre-training
+benchmarks:
+- name: Forecast Accuracy Improvement
+  score: 3x
+  metric: accuracy_improvement
+  comparison: 'vs 传统预测方法: 声称预测精度提升3倍'
+  source: self-reported
+- name: Capacity Payments Avoided
+  score: $50M+ annually
+  metric: cost_savings
+  comparison: 通过需求管理每年帮助客户规避的容量费用
+  source: self-reported
+- name: Meters Under Management
+  score: 51M
+  metric: coverage
+  comparison: 管理的实际消费数据电表规模
+  source: self-reported
+capabilities:
+- 15天、亚小时级刷新的电力负荷与净负荷概率性预测
+- 风电与光伏资产的短期出力概率性预测
+- 电价与市场波动情景分析辅助电力交易决策
+- 需求响应容量峰值（CP）预测规避容量费用
+- 零售电力组合的采购与竞价优化
+- 通过API与Snowflake交付预测数据流
+access:
+- saas
+- api
+tags:
+- energy-forecasting
+- load-forecasting
+- renewable-forecasting
+- demand-response
+- power-trading
+- energy-transition
+- machine-learning
+references:
+- title: Amperon Official Website
+  url: https://www.amperon.co/

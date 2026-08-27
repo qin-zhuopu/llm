@@ -1,0 +1,54 @@
+name: Optimal Dynamics TDS
+name_en: Optimal Dynamics Transportation Decision System
+company: Optimal Dynamics
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.optimaldynamics.com
+description: Optimal Dynamics 推出首个综合性 Transportation Decision System（TDS，运输决策系统），面向企业级整车（truckload）运输公司自动提升利用率、生产力与盈利。平台将 Princeton CASTLE Lab 数十年在高维随机优化/近似动态规划（Approximate Dynamic Programming）的研究商业化，提供实时自动派单、代理式货运采购、竞标分析与数字孪生情景模拟，覆盖业务战略、网络管理、派单与驾驶各层级自动化。
+parameters: 未公开
+architecture: approximate dynamic programming / high-dimensional stochastic optimization
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于整车运输历史运营与司机约束数据训练高维随机优化决策引擎
+tech_stack:
+  techniques:
+  - Approximate Dynamic Programming (ADP)
+  - High-dimensional stochastic optimization
+  - Agentic freight procurement
+  - Digital twin scenario simulation
+  - Automated dispatch decisions
+datasets:
+- name: Truckload Operations Data
+  description: 整车运输的载运、司机 HOS、回家时间、位置与网络运营历史数据
+  type: pre-training
+benchmarks:
+- name: Productivity Increase
+  score: 80%
+  metric: productivity_gain
+  comparison: 将 80% 的车队管理者从常规规划任务中解放
+  source: self-reported
+- name: Weekly Revenue per Truck
+  score: 12.5%
+  metric: revenue_increase
+  comparison: 每车每周营收提升 12.5%
+  source: self-reported
+capabilities:
+- 实时自动派单决策，几分钟完成全天计划
+- 代理式货运采购（agentic freight procurement）
+- 竞标分析：识别最优车道并模拟竞标影响
+- 数字孪生情景模拟
+- 结合司机 HOS/回家时间/位置的最优载运分配
+access:
+- saas
+tags:
+- supply-chain
+- transportation-management
+- truckload
+- route-optimization
+- stochastic-optimization
+- digital-twin
+references:
+- title: Optimal Dynamics 官网
+  url: https://www.optimaldynamics.com

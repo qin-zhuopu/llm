@@ -1,0 +1,58 @@
+name: Interos iScore
+name_en: interos.ai Supplier Resilience Platform
+company: Interos
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.interos.ai
+description: interos.ai 是业界首个自动化供应商韧性平台，基于全球最大的 B2B 关系数据库与 AI，大规模绘制并监控扩展供应链。其核心 AI 能力 iScore 使用数千个专有数据点对供应链进行多风险因子评分，检测隐藏的 ESG、网络安全、财务、贸易限制、地缘政治和灾难等脆弱性，帮助企业"提前 5 天、提前 5 步、深入 5 层"预判并阻止中断。
+parameters: 未公开
+architecture: AI risk-scoring over global B2B relationship graph
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于全球 B2B 关系图谱与多源风险数据训练供应链多因子风险评分模型
+tech_stack:
+  techniques:
+  - Global B2B relationship graph
+  - Multi-factor risk scoring (iScore)
+  - Sub-tier supplier mapping
+  - NLP over news/sanctions/regulatory feeds
+  - Automated supplier resilience monitoring
+datasets:
+- name: Global B2B Relationship Database
+  description: 全球最大的 B2B 供应商关系数据库，用于绘制多层级供应链
+  type: pre-training
+- name: Multi-source Risk Signals
+  description: ESG、网络安全、财务、贸易限制/制裁、地缘政治与灾难等风险数据源
+  type: pre-training
+benchmarks:
+- name: Supply Chain Visibility Gap
+  score: '2%'
+  metric: baseline_visibility
+  comparison: 企业通常只理解并监控供应链的 2%，interos.ai 揭示其余 98% 盲区
+  source: self-reported
+- name: Disruption Lead Time
+  score: 5 days earlier
+  metric: early_warning
+  comparison: 帮助企业提前 5 天、提前 5 步、深入 5 层发现中断
+  source: self-reported
+capabilities:
+- iScore 多风险因子供应链评分（ESG/网络/财务/制裁/地缘/灾难）
+- 发现隐藏的供应商关系与网络脆弱性
+- 次级（sub-tier）供应商映射与集中度风险检测
+- 贸易限制与制裁清单合规监控
+- 灾害、地缘政治与财务风险的自动化预警
+- 自动化供应商韧性持续监控
+access:
+- saas
+tags:
+- supply-chain
+- risk-management
+- supplier-resilience
+- sub-tier-visibility
+- esg
+- geopolitical-risk
+references:
+- title: interos.ai 官网
+  url: https://www.interos.ai
