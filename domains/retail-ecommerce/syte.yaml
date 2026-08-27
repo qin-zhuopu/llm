@@ -1,0 +1,68 @@
+name: Syte
+name_en: Syte
+company: Syte
+domain: retail-ecommerce
+status: released
+website: https://www.syte.ai/
+description: "Syte 自称「全球首个商品发现平台」，是为电商从零构建的 AI 视觉搜索、推荐与商品发现平台，视觉 AI 根基深厚。核心能力包括以图搜图/拍照搜索、灵感画廊、Shop Similar / Shop the Look 等视觉推荐引擎，以及从商品图自动打标的 AI Deep Tags 与商品化工具。属模型系统型：训练专有计算机视觉模型做视觉搜索与商品属性自动标注，叠加推荐与 merchandising 模型，主要服务时尚服饰、珠宝、家居家具等视觉属性强的品类。"
+parameters: 未公开
+architecture: "visual product discovery platform (专有计算机视觉模型 + 推荐/商品化模型)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模商品图像训练视觉识别、相似检索与属性识别（Deep Tags）模型
+  - name: fine-tuning
+    description: 针对零售商目录与品类（时尚/珠宝/家居）微调视觉搜索相关性与推荐模型
+tech_stack:
+  framework: Syte Product Discovery Platform
+  inference: 实时视觉搜索/推荐云服务
+  techniques:
+  - Visual search (image/camera-based)
+  - Computer vision product tagging (Deep Tags)
+  - Visual recommendation engines (Shop Similar / Shop the Look)
+  - Personalized recommendations
+  - Thematic tagging & lexicon management
+datasets:
+- name: 商品图像库
+  description: 零售商商品图像，用于训练视觉识别、相似检索与自动属性打标
+  type: pre-training
+- name: 购物者行为数据
+  description: 点击、加购、购买行为，用于个性化视觉推荐
+  type: sft
+benchmarks:
+- name: 服饰零售成效
+  score: 更高 CVR/AOV/ARPU
+  metric: business_lift
+  comparison: "使用 Syte 推荐的服饰零售商报告更高的转化率、客单价与人均营收（公司自述）"
+  source: self-reported
+- name: 自动属性打标
+  score: AI Deep Tags
+  metric: auto_tagging
+  comparison: "从商品图自动提取属性标签，提升文本搜索与商品化（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 视觉搜索（以图搜图/拍照搜索）与灵感画廊
+- 视觉推荐引擎（Shop Similar、Shop the Look/Room、Shop Social）
+- AI Deep Tags 商品属性自动标注
+- 个性化商品推荐
+- 主题标签与词库管理
+- 数据驱动的营销与商品化工具
+access:
+- saas
+- api
+tags:
+- ecommerce
+- visual-search
+- product-discovery
+- computer-vision
+- recommendation
+- fashion
+- retail
+references:
+- title: Syte Official Website
+  url: https://www.syte.ai/

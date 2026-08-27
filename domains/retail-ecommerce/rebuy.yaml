@@ -1,0 +1,68 @@
+name: Rebuy
+name_en: Rebuy Engine
+company: Rebuy
+domain: retail-ecommerce
+status: released
+website: https://www.rebuyengine.com/
+description: "Rebuy 是面向 Shopify 的 AI 电商个性化平台，官称已有 50,000+ Shopify 品牌用其提升客单价（AOV）、转化率与客户生命周期价值（LTV）。其个性化引擎驱动智能购物车（Smart Cart）、商品推荐、追加/交叉销售、购后追加与站内搜索，覆盖整个 Shopify 购物旅程。属模型系统+工作流应用型：在 Shopify 购物者行为与商品目录数据之上运行专有推荐/个性化模型，深度集成于 Shopify 商务栈。"
+parameters: 未公开
+architecture: "ecommerce personalization engine (专有推荐/个性化模型，Shopify 原生集成)"
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于 Shopify 购物者行为（浏览、加购、购买）与商品目录训练推荐与个性化模型
+  - name: post-training
+    description: 通过转化与营收反馈持续优化推荐、追加销售与购物车策略
+tech_stack:
+  framework: Rebuy Personalization Engine
+  inference: Shopify 实时个性化/推荐服务
+  techniques:
+  - Behavioral personalization
+  - Product recommendations
+  - Upsell / cross-sell
+  - Smart Cart
+  - Post-purchase offers
+datasets:
+- name: Shopify 购物者行为数据
+  description: 浏览、加购、购买等行为，用于个性化推荐与购物车优化
+  type: sft
+- name: 品牌商品目录
+  description: Shopify 商家商品目录，用于推荐与追加销售匹配
+  type: other
+benchmarks:
+- name: 品牌规模
+  score: 50,000+ Shopify 品牌
+  metric: adoption
+  comparison: "50,000+ Shopify 品牌使用（公司自述）"
+  source: self-reported
+- name: 业务成效
+  score: AOV/CVR/LTV 提升
+  metric: business_lift
+  comparison: "帮助品牌提升客单价、转化率与客户生命周期价值（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 按 Shopify 订阅（联系销售/应用商店）
+  auth_method: API Key / Shopify OAuth
+capabilities:
+- AI 个性化商品推荐
+- 智能购物车（Smart Cart）
+- 追加销售与交叉销售
+- 购后追加优惠
+- 站内个性化搜索
+- 全购物旅程个性化（提升 AOV/CVR/LTV）
+access:
+- saas
+- api
+tags:
+- ecommerce
+- personalization
+- recommendation
+- shopify
+- upsell
+- conversion-optimization
+- retail
+references:
+- title: Rebuy Official Website
+  url: https://www.rebuyengine.com/

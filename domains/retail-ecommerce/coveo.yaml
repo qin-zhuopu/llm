@@ -1,0 +1,73 @@
+name: Coveo
+name_en: Coveo
+company: Coveo Solutions Inc.
+domain: retail-ecommerce
+status: released
+release_date: "2005"
+website: https://www.coveo.com/en/solutions/ecommerce
+description: "Coveo 是加拿大上市（TSX: CVO）的企业级 AI 搜索与商品发现平台，把搜索转化为意图驱动的发现体验，覆盖短尾、长尾、对话式与 GenAI 辅助查询。基于一套成熟的专有 AI 模型，即使对匿名购物者和冷启动商品也能实时个性化，并在相关性与电商 KPI（转化、营收）之间平衡。统一索引跨网站、电商、客服、职场四条业务线，支持多品牌/多币种/50+ 语言/50+ 市场，MACH 认证并集成 SAP、Salesforce、Shopify。属模型系统+工作流应用型。"
+parameters: 未公开
+architecture: "AI search & discovery platform (专有相关性/个性化/排序模型 + GenAI 辅助发现，统一索引)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模商品目录、查询与用户行为数据训练搜索相关性与语义匹配模型
+  - name: fine-tuning
+    description: 针对每个企业环境（多品牌/多市场）的目录与行为数据微调排序、推荐与个性化模型
+tech_stack:
+  framework: Coveo Platform (unified index)
+  inference: 实时搜索/推荐/个性化云服务
+  techniques:
+  - Intent-driven search
+  - Real-time personalization (含匿名/冷启动)
+  - GenAI-assisted product discovery
+  - Query suggestions & semantic ranking
+  - Composable Atomic components / APIs (MACH)
+datasets:
+- name: 企业商品目录与内容
+  description: 跨网站/电商/客服/职场统一索引的商品目录、内容与文档
+  type: pre-training
+- name: 用户行为与查询数据
+  description: 搜索查询、点击、购买等行为信号，用于个性化与排序优化
+  type: sft
+benchmarks:
+- name: 语言/市场覆盖
+  score: 50+ 语言 / 50+ 市场
+  metric: coverage
+  comparison: "单一环境支持多品牌、多币种、50+ 语言、50+ 市场（公司自述）"
+  source: self-reported
+- name: 相关性与 KPI 平衡
+  score: 意图驱动发现
+  metric: relevance_kpi_balance
+  comparison: "vs 传统搜索: 在相关性与电商 KPI 之间平衡优化（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  documentation: https://docs.coveo.com/
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 意图驱动的 AI 电商搜索（短尾/长尾/对话式/GenAI）
+- 实时个性化（含匿名购物者与冷启动商品）
+- 生成式商品发现与对话式商务
+- AI 推荐与语义排序
+- 统一索引跨网站/电商/客服/职场
+- 可组合平台（Atomic 组件库 + API，MACH 认证）
+access:
+- saas
+- api
+tags:
+- ecommerce
+- ai-search
+- product-discovery
+- personalization
+- recommendation
+- generative-ai
+- enterprise
+- retail
+references:
+- title: Coveo Ecommerce Solution
+  url: https://www.coveo.com/en/solutions/ecommerce
+- title: Coveo (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Coveo

@@ -1,0 +1,71 @@
+name: Bloomreach Loomi AI
+name_en: Bloomreach Loomi AI
+company: Bloomreach
+domain: retail-ecommerce
+status: released
+website: https://www.bloomreach.com/en/products/loomi-ai
+description: "Bloomreach 的智能体（agentic）AI 平台 Loomi AI，是驱动其所有电商产品（Discovery 搜索、Engagement 营销、Content、Ads）的中央智能引擎。它把商家的第一方客户数据、预测模型与全渠道激活统一在单一平台，使一个渠道（如站内搜索）的信号能在毫秒内个性化另一个渠道（如邮件）。属于「模型系统+工作流应用」型：在通用基座之上编排零售商专有数据、专用个性化/商品化模型与 AI 智能体。Loomi Connect 支持商家用自有目录构建自定义 AI 智能体，并率先通过 ChatGPT beta 接入智能体电商（agentic commerce）。"
+parameters: 未公开
+architecture: "agentic AI orchestration platform (个性化/搜索/推荐专用模型 + LLM 编排)"
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于零售商第一方行为数据（搜索、点击、购买、退货、偏好）训练站内搜索相关性、商品化排序与个性化推荐模型
+  - name: post-training
+    description: 通过持续学习与全渠道信号反馈优化个性化与预测模型，跨渠道（搜索/邮件/广告/App）共享同一 AI 大脑，效果随连接渠道增多而复合提升
+tech_stack:
+  framework: Bloomreach Loomi AI platform
+  inference: 实时全渠道个性化云服务
+  techniques:
+  - Agentic AI (autonomous agents)
+  - First-party data unification
+  - Real-time cross-channel personalization
+  - Conversational / GenAI-assisted search
+  - Predictive models
+  - Retrieval over merchant catalog (Loomi Connect / ChatGPT beta)
+datasets:
+- name: 零售商第一方行为数据
+  description: 每位购物者的搜索、购买、点击、退货、偏好等第一方数据，超越 clickstream 用于个性化
+  type: sft
+- name: 商家商品目录
+  description: 零售商完整商品目录与商品化规则，用于搜索、推荐及 Loomi Connect 智能体
+  type: other
+benchmarks:
+- name: 客户案例 - Canadian Tire
+  score: 持续优化搜索结果序列
+  metric: personalization
+  comparison: "vs 内部搜索引擎: Loomi AI 持续追踪用户行为并重排搜索结果，优于自有硬件/团队能力"
+  source: self-reported
+- name: 全渠道复合效应
+  score: 渠道越多越智能
+  metric: revenue_lift
+  comparison: "连接渠道越多，每次体验越智能，收入增幅复合放大（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 自主（agentic）站内电商搜索，能预测、发起对话并解释推理
+- 跨渠道实时个性化（搜索、邮件、广告、App 共享同一 AI 大脑）
+- 基于第一方数据的每位购物者个性化
+- AI 商品化排序与自动化 merchandising
+- Loomi Connect：用自有目录构建自定义 AI 智能体并接入 ChatGPT 等外部工具
+- 面向智能体电商（agentic commerce）的个性化商品推荐
+access:
+- saas
+- api
+tags:
+- ecommerce
+- agentic-commerce
+- ai-search
+- personalization
+- merchandising
+- recommendation
+- retail
+references:
+- title: Bloomreach Loomi AI
+  url: https://www.bloomreach.com/en/products/loomi-ai
+- title: Bloomreach Discovery - Ecommerce Search
+  url: https://www.bloomreach.com/en/products/discovery
