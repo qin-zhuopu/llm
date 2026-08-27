@@ -30,3 +30,9 @@ Fin 之所以领先，是因为它运行在 Intercom 自研的专有 AI 模型 *
 ## 定位
 
 CX 平台内嵌专有客服模型的代表，闭源 SaaS/API，按 resolution 计费形成商业闭环。发现渠道：Sierra/Decagon 竞品 snowball。
+
+## 补充：官网博客（来源: https://www.intercom.com/blog/；抓取日期: 2026-08-27）
+
+- **Announcing Evals and Releases**（2026-08-13，Brian Donohue）：为 Fin 提供完整评测体系——
+  上线前测试变更、可控灰度发布、对**每一次线上对话**做评估，以对 Fin 交付的体验建立信心
+- 博客覆盖 Product & Design、AI & Automation、Customer Service、News & Updates 与 The Ticket 播客

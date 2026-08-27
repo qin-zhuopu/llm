@@ -39,6 +39,11 @@ benchmarks:
   metric: remote_sensing_tasks
   comparison: "20亿参数遥感基础模型，论文被CVPR 2024接收"
   source: paper
+- name: Ling MoE 训练成本效率 (arXiv:2503.05139)
+  score: "-20% 算力成本"
+  metric: training_cost_reduction
+  comparison: "vs 高性能设备: 300B级MoE(Ling-Plus 290B/28.8B激活)在低配硬件预训练算力成本节省约20%，性能仍与同规模模型相当"
+  source: paper
 capabilities:
 - 金融智能客服与复杂咨询问答
 - 金融风险评估与反欺诈检测
@@ -59,3 +64,5 @@ references:
   url: https://www.antgroup.com
 - title: 'SkySense: A General and Flexible Remote Sensing Foundation Model (CVPR 2024)'
   url: https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_SkySense_A_General_and_Flexible_Remote_Sensing_Foundation_Model_CVPR_2024_paper.html
+- title: 'Every FLOP Counts: Scaling a 300B Mixture-of-Experts LING LLM without Premium GPUs (arXiv:2503.05139)'
+  url: https://arxiv.org/abs/2503.05139

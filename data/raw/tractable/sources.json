@@ -5,6 +5,12 @@
       "url": "https://www.tractable.ai/",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "about-us.md",
+      "url": "https://tractable.ai/en/about-us",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
     }
   ]
 }

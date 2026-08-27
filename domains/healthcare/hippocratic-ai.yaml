@@ -84,8 +84,20 @@ api:
   available: true
   protocol: proprietary
   pricing: AI智能体人力市场模式，按需雇佣
+business:
+  funding_total: $444M
+  latest_round: Series C ($126M, 2025-11)
+  valuation: $3.5B
+  customers: 250M+ 患者交互；300+ 临床用例上线；50+ EMR 集成(含 Epic)；服务前20大药企中的7家
+  investors:
+    - Kleiner Perkins
+    - Avenir Growth
+    - Premji Invest
+    - General Catalyst
+    - Andreessen Horowitz (a16z)
+    - NVIDIA NVentures
 references:
   - title: Hippocratic AI 官方网站
-    url: https://www.hippocratic.ai
+    url: https://www.hippocraticai.com/
   - title: "Polaris: A Safety-focused LLM Constellation Architecture for Healthcare"
     url: https://arxiv.org/abs/2403.13313

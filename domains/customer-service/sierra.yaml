@@ -54,6 +54,14 @@ api:
   protocol: proprietary
   pricing: 按成功结果计费 + 企业平台
   auth_method: 企业认证
+business:
+  funding_total: $1B+ (含 $950M 轮)
+  latest_round: $950M (Tiger Global & GV 领投, 2026)
+  valuation: $15B+
+  customers: 覆盖 40%+ Fortune 50；agent 驱动数十亿次客户交互；客户含 Nordstrom、Singtel、Cigna
+  investors:
+  - Tiger Global
+  - GV (Google Ventures)
 capabilities:
 - 构建生产就绪的多语言、多渠道客服Agent（Ghostwriter）
 - 将客服Agent直接连接企业系统并执行业务动作

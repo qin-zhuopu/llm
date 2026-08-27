@@ -58,6 +58,8 @@ capabilities:
 - 文档级引用和推理，确保可辩护性
 access:
 - saas
+business:
+  customers: 25 年来服务从 AmLaw 200 到 Fortune 500 的组织；客户含 Microsoft、Teneo、KordaMentha、Cimplifi、Gilbert + Tobin、Alvarez & Marsal
 tags:
 - e-discovery
 - legal-review
@@ -71,3 +73,5 @@ references:
   url: https://www.relativity.com/aiR
 - title: Relativity Security and Compliance
   url: https://www.relativity.com/security
+- title: Relativity — AI-Powered Legal Data Software (platform overview)
+  url: https://www.relativity.com/ai/

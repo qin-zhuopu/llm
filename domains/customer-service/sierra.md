@@ -32,3 +32,11 @@ Sierra 是领先的企业级对话式 AI 平台，由 Bret Taylor（前 Salesfor
 ## 定位（据行业报告）
 
 Sierra 采用多模型 constellation、Supervisor 和企业系统工具。底层模型可替换（非核心）。护城河是行动权/结算权——将客服 Agent 直接连接企业系统并按成功结果计费。属于工作流应用型/Agent 执行型。按结果计费（outcome-based pricing）代表未来方向，但需承担归因和异常风险。
+
+## 补充：融资博客（来源: https://sierra.ai/blog/better-customer-experiences-built-on-sierra；抓取日期: 2026-08-27）
+
+- 宣布融资 **$950M**，由 **Tiger Global 与 GV** 领投，估值 **超 $150 亿**；Sierra 累计可投资金超 $10 亿
+- 从两年前仅 4 个 design partner，到如今服务 **40%+ Fortune 50**，平台上的 agent 驱动**数十亿次客户交互**
+- 用例已覆盖客户全生命周期：保险（FNOL/理赔/销售）、住房贷款、银行、医疗（RCM）、电信、零售
+- 客户实证：Nordstrom 5 周上线语音 agent "Nora"；Singtel 10 周上线、解决率 70%+；Cigna 8 周投产、
+  患者身份认证时间缩短 80%

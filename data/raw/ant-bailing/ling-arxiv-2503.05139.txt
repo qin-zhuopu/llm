@@ -1,0 +1,30 @@
+Every FLOP Counts: Scaling a 300B Mixture-of-Experts LING LLM without Premium GPUs
+arXiv:2503.05139 [cs.LG]
+https://arxiv.org/abs/2503.05139
+DOI: https://doi.org/10.48550/arXiv.2503.05139
+Authors: Ling Team (Ant Group inclusionAI), Binwei Zeng, ... Jun Zhou, Jianguo Li, et al. (34 pages)
+Submission: v1 Fri, 7 Mar 2025; v2 Mon, 10 Mar 2025
+
+Abstract:
+In this technical report, we tackle the challenges of training large-scale Mixture of Experts (MoE)
+models, focusing on overcoming cost inefficiency and resource limitations prevalent in such systems.
+To address these issues, we present two differently sized MoE large language models (LLMs), namely
+Ling-Lite and Ling-Plus (referred to as "Bailing" in Chinese, spelled Bǎilíng in Pinyin). Ling-Lite
+contains 16.8 billion parameters with 2.75 billion activated parameters, while Ling-Plus boasts 290
+billion parameters with 28.8 billion activated parameters. Both models exhibit comparable performance
+to leading industry benchmarks. This report offers actionable insights to improve the efficiency and
+accessibility of AI development in resource-constrained settings. Specifically, to reduce training
+costs for large-scale MoE models, we propose innovative methods for (1) optimization of model
+architecture and training processes, (2) refinement of training anomaly handling, and (3) enhancement
+of model evaluation efficiency. Additionally, leveraging high-quality data generated from knowledge
+graphs, our models demonstrate superior capabilities in tool use compared to other models. Our
+experimental findings demonstrate that a 300B MoE LLM can be effectively trained on lower-performance
+devices while achieving comparable performance to models of a similar scale, including dense and MoE
+models. Compared to high-performance devices, utilizing a lower-specification hardware system during
+the pre-training phase demonstrates significant cost savings, reducing computing costs by ~20%.
+
+Key facts:
+- "Bailing" (百灵) is the Chinese name for the Ling model series
+- Ling-Lite: 16.8B params (2.75B activated MoE); Ling-Plus: 290B params (28.8B activated MoE)
+- ~20% training compute cost savings using lower-spec hardware
+- Knowledge-graph-generated data improves tool-use capability

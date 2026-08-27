@@ -29,3 +29,13 @@ Forethought 是面向现代支持团队的客服 AI 平台，为任意 CX 平台
 ## 定位
 
 工单自动化 + 多 agent 客服的垂类闭源 SaaS。曾获 2018 TechCrunch Disrupt Battlefield。发现渠道：客服 AI 竞品 snowball。
+
+## 补充：平台页 + 客户案例（来源: https://forethought.ai/platform/, https://forethought.ai/customers/；抓取日期: 2026-08-27）
+
+多 Agent 系统由 5 个模块组成：**Discover**（历史工单/知识库洞察，自动生成文章与 Autoflows）、
+**Solve**（全渠道 agentic AI 端到端解决）、**Triage**（按情绪/语言/紧急度分类路由，可按产品/地区自定义模型）、
+**Assist**（坐席副驾，自动摘要与引导）、**Agent QA**（100% 交互自动质检，vs 过去人工抽检 <5%）。
+推理引擎为 **Autoflows**（依业务策略推理并采取行动），"Trained on Your Data" 开箱即用。
+
+官网自报指标：响应时间 -77%、同等人力多处理 26% 支持量、6 个月 168% ROI、节省 436 坐席工时。
+客户案例：**Grammarly** 达 87% deflection、4.2 CSAT、1.5 周上线。

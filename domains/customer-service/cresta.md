@@ -28,3 +28,12 @@ United Airlines、Cox、Brinks Home、Alaska Airlines、Optimum、CVS、Holiday 
 ## 定位
 
 联络中心坐席辅助 + AI Agent + 质检的垂类闭源 SaaS。发现渠道：Sierra/Decagon 竞品 snowball。
+
+## 补充：官网博客（来源: https://cresta.com/blog/；抓取日期: 2026-08-27）
+
+- **Cresta Insights** 新一代：更权威的 Topic Discovery、实时趋势检测、更 agentic 的 AI Analyst
+- **Precomputed Answer Engine**：预计算高置信答案降低实时 RAG 延迟
+- **Cresta Conductor**：面向开发者的 agent 构建/测试/调优环境（6 月发布）
+- **agent 评测**：用 LLM judges + 确定性检查 + 仿真 + 人工校准在上线前捕获失败
+- 集成 **Avaya Infinity**（WebSocket 流式语音）；国际扩张（西班牙、澳大利亚）
+- 印证平台为人机协同统一平台（AI Agent + Agent Assist + Insights/Quality Management）

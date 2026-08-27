@@ -40,10 +40,14 @@ tags:
 - ai-agent
 - conversational-ai
 - enterprise-ai
+business:
+  customers: 企业客户含 HealthEquity 等；覆盖金融/公用事业/电商/医疗/IT 行业；唯一获 SAP endorsed app premium 认证的客户面向语音AI/联络中心平台
 data_quality:
   completeness: partial
   gap_reason: data-scarce
-  note: 闭源企业语音AI/联络中心SaaS，官网未公开模型参数/架构/训练细节，无论文；平台编排通用LLM而非发布自研基础模型，独立技术披露稀缺（仅有SAP Endorsed App认证等商业信号）。
+  note: 闭源企业语音AI/联络中心SaaS，官网未公开模型参数/架构/训练细节，无论文；平台编排通用LLM而非发布自研基础模型，独立技术披露稀缺（已补官网+博客两类来源，含客户与产品信号，但无技术论文/参数披露）。
 references:
 - title: Parloa Official Website
   url: https://www.parloa.com
+- title: Parloa Blog — agentic AI for CX (LLM Guardrails, WAVE 2026, HealthEquity)
+  url: https://www.parloa.com/resources/blog/

@@ -93,3 +93,16 @@ PathAI通过将AI技术与数字病理学深度结合，正在推动病理学从
 - 支持 gigapixel 级全切片图像（40x放大，约 100K x 100K 像素）
 - PathAI 研究团队发表多篇 Nature Medicine 和 JAMA paper
 - 核心技术基于 attention-based MIL（多实例学习）架构
+
+---
+
+## 补充：PLUTO 病理基础模型论文（来源: https://arxiv.org/abs/2405.07905；抓取日期: 2026-08-27）
+
+PathAI 发表 **PLUTO（PathoLogy Universal TransfOrmer）**，一款轻量级病理基础模型（作者含 PathAI
+创始人/CEO Andrew H. Beck 及研究团队 Sean Grullon 等）：
+
+- 在来自多站点的 **1.95 亿（195M）image tiles** 上预训练
+- 跨多尺度（亚细胞级到切片级）提取全切片图像(WSI)表示
+- 设计任务专用适配头：实例分割、tile 分类、切片级预测
+- 在多组外部与内部基准上，PLUTO **匹配或超越**现有任务专用基线及规模大数个量级的病理基础模型
+- 该论文为 PathAI 数字病理技术提供了同行可查的学术级证据（此前 yaml/MD 的技术细节多为官网/推断）

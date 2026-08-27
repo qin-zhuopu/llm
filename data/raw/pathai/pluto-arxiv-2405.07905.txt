@@ -1,0 +1,30 @@
+PLUTO: Pathology-Universal Transformer
+arXiv:2405.07905 [eess.IV]
+https://arxiv.org/abs/2405.07905
+DOI: https://doi.org/10.48550/arXiv.2405.07905
+Authors: Dinkar Juyal, Harshith Padigela, ... Harsha Pokkalla, Andrew H. Beck (PathAI CEO/founder),
+Sean Grullon (PathAI research team)
+Submission: v1 Mon, 13 May 2024
+
+Abstract:
+Pathology is the study of microscopic inspection of tissue, and a pathology diagnosis is often the
+medical gold standard to diagnose disease. Pathology images provide a unique challenge for
+computer-vision-based analysis: a single pathology Whole Slide Image (WSI) is gigapixel-sized and
+often contains hundreds of thousands to millions of objects of interest across multiple resolutions.
+In this work, we propose PathoLogy Universal TransfOrmer (PLUTO): a light-weight pathology foundation
+model (FM) that is pre-trained on a diverse dataset of 195 million image tiles collected from multiple
+sites and extracts meaningful representations across multiple WSI scales that enable a large variety
+of downstream pathology tasks. We design task-specific adaptation heads that utilize PLUTO's output
+embeddings for tasks spanning pathology scales from subcellular to slide-scale, including instance
+segmentation, tile classification, and slide-level prediction. We compare PLUTO to other
+state-of-the-art methods on diverse external and internal benchmarks covering multiple biologically
+relevant tasks, tissue types, resolutions, stains, and scanners. PLUTO matches or outperforms
+existing task-specific baselines and pathology-specific foundation models, some of which use
+orders-of-magnitude larger datasets and model sizes than PLUTO.
+
+Key facts from paper:
+- PLUTO is PathAI's pathology foundation model (light-weight Vision Transformer)
+- Pre-trained on 195 million image tiles from multiple sites
+- Multi-scale WSI representations (subcellular to slide-scale)
+- Task-specific adaptation heads: instance segmentation, tile classification, slide-level prediction
+- Matches/outperforms larger pathology FMs despite smaller data/model size

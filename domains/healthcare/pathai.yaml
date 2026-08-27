@@ -59,6 +59,11 @@ benchmarks:
   metric: turnaround time reduction
   comparison: 引入AI辅助后诊断周转时间缩短约50%
   source: self-reported
+- name: PLUTO 病理基础模型 (arXiv:2405.07905)
+  score: 匹配或超越SOTA
+  metric: multi-task benchmark
+  comparison: 'vs 更大规模病理基础模型: 在1.95亿tiles上预训练的轻量FM匹配或超越数量级更大的模型'
+  source: paper
 capabilities:
 - 云原生全切片图像(WSI)存储、检索与高性能查看
 - 深度学习驱动的亚细胞级肿瘤检测与分类
@@ -76,6 +81,7 @@ tags:
 - cloud-native
 - explainable-ai
 - biomarker
+- foundation-model
 access:
 - saas
 - private-deployment
@@ -83,6 +89,16 @@ api:
   available: true
   protocol: rest
   auth_method: 企业认证
+business:
+  funding_total: $400M+
+  latest_round: Series C ($165M, 2021)
+  customers: 全球领先实验室、研究中心、制药公司病理研究部门与学术医学中心
+data_quality:
+  completeness: partial
+  gap_reason: coverage-gap
+  note: 已补 PLUTO 病理基础模型论文(arXiv:2405.07905)作为学术级来源；PathAI 另发表多篇 Nature Medicine/JAMA 论文可进一步纳入
 references:
 - title: PathAI 官方网站
   url: https://www.pathai.com
+- title: 'PLUTO: Pathology-Universal Transformer (arXiv:2405.07905)'
+  url: https://arxiv.org/abs/2405.07905

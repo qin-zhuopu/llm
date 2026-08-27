@@ -53,6 +53,8 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 12,000+ 客户；每周约 200 万次解决；平均解决率 76%（不少超 85%）
 tags:
 - customer-service
 - conversational-ai
@@ -63,3 +65,5 @@ tags:
 references:
 - title: Intercom Fin Official Website
   url: https://www.intercom.com/fin
+- title: Intercom Blog — Announcing Evals and Releases for Fin
+  url: https://www.intercom.com/blog/

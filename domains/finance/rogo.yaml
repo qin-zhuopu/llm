@@ -50,6 +50,21 @@ api:
   available: false
   pricing: 大型金融机构年度合同（定制部署，联系销售）
   auth_method: 企业认证
+business:
+  funding_total: $160M+ (D轮)
+  latest_round: Series D ($160M, 2026)
+  customers: 50,000+ 银行家与投资人；日查询 150,000+；服务 350+ 机构（含 Truist Securities、Nomura、Baird）
+  investors:
+  - Kleiner Perkins
+  - Sequoia
+  - Thrive Capital
+  - Khosla Ventures
+  - J.P. Morgan Growth Equity Partners
+  - BoxGroup
+  - Mantis VC
+  - Jack Altman
+  - Evantic
+  - Positive Sum
 capabilities:
 - 端到端执行金融工作流（交易、投资分析），而非仅回答问题
 - 生成可审计的Excel财务模型和估值分析
@@ -74,5 +89,3 @@ references:
   url: https://rogo.ai
 - title: 'Rogo: Our $160M Series D and the Road Ahead'
   url: https://rogo.ai/news/series-d
-- title: Rogo Platform (Felix)
-  url: https://rogo.ai

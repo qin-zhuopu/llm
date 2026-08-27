@@ -70,3 +70,22 @@ Hippocratic AI采用创新的"AI智能体人力市场"模式，医疗系统可�
   - 对话质量(conversational quality)
   - 床旁态度(bedside manner)
 - 专业支持智能体显著优于GPT-4和LLaMA-2 70B
+
+---
+
+> 补充来源: [https://www.hippocraticai.com/](https://www.hippocraticai.com/)
+> 抓取日期: 2026-08-27
+
+## 官网最新运营与商业指标（company self-reported）
+
+- **累计融资 $444MM**（Total Raised）
+- **250M+ 患者交互**（patient interactions）
+- **零伤害事件**（Zero incidents of harm since inception）
+- 31K+ 患者被恰当升级至护理团队
+- **300+ 临床用例**已上线；1000+ AI 医疗智能体
+- **50+ EMR 集成**（含 Epic）
+- 前 20 大药企中已服务 7 家（7/20 Top Pharma）
+- 0.5%-1% 的实时通话被抽样做安全检查；合同承担责任（"Liable"）
+- 架构升级为 **5.0T+ 参数星座架构**（specialized support models 提升医疗准确性与安全性）
+- 临床验证：由 **7.7K+ 美国执证临床医生**在 **775K+ 测试通话**上评估输出
+- 代表客户/背书：Sutter Health（CEO Warner Thomas）、Roxanna Gapstur（CEO, PhD RN）等

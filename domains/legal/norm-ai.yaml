@@ -41,6 +41,21 @@ api:
   available: false
   pricing: 企业合同(联系销售)
   auth_method: 企业认证
+business:
+  funding_total: $218M+ ($48M 2025-01 + $50M Blackstone 2025-11 + $120M Series C 2026-06)
+  latest_round: Series C ($120M, 2026-06)
+  valuation: $1.2B
+  customers: 服务管理 $35T+ 合并资产的机构
+  investors:
+  - Khosla Ventures
+  - Blackstone
+  - Bain Capital Ventures
+  - Craft Ventures
+  - Coatue
+  - Vanguard
+  - New York Life
+  - TIAA
+  - Citi
 capabilities:
 - 法律和合规任务的智能体自动化(agentic law)
 - Supervisory AI验证其他AI agent的行为合规性
@@ -60,5 +75,5 @@ tags:
 references:
 - title: Norm Ai Official Website
   url: https://www.norm.ai
-- title: Norm Ai Series C ($120M) Announcement
-  url: https://www.norm.ai
+- title: Norm Ai — Company Timeline & Funding ($120M Series C, $1.2B valuation)
+  url: https://norm.ai

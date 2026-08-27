@@ -55,6 +55,8 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 客户含 Grammarly（87% deflection、4.2 CSAT、1.5 周上线）、Upwork 等；报告 168% 6个月 ROI、436 坐席工时节省
 tags:
 - customer-service
 - ai-agent
@@ -65,3 +67,5 @@ tags:
 references:
 - title: Forethought Official Website
   url: https://www.forethought.ai
+- title: Forethought — Multi-Agent System / Platform (Discover/Solve/Triage/Assist/QA)
+  url: https://forethought.ai/platform/

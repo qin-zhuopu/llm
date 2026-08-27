@@ -72,3 +72,16 @@ CAPE Analytics 帮助保险公司实现：
 ## 行业定位
 
 作为 InsurTech 领域的领先企业，CAPE Analytics 正在推动保险行业从基于有限信息的主观判断，转向基于全面数据的客观评估。"为不确定的世界带来确定性"不仅是公司的口号，更代表了 AI 技术在风险评估领域的核心价值主张。
+
+---
+
+## 补充：CAPE Analytics 已并入 Moody's（来源: https://capeanalytics.com/about/ 现重定向至 Moody's 保险风险解决方案；抓取日期: 2026-08-27）
+
+抓取 CAPE 官网 About 页面时，页面已重定向到 Moody's "Advanced Insurance Risk Solutions for
+Insurers"，表明 **CAPE Analytics 的地理空间物业情报技术已整合进 Moody's 的保险分析业务**。
+
+Moody's 承保解决方案中与 CAPE 相关的定位：
+- 面向承保人（Underwriters）：提供物业级风险洞察、灾害信息与损失成本数据，"由行业领先的科学与
+  AI 支撑"，帮助承保人更精准地评估、选择与定价财险与责任险。
+- 巨灾建模覆盖地震、飓风、风暴、洪水、野火等自然风险及新兴风险。
+- 平台通过 REST API 集成，提供实时洞察，全球部署数百个。

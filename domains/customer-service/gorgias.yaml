@@ -58,6 +58,14 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 17,000+ 电商品牌；通过对话驱动超 $500M 收入；原生 Shopify 集成
+  investors:
+  - Shopify
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 电商客服 SaaS，不公开自研模型参数/训练细节(基于与 OpenAI 合作)，无技术论文；已补官网+博客(电商CX内容)两类来源，融资额/估值未在可抓取来源披露
 tags:
 - customer-service
 - ecommerce
@@ -68,3 +76,5 @@ tags:
 references:
 - title: Gorgias Official Website
   url: https://www.gorgias.com
+- title: Gorgias Blog — CX & Ecommerce content
+  url: https://www.gorgias.com/blog

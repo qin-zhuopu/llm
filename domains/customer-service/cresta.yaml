@@ -57,6 +57,8 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 受 Fortune 500 信赖；客户含 United Airlines、Alaska Airlines、CVS、Cox 等；集成 Avaya Infinity
 tags:
 - customer-service
 - contact-center
@@ -67,3 +69,5 @@ tags:
 references:
 - title: Cresta Official Website
   url: https://cresta.com
+- title: Cresta Blog (Insights, Conductor, LLM-judge evaluation, Avaya integration)
+  url: https://cresta.com/blog/

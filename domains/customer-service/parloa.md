@@ -22,3 +22,10 @@ Parloa 是面向联络中心的 AI Agent 管理平台，其 AI agent 可即时�
 ## 定位
 
 语音优先的联络中心 AI Agent 管理平台，闭源企业 SaaS。发现渠道：Sierra/Decagon 竞品 snowball（欧洲语音客服代表）。
+
+## 补充：官网博客（来源: https://www.parloa.com/resources/blog/；抓取日期: 2026-08-27）
+
+Parloa 博客定位 "customer experience meets agentic AI"，印证其语音 AI agent 与责任 AI 取向：
+- 客户背书：**HealthEquity**（Mike Gathright 谈打造卓越客户体验）
+- 产品：**LLM Guardrails**（"Ship AI Agents with confidence"）；旗舰活动 **WAVE 2026**；Agentic Wave 播客
+- 强调**数据主权(data sovereignty)** 与负责任 AI（欧洲厂商取向），以及"评估 AI 供应商先看品类而非评分卡"

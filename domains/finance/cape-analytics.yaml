@@ -70,6 +70,14 @@ capabilities:
 access:
 - api
 - saas
+business:
+  customers: 覆盖美国大部分住宅和商业物业；服务保险核保、商业定价与房屋权益贷款机构
+  investors:
+  - Moody's (已并入 Moody's 保险风险解决方案)
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 计算机视觉 InsurTech 公司，官网不公开模型参数/训练细节，无技术论文；已确认并入 Moody's，但融资/估值等历史商业数据未在可抓取来源披露
 tags:
 - insurtech
 - computer-vision
@@ -81,3 +89,5 @@ tags:
 references:
 - title: CAPE Analytics Official Website
   url: https://capeanalytics.com/
+- title: CAPE Analytics — now part of Moody's Insurance Risk Solutions
+  url: https://capeanalytics.com/about/

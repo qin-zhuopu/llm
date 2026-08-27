@@ -57,6 +57,8 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 使用机构管理资产总额 $30T AUM；1000+ 生产用例；服务顶级投资机构与 Fortune 500 已 5 年
 tags:
 - financial-research
 - document-intelligence
@@ -67,5 +69,7 @@ tags:
 references:
 - title: Hebbia Official Website
   url: https://www.hebbia.com
-- title: Hebbia Platform (Matrix)
-  url: https://www.hebbia.com
+- title: Hebbia Blog — Introducing Matrix 2.0 / Max / Token Efficiency
+  url: https://www.hebbia.com/blog
+- title: Hebbia — About (metrics & investors)
+  url: https://www.hebbia.com/about

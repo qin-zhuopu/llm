@@ -5,6 +5,12 @@
       "url": "https://cresta.com",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "blog.md",
+      "url": "https://cresta.com/blog/",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
     }
   ]
 }

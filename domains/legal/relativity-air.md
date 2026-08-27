@@ -65,3 +65,17 @@ Relativity aiR采用代理式AI系统设计，能够消除重复性、耗时的�
 ## 全球客户
 
 Relativity aiR服务于全球法律团队，包括Cimplifi、Gilbert + Tobin、Alvarez & Marsal等知名法律服务机构，涵盖律师事务所、企业法务和政府机构。
+
+---
+
+## 补充：Relativity AI 平台总览（来源: https://www.relativity.com/ai/；抓取日期: 2026-08-27）
+
+RelativityOne 定位为"领先的 AI 平台"，帮助法律团队组织复杂数据、发现关键信息并自信行动。三大支柱：
+Purpose-Built AI（加速决策、自动化繁琐、揭示洞察）、Proactive Security（持续监控与威胁检测）、
+Legendary Support。
+
+aiR 产品套件（生成式 AI 内建于 RelativityOne）：
+- **aiR Assist**：面向律师的对话式 AI，"just by asking" 即刻从法律数据获取洞察（现已在 RelativityOne 可用）
+- aiR for Review / aiR for Privilege / aiR for Case Strategy / aiR for Data Breach Response
+
+客户基础：**25 年来**，从 **AmLaw 200 到 Fortune 500** 各类组织依赖 Relativity 做法律数据智能。

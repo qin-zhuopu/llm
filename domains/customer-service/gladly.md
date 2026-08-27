@@ -23,3 +23,11 @@ Gladly 是为头部品牌构建的 agentic commerce 平台，把客服与商务�
 ## 定位
 
 零售/电商客服 + agentic commerce 垂类闭源 SaaS。发现渠道：客服/电商 AI 竞品 snowball。
+
+## 补充：客户案例页（来源: https://www.gladly.com/customers/；抓取日期: 2026-08-27）
+
+"Radically personal" 客服平台，客户案例印证其零售/电商定位与成效：
+- **Breeze Airways**（数字优先旅客关怀，featured）、**Rothy's**（可扩展客服蓝本）、**BSN Sports**、
+  **KÜHL**（人机结合驱动销售）、**The Black Tux**（7 周达 68% AI 解决率）
+- **Condé Nast**：坐席产能 35x 增长；**ProClip USA**：响应时间从 13 小时降至 <1 小时；
+  **Ollie**：整体 AI 解决率 60%；**WeNatal**：4.9 CSAT；**MaryRuth's**：4 周上线

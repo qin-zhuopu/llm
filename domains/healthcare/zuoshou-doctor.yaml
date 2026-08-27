@@ -76,6 +76,12 @@ tags:
 - nlp
 access:
 - saas
+business:
+  customers: 累计服务数百万用户；覆盖互联网医院、基层卫生服务中心、健康管理平台、医药电商
+data_quality:
+  completeness: minimal
+  gap_reason: data-scarce
+  note: 中小型中文医疗AI公司，官网无可抓取的独立子页(about页无可读内容)，未公开参数量/基座模型/训练细节，无技术论文；第三方媒体(如36kr)有反爬无法抓取，融资数据未在可得来源披露
 references:
 - title: 左手医生官方网站
   url: https://www.zuoshouyisheng.com

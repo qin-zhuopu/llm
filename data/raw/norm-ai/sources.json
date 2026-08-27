@@ -5,6 +5,12 @@
       "url": "https://www.norm.ai",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "timeline.md",
+      "url": "https://norm.ai",
+      "fetched_at": "2026-08-27",
+      "type": "news"
     }
   ]
 }

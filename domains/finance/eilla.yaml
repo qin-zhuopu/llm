@@ -57,6 +57,12 @@ capabilities:
 - 高质量尽职调查支持
 access:
 - saas
+business:
+  customers: 团队执行交易额 $100bn+；50+ 跨境交易；案例含 CreateX、Native Digital 数字代理并购
+data_quality:
+  completeness: minimal
+  gap_reason: data-scarce
+  note: 早期 AI-native M&A 顾问创业公司，官网为单页应用无独立子页，未公开融资/估值/参数/训练细节，无技术论文；仅有官网自报的团队交易记录
 tags:
 - financial-ai
 - mergers-acquisitions
@@ -66,6 +72,4 @@ tags:
 - workflow-automation
 references:
 - title: Eilla Official Website
-  url: https://www.eilla.ai
-- title: Eilla Technology
   url: https://www.eilla.ai

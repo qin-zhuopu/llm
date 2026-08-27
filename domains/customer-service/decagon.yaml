@@ -47,6 +47,9 @@ api:
   protocol: proprietary
   pricing: 企业订阅(联系销售)
   auth_method: 企业认证
+business:
+  valuation: $4.5B (2026-03 员工 tender)
+  customers: 客户含 Chime 等；全渠道(语音/聊天/邮件)企业部署；上线 AWS Marketplace 并与 Five9 集成
 capabilities:
 - 全渠道(语音/聊天/邮件)统一的AI客服agent
 - Agent Operating Procedures自然语言定义工作流
@@ -67,5 +70,5 @@ tags:
 references:
 - title: Decagon Official Website
   url: https://www.decagon.ai
-- title: Decagon Platform
-  url: https://www.decagon.ai
+- title: Decagon Blog (funding, product launches, Decagon Labs research)
+  url: https://decagon.ai/blog

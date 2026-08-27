@@ -5,6 +5,18 @@
       "url": "https://www.hebbia.com",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "blog.md",
+      "url": "https://www.hebbia.com/blog",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
+    },
+    {
+      "filename": "about.md",
+      "url": "https://www.hebbia.com/about",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
     }
   ]
 }

@@ -1,0 +1,28 @@
+BloombergGPT: A Large Language Model for Finance
+arXiv:2303.17564 [cs.LG]
+https://arxiv.org/abs/2303.17564
+DOI: https://doi.org/10.48550/arXiv.2303.17564
+Submission history: v1 Thu, 30 Mar 2023; v2 Tue, 9 May 2023; v3 Thu, 21 Dec 2023 (updated to include Training Chronicles, Appendix C)
+Subjects: Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Computation and Language (cs.CL); General Finance (q-fin.GN)
+Authors: Bloomberg AI Engineering / ML Product & Research teams (submitted by Mark Dredze)
+
+Abstract:
+The use of NLP in the realm of financial technology is broad and complex, with applications
+ranging from sentiment analysis and named entity recognition to question answering. Large
+Language Models (LLMs) have been shown to be effective on a variety of tasks; however, no LLM
+specialized for the financial domain has been reported in literature. In this work, we present
+BloombergGPT, a 50 billion parameter language model that is trained on a wide range of financial
+data. We construct a 363 billion token dataset based on Bloomberg's extensive data sources,
+perhaps the largest domain-specific dataset yet, augmented with 345 billion tokens from general
+purpose datasets. We validate BloombergGPT on standard LLM benchmarks, open financial benchmarks,
+and a suite of internal benchmarks that most accurately reflect our intended usage. Our mixed
+dataset training leads to a model that outperforms existing models on financial tasks by
+significant margins without sacrificing performance on general LLM benchmarks. Additionally, we
+explain our modeling choices, training process, and evaluation methodology. We release Training
+Chronicles (Appendix C) detailing our experience in training BloombergGPT.
+
+Key facts from paper:
+- 50B (50.6B) parameter decoder-only transformer, BLOOM-style architecture
+- Trained on FinPile: 363B token financial dataset + 345B general tokens (~708B total)
+- Validated on standard LLM benchmarks, open financial benchmarks, internal benchmarks
+- Outperforms comparably-sized open models on financial tasks without sacrificing general performance

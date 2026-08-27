@@ -56,6 +56,12 @@ capabilities:
 - CMS集成，秒级案件潜力评估
 access:
 - saas
+business:
+  customers: 2,000+ 人身伤害律所使用；$10B+ 索赔额；每周处理 10,000 案件；客户含 John K. Zaid & Associates、Batta Fulkerson、ELG Injury Lawyers、Omega Law Group
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 官网为单页应用(SPA)各路由返回同一内容，无法抓取独立子页；不公开模型参数/基座/训练细节，无技术论文；已从官网提取客户与运营指标，但融资/估值未在可抓取来源披露
 tags:
 - legal-ai
 - personal-injury
@@ -65,6 +71,4 @@ tags:
 - proprietary-dataset
 references:
 - title: EvenUp Official Website
-  url: https://www.evenup.ai
-- title: EvenUp Platform
   url: https://www.evenup.ai

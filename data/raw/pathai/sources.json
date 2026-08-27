@@ -5,6 +5,12 @@
       "url": "https://www.pathai.com",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "pluto-arxiv-2405.07905.txt",
+      "url": "https://arxiv.org/abs/2405.07905",
+      "fetched_at": "2026-08-27",
+      "type": "arxiv"
     }
   ]
 }

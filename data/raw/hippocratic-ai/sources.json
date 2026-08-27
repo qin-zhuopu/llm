@@ -6,6 +6,12 @@
       "fetched_at": "2026-08-26",
       "type": "arxiv",
       "note": "timestamp refreshed; arxiv source content unchanged"
+    },
+    {
+      "filename": "official-website.md",
+      "url": "https://www.hippocraticai.com/",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
     }
   ]
 }

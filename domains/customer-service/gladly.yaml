@@ -55,6 +55,8 @@ capabilities:
 access:
 - saas
 - api
+business:
+  customers: 客户含 Breeze Airways、Rothy's、BSN Sports、KÜHL、The Black Tux(68% AI resolution)、Condé Nast(35x 坐席产能)、ProClip USA、Ollie、MaryRuth's、WeNatal
 tags:
 - customer-service
 - ecommerce
@@ -65,3 +67,5 @@ tags:
 references:
 - title: Gladly Official Website
   url: https://www.gladly.com
+- title: Gladly — Customer stories & case studies
+  url: https://www.gladly.com/customers/

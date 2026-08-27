@@ -59,6 +59,10 @@ capabilities:
 access:
 - saas
 - private-deployment
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 恒生电子为上市公司但 LightGPT 未公开参数量/训练 token/基座模型等技术细节，无公开技术论文；官网无可抓取的独立 AI 技术子页，来源以官网为主
 tags:
 - financial-nlp
 - research-report
@@ -69,6 +73,4 @@ tags:
 - chinese-finance
 references:
 - title: 恒生电子官网
-  url: https://www.hundsun.com
-- title: 恒生电子AI技术研究
   url: https://www.hundsun.com

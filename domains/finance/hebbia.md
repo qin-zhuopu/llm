@@ -30,3 +30,18 @@ ISO/IEC 42001:2023、SOC 2 Type II、端到端加密、不用用户数据训练�
 金融研究/尽调赛道，与 AlphaSense、Rogo 同类。属于工作流应用型/模型系统型，壁垒在金融文档处理规模和机构信任。
 
 > 发现渠道：新渠道主动搜索（融资/官网线），报告未覆盖。
+
+## 补充：官网 About + Blog（来源: https://www.hebbia.com/about, https://www.hebbia.com/blog；抓取日期: 2026-08-27）
+
+来自 About 页面的自报指标（company self-reported）：
+- **2T+ tokens** processed by investors（投资人累计处理 token 数）
+- **$30T AUM** of firms using Hebbia（使用机构管理资产总额）
+- **1000+ use cases** in production（生产环境用例数）
+- **5 years** deploying at top firms（在顶级机构部署已 5 年）
+- 2023 年入选 Institutional Assets（IA）40 榜单
+
+Blog 更新（2026）：
+- Matrix 2.0 发布（旗舰产品重大升级）
+- 推出 Max（首个按公司工作方式打造的 AI 团队成员）
+- 工程博客披露：每月处理 **250B+ tokens**，效率提升主要来自工作流优化而非单纯削减 token 数
+

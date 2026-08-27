@@ -29,3 +29,10 @@ Gorgias 是面向电商的对话式 AI 平台，One AI Agent 覆盖售前到售�
 ## 定位
 
 电商客服垂类闭源 SaaS。发现渠道：客服/电商 AI 竞品 snowball。
+
+## 补充：官网博客（来源: https://www.gorgias.com/blog；抓取日期: 2026-08-27）
+
+Gorgias 博客定位电商/Shopify 的 CX 内容。代表文章《7 CRO A/B tests to head off support tickets》
+指出多数客服工单起源于商品详情页(PDP)，六个"买家问题"同时驱动工单与转化（能否解决我的问题/是否
+物有所值/别人是否喜欢/失败的风险/多久到货/能否快速获得帮助）。印证 Gorgias 作为**面向电商、与
+Shopify 深度集成的客服/收件箱平台**的定位。
