@@ -1,0 +1,59 @@
+name: CuspAI
+name_en: CuspAI Materials Foundation Models
+company: CuspAI
+domain: materials-science
+status: released
+website: https://www.cusp.ai
+description: CuspAI 是一家 AI-for-Science 公司，构建面向材料科学的生成式 AI 基础模型，在庞大的分子/材料化学空间中检索并交付满足真实工业约束的候选材料，应用覆盖碳捕集材料（金属有机框架
+  MOF）、半导体、能源与先进制造。公司发起 "AI Materials Foundry" 生态，联合 NVIDIA（加速计算基础设施）与 Meta FAIR（开源前沿材料模型），并汇聚
+  Applied Materials、imec、Lam Research、KIOXIA、Tokyo Electron、Hyundai、Fujifilm、3M、Mitsui
+  Chemicals 等半导体与材料巨头作为创始成员，属于模型原生型公司。
+parameters: 未公开
+architecture: generative foundation model (materials/molecular generative model)
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模材料/分子结构与属性数据上预训练生成式基础模型，结合 NVIDIA 加速计算基础设施，学习跨材料体系的结构-性能关系以生成满足工业约束的候选材料。
+  - name: fine-tuning
+    description: 与 AI Materials Foundry 合作伙伴（半导体、材料、能源企业）的实验基础设施与专有数据结合，针对具体应用（碳捕集 MOF、半导体材料、电池等）进行定向优化与验证。
+tech_stack:
+  framework: NVIDIA accelerated computing
+  techniques:
+  - Generative materials/molecular models
+  - High-throughput chemical space screening
+  - Foundation models for materials science
+  - Physics/chemistry-informed candidate generation
+  - Partner experimental infrastructure integration
+datasets:
+- name: Materials and molecular structure-property data
+  description: 大规模材料/分子结构及其物化性质数据，用于训练生成式材料基础模型
+  type: pre-training
+- name: Partner proprietary experimental data
+  description: 来自 AI Materials Foundry 创始成员（半导体/材料/能源企业）及 Wiley/ICSD/CCDC 等科研数据合作方的专有实验与结构化学数据
+  type: other
+benchmarks:
+- name: Materials discovery acceleration
+  score: 大幅压缩概念到可行材料周期
+  metric: discovery_time
+  comparison: 'vs 传统材料研发: 合作伙伴 Applied Materials 称可显著压缩从概念到可行新材料的时间; Kemira 称可在极短时间内筛选庞大分子空间交付可行候选'
+  source: self-reported
+capabilities:
+- 生成式 AI 在庞大分子/材料空间中检索并交付满足工业约束的候选材料
+- 碳捕集材料（金属有机框架 MOF）设计与筛选
+- 半导体工艺材料与存储器材料发现（与 Applied Materials、imec、KIOXIA 等合作）
+- 能源与可持续材料（如水处理、太阳能光伏）候选发现
+- 结合 NVIDIA 加速计算的高通量化学空间筛选
+- 通过 AI Materials Foundry 生态整合合作伙伴实验基础设施完成验证
+access:
+- private-deployment
+tags:
+- materials-discovery
+- generative-ai
+- foundation-model
+- carbon-capture
+- semiconductors
+- ai-materials-foundry
+- model-native
+references:
+- title: CuspAI Official Website (AI Materials Foundry)
+  url: https://www.cusp.ai

@@ -1,0 +1,57 @@
+name: LILA
+name_en: Lila Sciences Scientific Superintelligence
+company: Lila Sciences
+domain: materials-science
+status: released
+website: https://lila.ai
+description: Lila Sciences（LILA）是由 Flagship Pioneering 孵化的公司，宣称在构建"科学超级智能"(Scientific
+  Superintelligence)。LILA 将面向科学的先进 AI 推理模型（"大脑"）与专有的自主实验室仪器 AI Science Factory™（"身体"）结合，自主执行完整科学方法：生成假设、设计并运行实验、从新数据中实时学习。核心应用领域包括先进材料、能源与环境、催化和化学品，属于模型系统型公司，将自研模型与自主实验室形成闭环。
+parameters: 未公开
+architecture: scientific reasoning foundation model + autonomous lab (AI Science Factory)
+training:
+  stages:
+  - name: pre-training
+    description: 在跨科学领域的大规模科学数据上训练面向科学的 AI 推理模型（"大脑"），使其能进行复杂分析与推理、生成科学假设。
+  - name: fine-tuning
+    description: 通过 AI Science Factory™ 自主实验室实时运行实验并回流数据，形成"生成假设-设计实验-运行实验-从结果学习"的自主闭环，实时更新模型。
+tech_stack:
+  framework: proprietary AI platform
+  techniques:
+  - Scientific reasoning foundation models
+  - Autonomous experimentation (AI Science Factory)
+  - Closed-loop hypothesis generation and testing
+  - Robotic/self-driving labs
+  - Real-time learning from experimental data
+datasets:
+- name: Cross-domain scientific data
+  description: 覆盖材料、能源、化学、生物等多科学领域的数据，用于训练科学推理模型
+  type: pre-training
+- name: AI Science Factory experimental data
+  description: 专有自主实验室实时产生的实验数据，用于闭环学习与模型更新
+  type: other
+benchmarks:
+- name: Cross-domain scientific reasoning
+  score: 超越其他模型
+  metric: reasoning
+  comparison: 'vs 其他模型: 公司自称在多个科学领域持续超越其他模型，在复杂分析与推理任务上表现更优'
+  source: self-reported
+capabilities:
+- 面向科学的 AI 推理模型自主生成科学假设
+- 自主设计并在 AI Science Factory 实验室运行实验并实时学习
+- 先进材料：高性能结构材料与极端环境耐久涂层设计
+- 能源与环境：清洁能源、新型燃料、高能效催化、关键矿物发现
+- 催化与化学品的合成路径与分子设计
+- 端到端自主执行完整科学方法（假设-实验-学习闭环）
+access:
+- private-deployment
+tags:
+- scientific-superintelligence
+- autonomous-lab
+- advanced-materials
+- catalysis
+- self-driving-lab
+- ai-for-science
+- model-system
+references:
+- title: Lila Sciences (LILA) Official Website
+  url: https://lila.ai

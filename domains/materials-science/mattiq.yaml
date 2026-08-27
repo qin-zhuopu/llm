@@ -1,0 +1,54 @@
+name: Mattiq
+name_en: Mattiq — The Data Engine for Materials
+company: Mattiq
+domain: materials-science
+status: released
+website: https://www.mattiq.com
+description: Mattiq 自称"面向材料的数据引擎"，为材料 AI 补上缺失的"实验真值"层。其观点是今天的材料模型大量基于仿真训练、继承了仿真的近似与偏差，Mattiq
+  通过大规模高通量物理实验生成实验 ground truth，让上层工业 R&D、AI 与自主实验室都更具预测性。技术源自西北大学 Chad Mirkin 教授开创的
+  Megalibrary 技术（可在单芯片上并行合成数百万材料组合），已在催化领域验证并快速扩展到磁体、电池、存储器、超导与半导体材料。属于数据基础设施/模型系统型公司。
+parameters: 未公开
+architecture: high-throughput experimental data platform (Megalibrary combinatorial synthesis)
+training:
+  stages:
+  - name: other
+    description: 通过 Megalibrary 高通量组合合成技术在单芯片上并行合成数百万材料组合，采集其物性表征数据，生成用于训练材料 AI/MLIP 模型的实验真值数据集。
+tech_stack:
+  framework: Megalibrary high-throughput combinatorial synthesis
+  techniques:
+  - High-throughput combinatorial materials synthesis (Megalibrary)
+  - Million-candidate experimental screening
+  - Experimental ground-truth data generation
+  - Electrochemical/magnetic/battery characterization
+  - Data engine for materials AI
+datasets:
+- name: Mattiq experimental ground-truth dataset
+  description: 通过 Megalibrary 高通量实验生成的大规模材料实验真值数据，覆盖电化学（催化）、磁体、电池、存储器、超导、半导体等方向
+  type: other
+benchmarks:
+- name: Catalyst screening scale
+  score: million-candidate spaces
+  metric: throughput
+  comparison: 'vs 传统实验: 在百万级候选催化剂空间中绘制活性与耐久性（用于制氢、燃料电池、CO2 转化）'
+  source: self-reported
+capabilities:
+- 生成大规模材料实验真值 (ground truth) 数据，弥补仿真偏差
+- 电化学：百万级候选催化剂空间的活性与耐久性映射（制氢、燃料电池、CO2 转化）
+- 磁体：无稀土磁体成分的矫顽力、各向异性与热稳定性筛选
+- 电池：成分/工艺与离子输运、稳定性、界面行为的关联真值
+- 存储器：阻变/相变/铁电存储材料的开关、保持、耐久与变异性筛选
+- 超导与半导体材料的相形成、结构、掺杂及电学特性筛选
+access:
+- private-deployment
+tags:
+- materials-data
+- high-throughput-experiment
+- megalibrary
+- catalysis
+- batteries
+- superconductors
+- ground-truth
+- data-engine
+references:
+- title: Mattiq Official Website
+  url: https://www.mattiq.com

@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://entalpic.ai",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "lematerial-blog.md",
+      "url": "https://huggingface.co/blog/lematerial",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
+    }
+  ]
+}
