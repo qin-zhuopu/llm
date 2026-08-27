@@ -319,6 +319,40 @@
         }
       }
     },
+    "business": {
+      "type": "object",
+      "description": "商业化数据（融资/估值/收入/客户），用于定量商业分析。均为公司或媒体公开口径，未必经审计。",
+      "additionalProperties": false,
+      "properties": {
+        "funding_total": {
+          "type": "string",
+          "description": "累计融资额（如 $160M, $2.1B）"
+        },
+        "latest_round": {
+          "type": "string",
+          "description": "最新融资轮次（如 Series C, B轮）"
+        },
+        "valuation": {
+          "type": "string",
+          "description": "估值（如 $1.3B, $11B post-money）"
+        },
+        "arr": {
+          "type": "string",
+          "description": "年度经常性收入 ARR（如 $190M, $600M+）"
+        },
+        "customers": {
+          "type": "string",
+          "description": "客户规模（如 300+ 医疗系统, 7000+ 企业, 50000+ 用户）"
+        },
+        "investors": {
+          "type": "array",
+          "description": "主要投资方列表",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "capabilities": {
       "type": "array",
       "description": "核心能力列表",

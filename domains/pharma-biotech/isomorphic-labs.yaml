@@ -70,6 +70,14 @@ benchmarks:
 api:
   available: false
   pricing: 通过合作协议接入(礼来、诺华、强生等战略合作)
+business:
+  funding_total: "$600M+"
+  latest_round: Series B ($2.1B raised, 2026-05)
+  customers: 礼来/诺华/强生等药企战略合作(潜在价值近$3B)
+  investors:
+  - Thrive Capital
+  - GV
+  - Alphabet
 capabilities:
 - 蛋白-配体复合物三维结构预测，精度超越AlphaFold 3
 - 定量结合亲和力预测(IC50/Ki/Kd)，指导先导化合物优化
