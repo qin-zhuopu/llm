@@ -1,10 +1,16 @@
 {
   "files": [
     {
-      "filename": "drive-platform.md",
+      "filename": "official-website.md",
       "url": "https://developer.nvidia.com/drive",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "nvidia-research-avg.md",
+      "url": "https://research.nvidia.com/labs/avg/",
+      "fetched_at": "2026-08-30",
+      "type": "blog"
     }
   ]
 }

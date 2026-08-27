@@ -31,3 +31,12 @@ NVIDIA Alpamayo 2 Super 是 NVIDIA DRIVE 自动驾驶生态中的推理基础模
 - 导航引导下的驾驶决策
 - 专有车队数据上的 SFT + RL 微调
 - 配合 AlpaSim 闭环仿真评估策略
+
+---
+
+> 补充来源: [NVIDIA Research — Autonomous Vehicle Research Group (Alpamayo, AlpaSim, PhysicalAI-AV)](https://research.nvidia.com/labs/avg/)
+> 抓取时间: 2026-08-30
+
+## NVIDIA 研究团队背景
+
+NVIDIA Research 自动驾驶研究组（由 Marco Pavone 博士领导）发布了 **Alpamayo 1**，被描述为「全球首个用于自动驾驶研究的开放推理 VLA（视觉-语言-动作）模型」，并配套发布 **AlpaSim**（模块化、轻量、数据驱动的感知仿真器）以及 **PhysicalAI-AV** 数据集，共同构成面向端到端自动驾驶的数据、模型与闭环评估工具生态。研究方向涵盖下一代 AV 架构（可微/半模块化/端到端栈）、AV 基础模型（视觉-语言基础模型、VLA 建模、开放场景理解）、仿真（行为/交通建模、语言驱动仿真生成、神经仿真器）与 AV 的 AI 安全（不确定性量化、在线监控、神经架构中的规则推理、安全 KPI 验证），并与 NVIDIA DRIVE 产品团队紧密协作。

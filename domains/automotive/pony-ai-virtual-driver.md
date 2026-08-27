@@ -40,3 +40,18 @@
 > 来源: https://en.wikipedia.org/wiki/Pony.ai ｜ 抓取日期: 2026-08-27
 
 Pony AI Inc.（小马智行，Nasdaq: PONY / SEHK: 2026）由 James Peng（CEO）与 Tiancheng Lou（CTO）于 2016 年 12 月创立，约 1,300 员工（2024）。已在北京、广州获全无人 robotaxi 运营许可；2022 年 4 月成为中国首家获出租车牌照的自动驾驶公司；2022 年 7 月与三一重工合作量产自动驾驶卡车；2023 年 8 月丰田/广汽丰田合计投资超 10 亿元（$140M）量产 robotaxi。据 Reuters（2025-06），一名操作员可监控多达约 12 辆 robotaxi；分析师（LSEG）预计 2029 年盈利（2024 年亏损超 $200M）。据加州 DMV，2021 年其路测里程列第三（仅次于 Waymo、Cruise）。
+
+---
+
+> 补充来源: [Pony.ai — Wikipedia (融资/IPO/部署历史，聚合 Reuters/TechCrunch/CNBC 报道)](https://en.wikipedia.org/wiki/Pony.ai)
+> 抓取时间: 2026-08-30
+
+## 融资与上市补充
+
+- 2018-01：1.12 亿美元 Series A（Morningside、Legend Capital 领投，红杉中国、IDG 参与）。
+- 2020-02：丰田投资 4 亿美元，整轮 4.62 亿美元。
+- 2020：估值 53 亿美元。
+- 2023-10：沙特 Neom 投资 1 亿美元设立地区研发/制造合资公司。
+- 2024-11：纳斯达克 IPO（代码 PONY）募资 2.6 亿美元，估值约 52.5 亿美元，为自动驾驶领域最大 IPO 之一。
+- 2025-11：港交所二次上市（代码 2026）。
+- 主要投资方：Toyota、红杉中国、IDG Capital、Morningside、Legend Capital、DCM Ventures、Comcast Ventures、文莱投资局、Neom。

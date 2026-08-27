@@ -1,19 +1,30 @@
-# Pony.ai — Wikipedia
+# Pony.ai — Funding, IPO & Corporate History (Wikipedia)
 
-Source: https://en.wikipedia.org/wiki/Pony.ai
-Fetched: 2026-08-27
+> Source: https://en.wikipedia.org/wiki/Pony.ai
+> Fetched: 2026-08-30
+> Type: encyclopedia (secondary, aggregates Reuters/TechCrunch/CNBC/The Verge reporting)
 
-Pony AI Inc. (Chinese: 小马智行) is a Chinese autonomous vehicle technology company co-located in Silicon Valley, Beijing, and Guangzhou. Traded as Nasdaq: PONY / SEHK: 2026. Founded December 2016 by James Peng (CEO) and Tiancheng Lou (CTO), formerly software developers for Baidu in Silicon Valley. ~1,300 employees (2024).
+Pony AI Inc. (小马智行) — Chinese autonomous vehicle technology company co-located in Silicon Valley, Beijing, and Guangzhou. Public company: Nasdaq: PONY, SEHK: 2026. Founded December 2016 by James Peng (CEO) and Tiancheng Lou (CTO), both former Baidu Silicon Valley engineers. ~1,300 employees (2024).
 
-The company has partnered with equipment manufacturers such as Toyota. Pony.ai obtained permits to run fully driverless ride-hailing services in Beijing and Guangzhou, China.
+## Funding & IPO history
 
-- April 2019: launched a pilot system covering 50 km2 in Guangzhou.
-- November 2019: three-month trial in Irvine, California, with 10 cars.
-- February 2021: Brunei Investment Agency participated in a $100 million funding series round.
-- May 2021: California DMV permitted Pony.ai to test six autonomous vehicles without human safety drivers.
-- April 2022: became the first autonomous driving company to get a taxi license in China.
-- July 2022: partnered with Sany Heavy Industry to mass produce autonomous driving trucks in China.
-- August 2023: Toyota, Pony.ai and GAC-Toyota to invest more than 1 billion yuan ($140 million) combined to mass produce robotaxis.
-- April 2025: partnered with Tencent Cloud and Smart Industries Group.
-- June 2025: Reuters reported Pony AI lets one person monitor as many as a dozen robotaxis; analysts (LSEG) estimated profitability by 2029 after over $200 million in losses in 2024.
-- According to California DMV, in 2021 Pony.ai had the third-highest number of miles driven, behind Waymo and Cruise.
+- Jan 2018: $112M Series A co-led by Morningside Venture Capital and Legend Capital; seed lead Sequoia China; IDG Capital, DCM Ventures, Comcast Ventures also participated.
+- Feb 2020: Toyota invested $400M as part of a $462M round. (Reuters/The Verge)
+- Feb 2021: Brunei Investment Agency + CPE participated in Series C extension (~$100M).
+- 2020: Valuation of $5.3B. (TechCrunch)
+- Oct 2023: Received $100M from Neom (Saudi Arabia), establishing regional R&D/manufacturing JV.
+- Aug 2023: Toyota + Pony.ai + GAC-Toyota to invest 1B+ yuan (~$140M) to mass produce robotaxis in China.
+- Nov 2024: IPO on Nasdaq (ticker PONY), raising $260M — one of the largest US IPOs in the autonomous driving sector; shares opened ~15% above offer; ~$5.25B valuation. (Reuters/China Daily)
+- Nov 2025: Secondary listing on Hong Kong Stock Exchange (SEHK: 2026).
+
+## Deployment & partnerships
+
+- Robotaxi commercial service in Beijing (2022-04), Guangzhou (2023-04), Shenzhen (2024), Shanghai (announced).
+- First AV company to get a taxi license in China (Apr 2022); among first driverless robotaxi permits (with Baidu).
+- Robotrucks: partnered with Sany Heavy Industry (2022) to mass produce autonomous trucks.
+- Tencent Cloud partnership (2025-04); Bolt (Europe, 2025-11); ComfortDelGro (Singapore, 2025-12).
+- 2024 losses of $200M+; analysts (LSEG) estimate profitability by ~2029.
+
+## Key investors
+
+Toyota, Sequoia China, IDG Capital, Morningside Venture Capital, Legend Capital, DCM Ventures, Comcast Ventures, Brunei Investment Agency, Neom (Saudi Arabia).

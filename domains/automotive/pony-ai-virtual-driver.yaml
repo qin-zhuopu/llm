@@ -57,8 +57,23 @@ tags:
 - virtual-driver
 - china
 - data-flywheel
+business:
+  funding_total: $1.1B+ (pre-IPO) + $260M IPO
+  latest_round: "IPO (Nasdaq: PONY, 2024-11)"
+  valuation: $5.3B (2020); ~$5.25B (2024 IPO)
+  customers: 北京/广州/深圳/上海 Robotaxi 商业运营；Toyota/Sany/Tencent/Bolt/ComfortDelGro 等合作
+  investors:
+  - Toyota
+  - Sequoia China
+  - IDG Capital
+  - Morningside Venture Capital
+  - Legend Capital
+  - DCM Ventures
+  - Comcast Ventures
+  - Brunei Investment Agency
+  - Neom (Saudi Arabia)
 references:
 - title: Pony.ai Official Website
   url: https://www.pony.ai
-- title: Pony.ai — Wikipedia
+- title: Pony.ai — Wikipedia (融资/IPO/部署历史，聚合 Reuters/TechCrunch/CNBC 报道)
   url: https://en.wikipedia.org/wiki/Pony.ai
