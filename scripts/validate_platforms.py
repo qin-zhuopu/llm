@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
-"""Validate all platform YAML files against platforms/schema.json."""
+"""验证所有平台 YAML 文件是否符合 platforms/schema.json。
 
+遍历 platforms/*.yaml，对每个文件做 JSON Schema 校验（inference_api 为必填）。
+全部通过退出码 0，任一失败退出码 1。
+
+用法:
+    python scripts/validate_platforms.py     # 校验所有平台 YAML
+    python scripts/validate_platforms.py -h  # 显示本帮助
+"""
+
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -14,6 +23,11 @@ SCHEMA_FILE = PLATFORMS_DIR / "schema.json"
 
 
 def main():
+    argparse.ArgumentParser(
+        description="验证所有平台 YAML 文件是否符合 platforms/schema.json。",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    ).parse_args()
+
     if not SCHEMA_FILE.exists():
         print(f"ERROR: Schema file not found: {SCHEMA_FILE}")
         sys.exit(1)

@@ -12,6 +12,7 @@
     5. 脚本与 schema 一致性 — 脚本引用的字段在 schema 中存在
 """
 
+import argparse
 import json
 import subprocess
 import sys
@@ -154,8 +155,20 @@ def test_yaml_schema_match():
          f"{len(violations)} 文件有非法字段: {violations[:3]}")
 
 
+def test_script_governance():
+    """测试脚本治理：所有脚本有 docstring / 支持 -h / 被文档引用。"""
+    print("\n📋 脚本治理 (check_scripts.py)")
+    code, stdout, stderr = run_script("check_scripts.py")
+    test("所有脚本通过治理检查", code == 0,
+         stdout.split("未通过")[-1].strip()[:200] if code != 0 else "")
+
+
 def main():
     global PASS, FAIL
+    argparse.ArgumentParser(
+        description="集成测试：验证所有脚本能正常运行且输出合理。",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    ).parse_args()
     print("=" * 60)
     print("  集成测试")
     print("=" * 60)
@@ -166,6 +179,7 @@ def main():
     test_validate_platforms()
     test_schema_consistency()
     test_yaml_schema_match()
+    test_script_governance()
 
     print(f"\n{'='*60}")
     print(f"  结果: {PASS} 通过, {FAIL} 失败")

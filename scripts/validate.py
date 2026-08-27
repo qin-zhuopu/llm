@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
-"""验证所有模型 YAML 文件是否符合 JSON Schema 定义。"""
+"""验证所有模型 YAML 文件是否符合 JSON Schema 定义。
 
+遍历 domains/**/*.yaml（排除 _meta.yaml），对每个文件：
+  1. 用 schema/model.schema.json 做 JSON Schema 校验
+  2. 检查 domain 字段与所在文件夹名一致
+全部通过退出码 0，任一失败退出码 1。
+
+用法:
+    python scripts/validate.py       # 校验所有模型 YAML
+    python scripts/validate.py -h    # 显示本帮助
+"""
+
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -9,6 +20,11 @@ import yaml
 from jsonschema import validate, ValidationError
 
 def main():
+    argparse.ArgumentParser(
+        description="验证所有模型 YAML 文件是否符合 JSON Schema 定义。",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    ).parse_args()
+
     root = Path(__file__).resolve().parent.parent
     schema_path = root / "schema" / "model.schema.json"
     domains_path = root / "domains"

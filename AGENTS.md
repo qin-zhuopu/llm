@@ -278,11 +278,27 @@ python scripts/test_all.py             # 集成测试（17项）
 - validate_platforms.py 通过
 - Schema 一致性（脚本不引用已删除字段）
 - 所有 YAML 字段都在 schema 中定义
+- **脚本治理（check_scripts.py）：所有脚本有 docstring / 支持 -h / 被文档引用**
 
 ### 铁律
 - 每次新增/修改 YAML 后必须跑 `validate.py`
-- 提交前必须跑 `test_all.py`，17 项全绿才提交
+- 提交前必须跑 `test_all.py`，18 项全绿才提交
 - 修改 schema（如新增 domain 枚举）后必须跑 `test_all.py` 确认无回归
+
+## 脚本治理规范（强制）
+
+> 详见 `SCRIPTS.md`（脚本索引）和 `scripts/check_scripts.py`（自动检查）。
+
+每个 `scripts/*.py` 脚本必须满足：
+1. **有模块级 docstring**，说明作用、用法、参数。
+2. **支持 `-h`/`--help`** 且正常退出（退出码 0）。
+3. **在文档中登记**（`SCRIPTS.md` / AGENTS.md / docs/），避免"孤儿脚本"。
+
+由 `scripts/check_scripts.py` 自动检查并纳入 `test_all.py` 门禁。新增脚本后运行：
+```bash
+python scripts/check_scripts.py    # 治理检查
+```
+遗留脚本（如 extract_yaml.py / fetch_descriptions.py）在 SCRIPTS.md 标注为 Legacy 并注明替代方案。
 
 ---
 
