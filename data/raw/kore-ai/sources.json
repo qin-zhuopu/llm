@@ -5,6 +5,12 @@
       "url": "https://kore.ai",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "press-newsroom.md",
+      "url": "https://kore.ai/press/",
+      "fetched_at": "2026-08-27",
+      "type": "news"
     }
   ]
 }

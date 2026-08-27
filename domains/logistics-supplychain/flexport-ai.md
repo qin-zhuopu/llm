@@ -20,3 +20,11 @@ Flexport 是数字货运代理与全球贸易技术平台，主张"AI-powered lo
 ## 商业
 
 Flexport 覆盖海运、空运、卡运、履约、贸易咨询与营运资金等产品，合作方包括 Shopify、Walmart、SHEIN Marketplace。
+
+---
+
+## 补充：公司背景与融资（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Flexport ｜ 抓取日期: 2026-08-27
+
+Flexport Inc. 2013 年由 Ryan 与 David Petersen 兄弟创立，总部旧金山，营收 US$2.1B（2024），约 2,100 员工（2025）。软件整合供应链各方 ERP 数据以管理货物、简化货运处理。2022 年 E 轮募资 $935M，估值 $8B；2023 年 5 月 Shopify 以换取 13% 股权出售其物流业务给 Flexport；2023 年 11 月收购已倒闭独角兽 Convoy 资产；2024 年 1 月获 Shopify $260M 投资。WSJ（2025-03）报道其未达盈利目标。

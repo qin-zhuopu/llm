@@ -24,3 +24,11 @@ o9 推出 APEX（Agile / Adaptive / Autonomous Planning & Execution），定位�
 ## 认可
 
 在 2026 Gartner Magic Quadrant 多份报告中被评为 Leader。
+
+---
+
+## 补充：第三方媒体与分析（第二来源）
+
+> 来源: https://o9solutions.com/newsroom/ ｜ 抓取日期: 2026-08-27
+
+o9 官方新闻室汇集第三方报道：Forbes "What Is AI-Native Supply Chain Planning?"（2026-08-20）；Associated Press / Yahoo Finance 报道 o9 被评为 "2026 Nucleus Research Enterprise Supply Chain Planning Technology Value Matrix" Leader（2026-07-29，第三方分析榜单）；Supply Chain Now、Economic Times CIO、Procurement Magazine 等相关报道。o9 "Digital Brain" 为基于知识图谱的 AI 原生供应链计划平台。

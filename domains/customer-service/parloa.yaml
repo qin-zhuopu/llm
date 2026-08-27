@@ -40,6 +40,10 @@ tags:
 - ai-agent
 - conversational-ai
 - enterprise-ai
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源企业语音AI/联络中心SaaS，官网未公开模型参数/架构/训练细节，无论文；平台编排通用LLM而非发布自研基础模型，独立技术披露稀缺（仅有SAP Endorsed App认证等商业信号）。
 references:
 - title: Parloa Official Website
   url: https://www.parloa.com

@@ -51,6 +51,10 @@ tags:
 - computer-vision
 - smart-feeding
 - biomass-estimation
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源陆基水产养殖AI SaaS（ReelWeight/ReelBiomass等），官网仅有产品与客户试点信息，未公开模型参数、架构或训练数据；无论文，未检索到独立技术披露。
 references:
 - title: ReelData AI Official Website
   url: https://www.reeldata.ai/

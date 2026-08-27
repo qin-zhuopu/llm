@@ -49,6 +49,10 @@ tags:
 - freight-procurement
 - freight-audit-payment
 - multi-modal
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源物流/TMS SaaS，官网未公开模型参数、架构或训练数据；无论文，未检索到独立技术披露（仅有商业/融资信号）。
 references:
 - title: Pando 官网
   url: https://www.pando.ai

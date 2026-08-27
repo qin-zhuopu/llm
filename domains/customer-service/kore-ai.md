@@ -25,3 +25,11 @@ Build / Orchestrate（并行编排、独立故障恢复）/ Prove（运行时合
 ## 定位
 
 企业 agentic AI/对话式 AI 平台，客服为核心场景，闭源 SaaS。发现渠道：Forrester 对话式 AI 榜单 + 客服 AI 平台调研。
+
+---
+
+## 补充：第三方认可与新闻（第二来源）
+
+> 来源: https://kore.ai/press/ ｜ 抓取日期: 2026-08-27
+
+Kore.ai 官方新闻室显示其被 Gartner 与 Forrester 评为领导者（Leader placements）；建立湾区战略总部，报告三位数客户增长与深化的 hyperscaler 合作；与 Atos 合作为英国企业交付 "Sovereign Agentic AI"；发布 2026 Kore.ai Agent Productivity Index，调研发现 72% 企业称其 AI agent 运行在"未受管理的风险"下。任命 Uma Sandilya 为首席商务官。

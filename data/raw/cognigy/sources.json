@@ -5,6 +5,12 @@
       "url": "https://www.cognigy.com",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "nice-acquisition-wikipedia.md",
+      "url": "https://en.wikipedia.org/wiki/NICE_Ltd.",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
     }
   ]
 }

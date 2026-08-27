@@ -49,6 +49,10 @@ tags:
 - route-optimization
 - stochastic-optimization
 - digital-twin
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源货运决策智能SaaS（源自普林斯顿运筹学研究但产品闭源），官网未公开生产模型参数、架构或训练数据；无公开论文披露产品细节，未检索到独立技术披露。
 references:
 - title: Optimal Dynamics 官网
   url: https://www.optimaldynamics.com

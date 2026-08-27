@@ -27,3 +27,11 @@ Blue Yonder 自称"面向供应链的 AI 公司"，主张现代供应链移动�
 - 每天 200 亿+ AI/ML 预测；数十年 AI 交付经验；数十亿美元投入供应链 AI
 - 3,000+ 客户
 - 在四项 Gartner Magic Quadrant 与五项 Nucleus Research Value Matrix 报告中被评为 Leader
+
+---
+
+## 补充：公司沿革与母公司 Panasonic（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Blue_Yonder ｜ 抓取日期: 2026-08-27
+
+Blue Yonder Group（前身 JDA Software）是松下（Panasonic）旗下独立子公司，1985 年创立，总部亚利桑那 Scottsdale，营收 $1.36B（2024），约 8,000 员工。2018 年 JDA 收购德国 AI 公司 Blue Yonder GmbH，2020 年 2 月更名 Blue Yonder；2021 年 4 月 Panasonic 以 $7.1B 从 Blackstone/New Mountain Capital 收购（9 月完成）。历史收购含 Manugistics（2006）、i2 Technologies（2010, $346M）、Yantriks（2020）、Doddle Parcels（2023）、flexis AG（2024）。其 agentic 供应链产品建立在该 AI/优化积淀之上，服务零售、制造、物流与消费品计划。

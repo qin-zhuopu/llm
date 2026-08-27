@@ -14,3 +14,11 @@ Cognigy 为企业联络中心提供对话式与 agentic AI，跨语音和数字�
 ## 定位
 
 CCaaS/联络中心内嵌对话式与 agentic AI 的代表，闭源企业 SaaS。发现渠道：客服 AI 平台调研 + Forrester 对话式 AI 榜单交叉。
+
+---
+
+## 补充：母公司 NiCE（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/NICE_Ltd. ｜ 抓取日期: 2026-08-27
+
+Cognigy 已被以色列-美国 CX/联络中心软件公司 NiCE Ltd.（Nasdaq: NICE）收购，作为其产品之一（与 NiCE CXone、CXone Mpower、NiCE Actimize 并列）整合进 NiCE CX 平台（对外品牌 "NiCE Cognigy"）。NiCE 营收 $2.8B（2024），约 8,400 员工（2024），2023 年获 Frost & Sullivan 对话式 AI 年度最佳实践奖。Cognigy 提供企业级对话式/agentic AI 平台（Cognigy.AI）用于语音与聊天客服自动化；平台编排 LLM 与 NLU，不公开自研基础模型参数。

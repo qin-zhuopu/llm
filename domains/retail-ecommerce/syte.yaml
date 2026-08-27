@@ -63,6 +63,10 @@ tags:
 - recommendation
 - fashion
 - retail
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源视觉搜索/商品发现SaaS，官网未公开模型参数、架构或训练数据；无论文，未检索到独立技术披露（同名Wikipedia条目为一支音乐乐队，非本公司）。
 references:
 - title: Syte Official Website
   url: https://www.syte.ai/

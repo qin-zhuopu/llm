@@ -21,3 +21,11 @@ Gatik 定位为"自主货运的生意"（The Business of Autonomous Freight）�
 ## 客户
 
 Walmart、Kroger、PepsiCo 等。
+
+---
+
+## 补充：公司背景与合作（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Gatik ｜ 抓取日期: 2026-08-27
+
+Gatik 2017 年由 Gautam Narang（CEO）、Arjun Narang、Apeksha Kumavat 创立，总部 Mountain View，为中程"最后中间一公里"（middle mile）打造 L4 自动驾驶卡车，在固定路线无安全员运营。2019 年与 Walmart 在阿肯色 Bentonville 启动 1.8 英里路线；2021 年转为无人驾驶，11 月运营 21 辆车；2020 年 1 月在加拿大与 Loblaw 部署首个自动配送车队。客户含 Kroger、Tyson Foods。合作方：Isuzu（N 系列卡车）、Cummins（线控/动力总成）、Goodyear（数据轮胎，2024）、NVIDIA（下一代仿真平台，2025-07）。

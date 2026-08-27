@@ -31,3 +31,11 @@ LILA 属于「模型系统型」：自研面向科学的 AI 推理模型，并�
 
 来源：
 - LILA / Lila Sciences 官网 https://lila.ai （获取日期 2026-08-27）
+
+---
+
+## 补充：Flagship Pioneering 背景（第二来源）
+
+> 来源: https://www.flagshippioneering.com/companies/lila-sciences ｜ 抓取日期: 2026-08-27
+
+Lila Sciences 由创业孵化机构 Flagship Pioneering 描述为"全球首个科学超级智能平台与面向生命、化学、材料科学的自主实验室"，将 AI 应用于科学方法各环节，团队分布于 Cambridge、旧金山、伦敦。里程碑："Flagship Pioneering Unveils Lila Sciences to Build Superintelligence in Science"（2025-03-10）。其平台自主执行科学方法：生成假设、设计实验、运行物理实验室并迭代（据 lila.ai/news, 2026）。

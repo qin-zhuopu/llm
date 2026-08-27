@@ -5,6 +5,12 @@
       "url": "https://www.mattiq.com",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "scientific-founder-mirkin.md",
+      "url": "https://en.wikipedia.org/wiki/Chad_Mirkin",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
     }
   ]
 }

@@ -63,6 +63,10 @@ tags:
 - merchandising
 - ai-search
 - retail
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源电商个性化/CX SaaS（Huginn AI agent），官网未公开模型参数、架构或训练细节；无论文，未检索到独立第三方技术披露。
 references:
 - title: Nosto Official Website
   url: https://www.nosto.com/

@@ -49,6 +49,10 @@ tags:
 - decision-intelligence
 - iot
 - risk-management
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源供应链持续决策智能SaaS（CDI平台），官网仅有营销性描述，未公开模型参数、架构或训练数据；无论文，未检索到独立第三方技术披露。
 references:
 - title: TransVoyant 官网
   url: https://www.transvoyant.com

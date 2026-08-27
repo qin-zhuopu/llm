@@ -28,3 +28,11 @@ Applied Intuition 是一家「Physical AI that moves the world」定位的公司
 - 大规模仿真与验证
 - Vehicle OS 与整车智能软件栈
 - 面向量产的物理 AI 数字基础设施
+
+---
+
+## 补充：融资与规模（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Applied_Intuition ｜ 抓取日期: 2026-08-27
+
+Applied Intuition 由 Qasar Younis（CEO，前 Y Combinator COO）与 Peter Ludwig 于 2017 年 1 月创立，为物理 AI 提供软件平台与仿真工具，服务全球 20 大 OEM 中的 18 家。2025 年约 1,300 员工。2025 年 6 月宣布 $600M F 轮 + tender offer，估值 $15B（由 BlackRock 管理基金与 Kleiner Perkins 领投；新投资方含 Franklin Templeton、卡塔尔投资局），较 2024 年 $6B 估值翻倍；2024 年 E 轮 $250M（$6B 估值，TechCrunch 报道）。"Dana" 是其面向车载软件与自动驾驶研发的 AI copilot。来源交叉引用 Forbes、Bloomberg、TechCrunch、WSJ。

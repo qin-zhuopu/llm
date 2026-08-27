@@ -26,3 +26,11 @@ Plantix 的核心是深度学习计算机视觉的作物病害图像分类模型
 ## 来源
 
 - Plantix 官网：https://plantix.net/en/ （获取日期 2026-08-27，见 data/raw/plantix/）
+
+---
+
+## 补充：背景与第三方报道（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Plantix ｜ 抓取日期: 2026-08-27
+
+Plantix 是由柏林 AI 初创 PEAT GmbH 开发的移动作物顾问 App（2015 年发布，Android），基于症状图像诊断病虫害与营养缺乏，推荐农药/除草剂并对接本地经销商（对 App 促成的农药销售抽成）。2020 年 4 月收购瑞士-印度初创 Salesbee；被 BBC、Fortune、Wired、MIT Technology Review、Nature 报道；获 CeBIT 创新奖、USAID、UN World Summit Award。2023 年被化工营销公司 Helm AG 收购。与 ICRISAT、CIMMYT、CABI 等研究机构合作。Wired（2024）报道其"减少农药"宣称因输入品销售商业模式受质疑。

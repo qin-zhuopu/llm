@@ -51,6 +51,10 @@ tags:
 - crop-identification
 - variable-rate
 - ai-agronomist
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源卫星农业智能SaaS，官网仅披露用户/国家等商业指标（140K+农户、180国），未公开模型参数、架构或训练数据；无论文，未检索到独立技术披露。
 references:
 - title: OneSoil Official Website
   url: https://www.onesoil.ai/en

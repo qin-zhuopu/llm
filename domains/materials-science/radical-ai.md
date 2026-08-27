@@ -24,3 +24,11 @@ Radical AI 属于「模型系统型」：自研 AI 实验生成/优化模型，�
 
 来源：
 - Radical AI 官网 https://www.radical-ai.com （获取日期 2026-08-27）
+
+---
+
+## 补充：第三方媒体报道（第二来源）
+
+> 来源: https://www.radical-ai.com/news ｜ 抓取日期: 2026-08-27
+
+Radical AI（纽约，创始人 Joseph F. Krause）构建"自动驾驶"闭环 AI 材料实验室，自主设计与测试新合金，将通常需 20+ 年的材料 R&D 大幅加速。第三方报道：Fast Company（2026-05-28，Adele Peters）"In This Manhattan Lab, AI Designs Materials From Scratch"；Latent Space（2026-06-17）报道其闭环 AI 实验室"6 个月产出 1,200 种合金，约为此前最佳 DARPA 项目速度的 10 倍"；SemiWiki（2026-08-02）聚焦半导体材料；Upstarts Media（2026-07-10，Alex Konrad）创始人专访"The Scientist Building the 'Waymo' Lab for New Materials"。

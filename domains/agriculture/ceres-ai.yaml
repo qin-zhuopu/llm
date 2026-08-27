@@ -55,6 +55,10 @@ tags:
 - crop-insurance
 - risk-analytics
 - precision-agriculture
+data_quality:
+  completeness: partial
+  gap_reason: data-scarce
+  note: 闭源农业风险/影像分析SaaS，官网披露数据规模（110亿+植株级测量、30+研究合作）但未公开模型参数、架构或训练细节；无论文，未检索到独立技术披露。
 references:
 - title: Ceres AI Official Website
   url: https://www.ceresimaging.net/

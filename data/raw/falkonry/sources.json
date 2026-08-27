@@ -5,6 +5,12 @@
       "url": "https://falkonry.com/",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "ibm-product.md",
+      "url": "https://www.ibm.com/products/falkonry",
+      "fetched_at": "2026-08-27",
+      "type": "news"
     }
   ]
 }

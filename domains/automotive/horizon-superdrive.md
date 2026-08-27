@@ -26,3 +26,11 @@
 - 软硬件一体全栈智驾方案
 - 面向量产的性能与成本平衡
 - BEV 感知与端到端规划
+
+---
+
+## 补充：母公司地平线机器人（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Horizon_Robotics ｜ 抓取日期: 2026-08-27
+
+Horizon Robotics（地平线，SEHK: 9660）2015 年 7 月由 Yu Kai（CEO）等创立，营收 CN¥2.38B（2024），约 2,078 员工。开发用于自动驾驶与 ADAS 的车载 AI 芯片，SuperDrive（HSD）为其高阶辅助驾驶方案。2017 年 12 月推出 Journey 1.0；2022 年 10 月大众集团投资 $2.3B 成立合资 Carizon；2023 年占中国自动驾驶芯片市场约 49%；2024 年 10 月港交所 IPO 募资 $696M；2025 年目标出货超 1,000 万颗芯片。Journey 5 采用 Bayesian BPU 架构（128 TOPS），TSMC 16nm，ISO 26262 ASIL-B 认证。合作方含 Chery、Audi、SAIC、SK Telecom、BYD、CATL。

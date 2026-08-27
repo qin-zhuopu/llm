@@ -21,3 +21,11 @@ See & Spray 在农机上部署嵌入式深度学习目标检测/分割模型，�
 ## 来源
 
 - Blue River Technology 官网：https://www.bluerivertechnology.com/ （获取日期 2026-08-27，见 data/raw/blue-river-technology/）
+
+---
+
+## 补充：母公司 John Deere（第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/John_Deere ｜ 抓取日期: 2026-08-27
+
+Blue River Technology 被 Wikipedia 列为 Deere & Company（John Deere，NYSE: DE）的子公司（与 Bear Flag Robotics、Hagie、Monosem 等并列）。John Deere 营收 US$45.7B（2025），约 73,100 员工，总部伊利诺伊 Moline。Blue River 的 See & Spray 使用车载摄像头与深度学习模型实时区分作物与杂草，仅对杂草点喷除草剂（targeted spot spraying），较全田喷洒显著减少除草剂用量，已作为 John Deere 精准农业喷雾机产品线商业化。John Deere/Blue River 未公开模型参数、架构或训练语料细节——See & Spray 是嵌入式商业产品而非公开研究模型。

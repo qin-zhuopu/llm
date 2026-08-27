@@ -26,3 +26,11 @@ Everstream Analytics 是端到端供应链风险管理领域的领导者，将 A
 ## 认可
 
 Gartner Magic Quadrant for Supplier Risk Management Solutions（2025-04-22）及 Gartner Critical Capabilities 报告收录。
+
+---
+
+## 补充：第三方认可与客户案例（第二来源）
+
+> 来源: https://www.everstream.ai/ ｜ 抓取日期: 2026-08-27
+
+Everstream Analytics 提供端到端供应链风险管理：网络映射（供应链数字孪生）、7×24 AI 驱动+人工校验告警、自动/预测性风险评分、次级供应商可见性、insights-to-action 集成。第三方认可：Gartner Magic Quadrant for Supplier Risk Management Solutions（2025-04-22）与 Critical Capabilities 报告。客户案例数据点：Nissan——首 6 个月规避 7 位数成本、90% 影响零损失缓解、200+ 日活用户；Danone——60% 采购品类接入、20% 业务增长、响应时间缩短 5 天。

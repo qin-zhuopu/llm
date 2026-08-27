@@ -21,3 +21,11 @@ Cargill 首席法务与合规官 Rishi Varma 背书。服务全球领先的法�
 企业内部法务 AI，模型系统型。与 Harvey（面向律所）不同，Eudia 面向企业法务部门（甲方法务）。核心壁垒是机构知识编码和企业系统集成。
 
 > 发现渠道：新渠道主动搜索（官网/竞品线），报告未覆盖。补充了"企业法务"这一 Harvey 未覆盖的细分。
+
+---
+
+## 补充：合作与第三方报道（第二来源）
+
+> 来源: https://eudia.com/news ｜ 抓取日期: 2026-08-27
+
+Eudia（CEO 兼联合创始人 Omar Haroun）为企业法务打造"企业大脑"，将机构知识固化为企业级法务 agent（"Expert Digital Twins"）。合作与第三方报道：Google Cloud Gemini Enterprise for Legal 首发合作伙伴（2026-08-25）；与 Microsoft 合作扩展 Expert Digital Twins（2026-06-25）；与 Consilio 战略合作（2026-06-18）；OpenAI + Eudia 面向政府客户的战略合作（2026-05-19）；与 ServiceNow 合作（2026-03-26）；2025 年 10 月收购 ALSP Out-House（Artificial Lawyer 等多家报道）。Eudia 为闭源企业 SaaS，其"企业决策 AI"编排合作方 LLM（Gemini/OpenAI/Microsoft），不公开自研基础模型参数、架构或训练细节。

@@ -35,3 +35,11 @@ Mattiq 属于「模型系统型/数据基础设施型」：以高通量实验平
 
 来源：
 - Mattiq 官网 https://www.mattiq.com （获取日期 2026-08-27）
+
+---
+
+## 补充：科学基础（Chad Mirkin / Megalibrary，第二来源）
+
+> 来源: https://en.wikipedia.org/wiki/Chad_Mirkin ｜ 抓取日期: 2026-08-27
+
+Mattiq 的科学创始人是西北大学化学教授 Chad Mirkin（国际纳米技术研究所所长），其"材料数据引擎"建立在 Mirkin 首创的 Megalibrary 技术之上——组合式合成与高通量筛选海量材料空间，为材料 AI 生成实验"ground truth"。Mirkin 发表逾 940 篇论文，Google Scholar H-index 约 210，逾 1,400 项专利，同时入选美国科学院、工程院、医学院三院。Mattiq 应用覆盖催化（电化学：氢能、燃料电池、CO₂ 转化）、磁体、电池、存储器、超导材料、半导体材料。公司不公开模型参数或独立基础模型；可信技术基础是 Mirkin 课题组（发表于 Science）的学术积淀。
