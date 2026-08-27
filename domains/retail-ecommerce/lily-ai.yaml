@@ -1,0 +1,70 @@
+name: Lily AI (Lily Max)
+name_en: Lily AI Lily Max
+company: Lily AI
+domain: retail-ecommerce
+status: released
+website: https://www.lily.ai/
+description: "Lily AI 是零售/电商「商品智能（product intelligence）」公司，旗舰产品 Lily Max 是目标驱动（goal-based）的智能体系统，把零售商的商品目录富化为消费者语言、经 schema 校验的属性，使各 AI 中介化电商表面（Google Shopping/Ads、Meta Ads、站内搜索、LLM/智能体发现）能够匹配并操作商品。核心命题：AI 无法推荐它读不懂的东西。属模型系统/工作流应用型，采用「检测缺口→生成富化→受控测试→度量提升→推荐放量」的持续实验闭环。"
+parameters: 未公开
+architecture: "goal-based agentic system (商品属性富化 + 持续实验引擎，基于基础模型编排)"
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于零售商品目录、PDP、结构化属性与购物意图数据训练商品属性富化与消费者语言映射模型
+  - name: post-training
+    description: 持续实验闭环——每次受控 A/B 测试结果反馈到系统，使下一次富化更精准（moat 为系统本身）
+tech_stack:
+  framework: Lily Max agentic platform
+  inference: 商品智能富化云服务（对接 Google Merchant Center / Meta / 站内）
+  techniques:
+  - Goal-based AI agents
+  - Product attribute enrichment
+  - Consumer-language mapping
+  - Schema-validated payload generation
+  - Matched-spend A/B testing
+  - Difference-in-differences measurement
+datasets:
+- name: 零售商商品目录 / Feed
+  description: 商品 feed、PDP、结构化属性与 schema，作为富化输入（从 Google Merchant Center feed 起步）
+  type: other
+- name: 购物意图 / 搜索词数据
+  description: 各表面高需求搜索词与购物场景（shopping occasion）标签，用于映射消费者语言
+  type: sft
+benchmarks:
+- name: Google Conversational Attributes 支持速度
+  score: 数天内支持全部 6 个属性
+  metric: time_to_support
+  comparison: "Google 在 Merchant Center 推出 Conversational Attributes 后，Lily Max 数天内实现全部 6 个属性支持"
+  source: self-reported
+- name: 提升度量方法
+  score: matched-spend A/B + DiD
+  metric: lift_methodology
+  comparison: "以等额投放 A/B、差分-差分（DiD）与置信区间度量提升，区分验证性提升与方向性改善"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 商品目录属性富化，将商家语言映射为消费者语言
+- 生成经 schema 校验、可被 AI 表面解析的「agent-ready」商品负载
+- 面向 Google Shopping/Ads、Meta Ads、站内搜索及 LLM/智能体发现的跨表面优化
+- 目标驱动的智能体优化闭环（人设目标、智能体执行、人审批上线）
+- 受控 A/B 与差分-差分测试量化提升
+- 商品信息质量打分（完整性/正确性/合规性/相关性/差异化）
+access:
+- saas
+- api
+tags:
+- ecommerce
+- product-intelligence
+- agentic-commerce
+- catalog-enrichment
+- ai-discovery
+- retail
+references:
+- title: Lily AI Official Website
+  url: https://www.lily.ai/
+- title: How Lily Max Works
+  url: https://www.lily.ai/lily-max

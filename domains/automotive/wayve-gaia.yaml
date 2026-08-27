@@ -1,0 +1,67 @@
+name: Wayve GAIA-1
+name_en: GAIA-1
+company: Wayve
+domain: automotive
+status: research
+release_date: 2023-10
+website: https://wayve.ai/thinking/scaling-gaia-1/
+description: GAIA-1（'Generative AI for Autonomy'）是 Wayve 打造的超 90 亿参数生成式世界模型，专为自动驾驶设计。它利用视频、文本和动作输入生成逼真的驾驶视频，并对自车行为和场景特征提供细粒度控制。核心世界模型是
+  65 亿参数的自回归 Transformer，把世界建模视为无监督序列建模问题（将输入映射为离散 token 并预测下一个 token），视频解码器为视频扩散模型。GAIA-1
+  涌现出学习高层结构、场景动态、上下文感知、泛化与几何理解等能力。
+parameters: 9B (world model 6.5B)
+architecture: autoregressive transformer world model + video diffusion decoder
+training:
+  stages:
+  - name: pre-training
+    description: 把世界建模视为无监督序列建模问题，将视频/文本/动作输入经专用编码器映射为离散 token 并时序对齐，自回归 Transformer
+      预测下一组图像 token。世界模型 6.5B 参数，在 64 张 NVIDIA A100 上训练 15 天
+    hardware: 64x NVIDIA A100
+    duration: 15 days
+  - name: other
+    description: 视频扩散模型解码器将预测的图像 token 解码回像素空间，保证生成视频语义、视觉与时序一致性
+tech_stack:
+  techniques:
+  - autoregressive transformer
+  - world model
+  - discrete tokenization
+  - video diffusion decoder
+  - multi-modal conditioning (video/text/action)
+  - unsupervised sequence modeling
+datasets:
+- name: Wayve driving video corpus
+  description: Wayve 采集的大规模真实驾驶视频数据，用于训练生成式世界模型学习环境表示与未来动态
+  type: pre-training
+benchmarks:
+- name: World model scale
+  score: 6.5B (total 9B+)
+  metric: parameters
+  comparison: 世界模型 6.5B 参数，整体系统超 9B 参数
+  source: paper
+- name: Training compute
+  score: 64x A100, 15 days
+  metric: training hardware/duration
+  comparison: 世界模型在 64 张 NVIDIA A100 上训练 15 天
+  source: paper
+capabilities:
+- 多模态（视频/文本/动作）条件化生成逼真驾驶视频
+- 对自车行为和场景特征的细粒度控制（转向、速度、曲率）
+- 文本驱动的场景编辑（如改变红绿灯颜色、天气）
+- 从视频提示做未来 rollout 预测
+- 学习世界几何、场景动态与高层结构
+- 为自动驾驶提供仿真数据生成与未来预测
+tags:
+- autonomous-driving
+- world-model
+- generative-model
+- video-diffusion
+- autoregressive
+- multimodal
+- research
+- simulation
+access:
+- internal-only
+references:
+- title: 'Scaling GAIA-1: 9-billion parameter generative world model for autonomous driving'
+  url: https://wayve.ai/thinking/scaling-gaia-1/
+- title: 'GAIA-1: A Generative World Model for Autonomous Driving (arXiv)'
+  url: https://arxiv.org/abs/2309.17080

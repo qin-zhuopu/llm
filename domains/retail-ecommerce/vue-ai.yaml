@@ -1,0 +1,69 @@
+name: Vue.ai
+name_en: Vue.ai
+company: Vue.ai (Mad Street Den)
+domain: retail-ecommerce
+status: released
+website: https://vue.ai/
+description: "Vue.ai（Mad Street Den 旗下）是企业级 AI 编排平台，以单一 AI Orchestrator 负责企业 AI 转型，采用可组合、模块化、AI 原生架构。零售电商起家于图像 AI（商品打标、AI 模特上身图 on-model imagery、虚拟试衣间），能自动清洗与丰富数据，用少量数据快速训练自学习/联邦模型。用例覆盖商品打标、内容审核、库存需求预测、个性化推荐与营销旅程、虚拟试穿、流失预测等。属模型系统+工作流应用型：训练专有计算机视觉与自学习模型并通过可组合工作流编排。"
+parameters: 未公开
+architecture: "AI orchestration platform (专有计算机视觉/自学习/联邦模型 + 可组合工作流编排)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于零售商品图像训练计算机视觉模型（商品打标、on-model 上身图生成、虚拟试穿）
+  - name: fine-tuning
+    description: 用少量样本快速训练自学习/联邦模型，随情境变化与用户行为主动学习适应
+tech_stack:
+  framework: Vue.ai Orchestration Platform
+  inference: 实时图像 AI/推荐/预测云服务
+  techniques:
+  - Computer vision (product tagging / on-model imagery)
+  - Virtual try-on / virtual dressing room
+  - Self-learning & active learning (federated models)
+  - Composable low-code workflows
+  - High-dimensional customer/product graphs
+  - Demand forecasting
+datasets:
+- name: 零售商品图像
+  description: 商品图与模特图，用于训练打标、on-model 生成与虚拟试穿
+  type: pre-training
+- name: 客户/商品/流程图谱数据
+  description: 高维客户、商品与流程图谱，支撑个性化、预测与自动化
+  type: other
+benchmarks:
+- name: 客户战略伙伴认可度
+  score: 96%
+  metric: strategic_partner_rating
+  comparison: "96% 客户视 Vue.ai 为战略伙伴（公司自述）"
+  source: self-reported
+- name: 部署框架
+  score: "30:60:90"
+  metric: rollout_timeline
+  comparison: "Day 30 试点上线 / Day 60 ROI 验证 / Day 90 规模化（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 商品图像自动打标与内容审核
+- 自动化 AI 模特上身图（on-model imagery）
+- 虚拟试衣间 / 虚拟试穿
+- 个性化电商推荐与营销旅程
+- 库存需求预测与渠道优化
+- 可组合低代码 AI 工作流编排
+access:
+- saas
+- api
+tags:
+- ecommerce
+- computer-vision
+- virtual-try-on
+- product-tagging
+- personalization
+- ai-orchestration
+- retail
+references:
+- title: Vue.ai Official Website
+  url: https://vue.ai/

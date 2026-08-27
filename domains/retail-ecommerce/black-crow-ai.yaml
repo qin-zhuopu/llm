@@ -1,0 +1,73 @@
+name: Black Crow AI
+name_en: Black Crow AI
+company: Black Crow AI
+domain: retail-ecommerce
+status: released
+website: https://www.blackcrow.ai/
+description: "Black Crow AI 是面向电商增长的全漏斗预测式 AI 平台，核心是实时预测机器学习引擎：在 20ms 内对购物者的未来价值与行为打分，驱动受众、竞价、邮件/短信触发与站内体验。其新产品「AI Storefronts」能读取点击来源（广告创意、搜索词、消息）自主生成独特、贴合品牌且可交易的落地店铺，官称转化率提升 50-100%。属模型系统型：训练专有实时预测 ML 模型 + 生成式店铺生成，运行于商家目录与互动上下文之上。"
+parameters: 未公开
+architecture: "predictive ML + generative storefront platform (专有实时预测模型 + 生成式店铺生成)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于跨会话购物者行为与购买结果训练预测模型，预测未来价值与行为
+  - name: post-training
+    description: 基于真实购买结果持续优化（Learning System），迭代预测与店铺生成策略
+tech_stack:
+  framework: Black Crow Predictive ML engine
+  inference: 实时预测评分服务（<20ms）+ 生成式店铺渲染
+  techniques:
+  - Real-time predictive ML (future value/behavior scoring)
+  - Sub-20ms inference
+  - Cross-session customer-state modeling
+  - Generative AI storefront generation
+  - Catalog & offer intelligence
+datasets:
+- name: 购物者行为与购买数据
+  description: 跨会话购物者行为、互动上下文与真实购买结果，用于训练预测模型
+  type: pre-training
+- name: 商家商品目录与报价
+  description: 商品目录与定价/报价数据，支撑目录智能与店铺生成
+  type: other
+benchmarks:
+- name: AI Storefronts CVR 提升
+  score: 50-100%
+  metric: conversion_rate_lift
+  comparison: "AI 生成落地店铺带来转化率提升 50-100%（公司自述）"
+  source: self-reported
+- name: 实时预测延迟
+  score: <20ms
+  metric: inference_latency
+  comparison: "购物者未来价值/行为预测在 20ms 内返回（公司自述）"
+  source: self-reported
+- name: Terra Kaffe 案例
+  score: 加购率与 CVR 提升
+  metric: business_lift
+  comparison: "优化点击后体验，30 天内加购率与转化率提升（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业/品牌订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 实时购物者未来价值与行为预测（<20ms）
+- AI Storefronts：按点击上下文自主生成可交易落地店铺
+- 预测驱动的受众、竞价与邮件/短信触发
+- 跨会话购物者状态建模
+- 目录与报价智能
+- 基于真实购买结果的持续学习优化
+access:
+- saas
+- api
+tags:
+- ecommerce
+- predictive-ai
+- machine-learning
+- generative-ai
+- conversion-optimization
+- ai-storefronts
+- retail
+references:
+- title: Black Crow AI Official Website
+  url: https://www.blackcrow.ai/

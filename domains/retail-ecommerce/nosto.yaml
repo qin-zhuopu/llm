@@ -1,0 +1,68 @@
+name: Nosto (Huginn)
+name_en: Nosto Huginn
+company: Nosto
+domain: retail-ecommerce
+status: released
+website: https://www.nosto.com/
+description: "Nosto 是 AI 驱动的电商个性化、搜索与商品化平台（Commerce Experience Platform），集成商品推荐、电商搜索、品类 merchandising、内容个性化与 A/B 测试。其 AI 智能体 Huginn 7×24 运行，发掘营收机会、回答策略性问题并增强每一次客户交互，为品牌迎接智能体电商（agentic commerce）做准备。属模型系统+工作流应用型：在购物者行为与商品目录数据之上运行专有个性化/推荐与搜索模型，并叠加 agentic 层。"
+parameters: 未公开
+architecture: "commerce experience platform (专有个性化/推荐/搜索模型 + Huginn AI 智能体)"
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于零售商商品目录与购物者实时行为（浏览、点击、购买）训练个性化推荐与搜索相关性模型
+  - name: post-training
+    description: 通过 A/B 测试与行为反馈持续优化推荐、搜索与商品化策略
+tech_stack:
+  framework: Nosto Commerce Experience Platform
+  inference: 实时个性化/推荐/搜索云服务
+  techniques:
+  - Agentic AI (Huginn agent)
+  - Real-time behavioral personalization
+  - AI merchandising
+  - Commerce search
+  - A/B testing
+datasets:
+- name: 购物者行为数据
+  description: 浏览、点击、加购、购买等实时行为，用于个性化推荐与商品排序
+  type: sft
+- name: 零售商商品目录
+  description: 品牌/零售商商品目录与内容，用于推荐、搜索与 merchandising
+  type: other
+benchmarks:
+- name: 客户案例 - Marc Jacobs
+  score: 约 9% 线上营收
+  metric: revenue_share
+  comparison: "Nosto AI 个性化推荐贡献 Marc Jacobs 约 9% 的线上营收（公司自述）"
+  source: self-reported
+- name: Huginn 运行
+  score: 7x24 自主运行
+  metric: agent_availability
+  comparison: "AI 智能体全天候发掘营收机会并增强交互（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- AI 商品推荐与实时个性化
+- 电商站内搜索
+- AI 品类 merchandising（商品化排序）
+- Huginn AI 智能体：自主发掘营收机会、回答策略性问题
+- 内容个性化与投放排期
+- A/B 测试与实验
+access:
+- saas
+- api
+tags:
+- ecommerce
+- personalization
+- recommendation
+- agentic-commerce
+- merchandising
+- ai-search
+- retail
+references:
+- title: Nosto Official Website
+  url: https://www.nosto.com/

@@ -1,0 +1,78 @@
+name: Entalpic
+name_en: Entalpic (LeMaterial / LeMat-Bulk)
+company: Entalpic
+domain: materials-science
+status: released
+website: https://entalpic.ai
+description: Entalpic 是一家总部位于法国巴黎（并在加拿大蒙特利尔设点）的 AI-for-Science 初创公司，构建高通量材料发现引擎，在真实工业约束下快速筛选庞大化学空间，聚焦薄膜/涂层、电池正极、催化表面与半导体前驱体。公司与
+  Hugging Face 联合发起开源项目 LeMaterial，发布统一 Materials Project/Alexandria/OQMD 三大数据库的 LeMat-Bulk
+  数据集（6.7M 条目、7 种材料属性），并提出基于 Weisfeiler-Lehman 的材料指纹哈希算法及在其上训练的 MLIP 模型（EquiformerV2、FAENet），属模型原生型公司。
+parameters: 未公开
+architecture: machine learning interatomic potential (equivariant GNN, e.g. EquiformerV2/FAENet)
+training:
+  stages:
+  - name: pre-training
+    description: 在 LeMat-Bulk（统一 Materials Project、Alexandria、OQMD 的 6.7M 条目、7 种材料属性数据集）上训练机器学习原子间势（MLIP），如
+      EquiformerV2、FAENet，学习晶体结构-能量-属性关系。
+  - name: fine-tuning
+    description: 针对真实工业约束（薄膜/涂层、电池正极、催化、半导体前驱体）微调高通量发现引擎，在客户材料体系上做定向筛选与优化。
+tech_stack:
+  framework: PyTorch (Fairchem-compatible)
+  techniques:
+  - Machine learning interatomic potentials (MLIP)
+  - Equivariant graph neural networks (EquiformerV2, FAENet)
+  - Material fingerprint hashing (EconNN bonding + Weisfeiler-Lehman)
+  - High-throughput chemical space screening
+  - Dataset unification/standardization (Optimade)
+  - Novelty detection & de-duplication
+datasets:
+- name: LeMat-Bulk
+  description: 统一、清洗并标准化 Materials Project、Alexandria、OQMD 三大材料数据库的开源数据集，基于 Optimade 标准，CC-BY-4.0
+    许可，含多 DFT 泛函（PBE、PBESol、SCAN）
+  size: 6.7M entries, 7 material properties
+  type: pre-training
+- name: LeMat-BulkUnique
+  description: 使用材料指纹哈希算法去重后的数据集划分，提供 PBE/PBESol/SCAN 三个子集
+  type: pre-training
+benchmarks:
+- name: Material fingerprint hashing vs Pymatgen StructureMatcher (Carbon-24)
+  score: 100 seconds
+  metric: task_time
+  comparison: 'vs Pymatgen StructureMatcher: 100 秒 (12 CPU) vs 17 小时 (64 CPU)，在
+    10153 结构上去重'
+  source: paper
+- name: Material fingerprint hashing vs Pymatgen StructureMatcher (MPTS-52)
+  score: 330 seconds
+  metric: task_time
+  comparison: 'vs Pymatgen StructureMatcher: 330 秒 (12 CPU) vs 4.9 小时 (64 CPU)，在
+    40476 结构上去重'
+  source: paper
+capabilities:
+- 高通量材料发现引擎在真实工业约束下筛选庞大化学空间
+- 薄膜与涂层的原子级精度材料设计（决定工艺良率与器件可靠性）
+- 电池正极活性材料、表面涂层与界面化学优化
+- 催化表面与活性位点设计（提升活性、选择性、工业稳定性）
+- 半导体沉积工艺新前驱体与特种化学品设计
+- 开源材料数据统一/标准化（LeMat-Bulk）与材料指纹去重/新颖性检测
+- 训练机器学习原子间势（EquiformerV2、FAENet）
+access:
+- private-deployment
+- open-weights
+tags:
+- materials-discovery
+- mlip
+- interatomic-potential
+- graph-neural-network
+- open-dataset
+- lematerial
+- batteries
+- catalysis
+- semiconductors
+- model-native
+references:
+- title: Entalpic Official Website
+  url: https://entalpic.ai
+- title: 'LeMaterial: an open source initiative to accelerate materials discovery (Hugging Face Blog)'
+  url: https://huggingface.co/blog/lematerial
+- title: LeMaterial Organization on Hugging Face
+  url: https://huggingface.co/LeMaterial

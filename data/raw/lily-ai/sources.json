@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://www.lily.ai/",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "lily-max-how-it-works.md",
+      "url": "https://www.lily.ai/lily-max",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    }
+  ]
+}

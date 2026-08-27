@@ -1,0 +1,61 @@
+name: Kayrros
+name_en: Kayrros
+company: Kayrros
+domain: energy
+status: released
+website: https://www.kayrros.com/
+description: Kayrros是法国起源的环境与能源情报（environmental intelligence）公司，将机器学习与计算机视觉应用于卫星影像、对地观测和替代数据，为企业、投资者和政府提供关于气候影响、物理风险、供应链和能源流的近实时数据。核心能力包括：从浮顶储油罐卫星图像估算全球原油库存、用Sentinel等卫星数据检测并量化油气基础设施的甲烷"超级排放源"泄漏、监测发电厂活动和工业产出、以及评估野火/洪水/干旱等物理气候风险。客户涵盖能源企业、大宗商品交易商、金融机构和监管机构。
+parameters: 未公开
+architecture: geospatial AI (computer vision on satellite imagery)
+training:
+  stages:
+  - name: pre-training
+    description: 基于Sentinel等卫星影像、对地观测数据和替代数据训练地理空间机器学习与计算机视觉模型，学习储油罐、油气设施、发电厂和地表的遥感特征。
+  - name: fine-tuning
+    description: 针对原油库存估算、甲烷排放检测与量化、物理气候风险评估等具体任务微调专用模型。
+tech_stack:
+  framework: Kayrros geospatial AI platform
+  techniques:
+  - Computer vision on satellite imagery
+  - Methane super-emitter detection
+  - Crude oil storage estimation
+  - Earth observation analytics
+  - Physical climate risk modeling
+datasets:
+- name: Satellite Imagery
+  description: Sentinel等卫星影像与对地观测数据，用于储油罐、油气设施和排放源识别
+  type: pre-training
+- name: Alternative & Energy Flow Data
+  description: 能源流、发电厂活动和工业产出的替代数据
+  type: pre-training
+benchmarks:
+- name: Methane Emissions Detection
+  score: 全球超级排放源监测
+  metric: detection
+  comparison: 用卫星数据检测并量化油气基础设施甲烷"超级排放源"泄漏
+  source: self-reported
+- name: Crude Oil Storage Tracking
+  score: 全球库存估算
+  metric: coverage
+  comparison: 从浮顶储油罐卫星图像估算全球原油库存变化
+  source: self-reported
+capabilities:
+- 从浮顶储油罐卫星图像估算全球原油库存
+- 用卫星数据检测并量化油气基础设施甲烷排放
+- 监测能源流、发电厂活动和工业产出
+- 评估野火/洪水/干旱等物理气候风险
+- 将卫星遥感数据转化为可操作的能源与环境洞察
+access:
+- saas
+- api
+tags:
+- geospatial-ai
+- emissions-monitoring
+- methane-detection
+- oil-gas
+- satellite-imagery
+- climate-risk
+- energy-intelligence
+references:
+- title: Kayrros Official Website
+  url: https://www.kayrros.com/

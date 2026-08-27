@@ -1,0 +1,70 @@
+name: Gorgias
+name_en: Gorgias
+company: Gorgias
+domain: customer-service
+status: released
+website: https://www.gorgias.com
+description: "面向电商的对话式AI客服平台，One AI Agent覆盖售前到售后。其AI在10亿+对话上预训练，理解电商、Shopify数据和客户意图，可自动化60%支持、按品牌语气/政策/SOP应用护栏。全渠道收件箱(邮件/聊天/SMS/WhatsApp/Instagram/Facebook)，支持在对话内取消/折扣/追加销售等动作，原生Shopify集成+300+集成。报告19.2x销售ROI、2个月内56%自动化率、通过对话驱动5亿美元+收入，服务17000+电商品牌。基于与OpenAI的直接合作获得更深模型访问，Shopify参与投资。"
+parameters: 未公开
+architecture: "电商对话式AI客服平台（预训练于10亿+对话，OpenAI深度合作）"
+training:
+  stages:
+  - name: pre-training
+    description: 在10亿+客服对话上预训练，理解电商与Shopify数据
+  - name: fine-tuning
+    description: 针对产品推荐、订单管理与品牌语气微调
+datasets:
+- name: Ecommerce Conversations
+  description: 10亿+客服对话，用于预训练电商客服AI
+  size: 1B+ conversations
+  type: pre-training
+benchmarks:
+- name: Sales ROI
+  score: 19.2x
+  metric: roi
+  comparison: "AI驱动销售互动19.2x ROI"
+  source: self-reported
+- name: Automation Rate
+  score: "56%"
+  metric: automation_rate
+  comparison: "2个月内达到56%自动化率，可自动化60%支持"
+  source: self-reported
+- name: Revenue Driven
+  score: "$500M+"
+  metric: revenue
+  comparison: "通过对话驱动超过5亿美元收入"
+  source: self-reported
+tech_stack:
+  framework: 电商对话式AI平台（OpenAI深度合作 + 自有微调）
+  inference: 云SaaS（原生Shopify集成）
+  techniques:
+  - Pre-trained on 1B+ conversations
+  - Omnichannel inbox
+  - In-conversation actions (cancel/discount/upsell)
+  - Native Shopify integration (300+ integrations)
+  - Revenue attribution reporting
+api:
+  available: true
+  protocol: rest
+  pricing: 订阅制（按席位/用量）
+  auth_method: API Key
+capabilities:
+- 售前到售后的单一电商AI客服Agent
+- 自动化最高60%的客户支持
+- 全渠道收件箱（邮件/聊天/SMS/WhatsApp/Instagram/Facebook）
+- 对话内执行取消/折扣/追加销售等动作
+- 原生Shopify集成与收入归因报表
+- 坐席实时AI教练
+access:
+- saas
+- api
+tags:
+- customer-service
+- ecommerce
+- conversational-ai
+- ai-agent
+- shopify
+- omnichannel
+references:
+- title: Gorgias Official Website
+  url: https://www.gorgias.com

@@ -1,0 +1,59 @@
+name: Applied Intuition Dana
+name_en: Applied Intuition Dana
+company: Applied Intuition
+domain: automotive
+status: released
+website: https://www.appliedintuition.com
+description: Applied Intuition 的 Dana 是首个面向智能机器（intelligent machines）的 agentic
+  平台，用于跨行业规模化地构建、测试、部署与运营自动驾驶及机器人系统。Applied Intuition 打造「Physical AI」数字基础设施，产品覆盖
+  Vehicle Intelligence、Vehicle OS 与 Self-Driving System 三层，形成端到端栈；研究聚焦端到端自动驾驶与机器人两大方向。客户包括全球主要车企、卡车、矿业与国防领域。
+parameters: 未公开
+architecture: agentic platform + end-to-end self-driving stack
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模真实与仿真驾驶数据训练端到端自动驾驶模型与感知/规划组件
+  - name: fine-tuning
+    description: 面向不同车辆平台（乘用车、卡车、矿车、无人机、机器人）与运行场景适配
+tech_stack:
+  techniques:
+  - agentic platform (Dana)
+  - end-to-end autonomous driving
+  - simulation and validation
+  - vehicle OS
+  - physical AI infrastructure
+datasets:
+- name: Applied Intuition simulation & real-world data
+  description: 覆盖乘用车、卡车、矿业等多形态机器的仿真与真实驾驶数据，用于训练与验证自动驾驶及机器人系统
+  type: pre-training
+benchmarks:
+- name: Industry adoption
+  score: major OEMs, trucking, mining, defense
+  metric: commercial deployment
+  comparison: 数字基础设施被全球主要车企与卡车、矿业、国防领域采用
+  source: self-reported
+- name: Engineering scale
+  score: 1000+ engineers, 40+ ex-CTOs
+  metric: team scale
+  comparison: 1000+ 工程师、40+ 前 CTO、30+ 前创始人团队
+  source: self-reported
+capabilities:
+- 端到端自动驾驶模型构建、测试、部署与运营 (Dana agentic 平台)
+- 跨形态智能机器（卡车、矿车、无人机、机器人）的自主性开发
+- 大规模仿真与验证 (simulation and validation)
+- Vehicle OS 与整车智能软件栈
+- 面向量产的物理 AI 数字基础设施
+tags:
+- autonomous-driving
+- end-to-end
+- physical-ai
+- agentic
+- simulation
+- robotics
+- vehicle-os
+access:
+- saas
+- private-deployment
+references:
+- title: Applied Intuition Official Website
+  url: https://www.appliedintuition.com

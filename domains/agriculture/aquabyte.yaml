@@ -1,0 +1,58 @@
+name: Aquabyte
+name_en: Aquabyte
+company: Aquabyte
+domain: agriculture
+status: released
+release_date: "2017"
+website: https://aquabyte.ai/
+description: Aquabyte 成立于 2017 年，起步于挪威三文鱼养殖业，是水产养殖 AI 与计算机视觉的市场领先者。公司用水下相机加 AI 为网箱养鱼提供关于福利、海虱、行为和生长的高精度数据集。每台相机每天采集 130 万张图像，网箱中部署超过 800 套系统，8 年数据积累，每天超过 100 万张图像用于 AI 分析，帮助养殖户在整个生产周期做出数据驱动决策。
+parameters: 未公开
+architecture: deep learning computer vision (underwater imaging)
+training:
+  stages:
+  - name: pre-training
+    description: 基于 8 年积累、每天百万级的水下鱼群图像训练计算机视觉模型，覆盖鱼体重量估计、海虱计数、行为和福利分析。
+  - name: fine-tuning
+    description: 针对不同网箱环境、光照和鱼种（主要为三文鱼）持续微调，提升水下浑浊环境下的检测精度。
+tech_stack:
+  framework: Custom underwater computer vision pipeline
+  techniques:
+  - Underwater stereo imaging
+  - Biomass / weight estimation
+  - Automatic sea lice counting
+  - Fish behavior and welfare analysis
+  - 360-degree multi-lens capture (HYDRA 360)
+datasets:
+- name: Underwater Fish Imagery
+  description: 8 年积累的水下鱼群图像数据集，每台相机每天 130 万张，覆盖福利、海虱、行为和生长标注
+  size: 1M+ images per day
+  type: pre-training
+benchmarks:
+- name: Daily Image Volume
+  score: 1.3M per camera
+  metric: images_per_day
+  comparison: 'vs 同行: 每台相机每天 130 万张图像，超过 800 套系统在网箱运行'
+  source: self-reported
+- name: Data Collection Span
+  score: 8 years
+  metric: data_span
+  comparison: 'vs 后来者: 8 年连续水下数据积累构成数据壁垒'
+  source: self-reported
+capabilities:
+- 基于水下图像的非侵入式鱼体重量与生物量估计
+- 自动海虱（sea lice）计数
+- 鱼群行为与福利实时监测
+- HYDRA 360 相机同时支持健康监测与投喂决策
+- 通过 User Portal 将复杂数据转化为可执行洞察
+access:
+- saas
+tags:
+- aquaculture
+- fish-farming
+- computer-vision
+- underwater-imaging
+- sea-lice-counting
+- biomass-estimation
+references:
+- title: Aquabyte Official Website
+  url: https://aquabyte.ai/

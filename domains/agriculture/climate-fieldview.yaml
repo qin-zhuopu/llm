@@ -1,0 +1,57 @@
+name: Climate FieldView
+name_en: Climate FieldView
+company: Bayer (The Climate Corporation)
+domain: agriculture
+status: released
+website: https://climate.com/
+description: Climate FieldView 是拜耳（Bayer）旗下 The Climate Corporation 的一体化数字农业平台，整合设备、卫星、气象和田间历史数据，为玉米和大豆种植者提供田间可视化、种子处方脚本和变量施用处方。平台连接 60+ 合作伙伴生态，兼容大多数农机设备，使用其种子处方脚本的农户平均单产提升 +5 蒲式耳每英亩。
+parameters: 未公开
+architecture: machine learning analytics platform
+training:
+  stages:
+  - name: pre-training
+    description: 基于多年多地的田间产量数据、卫星与气象数据、农机作业记录训练产量分析和变量处方模型，覆盖玉米和大豆等主要作物。
+tech_stack:
+  framework: Custom digital agronomy platform
+  techniques:
+  - Yield analysis modeling
+  - Variable-rate prescription
+  - Seed script generation
+  - Multi-source data fusion (equipment, satellite, weather)
+  - Field visualization
+datasets:
+- name: Field Yield and Operations Data
+  description: 通过 FieldView Drive 硬件和 60+ 合作伙伴采集的田间产量、播种、施用和收割作业数据
+  type: pre-training
+- name: Satellite and Weather Data
+  description: 卫星影像与气象数据，用于田间健康监测与产量预测
+  type: pre-training
+benchmarks:
+- name: Yield Improvement (seed scripts)
+  score: +5 bu/ac
+  metric: yield_increase
+  comparison: 'vs 用户自编脚本: 使用 FieldView 种子处方脚本的农户平均单产提升 5 蒲式耳每英亩'
+  source: self-reported
+- name: Partner Connectivity
+  score: 60+
+  metric: partners
+  comparison: 'vs 同类平台: 号称最广连接生态，兼容大多数农机设备类型'
+  source: self-reported
+capabilities:
+- 整合设备、卫星、气象与田间历史数据的统一可视化
+- 生成种子处方脚本（seed scripts）指导变密度播种
+- 变量施用（variable-rate）处方支持精准施肥
+- 与 60+ 合作伙伴打通数据共享，兼容多数农机设备
+- 贯穿季前规划、季中监测、季后分析的全季农艺决策
+access:
+- saas
+tags:
+- digital-agriculture
+- precision-agriculture
+- yield-analytics
+- variable-rate
+- bayer
+- corn-soybean
+references:
+- title: Climate FieldView Official Website
+  url: https://climate.com/

@@ -1,0 +1,59 @@
+name: Flexport AI Logistics
+name_en: Flexport
+company: Flexport
+domain: logistics-supplychain
+status: released
+release_date: '2024'
+website: https://www.flexport.com
+description: Flexport 是数字货运代理与全球贸易技术平台，把从工厂到客户门口的物流自动化，让 AI 驱动的决策与真实世界执行结合以降低物流成本。平台提供 SKU 级供应链可视化、基于机器学习的货代控制塔（实时合并货运、平均降低国际货运支出约 10%）、结合持牌报关行的报关自动化（含 AI Compliance Auditor，5 年为客户节省超 $900M 关税）以及全渠道履约。
+parameters: 未公开
+architecture: ML-based consolidation/routing + AI compliance over logistics platform
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于货运、海关与履约运营数据训练合并路由与合规审计的机器学习模型
+tech_stack:
+  techniques:
+  - ML-based consolidation & routing engine
+  - SKU-level track-and-trace
+  - AI Compliance Auditor
+  - Tariff simulation & duty drawback algorithms
+  - Demand planning
+datasets:
+- name: Flexport Logistics & Trade Data
+  description: 海运/空运/卡运货运、海关与履约运营数据
+  type: pre-training
+benchmarks:
+- name: Freight Spend Reduction
+  score: 10%
+  metric: cost_reduction
+  comparison: 实时合并货运平均降低国际货运支出约 10%
+  source: self-reported
+- name: Tariff Savings
+  score: $900M+
+  metric: tariff_savings
+  comparison: 过去 5 年通过报关自动化与退税算法为客户节省超 $900M 关税
+  source: self-reported
+- name: On-time Delivery
+  score: 97%+
+  metric: on_time_delivery
+  comparison: 履约业务 99% 准时发货、97%+ 准时送达
+  source: self-reported
+capabilities:
+- SKU 级供应链可视化与 track-and-trace
+- 机器学习货代控制塔（实时货运合并与路由）
+- 报关自动化与 AI Compliance Auditor
+- 关税模拟、退税算法与贸易咨询
+- 数据驱动需求计划的全渠道履约
+access:
+- saas
+tags:
+- supply-chain
+- freight-forwarding
+- customs-automation
+- logistics-visibility
+- fulfillment
+- trade-compliance
+references:
+- title: Flexport 官网
+  url: https://www.flexport.com

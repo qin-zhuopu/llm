@@ -1,0 +1,72 @@
+name: Sapia.ai
+name_en: Sapia.ai
+company: Sapia.ai
+domain: human-resources
+status: released
+website: https://www.sapia.ai
+description: Sapia.ai 自称「最初的 AI 面试平台」，核心是基于文本聊天的结构化 AI 面试，用于大规模、包容且可审计的候选人评估。打分引擎能解释推理并提供详细候选人洞察，强调伦理
+  AI、AI 治理与科学研究背书。配套智能体 Jas（把职位描述转化为加权胜任力模型并部署定制面试）、Chat Interview（结构化聊天面试）与 Tia（自动短名单、发现未挖掘人才、生成入职与内部流动计划），面向零售、航空、医养等大规模招聘场景。
+parameters: 未公开
+architecture: 模型系统型（NLP 结构化聊天面试 + 可解释评分引擎）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在结构化聊天面试的文本作答与人才科学标注数据上训练评分模型，测量技能、胜任力与经验
+  - name: rlhf
+    description: 基于招聘结果、公平性与候选人体验反馈优化评分与可解释性
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS
+  techniques:
+  - Text-based structured interview
+  - Explainable scoring engine
+  - Weighted competency modeling
+  - Bias mitigation & AI governance
+  - People/data science validation
+datasets:
+- name: Chat interview responses
+  description: 大规模文本聊天面试作答数据，用于训练技能与胜任力评分
+  type: sft
+- name: Competency model data
+  description: 经验证的人才科学胜任力标注，用于构建加权胜任力模型
+  type: sft
+benchmarks:
+- name: Turnover reduction (Holland & Barrett)
+  score: 89%
+  metric: turnover_reduction
+  comparison: 员工流失率从 74% 降至上线三个月内的 15%
+  source: self-reported
+- name: Time to hire reduction
+  score: 50%
+  metric: time_to_hire_reduction
+  comparison: 综合客户招聘周期缩短约 50%（Holland & Barrett 为 47%）
+  source: self-reported
+- name: Candidate satisfaction
+  score: 9/10
+  metric: candidate_satisfaction
+  comparison: 候选人满意度 9/10；每位招聘官每周节省 20 小时
+  source: self-reported
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅
+  auth_method: 企业认证
+capabilities:
+- 基于文本聊天的结构化 AI 面试
+- 可解释评分与详细候选人洞察
+- Jas 生成加权胜任力模型并部署定制面试
+- Tia 自动生成候选人短名单与内部流动/入职计划
+- 大规模、包容且可审计的候选人评估
+- 发现未被挖掘的人才
+access:
+- saas
+tags:
+- human-resources
+- ai-interview
+- chat-interview
+- ethical-ai
+- talent-assessment
+- internal-mobility
+references:
+- title: Sapia.ai Official Website
+  url: https://www.sapia.ai

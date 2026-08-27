@@ -1,0 +1,68 @@
+name: gridX
+name_en: gridX
+company: gridX
+domain: energy
+status: released
+website: https://www.gridx.ai/
+description: gridX是欧洲领先的分布式能源资源（DER）连接与灵活性平台，通过XENON平台为家庭能源管理（HEMS）和电动车充电站（EVCI）提供灵活的能源管理。平台三大功能为Control（确保资产协调并合规）、Optimize（优化每一瓦以降低成本、扩展容量）和Flex（把资产灵活性转化为多个能源市场的收入）。用AI/优化算法帮助能源零售商和充电运营商降低终端用户电费、最大化自消费、并将灵活性变现用于交易。声称欧洲每5个新的多资产HEMS就有1个由gridX驱动，连接50+ OEM、超过24万个资产，客户包括E.ON、Fastned、Allego等。
+parameters: 未公开
+architecture: energy management optimization platform
+training:
+  stages:
+  - name: pre-training
+    description: 基于家庭光伏、储能（BESS）、电动车充电、热泵等分布式能源资源的运行数据、电价和电网信号训练能源管理与优化模型。
+  - name: fine-tuning
+    description: 针对家庭能源管理（HEMS）和电动车充电站（EVCI）不同场景微调调度与灵活性变现策略，适配欧洲各市场监管要求。
+tech_stack:
+  framework: XENON platform
+  techniques:
+  - Distributed energy resource (DER) optimization
+  - Home energy management (HEMS)
+  - EV charging load management
+  - Flexibility trading / market participation
+  - Self-consumption optimization
+  - Hybrid connectivity
+datasets:
+- name: DER Operational Data
+  description: 家庭光伏、储能、电动车充电、热泵等超过24万个连接资产的运行数据
+  size: 240k+ connected assets
+  type: pre-training
+- name: Energy Price & Grid Signals
+  description: 电价、电网负荷和市场信号数据，用于灵活性优化与变现
+  type: pre-training
+benchmarks:
+- name: European HEMS Market Share
+  score: 1 in 5
+  metric: market_share
+  comparison: '欧洲每5个新的多资产HEMS就有1个由gridX驱动'
+  source: self-reported
+- name: Platform Uptime
+  score: 99.5%
+  metric: uptime
+  comparison: 平台平均可用性，Cybervadis安全评分895/1000
+  source: self-reported
+- name: EV Charging Capacity Gain
+  score: 8x
+  metric: capacity_multiplier
+  comparison: 'vs 无能源管理: 在现有基础设施上支持8倍充电桩，每1%充电曲线削峰节省约1万欧元'
+  source: self-reported
+capabilities:
+- 家庭能源管理（HEMS）优化自消费与降低电费
+- 电动车充电站（EVCI）负荷管理与容量扩展
+- 把分布式资产灵活性变现为多个能源市场收入
+- 连接光伏、储能与充电桩虚拟扩展电网接入容量
+- 协调多资产运行并满足欧洲各市场监管合规
+access:
+- saas
+- api
+tags:
+- energy-management
+- distributed-energy
+- ev-charging
+- hems
+- flexibility-trading
+- virtual-power-plant
+- europe
+references:
+- title: gridX Official Website
+  url: https://www.gridx.ai/

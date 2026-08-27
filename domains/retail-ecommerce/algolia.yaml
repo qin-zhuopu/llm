@@ -1,0 +1,76 @@
+name: Algolia AI Search
+name_en: Algolia AI Search
+company: Algolia
+domain: retail-ecommerce
+status: released
+website: https://www.algolia.com/products/ai-search
+description: "Algolia 是法/美 search-as-a-service 平台（2012 年创立，YC W2014），其 AI Search 产品为电商商品发现提供搜索与推荐。它面向真实用户行为的复杂性——杂乱查询、趋势变化、目录频繁更新——在规模化场景下无需持续手工调优即可保持一致相关性，为零售商提升参与度与转化并降低客服成本。属模型系统型：以专有搜索相关性与 AI 排序/个性化模型（含 NeuralSearch 向量+关键词混合）作为 API/SaaS 提供，服务 18000+ 客户、年处理 1.75 万亿次搜索。"
+parameters: 未公开
+architecture: "search-as-a-service (专有相关性/排序模型 + NeuralSearch 向量-关键词混合检索)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模查询与商品数据训练搜索相关性、向量嵌入与排序模型
+  - name: fine-tuning
+    description: 按客户目录与用户行为进行个性化与动态重排（Dynamic Re-Ranking），持续学习点击/转化信号
+tech_stack:
+  framework: Algolia proprietary search engine
+  inference: 全球分布式搜索网络 (Distributed Search Network, DSN)，70+ 数据中心
+  techniques:
+  - NeuralSearch (vector + keyword hybrid)
+  - AI Personalization
+  - Dynamic Re-Ranking
+  - Query understanding
+  - RESTful JSON API
+datasets:
+- name: 客户站内查询与商品数据
+  description: 各客户网站的查询、点击与商品目录数据（仅索引客户自身站点），用于相关性与个性化
+  type: pre-training
+- name: 行为/转化信号
+  description: 点击、加购、转化等行为信号，用于动态重排与个性化
+  type: other
+benchmarks:
+- name: 规模
+  score: 1.75+ 万亿次搜索/年
+  metric: query_volume
+  comparison: "服务 18000+ 客户，年处理超过 1.75 万亿次搜索（公司/维基）"
+  source: self-reported
+- name: 估值
+  score: $2.25B (2021 D 轮独角兽)
+  metric: valuation
+  comparison: "2021 年 $150M D 轮，估值 $2.25B"
+  source: third-party
+- name: 全球覆盖
+  score: 70+ 数据中心 / 16 区域
+  metric: infrastructure
+  comparison: "2019 年数据，DSN 就近响应查询"
+  source: third-party
+api:
+  available: true
+  documentation: https://www.algolia.com/doc/
+  protocol: rest
+  pricing: 免费额度 + 按用量/席位订阅（企业联系销售）
+  auth_method: API Key
+capabilities:
+- 电商 AI 站内搜索，理解杂乱查询与购物意图
+- NeuralSearch 向量+关键词混合检索
+- AI 个性化与动态重排（Dynamic Re-Ranking）
+- 商品推荐与发现
+- 类目页排序与 merchandising 规则
+- 全球分布式低延迟搜索 API
+access:
+- saas
+- api
+tags:
+- ecommerce
+- ai-search
+- neuralsearch
+- product-discovery
+- personalization
+- search-as-a-service
+- retail
+references:
+- title: Algolia AI Search
+  url: https://www.algolia.com/products/ai-search
+- title: Algolia (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Algolia

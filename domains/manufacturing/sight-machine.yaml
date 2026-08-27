@@ -1,0 +1,76 @@
+name: Sight Machine Agentic Manufacturing Platform
+name_en: Sight Machine Agentic Manufacturing Platform
+company: Sight Machine
+domain: manufacturing
+status: released
+release_date: '2026'
+website: https://www.sightmachine.com
+description: Sight Machine 是 AI 原生的制造分析公司，2026 年推出 Agentic Manufacturing Platform（Agentic 制造平台）。核心是三大支柱——Semantic Model 将 OT/IT 系统（控制器、历史库、MES、ERP）映射为结构化语义模型使工业数据 Agent 就绪；Dynamic Production 让 Agent 持续调查生产并按需构建行业专用 ML 工具产出实时建议；Enterprise Agents 将制造智能作为 MCP 服务器发布供企业 LLM Agent 集成。由 NVIDIA（NVentures）投资，集成 Teams、NVIDIA Omniverse 和 Databricks，声称数天完成部署、产出提升 10%+。
+parameters: 未公开
+architecture: Semantic data model + agentic orchestration + MCP server (模型无关，接入企业 LLM Agent)
+training:
+  stages:
+  - name: fine-tuning
+    description: 将 OT/IT 工业数据结构化为语义模型（生产事件与 KPI），使通用 LLM Agent 能对工业信号进行推理
+  - name: post-training
+    description: Agent 在动态生产中持续构建并使用行业专用 ML 工具，从每一生产轮次的反馈中改进建议质量
+tech_stack:
+  framework: 模型无关多 LLM 编排 (接入企业 Agent)
+  inference: Cloud + edge，通过 MCP 服务器暴露
+  techniques:
+  - Industrial semantic model (OT/IT 数据结构化)
+  - Agentic orchestration
+  - Model Context Protocol (MCP) server
+  - On-demand industry-specific ML tool building
+  - Digital twin simulation (NVIDIA Omniverse)
+datasets:
+- name: OT/IT Plant Data
+  description: 控制器、历史库、MES、ERP 数据，映射为结构化语义模型（生产事件与 KPI）
+  type: pre-training
+- name: Production Feedback Signals
+  description: 每一生产轮次的实时反馈，用于 Agent 持续改进和验证发现
+  type: sft
+benchmarks:
+- name: Output Gains
+  score: 10%+
+  metric: output_improvement
+  comparison: 'vs 部署前: 产出提升 10%+'
+  source: self-reported
+- name: Deployment Speed
+  score: Days
+  metric: deployment_time
+  comparison: 'vs 传统工业软件: 数天完成部署'
+  source: self-reported
+- name: Industries Served
+  score: 20+
+  metric: industry_coverage
+  comparison: 服务 20+ 行业，7x24 Agent 在线
+  source: self-reported
+api:
+  available: true
+  documentation: https://www.sightmachine.com
+  protocol: other
+  pricing: 企业 SaaS 订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 将 OT/IT 系统数据映射为结构化工业语义模型
+- Agent 持续调查生产并按需构建行业专用 ML 工具
+- 产出实时可执行的生产优化建议
+- 通过 MCP 服务器将制造智能暴露给企业 LLM Agent
+- 集成 Microsoft Teams、NVIDIA Omniverse 数字孪生仿真、Databricks
+- 车间 AI 打通供应链、物流与需求的全企业优化
+access:
+- saas
+- api
+tags:
+- industrial-ai
+- agentic-ai
+- semantic-model
+- mcp
+- process-optimization
+- nvidia-partnership
+references:
+- title: Sight Machine Official Website
+  url: https://www.sightmachine.com
+- title: Sight Machine Launches Agentic Manufacturing Platform
+  url: https://www.sightmachine.com

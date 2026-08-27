@@ -1,0 +1,72 @@
+name: Athos Commerce
+name_en: Athos Commerce (Klevu)
+company: Athos Commerce
+domain: retail-ecommerce
+status: released
+website: https://www.athoscommerce.com/
+description: "Athos Commerce 由 Searchspring、Klevu、Intelligent Reach 三家合并而成，是 AI 驱动的电商搜索、商品化、个性化与商品 feed 管理平台，连接购物者与商品跨网站、市场、比价引擎、社媒与 AI 平台。核心是一套统一 AI 引擎（预测/语义/生成/多模态），并配套多个专用 AI 智能体：对话式导购助手、渠道助手（自动优化 Google Shopping/社媒 feed）、GEO 助手（面向 ChatGPT/Gemini 等答案引擎优化并同步商品）。属模型系统+工作流应用型。"
+parameters: 未公开
+architecture: "unified AI engine + purpose-built AI agents (预测/语义/生成/多模态 引擎 + 智能体)"
+training:
+  stages:
+  - name: pre-training
+    description: 基于商品目录与购物者行为数据训练统一 AI 引擎（预测、语义、生成、多模态能力）
+  - name: fine-tuning
+    description: 对话助手基于零售商商品目录、站内文案与内容训练，理解意图并引导购买
+tech_stack:
+  framework: Athos Commerce Platform (one AI engine)
+  inference: 实时搜索/推荐/个性化 + 多智能体服务
+  techniques:
+  - Predictive intent & demand modeling
+  - Semantic search (intent/context)
+  - Generative content enrichment
+  - Multimodal (image + text) understanding
+  - Hybrid Search (semantic + keyword)
+  - Purpose-built AI agents (Conversational / Channel / GEO)
+datasets:
+- name: 商品目录与内容
+  description: 零售商商品目录、站内文案与内容，用于搜索、生成式内容丰富与对话导购
+  type: pre-training
+- name: 购物者行为数据
+  description: 购物者行为信号，用于预测意图/需求并持续优化排序与个性化
+  type: sft
+benchmarks:
+- name: Michael Stars 案例 - 每次访问营收
+  score: +951%
+  metric: revenue_per_visit_lift
+  comparison: "每次访问营收提升 951%（Michael Stars 案例，公司自述）"
+  source: self-reported
+- name: Michael Stars 案例 - AOV
+  score: +15%
+  metric: aov_lift
+  comparison: "平均客单价提升 15%（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- AI 电商搜索（Hybrid：语义理解 + 关键词精度）
+- 预测式商品化、促销与推荐
+- 对话式导购助手（基于商品目录/文案训练）
+- 渠道助手：自动审计与优化商品 feed（Google Shopping/社媒/市场）
+- GEO 助手：面向 ChatGPT/Gemini 等答案引擎优化并同步商品
+- 生成式商品内容与描述丰富、多模态图文理解
+access:
+- saas
+- api
+tags:
+- ecommerce
+- ai-search
+- product-discovery
+- personalization
+- agentic-commerce
+- generative-ai
+- merchandising
+- retail
+references:
+- title: Athos Commerce Official Website
+  url: https://www.athoscommerce.com/
+- title: Athos Commerce - AI & Agents
+  url: https://www.athoscommerce.com/products/ai-agents

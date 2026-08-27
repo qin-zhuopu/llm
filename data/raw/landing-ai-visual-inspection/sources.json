@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://landing.ai/",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "landinglens-product.md",
+      "url": "https://landing.ai/landinglens",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    }
+  ]
+}

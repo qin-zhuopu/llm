@@ -1,0 +1,82 @@
+name: SymphonyAI Industrial
+name_en: SymphonyAI Industrial
+company: SymphonyAI
+domain: manufacturing
+status: released
+release_date: '2024'
+website: https://www.symphonyai.com/industrial/
+description: SymphonyAI Industrial（前身 Symphony IndustrialAI / EurekaAI）为制造业提供工业 AI，将 IT、OT 和边缘数据连接为实时真相系统，覆盖从预测性维护到全厂优化。平台含 Unified Data Engine（从 PLC 到 ERP 摄取运营化数据）、内置物理引擎与 FMEA 模板的领域智能、预训练 AI 模型，以及自然语言 copilot——在工厂系统和领域数据上训练、带企业级护栏（可追溯/可解释/合规）的生成式 AI，嵌入 OT 工业工作流。被评为资产绩效管理领导者，自报非计划停机减少 400%、培训时间减少 200%。
+parameters: 未公开
+architecture: APM/预测性维护 ML 模型 + 物理 FMEA 模板 + 生成式 AI copilot (LLM)
+training:
+  stages:
+  - name: pre-training
+    description: 在工业运营数据（PLC 到 ERP、时序信号）上训练 APM 与预测性维护 ML 模型，结合基于物理的 FMEA 模板
+  - name: fine-tuning
+    description: 生成式 AI copilot 在具体工厂系统和领域数据上微调/对齐，加企业级护栏确保可追溯、可解释、合规
+tech_stack:
+  framework: PyTorch
+  inference: Edge / hybrid / cloud 部署
+  techniques:
+  - Asset Performance Management (APM)
+  - Physics-based FMEA templates
+  - Predictive maintenance ML
+  - Natural-language industrial copilots
+  - Governed generative AI (guardrails, traceability)
+  - Connected-worker digital task execution
+datasets:
+- name: Industrial OT/IT Data
+  description: 从 PLC 到 ERP 的工业数据流（时序、报警、工艺、资产），统一为可信有上下文的洞察
+  type: pre-training
+- name: Domain FMEA Templates
+  description: 基于物理的失效模式与影响分析（FMEA）模板和领域模板，用于领域智能
+  type: sft
+benchmarks:
+- name: Unplanned Downtime
+  score: 400%
+  metric: downtime_reduction
+  comparison: 'vs 部署前: 非计划停机减少 400%'
+  source: self-reported
+- name: Training Time
+  score: 200%
+  metric: training_time_reduction
+  comparison: 'vs 部署前: 培训时间减少 200%'
+  source: self-reported
+- name: Product Throughput
+  score: 4%
+  metric: throughput_increase
+  comparison: 'vs 部署前: 产品产量提升 4%'
+  source: self-reported
+- name: Energy Efficiency
+  score: 5%
+  metric: energy_efficiency
+  comparison: 'vs 部署前: 能效提升 5%'
+  source: self-reported
+api:
+  available: true
+  documentation: https://www.symphonyai.com/industrial/
+  protocol: rest
+  pricing: 企业 SaaS 订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 统一 IT/OT/边缘数据为实时真相系统（Unified Data Engine）
+- 预测性维护与资产绩效管理（APM）
+- 内置物理引擎与 FMEA 模板的领域智能
+- 自然语言工业 copilot 提问、浮现洞察并触发行动
+- 受治理的生成式 AI，可追溯可解释合规
+- 面向一线工人的数字任务执行与实时指导
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- predictive-maintenance
+- asset-performance-management
+- industrial-copilot
+- generative-ai
+- connected-worker
+references:
+- title: SymphonyAI Industrial Official Website
+  url: https://www.symphonyai.com/industrial/
+- title: SymphonyAI Industrial AI for Manufacturing
+  url: https://www.symphonyai.com/industrial/

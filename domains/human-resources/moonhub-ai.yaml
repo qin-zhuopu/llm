@@ -1,0 +1,74 @@
+name: Moonhub
+name_en: Moonhub
+company: Moonhub
+domain: human-resources
+status: released
+website: https://moonhub.ai
+description: Moonhub 是一家「AI + 专家」的招聘公司，用专有 AI 智能体帮助企业更快招到顶尖人才。核心是 Qualify AI（跨数百万档案识别最合格候选人）、Engage
+  AI（规模化个性化触达并转化冷线索）与 Monitor AI（实时分析意向并执行交接升级）三个智能体，7×24 小时识别、打分、触达并互动候选人，利用数十亿公开候选人数据点与专有洞察，客户面试其推荐候选人比例达
+  80%，招聘周期平均缩短 50%。
+parameters: 未公开
+architecture: 模型系统型（自研候选人评分/匹配模型 + 多智能体编排）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在数十亿公开候选人数据点与专有候选人洞察上训练资格评估与匹配模型
+  - name: rlhf
+    description: 基于客户面试转化率与招聘结果反馈优化候选人打分与触达策略
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS
+  techniques:
+  - Candidate qualification scoring
+  - Personalized outreach at scale
+  - Real-time intent monitoring
+  - Multi-agent orchestration
+  - Global employment / payroll & compliance
+datasets:
+- name: Public candidate data
+  description: 数十亿公开候选人数据点，用于识别与评分候选人
+  size: billions of data points
+  type: pre-training
+- name: Proprietary candidate insights
+  description: 专有候选人洞察数据，用于资格评估与匹配
+  type: sft
+benchmarks:
+- name: Interview rate of presented candidates
+  score: 80%
+  metric: interview_rate
+  comparison: 客户面试 Moonhub 呈现候选人的比例达 80%
+  source: self-reported
+- name: Time-to-hire reduction
+  score: 50%
+  metric: time_to_hire_reduction
+  comparison: 客户报告招聘周期平均缩短 50%
+  source: self-reported
+- name: New candidate discovery
+  score: 75%
+  metric: new_candidate_rate
+  comparison: 客户有 75% 概率看到首次出现的新候选人
+  source: self-reported
+api:
+  available: true
+  protocol: proprietary
+  pricing: 按岗位/订阅
+  auth_method: 企业认证
+capabilities:
+- Qualify AI 跨海量档案识别最合格候选人
+- Engage AI 规模化个性化触达与冷线索转化
+- Monitor AI 实时意向分析与交接升级
+- AI 智能体 7×24 小时打分与互动候选人
+- 全球雇佣、薪酬、合规与人才管理
+- AI + 专家团队协同交付可雇佣候选人
+access:
+- saas
+tags:
+- human-resources
+- ai-recruiter
+- ai-sourcing
+- agentic-ai
+- talent-acquisition
+- candidate-engagement
+references:
+- title: Moonhub Official Website
+  url: https://moonhub.ai

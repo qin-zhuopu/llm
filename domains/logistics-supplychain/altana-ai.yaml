@@ -1,0 +1,60 @@
+name: Altana Trusted Trade AI
+name_en: Altana AI
+company: Altana
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://altana.ai
+description: Altana 是面向可信贸易的 AI 网络，连接企业、物流服务商与政府，作为"产品来自何处"的单一事实来源，驱动代理式贸易工作流（agentic trade workflows）与公私协作。平台让进口商的贸易与产品信息实时更新，使企业可在货物过境前预校验合规、海关可预核验货物，并自动化完整报关流程。美国海关自 2023 年起与 Altana 合作使用 AI 识别逃税与违禁品。
+parameters: 未公开
+architecture: agentic workflows over global value-chain graph
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于全球产品价值链图谱与贸易/海关数据训练代理式贸易合规与报关工作流
+tech_stack:
+  techniques:
+  - Global value-chain graph
+  - Agentic trade workflows
+  - Automated customs entry generation
+  - Trade compliance pre-validation
+  - Public-private data collaboration
+datasets:
+- name: Global Value-Chain Graph
+  description: 覆盖产品来源的全球价值链图谱，作为可信贸易的单一事实来源
+  type: pre-training
+benchmarks:
+- name: Duty Overpayment Identified
+  score: $19M
+  metric: cost_identified
+  comparison: 为某制造商识别 $19M 关税多缴
+  source: self-reported
+- name: Detentions Avoided
+  score: $54M
+  metric: cost_avoided
+  comparison: 为某服装公司避免 $54M 滞留费
+  source: self-reported
+- name: Revenue at Risk Identified
+  score: $11.3B
+  metric: risk_identified
+  comparison: 为某电子公司识别 $11.3B 潜在风险营收
+  source: self-reported
+capabilities:
+- 代理式贸易工作流（agentic trade workflows）
+- 货物发运前的贸易合规预校验
+- 完整报关（customs brokerage）流程自动化
+- 自动撰写报关单（通过收购 Cervo AI 增强）
+- 供应链溯源与"产品来自何处"的单一事实来源
+- 公私协作支持政府边境管理与经济安全
+access:
+- saas
+tags:
+- supply-chain
+- trade-compliance
+- customs-automation
+- agentic-workflows
+- supply-chain-mapping
+- global-trade
+references:
+- title: Altana 官网
+  url: https://altana.ai

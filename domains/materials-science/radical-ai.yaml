@@ -1,0 +1,53 @@
+name: Radical AI
+name_en: Radical AI Materials Discovery Platform
+company: Radical AI
+domain: materials-science
+status: released
+website: https://www.radical-ai.com
+description: Radical AI 是一家材料发现初创公司，将基础模型式 AI 与集成的自驱动实验室（self-driving lab）结合，实现"目标→AI
+  生成实验→自动执行→数据回流→再优化"的自主发现闭环。核心理念是"Prompts become materials"：科学家输入材料性能目标，AI 生成的实验直接下发到自驱动实验室并不断精炼直到达标，将传统上耗时
+  10 年、耗资 1 亿美元的材料发现过程缩短到以周计。属于模型系统型公司。
+parameters: 未公开
+architecture: AI experiment-generation model + self-driving lab integration
+training:
+  stages:
+  - name: pre-training
+    description: 在标准化格式采集的多维材料实验与仿真数据上训练 AI 模型，学习材料性能目标与实验方案之间的映射。
+  - name: fine-tuning
+    description: 通过与自驱动实验室的紧密集成，将实验结果以标准化格式回流给 AI，持续精炼实验生成策略直到满足目标性能，形成自主发现闭环。
+tech_stack:
+  framework: proprietary AI + self-driving lab software
+  techniques:
+  - AI-generated experiment design
+  - Self-driving lab integration
+  - Closed-loop autonomous experimentation
+  - Standardized multi-dimensional data capture
+  - Goal-conditioned materials optimization
+datasets:
+- name: Self-driving lab experimental data
+  description: 自驱动实验室以标准化格式采集的全维度实验数据，回流给 AI 用于持续优化
+  type: other
+benchmarks:
+- name: Materials discovery cycle time
+  score: weeks not years
+  metric: discovery_time
+  comparison: 'vs 传统材料发现: 将 10 年、1 亿美元的发现过程缩短到以周计'
+  source: self-reported
+capabilities:
+- "\u201CPrompts become materials\u201D：输入材料性能目标，AI 生成实验方案"
+- AI 生成的实验直接下发到自驱动实验室并自动执行
+- 自驱动实验室与软件直接集成，将想法在真实实验中验证（而非仅依赖仿真）
+- 以标准化格式采集全维度数据并回流 AI 持续优化
+- 目标导向的材料性能闭环优化，数周内完成发现
+access:
+- private-deployment
+tags:
+- materials-discovery
+- self-driving-lab
+- autonomous-experimentation
+- closed-loop
+- goal-conditioned
+- model-system
+references:
+- title: Radical AI Official Website
+  url: https://www.radical-ai.com

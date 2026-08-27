@@ -1,0 +1,76 @@
+name: Physical Intelligence π0 / π0.5 / π*0.6
+name_en: Physical Intelligence pi0 Robotic Foundation Models
+company: Physical Intelligence
+domain: manufacturing
+status: released
+release_date: '2024-10'
+website: https://physicalintelligence.company
+description: Physical Intelligence（π）致力于把通用 AI 带入物理世界，开发能控制任何机器人做任何任务的机器人基础模型，直接关联制造自动化、装配、物料搬运和工厂机器人。旗舰模型 π0 是构建于预训练视觉-语言模型 PaliGemma（约 3B）之上的视觉-语言-动作（VLA）流模型，总参数约 3.3B，用 flow matching 表示连续动作分布实现最高 50Hz 灵巧控制；在跨形体大数据集（7+ 机器人配置、68 任务 + Open X-Embodiment）上训练。π0 开源权重，后续 π0.5（开放世界泛化）、π*0.6（RL 从经验学习）、π0.7（可引导涌现能力）为更强模型。投资方含 OpenAI、Sequoia、Jeff Bezos、Thrive Capital。
+parameters: ~3.3B (π0)
+architecture: Vision-Language-Action (VLA) flow-matching model on PaliGemma VLM + action expert
+base_model: PaliGemma
+training:
+  stages:
+  - name: pre-training
+    description: 基于预训练视觉-语言模型 PaliGemma（约 3B），在跨形体机器人大数据集上训练 VLA 模型，覆盖 7+ 机器人配置和 68 个任务，加上 Open X-Embodiment 数据集
+  - name: post-training
+    description: π*0.6 加入来自真实世界经验的强化学习（Recap 方法）提升成功率与吞吐；π0.5 扩展开放世界泛化；π0.7 实现可引导的涌现能力
+  context_length: 长短期记忆 (Multi-Scale Embodied Memory, 支持 >10 分钟任务)
+tech_stack:
+  framework: JAX / PyTorch
+  inference: Real-Time Action Chunking (RTC) for high-latency robot control
+  techniques:
+  - Flow matching (连续动作分布, 扩散变体)
+  - Action chunking
+  - Cross-embodiment training
+  - Vision-Language-Action (VLA)
+  - RL from real-world experience (Recap)
+  - FAST action tokenization
+datasets:
+- name: Cross-Embodiment Robot Dataset
+  description: 覆盖 7+ 种机器人配置和 68 个任务的多任务多机器人数据采集
+  size: 7+ robot configs, 68 tasks
+  type: pre-training
+- name: Open X-Embodiment
+  description: 公开跨形体机器人操作数据集，用于扩展泛化能力
+  type: pre-training
+benchmarks:
+- name: Control Frequency
+  score: 50 Hz
+  metric: control_frequency
+  comparison: flow matching 实现高频灵巧连续动作控制
+  source: paper
+- name: Parameters
+  score: ~3.3B
+  metric: model_size
+  comparison: PaliGemma (~3B) VLM + action expert
+  source: paper
+- name: Training Speedup (π0-FAST)
+  score: 5X
+  metric: training_speedup
+  comparison: 'vs 之前方法: FAST 动作分词器让通才策略训练加速 5 倍'
+  source: paper
+capabilities:
+- 视觉-语言-动作（VLA）通用机器人策略控制
+- 高频灵巧操作（最高 50Hz）用于装配与物料搬运
+- 跨形体泛化，控制多种机器人配置
+- 开放世界泛化（π0.5）处理全新环境任务
+- 从真实世界经验强化学习提升成功率与吞吐（π*0.6）
+- 长短期具身记忆支持超过 10 分钟的复杂任务
+access:
+- open-weights
+- private-deployment
+tags:
+- physical-ai
+- robotics
+- vision-language-action
+- foundation-model
+- flow-matching
+- manufacturing-automation
+references:
+- title: Physical Intelligence Official Website
+  url: https://physicalintelligence.company
+- title: π0 Our First Generalist Policy
+  url: https://www.physicalintelligence.company/blog/pi0
+- title: π0 A Vision-Language-Action Flow Model (arXiv:2410.24164)
+  url: https://arxiv.org/abs/2410.24164

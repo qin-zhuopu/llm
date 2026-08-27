@@ -1,0 +1,78 @@
+name: REP AI
+name_en: REP AI
+company: REP AI (Hello Rep)
+domain: retail-ecommerce
+status: released
+website: https://www.hellorep.ai/
+description: "REP AI 是面向增长型电商品牌的「智能体电商操作系统」(Agentic Commerce Operating System)，让店铺主动「思考、响应并行动」。它监测数百个购物者行为信号（犹豫、比价、退出风险）识别购买意图，在恰当时机发起上下文对话、引导决策并实时处理售后。属工作流应用型：编排 LLM 叠加行为意图检测，运行于商家商品目录与购物者信号之上，常见于 Shopify 品牌，一个 AI 替代六类工具（AI 销售顾问、售后自动化、工单台、洞察等）。"
+parameters: 未公开
+architecture: "agentic commerce platform (LLM 编排 + 行为意图检测引擎)"
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于购物者行为信号与商家商品目录训练意图检测与对话引导模型
+  - name: post-training
+    description: 每次交互沉淀为结构化情报，持续学习优化对话与推荐时机
+tech_stack:
+  framework: REP AI Agentic Commerce OS
+  inference: 实时多渠道对话/意图检测云服务
+  techniques:
+  - Agentic AI (autonomous commerce agent)
+  - Behavioral intent detection (数百信号)
+  - Conversational guided selling
+  - AI-timed complementary recommendations
+  - Multi-channel orchestration (web/email/social/WhatsApp)
+datasets:
+- name: 购物者行为信号
+  description: 犹豫、比价、退出风险等数百个行为信号，用于识别购买意图
+  type: sft
+- name: 商家商品目录
+  description: 商品目录与政策/订单数据，支撑导购与售后自动化
+  type: other
+benchmarks:
+- name: CVR 提升
+  score: 10-30%
+  metric: conversion_rate_lift
+  comparison: "AI 导购带来转化率提升 10-30%（公司自述）"
+  source: self-reported
+- name: 售后工单减少
+  score: 50-70%
+  metric: ticket_reduction
+  comparison: "自动化售后减少 50-70% 工单（公司自述）"
+  source: self-reported
+- name: AOV 提升
+  score: 16%+
+  metric: aov_lift
+  comparison: "AI 引导销售带来客单价提升 16%+（公司自述）"
+  source: self-reported
+- name: 问题自动应答率
+  score: 97%
+  metric: auto_answer_rate
+  comparison: "97% 购物者问题被自动应答（公司自述）"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业/品牌订阅（联系销售）
+  auth_method: API Key / 企业认证
+capabilities:
+- 实时购买意图检测（数百行为信号）
+- 上下文对话式导购与决策引导
+- AI 定时互补商品推荐提升客单价
+- 售后自动化（订单跟踪、退货、政策）
+- 多渠道统一 AI（网站、邮件、社媒、WhatsApp）
+- 交互洞察分析（购买摩擦、商品需求、转化机会）
+access:
+- saas
+- api
+tags:
+- ecommerce
+- agentic-commerce
+- conversational-commerce
+- guided-selling
+- shopify
+- intent-detection
+- retail
+references:
+- title: REP AI Official Website
+  url: https://www.hellorep.ai/

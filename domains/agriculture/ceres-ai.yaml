@@ -1,0 +1,60 @@
+name: Ceres AI
+name_en: Ceres AI (Ceres Imaging)
+company: Ceres Imaging
+domain: agriculture
+status: released
+website: https://www.ceresimaging.net/
+description: Ceres AI（原 Ceres Imaging）是农业遥感与风险分析公司，面向农业企业和金融/保险机构提供可持续农业的风险洞察。核心是基于航拍多光谱影像的单株级测量与产量损失预测模型，数据集包含超过 110 亿个单株测量点，可用于产量保护、投资组合风险管理、气候韧性评分和作物保险理赔的产量损失预测。
+parameters: 未公开
+architecture: deep learning remote sensing (multispectral imagery)
+training:
+  stages:
+  - name: pre-training
+    description: 基于航拍多光谱影像与超过 110 亿个单株级测量点训练产量影响和作物长势模型，覆盖导度、水分胁迫和养分状态等指标。
+  - name: fine-tuning
+    description: 针对不同作物、气候区和管理实践微调，并结合 30+ 研究合作的地面真值数据做校准。
+tech_stack:
+  framework: Custom remote sensing ML pipeline
+  techniques:
+  - Aerial multispectral imaging
+  - Plant-level measurement
+  - Yield-loss prediction modeling
+  - Conductance / water stress estimation
+  - Sustainability scorecards
+datasets:
+- name: Plant-Level Measurement Dataset
+  description: 超过 110 亿个单株级测量点，来自航拍多光谱影像
+  size: 11B+ plant-level measurements
+  type: pre-training
+- name: Research Ground Truth
+  description: 与 30+ 顶尖大学、政府伙伴和非营利机构合作产生的地面真值数据，用于模型校准与验证
+  type: evaluation
+benchmarks:
+- name: Plant-Level Measurements
+  score: 11B+
+  metric: measurements
+  comparison: 'vs 同类遥感: 号称拥有 110 亿以上单株级测量点的数据规模'
+  source: self-reported
+- name: Water Application Correlation
+  score: 高相关
+  metric: correlation
+  comparison: 'vs 土壤水分探针: 导度测量与实际灌溉水量的相关性最佳，覆盖更广、成本更低'
+  source: self-reported
+capabilities:
+- 基于航拍多光谱影像的单株级作物长势与产量建模
+- 产量影响与 ROI 预测指导施肥/灌溉战略投资
+- 农业投资组合的气候变化风险管理
+- 作物保险理赔的产量损失预测
+- 定制化可持续性评分卡与农场管理实践监测
+access:
+- saas
+tags:
+- agricultural-remote-sensing
+- aerial-imaging
+- yield-prediction
+- crop-insurance
+- risk-analytics
+- precision-agriculture
+references:
+- title: Ceres AI Official Website
+  url: https://www.ceresimaging.net/

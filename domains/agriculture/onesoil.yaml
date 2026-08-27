@@ -1,0 +1,56 @@
+name: OneSoil
+name_en: OneSoil
+company: OneSoil
+domain: agriculture
+status: released
+website: https://www.onesoil.ai/en
+description: OneSoil 是一家卫星农业智能公司，用 Sentinel 等卫星遥感影像和 AI 为现代农业提供田间监测、变量施用地图和全国范围作物识别。其 AI Agronomist 每天读取每块田，交叉参考卫星信号、气象和作物物候，生成当日需关注事项的排序清单。平台被 140,000+ 农户使用，覆盖 180 个国家，合作伙伴 100+。
+parameters: 未公开
+architecture: deep learning remote sensing (satellite imagery)
+training:
+  stages:
+  - name: pre-training
+    description: 基于 Sentinel 等多光谱卫星遥感影像训练作物识别、生产力分区和长势预测模型，覆盖全球多国农田。
+  - name: fine-tuning
+    description: 结合气象数据和作物物候日历持续微调，提升 AI Agronomist 每日田间异常检测和排序的准确度。
+tech_stack:
+  framework: Custom satellite remote sensing ML pipeline
+  techniques:
+  - Satellite multispectral analysis (Sentinel)
+  - Crop identification / classification
+  - Productivity zoning
+  - Variable-rate application mapping
+  - Vegetation index (NDVI) monitoring
+datasets:
+- name: Satellite Imagery Archive
+  description: 覆盖 180 个国家农田的多光谱卫星遥感影像，配合气象和作物物候数据
+  type: pre-training
+benchmarks:
+- name: Farmer Adoption
+  score: 140000+
+  metric: users
+  comparison: 'vs 同类平台: 每年 14 万以上农户使用，覆盖 180 个国家'
+  source: self-reported
+- name: Partner Network
+  score: 100+
+  metric: partners
+  comparison: 'vs 同类平台: 与 100 家以上全球伙伴合作'
+  source: self-reported
+capabilities:
+- 基于卫星影像的每日田间监测与长势分析
+- AI Agronomist 生成当日需关注事项排序清单
+- 生产力分区与变量施用地图
+- 全国范围的作物识别与分类
+- 面向农服公司的作物监测和预测洞察
+access:
+- saas
+tags:
+- satellite-imaging
+- precision-agriculture
+- crop-monitoring
+- crop-identification
+- variable-rate
+- ai-agronomist
+references:
+- title: OneSoil Official Website
+  url: https://www.onesoil.ai/en

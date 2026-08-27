@@ -1,0 +1,46 @@
+name: Salesforce Agentforce
+name_en: Salesforce Agentforce
+company: Salesforce
+domain: customer-service
+status: released
+website: https://www.salesforce.com/agentforce/
+description: "Salesforce的AI Agent平台，提供7x24自主客服支持并扩展到web、电话、App等客户所在处，取代僵化的聊天机器人和等待。构建在Salesforce平台(Data Cloud、Atlas Reasoning Engine)之上并集成CRM数据，用例横跨客户服务(解决工单、起草跟进邮件、升级专家)、联络中心(来电路由、拉取客户历史)、现场服务、员工服务、销售和IT服务。定位驱动结果、规模化服务、解决工单。"
+parameters: 未公开
+architecture: "Agentforce AI Agent 平台 + Atlas Reasoning Engine（构建于 Salesforce Data Cloud/CRM）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 结合Salesforce Data Cloud与CRM数据，为企业客服/销售/IT等场景适配推理agent
+tech_stack:
+  framework: Agentforce 平台 + Atlas Reasoning Engine
+  inference: Salesforce 云平台（集成 Data Cloud / CRM）
+  techniques:
+  - Atlas Reasoning Engine
+  - Data Cloud grounding
+  - CRM data integration
+  - Multi-surface (web/phone/apps)
+  - Autonomous 24/7 agents
+api:
+  available: true
+  protocol: rest
+  pricing: 按对话/订阅计费（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 7x24自主客服支持，跨web/电话/App触达客户
+- 解决工单、起草跟进邮件、升级到专家
+- 联络中心来电路由、拉取客户历史、记录交互
+- 基于Atlas Reasoning Engine的推理与行动
+- 构建于Data Cloud与CRM数据之上grounding
+access:
+- saas
+- api
+tags:
+- customer-service
+- ai-agent
+- crm
+- contact-center
+- enterprise-ai
+- autonomous-agent
+references:
+- title: Salesforce Agentforce Official Website
+  url: https://www.salesforce.com/agentforce/

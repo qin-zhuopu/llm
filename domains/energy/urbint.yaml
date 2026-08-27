@@ -1,0 +1,62 @@
+name: Urbint
+name_en: Urbint
+company: Urbint (now part of Itron)
+domain: energy
+status: released
+website: https://www.urbint.com/
+description: Urbint是面向公用事业和基础设施行业的运营韧性（operational resilience）AI公司，核心是名为"Model of the World"的动态数字底座，融合天气、土壤、基础设施、人口等数千个数据点为每个服务区域建模。基于该模型的预测性AI提供三大解决方案：应急准备与响应（预测自然灾害影响、加速抢修）、工人安全（在作业点识别危险与防护）、以及损害预防（对811挖掘工单做风险画像、阻止第三方施工破坏地下管线）。客户案例显示可将挖掘破坏减少25%以上。Urbint已并入智能基础设施公司Itron。
+parameters: 未公开
+architecture: predictive ML models
+training:
+  stages:
+  - name: pre-training
+    description: 基于"Model of the World"数字底座训练预测模型，该底座融合天气、土壤、基础设施、人口等数千个数据点，构建每个公用事业服务区域的动态数字表示。
+  - name: fine-tuning
+    description: 针对应急响应、工人安全、损害预防三类具体任务微调风险预测模型，例如对811挖掘工单做风险画像、预测风暴影响和作业危险。
+tech_stack:
+  framework: Urbint AI Platform (Model of the World)
+  techniques:
+  - Predictive risk modeling
+  - Geospatial data fusion
+  - Storm and natural disaster impact prediction
+  - 811 ticket risk profiling
+  - Worker hazard identification
+datasets:
+- name: Model of the World
+  description: 融合天气、土壤、基础设施、人口等数千个数据点的动态数字底座，为每个公用事业服务区域建模
+  type: pre-training
+- name: 811 Excavation Tickets
+  description: 第三方挖掘施工工单数据，用于地下资产损害预防风险画像
+  type: sft
+benchmarks:
+- name: Excavation Damage Reduction
+  score: 25%+
+  metric: damage_reduction
+  comparison: 'vs 传统方式: 帮助客户将挖掘破坏事故减少超过25%'
+  source: self-reported
+- name: Emergency Response Acceleration
+  score: 显著加速
+  metric: response_time
+  comparison: 'vs 被动响应: 预测风暴影响、协调抢修队伍、更快恢复供电'
+  source: self-reported
+capabilities:
+- 预测自然灾害/风暴对公用事业的影响并加速应急响应
+- 在作业点识别危险与防护措施，预防工人重伤
+- 对811挖掘工单做风险画像，阻止第三方施工破坏地下管线
+- 基于"Model of the World"数字底座提供实时风险情报
+- 融合天气、土壤、基础设施、人口等多源数据的预测决策
+access:
+- saas
+tags:
+- utility-resilience
+- predictive-ai
+- worker-safety
+- damage-prevention
+- emergency-response
+- grid-safety
+- geospatial-ai
+references:
+- title: Urbint Official Website
+  url: https://www.urbint.com/
+- title: Urbint joins Itron (announcement)
+  url: https://www.itron.com/

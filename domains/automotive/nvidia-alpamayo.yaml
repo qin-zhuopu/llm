@@ -1,0 +1,69 @@
+name: NVIDIA Alpamayo 2 Super
+name_en: NVIDIA Alpamayo 2 Super
+company: NVIDIA
+domain: automotive
+status: released
+website: https://developer.nvidia.com/drive
+description: NVIDIA Alpamayo 2 Super 是一个开放的 34B 视觉-语言-动作 (VLA) 推理基础模型，用于自动驾驶车辆轨迹规划，具备
+  RL 后训练、灵活的多摄像头支持和导航引导能力。作为 NVIDIA DRIVE 自动驾驶栈的推理基础模型，可在专有车队数据上进行 SFT 与 RL
+  微调（后训练脚本以 Apache 2.0 在 GitHub 开源），并配合 AlpaGym（GPU 规模 RL 训练框架）与 AlpaSim（开源闭环仿真框架）使用。
+parameters: 34B
+architecture: Vision-Language-Action (VLA) reasoning foundation model
+training:
+  stages:
+  - name: pre-training
+    description: 训练视觉-语言-动作推理基础模型，支持多摄像头输入与导航引导，用于轨迹规划推理
+  - name: sft
+    description: 在专有车队数据上进行监督微调 (SFT)，后训练脚本以 Apache 2.0 在 GitHub 开源
+  - name: rlhf
+    description: 通过 AlpaGym 模块化 RL 框架在 GPU 规模上进行 RL 后训练，让模型在连续决策-观测循环中暴露并修正累积误差
+tech_stack:
+  framework: AlpaGym (modular RL framework)
+  inference: NVIDIA DRIVE AGX (Thor/Orin), TensorRT
+  techniques:
+  - vision-language-action (VLA)
+  - reasoning-based trajectory planning
+  - RL post-training
+  - multi-camera support
+  - navigation guidance
+  - closed-loop simulation (AlpaSim)
+datasets:
+- name: Proprietary fleet data
+  description: 车企专有车队采集的驾驶数据，用于 SFT 与 RL 微调 Alpamayo 推理基础模型
+  type: sft
+- name: Chain of Causation (CoC) reasoning labels
+  description: NVIDIA CoC 自动标注管线为驾驶片段生成的因果链 (Chain of Causation) 推理标签
+  type: sft
+benchmarks:
+- name: Model scale
+  score: 34B VLA
+  metric: parameters
+  comparison: 开放的 34B 视觉-语言-动作推理基础模型，含 RL 后训练与多摄像头支持
+  source: self-reported
+- name: Open post-training scripts
+  score: Apache 2.0 (GitHub)
+  metric: openness
+  comparison: SFT 与 RL 微调后训练脚本以 Apache 2.0 许可在 GitHub 开放
+  source: self-reported
+capabilities:
+- 基于推理的自动驾驶轨迹规划 (reasoning-based trajectory planning)
+- 视觉-语言-动作多模态推理
+- 灵活的多摄像头输入支持
+- 导航引导下的驾驶决策
+- 在专有车队数据上 SFT + RL 微调
+- 配合 AlpaSim 闭环仿真进行策略评估
+tags:
+- autonomous-driving
+- vision-language-action
+- foundation-model
+- reasoning
+- reinforcement-learning
+- nvidia-drive
+- trajectory-planning
+- open-weights
+access:
+- open-weights
+- api
+references:
+- title: NVIDIA DRIVE AI Solutions
+  url: https://developer.nvidia.com/drive

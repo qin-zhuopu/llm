@@ -1,0 +1,52 @@
+name: Gatik Autonomous Freight
+name_en: Gatik
+company: Gatik
+domain: logistics-supplychain
+status: released
+release_date: '2024'
+website: https://www.gatik.ai
+description: Gatik 为北美 Fortune 50 零售商与杂货商每天运营无人驾驶的中程（middle-mile）货运网络，在配送中心与门店之间的固定短途路线上运行 box truck。其自动驾驶栈（感知、预测、规划）针对受限、可重复的中程 B2B 短途场景专门构建，实现规模化完全无人驾驶运营。截至 2026 年已锁定超 $600M 合同营收，客户包括 Walmart、Kroger、PepsiCo，并完成 $200M D 轮融资。
+parameters: 未公开
+architecture: autonomous driving stack (perception + prediction + planning)
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于中程固定路线的真实道路运营数据训练受限场景自动驾驶感知/预测/规划模型
+tech_stack:
+  techniques:
+  - Perception (sensor fusion)
+  - Trajectory prediction
+  - Motion planning for constrained routes
+  - Driverless middle-mile operations
+datasets:
+- name: Middle-Mile Driving Data
+  description: 得州、亚利桑那、阿肯色等固定中程路线的真实道路无人驾驶运营数据
+  type: pre-training
+benchmarks:
+- name: Contracted Revenue
+  score: $600M+
+  metric: contracted_revenue
+  comparison: 截至 2026 年已锁定超 $600M 合同营收
+  source: self-reported
+- name: Series D Funding
+  score: $200M
+  metric: funding
+  comparison: 2026-08 由卡塔尔投资局领投完成 $200M D 轮
+  source: third-party
+capabilities:
+- 无人驾驶中程（middle-mile）货运运营
+- 固定短途路线的完全自动驾驶（配送中心到门店）
+- 受限、可重复 B2B 场景的感知-预测-规划自动驾驶栈
+- 为零售/杂货供应链提升配送频次、降低分销成本
+access:
+- saas
+tags:
+- logistics
+- autonomous-vehicles
+- middle-mile
+- freight
+- self-driving-trucks
+- last-mile-delivery
+references:
+- title: Gatik 官网
+  url: https://www.gatik.ai

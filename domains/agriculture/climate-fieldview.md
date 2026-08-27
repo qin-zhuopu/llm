@@ -1,0 +1,24 @@
+---
+title: Climate FieldView (Bayer / The Climate Corporation)
+date: 2026-08-27
+source: https://climate.com/
+---
+
+# Climate FieldView
+
+Climate FieldView 是拜耳（Bayer）旗下 The Climate Corporation 开发的数字农业平台，被定位为「一体化数字农业解决方案」，覆盖数据采集、田间可视化、种子处方脚本（seed scripts）和变量施用（variable-rate）处方。平台主要服务玉米和大豆种植者。
+
+## 平台定位与能力
+
+- 数据驱动决策：把设备、卫星、气象和田间历史数据整合到一处，farmer 可在设备上直接查看可靠数据并做出决策。
+- 最广连接生态：FieldView 与 60+ 合作伙伴打通数据共享，兼容市场上大多数农机设备类型（拖拉机、播种机、收割机等）。
+- 种子处方脚本：使用 FieldView seed scripts 的农户，相比自己编写脚本的用户，平均单产提升 +5 bu/ac（蒲式耳每英亩）。
+- 硬件：FieldView Drive 2.0 无需 U 盘即可发送种子处方，内置 GPS，数据同步更快，兼容更广的设备。
+
+## 技术定位
+
+FieldView 属于「模型系统型 / 工作流应用型」数字农业平台，核心是把机器学习模型（产量分析、田间健康、变量处方）嵌入到贯穿全季（季前规划、季中监测、季后分析）的农艺决策流程中，而非对外销售通用大模型 API。模型与算法闭源，通过 SaaS 订阅提供。
+
+## 来源
+
+- Climate FieldView 官网：https://climate.com/ （获取日期 2026-08-27，见 data/raw/climate-fieldview/）

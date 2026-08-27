@@ -1,0 +1,65 @@
+name: Intercom Fin
+name_en: Intercom Fin
+company: Intercom
+domain: customer-service
+status: released
+website: https://www.intercom.com/fin
+description: "Intercom推出的企业客服Agent，定位最高性能的Customer Agent，跨越整个客户旅程覆盖服务到销售。运行在自研专有模型Apex 1.0和Apex Flash上，这些模型在数十亿次客户体验交互上定制训练，号称是客服领域最高性能、最快、最便宜的模型。相较Sonnet 4.6解决率高2.8%、首token时延快0.6秒、幻觉减少65%。跨12000+客户平均解决率76%（不少超85%），每周200万次解决且平均解决率每月提升1%，G2满意度90%。"
+parameters: 未公开
+architecture: "专有客服大模型 Apex 1.0 / Apex Flash（低延迟语音用 Apex Flash）"
+training:
+  stages:
+  - name: pre-training
+    description: 在数十亿次客户体验交互数据上训练专有Apex系列模型
+  - name: fine-tuning
+    description: 结合客户历史与上下文，为特定品牌客服场景适配
+benchmarks:
+- name: Resolution Rate (average)
+  score: "76%"
+  metric: resolution_rate
+  comparison: "跨12000+客户平均解决率76%，很多客户超过85%"
+  source: self-reported
+- name: Resolution vs Sonnet 4.6
+  score: "+2.8%"
+  metric: resolution_rate
+  comparison: "Apex vs Claude Sonnet 4.6: 解决率高2.8%，首token时延快0.6秒，幻觉减少65%"
+  source: self-reported
+- name: G2 Satisfaction
+  score: "90%"
+  metric: satisfaction
+  comparison: "G2排行榜第一，领先最接近竞品8个百分点"
+  source: leaderboard
+tech_stack:
+  framework: 专有Apex模型 + 客户历史/上下文grounding
+  inference: 企业云部署（Apex Flash用于低延迟语音）
+  techniques:
+  - Proprietary CX models (Apex 1.0 / Apex Flash)
+  - Multi-channel agent (voice/chat/email/Slack/social)
+  - MCP / Data Connectors / API integration
+  - Custom actions & workflows
+api:
+  available: true
+  protocol: rest
+  documentation: https://www.intercom.com/fin
+  pricing: 按 resolution 计费 + 企业订阅
+  auth_method: API Key
+capabilities:
+- 单一客户面向Agent覆盖从服务到销售的完整客户旅程
+- 自研专有模型Apex 1.0/Apex Flash驱动的高解决率客服
+- 跨渠道（语音/聊天/邮件/Slack/社交）统一客服
+- 通过API/Data Connectors/MCP接入并扩展自定义动作与工作流
+- 原生集成Intercom及Salesforce/HubSpot/Freshdesk等helpdesk
+- 低延迟语音客服（Fin Voice基于Apex Flash）
+access:
+- saas
+- api
+tags:
+- customer-service
+- conversational-ai
+- ai-agent
+- proprietary-model
+- omnichannel
+- voice-ai
+references:
+- title: Intercom Fin Official Website
+  url: https://www.intercom.com/fin

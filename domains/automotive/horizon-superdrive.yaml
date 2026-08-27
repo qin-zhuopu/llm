@@ -1,0 +1,59 @@
+name: Horizon SuperDrive (HSD)
+name_en: Horizon SuperDrive
+company: 地平线 (Horizon Robotics)
+domain: automotive
+status: released
+website: https://en.horizon.auto
+description: 地平线 (Horizon Robotics, HKEX:9660) 面向乘用车智能驾驶的全栈解决方案，核心为 Horizon SuperDrive
+  (HSD) 城区+高速一体的端到端智能辅助驾驶系统，运行在自研 Journey（征程）系列车规级计算 SoC 上。地平线首创并持续实践软硬件一体
+  (software-hardware integration) 的智驾路线，兼顾系统性能与量产效率，推动智能驾驶在乘用车上的大规模落地。
+parameters: 未公开
+architecture: full-stack end-to-end assisted driving (software-hardware integration)
+base_model: Journey (征程) automotive SoC platform
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模真实驾驶数据训练端到端感知与规划模型，覆盖城区与高速场景
+  - name: fine-tuning
+    description: 面向量产车型与不同 Journey 计算平台优化，兼顾系统性能与量产效率
+tech_stack:
+  inference: Journey (征程) automotive-grade SoC
+  techniques:
+  - software-hardware integration
+  - end-to-end perception and planning
+  - full-stack autonomous driving
+  - BEV perception
+datasets:
+- name: Horizon real-world driving data
+  description: 大规模乘用车真实驾驶数据，覆盖城区道路与高速公路场景，用于训练端到端智驾模型
+  type: pre-training
+benchmarks:
+- name: Mass production deployment
+  score: multiple OEM passenger vehicles
+  metric: production deployment
+  comparison: 地平线首创软硬件一体路线，Journey 系列 SoC 大规模量产搭载于多家车企乘用车
+  source: self-reported
+- name: Urban + highway coverage
+  score: full-scenario
+  metric: scenario coverage
+  comparison: HSD 覆盖城区与高速一体化端到端辅助驾驶
+  source: self-reported
+capabilities:
+- 城区与高速一体的端到端智能辅助驾驶 (HSD)
+- 车规级 Journey 计算平台上的高效推理
+- 软硬件一体的全栈智驾方案
+- 面向量产的性能与成本平衡
+- BEV 感知与端到端规划
+tags:
+- autonomous-driving
+- adas
+- end-to-end
+- software-hardware-integration
+- china
+- automotive-soc
+- mass-production
+access:
+- private-deployment
+references:
+- title: Horizon Robotics Official Website
+  url: https://en.horizon.auto

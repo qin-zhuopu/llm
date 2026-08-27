@@ -1,0 +1,84 @@
+name: Beamery
+name_en: Beamery
+company: Beamery
+domain: human-resources
+status: released
+release_date: '2013'
+website: https://www.beamery.com
+description: Beamery 是 AI 驱动的劳动力转型平台，核心是围绕技能本体构建的人才操作系统/技能数据平台，把碎片化的技能、角色、人与市场数据整合成动态可信的单一事实来源。基于统一技能数据与伦理
+  AI，服务高管、HR、招聘官与候选人四类角色，覆盖招聘、技能提升、留任与内部流动，可与 Workday、SAP SuccessFactors Talent Intelligence
+  Hub 集成，加速企业向技能型组织转型。
+parameters: 未公开
+architecture: 模型系统型（技能本体 + 匹配/推荐模型 + 生成式 AI）
+training:
+  stages:
+  - name: pre-training
+    description: 基于大规模技能、角色、职业轨迹与劳动力市场数据构建技能本体与语义表示
+  - name: fine-tuning
+    description: 针对人才匹配、技能推断、内部流动与候选人推荐等 HR 场景微调
+  - name: rlhf
+    description: 结合招聘官与 HR 反馈优化推荐质量并强化伦理/公平性
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS
+  techniques:
+  - Skills ontology / taxonomy
+  - Talent matching & recommendation
+  - Skill inference
+  - Ethical AI
+  - Workday/SAP integration
+datasets:
+- name: Skills & roles graph
+  description: 连接技能、角色、人与市场的统一数据图，作为劳动力决策的单一事实来源
+  type: pre-training
+- name: Career trajectory data
+  description: 职业轨迹与市场数据，用于技能推断与人才匹配
+  type: pre-training
+benchmarks:
+- name: Unified workforce data
+  score: single source of truth
+  metric: data_unification
+  comparison: 将碎片化技能/角色/人/市场数据整合为一致的劳动力视图
+  source: self-reported
+- name: Enterprise adoption
+  score: Salesforce/EisnerAmper
+  metric: enterprise_customers
+  comparison: 被 Salesforce、EisnerAmper 等大型企业采用
+  source: self-reported
+- name: Roles filled via platform
+  score: ~1,000,000/year
+  metric: roles_filled
+  comparison: 平台在一年内帮助雇主填补约 100 万个内外部岗位（TechCrunch/2021）
+  source: third-party
+- name: Valuation
+  score: $1B
+  metric: valuation
+  comparison: '2022 年 D 轮估值 $1B（独角兽），累计融资约 $228M'
+  source: third-party
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅
+  auth_method: 企业认证 / SSO
+capabilities:
+- 构建统一的技能与角色数据平台
+- 基于技能与潜力的人才匹配与推荐
+- 内部流动与再培训的技能洞察
+- 候选人职业路径规划
+- 劳动力规划与风险管理
+- 与 Workday/SAP SuccessFactors 集成增强
+access:
+- saas
+- private-deployment
+tags:
+- human-resources
+- talent-intelligence
+- skills-based-organization
+- workforce-planning
+- internal-mobility
+- ethical-ai
+references:
+- title: Beamery Official Website
+  url: https://www.beamery.com
+- title: Beamery (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Beamery

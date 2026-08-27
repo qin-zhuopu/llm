@@ -1,0 +1,76 @@
+name: HireVue
+name_en: HireVue
+company: HireVue
+domain: human-resources
+status: released
+release_date: '2004'
+website: https://www.hirevue.com
+description: HireVue 是视频面试与技能测评招聘的先驱，提供端到端 AI 招聘平台，覆盖对话式互动、数据驱动筛选、20 分钟内技能测评、自动排期、可与
+  ATS 同步的直播/异步视频面试。早期（2013 起）在 Insights 中使用自研语音识别与授权面部识别对候选人语气、词汇、面部动作打分生成 employability
+  分数；2021 年在监管与舆论压力下停止面部分析，转向以能力/技能为基础的结构化测评与对话式 AI。通过 ISO/IEC 27001、SOC 2 Type 2、FedRAMP
+  等合规认证。
+parameters: 未公开
+architecture: 模型系统型（语音识别 + NLP 评分 + 对话式 AI + 结构化测评编排）
+training:
+  stages:
+  - name: fine-tuning
+    description: 在大规模面试语音/文本与结构化测评数据上训练评分模型，学习技能与胜任力信号提取
+  - name: rlhf
+    description: 基于招聘结果与公平性/偏见审计反馈优化评分，降低偏见并提升一致性
+tech_stack:
+  framework: 自研 AI 平台
+  inference: Cloud SaaS + ATS 集成
+  techniques:
+  - Proprietary speech recognition
+  - NLP competency/skills scoring
+  - Conversational AI & text automation
+  - Structured interview guides
+  - Bias mitigation & third-party audits
+  - Video interviewing (live + on-demand)
+datasets:
+- name: Interview speech & text data
+  description: 数百万场视频/异步面试的语音与文本数据，用于训练技能与胜任力评分
+  type: sft
+- name: Skills assessment data
+  description: 结构化技能测评题库与作答数据，用于校准 employability 评分
+  type: sft
+benchmarks:
+- name: Interviews facilitated
+  score: '3,000,000'
+  metric: interviews_per_year
+  comparison: '2015 年完成 300 万场面试，五年前仅 13,000 场'
+  source: self-reported
+- name: Assessment duration
+  score: '<20 min'
+  metric: time_to_assess
+  comparison: 结合测评与面试在 20 分钟内完成技能验证
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  documentation: https://www.hirevue.com/platform
+  pricing: 企业年度订阅
+  auth_method: 企业认证 / SSO
+capabilities:
+- 直播与异步视频面试规模化
+- 对话式 AI 与短信自动化的候选人互动
+- 数据驱动的候选人筛选与优先级排序
+- 技能测评与胜任力评分（减少偏见）
+- 自动面试排期协调
+- 与 ATS 生态（LinkedIn/Salesforce 等）集成
+access:
+- saas
+- private-deployment
+tags:
+- human-resources
+- video-interviewing
+- ai-assessment
+- skills-intelligence
+- recruitment
+- conversational-ai
+- fedramp
+references:
+- title: HireVue Platform
+  url: https://www.hirevue.com/platform
+- title: HireVue (Wikipedia)
+  url: https://en.wikipedia.org/wiki/HireVue

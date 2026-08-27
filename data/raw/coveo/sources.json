@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://www.coveo.com/en/solutions/ecommerce",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "wikipedia.md",
+      "url": "https://en.wikipedia.org/wiki/Coveo",
+      "fetched_at": "2026-08-27",
+      "type": "news"
+    }
+  ]
+}

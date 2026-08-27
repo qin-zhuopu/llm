@@ -1,0 +1,72 @@
+name: Crescendo.ai
+name_en: Crescendo.ai
+company: Crescendo
+domain: customer-service
+status: released
+website: https://www.crescendo.ai
+description: "AI-native客户体验(CX)平台，服务150+品牌，主打全栈CX(一个平台、一套数据模型、一支团队)。三大支柱为applied expertise(派团队校准并对结果负责)、self-improving AI(AI复盘自身对话发现缺口并自我更新)、4周上线的快速价值。产品含Concierge、Agent Assist、Applied Insights、Quality(100%对话打分)与Workforce。两年内达到1亿美元ARR并进军欧洲，联合创始人Andy Lee(前Alorica CEO)任CEO，与BPO巨头Alorica战略合作。合规含SOC 2 Type II/HIPAA/ISO 27001/GDPR。"
+parameters: 未公开
+architecture: "AI-native 全栈 CX 平台（多供应商模型架构 + 自我改进循环）"
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业政策/SOP/系统连接上grounding，构建客服assistant
+  - name: rlaif
+    description: 自我改进循环——AI复盘自身对话、发现缺口、自动更新知识库并重新部署
+benchmarks:
+- name: ARR
+  score: "$100M"
+  metric: arr
+  comparison: "两年内达到1亿美元ARR"
+  source: self-reported
+- name: CSAT (Cuyana)
+  score: "85-86%"
+  metric: csat
+  comparison: "平均CSAT 85-86%，连续四周100% CSAT，CSAT提升75%"
+  source: self-reported
+- name: Response Time (Lovepop)
+  score: 18s
+  metric: response_time
+  comparison: "邮件响应时间从7小时降到18秒"
+  source: self-reported
+- name: Accuracy
+  score: "99.8%"
+  metric: accuracy
+  comparison: "官网宣称99.8%以上准确率"
+  source: self-reported
+tech_stack:
+  framework: AI-native CX 平台（多供应商模型架构）
+  inference: 云SaaS（全渠道 chat/messaging/voice/email）
+  techniques:
+  - Self-improving AI loop
+  - Multi-provider model architecture
+  - Safe Action Framework (governance)
+  - 100% conversation QA scoring
+  - Human handoff 24x7
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（按结果/用量）
+  auth_method: 企业认证
+capabilities:
+- 全栈AI-native客户体验（一个平台/数据模型/团队）
+- 面向客户的Concierge解决与IVR替代
+- 坐席实时辅助（Agent Assist）
+- 自我改进AI：复盘对话、发现缺口、自动修复重新部署
+- 100%对话质检与运营洞察
+- 全渠道（聊天/消息/语音/邮件）与7x24人工交接
+access:
+- saas
+- api
+tags:
+- customer-service
+- ai-native
+- conversational-ai
+- self-improving-ai
+- quality-management
+- enterprise-ai
+references:
+- title: Crescendo.ai Official Website
+  url: https://www.crescendo.ai
+- title: Crescendo News (ARR & Europe launch)
+  url: https://www.crescendo.ai/news

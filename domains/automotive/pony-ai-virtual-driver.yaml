@@ -1,0 +1,62 @@
+name: Pony.ai Virtual Driver
+name_en: Pony.ai Virtual Driver
+company: 小马智行 (Pony.ai)
+domain: automotive
+status: released
+website: https://www.pony.ai
+description: 小马智行 (Pony.ai, NASDAQ:PONY) 的核心自动驾驶系统「virtual driver（虚拟司机）」，是一套可跨车型复用的
+  L4 级自动驾驶软硬件系统，覆盖 Robotaxi、Robotruck 和个人车辆 (POV) 三大业务单元。成立于 2016 年硅谷，截至 2024
+  年 4 月自动驾驶车辆已累计行驶超 3200 万公里（超 1300 万英里），覆盖复杂天气与道路条件，是自动驾驶商业化的行业领导者之一。
+parameters: 未公开
+architecture: L4 autonomous driving system (virtual driver)
+training:
+  stages:
+  - name: pre-training
+    description: 基于超 3200 万公里真实路测数据训练感知、预测与规划模型，覆盖城市道路、高速公路及复杂天气场景
+  - name: fine-tuning
+    description: 面向 Robotaxi、Robotruck、POV 不同业务单元与车型进行适配与优化
+tech_stack:
+  techniques:
+  - multi-sensor fusion
+  - perception-prediction-planning
+  - cross-platform virtual driver
+  - data flywheel
+datasets:
+- name: Pony.ai road test data
+  description: 截至 2024 年 4 月累计超 3200 万公里（超 1300 万英里）的城市道路与高速公路真实路测数据，覆盖复杂天气与道路条件
+  type: pre-training
+benchmarks:
+- name: Autonomous road testing mileage
+  score: 32M+ km (13M+ miles)
+  metric: cumulative autonomous mileage
+  comparison: 截至 2024 年 4 月累计自动驾驶里程，覆盖复杂天气与道路条件
+  source: self-reported
+- name: Commercial Robotaxi operations
+  score: multi-city China
+  metric: commercial deployment
+  comparison: 在中国多城市开展 Robotaxi 商业化运营，行业商业化领导者之一
+  source: self-reported
+capabilities:
+- L4 级 Robotaxi/Robotruck/个人车辆自动驾驶
+- 可跨车型复用的虚拟司机 (virtual driver) 系统
+- 复杂天气与道路场景处理
+- 大规模真实路测数据飞轮驱动迭代
+- 城市道路与高速公路自动驾驶
+- 多传感器融合感知、预测与规划
+api:
+  available: false
+  pricing: 内部专有系统（Robotaxi/Robotruck 运营 + 与车企合作）
+access:
+- internal-only
+- private-deployment
+tags:
+- autonomous-driving
+- l4-autonomy
+- robotaxi
+- robotruck
+- virtual-driver
+- china
+- data-flywheel
+references:
+- title: Pony.ai Official Website
+  url: https://www.pony.ai

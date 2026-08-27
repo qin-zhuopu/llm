@@ -1,0 +1,71 @@
+name: Waabi Driver
+company: Waabi
+domain: automotive
+status: released
+release_date: '2025'
+website: https://waabi.ai
+description: Waabi 打造的「Physical AI」端到端自动驾驶大模型，是业内唯一可验证 (verifiable)、具备类人推理能力的端到端
+  AI 系统。采用「shared brain（共享大脑）」理念，同一个 AI 模型既驱动自动驾驶卡车也驱动 Robotaxi。结合业内最先进的神经仿真器进行仿真优先的闭环验证。2025
+  年 Q1 从高速公路扩展至复杂城市街道，并实现跨车辆形态的零样本泛化（从 Peterbilt 579 卡车零样本迁移到 Volvo VNL Autonomous）。
+parameters: 未公开
+architecture: end-to-end verifiable AI model (Physical AI)
+training:
+  stages:
+  - name: pre-training
+    description: 基于真实路测数据与神经仿真器生成的大规模仿真数据训练端到端驾驶模型，学习跨 ODD 的通用驾驶能力
+  - name: fine-tuning
+    description: 面向不同运行设计域 (ODD) 从高速公路扩展到城市街道；训练目标为跨形态零样本泛化，无需为新车辆平台重新采集数据或微调
+tech_stack:
+  inference: NVIDIA compute (in-vehicle)
+  techniques:
+  - end-to-end learning
+  - neural simulator (simulation-first)
+  - human-like reasoning
+  - zero-shot embodiment generalization
+  - closed-loop validation
+datasets:
+- name: Waabi neural simulator data
+  description: Waabi 自研神经仿真器生成的高保真闭环仿真场景，用于大规模训练与验证，减少真实路测里程依赖
+  type: pre-training
+- name: Real-world driving logs
+  description: 自动驾驶卡车在高速公路与城市街道采集的真实路测数据
+  type: pre-training
+benchmarks:
+- name: Zero-shot embodiment transfer (Peterbilt 579 to Volvo VNL Autonomous)
+  score: fully performant from first mile
+  metric: zero-shot generalization
+  comparison: 无需新真实数据/仿真数据/微调即在全新车辆平台上全性能运行，为业内首次
+  source: self-reported
+- name: ODD expansion to surface streets
+  score: Q1 2025 milestone
+  metric: operational-design-domain coverage
+  comparison: 从高速公路扩展到复杂城市街道的端到端安全运行
+  source: self-reported
+capabilities:
+- 高速公路与复杂城市街道的端到端自动驾驶
+- 类人推理与可解释的驾驶决策
+- 跨车辆形态零样本迁移（卡车与 Robotaxi 共享同一 AI 大脑）
+- 神经仿真器驱动的仿真优先闭环验证
+- 跨 ODD（运行设计域）泛化
+- 可验证 (verifiable) 的端到端 AI 系统
+api:
+  available: false
+  pricing: 内部专有系统（嵌入 Waabi 卡车与 Robotaxi 产品）
+access:
+- internal-only
+tags:
+- autonomous-driving
+- end-to-end
+- physical-ai
+- robotaxi
+- robotruck
+- neural-simulator
+- zero-shot-generalization
+- world-model
+references:
+- title: Waabi Official Website
+  url: https://waabi.ai
+- title: 'Waabi crosses the next frontier of generalization, unlocking truly scalable AVs'
+  url: https://waabi.ai/waabi-crosses-the-next-frontier-of-generalization-unlocking-truly-scalable-avs/
+- title: Waabi secures $1 Billion in new funding to lead Physical AI revolution
+  url: https://waabi.ai/waabi-secures-1-billion-in-new-funding-to-lead-physical-ai-revolution/

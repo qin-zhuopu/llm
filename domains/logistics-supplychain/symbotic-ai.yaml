@@ -1,0 +1,59 @@
+name: Symbotic Warehouse AI
+name_en: Symbotic
+company: Symbotic
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://www.symbotic.com
+description: "Symbotic 提供端到端仓库自动化解决方案，结合机器人硬件（SymBots）与 AI 增强软件，编排物理世界中货物的移动并看到仓库墙外以在整条供应链创造效率收益。产品包括原箱处理（Native Case Handling，预测性库存管理）与微履约（SymMicro，三温区按件拣选）。公司累计投入超 $10 亿研发，拥有 1,050+ 项专利，已上市（NASDAQ: SYM），主要客户包括 Walmart。"
+parameters: 未公开
+architecture: robotics orchestration + AI warehouse software
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于仓内机器人调度、库位与吞吐数据训练仓库自动化编排与预测性库存模型
+tech_stack:
+  techniques:
+  - Robotic fleet orchestration (SymBots)
+  - AI-driven warehouse optimization
+  - Predictive inventory management
+  - Dense storage & pallet building optimization
+  - Micro-fulfillment (SymMicro)
+datasets:
+- name: Warehouse Operations Data
+  description: 仓内机器人调度轨迹、库位、SKU 与吞吐运营数据
+  type: pre-training
+benchmarks:
+- name: Warehouse Labor Cost Reduction
+  score: 60-80%
+  metric: labor_cost_reduction
+  comparison: 仓库人工成本降低 60–80%
+  source: self-reported
+- name: Throughput Improvement
+  score: 9x
+  metric: throughput_gain
+  comparison: 吞吐量提升 9 倍
+  source: self-reported
+- name: Accuracy
+  score: 99.99%+
+  metric: accuracy
+  comparison: 拣选/处理准确率 99.99%+
+  source: self-reported
+capabilities:
+- 端到端仓库自动化编排（机器人 + AI 软件）
+- 原箱处理与预测性库存管理
+- 微履约（SymMicro）三温区按件拣选
+- 密集存储与智能托盘（Smart Pallet）构建优化
+- 运输拖车立方利用率与门店补货优化
+access:
+- private-deployment
+tags:
+- supply-chain
+- warehouse-automation
+- robotics
+- micro-fulfillment
+- inventory-optimization
+- material-handling
+references:
+- title: Symbotic 官网
+  url: https://www.symbotic.com

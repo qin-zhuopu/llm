@@ -1,0 +1,59 @@
+name: Aurora Solar
+name_en: Aurora Solar
+company: Aurora Solar
+domain: energy
+status: released
+website: https://www.aurorasolar.com/
+description: Aurora Solar是美国旧金山的太阳能设计软件公司（成立于2013年，由斯坦福博士创立），自称"全球第一"的光伏设计软件。平台用AI、计算机视觉和机器学习处理LIDAR与航空/卫星影像，无需实地勘察即可建模屋顶、遮挡和辐照（专利Irradiance Engine辐照引擎），模拟发电量并生成可报建（permit-ready）的光伏系统设计和财务方案。只需一个地址和一张电费单即可生成个性化、报建级精度的太阳能方案，覆盖销售、设计、融资、交付太阳能与储能的全生命周期，被广泛用于住宅和商业太阳能安装商，公司已达独角兽估值。
+parameters: 未公开
+architecture: computer vision + physics simulation
+training:
+  stages:
+  - name: pre-training
+    description: 基于LIDAR、航空与卫星影像训练计算机视觉模型，建模屋顶几何、障碍物和遮挡，结合物理仿真的辐照引擎（Irradiance Engine）模拟太阳辐照与发电量。
+  - name: fine-tuning
+    description: 针对不同屋顶类型、地区气象和报建规范微调设计与发电量预测模型，生成报建级精度的方案。
+tech_stack:
+  framework: Aurora Solar platform (Irradiance Engine)
+  techniques:
+  - Computer vision on aerial/satellite imagery
+  - LIDAR-based roof modeling
+  - Shading and irradiance simulation
+  - Energy production modeling
+  - Automated permit-ready design generation
+datasets:
+- name: Aerial & Satellite Imagery
+  description: 航空与卫星影像及LIDAR数据，用于建模屋顶几何、障碍物和遮挡
+  type: pre-training
+- name: Irradiance & Weather Data
+  description: 太阳辐照与气象数据，用于发电量模拟和方案设计
+  type: pre-training
+benchmarks:
+- name: Design Accuracy
+  score: permit-quality
+  metric: accuracy
+  comparison: 'vs 实地勘察: 无需到场即可生成报建级精度的光伏设计'
+  source: self-reported
+- name: Market Position
+  score: '#1'
+  metric: market_position
+  comparison: 自称全球第一的太阳能设计软件，达到独角兽估值
+  source: self-reported
+capabilities:
+- 用AI与计算机视觉远程创建高精度光伏系统设计
+- 专利辐照引擎建模遮挡、模拟太阳辐照与发电量
+- 只需地址和电费单生成个性化报建级方案
+- 即时3D太阳能估算提升销售转化
+- 覆盖太阳能与储能的销售/设计/融资/交付全生命周期
+access:
+- saas
+tags:
+- solar-energy
+- solar-design
+- computer-vision
+- renewable-energy
+- pv-simulation
+- energy-software
+references:
+- title: Aurora Solar Official Website
+  url: https://www.aurorasolar.com/

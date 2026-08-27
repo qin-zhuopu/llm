@@ -1,0 +1,73 @@
+name: Retrocausal Manufacturing Copilots
+name_en: Retrocausal Manufacturing Copilots
+company: Retrocausal
+domain: manufacturing
+status: released
+release_date: '2023'
+website: https://www.retrocausal.ai
+description: Retrocausal 为手工装配和制造运营构建 AI Copilot，用专利计算机视觉（人体动作识别、动作分割、步骤检测）和机器学习赋能操作员、工业工程师和产线主管，提升手工过程的质量、生产力和可追溯性。产品含 AI 追踪作业指导书与 Poka Yoke、根因分析、AI 时间研究与产线平衡、人机工程评估，以及 LLM 驱动的 Kaizen Copilot 持续改进助手（3M 使用）。入选 2022 CB Insights Advanced Manufacturing 50 榜单，客户/合作含 3M、Siemens。
+parameters: 未公开
+architecture: Patented computer vision (human activity recognition) + LLM Kaizen Copilot
+training:
+  stages:
+  - name: pre-training
+    description: 在装配线视频上预训练计算机视觉模型，学习人体动作识别、动作分割和作业步骤检测
+  - name: fine-tuning
+    description: 针对具体装配工艺微调视觉模型，并用工艺数据对齐 LLM（Kaizen Copilot）做根因分析与持续改进建议
+tech_stack:
+  framework: PyTorch (专利计算机视觉)
+  inference: Edge cameras + cloud analytics
+  techniques:
+  - Human activity recognition (动作分割 / 步骤检测)
+  - Poka Yoke error-proofing
+  - AI time studies & line balancing
+  - LLM-powered Kaizen Copilot
+  - MES & smart tool integration
+datasets:
+- name: Assembly Line Video
+  description: 装配线操作员作业视频，用于人体动作识别、步骤检测和循环级视频可追溯
+  type: pre-training
+benchmarks:
+- name: First-Time Yield
+  score: +10%
+  metric: yield_improvement
+  comparison: 'vs 部署前: 一次通过良率提升 10%'
+  source: self-reported
+- name: Quality Issues
+  score: -60%
+  metric: quality_issue_reduction
+  comparison: 'vs 部署前: 质量问题减少 60%'
+  source: self-reported
+- name: Training Time
+  score: -44%
+  metric: training_time_reduction
+  comparison: 'vs 部署前: 培训时间减少 44%'
+  source: self-reported
+api:
+  available: true
+  documentation: https://www.retrocausal.ai
+  protocol: rest
+  pricing: SaaS 订阅 + 灵活用量定价（联系销售）
+  auth_method: 企业认证
+capabilities:
+- AI 追踪作业指导书与 Poka Yoke 防错
+- 基于计算机视觉的装配过程实时反馈与循环级视频可追溯
+- 根因分析与装配生产力/质量分析
+- AI 时间研究、自动产线平衡与标准作业
+- AI 人机工程评估与安全风险识别
+- LLM 驱动的 Kaizen Copilot 持续改进与根因分析
+access:
+- saas
+- private-deployment
+tags:
+- industrial-ai
+- machine-vision
+- assembly-copilot
+- human-activity-recognition
+- continuous-improvement
+- quality-inspection
+references:
+- title: Retrocausal Official Website
+  url: https://www.retrocausal.ai
+- title: Retrocausal AI Copilots for Manufacturing
+  url: https://www.retrocausal.ai

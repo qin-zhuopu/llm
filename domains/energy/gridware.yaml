@@ -1,0 +1,58 @@
+name: Gridware
+name_en: Gridware
+company: Gridware
+domain: energy
+status: released
+website: https://www.gridware.io/
+description: Gridware是用杆上传感和机器学习为电力配电网提供实时危险感知的电网智能公司。其传感器Gridscope安装在配电杆上，用板载传感加机器学习检测预示故障的细微变化（坠落树枝、受损导线、机械应力等），开创名为"主动电网响应（Active Grid Response）"的新技术类别，特征是即时检测、精确定位、详细识别，甚至在停电期间也能持续监测。核心是解决"危险感知延迟"——公用事业通常只有在危险已造成停电或野火之后才知晓。公司称已积累超过9000万现场小时，与公用事业共建更安全、响应式的电网。
+parameters: 未公开
+architecture: edge ML on pole-mounted sensors
+training:
+  stages:
+  - name: pre-training
+    description: 基于杆上传感器（Gridscope）采集的电气、物理和环境状况数据训练机器学习模型，学习坠落树枝、受损导线、机械应力等预示故障的传感特征。
+  - name: fine-tuning
+    description: 针对危险检测、精确定位、故障识别和停电期间监测等具体任务微调边缘机器学习模型。
+tech_stack:
+  framework: Gridware Active Grid Response platform
+  techniques:
+  - Pole-mounted edge sensing (Gridscope)
+  - Edge machine learning
+  - Real-time hazard detection and localization
+  - Fault identification
+  - Outage-period monitoring
+datasets:
+- name: Pole Sensor Data
+  description: 安装在配电杆上的传感器采集的电气、物理和环境状况实时数据，累计超过9000万现场小时
+  size: 90M+ field hours
+  type: pre-training
+benchmarks:
+- name: Field Hours Accumulated
+  score: 90M+
+  metric: field_hours
+  comparison: 累计超过9000万现场小时用于检测预示故障的细微变化
+  source: self-reported
+- name: Hazard Awareness Delay Reduction
+  score: 即时检测
+  metric: detection_latency
+  comparison: 'vs 被动响应(事后知晓): 从危险造成停电后才知晓转为即时检测与精确定位'
+  source: self-reported
+capabilities:
+- 杆上传感器实时检测坠落树枝、受损导线等电网危险
+- 主动电网响应：即时检测、精确定位、详细识别
+- 停电期间持续监测电网状况
+- 帮助抢修队伍精准定位并快速安全恢复供电
+- 在危险造成野火/停电前预防事故并延长资产寿命
+access:
+- saas
+- private-deployment
+tags:
+- grid-safety
+- wildfire-prevention
+- edge-ai
+- hazard-detection
+- distribution-grid
+- utility-monitoring
+references:
+- title: Gridware Official Website
+  url: https://www.gridware.io/

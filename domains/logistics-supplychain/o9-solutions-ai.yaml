@@ -1,0 +1,61 @@
+name: o9 Digital Brain
+name_en: o9 Solutions Digital Brain
+company: o9 Solutions
+domain: logistics-supplychain
+status: released
+release_date: '2023'
+website: https://o9solutions.com
+description: o9 Solutions 的 Digital Brain 是 AI 驱动的企业级规划与执行平台，覆盖 30+ 行业，将财务、营销、销售与供应链连成统一的敏捷规划与执行模型，实现端到端实时可视、更准确预测、快速情景分析与无接触执行。其核心差异化是企业知识图谱驱动的 AI（Enterprise Knowledge Graph–powered AI），新一代平台由神经符号 AI（Neuro-Symbolic AI）支撑，并推出自学习的 APEX 运营模式创新以识别价值泄漏。
+parameters: 未公开
+architecture: neuro-symbolic AI over enterprise knowledge graph
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于企业知识图谱与跨价值链规划/执行数据，结合神经符号 AI 训练供应链需求预测与决策能力
+tech_stack:
+  techniques:
+  - Enterprise Knowledge Graph
+  - Neuro-Symbolic AI
+  - Demand forecasting
+  - Scenario planning & simulation
+  - Self-learning plan-vs-execution variance analysis (APEX)
+  - Integrated Business Planning (IBP)
+datasets:
+- name: Enterprise Knowledge Graph
+  description: 将碎片化企业数据与团队隐性知识数字化，连接财务、营销、销售与供应链的知识图谱
+  type: pre-training
+benchmarks:
+- name: Annual Value Cases
+  score: $100M+
+  metric: annual_value
+  comparison: 多个客户案例年度价值超 $100M，部分转型价值超 $1B
+  source: self-reported
+- name: Gartner Magic Quadrant 2026
+  score: Leader
+  metric: analyst_rating
+  comparison: 在 2026 Gartner Magic Quadrant 多份报告中被评为 Leader
+  source: third-party
+api:
+  available: true
+  protocol: rest
+  pricing: 联系销售
+  auth_method: 企业认证
+capabilities:
+- 集成业务规划（IBP）连接财务、营销、销售与供应链
+- 端到端实时可视与更准确的需求预测
+- 快速情景分析与同步决策
+- 无接触执行（touchless execution）
+- 企业知识图谱驱动的供应链推理
+- APEX 自学习分析计划与执行偏差、识别价值泄漏
+access:
+- saas
+tags:
+- supply-chain
+- demand-forecasting
+- enterprise-planning
+- knowledge-graph
+- neuro-symbolic-ai
+- integrated-business-planning
+references:
+- title: o9 Solutions 官网
+  url: https://o9solutions.com
