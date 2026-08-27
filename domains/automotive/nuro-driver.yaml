@@ -1,0 +1,64 @@
+name: Nuro Driver
+company: Nuro
+domain: automotive
+status: released
+website: https://www.nuro.ai
+description: Nuro Driver™ 是 Nuro 打造的「AI-first」L4 级自动驾驶系统，一个车辆无关 (vehicle-agnostic)
+  的通用自主平台，由车载软件与硬件组成，可授权给车企与出行平台用于 Robotaxi、商用车队与个人车辆。自 2020 年起在美国三个州无人化部署，累计超
+  200 万自动驾驶英里、零责任事故。采用冗余系统与并行备份自动驾驶栈保障安全，并配套 Nuro Toolkit 开发者工具与远程协助 SDK。
+parameters: 未公开
+architecture: AI-first L4 autonomy stack
+training:
+  stages:
+  - name: pre-training
+    description: 基于自 2020 年起在美国多州积累的大规模真实无人化路测数据训练 AI 驾驶系统
+  - name: fine-tuning
+    description: 面向不同车辆平台适配（vehicle-agnostic），配合冗余系统与并行备份自动驾驶栈进行安全验证
+tech_stack:
+  techniques:
+  - AI-first autonomy
+  - redundant systems
+  - parallel autonomy stack (backup)
+  - vehicle-agnostic platform
+  - scalable HD mapping
+datasets:
+- name: Nuro driverless deployment logs
+  description: 自 2020 年起在美国三个州无人化部署积累的真实道路驾驶数据，累计超 200 万自动驾驶英里
+  type: pre-training
+benchmarks:
+- name: Autonomous miles without at-fault incident
+  score: 2M+ miles, zero at-fault
+  metric: safety record
+  comparison: 5 年以上无人化部署，累计超 200 万自动驾驶英里且零责任事故
+  source: self-reported
+- name: Multi-state driverless deployment
+  score: 3 US states since 2020
+  metric: deployment coverage
+  comparison: 全球少数在真实道路上运行的无人驾驶技术之一
+  source: self-reported
+capabilities:
+- L4 级无人驾驶（所有道路、所有出行方式）
+- 车辆无关 (vehicle-agnostic) 的通用自主平台，可适配多种车型
+- 冗余安全系统与并行备份自动驾驶栈
+- 可扩展 HD 地图
+- 面向车企/出行平台的技术授权 (Nuro Driver + Nuro Toolkit)
+- 远程协助与自主性开发者工具
+api:
+  available: false
+  pricing: 面向车企与出行平台授权 (license Nuro Driver + Nuro Toolkit)
+access:
+- private-deployment
+- internal-only
+tags:
+- autonomous-driving
+- l4-autonomy
+- robotaxi
+- universal-autonomy-platform
+- vehicle-agnostic
+- ai-first
+- licensing
+references:
+- title: Nuro Official Website
+  url: https://www.nuro.ai
+- title: Nuro Technology
+  url: https://www.nuro.ai/technology

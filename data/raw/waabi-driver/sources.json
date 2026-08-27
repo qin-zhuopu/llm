@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "official-website.md",
+      "url": "https://waabi.ai/",
+      "fetched_at": "2026-08-27",
+      "type": "official-website"
+    },
+    {
+      "filename": "generalization-blog.md",
+      "url": "https://waabi.ai/waabi-crosses-the-next-frontier-of-generalization-unlocking-truly-scalable-avs/",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
+    },
+    {
+      "filename": "series-c-funding.md",
+      "url": "https://waabi.ai/waabi-secures-1-billion-in-new-funding-to-lead-physical-ai-revolution/",
+      "fetched_at": "2026-08-27",
+      "type": "news"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+name: Helm.ai Foundation Models (Deep Teaching)
+name_en: Helm.ai Foundation Models
+company: Helm.ai
+domain: automotive
+status: released
+website: https://helm.ai
+description: Helm.ai 面向 ADAS 到 L4 自动驾驶的 AI 基础模型体系，核心为专有的无监督学习方法 Deep Teaching™，可在海量未标注真实驾驶数据上训练大规模基础模型，突破传统自动驾驶的「数据墙」。采用
+  Factored Embodied AI（感知与策略解耦）架构，配合 Semantic Simulation 在语义空间训练规划器，实现全球泛化、边缘场景处理和可解释性；同一套软件架构从
+  L2+ 扩展到 L3/L4。已与本田、大众等全球车企合作量产。
+parameters: 未公开
+architecture: DNN-based foundation models (Factored Embodied AI)
+training:
+  stages:
+  - name: pre-training
+    description: Deep Teaching™ 无监督学习，在海量原始未标注真实驾驶视频上训练大规模感知基础模型 (Helm.ai Vision)，掌握世界几何结构与物理规律
+  - name: fine-tuning
+    description: 微调以高效解决罕见与复杂的边缘场景 (corner cases)，并适配新地域与未见驾驶条件
+tech_stack:
+  techniques:
+  - Deep Teaching (unsupervised learning)
+  - Factored Embodied AI (perception-policy decoupling)
+  - Semantic Simulation
+  - generative AI DNN architectures
+  - generative flywheel (corner case dreaming)
+  - world model (intent prediction)
+  - large-scale auto-labeling
+datasets:
+- name: Large-scale raw real-world driving video
+  description: 海量原始、未标注的真实驾驶视频数据，用于 Deep Teaching 无监督训练基础模型
+  type: pre-training
+- name: Semantic Simulation scenarios
+  description: 在语义空间生成的无限仿真场景，用于低数据量下训练驾驶策略规划器，规避 sim-to-real 差距
+  type: sft
+benchmarks:
+- name: Production deployment (OEM partners)
+  score: Honda / Volkswagen production-bound projects
+  metric: commercial deployment
+  comparison: 与本田、大众等全球车企合作量产级项目
+  source: self-reported
+- name: Data efficiency
+  score: orders-of-magnitude less data
+  metric: training data efficiency
+  comparison: 相较传统监督式自动驾驶方案所需数据量降低数个数量级
+  source: self-reported
+capabilities:
+- 城市与高速领航辅助驾驶 (urban and highway pilot)
+- 罕见边缘场景 (corner case) 识别与处理
+- 自动适配新地域与未见驾驶条件的全球泛化
+- 感知与策略解耦的可解释故障定位（满足安全认证）
+- 世界模型预测其他交通参与者意图（ghost trails）
+- 生成式飞轮自生成罕见场景实现自我改进
+- 从 L2+ 到 L3/L4 统一软件架构扩展
+tags:
+- autonomous-driving
+- foundation-model
+- unsupervised-learning
+- deep-teaching
+- world-model
+- adas
+- generative-ai
+- corner-case
+access:
+- private-deployment
+references:
+- title: Helm.ai Official Website
+  url: https://helm.ai
+- title: 'Helm.ai Technology: DNN and Generative AI Innovations for L2 to L4'
+  url: https://helm.ai/technology

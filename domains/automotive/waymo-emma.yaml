@@ -1,0 +1,71 @@
+name: Waymo EMMA
+name_en: EMMA (End-to-End Multimodal Model for Autonomous Driving)
+company: Waymo
+domain: automotive
+status: research
+release_date: 2024-10
+website: https://waymo.com/blog/2024/10/introducing-emma
+description: EMMA (End-to-End Multimodal Model for Autonomous Driving) 是 Waymo 基于
+  Google 多模态大模型 Gemini 微调的端到端自动驾驶研究模型。它以统一的端到端模型直接从摄像头传感器数据生成未来轨迹，把导航指令、自车状态等非传感器输入以及轨迹、3D
+  位置等输出全部表示为自然语言文本，在统一语言空间中联合处理多种驾驶任务。借助链式思维 (chain-of-thought) 推理，端到端规划性能提升 6.7%，并提供可解释的决策理由。
+parameters: 未公开
+architecture: end-to-end multimodal model (VLM-based, built on Gemini)
+base_model: Gemini
+training:
+  stages:
+  - name: fine-tuning
+    description: 基于预训练多模态大模型 Gemini 针对自动驾驶任务进行端到端微调，联合训练规划轨迹预测、3D 目标检测与道路图理解，实现正向任务迁移
+tech_stack:
+  techniques:
+  - end-to-end learning
+  - unified language space
+  - chain-of-thought reasoning
+  - multimodal large language model
+  - multi-task co-training
+datasets:
+- name: nuScenes
+  description: 公开自动驾驶数据集，用于运动规划评测
+  type: evaluation
+- name: Waymo Open Motion Dataset (WOMD)
+  description: Waymo 公开运动数据集，用于运动规划评测
+  type: evaluation
+- name: Waymo Open Dataset (WOD)
+  description: Waymo 公开数据集，用于以摄像头为主的 3D 目标检测评测
+  type: evaluation
+benchmarks:
+- name: nuScenes motion planning
+  score: state-of-the-art
+  metric: planning
+  comparison: 在 nuScenes 运动规划上达到 SOTA
+  source: paper
+- name: Chain-of-thought planning improvement
+  score: '+6.7%'
+  metric: end-to-end planning
+  comparison: 链式思维推理使端到端规划性能提升 6.7%，并提供可解释决策理由
+  source: paper
+- name: Waymo Open Dataset 3D detection
+  score: competitive
+  metric: camera-primary 3D detection
+  comparison: 在 WOD 上以摄像头为主的 3D 目标检测取得有竞争力结果
+  source: paper
+capabilities:
+- 从原始摄像头输入端到端生成规划轨迹
+- 统一语言空间联合处理规划、检测、道路图理解等多任务
+- 链式思维推理提升规划并提供可解释理由
+- 相机为主的 3D 目标检测与道路图估计
+- 借助 Gemini 世界知识理解复杂驾驶场景
+tags:
+- autonomous-driving
+- end-to-end
+- multimodal
+- vision-language-model
+- chain-of-thought
+- research
+- gemini
+access:
+- internal-only
+references:
+- title: 'Introducing Waymo EMMA: End-to-End Multimodal Model for Autonomous Driving'
+  url: https://waymo.com/blog/2024/10/introducing-emma
+- title: 'EMMA: End-to-End Multimodal Model for Autonomous Driving (arXiv)'
+  url: https://arxiv.org/abs/2410.23262

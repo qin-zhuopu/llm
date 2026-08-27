@@ -1,0 +1,68 @@
+name: WeRide One / WRD 3.0
+name_en: WeRide One
+company: 文远知行 (WeRide)
+domain: automotive
+status: released
+website: https://www.weride.ai
+description: 文远知行 (WeRide, NASDAQ:WRD, HKEX:0800) 的统一自动驾驶技术平台 WeRide One 及其一段式端到端量产
+  ADAS WRD 3.0。WeRide One 具备高通用性、可扩展性与高效数据飞轮，支持基于同一平台开发部署 Robotaxi、Robobus、Robovan、Robosweeper
+  等 5 类核心产品。WRD 3.0 为车规级、可量产、支持无图导航的一段式端到端方案，行泊一体，领航辅助可用率超 95%，已量产搭载于奇瑞星纪元与广汽
+  AION 车型。
+parameters: 未公开
+architecture: one-stage end-to-end (WRD 3.0) + unified autonomy platform (WeRide One)
+training:
+  stages:
+  - name: pre-training
+    description: 基于 WeRide One 平台在 13 国 60+ 城市采集的大规模多产品真实路测数据训练端到端驾驶模型，数据飞轮驱动
+  - name: fine-tuning
+    description: 面向 Robotaxi/Robobus/Robovan/Robosweeper 及量产 ADAS 车型（无图、行泊一体）分别适配
+tech_stack:
+  techniques:
+  - one-stage end-to-end
+  - mapless navigation
+  - integrated driving and parking (行泊一体)
+  - autonomous driving cloud
+  - data flywheel
+  - 360-degree obstacle avoidance
+datasets:
+- name: WeRide One platform driving data
+  description: 覆盖 13 个国家 60+ 城市、5 类自动驾驶产品的多场景真实路测数据，通过数据飞轮持续反馈
+  type: pre-training
+benchmarks:
+- name: Navigation-assisted driving availability
+  score: 95%+
+  metric: availability
+  comparison: WRD 3.0 领航辅助驾驶可用率超 95%
+  source: self-reported
+- name: Global fleet & operation
+  score: 3000+ fleet, ~6 years
+  metric: deployment scale
+  comparison: 全球车队规模 3000+，公开运营近 6 年，覆盖 13 国 60+ 城市
+  source: self-reported
+- name: Mass production deployment
+  score: Chery Exeed Sterra ES/ET, GAC AION N60
+  metric: production models
+  comparison: WRD 3.0 已量产搭载于奇瑞星纪元 ES/ET 与广汽 AION N60 车型
+  source: self-reported
+capabilities:
+- L4 级 Robotaxi/Robobus/Robovan/Robosweeper 多产品线自动驾驶
+- 一段式端到端量产 ADAS（无图导航、行泊一体）
+- 城市与高速领航辅助驾驶
+- 360° 避障与灵活变道、防御性驾驶
+- 自动驾驶云支撑的车云协同
+- 数据飞轮驱动的持续迭代与快速部署
+tags:
+- autonomous-driving
+- end-to-end
+- l4-autonomy
+- robotaxi
+- adas
+- mapless
+- china
+- data-flywheel
+access:
+- internal-only
+- private-deployment
+references:
+- title: WeRide Official Website
+  url: https://www.weride.ai

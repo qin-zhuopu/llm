@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "filename": "emma-blog.md",
+      "url": "https://waymo.com/blog/2024/10/introducing-emma",
+      "fetched_at": "2026-08-27",
+      "type": "blog"
+    },
+    {
+      "filename": "arxiv-abstract.txt",
+      "url": "https://arxiv.org/abs/2410.23262",
+      "fetched_at": "2026-08-27",
+      "type": "arxiv"
+    }
+  ]
+}
