@@ -3,8 +3,14 @@
     {
       "filename": "official-website.md",
       "url": "https://climate.com/",
-      "fetched_at": "2026-08-27",
+      "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "wikipedia-climate-corp-history.md",
+      "url": "https://en.wikipedia.org/wiki/The_Climate_Corporation",
+      "fetched_at": "2026-08-30",
+      "type": "news"
     }
   ]
 }

@@ -52,6 +52,15 @@ tags:
 - variable-rate
 - bayer
 - corn-soybean
+business:
+  latest_round: 被 Monsanto 收购 (2013), 现为 Bayer 子公司
+  valuation: ~$1.1B (2013 Monsanto 收购价)
+  customers: 玉米/大豆种植者；60+ 合作伙伴生态
+  investors:
+  - Monsanto
+  - Bayer
 references:
 - title: Climate FieldView Official Website
   url: https://climate.com/
+- title: The Climate Corporation — Wikipedia (公司/并购历史，聚合 TechCrunch/Reuters/WSJ 报道)
+  url: https://en.wikipedia.org/wiki/The_Climate_Corporation
