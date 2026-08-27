@@ -1,0 +1,75 @@
+name: Abnormal AI
+name_en: Abnormal AI
+company: Abnormal AI (Abnormal Security)
+domain: aerospace-defense
+status: released
+website: https://www.abnormalsecurity.com
+description: 行为AI(Behavioral AI)邮件安全平台，通过学习正常行为基线检测异常，捕获传统安全邮件网关(SEG)漏掉的攻击(无签名新型攻击、BEC/冒充等)。截至2026年5月的12个月内每月每1000邮箱检测超1200次绕过SEG的攻击，被Forrester Wave邮件安全Q2 2025评为领导者(Strategy最高分)。内部基准显示其专用行为检测系统在检测率、成本、速度上优于Claude Opus 4.8、GPT-5 Mini、Gemini 3.5 Flash等7个通用大模型的单次邮件分类。
+parameters: 未公开
+architecture: Behavioral detection model (行为检测专用模型)
+training:
+  stages:
+  - name: pre-training
+    description: 在大规模邮件行为数据上学习正常用户/组织行为基线，建立行为画像
+  - name: fine-tuning
+    description: 针对攻击检测(BEC、冒充、凭证钓鱼)优化，学习偏离基线的异常模式
+  - name: rlaif
+    description: 基于真实攻击标注和误报反馈持续优化检测精度
+tech_stack:
+  framework: 行为检测专用AI
+  inference: API部署(分钟级集成)
+  techniques:
+  - Behavioral baseline modeling
+  - Anomaly detection
+  - BEC/impersonation detection
+  - Automated report triage
+  - Real attack data feedback loop
+datasets:
+- name: Email Behavior Data
+  description: 跨客户的邮件行为数据，用于建立正常行为基线和异常检测
+  type: pre-training
+- name: Confirmed Attack Corpus
+  description: 确认的攻击样本(BEC、钓鱼、冒充等)，作为检测训练和评估数据
+  type: sft
+benchmarks:
+- name: SEG Bypass Detection
+  score: ">1,200 attacks/1000 mailboxes/month"
+  metric: attacks_detected
+  comparison: "捕获绕过传统安全邮件网关的攻击(12个月均值)"
+  source: self-reported
+- name: Forrester Wave Email Security Q2 2025
+  score: "Leader"
+  metric: analyst_rating
+  comparison: "Strategy类别最高分，Vision/Innovation/Roadmap满分"
+  source: third-party
+- name: vs General LLMs (Detection)
+  score: "优于通用模型"
+  metric: detection_rate
+  comparison: "vs Claude Opus 4.8/GPT-5 Mini/Gemini 3.5 Flash等7个通用模型: 专用行为检测在检测率/成本/速度上更优"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅(联系销售)
+  auth_method: 企业认证/API集成
+capabilities:
+- 行为AI检测绕过传统SEG的复杂邮件攻击
+- BEC(商业邮件欺诈)与冒充攻击检测
+- 凭证钓鱼与账户接管防护
+- 自动化用户举报三级分类
+- API分钟级集成Google Workspace/Microsoft 365
+access:
+- api
+- saas
+tags:
+- cybersecurity
+- email-security
+- behavioral-ai
+- anomaly-detection
+- threat-detection
+- bec-protection
+references:
+- title: Abnormal AI Official Website
+  url: https://www.abnormalsecurity.com
+- title: Forrester Wave Email Security Q2 2025 (Leader)
+  url: https://www.abnormalsecurity.com

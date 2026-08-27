@@ -1,0 +1,71 @@
+name: Eilla
+name_en: Eilla
+company: Eilla
+domain: finance
+status: released
+website: https://www.eilla.ai
+description: AI-native的中小企业(SMB)M&A顾问，结合顶级M&A顾问和AI为中小企业交付更快、更高价值的并购/退出。团队曾为全球顶级M&A公司构建AI，发现中小企业市场因费用无法支撑大团队而被服务不足，遂用AI打破约束。核心技术包括AI筛选8M+公司做买家识别(评分收购历史/协同/财务能力)、数天生成bulge-bracket级材料(equity story/teaser/CIM)、以及直接来自买家的专有意向数据。团队记录$100bn+交易额、50+跨境交易、18+年经验。
+parameters: 未公开
+architecture: M&A workflow agents + buyer matching AI (M&A工作流Agent + 买家匹配AI)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在M&A交易数据、公司财务和收购历史上训练，学习买家匹配评分和并购材料生成
+  - name: post-training
+    description: 针对M&A流程(买家识别/材料生成/尽调)优化，对齐bulge-bracket机构标准
+tech_stack:
+  framework: M&A工作流Agent + 买家匹配AI
+  inference: 云端部署
+  techniques:
+  - Buyer identification at scale (8M+ 公司筛选)
+  - Acquisition history & synergy scoring
+  - Institutional material generation (CIM/teaser)
+  - Proprietary buyer intent data
+datasets:
+- name: Company & M&A Database
+  description: 8M+公司数据(收购历史、协同效应、财务能力)，用于买家识别评分
+  size: 8M+ companies
+  type: sft
+- name: Buyer Intent Data
+  description: 直接来自买家的专有意向数据，知道谁在找什么样的收购
+  type: other
+benchmarks:
+- name: Buyer Screening Scale
+  score: "8M+ companies"
+  metric: buyer_universe
+  comparison: "vs 传统顾问受限于认识的买家: AI筛选800万+公司浮现最佳买家"
+  source: self-reported
+- name: Material Generation Speed
+  score: "数天(vs 数月)"
+  metric: material_turnaround
+  comparison: "vs 传统流程: bulge-bracket级材料从数月缩短到数天"
+  source: self-reported
+- name: Team Track Record
+  score: "$100bn+"
+  metric: transaction_value
+  comparison: "团队执行交易额超1000亿美元，50+跨境交易"
+  source: self-reported
+api:
+  available: false
+  pricing: M&A顾问服务(成功费/合同)
+  auth_method: N/A
+capabilities:
+- AI买家识别，筛选8M+公司评分最佳收购方
+- 数天生成bulge-bracket级并购材料(equity story/teaser/CIM)
+- 基于买家专有意向数据的精准匹配
+- 中小企业M&A/退出的端到端顾问服务
+- 高质量尽职调查支持
+access:
+- saas
+tags:
+- financial-ai
+- mergers-acquisitions
+- deal-advisory
+- buyer-matching
+- smb
+- workflow-automation
+references:
+- title: Eilla Official Website
+  url: https://www.eilla.ai
+- title: Eilla Technology
+  url: https://www.eilla.ai

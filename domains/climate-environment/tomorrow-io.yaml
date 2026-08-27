@@ -1,0 +1,70 @@
+name: Tomorrow.io (Global AI FOCUS Model)
+name_en: Tomorrow.io
+company: Tomorrow.io
+domain: climate-environment
+status: released
+website: https://www.tomorrow.io
+description: 空间驱动的AI气象韧性平台，运营首个商业气象传感卫星星座提供云穿透数据。核心Global AI FOCUS Model基于机器学习基础设施和专有卫星数据，实现任意位置每15分钟超本地预报、3x更好传感精度。提供分行业Agentic Suites(Shield保险/Forge制造/Altitude航空/Gridline电网/FleetIQ车队等)，将天气数据转为运营决策。客户包括Lufthansa、NASCAR，覆盖保险、制造、航空、电网、物流等下游行业。
+parameters: 未公开
+architecture: ML weather model + satellite constellation (机器学习气象模型 + 卫星星座)
+training:
+  stages:
+  - name: pre-training
+    description: 基于专有卫星星座数据和全球气象数据训练机器学习预报模型(FOCUS)，学习大气动力学
+  - name: fine-tuning
+    description: 针对分行业场景(保险灾害、航空延误、电网停电、车队路线)优化预报和决策agent
+tech_stack:
+  framework: 机器学习气象预报基础设施
+  inference: 卫星数据实时融合 + 云端推理
+  techniques:
+  - ML weather forecasting (FOCUS model)
+  - Proprietary satellite constellation
+  - Satellite + global data fusion
+  - Hyperlocal 15-min forecasts
+  - Industry-specific agentic suites
+datasets:
+- name: Proprietary Satellite Constellation Data
+  description: 首个商业气象传感卫星星座的云穿透观测数据，核心壁垒(物理世界数据闭环)
+  type: pre-training
+- name: Global Weather Data
+  description: 全球气象观测数据，与卫星数据融合用于自适应建模
+  type: pre-training
+benchmarks:
+- name: Sensing Accuracy
+  score: "3x"
+  metric: sensing_accuracy_improvement
+  comparison: "vs 传统传感: 3x更好传感精度，20-30%更精确读数"
+  source: self-reported
+- name: Forecast Resolution
+  score: "15-min hyperlocal"
+  metric: forecast_resolution
+  comparison: "vs 遗留系统: 任意位置每15分钟超本地预报"
+  source: self-reported
+api:
+  available: true
+  documentation: https://api.tomorrow.io
+  protocol: rest
+  pricing: 免费API层 + 企业订阅
+  auth_method: API Key
+capabilities:
+- 空间数据驱动的全球超本地天气预报(15分钟粒度)
+- 保险灾害损失预测与理赔验证(Shield Agent)
+- 制造业天气影响与生产中断预防(Forge Agent)
+- 航空跑道条件与航班延误预测(Altitude/GroundControl)
+- 电网停电预测与车队/物流路线优化
+- LLM-ready 天气API(60+气象层，支持自然语言)
+access:
+- api
+- saas
+tags:
+- weather-intelligence
+- climate-ai
+- satellite-data
+- insurance-ai
+- supply-chain
+- agentic-suite
+references:
+- title: Tomorrow.io Official Website
+  url: https://www.tomorrow.io
+- title: Tomorrow.io Weather API
+  url: https://api.tomorrow.io

@@ -1,0 +1,70 @@
+name: Paradox (Olivia)
+name_en: Paradox
+company: Paradox
+domain: human-resources
+status: released
+website: https://www.paradox.ai
+description: 对话式招聘软件，核心AI助手Olivia自动化招聘全流程(职位申请、申请人筛选、面试排期、视频面试、生成offer、入职等)。提供Conversational ATS、Candidate Experience Agent、对话式职业网站等，深度集成Workday和SAP SuccessFactors。尤其擅长大规模蓝领/零售/连锁招聘：Compass Group用20人团队一年招12万工人，7-Eleven每周省4万小时，Flynn Group自动化90%招聘流程，客户实现58%申请时间降低、54%单次招聘成本降低。
+parameters: 未公开
+architecture: Conversational AI recruiting assistant (对话式招聘助手)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在招聘对话数据上训练，学习候选人筛选、面试排期、offer生成等招聘工作流的对话交互
+  - name: rlhf
+    description: 基于招聘转化率和候选人体验反馈优化对话质量
+tech_stack:
+  framework: 对话式AI + ATS集成
+  inference: 多渠道(chat/text)云端部署
+  techniques:
+  - Conversational AI (Olivia)
+  - Applicant screening automation
+  - Interview scheduling
+  - ATS integration (Workday/SAP SuccessFactors)
+  - Multilingual/multichannel support
+datasets:
+- name: Recruiting Conversation Data
+  description: 招聘全流程对话数据(筛选、排期、面试、offer)，用于训练招聘助手
+  type: sft
+benchmarks:
+- name: Hiring Scale (Compass Group)
+  score: "120,000 hires/year with 20 recruiters"
+  metric: hiring_throughput
+  comparison: "20人招聘团队一年招12万工人"
+  source: self-reported
+- name: Time Savings (7-Eleven)
+  score: "40,000 hours/week"
+  metric: time_savings
+  comparison: "7-Eleven每周为门店节省4万小时"
+  source: self-reported
+- name: Cost & Efficiency
+  score: "54%↓成本, 58%↓申请时间"
+  metric: cost_reduction
+  comparison: "vs 传统招聘: 单次招聘成本降54%，申请时间降58%，$2MM年节省"
+  source: self-reported
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅(按规模)
+  auth_method: 企业认证
+capabilities:
+- 对话式AI助手(Olivia)自动化招聘全流程
+- 申请人筛选与资质验证(chat/text)
+- 面试排期与视频面试协调
+- offer生成与新员工入职自动化
+- 招聘活动与内推管理
+- 集成Workday/SAP SuccessFactors等现有ATS
+access:
+- saas
+tags:
+- human-resources
+- recruiting-ai
+- conversational-ai
+- ats
+- hiring-automation
+- talent-acquisition
+references:
+- title: Paradox Official Website
+  url: https://www.paradox.ai
+- title: Paradox Olivia AI Assistant
+  url: https://www.paradox.ai

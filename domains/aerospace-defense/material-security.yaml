@@ -1,0 +1,66 @@
+name: Material Security
+name_en: Material Security
+company: Material Security
+domain: aerospace-defense
+status: released
+website: https://www.materialsecurity.com
+description: 面向Google Workspace和Microsoft 365的工作区安全平台，主张"工作区安全是AI安全的基石"。覆盖邮件入侵、账户接管、数据渗出、横向移动的完整攻击链，通过单一平台阻止邮件攻击、控制第三方app和AI agent的OAuth访问、保护Drive敏感数据(PHI/PII)。特色产品OAuth Remediation Agent提供AI agent访问的实时活动日志和即时撤销。API分钟级部署，客户包括Gusto、Amplitude等。
+parameters: 未公开
+architecture: API-based workspace security platform (基于API的工作区安全平台)
+training:
+  stages:
+  - name: pre-training
+    description: 在工作区行为数据(邮件、身份、文件、app访问)上学习正常模式
+  - name: fine-tuning
+    description: 针对攻击链各环节(钓鱼、账户接管、数据渗出、OAuth滥用)优化检测和修复
+tech_stack:
+  framework: API-based 安全平台
+  inference: 云端API部署(分钟级集成)
+  techniques:
+  - Behavioral email detection
+  - OAuth grant remediation (AI agent 访问控制)
+  - Sensitive data discovery (PHI/PII)
+  - Account takeover containment
+  - Message-level access control
+datasets:
+- name: Workspace Behavior & Attack Data
+  description: 工作区邮件/身份/文件/app访问行为数据和攻击样本，用于检测建模
+  type: pre-training
+benchmarks:
+- name: Phishing Detection Coverage
+  score: "捕获SEG漏掉的攻击"
+  metric: detection_coverage
+  comparison: "vs Google/Microsoft/传统SEG: 捕获原生和传统方案漏掉的复杂攻击"
+  source: self-reported
+- name: Triage Speed
+  score: "分钟级(vs 数天)"
+  metric: triage_time
+  comparison: "vs 人工: 问题分类从数天缩短到分钟甚至秒级(客户证言)"
+  source: self-reported
+api:
+  available: true
+  protocol: rest
+  pricing: 企业订阅(联系销售)
+  auth_method: API集成(Google Workspace/M365)
+capabilities:
+- 入站邮件安全，捕获传统方案漏掉的攻击
+- OAuth访问控制，管理第三方app和AI agent权限
+- 敏感数据发现与保护(Drive中的PHI/PII)
+- 账户接管遏制与消息级访问控制
+- 工作区配置与身份安全态势管理
+- API分钟级部署，无需复杂实施
+access:
+- api
+- saas
+tags:
+- cybersecurity
+- workspace-security
+- email-security
+- oauth-security
+- data-protection
+- ai-agent-security
+references:
+- title: Material Security Official Website
+  url: https://www.materialsecurity.com
+- title: Material Platform
+  url: https://www.materialsecurity.com
