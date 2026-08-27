@@ -44,6 +44,11 @@ capabilities:
 - agri-experts 专家社区在线答疑
 - 特定作物病害信息与预防方法知识库
 - 面向小农户的多语言移动端交付
+business:
+  latest_round: 被 Helm AG 收购 (2023)
+  customers: 印度/巴西/印尼等新兴市场小农户；累计回答超 1 亿作物问题
+  investors:
+  - Helm AG
 access:
 - saas
 tags:
