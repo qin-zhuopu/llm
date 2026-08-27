@@ -33,3 +33,18 @@ Nuro Driver™ 是 Nuro 打造的「AI-first」自动驾驶系统，是一个通
 - 冗余安全系统与并行备份自动驾驶栈
 - 可扩展 HD 地图
 - 面向车企/出行平台的技术授权
+
+---
+
+> 补充来源: [Nuro — Wikipedia (融资与公司历史，聚合 Reuters/TechCrunch/Forbes 报道)](https://en.wikipedia.org/wiki/Nuro)
+> 抓取时间: 2026-08-30
+
+## 融资与商业化补充
+
+- 2019-02：SoftBank 领投 9.4 亿美元，估值 27 亿美元。
+- 2020-11：T. Rowe Price 领投 5 亿美元 Series C，投后估值 50 亿美元。
+- 2025-04：开启 1.06 亿美元 Series E；2025-08 追加 9700 万美元收官。
+- 2025-08：Uber、Nvidia 及回投方参与后期轮，融资 2.03 亿美元，估值 60 亿美元。
+- 累计融资超 20 亿美元；主要投资方：Greylock Partners、Gaorong Capital、SoftBank Group、T. Rowe Price、Uber、Nvidia。
+- 2025 年约 700 名员工。
+- 2025-07：Nuro × Uber × Lucid 合作，Uber 采购并运营搭载 Nuro Driver 的 Lucid Gravity SUV，计划六年内部署 ≥20,000 辆 Robotaxi，首车 2026 年上路。

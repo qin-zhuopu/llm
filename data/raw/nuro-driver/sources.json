@@ -7,10 +7,16 @@
       "type": "official-website"
     },
     {
-      "filename": "technology.md",
+      "filename": "official-technology.md",
       "url": "https://www.nuro.ai/technology",
       "fetched_at": "2026-08-27",
       "type": "official-website"
+    },
+    {
+      "filename": "wikipedia-funding-history.md",
+      "url": "https://en.wikipedia.org/wiki/Nuro",
+      "fetched_at": "2026-08-30",
+      "type": "news"
     }
   ]
 }

@@ -1,10 +1,22 @@
 {
   "files": [
     {
-      "filename": "opencatalystproject-org-1.md",
+      "filename": "official-website.md",
       "url": "https://opencatalystproject.org/",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "arxiv-oc20.txt",
+      "url": "https://arxiv.org/abs/2010.09990",
+      "fetched_at": "2026-08-30",
+      "type": "arxiv"
+    },
+    {
+      "filename": "github-reference.md",
+      "url": "https://github.com/Open-Catalyst-Project/ocp",
+      "fetched_at": "2026-08-30",
+      "type": "github"
     }
   ]
 }

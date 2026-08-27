@@ -27,3 +27,17 @@ Symbotic 以"Reinvent the Warehouse, Reimagine the Supply Chain"为口号，提�
 ## 公司
 
 由 Rick Cohen 创立，总部位于马萨诸塞州 Wilmington；累计投入超 $10 亿 R&D，在 15+ 国家拥有 1,050+ 项已授权或在申专利。已上市（NASDAQ: SYM），主要客户/合作方包括 Walmart 及与 SoftBank 的合资公司 GreenBox。技术面向托盘化货物、小批量履约与全渠道运营。
+
+---
+
+> 补充来源: [Symbotic — Wikipedia (公司/上市历史，聚合 WSJ/TechCrunch/Forbes 报道)](https://en.wikipedia.org/wiki/Symbotic)
+> 抓取时间: 2026-08-30
+
+## 公司与上市补充
+
+- 2007 年以 CasePick Systems 成立，2012 年更名 Symbotic。
+- 2014 年 Target 采用其技术；2017 年起服务 Walmart（Brooksville, FL）与 Albertsons。
+- 2021-07：Walmart 将 Symbotic 机器人推广至另外 25 个区域配送中心。
+- 2021-12 宣布通过与 SoftBank 旗下 SVF Investment Corp. 3（SPAC）合并上市，交易估值约 55 亿美元，2022 年完成上市（Nasdaq: SYM）。
+- 截至 2023-09-30 约 1,300 名员工；软件覆盖约 1,400 家门店。
+- 客户涵盖 Walmart、Target、Albertsons、C&S Wholesale Grocers、Giant Tiger。

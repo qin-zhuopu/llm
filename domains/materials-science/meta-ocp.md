@@ -56,3 +56,12 @@ The project aims to accelerate the discovery of catalysts that could:
 - Support nation-scale energy storage solutions
 - Reduce dependence on expensive precious metal catalysts
 - Drive chemical reactions needed for clean energy transitions
+
+---
+
+> 补充来源: [The Open Catalyst 2020 (OC20) Dataset and Community Challenges (arXiv 2010.09990)](https://arxiv.org/abs/2010.09990)
+> 抓取时间: 2026-08-30
+
+## OC20 数据集论文（同行评审）
+
+Meta FAIR 与 CMU 合作的 OC20 数据集论文 arXiv:2010.09990（发表于 ACS Catalysis，DOI 10.1021/acscatal.0c04525）包含 1,281,040 次密度泛函理论（DFT）弛豫（约 2.649 亿次单点计算），覆盖大量材料、表面与吸附质（氮/碳/氧化学体系），并补充随机扰动结构、短时分子动力学与电子结构分析。数据集定义了三项核心任务与训练/验证/测试划分，作为基线应用了 CGCNN、SchNet、DimeNet++ 三个图神经网络模型，并配套公开排行榜。数据集与基线模型均以开放资源形式提供。

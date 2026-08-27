@@ -54,6 +54,15 @@ tags:
 - micro-fulfillment
 - inventory-optimization
 - material-handling
+business:
+  latest_round: SPAC 上市 (SVF Investment Corp. 3, 2022)
+  valuation: ~$5.5B (2021 SPAC 合并估值)
+  customers: ~1,400 门店；Walmart、Target、Albertsons、C&S Wholesale Grocers、Giant Tiger
+  investors:
+  - SoftBank (SVF Investment Corp. 3)
+  - Walmart
 references:
 - title: Symbotic 官网
   url: https://www.symbotic.com
+- title: Symbotic — Wikipedia (公司/上市历史，聚合 WSJ/TechCrunch/Forbes 报道)
+  url: https://en.wikipedia.org/wiki/Symbotic

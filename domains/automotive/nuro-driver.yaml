@@ -57,8 +57,22 @@ tags:
 - vehicle-agnostic
 - ai-first
 - licensing
+business:
+  funding_total: $2B+
+  latest_round: Series E (late-stage)
+  valuation: $6B (2025-08)
+  customers: 车企/出行平台授权 (Uber-Lucid Robotaxi 计划六年内 20,000+ 辆)
+  investors:
+  - SoftBank Group
+  - T. Rowe Price
+  - Greylock Partners
+  - Gaorong Capital
+  - Uber
+  - Nvidia
 references:
 - title: Nuro Official Website
   url: https://www.nuro.ai
 - title: Nuro Technology
   url: https://www.nuro.ai/technology
+- title: Nuro — Wikipedia (融资与公司历史，聚合 Reuters/TechCrunch/Forbes 报道)
+  url: https://en.wikipedia.org/wiki/Nuro

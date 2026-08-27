@@ -63,6 +63,24 @@ tags:
 access:
 - internal-only
 - private-deployment
+business:
+  funding_total: $1B+ (pre-IPO) + $440M IPO
+  latest_round: "IPO (Nasdaq: WRD, 2024-10)"
+  valuation: "$5.1B (2022 D+ post-money); ~$5B IPO"
+  customers: 13 国 60+ 城市部署；Uber/Renault/GAC/Chery 等合作
+  investors:
+  - Qiming Venture Partners
+  - Sinovation Ventures
+  - Nvidia
+  - Renault-Nissan-Mitsubishi Alliance
+  - Yutong Group
+  - IDG Capital
+  - GAC Group
+  - Bosch
+  - Carlyle Investment Group
+  - China Development Bank Capital
 references:
 - title: WeRide Official Website
   url: https://www.weride.ai
+- title: WeRide — Wikipedia (融资/IPO/部署历史，聚合 Reuters/TechCrunch/CNBC/Bloomberg 报道)
+  url: https://en.wikipedia.org/wiki/WeRide

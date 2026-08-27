@@ -54,3 +54,19 @@ Indigo Ag 的服务已覆盖数千万英亩农田，与北美、南美等地区�
 ## 使命与愿景
 
 Indigo Ag 的使命是利用自然创新来帮助农业可持续地养活地球。公司相信通过技术创新，可以同时实现农业生产力提升和环境可持续性，将农民从纯粹的食物生产者转变为同时也是环境管理者的角色。
+
+---
+
+> 补充来源: [Indigo Agriculture — Wikipedia (融资/估值历史，聚合 WSJ/Forbes/CNBC/Reuters 报道)](https://en.wikipedia.org/wiki/Indigo_Agriculture)
+> 抓取时间: 2026-08-30
+
+## 融资与商业化补充
+
+- 2013 年由 Flagship Pioneering 孵化成立（原名 Symbiota）。
+- 2016-07：融资 1 亿美元；2016 年 Series D 为当时农业科技领域最大私募融资。
+- 2017-09：融资 1.56 亿美元，估值 14 亿美元，成为独角兽。
+- 2018-09：Series E 融资 2.5 亿美元；收购卫星影像初创 TellusLabs。
+- 2020：融资 5 亿美元（含 FedEx、Alaska Permanent Fund），估值 35 亿美元；另完成 2 亿美元债权融资。
+- 2023-08：报道估值下调至约 2 亿美元（较 35 亿峰值缩水约 94%）。
+- 主要投资方：Flagship Pioneering、Alaska Permanent Fund、Baillie Gifford、Investment Corporation of Dubai、Activant Capital、FedEx。
+- Indigo Carbon 碳信用买家包括 BCG、Shopify、Barclays、JPMorgan Chase、IBM；合作方含 Corteva、Anheuser-Busch、VF Corporation（The North Face）。

@@ -1,0 +1,12 @@
+Title: The Open Catalyst 2020 (OC20) Dataset and Community Challenges
+arXiv: 2010.09990 [cond-mat.mtrl-sci]
+Related DOI: https://doi.org/10.1021/acscatal.0c04525 (ACS Catalysis)
+Authors: Lowik Chanussot, Abhishek Das, Siddharth Goyal, Thibaut Lavril, Muhammed Shuaibi, Morgane Riviere, Kevin Tran, Javier Heras-Domingo, Caleb Ho, Weihua Hu, Aini Palizhati, Anuroop Sriram, Brandon Wood, Junwoong Yoon, Devi Parikh, C. Lawrence Zitnick, Zachary Ulissi (Meta FAIR / CMU)
+URL: https://arxiv.org/abs/2010.09990
+Fetched: 2026-08-30
+
+Abstract:
+Catalyst discovery and optimization is key to solving many societal and energy challenges including solar fuels synthesis, long-term energy storage, and renewable fertilizer production. Despite considerable effort by the catalysis community to apply machine learning models to the computational catalyst discovery process, it remains an open challenge to build models that can generalize across both elemental compositions of surfaces and adsorbate identity/configurations, perhaps because datasets have been smaller in catalysis than related fields. To address this we developed the OC20 dataset, consisting of 1,281,040 Density Functional Theory (DFT) relaxations (~264,890,000 single point evaluations) across a wide swath of materials, surfaces, and adsorbates (nitrogen, carbon, and oxygen chemistries). We supplemented this dataset with randomly perturbed structures, short timescale molecular dynamics, and electronic structure analyses. The dataset comprises three central tasks indicative of day-to-day catalyst modeling and comes with pre-defined train/validation/test splits to facilitate direct comparisons with future model development efforts. We applied three state-of-the-art graph neural network models (CGCNN, SchNet, Dimenet++) to each of these tasks as baseline demonstrations for the community to build on. The dataset and baseline models are both provided as open resources, as well as a public leader board to encourage community contributions.
+
+Comments: 37 pages, 11 figures, submitted to ACS Catalysis.
+Submitted: 20 Oct 2020 (v1), latest v5 24 Sep 2021.

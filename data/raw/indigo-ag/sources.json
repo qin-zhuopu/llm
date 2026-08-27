@@ -1,10 +1,16 @@
 {
   "files": [
     {
-      "filename": "indigo-ag-com-1.md",
+      "filename": "official-website.md",
       "url": "https://www.indigo-ag.com/",
       "fetched_at": "2026-08-26",
       "type": "official-website"
+    },
+    {
+      "filename": "wikipedia-funding-history.md",
+      "url": "https://en.wikipedia.org/wiki/Indigo_Agriculture",
+      "fetched_at": "2026-08-30",
+      "type": "news"
     }
   ]
 }

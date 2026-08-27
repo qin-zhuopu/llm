@@ -46,3 +46,13 @@ Wayve has also released LingoQA, a benchmark dataset designed to evaluate whethe
 ## Significance
 
 LINGO-2 represents a paradigm shift in autonomous driving by demonstrating that natural language can serve as both an interface for human understanding and a functional component of the driving system itself. This approach enables more transparent, controllable, and trustworthy autonomous vehicles.
+
+---
+
+> 补充来源: [Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving (arXiv 2310.01957)](https://arxiv.org/abs/2310.01957)
+> 抓取时间: 2026-08-30
+
+## 技术溯源论文（Wayve）
+
+Wayve 团队的 arXiv 论文《Driving with LLMs》(2310.01957) 是 LINGO 系列视觉-语言-动作模型的技术基础。论文提出一种对象级多模态 LLM 架构，将向量化数值模态与预训练 LLM 融合以增强驾驶情境理解；构建了源自 1 万个驾驶场景的 16 万条 QA 对数据集（控制指令由 RL agent 采集、问答由 teacher LLM GPT-3.5 生成），并提出 Driving QA 评估指标。该数据集与评测方法与 Wayve 后续发布的 LingoQA 基准一脉相承，论文结论指出基于 LLM 的驾驶动作生成相较传统行为克隆更具泛化与可解释潜力。
+

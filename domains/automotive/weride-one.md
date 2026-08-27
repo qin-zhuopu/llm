@@ -42,3 +42,20 @@
 - 城市与高速领航辅助驾驶
 - 360° 避障与灵活变道
 - 数据飞轮驱动持续迭代
+
+---
+
+> 补充来源: [WeRide — Wikipedia (融资/IPO/部署历史，聚合 Reuters/TechCrunch/CNBC/Bloomberg 报道)](https://en.wikipedia.org/wiki/WeRide)
+> 抓取时间: 2026-08-30
+
+## 融资与上市补充
+
+- 2017-09：5200 万美元 pre-A（Qiming、Sinovation、Nvidia 等）。
+- 2021-01：3.1 亿美元 Series B，宇通集团领投 2 亿美元。
+- 2021-05：3.1 亿美元 Series C，估值 33 亿美元（IDG、CoStone、Sky9、K3 等）。
+- 2022-01：Series D（中阿主权基金、Bosch、GAC、Carlyle 等），估值 44 亿美元。
+- 2022-11：Series D+（国开行资本领投），投后估值 51 亿美元。
+- 2024-10：纳斯达克 IPO（代码 WRD），募资 4.399 亿美元，成为首家上市的通用自动驾驶/Robotaxi 公司，IPO 估值约 50 亿美元。
+- 2025-03：向港交所申请二次上市。
+- 主要投资方：Qiming、Sinovation、Nvidia、雷诺-日产-三菱联盟、宇通集团、IDG Capital、GAC Group、Bosch、Carlyle、国开行资本。
+- 商业化：与 Uber 在阿布扎比（2025-11 中东首个全无人商业运营）、迪拜（2026-04）、沙特、瑞士苏黎世（2026）合作；与雷诺/beti/Macif 在法国 Drôme 推出欧洲首个全无人 Robobus；量产搭载奇瑞、广汽 AION。

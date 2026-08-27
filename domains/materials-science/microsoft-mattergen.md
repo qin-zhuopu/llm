@@ -58,3 +58,12 @@ The model builds on fundamental principles:
 ### Publication
 
 Published in Nature (2024), demonstrating experimental validation of generated materials. The work represents a collaboration between Microsoft Research and the Azure Quantum team.
+
+---
+
+> 补充来源: [MatterGen: a generative model for inorganic materials design (arXiv 2312.03687)](https://arxiv.org/abs/2312.03687)
+> 抓取时间: 2026-08-30
+
+## arXiv 预印本（同行评审论文）
+
+MatterGen 的技术论文 arXiv:2312.03687（后正式发表于 Nature 2025，DOI 10.1038/s41586-025-08628-5）由 Tian Xie 等微软研究院团队撰写。论文提出基于扩散的生成过程，通过逐步细化原子类型、坐标与周期晶格来产生晶体结构，并引入 adapter 模块支持面向任意性质约束的微调。相较此前生成模型，MatterGen 产生的结构新颖且稳定的概率高出 2 倍以上，距局部能量最小值近 15 倍。微调后可生成满足指定化学组成、对称性以及力学/电子/磁学性质的稳定新材料，并展示了兼顾高磁密度与低供应链风险组成的多性质设计能力。
