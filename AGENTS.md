@@ -256,6 +256,56 @@ python scripts/check.py --domain finance             # 按领域
 - 综合均分目标 ≥ 70
 - 单个模型技术维度尽量 ≥ 60（有基座模型、训练阶段、benchmark）
 
+> 用于检查和输出数据质量的完整脚本清单、判读方法、例行巡检命令序列与当前实测基线，见下方「## 数据质量检查工具速查」。
+
+---
+
+## 数据质量检查工具速查
+
+> 本节集中列出所有可用于**检查和输出数据质量**的脚本，作为阶段⑥（质检）与阶段⑦（测试）的速查表。
+
+### 工具清单
+
+| 脚本 | 用途 | 关键命令 | 输出/判读要点 |
+|------|------|----------|--------------|
+| `scripts/check.py` | 核心质量三维度评分（业务B/技术T/来源S，各满分100，综合=三者平均） | `python3 scripts/check.py`；`--domain {领域}`；`--top N`；`--bottom N`；`--details domains/{domain}/{slug}.yaml` | 全量输出综合均分与各维度均分；`--bottom N` 列最低分（优先修复）；`--details` 逐字段明细 |
+| `scripts/check_freshness.py` | 数据新鲜度检查（基于 sources.json 的 fetched_at） | `python3 scripts/check_freshness.py`；`--stale`；`--missing`；`--days N` | 分级 fresh(≤90天)/aging(≤180)/stale(≤365)/expired(>365)；`--stale` 只列需刷新；`--missing` 列缺 sources.json/fetched_at |
+| `scripts/validate.py` | schema 合规校验（`domains/**/*.yaml` 对 `schema/model.schema.json`） | `python3 scripts/validate.py` | 输出「N 通过 / M 失败」；每次改 YAML 后必跑 |
+| `scripts/validate_platforms.py` | 校验 `platforms/*.yaml` 是否符合 `platforms/schema.json` | `python3 scripts/validate_platforms.py` | 平台数据 schema 合规判读 |
+| `scripts/suggest_benchmark_source.py` | 只读扫描所有 benchmark，建议 source 标注 | `python3 scripts/suggest_benchmark_source.py`；`--unmarked`；`--domain {领域}` | 区分 self-reported/third-party/paper/leaderboard/unknown；`--unmarked` 列未标注并输出「总数/已标注/未标注」计数；只给建议，实际标注需人工确认 |
+| `scripts/apply_benchmark_source.py` | 为未标注 benchmark 批量应用 source 标注（规则+sources.json，默认保守取 self-reported） | `python3 scripts/apply_benchmark_source.py --dry-run`（预览）；无参实际写入 | 只处理未标注的，不覆盖人工标注 |
+| `scripts/test_all.py` | 集成测试（17项） | `python3 scripts/test_all.py` | 覆盖 validate 全通过、check.py 可跑及 --top/--bottom/--details、build_kg 构图>100节点、validate_platforms、schema 一致性、所有 YAML 字段在 schema 内；提交前必跑，17项全绿才提交 |
+| `scripts/build_kg.py` | 从 YAML 构建知识图谱 | `python3 scripts/build_kg.py --stats` | `--stats` 输出节点/边统计，可用于宏观检查数据规模与关系完整性 |
+
+### 质量信号判读
+
+- **schema 合规**（`validate.py` / `validate_platforms.py`）：YAML 是否符合 schema。这是硬性门槛，必须先全通过再看其它信号。
+- **质量评分**（`check.py` 三维度）：
+  - 业务(B)：description 长度、capabilities 数量与具体度、access、website、references 数量。
+  - 技术(T)：parameters、architecture、base_model、training(stages/tokens/context)、tech_stack、datasets、benchmarks(含 comparison)。
+  - 来源(S)：优先基于 `data/raw/{slug}/sources.json` 的来源数量+多样性(0-25)与来源类型质量(0-20，paper/repo > official > news)；无 raw 时回退到 MD 正则（降级评分）。还含 MD 正文长度(0-30)与具体数据点数量(0-25)。
+  - 综合均分目标 ≥ 70，单模型技术维度尽量 ≥ 60。看 `--bottom N` 优先修复最低分。
+- **新鲜度**（`check_freshness.py`）：原始资料是否过期，需按 stale/expired 刷新（`backfill_raw.py --slug {slug} --force`）。
+- **来源标注**（`suggest_benchmark_source.py` / `apply_benchmark_source.py`）：每条 benchmark 的可信度口径（self-reported/third-party/paper/leaderboard/unknown）是否已标注。启发式只给建议，关键结论需结合 raw 资料人工确认。
+
+### 例行质量巡检推荐命令序列
+
+```bash
+python3 scripts/validate.py                              # ① schema 合规（先过门槛）
+python3 scripts/test_all.py                              # ② 集成测试 17 项全绿
+python3 scripts/check.py                                 # ③ 看综合均分与各维度均分
+python3 scripts/check.py --bottom 10                     # ③ 优先修复最低分模型
+python3 scripts/check_freshness.py --stale               # ④ 列出需刷新的过期来源
+python3 scripts/suggest_benchmark_source.py --unmarked   # ⑤ 列出未标注 benchmark source
+```
+
+### 当前实测基线（供后续对照）
+
+- **综合均分 74**（业务 92 / 技术 73 / 来源 57）。
+- **新鲜度**：198 个模型全部 fresh；`sources.json` 无缺失。
+- **benchmark source**：561 条全部已标注。
+- **主要短板**：来源(S)维度偏低（57），多为单一官网来源。后续应优先为低 S 分模型补充独立、多样化的来源（论文/repo/第三方报道），以提升来源数量与类型质量。
+
 ---
 
 ## 阶段 ⑦ — 单元/集成测试
