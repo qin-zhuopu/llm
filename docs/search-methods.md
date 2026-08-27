@@ -109,11 +109,45 @@
 | `industry-report` | ~3 | 低(付费) | 发现行业地图 |
 | `direct-search` | ~5 | 高 | 已知目标 |
 
-## 尚未充分探索的渠道
+## 高价值渠道（2026-08 复盘后新增为一等公民）
 
-- Crunchbase / PitchBook 投资数据库（付费）
-- Product Hunt AI 分类
-- G2/Gartner 行业报告
+> **核心教训**：早期搜索是"关键词 + 模型目录"驱动（api-catalog 命中率 0），
+> 系统性漏掉了所有"不自称大模型公司"的产品型玩家（Isomorphic/AlphaSense/XBOW/Cognite/Rogo/Sierra 等）。
+> 这些公司靠"融资 + ARR + 榜单"被识别，不在任何模型目录里。
+> 正确入口是**跟着钱和榜单走**，而非跟着关键词走。
+
+### A. 风投年度 State-of-AI 报告（最高价值，系统爬取）
+
+| 来源 | URL | 价值 |
+|------|-----|------|
+| Menlo Ventures - State of Generative AI in the Enterprise | menlovc.com/perspective/ | 垂类支出数据 + 公司地图 |
+| Menlo Ventures - State of AI in Healthcare | menlovc.com/perspective/ | 医疗垂类专项 |
+| Bessemer - State of AI / The Future of AI Is Vertical | bvp.com/atlas | 垂类 AI 框架 + 代表公司 |
+| Sequoia - Generative AI's Act Two | sequoiacap.com/article | 标杆公司（Harvey 等） |
+| a16z - AI 相关年度报告 | a16z.com | 应用层地图 |
+| CB Insights - AI 100 | cbinsights.com | 年度 100 强（部分付费墙） |
+
+用法：读整篇报告，提取所有点名的公司，逐个查官网 + 融资，判断是否属于垂类范畴。
+
+### B. 融资新闻 / 数据库（发现新公司的实时线）
+
+| 来源 | 用法 |
+|------|------|
+| 大额融资新闻（TechCrunch / Forbes / The Information） | 搜"{领域} AI raises Series X"，大额融资=商业化验证 |
+| Crunchbase / PitchBook（部分付费） | 按行业+融资阶段筛选 AI 公司 |
+| 各垂直领域 "AI 100 / top startups" 榜单 | 法律/金融/医疗/工业等细分榜 |
+
+关键信号：融资额、估值、ARR、客户数、轮次——这些是垂类 AI"商业化领先"的代理指标。
+
+### C. 仍待探索
+- Product Hunt AI 分类、G2/Gartner 象限
 - 中国：36氪/量子位/机器之心 AI 报道
-- 日本/韩国本地 AI 公司
-- 中东（阿联酋 G42/沙特 SDAIA）
+- 日本/韩国本地 AI；中东（G42/SDAIA）
+
+## 复盘：为什么早期漏掉大量报告级公司
+
+| 症结 | 表现 | 修正 |
+|------|------|------|
+| 用错入口 | 反复查 HuggingFace/OpenRouter/Models.dev（api-catalog 命中 0） | 停用模型目录找垂类，改用风投报告+融资线 |
+| 把结论当终点 | 得出"垂类模型不公开卖 API"后停下 | 该结论应触发"转向产品官网+融资新闻"，而非停止 |
+| 投资视角缺失 | industry-report 仅发现 3 个 | 将风投年度报告 + 融资数据库升为一等搜索源 |

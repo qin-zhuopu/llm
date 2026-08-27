@@ -1,0 +1,71 @@
+name: Decagon
+name_en: Decagon
+company: Decagon
+domain: customer-service
+status: released
+website: https://www.decagon.ai
+description: 企业客服AI concierge平台，构建、优化和扩展AI agent，让每个客户都被当作唯一客户对待，与Sierra是同类竞品。核心创新Agent Operating Procedures(AOPs)用自然语言定义agent工作流，无需复杂配置即可快速迭代，避免每次更新都要工程sprint。全渠道(Voice/Chat/Email)统一在单一智能层，跨渠道记忆连贯。客户案例包括Chime(70% chat+voice resolution)，实现80% deflection率、95%成本降低、3x CSAT提升、单客户$1M全AI处理对话收入。
+parameters: 未公开
+architecture: Multi-channel agent platform + AOP (多渠道Agent平台 + 自然语言工作流)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在企业客服对话数据上适配，理解客服工作流和品牌语气
+  - name: rlhf
+    description: 基于客服解决率和满意度反馈优化，对齐AOP定义的工作流行为
+tech_stack:
+  framework: 多渠道Agent平台 + AOP自然语言工作流
+  inference: 企业云部署(全渠道统一)
+  techniques:
+  - Agent Operating Procedures (自然语言工作流)
+  - Omnichannel unified intelligence (Voice/Chat/Email)
+  - Cross-channel memory
+  - Observability & experimentation
+  - Analytics-driven optimization
+datasets:
+- name: Customer Service Conversations
+  description: 企业客服对话数据(chat/voice/email)，用于训练全渠道客服agent
+  type: sft
+benchmarks:
+- name: Resolution Rate (Chime)
+  score: "70%"
+  metric: resolution_rate
+  comparison: "Chime案例: chat和voice综合解决率70%"
+  source: self-reported
+- name: Deflection Rate
+  score: "80% (50%+ voice)"
+  metric: deflection_rate
+  comparison: "vs 人工客服: 80%整体deflection，语音50%+"
+  source: self-reported
+- name: Cost Reduction
+  score: "95%"
+  metric: cost_reduction
+  comparison: "vs 传统客服: 成本降低95%，CSAT提升3x"
+  source: self-reported
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅(联系销售)
+  auth_method: 企业认证
+capabilities:
+- 全渠道(语音/聊天/邮件)统一的AI客服agent
+- Agent Operating Procedures自然语言定义工作流
+- 跨渠道记忆连贯的客户体验
+- 复杂客服工作流的可靠执行
+- 测试、可观测性和实验驱动的agent优化
+- 对话分析转客户洞察
+access:
+- saas
+- api
+tags:
+- customer-service
+- conversational-ai
+- omnichannel
+- ai-agent
+- enterprise-ai
+- voice-ai
+references:
+- title: Decagon Official Website
+  url: https://www.decagon.ai
+- title: Decagon Platform
+  url: https://www.decagon.ai

@@ -1,0 +1,58 @@
+name: Eudia
+name_en: Eudia
+company: Eudia
+domain: legal
+status: released
+website: https://www.eudia.com
+description: 面向企业内部法务团队(in-house legal)的AI平台，自称"企业大脑"(The Enterprise Brain)，把企业专有数据和机构知识编码为企业级法律agent。通过捕获政策、判例和专家推理为结构化智能，连接企业系统确保决策基于实时组织特定上下文。采用专有AI为企业决策设计，对齐组织标准和判断，超越通用模型。服务全球领先的法务、采购和合规团队，客户包括Cargill。与Harvey面向律所不同，Eudia面向企业甲方法务部门。
+parameters: 未公开
+architecture: Institutional knowledge encoding + legal agents (机构知识编码 + 法律Agent)
+training:
+  stages:
+  - name: fine-tuning
+    description: 将企业政策、判例、专家推理编码为结构化智能，适配企业特定的法务标准和判断
+  - name: post-training
+    description: 针对企业法务决策工作流优化，对齐组织标准、上下文和治理要求
+tech_stack:
+  framework: 机构知识编码 + Agent架构
+  inference: 企业云部署(受治理、可审计)
+  techniques:
+  - Institutional knowledge codification
+  - Proprietary data grounding
+  - Enterprise system integration
+  - Governed & auditable AI
+datasets:
+- name: Enterprise Legal Knowledge
+  description: 企业政策、判例、专家推理和专有法务数据，编码为结构化智能
+  type: sft
+benchmarks:
+- name: Enterprise Value Generation
+  score: 真实业务价值
+  metric: business_value
+  comparison: "Cargill首席法务官: insights为业务生成真实价值"
+  source: self-reported
+api:
+  available: false
+  pricing: 企业合同(联系销售)
+  auth_method: 企业认证
+capabilities:
+- 将企业机构知识(政策/判例/专家推理)编码为法律agent
+- 企业内部法务决策支持与自动化
+- 连接企业系统确保决策基于实时组织上下文
+- 采购与合规团队的智能支持
+- 受治理、可审计的企业级AI
+access:
+- private-deployment
+- saas
+tags:
+- legal-ai
+- in-house-legal
+- institutional-knowledge
+- enterprise-ai
+- compliance
+- procurement
+references:
+- title: Eudia Official Website
+  url: https://www.eudia.com
+- title: Eudia Enterprise Brain
+  url: https://www.eudia.com

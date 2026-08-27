@@ -1,0 +1,64 @@
+name: Norm Ai
+name_en: Norm Ai
+company: Norm Ai
+domain: legal
+status: released
+release_date: "2023"
+website: https://www.norm.ai
+description: 由John Nay于2023年创立的合规/监管AI公司，专注"agentic law"(智能体法律)，自动化法律和合规任务，服务管理$35T资产的机构。核心产品Norm Law是全球首个全AI-native律所(法律被编码encoded)，Supervisory AI作为每个AI agent的验证层确保合规。2026年6月完成$120M C轮融资、$1.2B估值，Khosla Ventures领投，Blackstone/Vanguard/Bain/Citi/TIAA等一线金融机构参投。2026年7月与Delaware州合作为AI agent创建新法律实体类型(AIC)。
+parameters: 未公开
+architecture: Supervisory AI + legal encoding (监督AI验证层 + 法律编码)
+training:
+  stages:
+  - name: fine-tuning
+    description: 将法规、合规规则编码为结构化逻辑，训练模型理解和执行监管要求
+  - name: post-training
+    description: 针对合规验证任务优化，Supervisory AI学习验证其他AI agent的行为是否符合法律
+tech_stack:
+  framework: 法律编码 + 监督AI架构
+  inference: 企业云部署(金融机构级安全)
+  techniques:
+  - Agentic law (法律编码为可执行逻辑)
+  - Supervisory AI (agent 验证层)
+  - Compliance automation
+  - Regulatory rule encoding
+datasets:
+- name: 法规与合规规则
+  description: 法律法规、监管文件和合规规则，编码为结构化可执行逻辑
+  type: sft
+benchmarks:
+- name: Client Asset Coverage
+  score: "$35T"
+  metric: aum_of_client_institutions
+  comparison: "服务管理35万亿美元资产的机构"
+  source: self-reported
+- name: Funding Validation
+  score: "$120M Series C / $1.2B"
+  metric: valuation
+  comparison: "Khosla Ventures领投，Blackstone/Vanguard/Bain/Citi/TIAA等金融机构直投"
+  source: self-reported
+api:
+  available: false
+  pricing: 企业合同(联系销售)
+  auth_method: 企业认证
+capabilities:
+- 法律和合规任务的智能体自动化(agentic law)
+- Supervisory AI验证其他AI agent的行为合规性
+- 将法规编码为结构化可执行逻辑
+- 面向金融机构的监管合规审查
+- 关联AI-native律所(Norm Law)的法律服务
+access:
+- private-deployment
+- saas
+tags:
+- legal-ai
+- compliance
+- agentic-law
+- supervisory-ai
+- regulatory
+- fintech-compliance
+references:
+- title: Norm Ai Official Website
+  url: https://www.norm.ai
+- title: Norm Ai Series C ($120M) Announcement
+  url: https://www.norm.ai

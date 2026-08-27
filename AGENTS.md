@@ -43,21 +43,27 @@
 ### 目标
 发现在特定垂直行业形成商业化的闭源/专用大模型或模型系统公司。
 
-### 有效搜索渠道（已验证）
+### 有效搜索渠道（按命中价值排序）
 
-| 渠道 | 用途 | 备注 |
-|------|------|------|
-| 公司/产品官网 | 一手资料 | 最可靠，Harvey/Bloomberg/Abridge 等都从官网入手 |
-| arXiv 论文 | 技术细节 | 有 benchmark、架构、训练方法 |
-| GitHub README | 开源垂类模型 | ChatLaw、FinGPT、XuanYuan 等 |
-| 行业市场报告 | 公司清单 | Menlo Ventures、Bessemer、Sequoia、CB Insights AI 100 |
-| GitHub luban-agi/Awesome-Domain-LLM | 中文垂类模型汇总 | 医疗/法律/金融/教育最全 |
-| Models.dev | 通用模型数据库 | 250+ 模型，主要是通用模型 |
+> **铁律：跟着钱和榜单走，不要跟着关键词和模型目录走。**
+> 垂类 AI 公司大多不自称"大模型公司"，不在任何模型目录（HuggingFace/OpenRouter/Models.dev）里——
+> 这类目录对垂类模型命中率为 0，早期在此浪费大量精力。
+
+| 优先级 | 渠道 | 用途 | 备注 |
+|--------|------|------|------|
+| ⭐⭐⭐ | **风投年度 State-of-AI 报告** | 发现新公司 | Menlo Ventures、Bessemer、Sequoia、a16z、CB Insights——系统爬整篇，提取所有点名公司 |
+| ⭐⭐⭐ | **融资新闻/数据库** | 发现新公司 | 大额融资=商业化验证。搜"{领域} AI raises Series X"；Crunchbase/PitchBook |
+| ⭐⭐ | 公司/产品官网 | 一手资料 | 最可靠，Harvey/Bloomberg/Abridge 从官网入手 |
+| ⭐⭐ | snowball 顺藤摸瓜 | 找竞品 | 从已知公司延伸到竞争对手/合作伙伴 |
+| ⭐⭐ | arXiv 论文 | 技术细节 | 模型原生型公司（Isomorphic/FengWu/ChatLaw）有论文 |
+| ⭐ | GitHub Awesome-Domain-LLM / FinGPT | 开源垂类 | 华佗GPT、XuanYuan 等中文开源模型 |
+| ❌ | 模型 API 目录（HF/OpenRouter/Models.dev） | 通用模型 | 对垂类命中率 0，**不要用来找垂类模型** |
 
 ### 关键认知
-- **垂直领域闭源模型几乎不公开卖 API**（模型价值在排他性），需从产品官网和行业报告入手，而非推理 API 平台。
-- 真正的闭源垂类模型集中在大公司内部（Bloomberg、Harvey、蚂蚁百灵等）。
-- 区分三类公司：**模型原生型**（真正训练垂类基础模型）、**模型系统型**（自研专用模型+编排）、**工作流应用型**（主要调用通用模型+RAG/Agent）。三类都可收录，但要在 description/tags 中体现区别。
+- **垂直领域闭源模型几乎不公开卖 API**（模型价值在排他性）。这个结论应触发"**转向产品官网+融资新闻+风投报告**"，而不是停止搜索。
+- 真正的闭源垂类模型集中在大公司内部（Bloomberg、Harvey、蚂蚁百灵等）或产品型创业公司（不自称模型公司）。
+- 区分三类公司：**模型原生型**（真正训练垂类基础模型，如 Isomorphic/Hippocratic）、**模型系统型**（自研专用模型+编排，如 Cognite/XBOW）、**工作流应用型**（主要调用通用模型+RAG/Agent，如 Harvey/Sierra）。三类都可收录，但要在 description/tags 中体现区别。
+- 商业化信号（融资额、估值、ARR、客户数）是识别"垂类领先公司"的代理指标——优先追踪这些。
 
 ### 搜索方法论详见
 `docs/search-methods.md`

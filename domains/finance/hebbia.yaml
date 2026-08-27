@@ -1,0 +1,71 @@
+name: Hebbia (Matrix / Max)
+name_en: Hebbia
+company: Hebbia
+domain: finance
+status: released
+website: https://www.hebbia.com
+description: 为金融严谨性打造的机构级AI平台(Institutional Intelligence)，服务投资人、银行家、律师、咨询顾问和Fortune 500公司。核心产品Matrix管理"无限劳动力"统一处理文档和金融数据，Max作为AI分析师支持deal team协作。使用Hebbia的机构管理资产总额达$30T AUM，平均日prompt 200K，累计处理15亿页文档。客户案例显示尽调文档处理从每天12小时压缩到1-2小时。通过ISO/IEC 42001、SOC 2 Type II认证，不用用户数据训练。
+parameters: 未公开
+architecture: Multi-agent document intelligence (多智能体文档情报系统)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在金融文档（尽调材料、财报、研报、合同）上适配，优化金融专业语义理解和文档结构化处理
+  - name: rlhf
+    description: 基于金融专业人士反馈优化研究输出质量和准确性
+tech_stack:
+  framework: 多智能体编排架构
+  inference: 企业云部署（端到端加密）
+  techniques:
+  - Multi-agent research (Matrix)
+  - Retrieval over financial documents
+  - Document + structured data fusion
+  - Deal team collaboration workflow
+  - No-training-on-user-data isolation
+datasets:
+- name: Financial Documents
+  description: 尽调材料、财报、研报、合同等金融文档，用于金融领域适配
+  type: sft
+benchmarks:
+- name: AUM Coverage
+  score: "$30T"
+  metric: aum_of_client_firms
+  comparison: "使用Hebbia的机构管理资产总额达30万亿美元"
+  source: self-reported
+- name: Diligence Efficiency
+  score: "12小时→1-2小时"
+  metric: time_savings
+  comparison: "vs 人工尽调: Apogem Capital案例尽调文档处理时间大幅压缩"
+  source: self-reported
+- name: Processing Scale
+  score: "1.5B pages"
+  metric: pages_processed
+  comparison: "累计处理15亿页文档，日均200K prompt"
+  source: self-reported
+api:
+  available: true
+  protocol: proprietary
+  pricing: 企业订阅（联系销售）
+  auth_method: 企业认证
+capabilities:
+- 大规模金融文档处理与尽职调查分析
+- Matrix多智能体统一处理文档和结构化金融数据
+- Max AI分析师支持deal team协作研究
+- 跨文档的金融研究、问答与摘要
+- 机构级安全隔离（不用用户数据训练、端到端加密）
+- Fortune 500和顶级投资机构的研究工作流
+access:
+- saas
+- api
+tags:
+- financial-research
+- document-intelligence
+- multi-agent
+- due-diligence
+- institutional-ai
+- enterprise-ai
+references:
+- title: Hebbia Official Website
+  url: https://www.hebbia.com
+- title: Hebbia Platform (Matrix)
+  url: https://www.hebbia.com

@@ -1,0 +1,70 @@
+name: EvenUp
+name_en: EvenUp
+company: EvenUp
+domain: legal
+status: released
+website: https://www.evenup.ai
+description: 面向人身伤害(Personal Injury, PI)律所的主动式AI平台，自称#1 PI AI平台，构建于最大的PI判决/和解数据集(250K+)之上。覆盖案件全生命周期(受理/治疗/需求函/谈判/discovery/庭审)，提供line-level citations事实核验和15x审查效率。已有2,000+ PI律所使用、$10B+索赔额、每周处理10,000案件。客户成效显示和解结果提升300%、律师审查快75%、节省3500+小时。通过SOC2审计和HIPAA认证。
+parameters: 未公开
+architecture: Document intelligence + case workflow agents (文档情报 + 案件工作流Agent)
+training:
+  stages:
+  - name: fine-tuning
+    description: 在250K+人身伤害判决和和解数据集上训练，学习PI案件的赔偿评估、伤情编码(ICD)和需求函撰写
+  - name: post-training
+    description: 针对案件全生命周期工作流(受理/治疗/需求/谈判/discovery)优化，对齐律所专业标准
+tech_stack:
+  framework: 文档情报 + 工作流Agent
+  inference: 企业云部署(HIPAA合规)
+  techniques:
+  - Line-level citation verification
+  - PI verdict/settlement dataset retrieval
+  - ICD injury coding
+  - Case lifecycle automation
+  - CMS integration
+datasets:
+- name: PI Verdict & Settlement Dataset
+  description: 最大的人身伤害判决和和解数据集，含伤情、赔偿、量化痛苦与折磨数据，是核心壁垒
+  size: 250K+ verdicts and settlements
+  type: sft
+benchmarks:
+- name: Settlement Improvement
+  score: "+300%"
+  metric: settlement_outcome
+  comparison: "客户案例(John K. Zaid): 和解结果提升300%"
+  source: self-reported
+- name: Attorney Review Speed
+  score: "75% faster / 15x cases"
+  metric: review_efficiency
+  comparison: "vs 人工审查: 律师审查和案件分配快75%，同时长审15x案件"
+  source: self-reported
+- name: Policy Limit Likelihood
+  score: "+69%"
+  metric: policy_limit_hit_rate
+  comparison: "达到保单上限的可能性提升69%"
+  source: self-reported
+api:
+  available: false
+  pricing: 律所订阅(联系销售)
+  auth_method: 企业认证
+capabilities:
+- 人身伤害案件全生命周期AI自动化(受理到庭审)
+- 基于250K+判决数据集的赔偿评估与需求函起草
+- line-level citation逐行事实、引用、证物核验
+- 病历转交互式治疗时间线，ICD伤情编码
+- AI谈判助手，预判抗辩论点
+- CMS集成，秒级案件潜力评估
+access:
+- saas
+tags:
+- legal-ai
+- personal-injury
+- document-intelligence
+- case-automation
+- workflow-automation
+- proprietary-dataset
+references:
+- title: EvenUp Official Website
+  url: https://www.evenup.ai
+- title: EvenUp Platform
+  url: https://www.evenup.ai
