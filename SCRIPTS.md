@@ -29,6 +29,24 @@
 |------|------|------|
 | `check_scripts.py` | 脚本治理检查（docstring / `-h` / 文档引用），纳入 test_all.py | ✅ 现役 |
 
+## GB10 服务器数字孪生知识图谱（基础设施图，独立于模型数据图）
+
+> 把本开发主机（GB10）的资源与业务实体建成可持续查询的 Neo4j 知识图谱。
+> 与 `build_kg.py`（模型数据的 NetworkX 图）互不干扰：本图存于 Neo4j，节点统一挂 `:GB10` 标记标签。
+> 数据源：resreg 注册表 `~/.jereh-cli/resource-registry.json` + git 仓库/worktree 拓扑 + docker 容器/域名。
+> 依赖 `jc neo4j`（HTTP Query API），连接凭据存于 `jc env`（`NEO4J_BASE_URL/_USERNAME/_PASSWORD`），**凭据绝不入图/入库**。
+
+| 脚本 | 作用 | 状态 |
+|------|------|------|
+| `import_resreg.py` | 采集本机资源/业务实体（resreg + git + docker），全量刷新 Neo4j `:GB10` 子图（幂等，支持 `--dry-run`/`--no-wipe`） | ✅ 现役 |
+| `kg_query.sh` | 查询封装：`ports` / `owners` / `worktrees` / `apps` / `chrome` / `blast-radius <名称>` / `stats` / `cypher '<语句>'`，输出对齐表格 | ✅ 现役 |
+| `_kg_render.py` | `kg_query.sh` 的表格渲染辅助（读 stdin 的 jc neo4j JSON，渲染 CJK 对齐表格） | ✅ 现役 |
+
+本体（节点标签）：`Host` / `TestLine`(测试线) / `Port` / `Worktree` / `Directory` / `ChromeInstance` / `Repo` / `Branch` / `Container` / `Domain`。
+关系：`OCCUPIES`(线→端口/目录) / `OWNS`(线→worktree) / `BELONGS_TO`(worktree→仓库) / `ON_BRANCH`(worktree→分支) / `HAS_BRANCH`(仓库→分支) / `LISTENS_ON`(实例→端口) / `SERVES`(实例→测试线) / `USES_PROFILE`(实例→目录) / `DEPLOYED_AT`(容器→域名) / `RUNS_ON`(→本机)。
+
+维护（数据变了怎么刷新）：任何端口/worktree/容器/分支变动后，重跑 `python3 scripts/import_resreg.py` 即全量重建 `:GB10` 子图（先 DETACH DELETE 旧子图再重建，幂等）。
+
 ## 遗留脚本（Legacy，保留供参考，不推荐新用途）
 
 | 脚本 | 作用 | 状态 | 替代方案 |

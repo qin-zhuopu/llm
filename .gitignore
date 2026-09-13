@@ -8,3 +8,6 @@ __pycache__/
 
 # Knowledge graph (generated)
 kg_data.graphml
+
+# Local virtualenv (deps for running scripts; not part of repo)
+.venv/
