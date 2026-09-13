@@ -10,6 +10,7 @@
 #   scripts/kg_query.sh worktrees             # worktree -> 仓库/分支归属
 #   scripts/kg_query.sh apps                  # 应用容器 -> 部署域名
 #   scripts/kg_query.sh chrome                # Chrome 实例 -> 端口/profile/服务测试线
+#   scripts/kg_query.sh jenkins <关键词>      # 按名模糊搜 Jenkins job（含文件夹路径/结果/最近构建）
 #   scripts/kg_query.sh blast-radius <名称>   # 影响半径：某资源/测试线/仓库牵连的所有实体
 #   scripts/kg_query.sh stats                 # 图规模统计
 #   scripts/kg_query.sh cypher '<语句>'       # 直接跑一条 Cypher（表格输出）
@@ -83,6 +84,23 @@ case "$cmd" in
                 coalesce(d.path,"-") AS profile, coalesce(t.name,"-") AS 服务测试线
          ORDER BY 实例' | render
     ;;
+  jenkins)
+    kw="${1:-}"
+    if [[ -z "$kw" ]]; then echo "用法: kg_query.sh jenkins <关键词>（按 job 名/文件夹路径模糊搜）"; exit 1; fi
+    # 按 fullName 或 name 模糊匹配 job，带出所属文件夹（无则显示 server）与最近构建信息。
+    run 'MATCH (j:JenkinsJob:Jenkins)
+         WHERE toLower(j.fullName) CONTAINS toLower($q)
+            OR toLower(coalesce(j.name,"")) CONTAINS toLower($q)
+         OPTIONAL MATCH (f:Folder)-[:HAS_JOB]->(j)
+         OPTIONAL MATCH (s:JenkinsServer)-[:HAS_JOB]->(j)
+         RETURN j.fullName AS job,
+                coalesce(f.fullName, s.name, "-") AS 归属,
+                coalesce(j.type,"-") AS 类型,
+                coalesce(j.lastResult,"NEVER_BUILT") AS 最近结果,
+                coalesce(toString(j.lastBuildNumber),"-") AS 构建号,
+                coalesce(j.lastBuildTime,"-") AS 最近构建
+         ORDER BY job' "{\"q\": \"$kw\"}" | render
+    ;;
   blast-radius)
     name="${1:-}"
     if [[ -z "$name" ]]; then echo "用法: kg_query.sh blast-radius <名称/端口/路径片段>"; exit 1; fi
@@ -117,7 +135,7 @@ case "$cmd" in
     run "$q" | render
     ;;
   help|-h|--help)
-    sed -n '2,16p' "$0" | sed 's/^# \{0,1\}//'
+    sed -n '2,18p' "$0" | sed 's/^# \{0,1\}//'
     ;;
   *)
     echo "未知命令: $cmd"; echo "运行 'kg_query.sh help' 查看用法"; exit 1

@@ -39,13 +39,16 @@
 | 脚本 | 作用 | 状态 |
 |------|------|------|
 | `import_resreg.py` | 采集本机资源/业务实体（resreg + git + docker），全量刷新 Neo4j `:GB10` 子图（幂等，支持 `--dry-run`/`--no-wipe`） | ✅ 现役 |
-| `kg_query.sh` | 查询封装：`ports` / `owners` / `worktrees` / `apps` / `chrome` / `blast-radius <名称>` / `stats` / `cypher '<语句>'`，输出对齐表格 | ✅ 现役 |
+| `import_jenkins.py` | 把 Jenkins 只读快照 `~/.jereh-cli/jenkins-inventory.json`（622 job）全量入图（CMDB）：`JenkinsServer`/`Folder`/`JenkinsJob`，并与 resreg `:GB10` 子图打通（`TestLine-[:USES_JOB]->JenkinsJob`、`Worktree-[:BUILT_BY]->JenkinsJob`）。带 `:Jenkins` 标记只清理/重建本子图。**只读快照，绝不触发构建；token/JWT/参数默认值不入图**（幂等，支持 `--dry-run`/`--no-wipe`/`--inventory`） | ✅ 现役 |
+| `kg_query.sh` | 查询封装：`ports` / `owners` / `worktrees` / `apps` / `chrome` / `jenkins <关键词>` / `blast-radius <名称>` / `stats` / `cypher '<语句>'`，输出对齐表格 | ✅ 现役 |
 | `_kg_render.py` | `kg_query.sh` 的表格渲染辅助（读 stdin 的 jc neo4j JSON，渲染 CJK 对齐表格） | ✅ 现役 |
 
-本体（节点标签）：`Host` / `TestLine`(测试线) / `Port` / `Worktree` / `Directory` / `ChromeInstance` / `Repo` / `Branch` / `Container` / `Domain`。
-关系：`OCCUPIES`(线→端口/目录) / `OWNS`(线→worktree) / `BELONGS_TO`(worktree→仓库) / `ON_BRANCH`(worktree→分支) / `HAS_BRANCH`(仓库→分支) / `LISTENS_ON`(实例→端口) / `SERVES`(实例→测试线) / `USES_PROFILE`(实例→目录) / `DEPLOYED_AT`(容器→域名) / `RUNS_ON`(→本机)。
+本体（节点标签）：`Host` / `TestLine`(测试线) / `Port` / `Worktree` / `Directory` / `ChromeInstance` / `Repo` / `Branch` / `Container` / `Domain` / `JenkinsServer` / `Folder`(Jenkins 文件夹) / `JenkinsJob`。
+关系：`OCCUPIES`(线→端口/目录) / `OWNS`(线→worktree) / `BELONGS_TO`(worktree→仓库) / `ON_BRANCH`(worktree→分支) / `HAS_BRANCH`(仓库→分支) / `LISTENS_ON`(实例→端口) / `SERVES`(实例→测试线) / `USES_PROFILE`(实例→目录) / `DEPLOYED_AT`(容器→域名) / `RUNS_ON`(→本机) / `HAS_FOLDER`(server/folder→folder) / `HAS_JOB`(server/folder→job) / `USES_JOB`(测试线→job) / `BUILT_BY`(worktree→job)。
 
-维护（数据变了怎么刷新）：任何端口/worktree/容器/分支变动后，重跑 `python3 scripts/import_resreg.py` 即全量重建 `:GB10` 子图（先 DETACH DELETE 旧子图再重建，幂等）。
+维护（数据变了怎么刷新）：
+- 端口/worktree/容器/分支变动 → 重跑 `python3 scripts/import_resreg.py` 全量重建 `:GB10` 子图（先 DETACH DELETE 旧子图再重建，幂等）。
+- Jenkins 快照刷新后 → 重跑 `python3 scripts/import_jenkins.py` 全量重建 `:Jenkins` 子图（只清理带 `:Jenkins` 标记的节点，不影响 resreg 子图）。查询：`scripts/kg_query.sh jenkins <关键词>`。
 
 ## 遗留脚本（Legacy，保留供参考，不推荐新用途）
 
